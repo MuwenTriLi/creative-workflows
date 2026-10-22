@@ -2,37 +2,58 @@
 
 [← All projects](https://github.com/MuwenTriLi/creative-workflows#selected-work)
 
-**Browser tool · Portfolio 04 · Downloadable local demo**
+**04 / Browser tool · Media composition & motion**
 
-Turn imported images into an animated collage with layout and flash controls.
+Turn a collection of images and clips into a timed collage, with direct control over layout, movement and the rhythm of individual cells.
 
-## Workflow
+**[Open web app ↗](https://muwentrili.github.io/creative-workflows/collage-motion/)** · [Browse the source](../docs/collage-motion/) · [Local backup ZIP](../downloads/collage-motion-local-demo.zip)
 
-Import images → arrange the composition and flash timing → preview → export a video.
+![Collage Motion editor with original geometric demo images](../media/collage-motion-editor.png)
+*Live editor with procedural sample graphics. These are demonstration inputs, not a finished portfolio film.*
 
-## Current evidence and packaging status
+## The problem
 
-The local tool has been recovered. A synthetic-image test produced a playable 720p, 5-second H.264 export. The recovered application and its local dependencies are available as a portable ZIP; 4K and long exports have not been verified.
+An animated image wall combines two jobs: composing many differently sized assets and controlling when each one appears or changes. A new image order, grid size or pacing decision can mean revisiting many individual layers and keyframes. The creative decision is the composition and rhythm; the repetitive work is keeping all those cells coordinated.
 
-## Demo access
+## The approach
 
-[Download the local demo ZIP](https://github.com/MuwenTriLi/creative-workflows/raw/refs/heads/main/downloads/collage-motion-local-demo.zip)
+Put the media library, canvas and timing controls in one browser workspace. Layout rules handle the grid; reusable motion settings handle entry and sequencing; per-cell flash controls shape the transition from a quick visual burst to a readable hold. The same collection can be rearranged and previewed without rebuilding the composition.
 
-This entry downloads the actual tool. It is not an online hosted demo.
+| Creative decision | Control in the tool | Purpose |
+| --- | --- | --- |
+| How much content fits? | Rows, columns, spacing, scale and aspect ratio | Explore density while keeping assets legible |
+| What should appear first? | Numbered asset order, reorder and randomization | Make sequencing an explicit choice |
+| How should the grid move? | Motion direction, stagger, easing and grouping | Coordinate movement across cells |
+| How fast should images change? | Flash timing, holds and speed curve | Balance energy with reading time |
+| What needs individual attention? | Per-asset crop, position, scale and opacity | Refine one asset without changing the entire wall |
 
-1. Extract the ZIP. Open a terminal in its `collage-motion` folder.
-2. With Python 3 installed, run `python -m http.server 8766 --bind 127.0.0.1` (or `py -m http.server 8766 --bind 127.0.0.1` on Windows).
-3. Open `http://127.0.0.1:8766/per-cell-flash-studio.html` in Chrome.
-4. Import your images, adjust layout and flash timing, preview and export. Press Ctrl+C in the terminal when finished.
+## Try it in one minute
 
-The local address is created on the visitor's own computer after starting the server. If the port is busy, use another port in both the command and address.
+1. Open the app in desktop Chrome. Nine geometric samples are already loaded.
+2. In **Layout**, change the row or column count and compare the composition.
+3. Open **Motion** or **Flash**, adjust one timing control, then use play/pause and the timeline to inspect the change.
+4. To use your own media, choose **Clear all**, then **Choose assets**, or drag images/clips into the import area.
+5. In **Export**, start with a short **720p MP4**. Save the result and compare it with the preview.
 
-## Planned case evidence
+## Design contribution and reusable workflow
 
-A representative finished collage and a short recording showing how the layout or timing changes the output.
+The project brings layout, sequencing and motion controls into a focused creative tool. Muwen's direction is expressed through the control model and iterative visual decisions, with Codex-assisted implementation. Reuse happens through the editor's parameters: replace the inputs, keep or change the timing recipe, and produce a new sequence.
 
-The full case will document the problem, a concrete interaction example, Muwen's contribution and use of AI, supported inputs and outputs, setup instructions, and known limitations. Performance claims and implementation details will be added only after verification.
+This is a browser application with a repeatable workflow. An installable agent Skill is not included in this project.
 
-## Source release
+## Exported sample
 
-The ZIP includes the recovered app, local browser dependencies, license notices and setup instructions. It starts with an empty asset list. Private media, the personal tools portal and conversation backups are excluded.
+![Animated collage exported from the public-demo code](../media/collage-motion-demo.gif)
+
+*GIF preview of the actual five-second export, using the built-in geometric sample. This demonstrates the output path; a creator-selected final example will follow.*
+
+## Evidence and current limits
+
+- The current demo exported a **720p, five-second H.264** MP4 with **150 frames at 30 fps**. The file was fully decoded successfully. Sample loading and grid adjustment were checked in the browser. The demo adds a sample starter, English default, navigation and a repair that prioritizes the existing WebCodecs MP4 path over the failing MediaRecorder remux path.
+- Media is read through browser file inputs and object URLs; this static app has no media-upload backend. Keep originals separately: reloading clears the working session.
+- Export support depends on browser codecs and device resources. Start in desktop Chrome or Edge. Long clips, large mixed-media projects and 4K output still need broader testing.
+- A creator-selected finished example and narrated workflow recording will be added next. No measured time-saving or user-research result is claimed here.
+
+## Case evidence to add
+
+One finished collage, a short recording of changing the grid or timing, and the matching exported clip. The comparison should show what changed and why the revised rhythm communicates better.

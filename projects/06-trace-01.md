@@ -1,29 +1,48 @@
-# TRACE / 01
+# TRACE / 01 / Motion Tracking & HUD
 
 [← All projects](https://github.com/MuwenTriLi/creative-workflows#selected-work)
 
-**Browser tool · Original project 03 · Portfolio draft**
+**07 / Browser tool · Target tracking & motion annotation**
 
-Work with target tracking, motion paths and HUD graphics in a visual editing workflow.
+Make a moving target easier to follow by connecting its position to a readable path, locator and information overlay.
 
-## Workflow
+**[Open web app ↗](https://trace-01-motion-tracker.limuwen9.chatgpt.site)** · No sign-in required
 
-Load a clip → track a target → adjust paths and HUD graphics → preview the result.
+![TRACE 01 video workspace, positioning mode and HUD inspector](../media/trace-01-editor.png)
+*Current editor before a source clip is loaded; tracking-result footage is pending.*
 
-## Current evidence and packaging status
+## The problem
 
-A hosted prototype exists. The source package, supported inputs and export behavior still require review.
+A motion annotation has two separate requirements: stay attached to the correct subject and remain readable. Tracking may drift, while labels can arrive too early, cover the subject or distract from it. Treating the tracker and graphic styling as separate tasks makes those problems harder to inspect together.
 
-## Demo access
+## The approach
 
-[Open the interactive web app ↗](https://trace-01-motion-tracker.limuwen9.chatgpt.site) — public; no sign-in required.
+Bring source video, frame navigation, target positioning and HUD design into one workspace. Expose **Follow object** and **Static pin** as distinct choices. Separate the locator's entrance from the expanded data panel so the viewer first sees the target, then reads its context.
 
-## Planned case evidence
+| Creative decision | Visible control | Purpose |
+| --- | --- | --- |
+| Follow a subject or mark a place? | Automatic tracking / static pin | Match the overlay's behavior to the explanation |
+| How should the path behave? | Search radius and trajectory smoothing | Balance target search and visual stability |
+| When should information appear? | LOCK IN and HUD IN timeline markers | Stage attention before adding detail |
+| How much visual emphasis is needed? | Locator size, panel size and entrance mode | Keep the source footage legible |
+| What information belongs in the graphic? | Title, text fields, color and HUD presets | Adapt the annotation to the scene |
 
-An original clip paired with the tracked result and a short recording of one manual correction.
+## Walkthrough
 
-The full case will document the problem, a concrete interaction example, Muwen's contribution and use of AI, supported inputs and outputs, setup instructions, and known limitations. Performance claims and implementation details will be added only after verification.
+1. Import a short clip with a clearly visible, high-contrast target. The upload interface lists MP4, MOV and WebM.
+2. Choose **Follow object** (自动追踪) and select a target, or **Static pin** (静态钉住) for a fixed annotation.
+3. Scrub through the clip and inspect the target position. Adjust tracking controls if the path drifts; compare against a fixed pin when appropriate.
+4. Set **LOCK IN** and **HUD IN** separately. Tune size and text so the overlay explains the subject without covering it.
+5. Preview the complete sequence before using the export panel.
 
-## Source release
+## Design contribution and reusable workflow
 
-This folder currently contains a project brief, not an installable release. Source code, dependencies and example assets will be added after portability and content review. Private local files are not included in this project brief.
+The design focus is combining motion analysis with visual hierarchy: locating a subject, deciding when to reveal detail, and controlling how much information appears. The same annotation recipe can be adapted to another clip. This entry presents a browser prototype and its workflow, not an installable agent Skill.
+
+## Evidence and current limits
+
+The public editor and its positioning, timing and appearance controls are available. Tracking accuracy, occlusion handling and exported-video quality have not been independently benchmarked for this portfolio. Start with a short, simple clip; a clean interface is not evidence that difficult tracking cases work reliably. No measured accuracy or time-saving claim is included.
+
+## Case evidence to add
+
+Show the original clip beside the annotated result, then a short recording of one tracking adjustment and one readability decision. A difficult frame or a corrected drift will communicate the product reasoning better than an uninterrupted ideal result alone.

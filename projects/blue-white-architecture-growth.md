@@ -2,19 +2,40 @@
 
 [← All projects](https://github.com/MuwenTriLi/creative-workflows#selected-work)
 
-**Portfolio project 03 · Blender animation workflow · Placeholder**
+**03 / Blender workflow · Architectural explanation · Case preview**
 
-A white-model architectural growth animation workflow, using blue shadows and staged assembly to explain structure and construction sequence.
+Use a consistent white-model and blue-shadow language to explain architectural systems through staged growth and assembly.
 
-## Case details to follow
+> Visual material is being selected. This page establishes the case structure; it does not include a playable demo, client model or downloadable Skill.
 
-This page reserves the project’s place in the portfolio. Selected visuals, a workflow breakdown and contribution details will be added after review.
+## The problem
 
-| Planned material | Status |
-| --- | --- |
-| Selected animation or GIF | Awaiting selection |
-| Key frames and visual style | Awaiting selection |
-| Workflow and reusable steps | Details to follow |
-| My role, collaborators and credits | Details to follow |
+A dense architectural model can hide the very relationships an animation needs to explain. Showing everything at once makes sequence and hierarchy difficult to read; styling each shot independently can introduce inconsistent outlines, shadows and emphasis.
 
-This is a case-study placeholder. No source models, client media or installable Skill are included here.
+## The workflow to document
+
+The case will explain how a shared visual specification and staged reveal logic support consistent architectural communication. Each stage will be connected to a concrete visual example when the selected footage is available.
+
+| Stage | Design question | Evidence to add |
+| --- | --- | --- |
+| Inspect and organize | Which systems and construction dependencies matter? | Model hierarchy or a simplified diagram |
+| Apply the visual specification | How do white surfaces, blue shadows and line-weight levels separate form and detail? | Annotated still at final output size |
+| Sequence the growth | What should appear first, and what needs a pause? | Short assembly passage with a timeline explanation |
+| Direct attention | How does the viewer identify the system currently being explained? | Highlighted transition or detail |
+| Review the output | Are silhouettes, section surfaces and transitions clear over consecutive frames? | Selected frames and the matching video segment |
+
+## Contribution and credits
+
+Developed by Muwen as part of work at **Eloka**, with reusable local workflow instructions. Final credits will distinguish Muwen's contribution from company-provided models, content and collaborators. The company-related media and underlying workflow files are not distributed in this repository. Portfolio presentation is separate from releasing source materials.
+
+## Presentation structure
+
+1. **Result first:** a short approved animation and two key frames.
+2. **Problem and constraints:** what the audience needed to understand, the source-model constraints and the visual brief.
+3. **One concrete iteration:** a before/after showing how staging, line weight or emphasis improved readability.
+4. **Reusable method:** a plain-language breakdown of the visual specification and sequencing logic.
+5. **Role, credits and limits:** who supplied which material, what Muwen designed, and what can be shared.
+
+## Current status
+
+The written framework is ready. Selected footage, shot-specific details and final contribution credits will complete the case. No new claims about measured efficiency, client outcomes or a public Skill release are made while that evidence is pending.

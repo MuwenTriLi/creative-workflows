@@ -1,29 +1,48 @@
-# VOX / ONE
+# VOX / ONE / Speech to Motion Type
 
 [← All projects](https://github.com/MuwenTriLi/creative-workflows#selected-work)
 
-**Browser tool · Original project 02 · Portfolio draft**
+**06 / Browser tool · Speech timing & kinetic typography**
 
-Develop a workflow for speech and kinetic typography.
+Turn spoken English into editable, timed typography, with control over phrasing, visual emphasis and synchronization.
 
-## Workflow
+**[Open web app ↗](https://vox-one.limuwen9.chatgpt.site)** · No sign-in required
 
-Prepare speech and text → adjust visual timing and style → review the typography sequence.
+![VOX ONE source, transcript, live composition and typography controls](../media/vox-one-editor.png)
+*Current editor before audio import. A paired audio-and-type example is pending.*
 
-## Current evidence and packaging status
+## The problem
 
-A hosted prototype and local source exist. Model or service dependencies must be inspected before execution or packaging.
+Speech-led motion graphics require more than a transcript. Words need readable grouping, accurate timing and a visual rhythm that follows the speaker. A text correction can affect both the layout and timing; treating transcription, typography and animation as disconnected steps makes iteration harder.
 
-## Demo access
+## The approach
 
-[Open the interactive web app ↗](https://vox-one.limuwen9.chatgpt.site) — public; no sign-in required.
+Connect the source audio, editable transcript, word timeline and composition in one workspace. Let creators switch between single-word emphasis and a two-line phrase layout, then tune motion intensity, type scale, safe area and synchronization without changing tools.
 
-## Planned case evidence
+| Creative decision | Visible control | Purpose |
+| --- | --- | --- |
+| What was actually said? | Editable transcript and punctuation | Keep human correction in the workflow |
+| How should viewers read it? | Single word / Build 2 lines | Compare emphasis with phrase readability |
+| How should type feel? | Motion calm, font scale, alignment and color | Tune expression without obscuring speech |
+| Does it follow the voice? | Timeline and sync offset | Inspect and adjust audio/type alignment |
+| How will it be composited? | Black-background MP4 / transparent WebM options | Prepare output for different editing workflows |
 
-A short example with audio and its text animation, plus a recording of the editing controls.
+## Walkthrough
 
-The full case will document the problem, a concrete interaction example, Muwen's contribution and use of AI, supported inputs and outputs, setup instructions, and known limitations. Performance claims and implementation details will be added only after verification.
+1. Bring a short English voice clip in a format listed by the app: WAV, MP3, M4A or MP4.
+2. Review the transcript and correct words or punctuation before refining the visual treatment.
+3. Compare **Single word** with **Build 2 lines**. Adjust alignment, scale and motion calm.
+4. Preview against the audio and check phrase boundaries and sync offset.
+5. Choose the output style that fits the destination editor; check the resulting file before using it in a production edit.
 
-## Source release
+## Design contribution and reusable workflow
 
-This folder currently contains a project brief, not an installable release. Source code, dependencies and example assets will be added after portability and content review. Private local files are not included in this project brief.
+The design focus is the correction loop between speech and presentation: automatic timing is useful only when the creator can revise its wording, phrasing and visual emphasis. The reusable unit is a typography treatment applied to a new voice clip. Video output makes this a creative application; it does not by itself make the project an installable agent Skill.
+
+## Evidence and current limits
+
+The public interface is accessible and its controls are documented here. It identifies the speech engine as **local Whisper Base with word timestamps**; that is the implementation described by the interface, not a new transcription benchmark. This portfolio update did not run speech recognition or verify the advertised 4K MP4/AAC and alpha WebM exports. The current interface is focused on English speech, not visual OCR.
+
+## Case evidence to add
+
+A short authorized voice sample, the corrected transcript, and two typography treatments using the same audio. Include one real correction and its effect on the final sequence, with Muwen's specific role and implementation details.
