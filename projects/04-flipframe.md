@@ -16,7 +16,7 @@ A hosted prototype exists. Source portability, export behavior and setup instruc
 
 ## Demo access
 
-[Existing demo](https://flipframe-motion-lab.limuwen9.chatgpt.site) — access-restricted; not yet a public interview link.
+[Open the interactive web app ↗](https://flipframe-motion-lab.limuwen9.chatgpt.site) — sign-in and site access are currently required.
 
 ## Planned case evidence
 
@@ -26,4 +26,4 @@ The full case will document the problem, a concrete interaction example, Muwen's
 
 ## Source release
 
-This folder currently contains a project brief, not an installable release. Source code, dependencies and example assets will be added after portability and content review. Existing personal files and live sites remain unchanged.
+This folder currently contains a project brief, not an installable release. Source code, dependencies and example assets will be added after portability and content review. Private local files are not included in this project brief.

@@ -6,17 +6,19 @@ I design tools and reusable workflows for visual creation, from mechanical asset
 
 ## Selected work
 
-Start with a case study or open a live tool directly. **Model Breakdown Studio is ready to try without signing in**; the other entries show their current presentation status.
+**Project** opens the project overview and process. **Open** takes you to the product, interactive app or downloadable tool.
 
 | Project | Workflow | Format | Open |
 | --- | --- | --- | --- |
-| **01 · [Steampunk Clockwork](https://github.com/MuwenTriLi/steampunk-clockwork-showcase)** | Compose mechanical modules → tune controls → animate | Blender assets + Skill | [Case study](https://github.com/MuwenTriLi/steampunk-clockwork-showcase) · [Skill](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/skills/clockwork-assembly/SKILL.md) |
-| **02 · [Model Breakdown Studio](https://github.com/MuwenTriLi/model-breakdown-studio)** | Import a model → decompose & highlight → compose animation | Browser tool | **[Interactive web app](https://meshroom-breakdown-studio.limuwen9.chatgpt.site)** · [Case study](https://github.com/MuwenTriLi/model-breakdown-studio) |
+| **01 · [Steampunk Clockwork](https://github.com/MuwenTriLi/steampunk-clockwork-showcase)** | Compose mechanical modules → tune controls → animate | Blender assets + Skill | [Superhive product ↗](https://superhivemarket.com/products/steampunk-clockwork-animated-assets) |
+| **02 · [Model Breakdown Studio](https://github.com/MuwenTriLi/model-breakdown-studio)** | Import a model → decompose & highlight → compose animation | Browser tool | [Open web app ↗](https://meshroom-breakdown-studio.limuwen9.chatgpt.site) |
 | **03 · [Blue / White Architecture Growth](projects/blue-white-architecture-growth.md)** | White-model styling → staged architectural growth | Blender workflow | [Placeholder](projects/blue-white-architecture-growth.md) · media pending |
-| **04 · [Collage Motion](projects/03-collage-motion.md)** | Import images → arrange & time → export video | Browser tool | [Project brief](projects/03-collage-motion.md) |
-| **05 · [FLIPFRAME](projects/04-flipframe.md)** | Arrange content → tune card & spatial motion → preview | Browser tool | [Project brief](projects/04-flipframe.md) |
-| **06 · [VOX / ONE](projects/05-vox-one.md)** | Prepare speech & text → style & time → preview | Browser tool | [Project brief](projects/05-vox-one.md) |
-| **07 · [TRACE / 01](projects/06-trace-01.md)** | Track a target → edit paths & HUD graphics → preview | Browser tool | [Project brief](projects/06-trace-01.md) |
+| **04 · [Collage Motion](projects/03-collage-motion.md)** | Import images → arrange & time → export video | Browser tool | [Download local demo ↓](https://github.com/MuwenTriLi/creative-workflows/raw/refs/heads/main/downloads/collage-motion-local-demo.zip) |
+| **05 · [FLIPFRAME](projects/04-flipframe.md)** | Arrange content → tune card & spatial motion → preview | Browser tool | [Open web app ↗](https://flipframe-motion-lab.limuwen9.chatgpt.site) · access required |
+| **06 · [VOX / ONE](projects/05-vox-one.md)** | Prepare speech & text → style & time → preview | Browser tool | [Open web app ↗](https://vox-one.limuwen9.chatgpt.site) · access required |
+| **07 · [TRACE / 01](projects/06-trace-01.md)** | Track a target → edit paths & HUD graphics → preview | Browser tool | [Open web app ↗](https://trace-01-motion-tracker.limuwen9.chatgpt.site) · access required |
+
+The web apps open in your browser; Model Breakdown Studio is public, while the other three currently require site access. Collage Motion is a downloadable local demo and requires Python 3 and Chrome; setup is included in the ZIP. Architecture Growth remains a placeholder.
 
 ## 01 / Clockwork — detail preview
 
@@ -43,7 +45,7 @@ My design direction and model collection became a reusable Blender library, with
 </tr>
 </table>
 
-**Available now:** Clockwork's visual case study and instruction-based Skill; [Model Breakdown Studio](https://github.com/MuwenTriLi/model-breakdown-studio) presentation and original web-app link; project briefs for four further browser tools. Blue / White Architecture Growth is a placeholder awaiting details and media. The Clockwork Skill has not yet been tested end to end on a new Blender task. The original Model Breakdown Studio web app is public; its recorded walkthrough is pending.
+**Available now:** Clockwork's visual case study and instruction-based Skill; [Model Breakdown Studio](https://github.com/MuwenTriLi/model-breakdown-studio) presentation and original web-app link; project briefs for four further browser tools. Blue / White Architecture Growth is a placeholder awaiting details and media. The Clockwork Skill has not yet been tested end to end on a new Blender task. Model Breakdown Studio has a public web-app entrance. Collage Motion includes a downloadable local demo. Recorded case walkthroughs are still being prepared.
 
 ## Where to find things
 
