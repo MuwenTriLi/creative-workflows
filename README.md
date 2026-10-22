@@ -6,7 +6,7 @@ I design tools and reusable workflows for visual creation, from mechanical asset
 
 ## Selected work
 
-Choose a project below. Each title opens its case study or project brief. The Model Breakdown Studio app link opens the original MESHROOM website; sign-in and site access are currently required.
+Start with a case study or open a live tool directly. **Model Breakdown Studio is ready to try without signing in**; the other entries show their current presentation status.
 
 | Project | Workflow | Format | Open |
 | --- | --- | --- | --- |
@@ -34,7 +34,16 @@ My design direction and model collection became a reusable Blender library, with
 
 [Full case study](https://github.com/MuwenTriLi/steampunk-clockwork-showcase) · [Control reference](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/controls.md) · [Workflow + Skill](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/workflow-skill.md)
 
-**Available now:** Clockwork's visual case study and instruction-based Skill; [Model Breakdown Studio](https://github.com/MuwenTriLi/model-breakdown-studio) presentation and original web-app link; project briefs for four further browser tools. Blue / White Architecture Growth is a placeholder awaiting details and media. The Clockwork Skill has not yet been tested end to end on a new Blender task. The original web app remains access-restricted; its screen recording is pending.
+## 02 / Model Breakdown Studio — interactive preview
+
+<table>
+<tr>
+<td width="48%" valign="top"><a href="https://meshroom-breakdown-studio.limuwen9.chatgpt.site"><img src="media/model-breakdown-live.jpg" alt="Original Model Breakdown Studio showing an exploded keypad and selected control board" width="420"></a></td>
+<td width="52%" valign="top"><b>Turn a 3D model into an explanation.</b><br><br>Inspect components, compose an exploded view, highlight parts and arrange motion.<br><br><b><a href="https://meshroom-breakdown-studio.limuwen9.chatgpt.site">Open the interactive app →</a></b><br>No sign-in required. A built-in model is ready to try.<br><br><a href="https://github.com/MuwenTriLi/model-breakdown-studio">Read the case study</a> · <a href="https://github.com/MuwenTriLi/model-breakdown-studio#try-it-in-one-minute">One-minute walkthrough</a></td>
+</tr>
+</table>
+
+**Available now:** Clockwork's visual case study and instruction-based Skill; [Model Breakdown Studio](https://github.com/MuwenTriLi/model-breakdown-studio) presentation and original web-app link; project briefs for four further browser tools. Blue / White Architecture Growth is a placeholder awaiting details and media. The Clockwork Skill has not yet been tested end to end on a new Blender task. The original Model Breakdown Studio web app is public; its recorded walkthrough is pending.
 
 ## Where to find things
 
@@ -43,4 +52,4 @@ My design direction and model collection became a reusable Blender library, with
 - **[Clockwork case study](https://github.com/MuwenTriLi/steampunk-clockwork-showcase)** contains the renders, motion gallery, controls, design process and commercial product link.
 - **[Clockwork workflow + Skill](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/workflow-skill.md)** explains the reusable method. [SKILL.md](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/skills/clockwork-assembly/SKILL.md) contains the actual instructions.
 
-Projects 01–05 are the first preparation group; 06–07 follow. Architecture-growth details and media are pending. Numbers indicate portfolio order. Repositories are currently private review drafts.
+Projects 01–05 are the first preparation group; 06–07 follow. Architecture-growth details and media are pending. Numbers indicate portfolio order. Clockwork, Model Breakdown Studio and this index are public. Other project entries are briefs or placeholders as marked above.
