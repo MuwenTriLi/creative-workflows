@@ -36,6 +36,16 @@ Developed by Muwen as part of work at **Eloka**, with reusable local workflow in
 4. **Reusable method:** a plain-language breakdown of the visual specification and sequencing logic.
 5. **Role, credits and limits:** who supplied which material, what Muwen designed, and what can be shared.
 
+## Proposed automation and review boundaries
+
+This section is a case framework pending selected footage, not a public agent implementation. **Hypothesis:** a reusable visual specification and construction-aware sequence can keep architectural explanation consistent across shots.
+
+After the creator confirms the visual reference and system hierarchy, repeatable styling and sequencing are candidates for automation. The creator retains decisions about cut plane, construction dependencies, highlighted system, camera and readable pauses. A change that distorts scale, replaces a reference or implies a different construction relationship needs an explicit preview and review.
+
+**Acceptance:** inspect the actual encoded output and consecutive frames around risky transitions. External outlines and detail lines have distinct weights; section faces show coherent construction; shadows and furniture remain consistent with the selected reference; curves remain smooth at final resolution; fixed parts do not stretch to simulate assembly; there are no unresolved intersections, flicker or frame jumps. These are intended criteria, not results verified by this placeholder page.
+
+**Evidence and next decision:** add one authorized shot, a before/after adjustment and its review notes. Expand the recipe only after it works on a second shot under the same visual specification; iterate where geometry or transitions break; stop reuse of a rule that damages scale or construction logic. Company materials and local Skill source remain outside this repository. [Control model and handoff](../docs/creative-control.md).
+
 ## Current status
 
 The written framework is ready. Selected footage, shot-specific details and final contribution credits will complete the case. No new claims about measured efficiency, client outcomes or a public Skill release are made while that evidence is pending.

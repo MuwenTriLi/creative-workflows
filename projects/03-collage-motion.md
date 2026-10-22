@@ -41,6 +41,18 @@ The project brings layout, sequencing and motion controls into a focused creativ
 
 This is a browser application with a repeatable workflow. An installable agent Skill is not included in this project.
 
+## Automation, creator control and delivery
+
+**Hypothesis:** a shared layout and timing system can reduce repetitive per-layer adjustments while preserving editorial choices. This is a design hypothesis; comparative creator testing has not been performed.
+
+**Current behavior:** after media import, the editor calculates grid layout and motion from the selected parameters. The creator controls source selection, ordering, crops, timing and output format. It starts empty and paused. AI assisted implementation; the app does not autonomously choose the story or its media.
+
+**Proposed agent behavior:** prepare a layout and timing draft within the selected brief, then show it for adjustment. Replacing chosen media, cropping a key subject or materially changing the sequence needs review. Routine recalculation within accepted parameters should proceed directly. A plan preview and revision rollback are proposed extensions, not existing guarantees.
+
+**Acceptance:** key subjects are not unintentionally cropped, holds allow the intended reading time, no source goes missing, and the decoded export matches the reviewed composition, duration and dimensions. Technical encoding success alone does not establish visual quality.
+
+**Next test / decision:** use the same authorized media and brief to compare the creator's existing workflow with this editor. Record one crop/timing correction and the result. Expand if a new creator completes the task with an acceptable output; iterate if controls or timing cause repeated correction; stop automatic layout for cases where it consistently obscures the intended subject. [Control model and handoff](../docs/creative-control.md).
+
 ## Evidence and current limits
 
 - The export path was tested with temporary test images: a **720p, five-second H.264** MP4 with **150 frames at 30 fps** was fully decoded successfully. The editor now starts empty and paused; test graphics are not bundled or loaded. English default, project navigation and the WebCodecs MP4 export repair are retained.

@@ -1,8 +1,12 @@
 # Creative Workflows / Muwen Li
 
-I design tools and reusable workflows for visual creation, from mechanical assets and controllable motion to browser-based creative interfaces.
+**I build from hands-on visual production: I know where complex creative work gets stuck, and use AI and code to turn those bottlenecks into usable tools.**
 
-**7 projects · Blender assets, architectural animation and browser-based creative tools**
+My focus is the connection between production craft and product decisions: automate repeatable work, keep creative choices editable, and make the result inspectable before delivery.
+
+**7 projects · A commercial asset library, interactive prototypes and an architectural case in preparation**
+
+**Start here:** [Clockwork: production experience → product decisions](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/production-case.md) · [Try Model Breakdown](https://meshroom-breakdown-studio.limuwen9.chatgpt.site) · [Automation, creator control & delivery checks](docs/creative-control.md)
 
 ## Selected work
 
@@ -53,6 +57,14 @@ My design direction and model collection became a reusable Blender library, with
 | Layout & rhythm | Sequence & pacing | Speech & type | Tracking & annotation |
 
 These are current editor views. Each project page provides the problem, design choices, a short walkthrough and verification limits. Selected final films and process recordings will be added as they are prepared; no measured efficiency or user-study results are claimed.
+
+## How I turn production experience into a tool
+
+Start with a specific production decision, build the smallest usable workflow around it, then inspect both the result and the creator's ability to correct it. Each case identifies **what the system handles, what the creator decides, and what must be checked before delivery**.
+
+Clockwork is the most complete existing production-to-product case: original models and design standards became editable mechanisms and a packaged asset library. Model Breakdown is the quickest interactive example. The remaining tools explore distinct parts of a creative pipeline.
+
+**Evidence is labeled:** existing product and working controls; documented checks; proposed agent behavior and validation work still to do. AI-assisted development is part of these projects. An autonomous agent is not claimed for every browser tool. [See the control model and engineering handoff](docs/creative-control.md).
 
 ## Where to find things
 

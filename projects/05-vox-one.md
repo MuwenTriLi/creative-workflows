@@ -39,6 +39,18 @@ Connect the source audio, editable transcript, word timeline and composition in 
 
 The design focus is the correction loop between speech and presentation: automatic timing is useful only when the creator can revise its wording, phrasing and visual emphasis. The reusable unit is a typography treatment applied to a new voice clip. Video output makes this a creative application; it does not by itself make the project an installable agent Skill.
 
+## Automation, creator control and delivery
+
+**Hypothesis:** connecting transcript correction, phrase layout and timing reduces the cost of revising speech-led motion graphics. This has not yet been established by comparative testing.
+
+**Current behavior:** the interface describes automatic local transcription and word timing, followed by editable text and visual controls. This review did not run the recognizer. The creator owns wording, punctuation, phrase meaning, emphasis and final sync.
+
+**Proposed agent behavior:** generate a first transcript and layout, make doubtful spans easy to inspect against the audio, and apply approved style settings. An agent should request review before rewriting meaning, removing words or substituting names. A confidence display, semantic approval and revision history are proposed requirements, not verified current UI.
+
+**Acceptance:** names and wording match the source; grouping preserves meaning; text stays inside the safe area and remains readable; the full encoded output is checked against audio for synchronization. Define the acceptable sync tolerance for the intended use before the test. A plausible transcript or attractive screenshot is insufficient evidence.
+
+**Next test / decision:** use a short authorized clip with a proper noun, a pause and a phrase boundary. Record recognition errors, correction time, sync adjustment and exported playback. Expand only when these are correctable and the output passes; iterate if corrections are awkward; stop an automatic phrasing rule when it changes meaning. [Control model and handoff](../docs/creative-control.md).
+
 ## Evidence and current limits
 
 The public interface is accessible and its controls are documented here. It identifies the speech engine as **local Whisper Base with word timestamps**; that is the implementation described by the interface, not a new transcription benchmark. This portfolio update did not run speech recognition or verify the advertised 4K MP4/AAC and alpha WebM exports. The current interface is focused on English speech, not visual OCR.

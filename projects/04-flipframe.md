@@ -40,6 +40,18 @@ Use one ordered **Visual Archive** as the sequence source, with a spatial previe
 
 The design focus is turning a motion treatment into an editable system: content order, readable dwell time and spatial movement are separate decisions. The sequence can be reused with a new media collection while retaining a consistent visual rhythm. This is a browser tool; the current portfolio does not include an installable agent Skill or a separate source release.
 
+## Automation, creator control and delivery
+
+**Hypothesis:** separating fast scanning from readable holds makes spatial motion reusable without sacrificing the content. This remains a hypothesis to test with creators and viewers.
+
+**Current behavior:** the selected sequence and parameters drive card motion. The creator determines order, showcase range, hold duration and source framing. AI-assisted development does not imply an autonomous editor in the published tool.
+
+**Proposed agent behavior:** suggest a timing draft from a selected sequence and intended duration. Keep the editorial order and IN/OUT range fixed unless the creator reviews a change. Show any crop and dwell-time change on the affected card. Version comparison, semantic locks and automatic readability checks are proposed, not implemented claims.
+
+**Acceptance:** the intended cards appear in the right order; subjects remain framed; each key card can be read at playback speed; transitions do not jump or obscure the content; the encoded output matches the reviewed timing. Export reliability is still to verify here.
+
+**Next test / decision:** record the same sequence with two dwell settings, ask viewers which content they can identify, and document the creator's correction steps. Expand the timing preset if readability and editability both hold; iterate on rushed cards or disorienting transitions; stop an automatic timing rule if it sacrifices the story to fit duration. [Control model and handoff](../docs/creative-control.md).
+
 ## Evidence and current limits
 
 The public editor, existing media archive and parameter interface are available to inspect. The app exposes an export panel, but its full export workflow and 4K output have not been independently rechecked for this case. No production reliability or measured efficiency claim is made.

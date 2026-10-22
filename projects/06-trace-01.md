@@ -39,10 +39,6 @@ Bring source video, frame navigation, target positioning and HUD design into one
 
 The design focus is combining motion analysis with visual hierarchy: locating a subject, deciding when to reveal detail, and controlling how much information appears. The same annotation recipe can be adapted to another clip. This entry presents a browser prototype and its workflow, not an installable agent Skill.
 
-## Evidence and current limits
+## Automation, creator control and delivery
 
-The public editor and its positioning, timing and appearance controls are available. Tracking accuracy, occlusion handling and exported-video quality have not been independently benchmarked for this portfolio. Start with a short, simple clip; a clean interface is not evidence that difficult tracking cases work reliably. No measured accuracy or time-saving claim is included.
-
-## Case evidence to add
-
-Show the original clip beside the annotated result, then a short recording of one tracking adjustment and one readability decision. A difficult frame or a corrected drift will communicate the product reasoning better than an uninterrupted ideal result alone.
+**Hypothesis:** reviewing a target path and its annotation in one place improves the creator's ability to catch drift and control attention. Tracking accuracy and workflow efficienc…537 tokens truncated…t alone.
