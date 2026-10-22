@@ -1,29 +1,15 @@
-# MESHROOM
+# Model Breakdown Studio
 
-[← All projects](https://github.com/MuwenTriLi/creative-workflows#selected-work)
+**Portfolio 02 · Interactive browser tool · Previously MESHROOM**
 
-**Browser tool · Original project 06 · Portfolio draft**
+Import a 3D model, compose exploded views and component highlights, and export an animation.
 
-Explore a 3D model through decomposition, highlighting and presentation animation.
+**[Open the project and source on GitHub](https://github.com/MuwenTriLi/model-breakdown-studio)**
 
-## Workflow
+The original studio layout is retained. A new right-side sample shelf supports click or drag import. Three procedural examples are included while curated GLBs are being prepared.
 
-Import a model → adjust decomposition and highlighting → compose a presentation animation.
+Verified locally: sample GLB import, orientation, named components, explode/highlight, 17 automated geometry/sample tests, production build, and a two-second 720p H.264 export.
 
-## Current evidence and packaging status
+This is a browser tool with a documented reusable workflow; an installable agent Skill is not included. The repository is private, and a public interactive demo URL has not been deployed.
 
-A hosted prototype exists and its source has been retrieved. The portable source package and runtime dependencies still require review.
-
-## Demo access
-
-[Existing demo](https://meshroom-breakdown-studio.limuwen9.chatgpt.site) — access-restricted; not yet a public interview link.
-
-## Planned case evidence
-
-A short screen recording showing import, one meaningful adjustment, and the resulting animation.
-
-The full case will document the problem, a concrete interaction example, Muwen's contribution and use of AI, supported inputs and outputs, setup instructions, and known limitations. Performance claims and implementation details will be added only after verification.
-
-## Source release
-
-This folder currently contains a project brief, not an installable release. Source code, dependencies and example assets will be added after portability and content review. Existing personal files and live sites remain unchanged.
+[Model handoff guide](https://github.com/MuwenTriLi/model-breakdown-studio/blob/main/docs/model-preparation.md) · [Workflow](https://github.com/MuwenTriLi/model-breakdown-studio/blob/main/docs/workflow.md) · [Implementation](https://github.com/MuwenTriLi/model-breakdown-studio/blob/main/docs/architecture.md)

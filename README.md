@@ -11,8 +11,8 @@ Choose a project below. Each title opens its case study or project brief.
 | Project | Workflow | Format | Open |
 | --- | --- | --- | --- |
 | **01 · [Steampunk Clockwork](https://github.com/MuwenTriLi/steampunk-clockwork-showcase)** | Compose mechanical modules → tune controls → animate | Blender assets + Skill | [Case study](https://github.com/MuwenTriLi/steampunk-clockwork-showcase) · [Skill](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/skills/clockwork-assembly/SKILL.md) |
-| **02 · [Blue / White Architecture Growth](projects/blue-white-architecture-growth.md)** | White-model styling → staged architectural growth | Blender workflow | [Placeholder](projects/blue-white-architecture-growth.md) · media pending |
-| **03 · [MESHROOM](projects/02-meshroom.md)** | Import a model → decompose & highlight → compose motion | Browser tool | [Project brief](projects/02-meshroom.md) |
+| **02 · [Model Breakdown Studio](https://github.com/MuwenTriLi/model-breakdown-studio)** | Import a model → decompose & highlight → export animation | Interactive browser tool | [Project + source](https://github.com/MuwenTriLi/model-breakdown-studio) · local demo ready |
+| **03 · [Blue / White Architecture Growth](projects/blue-white-architecture-growth.md)** | White-model styling → staged architectural growth | Blender workflow | [Placeholder](projects/blue-white-architecture-growth.md) · media pending |
 | **04 · [Collage Motion](projects/03-collage-motion.md)** | Import images → arrange & time → export video | Browser tool | [Project brief](projects/03-collage-motion.md) |
 | **05 · [FLIPFRAME](projects/04-flipframe.md)** | Arrange content → tune card & spatial motion → preview | Browser tool | [Project brief](projects/04-flipframe.md) |
 | **06 · [VOX / ONE](projects/05-vox-one.md)** | Prepare speech & text → style & time → preview | Browser tool | [Project brief](projects/05-vox-one.md) |
@@ -34,11 +34,12 @@ My design direction and model collection became a reusable Blender library, with
 
 [Full case study](https://github.com/MuwenTriLi/steampunk-clockwork-showcase) · [Control reference](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/controls.md) · [Workflow + Skill](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/workflow-skill.md)
 
-**Available now:** Clockwork's visual case study and instruction-based Skill; project briefs for the five browser tools; a placeholder for Blue / White Architecture Growth, awaiting details and media. The Skill has not yet been tested end to end on a new Blender task. Browser-tool releases are being prepared; existing demos remain access-restricted.
+**Available now:** Clockwork's visual case study and instruction-based Skill; [Model Breakdown Studio](https://github.com/MuwenTriLi/model-breakdown-studio) source and a locally tested interactive demo; project briefs for four further browser tools. Blue / White Architecture Growth is a placeholder awaiting details and media. The Clockwork Skill has not yet been tested end to end on a new Blender task. Public interactive demo links are not yet released.
 
 ## Where to find things
 
 - **This repository** is the portfolio index. The [projects folder](projects/) contains the browser-tool briefs and the architecture-growth placeholder, with current evidence and access information where available.
+- **[Model Breakdown Studio](https://github.com/MuwenTriLi/model-breakdown-studio)** contains the interactive app source, sample shelf, setup guide and model preparation instructions.
 - **[Clockwork case study](https://github.com/MuwenTriLi/steampunk-clockwork-showcase)** contains the renders, motion gallery, controls, design process and commercial product link.
 - **[Clockwork workflow + Skill](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/workflow-skill.md)** explains the reusable method. [SKILL.md](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/skills/clockwork-assembly/SKILL.md) contains the actual instructions.
 
