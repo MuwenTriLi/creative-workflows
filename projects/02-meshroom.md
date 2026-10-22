@@ -1,15 +1,15 @@
-# Model Breakdown Studio
+# Model Breakdown Studio / MESHROOM
 
-**Portfolio 02 · Interactive browser tool · Previously MESHROOM**
+**Portfolio 02 · Browser tool and reusable creative workflow**
 
-Import a 3D model, compose exploded views and component highlights, and export an animation.
+Import a model, inspect its components, compose an exploded view and highlight sequence, and produce a presentation animation.
 
-**[Open the project and source on GitHub](https://github.com/MuwenTriLi/model-breakdown-studio)**
+## [▶ Open the original interactive web app](https://meshroom-breakdown-studio.limuwen9.chatgpt.site)
 
-The original studio layout is retained. A new right-side sample shelf supports click or drag import. Three procedural examples are included while curated GLBs are being prepared.
+ChatGPT sign-in and site access are currently required. The app opens on its own page; the GitHub case study is the presentation and documentation entry point.
 
-Verified locally: sample GLB import, orientation, named components, explode/highlight, 17 automated geometry/sample tests, production build, and a two-second 720p H.264 export.
+**[Read the GitHub project presentation](https://github.com/MuwenTriLi/model-breakdown-studio)**
 
-This is a browser tool with a documented reusable workflow; an installable agent Skill is not included. The repository is private, and a public interactive demo URL has not been deployed.
+Screen recording and selected visuals are pending. The [showcase folder](https://github.com/MuwenTriLi/model-breakdown-studio/tree/main/showcase) is ready for them, with a short [walkthrough outline](https://github.com/MuwenTriLi/model-breakdown-studio/blob/main/showcase/walkthrough.md).
 
-[Model handoff guide](https://github.com/MuwenTriLi/model-breakdown-studio/blob/main/docs/model-preparation.md) · [Workflow](https://github.com/MuwenTriLi/model-breakdown-studio/blob/main/docs/workflow.md) · [Implementation](https://github.com/MuwenTriLi/model-breakdown-studio/blob/main/docs/architecture.md)
+[All projects](https://github.com/MuwenTriLi/creative-workflows#selected-work) · [Model preparation](https://github.com/MuwenTriLi/model-breakdown-studio/blob/main/docs/model-preparation.md)
