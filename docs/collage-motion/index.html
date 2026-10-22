@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Collage Motion — Layout, rhythm, export</title><meta name="description" content="A browser collage editor by Muwen Li. Arrange images and video, tune per-cell rhythm, preview and export. Try the built-in sample or bring your own media."><link rel="stylesheet" href="./visualize-base.css"><script src="./lucide.js"></script><style>html,body{margin:0;background:#000!important;color-scheme:dark}body{box-sizing:border-box;padding:12px}*,*:before,*:after{box-sizing:border-box}</style></head><body>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Collage Motion — Layout, rhythm, export</title><meta name="description" content="A browser collage editor by Muwen Li. Arrange images and video, tune per-cell rhythm, preview and export. Import your own images and clips into an empty canvas."><link rel="stylesheet" href="./visualize-base.css"><script src="./lucide.js"></script><style>html,body{margin:0;background:#000!important;color-scheme:dark}body{box-sizing:border-box;padding:12px}*,*:before,*:after{box-sizing:border-box}</style></head><body>
 
 <style>
 .portfolio-bar{max-width:1680px;margin:0 auto 14px;padding:18px 22px;border:1px solid #353a3d;background:#101417;color:#f3f4f3;font-family:Arial,sans-serif;display:flex;gap:20px;justify-content:space-between;align-items:center;flex-wrap:wrap}
@@ -7,8 +7,8 @@
 </style>
 <header class="portfolio-bar">
   <div><h1>Collage Motion <span style="color:#a7b1b7;font-size:13px;font-weight:normal">/ Muwen Li</span></h1>
-  <p>Arrange media → tune movement &amp; per-cell timing → export video. Start with the geometric sample below, or use <b>Clear all</b> and import your own images or clips. Media stays in this browser tab.</p></div>
-  <nav class="portfolio-nav" aria-label="Project navigation"><button type="button" id="portfolio-sample">Add demo images</button><a href="https://github.com/MuwenTriLi/creative-workflows/blob/main/projects/03-collage-motion.md">Project overview ↗</a><a href="https://github.com/MuwenTriLi/creative-workflows#selected-work">All projects ↗</a></nav>
+  <p>Arrange media → tune movement &amp; per-cell timing → export video. Choose your images or clips to begin. The canvas starts empty. Media stays in this browser tab.</p></div>
+  <nav class="portfolio-nav" aria-label="Project navigation"><a href="https://github.com/MuwenTriLi/creative-workflows/blob/main/projects/03-collage-motion.md">Project overview ↗</a><a href="https://github.com/MuwenTriLi/creative-workflows#selected-work">All projects ↗</a></nav>
 </header>
 <div id="landscape-collage-editor" lang="zh-CN">
   <style>
@@ -1628,7 +1628,7 @@
         repeatPlacementMode: "scatter",
         videoRowOffsetEnabled: true,
         videoRowOffset: 1,
-        playing: true,
+        playing: false,
         timeMs: 0,
         mediaTimeMs: 0,
         revealTimeMs: 0,
@@ -7308,39 +7308,6 @@
       setStatus("准备就绪");
       refreshLanguage();
       state.renderAnimation = requestAnimationFrame(drawFrame);
-
-      // Original procedural graphics for the public demo; no external media or API.
-      const demoButton = document.querySelector('#portfolio-sample');
-      async function addDemoImages() {
-        demoButton.disabled = true;
-        try {
-          const files = [];
-          const colors = ['#d8ff6a','#75c8ff','#ece9e1'];
-          for (let i = 0; i < 9; i++) {
-            const c = document.createElement('canvas'); c.width = 640; c.height = 400;
-            const g = c.getContext('2d');
-            g.fillStyle = i % 3 === 2 ? '#e7e7df' : '#151d22'; g.fillRect(0,0,640,400);
-            const ink = i % 3 === 2 ? '#243137' : colors[i%3];
-            g.strokeStyle = ink; g.fillStyle = ink; g.lineWidth = 3;
-            if (i % 3 === 0) {
-              for(let r=0;r<6;r++){g.beginPath();g.ellipse(320,198,45+r*28,45+r*16,Math.PI/6,0,Math.PI*2);g.stroke();}
-            } else if (i % 3 === 1) {
-              for(let k=0;k<7;k++){g.save();g.translate(180+k*40,205);g.rotate(-.55);g.fillRect(-9,-90,18,180);g.restore();}
-            } else {
-              for(let y=0;y<4;y++)for(let x=0;x<7;x++){g.beginPath();g.arc(160+x*52,100+y*52,8+((x+y+i)%3)*5,0,Math.PI*2);g.fill();}
-            }
-            g.font='14px monospace'; g.fillText('COLLAGE MOTION / SAMPLE',28,32);
-            g.font='bold 26px monospace'; g.fillText(String(i+1).padStart(2,'0'),28,370);
-            g.font='13px monospace'; g.fillText(['ORBIT','RHYTHM','MATRIX'][i%3],480,370);
-            const blob=await new Promise(resolve=>c.toBlob(resolve,'image/png'));
-            files.push(new File([blob], `demo-${String(i+1).padStart(2,'0')}.png`, {type:'image/png',lastModified:0}));
-          }
-          await addFiles(files);
-        } catch(error) { console.error('Demo load failed',error); demoButton.textContent='Retry demo images'; }
-        finally { demoButton.disabled=false; }
-      }
-      demoButton.addEventListener('click',()=>void addDemoImages());
-      void addDemoImages();
 
     })();
   </script>

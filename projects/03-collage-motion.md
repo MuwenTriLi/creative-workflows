@@ -8,8 +8,8 @@ Turn a collection of images and clips into a timed collage, with direct control 
 
 **[Open web app ↗](https://muwentrili.github.io/creative-workflows/collage-motion/)** · [Browse the source](../docs/collage-motion/) · [Local backup ZIP](../downloads/collage-motion-local-demo.zip)
 
-![Collage Motion editor with original geometric demo images](../media/collage-motion-editor.png)
-*Live editor with procedural sample graphics. These are demonstration inputs, not a finished portfolio film.*
+![Collage Motion editor with an empty canvas ready for media](../media/collage-motion-editor.png)
+*The editor opens with an empty canvas. Import your own images or clips to create a composition.*
 
 ## The problem
 
@@ -29,10 +29,10 @@ Put the media library, canvas and timing controls in one browser workspace. Layo
 
 ## Try it in one minute
 
-1. Open the app in desktop Chrome. Nine geometric samples are already loaded.
+1. Open the app in desktop Chrome. Choose **Choose assets**, or drag your images/clips into the import area.
 2. In **Layout**, change the row or column count and compare the composition.
 3. Open **Motion** or **Flash**, adjust one timing control, then use play/pause and the timeline to inspect the change.
-4. To use your own media, choose **Clear all**, then **Choose assets**, or drag images/clips into the import area.
+4. Refine an individual asset, or use **Clear all** to start a new composition.
 5. In **Export**, start with a short **720p MP4**. Save the result and compare it with the preview.
 
 ## Design contribution and reusable workflow
@@ -41,15 +41,9 @@ The project brings layout, sequencing and motion controls into a focused creativ
 
 This is a browser application with a repeatable workflow. An installable agent Skill is not included in this project.
 
-## Exported sample
-
-![Animated collage exported from the public-demo code](../media/collage-motion-demo.gif)
-
-*GIF preview of the actual five-second export, using the built-in geometric sample. This demonstrates the output path; a creator-selected final example will follow.*
-
 ## Evidence and current limits
 
-- The current demo exported a **720p, five-second H.264** MP4 with **150 frames at 30 fps**. The file was fully decoded successfully. Sample loading and grid adjustment were checked in the browser. The demo adds a sample starter, English default, navigation and a repair that prioritizes the existing WebCodecs MP4 path over the failing MediaRecorder remux path.
+- The export path was tested with temporary test images: a **720p, five-second H.264** MP4 with **150 frames at 30 fps** was fully decoded successfully. The editor now starts empty and paused; test graphics are not bundled or loaded. English default, project navigation and the WebCodecs MP4 export repair are retained.
 - Media is read through browser file inputs and object URLs; this static app has no media-upload backend. Keep originals separately: reloading clears the working session.
 - Export support depends on browser codecs and device resources. Start in desktop Chrome or Edge. Long clips, large mixed-media projects and 4K output still need broader testing.
 - A creator-selected finished example and narrated workflow recording will be added next. No measured time-saving or user-research result is claimed here.

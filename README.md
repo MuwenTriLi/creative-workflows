@@ -18,7 +18,7 @@ I design tools and reusable workflows for visual creation, from mechanical asset
 | **06 · [VOX / ONE](projects/05-vox-one.md)** | Speech/type synchronization → editable timed typography | Browser tool | [Open web app ↗](https://vox-one.limuwen9.chatgpt.site) |
 | **07 · [TRACE / 01](projects/06-trace-01.md)** | Moving subjects need context → tracking & readable overlays | Browser tool | [Open web app ↗](https://trace-01-motion-tracker.limuwen9.chatgpt.site) |
 
-**Try first:** Model Breakdown Studio and Collage Motion include built-in examples. All five browser tools have public entrances; VOX / ONE and TRACE / 01 need your own input media. Architecture Growth currently has a written case framework, with video to follow.
+**Try first:** Model Breakdown Studio includes a built-in model. Collage Motion starts with an empty canvas for your own images and clips. All five browser tools have public entrances; VOX / ONE and TRACE / 01 also need your own input media. Architecture Growth currently has a written case framework, with video to follow.
 
 ## 01 / Clockwork — detail preview
 
