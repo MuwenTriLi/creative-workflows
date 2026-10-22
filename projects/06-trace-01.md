@@ -41,4 +41,20 @@ The design focus is combining motion analysis with visual hierarchy: locating a 
 
 ## Automation, creator control and delivery
 
-**Hypothesis:** reviewing a target path and its annotation in one place improves the creator's ability to catch drift and control attention. Tracking accuracy and workflow efficienc…537 tokens truncated…t alone.
+**Hypothesis:** reviewing a target path and its annotation in one place improves the creator's ability to catch drift and control attention. Tracking accuracy and workflow efficiency remain to be measured.
+
+**Current behavior:** the UI exposes tracking, smoothing, static pinning and HUD timing controls. The creator selects the subject and decides whether tracking or a fixed annotation is appropriate. Tracking behavior on difficult clips has not been benchmarked here.
+
+**Proposed agent behavior:** propose a path for the selected target, identify suspect intervals for review, then apply accepted graphic settings. A target switch or an occluded interval should be surfaced, not silently accepted as a correct result. Per-frame confidence, an editable correction path and retained revisions are design requirements to explore; their implementation is not claimed.
+
+**Acceptance:** inspect target identity across the complete sequence, especially occlusions and re-entry; the path does not jump to another subject; HUD text stays readable and does not obscure essential action; the encoded output preserves the reviewed timing and frame alignment. A smooth line can still be attached to the wrong object.
+
+**Next test / decision:** compare a simple high-contrast clip with one containing an occlusion. Record wrong-target intervals, correction effort and the final output. Expand to harder inputs only after failure detection and recovery work; iterate on repeated drift; use a static annotation or stop automatic tracking when target identity cannot be maintained. [Control model and handoff](../docs/creative-control.md).
+
+## Evidence and current limits
+
+The public editor and its positioning, timing and appearance controls are available. Tracking accuracy, occlusion handling and exported-video quality have not been independently benchmarked for this portfolio. Start with a short, simple clip; a clean interface is not evidence that difficult tracking cases work reliably. No measured accuracy or time-saving claim is included.
+
+## Case evidence to add
+
+Show the original clip beside the annotated result, then a short recording of one tracking adjustment and one readability decision. A difficult frame or a corrected drift will communicate the product reasoning better than an uninterrupted ideal result alone.
