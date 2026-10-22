@@ -24,9 +24,9 @@ Choose a project below. Each title opens its case study or project brief.
 
 <table>
 <tr>
-<td width="33%" align="center" valign="top"><a href="https://github.com/MuwenTriLi/steampunk-clockwork-showcase#selected-forms"><img src="media/clockwork-detail.png" alt="Original CLK08 render showing exposed gears and layered mechanical details" height="180"></a><br><b>Mechanical detail</b><br><sub>Original render · layered gears and frames</sub></td>
-<td width="33%" align="center" valign="top"><a href="https://github.com/MuwenTriLi/steampunk-clockwork-showcase#motion-is-part-of-the-design"><img src="media/clockwork-gear-motion.gif" alt="Animated CLK08 turntable showing the exposed clock mechanism" height="180"></a><br><b>Motion study</b><br><sub>Animated turntable · exposed movement</sub></td>
-<td width="33%" align="center" valign="top"><a href="https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/controls.md#opening-and-folding--clk32-aperture"><img src="media/clockwork-opening-motion.gif" alt="Animated CLK32 canopy showing the linked opening mechanism" height="180"></a><br><b>Controlled opening</b><br><sub>Linked mechanism · adjustable speed and phase</sub></td>
+<td width="46%" align="center" valign="top"><a href="media/clockwork-collection.png"><img src="media/clockwork-collection.png" alt="Original rendered Clockwork collection showing clocks and mechanical assemblies" height="180"></a><br><b>Collection overview</b><br><sub>Original render · clocks and mechanical assemblies</sub></td>
+<td width="27%" align="center" valign="top"><a href="https://github.com/MuwenTriLi/steampunk-clockwork-showcase#motion-is-part-of-the-design"><img src="media/clockwork-gear-motion.gif" alt="Animated CLK08 turntable showing the exposed clock mechanism" height="180"></a><br><b>Motion study</b><br><sub>Animated turntable · exposed movement</sub></td>
+<td width="27%" align="center" valign="top"><a href="https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/controls.md#opening-and-folding--clk32-aperture"><img src="media/clockwork-opening-motion.gif" alt="Animated CLK32 canopy showing the linked opening mechanism" height="180"></a><br><b>Controlled opening</b><br><sub>Linked mechanism · adjustable speed and phase</sub></td>
 </tr>
 </table>
 
