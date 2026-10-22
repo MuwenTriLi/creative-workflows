@@ -16,7 +16,9 @@ A hosted prototype exists. Source portability, export behavior and setup instruc
 
 ## Demo access
 
-[Open the interactive web app ↗](https://flipframe-motion-lab.limuwen9.chatgpt.site) — sign-in and site access are currently required.
+[Open the interactive web app ↗](https://flipframe-motion-lab.limuwen9.chatgpt.site) — public; no sign-in required.
+
+The hosted interface currently displays **SPECTRA**; this is the same FLIPFRAME project.
 
 ## Planned case evidence
 

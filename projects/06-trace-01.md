@@ -16,7 +16,7 @@ A hosted prototype exists. The source package, supported inputs and export behav
 
 ## Demo access
 
-[Open the interactive web app ↗](https://trace-01-motion-tracker.limuwen9.chatgpt.site) — sign-in and site access are currently required.
+[Open the interactive web app ↗](https://trace-01-motion-tracker.limuwen9.chatgpt.site) — public; no sign-in required.
 
 ## Planned case evidence
 

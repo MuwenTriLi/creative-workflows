@@ -16,7 +16,7 @@ A hosted prototype and local source exist. Model or service dependencies must be
 
 ## Demo access
 
-[Open the interactive web app ↗](https://vox-one.limuwen9.chatgpt.site) — sign-in and site access are currently required.
+[Open the interactive web app ↗](https://vox-one.limuwen9.chatgpt.site) — public; no sign-in required.
 
 ## Planned case evidence
 
