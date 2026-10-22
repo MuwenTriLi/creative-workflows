@@ -1,5 +1,7 @@
 # MESHROOM
 
+[← All projects](https://github.com/MuwenTriLi/creative-workflows#selected-work)
+
 **Browser tool · Original project 06 · Portfolio draft**
 
 Explore a 3D model through decomposition, highlighting and presentation animation.

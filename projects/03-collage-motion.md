@@ -1,5 +1,7 @@
 # Collage Motion
 
+[← All projects](https://github.com/MuwenTriLi/creative-workflows#selected-work)
+
 **Browser tool · Original project 01 · Portfolio draft**
 
 Turn imported images into an animated collage with layout and flash controls.

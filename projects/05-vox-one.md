@@ -1,5 +1,7 @@
 # VOX / ONE
 
+[← All projects](https://github.com/MuwenTriLi/creative-workflows#selected-work)
+
 **Browser tool · Original project 02 · Portfolio draft**
 
 Develop a workflow for speech and kinetic typography.
