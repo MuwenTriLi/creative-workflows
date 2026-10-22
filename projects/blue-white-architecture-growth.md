@@ -2,7 +2,7 @@
 
 [← All projects](https://github.com/MuwenTriLi/creative-workflows#selected-work)
 
-**Portfolio project 02 · Blender animation workflow · Placeholder**
+**Portfolio project 03 · Blender animation workflow · Placeholder**
 
 A white-model architectural growth animation workflow, using blue shadows and staged assembly to explain structure and construction sequence.
 
