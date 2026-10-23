@@ -4,7 +4,7 @@
 
 My focus is the connection between production craft and product decisions: automate repeatable work, keep creative choices editable, and make the result inspectable before delivery.
 
-**7 projects · A commercial asset library, interactive prototypes and an architectural case in preparation**
+**7 projects · A commercial asset library, interactive tools and a company production case**
 
 **Start here:** [Production → product: Clockwork](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/production-case.md) · [Feedback → iteration: Collage Motion](projects/03-collage-motion.md#from-prototype-to-a-usable-first-session) · [Try Model Breakdown](https://meshroom-breakdown-studio.limuwen9.chatgpt.site)
 
@@ -17,8 +17,8 @@ My focus is the connection between production craft and product decisions: autom
 | Project | Problem → approach | Format | Open |
 | --- | --- | --- | --- |
 | **01 · [Steampunk Clockwork](https://github.com/MuwenTriLi/steampunk-clockwork-showcase)** | Repeated mechanical setup → reusable assemblies & editable motion | Blender assets + Skill | [Superhive product ↗](https://superhivemarket.com/products/steampunk-clockwork-animated-assets) |
-| **02 · [Model Breakdown Studio](https://github.com/MuwenTriLi/model-breakdown-studio)** | Hard-to-read 3D assemblies → explode, isolate & explain | Browser tool | [Open web app ↗](https://meshroom-breakdown-studio.limuwen9.chatgpt.site) |
-| **03 · [Blue / White Architecture Growth](projects/blue-white-architecture-growth.md)** | Dense architectural scenes → consistent style & staged growth | Blender workflow | Media pending |
+| **02 · [Model Breakdown Studio](https://github.com/MuwenTriLi/model-breakdown-studio)** | Hard-to-read 3D assemblies → explode, isolate & explain | MIT code + browser tool | [Open web app ↗](https://meshroom-breakdown-studio.limuwen9.chatgpt.site) |
+| **03 · [Blue / White Architecture Growth](projects/blue-white-architecture-growth.md)** | Company aesthetics → reusable styling & staged construction | Company workflow case | [Watch selected films](docs/architecture-growth-media.md#watch-the-selected-films) |
 | **04 · [Collage Motion](projects/03-collage-motion.md)** | Repetitive collage layout & timing → grid and rhythm controls | Browser tool | [Open web app ↗](https://muwentrili.github.io/creative-workflows/collage-motion/) |
 | **05 · [FLIPFRAME](projects/04-flipframe.md)** | Media sequencing & pacing → editable spatial presentation | Browser tool | [Open web app ↗](https://flipframe-motion-lab.limuwen9.chatgpt.site) |
 | **06 · [VOX / ONE](projects/05-vox-one.md)** | Speech/type synchronization → editable timed typography | Browser tool | [Open web app ↗](https://vox-one.limuwen9.chatgpt.site) |
@@ -26,7 +26,7 @@ My focus is the connection between production craft and product decisions: autom
 
 **Current review:** short hosted exports were checked for Model Breakdown and VOX; Collage has short export checks. FLIPFRAME and TRACE have known export-timing issues in the tested browser. [Read the exact scope](docs/functional-review.md).
 
-**Try first:** Model Breakdown Studio includes a built-in model. Collage Motion starts with an empty canvas for your own images and clips. All five browser tools have public entrances; VOX / ONE and TRACE / 01 also need your own input media. Architecture Growth currently has a written case framework, with video to follow.
+**Try first:** Model Breakdown Studio includes a built-in model. Collage Motion starts with an empty canvas for your own images and clips. All five browser tools have public entrances; VOX / ONE and TRACE / 01 also need your own input media. Architecture Growth presents completed illoca work and its production method; company source and Skill files are not distributed.
 
 ## 01 / Clockwork — detail preview
 
@@ -53,6 +53,18 @@ My design direction and model collection became a reusable Blender library, with
 </tr>
 </table>
 
+<table><tr>
+<td width="50%" align="center"><a href="https://github.com/MuwenTriLi/model-breakdown-studio/blob/main/showcase/README.md"><img src="https://raw.githubusercontent.com/MuwenTriLi/model-breakdown-studio/main/showcase/media/structure.gif" height="220" alt="Architectural system breakdown output"></a><br><sub>Finished AEC output / structural emphasis</sub></td>
+<td width="50%" align="center"><a href="https://github.com/MuwenTriLi/model-breakdown-studio/blob/main/showcase/README.md"><img src="https://raw.githubusercontent.com/MuwenTriLi/model-breakdown-studio/main/showcase/media/residence.jpg" height="220" alt="Residential exploded view"></a><br><sub>Component relationships / selected output</sub></td>
+</tr></table>
+
+## 03 / Architecture Growth — company production case
+
+<table><tr>
+<td width="40%" align="center"><a href="projects/blue-white-architecture-growth.md"><img src="media/architecture-growth/tennis-plan.gif" height="220" alt="Tennis venue plan develops into architectural scene"></a></td>
+<td width="60%" valign="top"><b>Company aesthetics → a repeatable production method.</b><br><br>As Creative Content Director at <b>illoca</b>, I direct a shared architectural visual language and an internal Blender workflow, refined across detail, tower and tennis-venue studies.<br><br><a href="projects/blue-white-architecture-growth.md">Read the case and control decisions</a> · <a href="docs/architecture-growth-media.md#watch-the-selected-films">Watch the selected films</a><br><br><sub>Company portfolio presentation. Completed visuals and high-level method only; no company Skill, source scenes or reuse license.</sub></td>
+</tr></table>
+
 ## 04–07 / Four different creative problems
 
 | [Collage Motion](projects/03-collage-motion.md) | [FLIPFRAME](projects/04-flipframe.md) | [VOX / ONE](projects/05-vox-one.md) | [TRACE / 01](projects/06-trace-01.md) |
@@ -77,4 +89,4 @@ Clockwork is the most complete existing production-to-product case: original mod
 - **[Clockwork case study](https://github.com/MuwenTriLi/steampunk-clockwork-showcase)** contains the renders, motion gallery, controls, design process and commercial product link.
 - **[Clockwork workflow + Skill](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/workflow-skill.md)** explains the reusable method. [SKILL.md](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/skills/clockwork-assembly/SKILL.md) contains the actual instructions.
 
-Projects 01–05 are the first preparation group; 06–07 follow. Architecture-growth details and media are pending. Numbers indicate portfolio order. Clockwork, Model Breakdown Studio and this index are public. The browser tools are interactive prototypes; their pages distinguish available controls from verified outcomes. The Clockwork instruction Skill has not yet been tested end to end on a new Blender task.
+Projects 01–05 are the first preparation group; 06–07 follow. Architecture Growth now includes selected completed company visuals and a high-level method; an approved process/correction recording remains to add. Numbers indicate portfolio order. Clockwork, Model Breakdown Studio and this index are public. The browser tools are interactive prototypes; their pages distinguish available controls from verified outcomes. The Clockwork instruction Skill has not yet been tested end to end on a new Blender task.

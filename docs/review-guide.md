@@ -19,8 +19,8 @@ The other projects explore different problems. They do not need to appear equall
 | Project | Evidence available now | Important missing proof | Current decision |
 | --- | --- | --- | --- |
 | **01 · [Clockwork](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/production-case.md)** | Commercial library, original renders, motion excerpts, controller documentation and instruction Skill | One freshly recorded adaptation from brief to checked output; an unfamiliar creator repeating it | Lead with the existing product. **Iterate** the agent-assisted adaptation before expanding it. |
-| **02 · [Model Breakdown](https://github.com/MuwenTriLi/model-breakdown-studio/blob/main/docs/product-case.md)** | Hosted three-part GLB import, part selection and 2 s / 4K H.264 export; separate local-adaptation tests | A visually meaningful real-model explanation, with framing and complete output review | **Iterate** the import-to-delivery path before claiming general model support. |
-| **03 · [Architecture Growth](../projects/blue-white-architecture-growth.md)** | Written problem, workflow and review criteria | Approved footage, a concrete revision and shot-specific contribution credits | **Hold the visual case** until the evidence is supplied. This is not a public tool or source release. |
+| **02 · [Model Breakdown](https://github.com/MuwenTriLi/model-breakdown-studio/blob/main/docs/product-case.md)** | Four supplied architectural output films and stills; hosted synthetic GLB export check; MIT repository code and separate local-adaptation tests | A process recording connecting a real input to the selected output, one framing correction and an unfamiliar creator task | **Iterate** the import-to-delivery path before claiming general model support. |
+| **03 · [Architecture Growth](../projects/blue-white-architecture-growth.md)** | Completed illoca tennis/detail/tower/office visuals; director role and internal-method explanation | An approved local correction recording, shot-level credits and repeatability observation | **Develop the production case** around creator control. Company source and internal Skill remain private. |
 | **04 · [Collage Motion](../projects/03-collage-motion.md)** | Public working editor, implemented feedback corrections, frame navigation and short 720p export checks | Unassisted first-use task; mixed-video and larger-project output checks | **Iterate** usability with creators before adding automatic editorial choices. |
 | **05 · [FLIPFRAME](../projects/04-flipframe.md)** | Import, per-clip trim and showcase selection exercised; downloaded 4K export has a timing defect | Timing-correct output and a readable finished sequence; see the functional review | **Fix and retest export** before treating the sequence as deliverable. |
 | **06 · [VOX / ONE](../projects/05-vox-one.md)** | Clean synthetic English transcription, confirmed punctuation correction and 4K H.264/AAC output | Real speech with names/noise, measured sync, alpha output and editor round trip | **Validate the core task** before expanding languages or automation. |
@@ -42,6 +42,12 @@ The other projects explore different problems. They do not need to appear equall
 AI-assisted development and a packaged Skill are useful evidence, but neither establishes a reliable autonomous agent. Model-API orchestration, agent recovery and comparative creator research remain evidence to build, not labels to add to a screenshot.
 
 [Detailed functional checks](functional-review.md) · [Per-case material checklist and recording outline](evidence-to-add.md)
+
+## Review every new addition against the role
+
+For each new film, interaction or case revision, ask what it proves: a production bottleneck, a design decision, automatic execution, creator authority, local recovery, delivery acceptance, or a validated next step. Link the evidence to that claim and mark what remains untested. A final film strengthens output evidence; it does not by itself prove usability, autonomy or reduced production time.
+
+The new architectural outputs improve the presentation of Model Breakdown and Architecture Growth. The next iteration should expose one meaningful correction and its checks, rather than add a second gallery that repeats the same claim. Confidential work can demonstrate judgment through approved results and a high-level method without releasing its implementation.
 
 ## What to prove next
 

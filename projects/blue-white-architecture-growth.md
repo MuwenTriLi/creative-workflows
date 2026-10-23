@@ -1,61 +1,84 @@
 # Blue / White Architecture Growth
 
-[← All projects](https://github.com/MuwenTriLi/creative-workflows#selected-work)
+**03 / Company production case · illoca · Creative Content Director: Muwen Li**
 
-**03 / Blender workflow · Architectural explanation · Case preview**
+**Turn a company's visual language into a repeatable architectural storytelling workflow.** A shared internal Skill supports white-model styling, blue-shadow hierarchy and staged construction in Blender; each building still needs its own component logic, framing and review.
 
-Use a consistent white-model and blue-shadow language to explain architectural systems through staged growth and assembly.
+[← All projects](../README.md#selected-work) · [Watch the tennis sequence](../media/architecture-growth/tennis-sequence.mp4) · [Selected outputs & credits](../docs/architecture-growth-media.md) · [Production method](#from-company-aesthetics-to-an-internal-skill)
 
-> Visual material is being selected. This page establishes the case structure; it does not include a playable demo, client model or downloadable Skill.
+> Portfolio case study. The company-specific visual system and production materials belong to **illoca** and/or their respective rights holders. Selected completed visuals are shown to document Muwen's work; the company Skill, source scenes, code and exact style configuration are not released for reuse.
 
-## The smallest useful task
+## Tennis venue: from plan to staged construction
 
-**Task:** document one approved architectural shot with a fixed reference and construction sequence, showing one readability correction. This page currently contains the framework only.
+<table><tr>
+<td width="50%" align="center" valign="top"><a href="../media/architecture-growth/tennis-sequence.mp4"><img src="../media/architecture-growth/tennis-plan.gif" height="330" alt="Tennis venue develops from a line drawing and plan into an architectural scene"></a><br><b>Establish the plan</b><br><sub>Give the viewer a spatial reference before the model becomes dense.</sub></td>
+<td width="50%" align="center" valign="top"><a href="../media/architecture-growth/tennis-sequence.mp4"><img src="../media/architecture-growth/tennis-growth.gif" height="330" alt="Tennis venue staged construction with structural and roof systems in context"></a><br><b>Build a readable sequence</b><br><sub>Reveal systems in stages while keeping the surrounding context.</sub></td>
+</tr></table>
 
-**Local correction to demonstrate:** isolate one problematic system or transition, retain the accepted camera and visual specification, adjust the relevant visibility, timing or line-weight settings, then inspect the affected passage and neighboring frames. This is the intended review procedure; no public execution or new video is claimed.
+The tennis project is the principal example of the progressively refined method. Both the video and carousel-format sequences use the same visual direction; format, density and timing are adapted to the presentation. The two GIFs are excerpts from supplied completed films. [Watch the complete 33 s carousel-format sequence](../media/architecture-growth/tennis-sequence.mp4).
 
-**Decision now:** hold the visual case until selected footage and precise contribution credits are available. Test reuse on a second shot before expanding the recipe. Stop a rule that distorts scale or construction dependencies. Company models, source instructions and unapproved media remain outside this presentation.
+<table><tr>
+<td width="33%" align="center"><a href="../media/architecture-growth/tennis-plan.jpg"><img src="../media/architecture-growth/tennis-plan.jpg" height="220" alt="Tennis venue plan stage"></a><br><sub>Plan / spatial context</sub></td>
+<td width="33%" align="center"><a href="../media/architecture-growth/tennis-structure.jpg"><img src="../media/architecture-growth/tennis-structure.jpg" height="220" alt="Tennis venue structural stage"></a><br><sub>Structure / staged growth</sub></td>
+<td width="33%" align="center"><a href="../media/architecture-growth/tennis-hero.jpg"><img src="../media/architecture-growth/tennis-hero.jpg" height="220" alt="Detailed completed tennis venue in surrounding context"></a><br><sub>Resolution / contextual detail</sub></td>
+</tr></table>
 
-## The problem
+## The production problem
 
-A dense architectural model can hide the very relationships an animation needs to explain. Showing everything at once makes sequence and hierarchy difficult to read; styling each shot independently can introduce inconsistent outlines, shadows and emphasis.
+A company needs a recognizable visual voice across different buildings and delivery formats. Rebuilding every material, outline and reveal from scratch risks inconsistent styling; applying the same animation blindly risks wrong construction relationships, unreadable details and abrupt transitions.
 
-## The workflow to document
+**Working hypothesis:** separate the reusable visual and review rules from the scene-specific decisions. Let the workflow handle repeated setup, while the director controls the explanation and accepts the final result. Repeated production use supplies examples; it does not by itself quantify time saved or prove that a new user can operate the workflow unaided.
 
-The case will explain how a shared visual specification and staged reveal logic support consistent architectural communication. Each stage will be connected to a concrete visual example when the selected footage is available.
+## My role and the company's work
 
-| Stage | Design question | Evidence to add |
+I work as **Creative Content Director at illoca**. For this case, my contribution is defining and refining the visual direction, directing architectural storytelling, developing the reusable workflow with Codex, and reviewing output detail and continuity. The case draws on successive architectural studies, with the tennis venue as a developed application.
+
+The architectural designs, company models, brand expression and completed company media are not presented as independently owned open-source assets. This page describes my contribution to the production method; it does not claim sole authorship of every building or source model. [Presentation scope and credits](../docs/architecture-growth-media.md#rights-and-disclosure).
+
+## From company aesthetics to an internal Skill
+
+The Skill packages a repeatable production procedure. Reuse means adapting a controlled method to a new scene, rather than transplanting the tennis animation unchanged.
+
+| Stage | Repeatable system work | Director's decision / review |
 | --- | --- | --- |
-| Inspect and organize | Which systems and construction dependencies matter? | Model hierarchy or a simplified diagram |
-| Apply the visual specification | How do white surfaces, blue shadows and line-weight levels separate form and detail? | Annotated still at final output size |
-| Sequence the growth | What should appear first, and what needs a pause? | Short assembly passage with a timeline explanation |
-| Direct attention | How does the viewer identify the system currently being explained? | Highlighted transition or detail |
-| Review the output | Are silhouettes, section surfaces and transitions clear over consecutive frames? | Selected frames and the matching video segment |
+| Reference & brief | Inspect the agreed reference and scene constraints | Confirm audience, subject, visual direction and output format |
+| Scene interpretation | Inspect component hierarchy and prepare relevant groups | Confirm what each system is and which dependencies matter |
+| Visual translation | Apply the established material, shadow and outline language in Blender | Judge silhouette, section detail, scale and visual hierarchy |
+| Sequence & emphasis | Prepare staged reveals, transitions and framing previews | Set construction order, focal system, camera and readable pauses |
+| Local refinement | Adjust the affected system or passage; prepare another preview | Preserve accepted direction and reject misleading motion or geometry |
+| Delivery review | Prepare viewing outputs and technical checks | Inspect continuous motion, detail at final size and the encoded file |
 
-## Contribution and credits
+This is a **company-internal workflow/Skill case**, not an installable public Skill. Exact prompts, invocation phrases, parameters, node setups, scripts and scene data are intentionally outside the presentation. The public method explains the production decisions and responsibilities without reproducing the internal implementation.
 
-Developed by Muwen as part of work at **Eloka**, with reusable local workflow instructions. Final credits will distinguish Muwen's contribution from company-provided models, content and collaborators. The company-related media and underlying workflow files are not distributed in this repository. Portfolio presentation is separate from releasing source materials.
+## A production observation becomes a control requirement
 
-## Presentation structure
+During tennis-scene iteration, a growth stage that returned abruptly from white emphasis to the blue material state read like a visual glitch. That observation leads to a concrete system requirement: **provide a controlled handoff between reveal emphasis and the settled material, and review the transition with its neighboring frames**.
 
-1. **Result first:** a short approved animation and two key frames.
-2. **Problem and constraints:** what the audience needed to understand, the source-model constraints and the visual brief.
-3. **One concrete iteration:** a before/after showing how staging, line weight or emphasis improved readability.
-4. **Reusable method:** a plain-language breakdown of the visual specification and sequencing logic.
-5. **Role, credits and limits:** who supplied which material, what Muwen designed, and what can be shared.
+The same reasoning applies to inconsistent dashed-line density and unclear road/landscape boundaries: the system needs distinct hierarchy controls and a check at the final viewing size. The director decides whether the distinction is readable without competing with the architecture. The final films show the refined visual direction; a separately approved before/after recording of this correction is still to add. No numerical improvement is claimed.
 
-## Proposed automation and review boundaries
+## One method, different scales of explanation
 
-This section is a case framework pending selected footage, not a public agent implementation. **Hypothesis:** a reusable visual specification and construction-aware sequence can keep architectural explanation consistent across shots.
+<table><tr>
+<td width="25%" align="center" valign="top"><a href="../media/architecture-growth/detail-a.mp4"><img src="../media/architecture-growth/detail-a.jpg" height="190" alt="Facade and floor detail in blue-white architectural rendering"></a><br><b>Detail A</b><br><sub>Floor, facade and sectional depth</sub><br><a href="../media/architecture-growth/detail-a.mp4">25 s film</a></td>
+<td width="25%" align="center" valign="top"><a href="../media/architecture-growth/detail-b.jpg"><img src="../media/architecture-growth/detail-b.jpg" height="190" alt="Multi-level architectural assembly"></a><br><b>Detail B</b><br><sub>Structure, enclosure and interior layers</sub></td>
+<td width="25%" align="center" valign="top"><a href="../media/architecture-growth/tower.jpg"><img src="../media/architecture-growth/tower.jpg" height="190" alt="Tower in contextual blue-white rendering"></a><br><b>Tower study</b><br><sub>Building scale and urban context</sub></td>
+<td width="25%" align="center" valign="top"><a href="../media/architecture-growth/office.jpg"><img src="../media/architecture-growth/office.jpg" height="190" alt="Office layout and annotated architectural plan"></a><br><b>Office typology</b><br><sub>Plan reading and spatial alternatives</sub></td>
+</tr></table>
 
-After the creator confirms the visual reference and system hierarchy, repeatable styling and sequencing are candidates for automation. The creator retains decisions about cut plane, construction dependencies, highlighted system, camera and readable pauses. A change that distorts scale, replaces a reference or implies a different construction relationship needs an explicit preview and review.
+[Detail C: complete 35 s building-and-context sequence](../media/architecture-growth/detail-c.mp4) · [Full media notes](../docs/architecture-growth-media.md)
 
-**Acceptance:** inspect the actual encoded output and consecutive frames around risky transitions. External outlines and detail lines have distinct weights; section faces show coherent construction; shadows and furniture remain consistent with the selected reference; curves remain smooth at final resolution; fixed parts do not stretch to simulate assembly; there are no unresolved intersections, flicker or frame jumps. These are intended criteria, not results verified by this placeholder page.
+## What makes the work deliverable
 
-**Evidence and next decision:** add one authorized shot, a before/after adjustment and its review notes. Expand the recipe only after it works on a second shot under the same visual specification; iterate where geometry or transitions break; stop reuse of a rule that damages scale or construction logic. Company materials and local Skill source remain outside this repository. [Control model and handoff](../docs/creative-control.md).
+The visual specification must remain coherent across shots. Outer silhouettes, structural edges and fine detail need readable hierarchy; section surfaces and architectural scale must remain plausible; furniture and people must support the explanation; transitions must avoid abrupt jumps, intersections and flicker. Inspect risky passages as consecutive frames and check the actual encoded video, not only attractive stills.
 
-## Current status
+For a new scene, the system can repeat confirmed setup and prepare bounded previews. The creator reviews construction dependencies, substitutions, camera changes and final publication. Changing a building's meaning or replacing the company's reference is not a routine automatic choice. Local correction should preserve the accepted scene and unrelated timing; a universal rollback system is not claimed here.
 
-The written framework is ready. Selected footage, shot-specific details and final contribution credits will complete the case. No new claims about measured efficiency, client outcomes or a public Skill release are made while that evidence is pending.
+## Evidence and next decision
 
-[Per-case material checklist and recording outline](../docs/evidence-to-add.md) · [Functional review](../docs/functional-review.md)
+**Available:** completed tennis, detail, tower and office outputs; the director's stated role; a reusable internal method and an iteration rationale. Presentation MP4/GIF copies were prepared and decoded locally from the supplied media. No new Blender render, source-package audit or independent creator study was performed for this page.
+
+**Next experiment:** document one approved shot from brief through one local correction and final review, without exposing internal source files. Record where the director intervenes and how the accepted choices are preserved. For repeatability, compare a second scene under the same approved visual brief.
+
+**Decision:** continue the bounded internal workflow and make its correction process easier to inspect. Expand only when the new scene preserves the visual standard and construction logic; iterate when grouping or transitions need repeated repair; stop a reusable rule when it damages scale or architectural meaning. Broad automatic transfer to arbitrary models is not established by these films.
+
+[Evidence still to add](../docs/evidence-to-add.md) · [Automation and creator control](../docs/creative-control.md)
