@@ -1,0 +1,91 @@
+/* Workspace skin: deliberately scoped to avoid the generic renderer's pill controls. */
+html:root { color-scheme: dark; --background: #080a0b; background: #080a0b !important; }
+html > body { margin: 0; padding: 0; background: #080a0b !important; color: #e9ecec; font-family: Arial, "Segoe UI", "Microsoft YaHei", sans-serif !important; }
+.portfolio-bar { max-width: 1680px; margin: 0 auto; padding: 18px 24px; border: 0; border-bottom: 1px solid #303538; background: #080a0b; }
+.portfolio-bar h1 { font-size: 21px; font-weight: 600; margin-bottom: 4px; }
+.portfolio-bar p { font-size: 13px; color: #a7afb1; }
+.portfolio-nav a { color: #c1c7c8; }
+#landscape-collage-editor,
+#landscape-collage-editor[lang] { max-width: 1680px; margin: 0 auto; padding: 18px 24px 32px; border-radius: 0; background: #080a0b; font-family: Arial, "Segoe UI", "Microsoft YaHei", sans-serif; --font-size-base: 14px; --foreground: #e9ecec; --background: #080a0b; --card: #111517; --border: #343b3d; --primary: #d8ff6a; --primary-foreground: #11170b; --radius-full: 2px; --radius: 2px; --radius-lg: 2px; --radius-2xl: 2px; }
+#landscape-collage-editor :is(button, input, select, .card, .viz-tile, .viz-badge) { border-radius: 2px; font-family: inherit; font-size: 13px; }
+#landscape-collage-editor .btn { min-height: 34px; height: auto; padding: 7px 12px; font-weight: 500; box-shadow: none; }
+#landscape-collage-editor .btn-primary { background: #d8ff6a; color: #11170b; border-color: #d8ff6a; }
+#landscape-collage-editor :is(.form-select, .form-input) { min-height: 34px; padding-block: 7px; background-color: #191e20; }
+#landscape-collage-editor :is(button, input, select):focus-visible { outline: 2px solid #d8ff6a; outline-offset: 3px; }
+#landscape-collage-editor .card { padding: 12px; border: 1px solid #303638; }
+#landscape-collage-editor .workflow-entry { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; }
+#landscape-collage-editor .upload-portal { min-height: 72px; padding: 12px 16px; border: 1px dashed #4a5458; background: #101416; }
+#landscape-collage-editor .upload-portal p { margin: 0; line-height: 1.7; }
+#landscape-collage-editor .workflow-output { display: flex; flex-direction: column; justify-content: center; gap: 5px; padding: 8px 0 8px 12px; }
+#landscape-collage-editor .workflow-step { font-size: 11px; color: #acb5b7; }
+#landscape-collage-editor .session-note { margin: -4px 0 4px; font-size: 11px; color: #8f999c; }
+#landscape-collage-editor .editor-grid { grid-template-columns: minmax(0, 1fr) 420px; gap: 20px; }
+#landscape-collage-editor .workspace-heading { display: flex; flex-wrap: wrap; gap: 4px 16px; align-items: baseline; justify-content: space-between; padding-bottom: 6px; border-bottom: 1px solid #303638; font-size: 12px; }
+#landscape-collage-editor .workspace-heading span { color: #96a1a5; font-size: 11px; }
+#landscape-collage-editor .stage-column { gap: 10px; }
+#landscape-collage-editor .stage-toolbar { flex-wrap: wrap; gap: 8px; }
+#landscape-collage-editor .stage-toolbar .viz-row { gap: 6px; }
+#landscape-collage-editor .stage-toolbar .btn { min-height: 30px; padding: 5px 9px; }
+#landscape-collage-editor .form-check-label { font-size: 12px; }
+#landscape-collage-editor .form-switch .form-check-input { border-radius: 2px; }
+#landscape-collage-editor .form-switch .form-check-input::before { border-radius: 1px; }
+#landscape-collage-editor .studio-timeline { padding: 10px 12px 6px; background: #111719; border: 1px solid #343c3f; }
+#landscape-collage-editor .timeline-heading { display: flex; gap: 12px; justify-content: space-between; align-items: baseline; font-size: 11px; }
+#landscape-collage-editor .timeline-shortcut { color: #849094; margin-right: auto; }
+#landscape-collage-editor .timecode { font-variant-numeric: tabular-nums; white-space: nowrap; color: #8e9a9e; }
+#landscape-collage-editor #lc-timeline-value { color: #d8ff6a; font-size: 12px; font-variant-numeric: tabular-nums; }
+#landscape-collage-editor #lc-timeline { --played: 0%; display: block; appearance: none; -webkit-appearance: none; width: 100%; height: 26px; margin: 4px 0 0; padding: 0; border: 0; background: linear-gradient(to right, #d8ff6a var(--played), #414c51 var(--played)) center / 100% 2px no-repeat; cursor: ew-resize; touch-action: none; }
+#landscape-collage-editor #lc-timeline::-webkit-slider-thumb { appearance: none; width: 8px; height: 20px; border: 1px solid #eaffb0; border-radius: 0; background: #d8ff6a; box-shadow: 0 0 0 3px #111719; }
+#landscape-collage-editor #lc-timeline::-moz-range-thumb { width: 7px; height: 20px; border: 1px solid #eaffb0; border-radius: 0; background: #d8ff6a; }
+#landscape-collage-editor .timeline-ruler { display: flex; justify-content: space-between; color: #8f9b9f; font-size: 10px; font-variant-numeric: tabular-nums; }
+#landscape-collage-editor .preview-card { position: relative; padding: 12px; background: #050707; min-height: 230px; align-items: center; }
+#landscape-collage-editor .canvas-shell { border-radius: 0; width: min(100%, 270px); }
+#landscape-collage-editor .canvas-shell.is-landscape { width: min(100%, 960px); }
+#landscape-collage-editor .empty-workspace { position: absolute; z-index: 2; inset: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 10px; border: 1px dashed #283134; color: #c8d0d1; }
+#landscape-collage-editor .empty-workspace[hidden] { display: none; }
+#landscape-collage-editor .empty-workspace p { margin: 0; color: #8d999e; font-size: 13px; line-height: 1.7; }
+#landscape-collage-editor .empty-mark { width: 38px; height: 38px; border: 1px solid #455155; color: #d8ff6a; font-size: 26px; line-height: 34px; }
+#landscape-collage-editor.is-empty-workspace #lc-canvas { visibility: hidden; }
+#landscape-collage-editor.is-empty-workspace :is(.library-grid, .library-actions, .library-batch-actions, .selection-summary) { display: none; }
+#landscape-collage-editor .selection-summary { background: #101416; padding: 9px 12px; }
+#landscape-collage-editor .selection-summary p { margin: 0; font-size: 12px; }
+#landscape-collage-editor .settings-column { border-left: 1px solid #303638; padding-left: 18px; gap: 12px; }
+#landscape-collage-editor .tab-list { gap: 3px; }
+#landscape-collage-editor .tab-list .btn { padding: 7px 2px; font-size: 12px; }
+#landscape-collage-editor .tab-list [aria-selected="true"] { background: #d8ff6a; color: #11170b; border-color: #d8ff6a; }
+#landscape-collage-editor .section-title { color: #bbc4c7; font-size: 12px; }
+#landscape-collage-editor .form-label { font-size: 12px; font-weight: 400; }
+#landscape-collage-editor .param-grid { gap: 12px; }
+#landscape-collage-editor .library-grid { grid-template-columns: repeat(auto-fill,minmax(130px,1fr)); align-items: start; }
+#landscape-collage-editor .asset-tile { border-radius: 0; background-size: contain; background-color: #080c0e; height: 110px; aspect-ratio: auto; padding: 6px; }
+#landscape-collage-editor .selected-asset-thumb { border-radius: 0; background-size: contain; }
+#landscape-collage-editor .asset-index { font-size: 10px; }
+#landscape-collage-editor .library-actions { grid-template-columns: minmax(160px,1fr) 85px auto auto; }
+#landscape-collage-editor .library-batch-actions { grid-template-columns: minmax(160px,1fr) auto auto; }
+#landscape-collage-editor .library-selection { grid-template-columns: 90px minmax(0,1fr); }
+#landscape-collage-editor .export-review { padding: 12px; border: 1px solid #3a4544; background: #121a18; font-size: 12px; line-height: 1.6; }
+#landscape-collage-editor .export-review p { margin: 7px 0; color: #aab5b6; }
+#landscape-collage-editor #lc-export-readiness { color: #d8ff6a; }
+#landscape-collage-editor .export-spec { display: block; color: #e2e8e8; padding-top: 8px; border-top: 1px solid #35433d; font-variant-numeric: tabular-nums; }
+#landscape-collage-editor progress { width: 100%; height: 3px; accent-color: #d8ff6a; }
+#landscape-collage-editor progress[hidden] { display: none; }
+#landscape-collage-editor.is-exporting .canvas-shell { opacity: .75; }
+@media (min-width: 1100px) { #landscape-collage-editor .settings-column { position: sticky; top: 12px; max-height: calc(100dvh - 24px); overflow-y: auto; scrollbar-width: thin; padding-right: 5px; } }
+@media (max-width: 1100px) { #landscape-collage-editor .editor-grid { grid-template-columns: minmax(0,1fr) 360px; gap: 14px; } #landscape-collage-editor .timeline-shortcut { display: none; } #landscape-collage-editor .library-actions { grid-template-columns: minmax(0,1fr) 70px auto auto; } }
+@media (max-width: 900px) { #landscape-collage-editor .editor-grid { grid-template-columns: 1fr; } #landscape-collage-editor .settings-column { border: 0; padding: 12px 0; } }
+@media (max-width: 600px) { .portfolio-bar { padding: 14px; gap: 8px; } .portfolio-nav { font-size: 11px; } #landscape-collage-editor { padding: 14px; } #landscape-collage-editor .workflow-entry { grid-template-columns: 1fr; } #landscape-collage-editor .workflow-output { flex-direction: row; justify-content: space-between; align-items: center; padding: 0; } #landscape-collage-editor .upload-portal { grid-template-columns: 1fr; } #landscape-collage-editor .library-actions { grid-template-columns: 1fr 1fr; } #landscape-collage-editor .library-batch-actions { grid-template-columns: 1fr 1fr; } #landscape-collage-editor .library-batch-actions > label { grid-column: 1/-1; } }
+
+.portfolio-bar { padding: 12px 24px; }
+#landscape-collage-editor { padding-top: 12px; }
+#landscape-collage-editor .studio-timeline { padding-top: 7px; padding-bottom: 5px; }
+#landscape-collage-editor .canvas-shell,
+#landscape-collage-editor .canvas-shell.is-landscape { background: #050707; width: min(100%, calc(max(220px, 100dvh - 450px) * var(--display-ratio, 1.777778))); }
+#landscape-collage-editor.is-empty-workspace .preview-card { min-height: 260px; }
+#landscape-collage-editor .empty-workspace { inset: 12px; gap: 8px; }
+@media (max-width: 900px) { #landscape-collage-editor .canvas-shell.is-landscape { width: 100%; } }
+
+#landscape-collage-editor.is-exporting :is(.preview-card,.upload-portal) { pointer-events: none; }
+
+#landscape-collage-editor .import-feedback { margin: 0; padding: 8px 12px; border-left: 2px solid #d8ff6a; color: #d0d9d9; font-size: 12px; background: #151d1a; }
+#landscape-collage-editor .import-feedback.has-error { border-color: #f2a384; color: #ffd3bd; }
+#landscape-collage-editor .import-feedback[hidden] { display: none; }

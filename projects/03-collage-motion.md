@@ -29,11 +29,19 @@ Put the media library, canvas and timing controls in one browser workspace. Layo
 
 ## Try it in one minute
 
-1. Open the app in desktop Chrome. Choose **Choose assets**, or drag your images/clips into the import area.
+1. Open the app in desktop Chrome. Choose **Import media**, or drag your images/clips into the import area.
 2. In **Layout**, change the row or column count and compare the composition.
 3. Open **Motion** or **Flash**, adjust one timing control, then use play/pause and the timeline to inspect the change.
 4. Refine an individual asset, or use **Clear all** to start a new composition.
 5. In **Export**, start with a short **720p MP4**. Save the result and compare it with the preview.
+
+## From prototype to a usable first session
+
+The interface makes three steps explicit: **Import media → Compose & preview → Review & export**. A first-time creator begins with an empty canvas and a visible import action. The timeline stays above the preview; it supports scrubbing, frame-rate-based keyboard stepping, restart and replay. Rectangular media thumbnails show the full source proportions without oval cropping.
+
+The system calculates layout, applies the selected motion rules and reports media readiness. The creator decides the sequence, subject framing and timing. The export panel summarizes dimensions, frame rate and duration; it blocks export while media is missing or unready and locks editing while rendering. The creator then reviews the downloaded result. This is implemented interaction behavior, not a claim of autonomous AI editing.
+
+**Usability question to validate next:** can a new creator import their own media, change one composition or timing decision, and download a suitable clip without help? Observe the first point of hesitation and whether they find Import, Timeline and Export. No first-user test or completion-rate claim is made yet.
 
 ## Design contribution and reusable workflow
 
@@ -55,7 +63,7 @@ This is a browser application with a repeatable workflow. An installable agent S
 
 ## Evidence and current limits
 
-- The export path was tested with temporary test images: a **720p, five-second H.264** MP4 with **150 frames at 30 fps** was fully decoded successfully. The editor now starts empty and paused; test graphics are not bundled or loaded. English default, project navigation and the WebCodecs MP4 export repair are retained.
+- The export path was tested with temporary test images: a **720p, five-second H.264** MP4 with **150 frames at 30 fps** was fully decoded successfully. The editor now starts empty and paused; test graphics are not bundled or loaded. The updated interface was checked with landscape, portrait and square images, timeline scrubbing, frame stepping, end-of-playback replay and a fresh five-second 720p export. English/Chinese switching and the empty state were also checked. This is functional verification, not usability research.
 - Media is read through browser file inputs and object URLs; this static app has no media-upload backend. Keep originals separately: reloading clears the working session.
 - Export support depends on browser codecs and device resources. Start in desktop Chrome or Edge. Long clips, large mixed-media projects and 4K output still need broader testing.
 - A creator-selected finished example and narrated workflow recording will be added next. No measured time-saving or user-research result is claimed here.

@@ -7,7 +7,7 @@
 </style>
 <header class="portfolio-bar">
   <div><h1>Collage Motion <span style="color:#a7b1b7;font-size:13px;font-weight:normal">/ Muwen Li</span></h1>
-  <p>Arrange media → tune movement &amp; per-cell timing → export video. Choose your images or clips to begin. The canvas starts empty. Media stays in this browser tab.</p></div>
+  <p>Compose images and clips into a timed collage. Import → arrange &amp; preview → export.</p></div>
   <nav class="portfolio-nav" aria-label="Project navigation"><a href="https://github.com/MuwenTriLi/creative-workflows/blob/main/projects/03-collage-motion.md">Project overview ↗</a><a href="https://github.com/MuwenTriLi/creative-workflows#selected-work">All projects ↗</a></nav>
 </header>
 <div id="landscape-collage-editor" lang="zh-CN">
@@ -526,32 +526,43 @@
     }
   </style>
 
+  <link rel="stylesheet" href="./studio-ui.css">
   <div class="editor-stack">
-    <div class="card upload-portal" id="lc-upload-portal" role="button" aria-label="添加照片或视频">
+    <div class="workflow-entry">
+    <div class="card upload-portal" id="lc-upload-portal" aria-label="添加照片或视频">
       <div class="portal-copy">
         <i data-lucide="images" aria-hidden="true"></i>
         <div>
-          <p><strong>拖入横向或竖向照片与视频</strong></p>
+          <p><strong>01 / 导入素材</strong></p>
           <p class="text-small text-muted">
-            支持图片和视频混排；按加入顺序编号；下一个位置 <span id="lc-next-number">#001</span>
+            拖入图片或视频，或选择文件。下一个位置 <span id="lc-next-number">#001</span>
           </p>
         </div>
       </div>
       <button class="btn btn-primary" id="lc-add-assets" type="button">
         <i data-lucide="folder-plus" aria-hidden="true"></i>
-        选择素材
+        导入素材
       </button>
     </div>
+    <div class="workflow-output">
+      <span class="workflow-step">03 / 导出</span>
+      <button class="btn btn-primary" id="lc-open-export" type="button">检查并导出 <span aria-hidden="true">↗</span></button>
+    </div>
+    </div>
+    <p class="session-note">素材仅在此浏览器标签页处理；刷新会清空当前项目。导出为无音轨视频。</p>
+    <p class="import-feedback" id="lc-import-feedback" role="status" aria-live="polite" hidden></p>
     <input class="sr-only" id="lc-file-input" type="file" accept="image/*,video/*" multiple>
 
     <div class="editor-grid">
       <section class="stage-column" aria-label="画面预览与素材位置">
+        <div class="workspace-heading"><strong>02 / 编排与预览</strong><span>调整右侧参数，再拖动时间轴检查效果。</span></div>
         <div class="stage-toolbar viz-row">
           <div class="viz-row">
             <button class="btn btn-primary" id="lc-play" type="button">
               <i data-lucide="pause" aria-hidden="true"></i>
               暂停
             </button>
+            <button class="btn" id="lc-restart" type="button" aria-label="回到开头" title="Home"><i data-lucide="skip-back" aria-hidden="true"></i></button>
             <button class="btn" id="lc-prev-beat" type="button" data-tooltip="上一变动帧" aria-label="上一变动帧">
               <i data-lucide="step-back" aria-hidden="true">|&lt;</i>
             </button>
@@ -569,7 +580,17 @@
           </div>
         </div>
 
+        <div class="studio-timeline">
+          <div class="timeline-heading"><label for="lc-timeline">时间轴</label><span class="timeline-shortcut">空格：播放 / 暂停 · ← →：逐帧</span><span class="timecode"><output id="lc-timeline-value">0.00 s</output> / <span id="lc-duration-total">5.00 s</span></span></div>
+          <input id="lc-timeline" type="range" min="0" max="5" step="0.01" value="0" aria-label="时间轴">
+          <div class="timeline-ruler" aria-hidden="true"><span>0</span><span>1.25</span><span>2.50</span><span>3.75</span><span>5.00 s</span></div>
+        </div>
         <div class="card preview-card">
+          <div class="empty-workspace" id="lc-empty-workspace">
+            <span class="empty-mark" aria-hidden="true">+</span><strong>从你的素材开始</strong>
+            <p>导入图片或短视频，自动生成拼贴布局。<br>你决定顺序、裁切和节奏。</p>
+            <button class="btn btn-primary" id="lc-empty-import" type="button">导入图片或视频</button>
+          </div>
           <div class="canvas-shell is-landscape" id="lc-canvas-shell">
             <canvas
               id="lc-canvas"
@@ -581,11 +602,6 @@
           </div>
         </div>
 
-        <label class="form-label" for="lc-timeline">
-          时间位置
-          <output id="lc-timeline-value">0.00 秒</output>
-          <input class="form-range" id="lc-timeline" type="range" min="0" max="5" step="0.01" value="0">
-        </label>
 
         <div class="card selection-summary">
           <div>
@@ -664,6 +680,7 @@
       </section>
 
       <section class="settings-column" aria-label="编辑参数">
+        <div class="workspace-heading"><strong>调整工具</strong><span>先布局，再运动；随时预览。</span></div>
         <div class="tab-list" role="tablist" aria-label="编辑面板">
           <button class="btn" id="lc-tab-layout" type="button" role="tab" aria-selected="true">排布</button>
           <button class="btn" id="lc-tab-border" type="button" role="tab" aria-selected="false">边框</button>
@@ -696,8 +713,8 @@
               </label>
               <label class="form-label" for="lc-corner">
                 圆角
-                <output id="lc-corner-value">4%</output>
-                <input class="form-range" id="lc-corner" type="range" min="0" max="20" value="4">
+                <output id="lc-corner-value">0%</output>
+                <input class="form-range" id="lc-corner" type="range" min="0" max="20" value="0">
               </label>
             </div>
           </div>
@@ -1290,6 +1307,7 @@
         </div>
 
         <div class="tab-panel" id="lc-panel-export" role="tabpanel" hidden>
+          <div class="export-review"><strong>导出前检查</strong><p id="lc-export-readiness" role="status">先导入素材。</p><p>检查主体裁切、出现顺序和停留时间。下载后播放完整视频，确认结果与预览一致。</p><span id="lc-export-summary" class="export-spec"></span></div>
           <div class="control-section">
             <div class="toolbar-split viz-row">
               <div class="section-title">输出画幅</div>
@@ -1337,9 +1355,9 @@
           </div>
 
           <div class="control-section">
-            <progress id="lc-export-progress" max="1" value="0" aria-label="视频导出进度"></progress>
+            <progress hidden id="lc-export-progress" max="1" value="0" aria-label="视频导出进度"></progress>
             <div class="export-row viz-row">
-              <span class="text-small text-muted status-line" id="lc-status">准备就绪</span>
+              <span class="text-small text-muted status-line" id="lc-status" role="status" aria-live="polite">准备就绪</span>
               <button class="btn btn-primary" id="lc-export" type="button">
                 <i data-lucide="video" aria-hidden="true"></i>
                 导出视频
@@ -1565,7 +1583,7 @@
         rows: 3,
         columns: 3,
         gap: 12,
-        corner: 4,
+        corner: 0,
         layoutScale: 1,
         layoutX: 0,
         layoutY: 0,
@@ -1737,9 +1755,32 @@
       window.addEventListener("touchmove", markHeavyInteraction, { passive: true });
 
       const UI_TRANSLATIONS = {
+        "01 / 导入素材": "01 / Import media",
+        "03 / 导出": "03 / Export",
+        "拖入图片或视频，或选择文件。下一个位置": "Drop images or clips here. Next slot",
+        "导入素材": "Import media",
+        "检查并导出": "Review & export",
+        "素材仅在此浏览器标签页处理；刷新会清空当前项目。导出为无音轨视频。": "Media stays in this tab. Reloading clears the project. Exports are video only, without audio.",
+        "02 / 编排与预览": "02 / Compose & preview",
+        "调整右侧参数，再拖动时间轴检查效果。": "Adjust the controls, then scrub to review.",
+        "回到开头": "Back to start",
+        "时间轴": "Timeline",
+        "空格：播放 / 暂停 · ← →：逐帧": "Space: play / pause \u00b7 \u2190 \u2192: frame",
+        "从你的素材开始": "Start with your media",
+        "导入图片或短视频，自动生成拼贴布局。": "Import images or short clips to build a collage.",
+        "你决定顺序、裁切和节奏。": "You control the order, framing and rhythm.",
+        "导入图片或视频": "Import images or clips",
+        "调整工具": "Composition controls",
+        "先布局，再运动；随时预览。": "Start with Layout. Add Motion when ready.",
+        "导出前检查": "Before you export",
+        "先导入素材。": "Import media to begin.",
+        "检查主体裁切、出现顺序和停留时间。下载后播放完整视频，确认结果与预览一致。": "Check subject framing, sequence and reading time. Play the downloaded video through to confirm it matches your preview.",
+        "重新播放": "Replay",
+        "尚有素材未准备好，请等待或移除失败素材。": "Some media is not ready. Wait or remove failed items.",
+
         "拖入横向或竖向照片与视频": "Drop landscape or portrait photos and videos",
         "支持图片和视频混排；按加入顺序编号；下一个位置": "Mix images and videos; numbered by import order; next slot",
-        "选择素材": "Choose assets",
+        "选择素材": "Import media",
         "暂停": "Pause",
         "播放": "Play",
         "上一变动帧": "Previous frame",
@@ -1975,7 +2016,7 @@
         "5:4 横屏": "5:4 Landscape",
         "分辨率": "Resolution",
         "文件格式": "File format",
-        "MP4 · H.264 剪辑兼容 4K（推荐）": "MP4 · Edit-compatible H.264 4K (Recommended)",
+        "MP4 · H.264 剪辑兼容 4K（推荐）": "MP4 · H.264 (Recommended)",
         "WEBM · VP9": "WEBM · VP9",
         "视频时长": "Video duration",
         "帧率": "Frame rate",
@@ -2046,6 +2087,7 @@
               ? `Animated proxies ${ready} / ${total}${resolution} · Queue ${queued}`
               : `Animated proxies ${ready} / ${total}${resolution}`;
           })
+          .replace(/^正在渲染 (.+) \/ (.+) 秒$/, "Rendering $1 / $2 s")
           .replace(/^已导出 (.+)$/, "Exported $1")
           .replace(/ · 视频$/, " · VIDEO")
           .replace(/ 空位$/, " Empty slot");
@@ -2180,6 +2222,10 @@
         status.textContent = localize(message);
         status.classList.toggle("text-destructive", isError);
         status.classList.toggle("text-muted", !isError);
+        const feedback = root.querySelector("#lc-import-feedback");
+        feedback.hidden = !isError && !/正在载入|没有识别到|已跳过/.test(message);
+        feedback.textContent = localize(message);
+        feedback.classList.toggle("has-error", isError);
       }
 
       function formatIndex(index) {
@@ -2190,13 +2236,61 @@
         return ((value % modulus) + modulus) % modulus;
       }
 
+      let lastStudioKey = "";
+      let exportPreparing = false;
+      let lockedControls = null;
+
+      function refreshStudioUI() {
+        const ready = state.assets.filter(asset => asset.ready && !asset.error).length;
+        const busy = exportPreparing || state.recording;
+        const key = [ready, state.assets.length, busy, state.language, controls.resolution.value, controls.fps.value, controls.exportFormat.value, state.duration].join("|");
+        if (key === lastStudioKey) return;
+        lastStudioKey = key;
+        root.classList.toggle("is-empty-workspace", state.assets.length === 0);
+        root.classList.toggle("is-exporting", busy);
+        root.querySelector("#lc-empty-workspace").hidden = state.assets.length > 0;
+        exportProgress.hidden = !busy && exportProgress.value === 0;
+        if (busy && !lockedControls) {
+          lockedControls = new Map();
+          root.querySelectorAll("button, input, select").forEach(control => {
+            if (control === exportButton) return;
+            lockedControls.set(control, control.disabled);
+            control.disabled = true;
+          });
+        } else if (!busy && lockedControls) {
+          lockedControls.forEach((disabled, control) => { control.disabled = disabled; });
+          lockedControls = null;
+        }
+        root.querySelector("#lc-open-export").disabled = busy;
+        if (!busy) {
+          exportButton.disabled = ready === 0 || ready !== state.assets.length;
+          [playButton, timeline, root.querySelector("#lc-restart"), root.querySelector("#lc-prev-beat"), root.querySelector("#lc-next-beat")].forEach(control => { control.disabled = ready === 0; });
+        }
+        const readiness = state.assets.length === 0 ? localize("先导入素材。")
+          : ready !== state.assets.length ? localize("尚有素材未准备好，请等待或移除失败素材。")
+          : state.language === "zh" ? `${ready} 个素材已准备好。` : `${ready} media files ready.`;
+        root.querySelector("#lc-export-readiness").textContent = readiness;
+        root.querySelector("#lc-export-summary").textContent = `${controls.resolution.value.replace("x", " × ")} · ${controls.fps.value} fps · ${state.duration.toFixed(1)} s · ${controls.exportFormat.value.toUpperCase()}`;
+        root.querySelector("#lc-duration-total").textContent = `${state.duration.toFixed(2)} s`;
+        root.querySelectorAll(".timeline-ruler span").forEach((tick, index) => {
+          tick.textContent = `${(state.duration * index / 4).toFixed(index === 0 ? 0 : 2)}${index === 4 ? " s" : ""}`;
+        });
+      }
+
+      function refreshTimeline() {
+        timeline.value = String(state.timeMs / 1000);
+        timelineValue.value = `${(state.timeMs / 1000).toFixed(2)} s`;
+        timeline.style.setProperty("--played", `${state.timeMs / (state.duration * 1000 || 1) * 100}%`);
+        timeline.setAttribute("aria-valuetext", `${(state.timeMs / 1000).toFixed(2)} / ${state.duration.toFixed(2)} s`);
+        refreshStudioUI();
+      }
+
       function setTime(milliseconds) {
         state.timeMs = Math.max(0, Math.min(state.duration * 1000, milliseconds));
         state.mediaTimeMs = state.timeMs;
         state.revealTimeMs = state.timeMs;
         state.anchorMs = performance.now() - state.timeMs;
-        timeline.value = String(state.timeMs / 1000);
-        timelineValue.value = `${(state.timeMs / 1000).toFixed(2)} ${state.language === "zh" ? "秒" : "s"}`;
+        refreshTimeline();
       }
 
       function currentTime(now) {
@@ -2209,13 +2303,16 @@
             state.mediaTimeMs = loopedTime;
             state.revealTimeMs = loopedTime;
           } else {
-            state.mediaTimeMs = elapsed;
             state.timeMs = Math.min(durationMs, elapsed);
+            state.mediaTimeMs = state.timeMs;
             state.revealTimeMs = state.timeMs;
+            if (elapsed >= durationMs) {
+              state.playing = false;
+              updatePlayButton();
+            }
           }
         }
-        timeline.value = String(state.timeMs / 1000);
-        timelineValue.value = `${(state.timeMs / 1000).toFixed(2)} ${state.language === "zh" ? "秒" : "s"}`;
+        refreshTimeline();
         return state.timeMs;
       }
 
@@ -4117,19 +4214,23 @@
       }
 
       function updatePlayButton() {
-        playButton.innerHTML = state.playing
-          ? `<i data-lucide="pause" aria-hidden="true"></i>${localize("暂停")}`
-          : `<i data-lucide="play" aria-hidden="true"></i>${localize("播放")}`;
+        const label = state.playing ? localize("暂停") : localize(state.timeMs >= state.duration * 1000 ? "重新播放" : "播放");
+        if (playButton.dataset.label === label) return;
+        playButton.dataset.label = label;
+        playButton.innerHTML = `<i data-lucide="${state.playing ? "pause" : "play"}" aria-hidden="true"></i>${label}`;
+        playButton.setAttribute("aria-label", label);
         refreshIcons();
       }
 
       function togglePlayback() {
+        if (state.recording || exportPreparing || !state.assets.some(asset => asset.ready)) return;
         const now = performance.now();
         if (state.playing) {
           currentTime(now);
           state.playing = false;
         } else {
-          state.anchorMs = now - state.mediaTimeMs;
+          if (state.timeMs >= state.duration * 1000) setTime(0);
+          state.anchorMs = now - state.timeMs;
           state.playing = true;
         }
         updatePlayButton();
@@ -4143,6 +4244,7 @@
           button.setAttribute("aria-selected", String(selected));
           panel.hidden = !selected;
         });
+        if (active === "export") refreshStudioUI();
       }
 
       function renderColumnButtons() {
@@ -4259,6 +4361,7 @@
             if (background) {
               button.style.backgroundImage = `url("${background}")`;
             }
+            button.dataset.orientation = asset.orientation;
             button.addEventListener("click", () => selectAsset(index));
 
             const dragHandle = document.createElement("button");
@@ -5090,6 +5193,7 @@
       }
 
       async function addFiles(fileList) {
+        if (state.recording || exportPreparing) return;
         const supportedFiles = Array.from(fileList).filter((file) =>
           file.type.startsWith("image/") || file.type.startsWith("video/"),
         );
@@ -6093,6 +6197,25 @@
         void addFiles(event.dataTransfer.files);
       });
 
+      root.querySelector("#lc-empty-import").addEventListener("click", () => fileInput.click());
+      root.querySelector("#lc-open-export").addEventListener("click", () => {
+        renderTabs("export");
+        root.querySelector("#lc-panel-export").scrollIntoView({ behavior: "smooth", block: "nearest" });
+        root.querySelector("#lc-tab-export").focus({ preventScroll: true });
+      });
+      root.querySelector("#lc-restart").addEventListener("click", () => {
+        state.playing = false;
+        setTime(0);
+        updatePlayButton();
+      });
+      timeline.addEventListener("keydown", (event) => {
+        if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key) || state.recording || exportPreparing) return;
+        event.preventDefault();
+        state.playing = false;
+        const delta = 1000 / Number(controls.fps.value) * (event.shiftKey ? 10 : 1);
+        setTime(event.key === 'Home' ? 0 : event.key === 'End' ? state.duration * 1000 : state.timeMs + (event.key === 'ArrowLeft' ? -delta : delta));
+        updatePlayButton();
+      });
       playButton.addEventListener("click", togglePlayback);
 
       document.addEventListener("keydown", (event) => {
@@ -6103,7 +6226,7 @@
         if (
           target instanceof Element
           && target.closest(
-            "textarea, input:is([type='text'], [type='search'], [type='number'], [type='file'], [type='email'], [type='url'], [type='password']), [contenteditable='true']",
+            "button, a, select, textarea, input:not(#lc-timeline), [contenteditable='true']",
           )
         ) {
           return;
@@ -6128,6 +6251,7 @@
       });
 
       timeline.addEventListener("input", () => {
+        if (state.recording || exportPreparing) return;
         state.playing = false;
         setTime(Number(timeline.value) * 1000);
         updatePlayButton();
@@ -6383,13 +6507,14 @@
           const option = document.createElement("option");
           option.value = value;
           option.textContent = label;
-          option.selected = index === 2;
+          option.selected = index === 1;
           controls.resolution.appendChild(option);
         });
 
         resizeDisplayCanvas(profile.width, profile.height);
         canvasShell.classList.toggle("is-landscape", profile.width > profile.height);
         canvasShell.style.setProperty("--preview-aspect", `${profile.width} / ${profile.height}`);
+        canvasShell.style.setProperty("--display-ratio", String(profile.width / profile.height));
         fitLayout();
       }
 
@@ -7071,6 +7196,24 @@
       }
 
       async function exportVideo(attempt = 0) {
+        if (exportPreparing || state.recording) return;
+        if (!state.assets.length || state.assets.some(asset => !asset.ready || asset.error)) {
+          setStatus(localize(state.assets.length ? "尚有素材未准备好，请等待或移除失败素材。" : "先导入素材。"), true);
+          return;
+        }
+        exportPreparing = true;
+        exportButton.disabled = true;
+        refreshStudioUI();
+        try {
+          await runVideoExport(attempt);
+        } finally {
+          exportPreparing = false;
+          lastStudioKey = "";
+          refreshStudioUI();
+        }
+      }
+
+      async function runVideoExport(attempt = 0) {
         if (
           controls.exportFormat.value === "mp4"
           && globalThis.VideoEncoder
