@@ -7,8 +7,8 @@ Each studio has one primary task. Use the opening example to understand the outp
 | Studio | Input | First useful action | Output |
 | --- | --- | --- | --- |
 | [03 Model Breakdown](https://meshroom-breakdown-studio.limuwen9.chatgpt.site) | A GLB with separate named parts | Compare Assembled / Exploded view; select a component | An explanatory model animation |
-| [04 Collage Motion](https://muwentrili.github.io/creative-workflows/collage-motion/) | Clips or images | Compare the 35-shot board; replace one cell, adjust spacing and captions | A moving storyboard for shot review |
-| [05 FLIPFRAME](https://flipframe-motion-lab.limuwen9.chatgpt.site) | Images and clips | Pause Orbital Shift; arrange the archive and set readable holds | A spatial media presentation |
+| [04 Animated Storyboard](https://muwentrili.github.io/creative-workflows/collage-motion/) | Clips or images | Compare the 35-shot board; replace one cell, adjust spacing and captions | A moving storyboard for shot review |
+| [05 Spatial Media Presenter](https://flipframe-motion-lab.limuwen9.chatgpt.site) | Images and clips | Pause Orbital Shift; arrange the archive and set readable holds | A spatial media presentation |
 | [06 VOX / ONE](https://vox-one.limuwen9.chatgpt.site) | English speech in audio/video | Import, check the transcript, correct words and timing, then Confirm & Apply | Timed typography with the source audio |
 | [07 TRACE / 01](https://trace-01-motion-tracker.limuwen9.chatgpt.site) | Your video | Find a clear frame, click target 01 or choose Position anchor and click a location | Numbered motion annotation with a path and HUD |
 
@@ -25,13 +25,13 @@ The revised Press model completed an actual two-second, 4K30 H.264 export: 60 de
 ## Review controls before delivery
 
 - **Collage:** keep shot numbers visible; check captions, spacing and movement inside every cell. Review & export opens resolution and timing controls. The selected example uses an optimized preview atlas; imported high-resolution clips can require more resources.
-- **FLIPFRAME:** the opening 25-second sequence demonstrates Orbital Shift. Pause to edit; replay the full sequence to inspect order, transitions and holds. Choose Review & export, select 4K and render. The direct encoder has verified 4K60 sample outputs; the compatibility capture path has a separately recorded timing limitation.
+- **Spatial Media Presenter:** the opening 25-second sequence demonstrates Orbital Shift. Pause to edit; replay the full sequence to inspect order, transitions and holds. Choose Review & export, select 4K and render. The direct encoder has verified 4K60 sample outputs; the compatibility capture path has a separately recorded timing limitation.
 - **VOX:** the opening animation is a silent, authored example. Import English speech to generate a transcript locally, review the words and apply corrections. Use Premiere MP4 for black-background H.264/AAC; the optional transparent WebM path has a separate validation scope.
 - **TRACE:** importing a video does not create an anchor. Click to select one, play to inspect whether it follows the intended subject, and use Position anchor for a fixed annotation. Review & export exposes output settings. The earlier real-time export did not preserve its stated frame-rate/timing contract; treat TRACE output as a prototype until that issue is resolved.
 
 ## Opening on another computer
 
-Use the public HTTPS links above; a local file path or this computer's saved board is not required. The provided Model, Collage and FLIPFRAME examples load from public presentation assets. A visitor's own media is imported into that browser. VOX downloads public speech-model weights on first use, so that first transcription can take longer.
+Use the public HTTPS links above; a local file path or this computer's saved board is not required. The provided Model, Collage and Spatial Media Presenter examples load from public presentation assets. A visitor's own media is imported into that browser. VOX downloads public speech-model weights on first use, so that first transcription can take longer.
 
 Editing speed and 4K encoding depend on the browser, codec support, GPU, memory and input size. The desktop-browser checks are recorded precisely in the functional review. Other physical computers, mobile browsers and large user libraries still need testing; identical performance is not claimed.
 

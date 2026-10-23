@@ -1,4 +1,6 @@
-# 05 / FLIPFRAME
+# 05 / Spatial Media Presenter
+
+Previously named FLIPFRAME. Arrange stills and clips into a spatial sequence with editable order and pacing.
 
 [← All projects](https://github.com/MuwenTriLi/creative-workflows#selected-work)
 
@@ -8,9 +10,9 @@ Arrange images and clips along a controlled spatial sequence, from a fast overvi
 
 **[Open web app ↗](https://flipframe-motion-lab.limuwen9.chatgpt.site)** · No sign-in required
 
-The studio uses the same typography and dark workspace as Model Breakdown, with the same control placement as Collage Motion: **import on the left, playback and HUD above the preview, review and export on the right**. It opens in English, with a Chinese interface option beside the playback controls.
+The studio uses the same typography and dark workspace as Model Breakdown, with the same control placement as Animated Storyboard: **import on the left, playback and HUD above the preview, review and export on the right**. It opens in English, with a Chinese interface option beside the playback controls.
 
-![FLIPFRAME media archive, spatial preview and motion controls](../media/flipframe-editor.png)
+![Spatial Media Presenter media archive, spatial preview and motion controls](../media/flipframe-editor.png)
 *The opening collection contains Muwen's 15 supplied works: 11 stills and 4 motion studies. Six white frame-and-side-HUD presets are visible above the canvas. Pause, shot numbering and language share one toolbar.*
 
 [Watch the actual 25 s sequence](https://muwentrili.github.io/creative-workflows/collage-motion/process/#flipframe).

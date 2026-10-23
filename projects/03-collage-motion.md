@@ -1,4 +1,6 @@
-# 04 / Collage Motion
+# 04 / Animated Storyboard
+
+Previously named Collage Motion. The name now describes the main task: compare and revise moving shots on one board.
 
 [← All projects](../README.md#selected-work)
 
@@ -60,3 +62,9 @@ The eight-second sample was exported from this editor at **3840 × 2160, 24 fps,
 ## Media and design references
 
 The three supplied process videos are published as [earlier design demonstrations](https://muwentrili.github.io/creative-workflows/collage-motion/process/), separately labeled from the current app's export. BITFLIP footage is included for this portfolio demonstration; no separate media reuse license is granted. Visitor files stay in the browser tab.
+
+## Source clips: inspect and revise the board
+
+The source collection sits directly below the canvas. Preview an individual shot, select it for framing and caption edits, move it earlier or later, or enter an exact position. Uncheck **Included in board** to retain a source while excluding it from both preview and export; **Include all** restores it. Removing a card affects only this board. Bundled sources are optimized viewing copies; imported sources use the visitor's own local files.
+
+The 35-shot example uses one shared video atlas for simultaneous board playback. Individual source playback opens on demand, so the source collection does not create another 35 live video decoders.

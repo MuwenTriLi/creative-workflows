@@ -1,15 +1,15 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Collage Motion — Animated Storyboard</title><meta name="description" content="A moving storyboard for shot review and visual pitches. Try 35 sample clips, replace them with your own media, adjust the board and export a silent review."><link rel="stylesheet" href="./visualize-base.css"><script src="./lucide.js"></script><style>html,body{margin:0;background:#000!important;color-scheme:dark}body{box-sizing:border-box;padding:12px}*,*:before,*:after{box-sizing:border-box}</style></head><body>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>04 / Animated Storyboard</title><meta name="description" content="A moving storyboard for shot review and visual pitches. Try 35 sample clips, replace them with your own media, adjust the board and export a silent review."><link rel="stylesheet" href="./visualize-base.css"><script src="./lucide.js"></script><style>html,body{margin:0;background:#000!important;color-scheme:dark}body{box-sizing:border-box;padding:12px}*,*:before,*:after{box-sizing:border-box}</style></head><body>
 
 <style>
 .portfolio-bar{max-width:1680px;margin:0 auto 14px;padding:18px 22px;border:1px solid #353a3d;background:#101417;color:#f3f4f3;font-family:Arial,sans-serif;display:flex;gap:20px;justify-content:space-between;align-items:center;flex-wrap:wrap}
 .portfolio-bar h1{font-size:22px;letter-spacing:-.5px;margin:0 0 7px}.portfolio-bar p{font-size:13px;line-height:1.6;color:#b7bec3;margin:0;max-width:850px}.portfolio-bar a{color:#ffffff;text-decoration:none}.portfolio-bar button{background:#ffffff;color:#101417;border:0;padding:11px 15px;cursor:pointer;font-weight:bold;border-radius:4px}.portfolio-nav{display:flex;gap:16px;align-items:center;font-size:13px}.portfolio-bar button:focus-visible,.portfolio-bar a:focus-visible{outline:2px solid white;outline-offset:4px}
 </style>
 <header class="portfolio-bar">
-  <div><h1>04 / COLLAGE MOTION <small>MOVING SHOTS → EDITABLE STORYBOARD</small></h1>
+  <div><h1>04 / ANIMATED STORYBOARD <small>MOVING SHOTS → EDITABLE STORYBOARD</small></h1>
   <p><strong>Animated storyboard / shot review &amp; visual pitches.</strong> Compare moving shots, adjust the board, then export a silent review.</p></div>
   <nav class="portfolio-nav" aria-label="Project navigation"><a href="https://github.com/MuwenTriLi/creative-workflows/blob/main/projects/03-collage-motion.md">Project overview ↗</a><a href="https://github.com/MuwenTriLi/creative-workflows#selected-work">All projects ↗</a></nav>
-</header><nav class="family-nav" aria-label="Creative workflow studios"><span>MUWEN LI / STUDIOS</span><a href="https://meshroom-breakdown-studio.limuwen9.chatgpt.site"><b>03</b>Model Breakdown</a><a href="https://muwentrili.github.io/creative-workflows/collage-motion/" aria-current="page"><b>04</b>Collage Motion</a><a href="https://flipframe-motion-lab.limuwen9.chatgpt.site"><b>05</b>FLIPFRAME</a><a href="https://vox-one.limuwen9.chatgpt.site"><b>06</b>VOX / ONE</a><a href="https://trace-01-motion-tracker.limuwen9.chatgpt.site"><b>07</b>TRACE / 01</a></nav>
+</header><nav class="family-nav" aria-label="Creative workflow studios"><span>MUWEN LI / STUDIOS</span><a href="https://meshroom-breakdown-studio.limuwen9.chatgpt.site"><b>03</b>Model Breakdown</a><a href="https://muwentrili.github.io/creative-workflows/collage-motion/" aria-current="page"><b>04</b>Animated Storyboard</a><a href="https://flipframe-motion-lab.limuwen9.chatgpt.site"><b>05</b>Spatial Media Presenter</a><a href="https://vox-one.limuwen9.chatgpt.site"><b>06</b>VOX / ONE</a><a href="https://trace-01-motion-tracker.limuwen9.chatgpt.site"><b>07</b>TRACE / 01</a></nav>
 <div id="landscape-collage-editor" lang="zh-CN">
   <style>
     #landscape-collage-editor {
@@ -526,7 +526,7 @@
     }
   </style>
 
-  <link rel="stylesheet" href="./studio-ui.css?v=20261023-studios">
+  <link rel="stylesheet" href="./studio-ui.css?v=20261023-source-clips">
   <div class="editor-stack">
     <div class="workflow-entry">
     <div class="card upload-portal" id="lc-upload-portal" aria-label="添加照片或视频">
@@ -2258,9 +2258,10 @@
       let lockedControls = null;
 
       function refreshStudioUI() {
-        const ready = state.assets.filter(asset => asset.ready && !asset.error).length;
+        const included = state.assets.filter(asset => !asset.hidden);
+        const ready = included.filter(asset => asset.ready && !asset.error).length;
         const busy = exportPreparing || state.recording;
-        const key = [ready, state.assets.length, busy, state.language, controls.resolution.value, controls.fps.value, controls.exportFormat.value, state.duration].join("|");
+        const key = [ready, included.length, state.assets.length, busy, state.language, controls.resolution.value, controls.fps.value, controls.exportFormat.value, state.duration].join("|");
         if (key === lastStudioKey) return;
         lastStudioKey = key;
         root.classList.toggle("is-empty-workspace", state.assets.length === 0);
@@ -2280,11 +2281,11 @@
         }
         root.querySelector("#lc-open-export").disabled = busy;
         if (!busy) {
-          exportButton.disabled = ready === 0 || ready !== state.assets.length;
+          exportButton.disabled = ready === 0 || ready !== included.length;
           [playButton, timeline, root.querySelector("#lc-restart"), root.querySelector("#lc-prev-beat"), root.querySelector("#lc-next-beat")].forEach(control => { control.disabled = ready === 0; });
         }
-        const readiness = state.assets.length === 0 ? localize("先导入素材。")
-          : ready !== state.assets.length ? localize("尚有素材未准备好，请等待或移除失败素材。")
+        const readiness = included.length === 0 ? (state.language === "zh" ? "请至少显示一个片段。" : "Include at least one clip.")
+          : ready !== included.length ? localize("尚有素材未准备好，请等待或移除失败素材。")
           : state.language === "zh" ? `${ready} 个素材已准备好。` : `${ready} media files ready.`;
         root.querySelector("#lc-export-readiness").textContent = readiness;
         root.querySelector("#lc-export-summary").textContent = `${controls.resolution.value.replace("x", " × ")} · ${controls.fps.value} fps · ${state.duration.toFixed(1)} s · ${controls.exportFormat.value.toUpperCase()}`;
@@ -2728,15 +2729,21 @@
         return positiveModulo(position * multiplier + offset, count);
       }
 
-      function assignmentFor(
+      function visibleAssetIndices() {
+        return state.assets.flatMap((asset,index) => asset.hidden ? [] : [index]);
+      }
+      function assignmentFor(...args) {
+        return visibleAssetIndices()[assignmentRankFor(...args)] ?? -1;
+      }
+      function assignmentRankFor(
         column,
         row,
         beat,
         animationTimeMs = state.motionMode === "loop" ? state.revealTimeMs : state.timeMs,
       ) {
         const info = unitInfo(column, row);
-        const count = Math.max(1, state.assets.length);
-        if (state.storyboard) return ((state.boardPage||0)*state.rows*state.columns + row * state.columns + column) % count;
+        const count = Math.max(1, visibleAssetIndices().length);
+        if (state.storyboard) return (state.boardPage||0)*state.rows*state.columns + row * state.columns + column;
         if (state.flashEnabled) {
           const cellBeat = flashBeatState(flashTimeForSlot(animationTimeMs, info.slot)).step;
           return flashSwapAssignment(info.slot, cellBeat, count);
@@ -4092,6 +4099,7 @@
             const slot = animation.slot;
             const assetIndex = assignmentFor(column, row, beat, animationTimeMs);
             const asset = state.assets[assetIndex];
+            if (!asset) continue;
             const x = geometry.originX + column * (geometry.tileWidth + geometry.gap);
             const y = geometry.originY + row * (geometry.tileHeight + geometry.gap);
             const assetMotionX = asset ? asset.motionX / 100 * geometry.tileWidth : 0;
@@ -4465,6 +4473,20 @@
             assetName.dataset.tooltip = asset.name;
             assetTools.append(assetName, dragHandle, deleteButton);
             item.appendChild(assetTools);
+            const actions=document.createElement('div');actions.className='clip-actions';
+            const makeAction=(en,zh,action)=>{const b=document.createElement('button');b.type='button';b.textContent=state.language==='zh'?zh:en;b.addEventListener('click',action);actions.append(b);return b;};
+            makeAction('Preview','预览',()=>previewSource(asset));
+            makeAction('Edit','编辑',()=>selectAsset(index,true));
+            makeAction('↑','↑',()=>reorderAsset(index,index-1)).disabled=index===0;
+            actions.lastChild.setAttribute('aria-label',`Move ${formatIndex(index)} earlier`);
+            makeAction('↓','↓',()=>reorderAsset(index,index+1)).disabled=index===state.assets.length-1;
+            actions.lastChild.setAttribute('aria-label',`Move ${formatIndex(index)} later`);
+            const toggle=document.createElement('label');toggle.className='clip-inclusion';
+            const check=document.createElement('input');check.type='checkbox';check.checked=!asset.hidden;
+            check.setAttribute('aria-label',`Include ${formatIndex(index)} ${asset.name}`);
+            check.addEventListener('change',()=>{if(state.recording||exportPreparing)return;asset.hidden=!check.checked;renderLibrary();refreshStudioUI();});
+            toggle.append(check,document.createTextNode(state.language==='zh'?(asset.hidden?'已隐藏':'显示在分镜板'):(asset.hidden?'Hidden from board':'Included in board')));
+            item.classList.toggle('is-excluded',!!asset.hidden);item.append(actions,toggle);
           } else {
             button.classList.add("is-empty");
             button.disabled = true;
@@ -4490,6 +4512,9 @@
           ? `${state.assets.length} 个素材 · 当前显示 ${formatIndex(start)}–${formatIndex(Math.min(start + PAGE_SIZE - 1, state.assets.length - 1))}`
           : "尚未添加素材");
         syncOrderControls();
+        const countLabel=root.querySelector('#clip-manager-count');
+        if(countLabel){root.querySelector('#include-all-clips').textContent=state.language==='zh'?'全部显示':'Include all';root.querySelector('.clip-manager h2').textContent=state.language==='zh'?'预览、排序与显示':'Preview, arrange & include';}
+        if(countLabel)countLabel.textContent=state.language==='zh'?`${visibleAssetIndices().length} 个显示 / ${state.assets.length} 个素材`:`${visibleAssetIndices().length} included / ${state.assets.length} sources`;
         refreshIcons();
       }
 
@@ -4561,7 +4586,7 @@
       }
 
       function selectAsset(index, openPanel = false) {
-        if(state.storyboard && index>=0 && !state.recording && !exportPreparing)state.boardPage=Math.floor(index/(state.rows*state.columns));
+        if(state.storyboard && !state.recording && !exportPreparing){const rank=visibleAssetIndices().indexOf(index);if(rank>=0)state.boardPage=Math.floor(rank/(state.rows*state.columns));}
         if (index < 0 || index >= state.assets.length) {
           state.selectedAsset = -1;
         } else {
@@ -5364,6 +5389,7 @@
       }
 
       function removeAssetAt(index) {
+        if (state.recording || exportPreparing) return;
         const asset = state.assets[index];
         if (!asset) {
           return;
@@ -5406,6 +5432,7 @@
       }
 
       function reorderAsset(from, to) {
+        if (state.recording || exportPreparing) return;
         const sourceIndex = Math.max(0, Math.min(state.assets.length - 1, Number(from)));
         const targetIndex = Math.max(0, Math.min(state.assets.length - 1, Number(to)));
         if (!Number.isFinite(sourceIndex) || !Number.isFinite(targetIndex) || sourceIndex === targetIndex) {
@@ -6206,6 +6233,7 @@
       languageButton.addEventListener("click", () => {
         state.language = state.language === "zh" ? "en" : "zh";
         refreshLanguage();
+        renderLibrary();
       });
 
       addAssetsButton.addEventListener("click", (event) => {
@@ -7240,7 +7268,7 @@
 
       async function exportVideo(attempt = 0) {
         if (exportPreparing || state.recording) return;
-        if (!state.assets.length || state.assets.some(asset => !asset.ready || asset.error)) {
+        if (!visibleAssetIndices().length || state.assets.some(asset => !asset.hidden && (!asset.ready || asset.error))) {
           setStatus(localize(state.assets.length ? "尚有素材未准备好，请等待或移除失败素材。" : "先导入素材。"), true);
           return;
         }
@@ -7579,7 +7607,7 @@
       function exportVideoAssets(){
         const indices=new Set();
         for(let c=0;c<state.columns;c++)for(let r=0;r<state.rows;r++)indices.add(assignmentFor(c,r,0,0));
-        return state.assets.filter((a,i)=>a.kind==='video' && (indices.has(i)||!state.storyboard));
+        return state.assets.filter((a,i)=>!a.hidden && a.kind==='video' && (indices.has(i)||!state.storyboard));
       }
       async function seekExportSources(timeMs){
         const videos=new Map();
@@ -7798,8 +7826,8 @@
         const ticks=Math.max(5,Math.round(12/state.frameSpacing));
         for(let i=1;i<ticks;i++){const yy=y+height*i/ticks;ctx.strokeStyle=i%3===0?state.hudAccent:'#546064';ctx.lineWidth=.6*u;ctx.beginPath();ctx.moveTo(x-6*u,yy);ctx.lineTo(x,yy);ctx.moveTo(x+width,yy);ctx.lineTo(x+width+6*u,yy);ctx.stroke();}
         const fs=10*u*state.frameFontScale;ctx.font=`600 ${fs}px Arial, sans-serif`;ctx.textBaseline='middle';ctx.textAlign='left';ctx.fillStyle='#e5efeb';
-        ctx.fillText('COLLAGE MOTION  /  SHOT REVIEW',x,y-14*u);
-        ctx.textAlign='right';ctx.fillStyle=state.hudAccent;ctx.fillText(`${state.assets.length} SOURCES   /   ${state.columns} × ${state.rows}`,x+width,y-14*u);
+        ctx.fillText('ANIMATED STORYBOARD  /  SHOT REVIEW',x,y-14*u);
+        ctx.textAlign='right';ctx.fillStyle=state.hudAccent;ctx.fillText(`${visibleAssetIndices().length} SOURCES   /   ${state.columns} × ${state.rows}`,x+width,y-14*u);
         ctx.font=`400 ${9*u*state.frameFontScale}px Arial, sans-serif`;ctx.textAlign='left';ctx.fillStyle='#b4c3c6';
         ctx.fillText(state.assets.every(a=>a.sample)?'BITFLIP  /  SAMPLE SEQUENCE':'YOUR MEDIA  /  REVIEW BOARD',x,y+height+14*u);
         ctx.textAlign='right';ctx.fillStyle='#e5efeb';const fps=Number(controls.fps.value)||24;
@@ -7817,7 +7845,7 @@
         const presentation=state.frameEnabled&&state.hudEnabled&&state.frameStyle!=='review-board'&&state.hudStyle==='digital';
         root.querySelector('#rv-presentation').setAttribute('aria-pressed',String(presentation));
         root.querySelector('#rv-clean').setAttribute('aria-pressed',String(!state.frameEnabled&&!state.hudEnabled));
-        const slots=state.rows*state.columns,count=state.assets.length;
+        const slots=state.rows*state.columns,count=visibleAssetIndices().length;
         state.boardPage=Math.min(state.boardPage||0,Math.max(0,Math.ceil(count/slots)-1));
         root.querySelector('#rv-page-label').textContent=count?`Shots ${state.boardPage*slots+1}–${Math.min(count,(state.boardPage+1)*slots)} / ${count}`:'No shots yet';
         root.querySelector('#rv-prev').disabled=!state.boardPage;
@@ -7850,7 +7878,7 @@
       root.querySelector('#rv-presentation').addEventListener('click',()=>applyReviewLook(true));
       root.querySelector('#rv-clean').addEventListener('click',()=>applyReviewLook(false));
       root.querySelector('#rv-customize').addEventListener('click',()=>{setReviewStep(1);renderTabs('border');});
-      for(const [id,delta] of [['rv-prev',-1],['rv-next',1]])root.querySelector('#'+id).addEventListener('click',()=>{if(state.recording||exportPreparing)return;state.boardPage=(state.boardPage||0)+delta;refreshReviewUI();setTime(0);selectAsset(state.boardPage*state.rows*state.columns);});
+      for(const [id,delta] of [['rv-prev',-1],['rv-next',1]])root.querySelector('#'+id).addEventListener('click',()=>{if(state.recording||exportPreparing)return;state.boardPage=(state.boardPage||0)+delta;refreshReviewUI();setTime(0);selectAsset(visibleAssetIndices()[state.boardPage*state.rows*state.columns] ?? -1);});
       root.querySelector('#rv-caption').addEventListener('input',event=>{const a=state.assets[state.selectedAsset];if(a&&!state.recording&&!exportPreparing)a.reviewTitle=event.target.value.slice(0,100);});
       root.addEventListener('change',refreshReviewUI);setReviewStep(0);refreshReviewUI();
 
@@ -7861,6 +7889,37 @@
       sourceRail.append(root.querySelector('.sample-import-note'), root.querySelector('.session-note'));
       root.querySelector('.settings-column').prepend(root.querySelector('.workflow-output'));
       root.querySelector('.workflow-entry').remove();
+
+      // One source preview decoder on demand; the moving board retains its shared atlas.
+      const sourceDialog=document.createElement('dialog');sourceDialog.className='source-preview';
+      sourceDialog.setAttribute('aria-label','Source clip preview');
+      sourceDialog.innerHTML='<div class="source-preview-header"><h2></h2><button type="button" aria-label="Close source preview">Close</button></div><div class="source-preview-media"></div><p class="source-preview-info"></p>';
+      root.append(sourceDialog);
+      function closeSourcePreview(){sourceDialog.close();}
+      sourceDialog.querySelector('button').addEventListener('click',closeSourcePreview);
+      sourceDialog.addEventListener('close',()=>{const v=sourceDialog.querySelector('video');if(v){v.pause();v.removeAttribute('src');v.load();}sourceDialog.querySelector('.source-preview-media').replaceChildren();});
+      function previewSource(asset){
+        if(state.recording||exportPreparing)return;
+        const media=document.createElement(asset.kind==='video'?'video':'img');
+        media.src=asset.url;media.setAttribute('aria-label',asset.name);
+        if(asset.kind==='video'){media.controls=true;media.muted=true;media.playsInline=true;media.loop=true;media.autoplay=true;}
+        else media.alt=asset.name;
+        sourceDialog.querySelector('h2').textContent=asset.name;
+        sourceDialog.querySelector('button').textContent=state.language==='zh'?'关闭':'Close';
+        sourceDialog.querySelector('.source-preview-media').replaceChildren(media);
+        sourceDialog.querySelector('.source-preview-info').textContent=(asset.sample
+          ? 'Included sample · optimized viewing copy of the supplied shot. '
+          : 'Your original local file · stays in this browser. ')+(asset.duration?`${asset.duration.toFixed(2)} s`:'')+(asset.sample?` · ${asset.url.split('/').pop()}`:'');
+        sourceDialog.showModal();if(media.play)void media.play().catch(()=>{});
+      }
+      const clipManager=document.createElement('section');clipManager.id='source-clips';clipManager.className='clip-manager';clipManager.setAttribute('aria-label','Source clips');
+      clipManager.innerHTML='<header><div><span class="clip-kicker">03 / SOURCE CLIPS</span><h2>Preview, arrange &amp; include</h2></div><output id="clip-manager-count" aria-live="polite"></output></header><p>Preview the source, edit its framing, move it, or uncheck it to hide it from both the board and export. Removing a card never deletes your file.</p><div class="clip-manager-shortcuts"><button id="include-all-clips" type="button">Include all</button></div>';
+      for(const selector of ['.library-header','.library-actions','#lc-library-grid','.library-batch-actions'])clipManager.append(root.querySelector(selector));
+      root.querySelector('.stage-column').append(clipManager);
+      clipManager.querySelector('#include-all-clips').addEventListener('click',()=>{if(state.recording||exportPreparing)return;state.assets.forEach(a=>a.hidden=false);renderLibrary();refreshStudioUI();});
+      const sourceJump=document.createElement('a');sourceJump.className='source-clips-jump';sourceJump.href='#source-clips';sourceJump.textContent='Manage source clips ↓';sourceRail.append(sourceJump);
+      const stageJump=sourceJump.cloneNode(true);root.querySelector('.review-page').append(stageJump);
+
       void initializeStoryboard();
 
     })();
