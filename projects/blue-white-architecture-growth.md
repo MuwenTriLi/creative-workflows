@@ -4,18 +4,18 @@
 
 **Turn a company's visual language into a repeatable architectural storytelling workflow.** A shared internal Skill supports white-model styling, blue-shadow hierarchy and staged construction in Blender; each building still needs its own component logic, framing and review.
 
-[← All projects](../README.md#selected-work) · [Watch the tennis sequence](../media/architecture-growth/tennis-sequence.mp4) · [Selected outputs & credits](../docs/architecture-growth-media.md) · [Production method](#from-company-aesthetics-to-an-internal-skill)
+[← All projects](../README.md#selected-work) · [Watch the tennis sequence](https://muwentrili.github.io/creative-workflows/films/?project=growth&film=tennis-sequence) · [Selected outputs & credits](../docs/architecture-growth-media.md) · [Production method](#from-company-aesthetics-to-an-internal-skill)
 
 > Portfolio case study. The company-specific visual system and production materials belong to **illoca** and/or their respective rights holders. Selected completed visuals are shown to document Muwen's work; the company Skill, source scenes, code and exact style configuration are not released for reuse.
 
 ## Tennis venue: from plan to staged construction
 
 <table><tr>
-<td width="50%" align="center" valign="top"><a href="../media/architecture-growth/tennis-sequence.mp4"><img src="../media/architecture-growth/tennis-plan.gif" height="330" alt="Tennis venue develops from a line drawing and plan into an architectural scene"></a><br><b>Establish the plan</b><br><sub>Give the viewer a spatial reference before the model becomes dense.</sub></td>
-<td width="50%" align="center" valign="top"><a href="../media/architecture-growth/tennis-sequence.mp4"><img src="../media/architecture-growth/tennis-growth.gif" height="330" alt="Tennis venue staged construction with structural and roof systems in context"></a><br><b>Build a readable sequence</b><br><sub>Reveal systems in stages while keeping the surrounding context.</sub></td>
+<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=tennis-sequence"><img src="../media/architecture-growth/tennis-plan-large.gif" width="420" alt="Tennis venue develops from a line drawing and plan into an architectural scene"></a><br><b>Establish the plan</b><br><sub>Give the viewer a spatial reference before the model becomes dense.</sub></td>
+<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=tennis-sequence"><img src="../media/architecture-growth/tennis-growth-large.gif" width="420" alt="Tennis venue staged construction with structural and roof systems in context"></a><br><b>Build a readable sequence</b><br><sub>Reveal systems in stages while keeping the surrounding context.</sub></td>
 </tr></table>
 
-The tennis project is the principal example of the progressively refined method. Both the video and carousel-format sequences use the same visual direction; format, density and timing are adapted to the presentation. The two GIFs are excerpts from supplied completed films. [Watch the complete 33 s carousel-format sequence](../media/architecture-growth/tennis-sequence.mp4).
+The tennis project is the principal example of the progressively refined method. Both the video and carousel-format sequences use the same visual direction; format, density and timing are adapted to the presentation. The two GIFs are excerpts from supplied completed films. [Watch the complete 33 s carousel-format sequence](https://muwentrili.github.io/creative-workflows/films/?project=growth&film=tennis-sequence).
 
 <table><tr>
 <td width="33%" align="center"><a href="../media/architecture-growth/tennis-plan.jpg"><img src="../media/architecture-growth/tennis-plan.jpg" height="220" alt="Tennis venue plan stage"></a><br><sub>Plan / spatial context</sub></td>
@@ -58,14 +58,32 @@ The same reasoning applies to inconsistent dashed-line density and unclear road/
 
 ## One method, different scales of explanation
 
+### Detail and construction
+
 <table><tr>
-<td width="25%" align="center" valign="top"><a href="../media/architecture-growth/detail-a.mp4"><img src="../media/architecture-growth/detail-a.jpg" height="190" alt="Facade and floor detail in blue-white architectural rendering"></a><br><b>Detail A</b><br><sub>Floor, facade and sectional depth</sub><br><a href="../media/architecture-growth/detail-a.mp4">25 s film</a></td>
-<td width="25%" align="center" valign="top"><a href="../media/architecture-growth/detail-b.jpg"><img src="../media/architecture-growth/detail-b.jpg" height="190" alt="Multi-level architectural assembly"></a><br><b>Detail B</b><br><sub>Structure, enclosure and interior layers</sub></td>
-<td width="25%" align="center" valign="top"><a href="../media/architecture-growth/tower.jpg"><img src="../media/architecture-growth/tower.jpg" height="190" alt="Tower in contextual blue-white rendering"></a><br><b>Tower study</b><br><sub>Building scale and urban context</sub></td>
-<td width="25%" align="center" valign="top"><a href="../media/architecture-growth/office.jpg"><img src="../media/architecture-growth/office.jpg" height="190" alt="Office layout and annotated architectural plan"></a><br><b>Office typology</b><br><sub>Plan reading and spatial alternatives</sub></td>
+<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=detail-a"><img src="../media/architecture-growth/detail-a-large.gif" width="420" alt="Detail A / floor and facade"></a><br><b>Detail A / floor and facade</b><br><sub>Follow the assembly from structural frame into enclosure.</sub><br><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=detail-a">Watch 25 s MP4</a></td>
+<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=detail-b"><img src="../media/architecture-growth/detail-b.jpg" width="420" alt="Detail B / layered interior"></a><br><b>Detail B / layered interior</b><br><sub>Inspect structure, enclosure and interior systems.</sub><br><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=detail-b">Watch 25 s MP4</a></td>
 </tr></table>
 
-[Detail C: complete 35 s building-and-context sequence](../media/architecture-growth/detail-c.mp4) · [Full media notes](../docs/architecture-growth-media.md)
+<br>
+
+### From a building to its context
+
+<table><tr>
+<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=detail-c"><img src="../media/architecture-growth/detail-c-large.gif" width="420" alt="Detail C / building and context"></a><br><b>Detail C / building and context</b><br><sub>Keep a dense architectural sequence legible in its surroundings.</sub><br><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=detail-c">Watch 35 s MP4</a></td>
+<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=tower"><img src="../media/architecture-growth/tower-large.gif" width="420" alt="Tower / vertical sequence"></a><br><b>Tower / vertical sequence</b><br><sub>Read the building at a larger urban scale.</sub><br><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=tower">Watch 35 s MP4</a></td>
+</tr></table>
+
+<br>
+
+### Spatial alternatives and the complete venue
+
+<table><tr>
+<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=office"><img src="../media/architecture-growth/office-large.gif" width="420" alt="Office / plan alternatives"></a><br><b>Office / plan alternatives</b><br><sub>Compare spatial organizations under a consistent visual language.</sub><br><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=office">Watch 20 s MP4</a></td>
+<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=tennis-sequence"><img src="../media/architecture-growth/tennis-hero.jpg" width="420" alt="Tennis / completed venue"></a><br><b>Tennis / completed venue</b><br><sub>Inspect the resolved scene and its surrounding context.</sub><br><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=tennis-sequence">Watch 33 s MP4</a></td>
+</tr></table>
+
+Six complete films are available through the cards. The animated cards are short excerpts; the linked MP4s retain each complete sequence. [Film index, source notes and credits →](../docs/architecture-growth-media.md)
 
 ## What makes the work deliverable
 
