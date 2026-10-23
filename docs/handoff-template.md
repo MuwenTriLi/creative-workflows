@@ -32,3 +32,7 @@ Every automatic step should have a checkable postcondition. A repeated request s
 ## Example boundary: Clockwork timing adaptation
 
 Input is a creator-selected licensed assembly and a timing goal. Inspect the controller and dependencies, propose a change to confirmed inputs, and apply it to a working copy. If achieving the goal requires changing a driven output, removing a constraint or redesigning the mechanism, return a review request instead of expanding the task silently. Deliver the copy, before/after values and checks for the actual preview. This example has not been executed as a new Skill run.
+
+## Evidence required before calling the handoff validated
+
+Attach the completed [creator validation record](creator-validation.md), an authorized input fixture, the exact output and source revision, one failed case, and the implemented-versus-proposed control list. Include the smallest local correction and what it must preserve. A documented hypothesis or a successful build alone is not a validated feature.

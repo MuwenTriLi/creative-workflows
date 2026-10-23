@@ -13,6 +13,14 @@ Arrange images and clips along a controlled spatial sequence, from a fast overvi
 ![FLIPFRAME / SPECTRA media archive, spatial preview and motion controls](../media/flipframe-editor.png)
 *Current interactive editor; the final showcase recording is still being prepared.*
 
+## The smallest useful task
+
+**Task:** present a short media sequence with one key card that needs a longer readable hold. Keep the editorial order fixed, change that hold, and inspect the complete transition and output.
+
+**Local correction:** use the card's framing and hold controls instead of rebuilding or reshuffling the archive. These controls are visible in the editor; an end-to-end exported correction remains to be demonstrated. Protected-card locks and revision rollback are proposed, not implemented guarantees.
+
+**Decision now:** iterate one readable sequence and verify export before adding motion modes. Ask viewers what they could identify at the intended playback speed. Expand a preset only if it preserves order, framing and readability; stop a timing rule that sacrifices the content to fit a duration.
+
 ## The problem
 
 A sequence needs both impact and enough time to read each image. Reordering the source media or changing the pace of a spatial presentation can require adjusting many transitions, holds and camera-like moves. A visually impressive transition is not useful if viewers cannot understand the content it reveals.

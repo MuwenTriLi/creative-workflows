@@ -6,7 +6,9 @@ My focus is the connection between production craft and product decisions: autom
 
 **7 projects · A commercial asset library, interactive prototypes and an architectural case in preparation**
 
-**Start here:** [Clockwork: production experience → product decisions](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/production-case.md) · [Try Model Breakdown](https://meshroom-breakdown-studio.limuwen9.chatgpt.site) · [Automation, creator control & delivery checks](docs/creative-control.md)
+**Start here:** [Production → product: Clockwork](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/production-case.md) · [Feedback → iteration: Collage Motion](projects/03-collage-motion.md#from-prototype-to-a-usable-first-session) · [Try Model Breakdown](https://meshroom-breakdown-studio.limuwen9.chatgpt.site)
+
+[Evidence & next experiments across all seven projects](docs/review-guide.md) · [Automation, creator control & delivery](docs/creative-control.md)
 
 ## Selected work
 
@@ -62,7 +64,7 @@ These are current editor views. Each project page provides the problem, design c
 
 Start with a specific production decision, build the smallest usable workflow around it, then inspect both the result and the creator's ability to correct it. Each case identifies **what the system handles, what the creator decides, and what must be checked before delivery**.
 
-Clockwork is the most complete existing production-to-product case: original models and design standards became editable mechanisms and a packaged asset library. Model Breakdown is the quickest interactive example. The remaining tools explore distinct parts of a creative pipeline.
+Clockwork is the most complete existing production-to-product case: original models and design standards became editable mechanisms and a packaged asset library. Model Breakdown is the quickest interactive example. Collage Motion adds a concrete feedback-to-implementation iteration. The remaining tools explore distinct parts of a creative pipeline, with their readiness and next tests in the [evidence review](docs/review-guide.md).
 
 **Evidence is labeled:** existing product and working controls; documented checks; proposed agent behavior and validation work still to do. AI-assisted development is part of these projects. An autonomous agent is not claimed for every browser tool. [See the control model and engineering handoff](docs/creative-control.md).
 

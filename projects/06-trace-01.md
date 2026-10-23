@@ -11,6 +11,14 @@ Make a moving target easier to follow by connecting its position to a readable p
 ![TRACE 01 video workspace, positioning mode and HUD inspector](../media/trace-01-editor.png)
 *Current editor before a source clip is loaded; tracking-result footage is pending.*
 
+## The smallest useful task
+
+**Task:** follow one identifiable subject in a short clip, reveal its HUD after the locator settles, and inspect one occlusion or difficult interval. Compare with a static-pin treatment when that better serves the explanation.
+
+**Local correction:** visible controls allow tracking/search, smoothing and HUD timing changes. Smoothing is not a repair for the wrong target. Frame-level correction of a failed interval, locked good segments and regional retracking still need implementation verification; the case does not claim that recovery already works.
+
+**Decision now:** validate target identity and recovery before expanding tracker scope. Preserve the selected subject as a creator decision. If the path cannot recover after an occlusion, narrow the supported shot or use an explicitly chosen static annotation; do not silently accept the wrong subject.
+
 ## The problem
 
 A motion annotation has two separate requirements: stay attached to the correct subject and remain readable. Tracking may drift, while labels can arrive too early, cover the subject or distract from it. Treating the tracker and graphic styling as separate tasks makes those problems harder to inspect together.

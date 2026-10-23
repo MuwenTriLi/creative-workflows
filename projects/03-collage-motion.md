@@ -11,6 +11,14 @@ Turn a collection of images and clips into a timed collage, with direct control 
 ![Collage Motion editor with an empty canvas ready for media](../media/collage-motion-editor.png)
 *The editor opens with an empty canvas. Import your own images or clips to create a composition.*
 
+## The smallest useful task
+
+**Task:** import three authorized images with mixed proportions, make a five-second collage, revise one asset's framing or one timing decision, then export a 720p clip. A short image-based export has been functionally checked; an unfamiliar creator completing the task unaided remains the next test.
+
+**Local correction:** select the relevant asset and adjust its crop/position/scale, or revise timing while retaining the imported sources. Do not use global randomization for a local framing correction. Parameter editing exists; durable project saving, version comparison and automatic rollback do not. Reloading clears the session.
+
+**Decision now:** test discovery of Import, Timeline and Export before adding new visual modes or an agent. Iterate where people hesitate or corrections affect the wrong scope. Expand automation only after users can retain accepted choices and deliver an output they approve.
+
 ## The problem
 
 An animated image wall combines two jobs: composing many differently sized assets and controlling when each one appears or changes. A new image order, grid size or pacing decision can mean revisiting many individual layers and keyframes. The creative decision is the composition and rhythm; the repetitive work is keeping all those cells coordinated.
@@ -40,6 +48,15 @@ Put the media library, canvas and timing controls in one browser workspace. Layo
 The interface makes three steps explicit: **Import media → Compose & preview → Review & export**. A first-time creator begins with an empty canvas and a visible import action. The timeline stays above the preview; it supports scrubbing, frame-rate-based keyboard stepping, restart and replay. Rectangular media thumbnails show the full source proportions without oval cropping.
 
 The system calculates layout, applies the selected motion rules and reports media readiness. The creator decides the sequence, subject framing and timing. The export panel summarizes dimensions, frame rate and duration; it blocks export while media is missing or unready and locks editing while rendering. The creator then reviews the downloaded result. This is implemented interaction behavior, not a claim of autonomous AI editing.
+
+The iteration began with Muwen's direct review of the public editor. This is practitioner feedback, not a recruited user study:
+
+| Observed problem | Implemented response | Verification and remaining question |
+| --- | --- | --- |
+| Import and output were hard to locate | Numbered import/compose/export stages, an empty-state import action and a persistent export entry | Controls and empty state checked; unassisted discovery remains to test |
+| The timeline sat below a large preview and playback was difficult to control | Timeline above the preview, frame stepping, restart and replay at the end | Scrub, keyboard step and end/replay checked |
+| White margins, pill shapes and oval thumbnails departed from the intended editor | Dark full-page surface, default sans font, restrained rectangular controls and uncropped rectangular source thumbnails | Desktop and narrow-screen layout checked with landscape, portrait and square media |
+| Starting an export did not make readiness or review clear enough | Output summary, missing/unready-media gate and locked editing during render | Short H.264 exports decoded; controls restore after completion. The creator still judges the visual result |
 
 **Usability question to validate next:** can a new creator import their own media, change one composition or timing decision, and download a suitable clip without help? Observe the first point of hesitation and whether they find Import, Timeline and Export. No first-user test or completion-rate claim is made yet.
 

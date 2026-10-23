@@ -6,6 +6,7 @@ My design question is: **which parts of a creative job can a system complete rel
 
 ## What exists and what is proposed
 
+- **Implemented Collage gates:** media readiness blocks premature export; editing is locked during rendering and restored afterward. These are local application controls, not a semantic approval system.
 - **Existing tools:** parameter-driven Blender assets and interactive browser applications. Their case pages identify observed controls and the scope of actual tests.
 - **AI during development:** Codex assisted implementation and, for Clockwork, inspection and variation under Muwen's design direction. This is distinct from an AI agent operating the finished tool for its user.
 - **Packaged instructions:** the Clockwork Skill describes an adaptation procedure. A fresh end-to-end execution remains unverified.
@@ -22,6 +23,22 @@ My design question is: **which parts of a creative job can a system complete rel
 | [FLIPFRAME](../projects/04-flipframe.md) | Calculate card movement and timing from the selected sequence | Editorial order, entry/exit range and readable dwell | Can viewers inspect the intended content without clipping or rushed transitions? |
 | [VOX / ONE](../projects/05-vox-one.md) | Interface advertises local speech recognition and word timing; processing is not benchmarked here | Transcript corrections, phrase meaning, emphasis and final synchronization | Does the typography preserve the spoken meaning and remain readable against the audio? |
 | [TRACE / 01](../projects/06-trace-01.md) | Interface exposes target following and trajectory smoothing; accuracy remains unbenchmarked | Target identity, follow/static mode, correction and graphic hierarchy | Does the annotation stay on the intended target and communicate without obscuring it? |
+
+## Change one thing without restarting the job
+
+Local correction is a product requirement, not the same as offering a global “regenerate” button. Preserve the source, the accepted choices and a visible scope for the next edit. Each case now states its [bounded task and correction limits](review-guide.md#what-each-project-currently-supports).
+
+| Case | Smallest useful correction | Boundary to preserve |
+| --- | --- | --- |
+| Clockwork | A documented controller value in a working copy | Unrelated assemblies, visual direction and driver dependencies |
+| Model Breakdown | Focal part, explode amount or framing | Imported geometry and the explanation; revision rollback remains proposed |
+| Architecture Growth | One system or transition, with neighboring-frame review | Reference, scale, camera and construction order; demonstration pending |
+| Collage Motion | One asset's framing or a chosen timing control | Imported media and accepted editorial choices; session persistence is absent |
+| FLIPFRAME | One card's framing or hold | Archive order and the accepted sequence; exported correction pending |
+| VOX / ONE | Wrong word or mistimed span | Spoken meaning and neighboring timing; word-level recovery needs verification |
+| TRACE / 01 | Failed target interval | Subject identity and good intervals; regional repair remains unverified |
+
+For a future agent, show the proposed change and its affected scope before applying changes to meaning, identity or structure. Recompute dependent output after a local edit, but avoid changing unrelated creative decisions. Keeping a parameter editable does not establish rollback or non-destructive revision history.
 
 ## An agent should proceed within the brief
 
@@ -46,7 +63,7 @@ These are proposed extensions, to validate before implementation:
 
 ## What counts as done
 
-Use separate statuses for **draft → preview ready → needs review → accepted → delivered**. A processing error is a visible failed stage with a recovery action. These are proposed workflow states, not new UI badges added by this documentation update.
+Use separate statuses for **draft → preview ready → needs review → accepted → delivered**. A processing error is a visible failed stage with a recovery action. This complete state model is proposed. Collage already has readiness, rendering and completion feedback, but those statuses do not automatically certify creative acceptance.
 
 Technical checks and creative acceptance answer different questions. File existence alone is insufficient. An encoded file should decode, have the requested dimensions and duration, and cover the reviewed timeline. The creator then judges the visual story: framing, hierarchy, rhythm, meaning and reference consistency. The case-specific criteria apply to the actual output and revision, not an old audit or a screenshot.
 
@@ -66,4 +83,4 @@ Record task completion, assistance required, active adjustment time, end-to-end 
 - **Iterate** if the task is useful but control discovery, error recovery or output quality repeatedly breaks down.
 - **Stop that automation approach** if it hides important decisions, creates more correction work than it removes, or cannot meet the output criteria on the intended input class.
 
-No user study, efficiency percentage or engineering adoption is claimed in this portfolio. The existing visual work and current interaction checks are the starting evidence.
+Use the [blank validation record](creator-validation.md) for source/version, assistance, local correction, output checks and the resulting decision. No user study, efficiency percentage or engineering adoption is claimed in this portfolio. The existing visual work and current interaction checks are the starting evidence.

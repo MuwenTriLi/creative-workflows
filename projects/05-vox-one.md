@@ -11,6 +11,14 @@ Turn spoken English into editable, timed typography, with control over phrasing,
 ![VOX ONE source, transcript, live composition and typography controls](../media/vox-one-editor.png)
 *Current editor before audio import. A paired audio-and-type example is pending.*
 
+## The smallest useful task
+
+**Task:** use a short authorized English clip containing a proper noun, a pause and a phrase boundary. Correct its transcript, create one readable treatment and verify the encoded result against the audio. This processing test is pending.
+
+**Local correction:** the interface offers editable text and sync offset. Correct a misspelled word without rewriting the speaker's meaning; use a global offset only for uniform drift. Whether one word can be retimed without disturbing neighboring words must be tested. Region-level reprocessing and retained revisions are proposed requirements.
+
+**Decision now:** validate recognition, correction and synchronized export before adding languages or agent features. Expand only when wording and timing can be corrected reliably. Iterate local timing recovery; stop a phrasing rule that changes meaning. No recognition-accuracy or time-saving result is claimed.
+
 ## The problem
 
 Speech-led motion graphics require more than a transcript. Words need readable grouping, accurate timing and a visual rhythm that follows the speaker. A text correction can affect both the layout and timing; treating transcription, typography and animation as disconnected steps makes iteration harder.

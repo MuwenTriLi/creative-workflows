@@ -8,6 +8,14 @@ Use a consistent white-model and blue-shadow language to explain architectural s
 
 > Visual material is being selected. This page establishes the case structure; it does not include a playable demo, client model or downloadable Skill.
 
+## The smallest useful task
+
+**Task:** document one approved architectural shot with a fixed reference and construction sequence, showing one readability correction. This page currently contains the framework only.
+
+**Local correction to demonstrate:** isolate one problematic system or transition, retain the accepted camera and visual specification, adjust the relevant visibility, timing or line-weight settings, then inspect the affected passage and neighboring frames. This is the intended review procedure; no public execution or new video is claimed.
+
+**Decision now:** hold the visual case until selected footage and precise contribution credits are available. Test reuse on a second shot before expanding the recipe. Stop a rule that distorts scale or construction dependencies. Company models, source instructions and unapproved media remain outside this presentation.
+
 ## The problem
 
 A dense architectural model can hide the very relationships an animation needs to explain. Showing everything at once makes sequence and hierarchy difficult to read; styling each shot independently can introduce inconsistent outlines, shadows and emphasis.
