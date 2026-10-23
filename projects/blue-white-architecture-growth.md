@@ -1,6 +1,6 @@
 # Blue / White Architecture Growth
 
-**03 / Company production case · illoca · Creative Content Director: Muwen Li**
+**02 / Company production case · illoca · Creative Content Director: Muwen Li**
 
 **Turn a company's visual language into a repeatable architectural storytelling workflow.** A shared internal Skill supports white-model styling, blue-shadow hierarchy and staged construction in Blender; each building still needs its own component logic, framing and review.
 

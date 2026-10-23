@@ -48,7 +48,7 @@ Use one ordered **Visual Archive** as the sequence source, with a spatial previe
 4. Use **Play / Pause** above the canvas, then scrub the timeline. Pause stops both the sequence and its source clips. Compare **Wave rail** and **Step showcase**, and adjust the hold or deceleration.
 5. Open **Review & export** on the right. Check the sequence order, reading time, framing and selected overlays before exporting.
 
-**Returning visitors:** an older architectural board is saved locally before the new portfolio example appears. **Resume saved board** restores its media and settings. Loading the example also preserves a current board containing imported media; it does not clear the media cache.
+**Opening behavior:** the supplied 15-asset collection starts its Orbital Shift sequence automatically. The toolbar pauses it; the full-animation control replays it. There is no Resume saved board prompt. Imported work is retained locally as a backup when switching to the example, but no recovery interface is currently exposed; export your work before leaving.
 
 ## Design contribution and reusable workflow
 
@@ -83,3 +83,5 @@ A short finished sequence and an A/B recording with identical media: change only
 ## Example-first workflow
 
 The opening example, visible Import action, shared studio navigation and English default are implemented. The creator can replace the supplied content or adjust one local choice. No automated story judgment, protected-card locking or revision rollback is claimed. Media rights remain separate from the application.
+
+The October 23 entrance refinement starts the full Orbital Shift sequence on a fresh visit, removes the saved-board prompt, and wraps Motion and asset labels. The output encoder is unchanged by this presentation revision.

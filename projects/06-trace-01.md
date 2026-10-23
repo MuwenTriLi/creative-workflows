@@ -9,7 +9,7 @@ Make a moving target easier to follow by connecting its position to a readable p
 **[Open web app ↗](https://trace-01-motion-tracker.limuwen9.chatgpt.site)** · No sign-in required
 
 ![TRACE 01 video workspace, positioning mode and HUD inspector](../media/trace-01-editor.png)
-*The English-default studio opens with a supplied 4.5 s clip and a labeled static pin. This demonstrates annotation styling, not automatic tracking accuracy. Import your own clip to test Follow object; a Chinese interface switch is available.*
+*The English-default studio starts empty. Import your own video, pause on a clear frame, then click a subject for Target 01 tracking or choose Position anchor for a fixed annotation. No footage or anchor is selected for you. Playback, language and three white HUD presets sit above the preview; output controls sit on the right.*
 
 ## The smallest useful task
 

@@ -9,7 +9,7 @@
   <div><h1>04 / COLLAGE MOTION <small>MOVING SHOTS → EDITABLE STORYBOARD</small></h1>
   <p><strong>Animated storyboard / shot review &amp; visual pitches.</strong> Compare moving shots, adjust the board, then export a silent review.</p></div>
   <nav class="portfolio-nav" aria-label="Project navigation"><a href="https://github.com/MuwenTriLi/creative-workflows/blob/main/projects/03-collage-motion.md">Project overview ↗</a><a href="https://github.com/MuwenTriLi/creative-workflows#selected-work">All projects ↗</a></nav>
-</header><nav class="family-nav" aria-label="Creative workflow studios"><span>MUWEN LI / STUDIOS</span><a href="https://meshroom-breakdown-studio.limuwen9.chatgpt.site"><b>02</b>Model Breakdown</a><a href="https://muwentrili.github.io/creative-workflows/collage-motion/" aria-current="page"><b>04</b>Collage Motion</a><a href="https://flipframe-motion-lab.limuwen9.chatgpt.site"><b>05</b>FLIPFRAME</a><a href="https://vox-one.limuwen9.chatgpt.site"><b>06</b>VOX / ONE</a><a href="https://trace-01-motion-tracker.limuwen9.chatgpt.site"><b>07</b>TRACE / 01</a></nav>
+</header><nav class="family-nav" aria-label="Creative workflow studios"><span>MUWEN LI / STUDIOS</span><a href="https://meshroom-breakdown-studio.limuwen9.chatgpt.site"><b>03</b>Model Breakdown</a><a href="https://muwentrili.github.io/creative-workflows/collage-motion/" aria-current="page"><b>04</b>Collage Motion</a><a href="https://flipframe-motion-lab.limuwen9.chatgpt.site"><b>05</b>FLIPFRAME</a><a href="https://vox-one.limuwen9.chatgpt.site"><b>06</b>VOX / ONE</a><a href="https://trace-01-motion-tracker.limuwen9.chatgpt.site"><b>07</b>TRACE / 01</a></nav>
 <div id="landscape-collage-editor" lang="zh-CN">
   <style>
     #landscape-collage-editor {
@@ -639,6 +639,7 @@
 </aside>
       <section class="stage-column" aria-label="画面预览与素材位置">
         <div class="workspace-heading"><strong>02 / 编排与预览</strong><span>调整右侧参数，再拖动时间轴检查效果。</span></div>
+        <div class="studio-purpose" style="padding:12px 0 18px"><h1 style="font:500 26px/1.2 Arial,Helvetica,sans-serif;margin:0 0 8px">在一张分镜板上比较动态镜头</h1><p style="font:14px/1.5 Arial,Helvetica,sans-serif;color:#b7c2bd;margin:0">导入片段 → 编排与标注镜头 → 比较动态 → 导出 4K 分镜板。</p></div>
         <div class="review-look" aria-label="Presentation overlays"><span>02 / Presentation</span><button type="button" id="rv-presentation" aria-pressed="true">Original HUD</button><button type="button" id="rv-clean" aria-pressed="false">Clean board</button><button type="button" id="rv-customize">Customize overlays ↗</button></div>
         <div class="review-page"><button type="button" id="rv-prev" aria-label="Previous board page">←</button><output id="rv-page-label">Shots 1–20 / 40</output><button type="button" id="rv-next" aria-label="Next board page">→</button><span>Shot IDs &amp; HUD are included in export.</span></div>
         <div class="board-mode" role="group" aria-label="Presentation mode"><button id="sb-storyboard" type="button" aria-pressed="true">Storyboard</button><button id="sb-collage" type="button" aria-pressed="false">Motion collage</button><span id="sb-mode-note">Compare shots side by side.</span></div>
@@ -1769,6 +1770,8 @@
       window.addEventListener("touchmove", markHeavyInteraction, { passive: true });
 
       const UI_TRANSLATIONS = {
+        "在一张分镜板上比较动态镜头": "Compare moving shots on one storyboard",
+        "导入片段 → 编排与标注镜头 → 比较动态 → 导出 4K 分镜板。": "Import clips → arrange and label shots → compare motion → export a 4K review board.",
         "01 / 导入素材": "01 / Import media",
         "03 / 导出": "03 / Export",
         "拖入图片或视频，或选择文件。下一个位置": "Drop images or clips here. Next slot",
