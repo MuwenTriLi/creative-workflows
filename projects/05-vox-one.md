@@ -1,4 +1,4 @@
-# VOX / ONE / Speech to Motion Type
+# 06 / VOX / ONE
 
 [← All projects](https://github.com/MuwenTriLi/creative-workflows#selected-work)
 
@@ -9,7 +9,7 @@ Turn spoken English into editable, timed typography, with control over phrasing,
 **[Open web app ↗](https://vox-one.limuwen9.chatgpt.site)** · No sign-in required
 
 ![VOX ONE source, transcript, live composition and typography controls](../media/vox-one-editor.png)
-*Current editor before audio import. A paired audio-and-type example is pending.*
+*The English-default studio starts with an eight-second silent typography example. Its text and timing are authored demo data, not an automatic transcription. Import a voice clip to exercise the speech workflow; a Chinese interface switch is available.*
 
 ## The smallest useful task
 
@@ -69,6 +69,6 @@ The hosted app and read-only source inspection confirm local Whisper Base/WASM o
 
 A short authorized voice sample, the corrected transcript, and two typography treatments using the same audio. Include one real correction and its effect on the final sequence, with Muwen's specific role and implementation details.
 
-## Next presentation iteration
+## Shared studio, distinct responsibility
 
-Use a labeled, creator-selected example to show the intended result on entry, keep the input action visible, and let visitors replace the example or revise one local choice. This presentation pass is planned; the example and acceptance requirements are listed in [Example-first workflows](../docs/example-first-workflows.md). Existing verification limits above still apply.
+The opening example, visible input/output actions, shared navigation, default Arial/Helvetica typography and rectangular dark controls follow Model Breakdown's workspace language. The tool's specific acceptance criteria above remain separate; a common appearance does not imply equal production readiness.

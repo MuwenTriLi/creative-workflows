@@ -1,4 +1,4 @@
-# TRACE / 01 / Motion Tracking & HUD
+# 07 / TRACE / 01
 
 [← All projects](https://github.com/MuwenTriLi/creative-workflows#selected-work)
 
@@ -9,7 +9,7 @@ Make a moving target easier to follow by connecting its position to a readable p
 **[Open web app ↗](https://trace-01-motion-tracker.limuwen9.chatgpt.site)** · No sign-in required
 
 ![TRACE 01 video workspace, positioning mode and HUD inspector](../media/trace-01-editor.png)
-*Current editor before a source clip is loaded; tracking-result footage is pending.*
+*The English-default studio opens with a supplied 4.5 s clip and a labeled static pin. This demonstrates annotation styling, not automatic tracking accuracy. Import your own clip to test Follow object; a Chinese interface switch is available.*
 
 ## The smallest useful task
 
@@ -69,6 +69,6 @@ A four-second synthetic occlusion clip was imported, a target selected in Follow
 
 Show the original clip beside the annotated result, then a short recording of one tracking adjustment and one readability decision. A difficult frame or a corrected drift will communicate the product reasoning better than an uninterrupted ideal result alone.
 
-## Next presentation iteration
+## Shared studio, distinct responsibility
 
-Use a labeled, creator-selected example to show the intended result on entry, keep the input action visible, and let visitors replace the example or revise one local choice. This presentation pass is planned; the example and acceptance requirements are listed in [Example-first workflows](../docs/example-first-workflows.md). Existing verification limits above still apply.
+The opening example, visible input/output actions, shared navigation, default Arial/Helvetica typography and rectangular dark controls follow Model Breakdown's workspace language. The tool's specific acceptance criteria above remain separate; a common appearance does not imply equal production readiness.

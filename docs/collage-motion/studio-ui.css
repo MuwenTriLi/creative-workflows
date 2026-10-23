@@ -3,17 +3,17 @@
 .sample-import-note{margin:0;font-size:12px;color:#bac3c6;line-height:1.5}
 #landscape-collage-editor .sample-panel{padding:16px 18px;border:1px solid #39433e;background:linear-gradient(110deg,#172019,#111719 70%);display:grid;gap:12px}
 #landscape-collage-editor .sample-heading{display:flex;justify-content:space-between;align-items:center;gap:16px}
-#landscape-collage-editor .sample-kicker{font-size:10px;letter-spacing:1.8px;color:#d8ff6a}
+#landscape-collage-editor .sample-kicker{font-size:10px;letter-spacing:1.8px;color:#ffffff}
 #landscape-collage-editor .sample-heading h2{margin:5px 0 0;font-size:19px;font-weight:500;letter-spacing:-.35px}
 #landscape-collage-editor .sample-count{font-size:11px;color:#a5b7ab;white-space:nowrap}
 #landscape-collage-editor .sample-actions{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
 #landscape-collage-editor .sample-actions label{font-size:11px;color:#adb7b1}
 #landscape-collage-editor :is(.sample-actions button,.sample-actions select,.board-mode button){padding:7px 11px;min-height:32px;border:1px solid #414a47;background:#18211d;color:#eef3ed;cursor:pointer;line-height:1.35}
 #landscape-collage-editor .sample-actions button:disabled{opacity:.5;cursor:wait}
-#landscape-collage-editor .sample-actions #sb-browse{border-color:#93a96b;color:#d8ff6a}
+#landscape-collage-editor .sample-actions #sb-browse{border-color:#93a96b;color:#ffffff}
 #landscape-collage-editor #sb-status{font-size:11px;line-height:1.45;color:#a9b7af;margin:0;min-height:16px}
 #landscape-collage-editor .board-mode{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
-#landscape-collage-editor .board-mode [aria-pressed=true]{background:#d8ff6a;border-color:#d8ff6a;color:#101709}
+#landscape-collage-editor .board-mode [aria-pressed=true]{background:#ffffff;border-color:#ffffff;color:#101709}
 #landscape-collage-editor #sb-mode-note{font-size:11px;color:#9da9ad;flex:1;min-width:180px;line-height:1.5;margin-left:8px}
 #landscape-collage-editor .sample-library{border:1px solid #303b3e;padding:12px;background:#111719}
 #landscape-collage-editor .sample-library summary{cursor:pointer;font-size:13px;color:#eef0ec}
@@ -21,7 +21,7 @@
 #landscape-collage-editor .sample-library p{font-size:12px;color:#b9c5be;line-height:1.5}
 #landscape-collage-editor #sb-library-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;max-height:460px;overflow-y:auto;scrollbar-width:thin}
 #landscape-collage-editor #sb-library-grid button{padding:0;border:1px solid #303a3d;background:#0b1113;color:#eef0e9;overflow:hidden;text-align:left;cursor:pointer;min-width:0}
-#landscape-collage-editor #sb-library-grid button:hover{border-color:#d8ff6a}
+#landscape-collage-editor #sb-library-grid button:hover{border-color:#ffffff}
 #landscape-collage-editor #sb-library-grid img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain}
 #landscape-collage-editor #sb-library-grid span{display:block;padding:7px 7px 2px;font-size:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 #landscape-collage-editor #sb-library-grid small{display:block;padding:0 7px 7px;color:#93a39d;font-size:10px}
@@ -39,12 +39,12 @@ html > body { margin: 0; padding: 0; background: #080a0b !important; color: #e9e
 .portfolio-bar p { font-size: 13px; color: #a7afb1; }
 .portfolio-nav a { color: #c1c7c8; }
 #landscape-collage-editor,
-#landscape-collage-editor[lang] { max-width: 1680px; margin: 0 auto; padding: 18px 24px 32px; border-radius: 0; background: #080a0b; font-family: Arial, "Segoe UI", "Microsoft YaHei", sans-serif; --font-size-base: 14px; --foreground: #e9ecec; --background: #080a0b; --card: #111517; --border: #343b3d; --primary: #d8ff6a; --primary-foreground: #11170b; --radius-full: 2px; --radius: 2px; --radius-lg: 2px; --radius-2xl: 2px; }
+#landscape-collage-editor[lang] { max-width: 1680px; margin: 0 auto; padding: 18px 24px 32px; border-radius: 0; background: #080a0b; font-family: Arial, "Segoe UI", "Microsoft YaHei", sans-serif; --font-size-base: 14px; --foreground: #e9ecec; --background: #080a0b; --card: #111517; --border: #343b3d; --primary: #ffffff; --primary-foreground: #11170b; --radius-full: 2px; --radius: 2px; --radius-lg: 2px; --radius-2xl: 2px; }
 #landscape-collage-editor :is(button, input, select, .card, .viz-tile, .viz-badge) { border-radius: 2px; font-family: inherit; font-size: 13px; }
 #landscape-collage-editor .btn { min-height: 34px; height: auto; padding: 7px 12px; font-weight: 500; box-shadow: none; }
-#landscape-collage-editor .btn-primary { background: #d8ff6a; color: #11170b; border-color: #d8ff6a; }
+#landscape-collage-editor .btn-primary { background: #ffffff; color: #11170b; border-color: #ffffff; }
 #landscape-collage-editor :is(.form-select, .form-input) { min-height: 34px; padding-block: 7px; background-color: #191e20; }
-#landscape-collage-editor :is(button, input, select):focus-visible { outline: 2px solid #d8ff6a; outline-offset: 3px; }
+#landscape-collage-editor :is(button, input, select):focus-visible { outline: 2px solid #ffffff; outline-offset: 3px; }
 #landscape-collage-editor .card { padding: 12px; border: 1px solid #303638; }
 #landscape-collage-editor .workflow-entry { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; }
 #landscape-collage-editor .upload-portal { min-height: 72px; padding: 12px 16px; border: 1px dashed #4a5458; background: #101416; }
@@ -66,10 +66,10 @@ html > body { margin: 0; padding: 0; background: #080a0b !important; color: #e9e
 #landscape-collage-editor .timeline-heading { display: flex; gap: 12px; justify-content: space-between; align-items: baseline; font-size: 11px; }
 #landscape-collage-editor .timeline-shortcut { color: #849094; margin-right: auto; }
 #landscape-collage-editor .timecode { font-variant-numeric: tabular-nums; white-space: nowrap; color: #8e9a9e; }
-#landscape-collage-editor #lc-timeline-value { color: #d8ff6a; font-size: 12px; font-variant-numeric: tabular-nums; }
-#landscape-collage-editor #lc-timeline { --played: 0%; display: block; appearance: none; -webkit-appearance: none; width: 100%; height: 26px; margin: 4px 0 0; padding: 0; border: 0; background: linear-gradient(to right, #d8ff6a var(--played), #414c51 var(--played)) center / 100% 2px no-repeat; cursor: ew-resize; touch-action: none; }
-#landscape-collage-editor #lc-timeline::-webkit-slider-thumb { appearance: none; width: 8px; height: 20px; border: 1px solid #eaffb0; border-radius: 0; background: #d8ff6a; box-shadow: 0 0 0 3px #111719; }
-#landscape-collage-editor #lc-timeline::-moz-range-thumb { width: 7px; height: 20px; border: 1px solid #eaffb0; border-radius: 0; background: #d8ff6a; }
+#landscape-collage-editor #lc-timeline-value { color: #ffffff; font-size: 12px; font-variant-numeric: tabular-nums; }
+#landscape-collage-editor #lc-timeline { --played: 0%; display: block; appearance: none; -webkit-appearance: none; width: 100%; height: 26px; margin: 4px 0 0; padding: 0; border: 0; background: linear-gradient(to right, #ffffff var(--played), #414c51 var(--played)) center / 100% 2px no-repeat; cursor: ew-resize; touch-action: none; }
+#landscape-collage-editor #lc-timeline::-webkit-slider-thumb { appearance: none; width: 8px; height: 20px; border: 1px solid #eaffb0; border-radius: 0; background: #ffffff; box-shadow: 0 0 0 3px #111719; }
+#landscape-collage-editor #lc-timeline::-moz-range-thumb { width: 7px; height: 20px; border: 1px solid #eaffb0; border-radius: 0; background: #ffffff; }
 #landscape-collage-editor .timeline-ruler { display: flex; justify-content: space-between; color: #8f9b9f; font-size: 10px; font-variant-numeric: tabular-nums; }
 #landscape-collage-editor .preview-card { position: relative; padding: 12px; background: #050707; min-height: 230px; align-items: center; }
 #landscape-collage-editor .canvas-shell { border-radius: 0; width: min(100%, 270px); }
@@ -77,7 +77,7 @@ html > body { margin: 0; padding: 0; background: #080a0b !important; color: #e9e
 #landscape-collage-editor .empty-workspace { position: absolute; z-index: 2; inset: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 10px; border: 1px dashed #283134; color: #c8d0d1; }
 #landscape-collage-editor .empty-workspace[hidden] { display: none; }
 #landscape-collage-editor .empty-workspace p { margin: 0; color: #8d999e; font-size: 13px; line-height: 1.7; }
-#landscape-collage-editor .empty-mark { width: 38px; height: 38px; border: 1px solid #455155; color: #d8ff6a; font-size: 26px; line-height: 34px; }
+#landscape-collage-editor .empty-mark { width: 38px; height: 38px; border: 1px solid #455155; color: #ffffff; font-size: 26px; line-height: 34px; }
 #landscape-collage-editor.is-empty-workspace #lc-canvas { visibility: hidden; }
 #landscape-collage-editor.is-empty-workspace :is(.library-grid, .library-actions, .library-batch-actions, .selection-summary) { display: none; }
 #landscape-collage-editor .selection-summary { background: #101416; padding: 9px 12px; }
@@ -85,7 +85,7 @@ html > body { margin: 0; padding: 0; background: #080a0b !important; color: #e9e
 #landscape-collage-editor .settings-column { border-left: 1px solid #303638; padding-left: 18px; gap: 12px; }
 #landscape-collage-editor .tab-list { gap: 3px; }
 #landscape-collage-editor .tab-list .btn { padding: 7px 2px; font-size: 12px; }
-#landscape-collage-editor .tab-list [aria-selected="true"] { background: #d8ff6a; color: #11170b; border-color: #d8ff6a; }
+#landscape-collage-editor .tab-list [aria-selected="true"] { background: #ffffff; color: #11170b; border-color: #ffffff; }
 #landscape-collage-editor .section-title { color: #bbc4c7; font-size: 12px; }
 #landscape-collage-editor .form-label { font-size: 12px; font-weight: 400; }
 #landscape-collage-editor .param-grid { gap: 12px; }
@@ -98,9 +98,9 @@ html > body { margin: 0; padding: 0; background: #080a0b !important; color: #e9e
 #landscape-collage-editor .library-selection { grid-template-columns: 90px minmax(0,1fr); }
 #landscape-collage-editor .export-review { padding: 12px; border: 1px solid #3a4544; background: #121a18; font-size: 12px; line-height: 1.6; }
 #landscape-collage-editor .export-review p { margin: 7px 0; color: #aab5b6; }
-#landscape-collage-editor #lc-export-readiness { color: #d8ff6a; }
+#landscape-collage-editor #lc-export-readiness { color: #ffffff; }
 #landscape-collage-editor .export-spec { display: block; color: #e2e8e8; padding-top: 8px; border-top: 1px solid #35433d; font-variant-numeric: tabular-nums; }
-#landscape-collage-editor progress { width: 100%; height: 3px; accent-color: #d8ff6a; }
+#landscape-collage-editor progress { width: 100%; height: 3px; accent-color: #ffffff; }
 #landscape-collage-editor progress[hidden] { display: none; }
 #landscape-collage-editor.is-exporting .canvas-shell { opacity: .75; }
 @media (min-width: 1100px) { #landscape-collage-editor .settings-column { position: sticky; top: 12px; max-height: calc(100dvh - 24px); overflow-y: auto; scrollbar-width: thin; padding-right: 5px; } }
@@ -111,7 +111,7 @@ html > body { margin: 0; padding: 0; background: #080a0b !important; color: #e9e
 .portfolio-bar { padding: 12px 24px; }
 #landscape-collage-editor .sample-panel{padding:9px 12px;gap:5px}
 #landscape-collage-editor .sample-heading{display:none}
-#landscape-collage-editor .sample-actions label{color:#d8ff6a;font-size:11px}
+#landscape-collage-editor .sample-actions label{color:#ffffff;font-size:11px}
 #landscape-collage-editor .sample-actions :is(button,select){padding:5px 9px;min-height:29px;font-size:11px}
 #landscape-collage-editor .upload-portal{min-height:54px;padding:8px 12px}
 #landscape-collage-editor .sample-import-note{margin:0;font-size:11px}
@@ -131,7 +131,7 @@ html > body { margin: 0; padding: 0; background: #080a0b !important; color: #e9e
 
 #landscape-collage-editor.is-exporting :is(.preview-card,.upload-portal) { pointer-events: none; }
 
-#landscape-collage-editor .import-feedback { margin: 0; padding: 8px 12px; border-left: 2px solid #d8ff6a; color: #d0d9d9; font-size: 12px; background: #151d1a; }
+#landscape-collage-editor .import-feedback { margin: 0; padding: 8px 12px; border-left: 2px solid #ffffff; color: #d0d9d9; font-size: 12px; background: #151d1a; }
 #landscape-collage-editor .import-feedback.has-error { border-color: #f2a384; color: #ffd3bd; }
 #landscape-collage-editor .import-feedback[hidden] { display: none; }
 .portfolio-bar{padding:10px 24px}
@@ -174,20 +174,20 @@ html > body { margin: 0; padding: 0; background: #080a0b !important; color: #e9e
 #landscape-collage-editor .review-look{grid-row:1;grid-column:1/-1;padding:9px 10px;background:#121a1c;border:1px solid #344246}
 #landscape-collage-editor .review-look>span{color:#b3c4c4;margin-right:auto;font-size:10px;text-transform:uppercase;letter-spacing:.08em}
 #landscape-collage-editor .review-look button,#landscape-collage-editor .review-page button,#landscape-collage-editor .review-guide button{background:#151e20;color:#d9e3df;border:1px solid #405052;border-radius:0;padding:7px 9px;font:inherit;cursor:pointer}
-#landscape-collage-editor .review-look [aria-pressed=true],#landscape-collage-editor .review-guide [aria-pressed=true]{background:#d8ff6a;color:#10170a;border-color:#d8ff6a}
+#landscape-collage-editor .review-look [aria-pressed=true],#landscape-collage-editor .review-guide [aria-pressed=true]{background:#ffffff;color:#10170a;border-color:#ffffff}
 #landscape-collage-editor .stage-column .board-mode{grid-row:2}
 #landscape-collage-editor .stage-column .stage-toolbar{grid-row:2}
 #landscape-collage-editor .review-page{grid-row:3;color:#dbe8e6}
 #landscape-collage-editor .review-page>span{margin-left:auto;font-size:10px;color:#92a3a8}
 #landscape-collage-editor .review-page button:disabled{opacity:.3;cursor:default}
 #landscape-collage-editor .review-guide{border:1px solid #3e4c4a;background:linear-gradient(140deg,#1a2523,#101718);padding:14px;margin-bottom:16px}
-#landscape-collage-editor .review-guide-kicker{font-size:10px;letter-spacing:.09em;color:#d8ff6a;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+#landscape-collage-editor .review-guide-kicker{font-size:10px;letter-spacing:.09em;color:#ffffff;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
 #landscape-collage-editor .review-guide-kicker span{color:#8fa39e;font-size:9px}
 #landscape-collage-editor .review-guide-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:3px;margin:12px 0}
 #landscape-collage-editor .review-guide-steps button{font-size:10px;padding:7px 2px}
 #landscape-collage-editor .review-guide h2{font-size:16px;margin:10px 0 6px;color:#edf3ef;font-weight:500}
 #landscape-collage-editor .review-guide p{font-size:12px;line-height:1.6;color:#adbfba;margin:0 0 12px;min-height:57px}
-#landscape-collage-editor .review-guide #rv-guide-action{color:#d8ff6a;font-size:11px}
+#landscape-collage-editor .review-guide #rv-guide-action{color:#ffffff;font-size:11px}
 #landscape-collage-editor .review-note{font-size:11px;line-height:1.5;color:#9cabae}
 #landscape-collage-editor .asset-item{border:1px solid #344045;background:#0f171a;min-width:0;overflow:hidden}
 #landscape-collage-editor .asset-tile{width:100%;height:auto!important;aspect-ratio:16/9;border:0}
@@ -204,3 +204,104 @@ html > body { margin: 0; padding: 0; background: #080a0b !important; color: #e9e
 #landscape-collage-editor .review-guide-steps button{font-size:10px}
 @media(max-width:1100px){#landscape-collage-editor .stage-column .stage-toolbar{grid-row:3}#landscape-collage-editor .review-page{grid-row:4}}
 @media(max-width:600px){#landscape-collage-editor .review-look{padding:7px}#landscape-collage-editor .review-look>span{width:100%;font-size:9px}#landscape-collage-editor .review-look button{font-size:10px;padding:6px}#landscape-collage-editor .review-page>span{display:none}}
+
+.hud-style-shortcuts{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin:7px 0 12px}.hud-style-shortcuts button{min-height:30px;font:11px Arial,sans-serif;background:#101315;color:#ddd;border:1px solid #353b3e;padding:6px;cursor:pointer}.hud-style-shortcuts button[aria-pressed=true]{background:#fff;color:#111}.rv-look button[aria-pressed=true]{background:#fff;color:#111}
+
+/* Shared studio language, taken from Model Breakdown. */
+:root,.dark { --ink:#020202; --panel:#090909; --panel-2:#0e0e0e; --line:#242424; --text:#f0f0eb; --muted:#92948e; --accent:#f3f3ee; --acid:#f3f3ee; --acid-soft:rgba(255,255,250,.075); --accent-soft:rgba(255,255,250,.075); --primary:#f3f3ee; --primary-foreground:#090909; --border:#242424; --background:#020202; --card:#090909; --font-ui:Arial,Helvetica,sans-serif; --font-sans:Arial,Helvetica,sans-serif; --font-mono:Arial,Helvetica,sans-serif; }
+html,body {background:#020202;color:#f0f0eb;font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
+.app-shell,.studio-shell {background:#020202;--font-ui:Arial,Helvetica,sans-serif;}
+.topbar {min-height:68px;height:auto;background:#090909;border-bottom:1px solid #242424;position:relative;top:auto;gap:16px;padding:12px 18px;}
+.topbar :is(strong,small,span,button),.control-rail,.asset-panel,.inspector-panel {font-family:Arial,Helvetica,sans-serif;}
+.topbar .brand strong,.brand-name {font-size:14px;letter-spacing:.06em;font-weight:600;white-space:nowrap;}
+.brand small,.brand-subtitle {font-size:9px;letter-spacing:.12em;color:#92948e;}
+.brand-mark,.brand-sigil {background:transparent;color:#f0f0eb;border:1px solid #444;width:28px;height:28px;border-radius:0;}
+button,select,input,textarea {font-family:Arial,Helvetica,sans-serif;border-radius:0;}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible {outline:2px solid #f3f3ee;outline-offset:3px;}
+.family-nav{display:flex;align-items:center;gap:4px;padding:8px 18px;background:#090909;border-bottom:1px solid #242424;overflow-x:auto;min-height:42px;font:11px Arial,Helvetica,sans-serif;}
+.family-nav>span{color:#777973;letter-spacing:.12em;font-size:9px;margin-right:14px;white-space:nowrap;}
+.family-nav a{color:#999b96;text-decoration:none;border:1px solid transparent;padding:6px 10px;white-space:nowrap;}
+.family-nav a[aria-current=page]{color:#f0f0eb;background:#191919;border-color:#383838;}
+.family-nav a:hover{color:#fff;border-color:#555;}
+.family-nav a b{font-weight:400;color:#777973;margin-right:7px;}
+.family-nav .family-index{margin-left:auto;color:#c2c3bd;}
+.family-intro{font:12px/1.5 Arial,Helvetica,sans-serif;color:#a4a69f;letter-spacing:0;margin:0;padding:12px 18px;border-bottom:1px solid #242424;background:#090909;}
+@media(max-width:800px){.family-nav>span{display:none}.family-nav{padding:7px 10px}.family-nav a{padding:6px}.family-intro{font-size:11px}.topbar{gap:10px}}
+
+.portfolio-bar{max-width:none;margin:0;padding:15px 18px;background:#090909;min-height:68px;border-bottom:1px solid #242424}
+.portfolio-bar h1{font-size:14px;letter-spacing:.06em;line-height:1.5}.portfolio-bar h1 small{display:block;font-size:9px;color:#92948e;letter-spacing:.12em;font-weight:400}.portfolio-bar p{display:none}
+#landscape-collage-editor{max-width:none;padding:14px 18px;background:#020202;--card:#090909;--border:#242424;--sci-accent:#f3f3ee;--ring:#f3f3ee;font-family:Arial,Helvetica,sans-serif}
+#landscape-collage-editor .editor-grid{grid-template-columns:236px minmax(0,1fr) 330px;gap:18px}
+#landscape-collage-editor .family-source{min-width:0;display:flex;flex-direction:column;gap:12px;border-right:1px solid #242424;padding-right:14px;max-height:calc(100vh - 215px);overflow:auto;scrollbar-width:thin}
+.family-source-heading{font-size:10px;color:#999b96;letter-spacing:.12em;padding:10px 0;border-bottom:1px solid #242424}
+#landscape-collage-editor .family-source #lc-library-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+#landscape-collage-editor .family-source :is(.library-header,.library-actions,.library-batch-actions){display:flex;flex-wrap:wrap;gap:7px}
+#landscape-collage-editor .family-source .library-selected-preview{display:none}
+#landscape-collage-editor .family-source .library-actions{border-bottom:1px solid #242424;padding-bottom:10px}
+#landscape-collage-editor .family-source .selection-summary{font-size:11px;padding:8px}
+#landscape-collage-editor .family-source #lc-order-position{width:54px}
+#landscape-collage-editor .family-source .library-batch-actions{display:none}
+#landscape-collage-editor .family-source .asset-name{font-size:10px;line-height:1.5}
+#landscape-collage-editor .sample-panel{padding:9px 12px;background:#090909;border-color:#242424}
+#landscape-collage-editor .sample-actions :is(button,select){background:#0e0e0e;border-color:#383838;color:#eee}
+#landscape-collage-editor .sample-library{background:#090909;border-color:#242424}
+#landscape-collage-editor #sb-library-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+#landscape-collage-editor .settings-column{max-height:calc(100vh - 215px);overflow:auto;scrollbar-width:thin;padding-left:14px;border-left:1px solid #242424}
+#landscape-collage-editor .review-guide{background:#090909;border-color:#242424}
+#landscape-collage-editor .review-guide-kicker span{display:none}
+#landscape-collage-editor .preview-card{padding:0;border:1px solid #242424;background:#020202}
+#landscape-collage-editor .studio-timeline{background:#090909;border-color:#242424}
+#landscape-collage-editor .upload-portal{min-height:58px;background:#090909;border-color:#444}
+#landscape-collage-editor .frame-style-bar{gap:4px}
+#landscape-collage-editor :is(.frame-style-bar,.review-look-bar) button{font-size:10px;padding:6px}
+@media(max-width:1200px){#landscape-collage-editor .editor-grid{grid-template-columns:180px minmax(0,1fr) 280px;gap:10px}#landscape-collage-editor .family-source{padding-right:8px}#landscape-collage-editor .settings-column{padding-left:8px}}
+@media(max-width:960px){#landscape-collage-editor .editor-grid{grid-template-columns:minmax(0,1fr) 300px}.family-source{grid-column:1/-1;order:3}#landscape-collage-editor .family-source{max-height:350px;border:0}#landscape-collage-editor .family-source #lc-library-grid{grid-template-columns:repeat(5,minmax(0,1fr))}#landscape-collage-editor .settings-column{max-height:none}}
+@media(max-width:680px){#landscape-collage-editor .editor-grid{display:flex;flex-direction:column}#landscape-collage-editor .editor-grid>*{width:100%}#landscape-collage-editor .family-source #lc-library-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.portfolio-nav{display:none}}
+
+#landscape-collage-editor .review-guide summary{cursor:pointer;font-size:11px;color:#c8cac4;list-style:disclosure-closed}
+#landscape-collage-editor .review-guide[open] summary{margin-bottom:14px;list-style:disclosure-open}
+#landscape-collage-editor .focus-preview{align-self:flex-end;background:#101010;border:1px solid #444;color:#eee;padding:6px 10px;cursor:pointer;margin-top:-4px;font-size:11px}
+#landscape-collage-editor.is-focused .editor-grid{grid-template-columns:1fr}
+#landscape-collage-editor.is-focused :is(.family-source,.settings-column){display:none}
+#landscape-collage-editor .review-guide{padding:12px}
+#landscape-collage-editor .family-source .library-header>.viz-row{display:none}
+#landscape-collage-editor .family-source .library-header{font-size:12px}
+#landscape-collage-editor .family-source .selection-summary{display:none}
+#landscape-collage-editor .family-source .asset-card{background:#090909}
+#landscape-collage-editor .family-source .library-grid .asset-tile{border-radius:0}
+#landscape-collage-editor .editor-grid{grid-template-columns:200px minmax(0,1fr) 300px}
+#landscape-collage-editor .stage-column .studio-timeline{order:5}
+/* Readable source cards at the narrow studio rail width. */
+@media(min-width:961px){#landscape-collage-editor .family-source #lc-library-grid{grid-template-columns:1fr}#landscape-collage-editor .family-source .asset-name{overflow-wrap:normal!important}#landscape-collage-editor .family-source .asset-item{background:#090909;border-color:#292929}}
+@media(max-width:960px){#landscape-collage-editor .editor-grid{grid-template-columns:minmax(0,1fr) 280px}}
+
+/* Input / canvas / inspector stay visible together on entry. */
+#landscape-collage-editor .family-source .upload-portal{display:flex;flex-direction:column;align-items:stretch;padding:10px;gap:10px}
+#landscape-collage-editor .family-source .portal-copy i{display:none}
+#landscape-collage-editor .family-source .portal-copy p{font-size:11px;line-height:1.5}
+#landscape-collage-editor .family-source .sample-actions{display:flex;flex-wrap:wrap;gap:5px}
+#landscape-collage-editor .family-source .sample-actions select{width:100%;min-width:0;font-size:11px}
+#landscape-collage-editor .family-source .sample-actions button{font-size:10px;min-height:26px;padding:5px}
+#landscape-collage-editor .family-source .sample-panel{padding:8px;gap:7px}
+#landscape-collage-editor .workflow-output{padding:0 0 12px;border-bottom:1px solid #242424;gap:7px}
+#landscape-collage-editor .family-source,#landscape-collage-editor .settings-column{max-height:calc(100vh - 160px)}
+#landscape-collage-editor .family-source .sample-import-note,#landscape-collage-editor .family-source .session-note{font-size:10px;line-height:1.5}
+#landscape-collage-editor .review-look{background:#090909;border-color:#242424}
+#landscape-collage-editor .stage-column{gap:7px}
+#landscape-collage-editor .hud-style-shortcuts{margin:0;gap:4px}
+#landscape-collage-editor .review-page{padding:0}
+#landscape-collage-editor .review-look{padding:5px 7px}
+#landscape-collage-editor .review-look button{font-size:10px;min-height:28px;padding:5px}
+@media(max-width:960px){#landscape-collage-editor .family-source{max-height:350px}#landscape-collage-editor .settings-column{max-height:none}}
+
+#landscape-collage-editor .family-source>*{flex-shrink:0;max-width:100%;box-sizing:border-box}
+#landscape-collage-editor #lc-upload-portal{display:grid;grid-template-columns:1fr;min-height:125px;height:auto;overflow:visible;padding:10px;gap:8px}
+#landscape-collage-editor .family-source .sample-actions select{min-width:0!important;max-width:100%}
+#landscape-collage-editor .family-source .sample-actions>*{max-width:100%}
+#landscape-collage-editor .hud-style-shortcuts{grid-template-columns:repeat(6,minmax(0,1fr))}
+#landscape-collage-editor .hud-style-shortcuts button{font-size:9px;padding:5px;min-height:32px}
+#landscape-collage-editor .review-look button{padding:5px;font-size:10px;min-height:28px}
+#landscape-collage-editor .review-page button{min-height:24px;padding:3px 6px}
+#landscape-collage-editor .review-page{font-size:10px}
+.portfolio-bar{min-height:58px;padding-block:10px}.family-nav{min-height:36px;padding-block:4px}
+@media(max-width:600px){#landscape-collage-editor .hud-style-shortcuts{grid-template-columns:repeat(3,minmax(0,1fr))}}

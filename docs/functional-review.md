@@ -1,8 +1,27 @@
-# Functional review · 22 October 2026
+# Functional review · updated 23 October 2026
 
 [← Project index](../README.md) · [Product decisions](review-guide.md) · [Evidence to add](evidence-to-add.md)
 
 These are bounded checks on Windows in the Codex in-app Chromium browser. They are not a cross-browser certification or a creator study. Synthetic geometry, speech and tracking clips are QA fixtures, not portfolio artwork. A file that decodes can still fail the creative or timing requirements.
+
+## Latest studio revision / 23 October
+
+Projects 04–07 now share Model Breakdown's font, numbered navigation and workspace language. English is the default; a Chinese switch is available. Local builds and TypeScript checks passed for FLIPFRAME, VOX and TRACE. These presentation changes do not erase the earlier functional limits recorded below.
+
+| Current check | Result | Remaining boundary |
+| --- | --- | --- |
+| Collage selected 35-shot example | Actual 4K H.264 export: 8 s, 24 fps, 192 frames. All frames decode; image-content checks across all 35 tile interiors show motion rather than a frozen board | Uploaded libraries, many independent video decoders and other devices still require stress testing. The built-in example uses one preview atlas and a higher-resolution export atlas |
+| FLIPFRAME revised direct encoder | Two-card 7.45 s / 447 frames and full 25 s / 1,500 frames; both 4K / 60 fps. Sampled frames show the new media and HUD | Long encoding can make the browser unresponsive. Compatibility capture, 6K/8K and other devices are not revalidated |
+| VOX initial example | Eight-second authored silent typography example, with live style controls | This is not a fresh speech-recognition or export test; the earlier synthetic-speech result below has a separate scope |
+| TRACE initial example | Supplied 4.5 s video, autoplay and static-pin controls | Static annotation is not proof of tracking. The previous encoded timing failure remains unresolved |
+
+The Collage 4K fix loads the export atlas as a seekable local Blob before frame sampling. An earlier non-seekable media response had produced repeated image content even while the HUD moved. The acceptance check therefore inspects the shot interiors, not just the container duration. FLIPFRAME now considers a supported no-preference WebCodecs configuration before falling back to real-time recording.
+
+The supplied process clips are earlier design references; current exported demonstrations are labeled separately in the [demo gallery](https://muwentrili.github.io/creative-workflows/collage-motion/process/). No paid inference API was invoked. Publication used the existing portfolio hosting.
+
+## Earlier audit / retained historical results
+
+The table and reproduction notes below describe the earlier source revisions, before the studio update. The newer results above supersede only the specific paths retested.
 
 | Case | What was actually exercised | Observed result | Boundary |
 | --- | --- | --- | --- |
@@ -34,7 +53,7 @@ Reproduction: import the 960 × 540 / 30 fps / 4 s synthetic occlusion clip, sel
 
 Read-only source checks found browser-local handling on the tested paths: FLIPFRAME canvas/video encoding, TRACE image-template tracking and MediaRecorder export, and VOX Whisper inference via Transformers.js/WASM plus local video/audio encoding. VOX downloads public model weights on first use. No paid inference API invocation was found in these tested paths or made during this audit. This is not a general security or billing audit of every dependency.
 
-The three source checkouts were left unchanged. Their code and existing private/media content were not copied into this public repository.
+That initial read-only audit left the three source checkouts unchanged. The later authorized studio revision modified and published the Sites apps; their full source was not copied into this portfolio repository. Only user-approved display media and documentation were added.
 
 ## Source and verification scope
 

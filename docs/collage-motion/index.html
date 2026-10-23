@@ -1,15 +1,15 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Collage Motion — Animated Storyboard</title><meta name="description" content="A moving storyboard for shot review and visual pitches. Try 40 sample clips, replace them with your own media, adjust the board and export a silent review."><link rel="stylesheet" href="./visualize-base.css"><script src="./lucide.js"></script><style>html,body{margin:0;background:#000!important;color-scheme:dark}body{box-sizing:border-box;padding:12px}*,*:before,*:after{box-sizing:border-box}</style></head><body>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Collage Motion — Animated Storyboard</title><meta name="description" content="A moving storyboard for shot review and visual pitches. Try 35 sample clips, replace them with your own media, adjust the board and export a silent review."><link rel="stylesheet" href="./visualize-base.css"><script src="./lucide.js"></script><style>html,body{margin:0;background:#000!important;color-scheme:dark}body{box-sizing:border-box;padding:12px}*,*:before,*:after{box-sizing:border-box}</style></head><body>
 
 <style>
 .portfolio-bar{max-width:1680px;margin:0 auto 14px;padding:18px 22px;border:1px solid #353a3d;background:#101417;color:#f3f4f3;font-family:Arial,sans-serif;display:flex;gap:20px;justify-content:space-between;align-items:center;flex-wrap:wrap}
-.portfolio-bar h1{font-size:22px;letter-spacing:-.5px;margin:0 0 7px}.portfolio-bar p{font-size:13px;line-height:1.6;color:#b7bec3;margin:0;max-width:850px}.portfolio-bar a{color:#d8ff6a;text-decoration:none}.portfolio-bar button{background:#d8ff6a;color:#101417;border:0;padding:11px 15px;cursor:pointer;font-weight:bold;border-radius:4px}.portfolio-nav{display:flex;gap:16px;align-items:center;font-size:13px}.portfolio-bar button:focus-visible,.portfolio-bar a:focus-visible{outline:2px solid white;outline-offset:4px}
+.portfolio-bar h1{font-size:22px;letter-spacing:-.5px;margin:0 0 7px}.portfolio-bar p{font-size:13px;line-height:1.6;color:#b7bec3;margin:0;max-width:850px}.portfolio-bar a{color:#ffffff;text-decoration:none}.portfolio-bar button{background:#ffffff;color:#101417;border:0;padding:11px 15px;cursor:pointer;font-weight:bold;border-radius:4px}.portfolio-nav{display:flex;gap:16px;align-items:center;font-size:13px}.portfolio-bar button:focus-visible,.portfolio-bar a:focus-visible{outline:2px solid white;outline-offset:4px}
 </style>
 <header class="portfolio-bar">
-  <div><h1>Collage Motion <span style="color:#a7b1b7;font-size:13px;font-weight:normal">/ Muwen Li</span></h1>
+  <div><h1>04 / COLLAGE MOTION <small>MOVING SHOTS → EDITABLE STORYBOARD</small></h1>
   <p><strong>Animated storyboard / shot review &amp; visual pitches.</strong> Compare moving shots, adjust the board, then export a silent review.</p></div>
   <nav class="portfolio-nav" aria-label="Project navigation"><a href="https://github.com/MuwenTriLi/creative-workflows/blob/main/projects/03-collage-motion.md">Project overview ↗</a><a href="https://github.com/MuwenTriLi/creative-workflows#selected-work">All projects ↗</a></nav>
-</header>
+</header><nav class="family-nav" aria-label="Creative workflow studios"><span>MUWEN LI / STUDIOS</span><a href="https://meshroom-breakdown-studio.limuwen9.chatgpt.site"><b>02</b>Model Breakdown</a><a href="https://muwentrili.github.io/creative-workflows/collage-motion/" aria-current="page"><b>04</b>Collage Motion</a><a href="https://flipframe-motion-lab.limuwen9.chatgpt.site"><b>05</b>FLIPFRAME</a><a href="https://vox-one.limuwen9.chatgpt.site"><b>06</b>VOX / ONE</a><a href="https://trace-01-motion-tracker.limuwen9.chatgpt.site"><b>07</b>TRACE / 01</a></nav>
 <div id="landscape-collage-editor" lang="zh-CN">
   <style>
     #landscape-collage-editor {
@@ -526,7 +526,7 @@
     }
   </style>
 
-  <link rel="stylesheet" href="./studio-ui.css">
+  <link rel="stylesheet" href="./studio-ui.css?v=20261023-studios">
   <div class="editor-stack">
     <div class="workflow-entry">
     <div class="card upload-portal" id="lc-upload-portal" aria-label="添加照片或视频">
@@ -555,65 +555,13 @@
     <input class="sr-only" id="lc-file-input" type="file" accept="image/*,video/*" multiple>
 
 <section id="sb-sample-panel" class="sample-panel" aria-label="Example storyboard">
-      <div class="sample-heading"><div><span class="sample-kicker">BITFLIP / MOVING STORYBOARD</span><h2>See the shots. Shape the presentation.</h2></div><span class="sample-count">40 clips to explore</span></div>
-      <div class="sample-actions"><label for="sb-scene">Example board</label><select id="sb-scene" aria-label="Example board"></select><button id="sb-browse" type="button">Browse all 40 shots</button><button id="sb-restore" type="button">Restore example</button><button id="sb-blank" type="button">Start blank</button></div>
+      <div class="sample-heading"><div><span class="sample-kicker">BITFLIP / MOVING STORYBOARD</span><h2>See the shots. Shape the presentation.</h2></div><span class="sample-count">35 clips to explore</span></div>
+      <div class="sample-actions"><label for="sb-scene">Example board</label><select id="sb-scene" aria-label="Example board"></select><button id="sb-browse" type="button">Browse all 35 shots</button><button id="sb-restore" type="button">Restore example</button><button id="sb-blank" type="button">Start blank</button></div>
       <p id="sb-status" role="status" aria-live="polite">Preparing the example board…</p>
     </section>
     <dialog id="sb-confirm"><form method="dialog"><h2>Replace your current board?</h2><p>This loads an example in place of your imported media. Your original files are unchanged, but unsaved board edits will be lost.</p><div><button value="cancel">Keep my board</button><button value="replace">Load example</button></div></form></dialog>
-    <div class="editor-grid">
-      <section class="stage-column" aria-label="画面预览与素材位置">
-        <div class="workspace-heading"><strong>02 / 编排与预览</strong><span>调整右侧参数，再拖动时间轴检查效果。</span></div>
-        <div class="review-look" aria-label="Presentation overlays"><span>02 / Presentation</span><button type="button" id="rv-presentation" aria-pressed="true">Full presentation</button><button type="button" id="rv-clean" aria-pressed="false">Clean board</button><button type="button" id="rv-customize">Customize overlays ↗</button></div>
-        <div class="review-page"><button type="button" id="rv-prev" aria-label="Previous board page">←</button><output id="rv-page-label">Shots 1–20 / 40</output><button type="button" id="rv-next" aria-label="Next board page">→</button><span>Captions &amp; timecode are included in export.</span></div>
-        <div class="board-mode" role="group" aria-label="Presentation mode"><button id="sb-storyboard" type="button" aria-pressed="true">Storyboard</button><button id="sb-collage" type="button" aria-pressed="false">Motion collage</button><span id="sb-mode-note">Compare shots side by side.</span></div>
-        <div class="stage-toolbar viz-row">
-          <div class="viz-row">
-            <button class="btn btn-primary" id="lc-play" type="button">
-              <i data-lucide="pause" aria-hidden="true"></i>
-              暂停
-            </button>
-            <button class="btn" id="lc-restart" type="button" aria-label="回到开头" title="Home"><i data-lucide="skip-back" aria-hidden="true"></i></button>
-            <button class="btn" id="lc-prev-beat" type="button" data-tooltip="上一变动帧" aria-label="上一变动帧">
-              <i data-lucide="step-back" aria-hidden="true">|&lt;</i>
-            </button>
-            <button class="btn" id="lc-next-beat" type="button" data-tooltip="下一变动帧" aria-label="下一变动帧">
-              <i data-lucide="step-forward" aria-hidden="true">&gt;|</i>
-            </button>
-          </div>
-          <div class="viz-row">
-            <label class="form-check form-switch">
-              <input class="form-check-input" id="lc-show-map" type="checkbox">
-              <span class="form-check-label">显示编号</span>
-            </label>
-            <span class="viz-badge" id="lc-frame-badge">变动帧 0</span>
-            <button class="btn" id="lc-language" type="button" aria-label="切换为英文界面">EN</button>
-          </div>
-        </div>
-
-        <div class="studio-timeline">
-          <div class="timeline-heading"><label for="lc-timeline">时间轴</label><span class="timeline-shortcut">空格：播放 / 暂停 · ← →：逐帧</span><span class="timecode"><output id="lc-timeline-value">0.00 s</output> / <span id="lc-duration-total">5.00 s</span></span></div>
-          <input id="lc-timeline" type="range" min="0" max="5" step="0.01" value="0" aria-label="时间轴">
-          <div class="timeline-ruler" aria-hidden="true"><span>0</span><span>1.25</span><span>2.50</span><span>3.75</span><span>5.00 s</span></div>
-        </div>
-        <div class="card preview-card">
-          <div class="empty-workspace" id="lc-empty-workspace">
-            <span class="empty-mark" aria-hidden="true">+</span><strong>从你的素材开始</strong>
-            <p>导入图片或短视频，自动生成拼贴布局。<br>你决定顺序、裁切和节奏。</p>
-            <button class="btn btn-primary" id="lc-empty-import" type="button">导入图片或视频</button>
-          </div>
-          <div class="canvas-shell is-landscape" id="lc-canvas-shell">
-            <canvas
-              id="lc-canvas"
-              width="1920"
-              height="1080"
-              role="img"
-              aria-label="按素材原始比例显示的自适应拼贴预览"
-            ></canvas>
-          </div>
-        </div>
-
-
-        <details id="sb-library" class="sample-library"><summary>Example shot library <span>40 clips · click to swap one cell</span></summary><p id="sb-library-target">Select a cell, then choose a replacement shot.</p><div id="sb-library-grid"></div></details>
+    <button type="button" class="focus-preview" onclick="document.getElementById('landscape-collage-editor').classList.toggle('is-focused');this.textContent=this.textContent==='Expand preview ↗'?'Restore workspace ↙':'Expand preview ↗'">Expand preview ↗</button><div class="editor-grid">
+<aside class="family-source" aria-label="Source media"><div class="family-source-heading">01 / SOURCE MEDIA</div>        <details id="sb-library" class="sample-library"><summary>Example shot library <span>35 clips · click to swap one cell</span></summary><p id="sb-library-target">Select a cell, then choose a replacement shot.</p><div id="sb-library-grid"></div></details>
         <div class="card selection-summary">
           <div>
             <p><strong id="lc-selected-slot">未选择画面槽位</strong></p>
@@ -688,10 +636,63 @@
           </button>
         </div>
         <div class="library-grid" id="lc-library-grid" aria-label="素材编号列表"></div>
+</aside>
+      <section class="stage-column" aria-label="画面预览与素材位置">
+        <div class="workspace-heading"><strong>02 / 编排与预览</strong><span>调整右侧参数，再拖动时间轴检查效果。</span></div>
+        <div class="review-look" aria-label="Presentation overlays"><span>02 / Presentation</span><button type="button" id="rv-presentation" aria-pressed="true">Original HUD</button><button type="button" id="rv-clean" aria-pressed="false">Clean board</button><button type="button" id="rv-customize">Customize overlays ↗</button></div>
+        <div class="review-page"><button type="button" id="rv-prev" aria-label="Previous board page">←</button><output id="rv-page-label">Shots 1–20 / 40</output><button type="button" id="rv-next" aria-label="Next board page">→</button><span>Shot IDs &amp; HUD are included in export.</span></div>
+        <div class="board-mode" role="group" aria-label="Presentation mode"><button id="sb-storyboard" type="button" aria-pressed="true">Storyboard</button><button id="sb-collage" type="button" aria-pressed="false">Motion collage</button><span id="sb-mode-note">Compare shots side by side.</span></div>
+        <div class="stage-toolbar viz-row">
+          <div class="viz-row">
+            <button class="btn btn-primary" id="lc-play" type="button">
+              <i data-lucide="pause" aria-hidden="true"></i>
+              暂停
+            </button>
+            <button class="btn" id="lc-restart" type="button" aria-label="回到开头" title="Home"><i data-lucide="skip-back" aria-hidden="true"></i></button>
+            <button class="btn" id="lc-prev-beat" type="button" data-tooltip="上一变动帧" aria-label="上一变动帧">
+              <i data-lucide="step-back" aria-hidden="true">|&lt;</i>
+            </button>
+            <button class="btn" id="lc-next-beat" type="button" data-tooltip="下一变动帧" aria-label="下一变动帧">
+              <i data-lucide="step-forward" aria-hidden="true">&gt;|</i>
+            </button>
+          </div>
+          <div class="viz-row">
+            <label class="form-check form-switch">
+              <input class="form-check-input" id="lc-show-map" type="checkbox">
+              <span class="form-check-label">显示编号</span>
+            </label>
+            <span class="viz-badge" id="lc-frame-badge">变动帧 0</span>
+            <button class="btn" id="lc-language" type="button" aria-label="切换为英文界面">EN</button>
+          </div>
+        </div>
+
+        <div class="studio-timeline">
+          <div class="timeline-heading"><label for="lc-timeline">时间轴</label><span class="timeline-shortcut">空格：播放 / 暂停 · ← →：逐帧</span><span class="timecode"><output id="lc-timeline-value">0.00 s</output> / <span id="lc-duration-total">5.00 s</span></span></div>
+          <input id="lc-timeline" type="range" min="0" max="5" step="0.01" value="0" aria-label="时间轴">
+          <div class="timeline-ruler" aria-hidden="true"><span>0</span><span>1.25</span><span>2.50</span><span>3.75</span><span>5.00 s</span></div>
+        </div>
+        <div class="card preview-card">
+          <div class="empty-workspace" id="lc-empty-workspace">
+            <span class="empty-mark" aria-hidden="true">+</span><strong>从你的素材开始</strong>
+            <p>导入图片或短视频，自动生成拼贴布局。<br>你决定顺序、裁切和节奏。</p>
+            <button class="btn btn-primary" id="lc-empty-import" type="button">导入图片或视频</button>
+          </div>
+          <div class="canvas-shell is-landscape" id="lc-canvas-shell">
+            <canvas
+              id="lc-canvas"
+              width="1920"
+              height="1080"
+              role="img"
+              aria-label="按素材原始比例显示的自适应拼贴预览"
+            ></canvas>
+          </div>
+        </div>
+
+
       </section>
 
       <section class="settings-column" aria-label="编辑参数">
-        <div class="review-guide"><div class="review-guide-kicker">QUICK WALKTHROUGH <span>YOU DIRECT · THE TOOL ARRANGES</span></div><div class="review-guide-steps" role="group" aria-label="Walkthrough steps"><button data-rv-step="0" type="button">01 Inspect</button><button data-rv-step="1" type="button">02 Style</button><button data-rv-step="2" type="button">03 Refine</button><button data-rv-step="3" type="button">04 Deliver</button></div><h2 id="rv-guide-title"></h2><p id="rv-guide-copy"></p><button type="button" id="rv-guide-action"></button></div>
+        <details class="review-guide"><summary>Quick walkthrough / 4 steps</summary><div class="review-guide-kicker">QUICK WALKTHROUGH <span>YOU DIRECT · THE TOOL ARRANGES</span></div><div class="review-guide-steps" role="group" aria-label="Walkthrough steps"><button data-rv-step="0" type="button">01 Inspect</button><button data-rv-step="1" type="button">02 Style</button><button data-rv-step="2" type="button">03 Refine</button><button data-rv-step="3" type="button">04 Deliver</button></div><h2 id="rv-guide-title"></h2><p id="rv-guide-copy"></p><button type="button" id="rv-guide-action"></button></details>
         <div class="workspace-heading"><strong>调整工具</strong><span>先布局，再运动；随时预览。</span></div>
         <div class="tab-list" role="tablist" aria-label="编辑面板">
           <button class="btn" id="lc-tab-layout" type="button" role="tab" aria-selected="true">排布</button>
@@ -876,7 +877,7 @@
               </label>
               <label class="form-label" for="lc-hud-accent">
                 HUD 点缀色
-                <input class="form-control form-control-color" id="lc-hud-accent" type="color" value="#d8ff6a">
+                <input class="form-control form-control-color" id="lc-hud-accent" type="color" value="#ffffff">
               </label>
             </div>
           </div>
@@ -1621,7 +1622,7 @@
         hudGridDensity: 3,
         hudTextScale: 1.45,
         hudDataRate: 10,
-        hudAccent: "#d8ff6a",
+        hudAccent: "#ffffff",
         proxyEnabled: true,
         proxyMode: "sprite",
         proxyWidth: 0,
@@ -2303,12 +2304,10 @@
         state.mediaTimeMs = state.timeMs;
         state.revealTimeMs = state.timeMs;
         state.anchorMs = performance.now() - state.timeMs;
-        if (!state.recording) state.assets.forEach(asset => {
-          if (asset.kind === 'video' && asset.source && (asset.sample || state.storyboard) && asset.duration > 0) {
-            const target = positiveModulo(state.timeMs/1000,asset.duration);
-            try { asset.source.currentTime=Math.min(target,Math.max(0,asset.duration-.04)); } catch {}
-          }
-        });
+        if(!state.recording){
+          const media=new Map();state.assets.forEach(a=>{if(a.kind==='video'&&a.source)media.set(a.source,a);});
+          media.forEach((a,v)=>{const duration=a.atlasIndex!==undefined?v.duration:a.duration;if(duration>0){try{v.currentTime=Math.min(positiveModulo(state.timeMs/1000,duration),Math.max(0,duration-.001));}catch{}}});
+        }
         refreshTimeline();
       }
 
@@ -3001,7 +3000,9 @@
           return true;
         }
         const source = sourceForAsset(asset, useLiveSource);
-        const [sourceWidth, sourceHeight] = sourceDimensions(source);
+        const atlas=asset.atlasIndex!==undefined && source===asset.source;
+        const atlasWidth=atlas ? source.videoWidth/7 : 0, atlasHeight=atlas ? source.videoHeight/5 : 0;
+        const [sourceWidth, sourceHeight] = atlas ? [atlasWidth,atlasHeight] : sourceDimensions(source);
         if (!sourceWidth || !sourceHeight) {
           ctx.fillStyle = state.background;
           ctx.fillRect(x, y, width, height);
@@ -3014,7 +3015,8 @@
         const overflowY = Math.max(0, drawHeight - height);
         const drawX = x + (width - drawWidth) / 2 + (asset.cropX / 100) * overflowX / 2;
         const drawY = y + (height - drawHeight) / 2 + (asset.cropY / 100) * overflowY / 2;
-        ctx.drawImage(source, drawX, drawY, drawWidth, drawHeight);
+        if(atlas)ctx.drawImage(source,(asset.atlasIndex%7)*atlasWidth,Math.floor(asset.atlasIndex/7)*atlasHeight,atlasWidth,atlasHeight,drawX,drawY,drawWidth,drawHeight);
+        else ctx.drawImage(source, drawX, drawY, drawWidth, drawHeight);
         return true;
       }
 
@@ -4050,7 +4052,7 @@
         const allowLiveVideos = state.storyboard || state.recording
           || !state.proxyEnabled
           || state.proxyMode === "original";
-        const liveVideoLimit = state.recording ? Number.POSITIVE_INFINITY : Math.max(9,state.maxActiveVideos);
+        const liveVideoLimit = state.recording ? Number.POSITIVE_INFINITY : Math.max(35,state.maxActiveVideos);
 
         frameBadge.textContent = localize(`变动帧 ${beat}`);
         ctx.save();
@@ -4187,35 +4189,13 @@
             );
             ctx.restore();
 
-            if (showMap.checked) {
-              const effectiveMinimum = Math.min(
-                assetFrame.width,
-                assetFrame.height,
-              ) * state.layoutScale;
-              if (effectiveMinimum > 44) {
-                const label = asset
-                  ? `${formatIndex(assetIndex)} C${column + 1}R${row + 1}`
-                  : localize(`空位 C${column + 1}R${row + 1}`);
-                const fontSize = Math.max(6, Math.min(11, effectiveMinimum * 0.06));
-                const padding = Math.max(3, fontSize * 0.45);
-                ctx.font = `500 ${fontSize}px ui-monospace, SFMono-Regular, Consolas, monospace`;
-                const labelWidth = ctx.measureText(label).width + padding * 2;
-                ctx.fillStyle = "rgba(0,0,0,0.58)";
-                ctx.fillRect(
-                  assetFrame.x + padding,
-                  assetFrame.y + padding,
-                  labelWidth,
-                  fontSize + padding * 1.4,
-                );
-                ctx.fillStyle = "#ffffff";
-                ctx.textAlign = "left";
-                ctx.textBaseline = "top";
-                ctx.fillText(
-                  label,
-                  assetFrame.x + padding * 2,
-                  assetFrame.y + padding * 1.55,
-                );
-              }
+            if(showMap.checked && asset){
+              const fs=Math.max(6,assetFrame.width*.065), pad=fs*.35;
+              const code=`${formatIndex(assetIndex)} / S${asset.sampleId||String(assetIndex+1).padStart(3,'0')}`;
+              ctx.save();ctx.font=`500 ${fs}px ui-monospace,Consolas,monospace`;ctx.textAlign='center';ctx.textBaseline='bottom';
+              const w=ctx.measureText(code).width+pad*2, cx=assetFrame.width/2, yy=assetFrame.height-pad;
+              ctx.fillStyle='rgba(0,0,0,.7)';ctx.fillRect(cx-w/2,yy-fs-pad,w,fs+pad*1.5);
+              ctx.fillStyle='#fff';ctx.fillText(code,cx,yy);ctx.restore();
             }
             ctx.restore();
             drawReviewCaption(geometry.tileWidth,geometry.tileHeight,captionHeight,asset,assetIndex,timeMs);
@@ -4227,27 +4207,22 @@
         drawFixedOuterHud(fixedFrame, timeMs);
         presentFrame();
 
-        state.assets.forEach((asset, index) => {
-          if (asset?.kind !== "video" || !asset.source) {
-            return;
+        const playback=new Map();
+        state.assets.forEach((asset,index)=>{
+          if(asset?.kind==='video'&&asset.source){
+            const active=visibleVideos.has(index)&&state.playing&&state.videoAutoplay&&!state.recording;
+            playback.set(asset.source,Boolean(playback.get(asset.source)||active));
           }
-          if (visibleVideos.has(index) && state.playing && state.videoAutoplay) {
-            if (!state.recording && (asset.sample || state.storyboard) && asset.duration > 0) {
-              const target=positiveModulo(state.mediaTimeMs/1000,asset.duration);
-              if (!asset.source.seeking && Math.abs(asset.source.currentTime-target)>.22) asset.source.currentTime=target;
+        });
+        playback.forEach((active,video)=>{
+          if(active){
+            if(video.paused&&!video.dataset.playPending){
+              video.dataset.playPending='1';
+              void video.play().catch(error=>{
+                if(error.name==='NotAllowedError'){state.playing=false;updatePlayButton();sampleStatus.textContent='Press Play to start motion in this browser.';}
+              }).finally(()=>delete video.dataset.playPending);
             }
-            if (asset.source.paused && !asset.playPending) {
-              asset.playPending=true;
-              void asset.source.play().catch(error => {
-                if (error.name === 'NotAllowedError' && !state.recording) {
-                  state.playing=false; updatePlayButton();
-                  sampleStatus.textContent='Press Play to start the sample clips in this browser.';
-                }
-              }).finally(()=>asset.playPending=false);
-            }
-          } else {
-            asset.source.pause();
-          }
+          }else if(!video.paused)video.pause();
         });
 
         if (scheduleNext) {
@@ -4647,7 +4622,8 @@
           video.muted = true;
           video.loop = true;
           video.playsInline = true;
-          video.preload = "metadata";
+          video.preload = "auto";
+          video.style.cssText="position:fixed;left:0;bottom:0;width:1px;height:1px;opacity:.01;pointer-events:none"; video.setAttribute("aria-hidden","true"); document.body.append(video);
           const timer=setTimeout(()=>{cleanup(); video.removeAttribute('src'); video.load(); reject(new Error('Video metadata timeout'));},15000);
           function cleanup(){clearTimeout(timer); video.removeEventListener('error',failed); video.removeEventListener('loadedmetadata',loaded);}
           function loaded(){cleanup();resolve(video);}
@@ -5408,7 +5384,7 @@
       }
 
       function releaseAssetResources(asset) {
-        if (asset.kind === "video" && asset.source) {
+        if (asset.kind === "video" && asset.source && asset.atlasIndex===undefined) {
           asset.source.pause();
           asset.source.removeAttribute("src");
           asset.source.load();
@@ -6565,7 +6541,7 @@
           const option = document.createElement("option");
           option.value = value;
           option.textContent = label;
-          option.selected = index === 1;
+          option.selected = index === options.length-1;
           controls.resolution.appendChild(option);
         });
 
@@ -6800,7 +6776,11 @@
       }
 
       async function primeOriginalVideos() {
-        const videos = state.assets
+        if(state.assets.some(a=>a.atlasIndex!==undefined)){
+          sampleAtlas?.pause();const hq=await loadSampleAtlas(true);
+          state.assets.forEach(a=>{if(a.atlasIndex!==undefined)a.source=hq;});
+        }
+        const videos = exportVideoAssets()
           .filter((asset) => asset?.kind === "video" && asset.source)
           .map((asset) => asset.source)
           .filter((video, index, list) => list.indexOf(video) === index);
@@ -7007,7 +6987,7 @@
         if (encoder.encodeQueueSize <= 8) {
           return;
         }
-        const playingVideos = state.recordingVideos.filter((video) => !video.paused);
+        const playingVideos = []; // Offline frames remain paused while encoding.
         playingVideos.forEach((video) => video.pause());
         const pausedAt = performance.now();
         await encoder.flush();
@@ -7021,6 +7001,7 @@
       }
 
       function restoreExportPreview() {
+        sampleAtlasHQ?.pause();state.assets.forEach(a=>{if(a.atlasIndex!==undefined&&sampleAtlas)a.source=sampleAtlas;});
         state.recording = false;
         resetRecordingScheduler();
         restoreRecordingVideos();
@@ -7178,6 +7159,7 @@
             state.timeMs = frameTime;
             state.mediaTimeMs = frameTime;
             state.revealTimeMs = frameTime;
+            await seekExportSources(frameTime);
             drawFrame(performance.now(), false);
 
             const videoFrame = new globalThis.VideoFrame(recordingCanvas, {
@@ -7499,7 +7481,7 @@
       const sampleDrawer = root.querySelector('#sb-library');
       const sampleGrid = root.querySelector('#sb-library-grid');
       const sampleGroups = [
-        {id:'all',title:'Showcase / all 40 shots',ids:[]},
+        {id:'all',title:'Selected storyboard / 35 shots',ids:[]},
         { id: 'featured', title: 'Featured / 9 shots', ids: ['037','038','040','043','051','054','055','058','063'] },
         { id: 'opening', title: '01 / Reality & discovery', ids: ['002','004','005','012','013','015','016','017','020'] },
         { id: 'ruins', title: '02 / Through the ruins', ids: ['022','026','027','028','030','031','033','034','035'] },
@@ -7536,20 +7518,21 @@
       function configureReviewBoard(count = 9) {
         state.storyboard = true;
         state.boardPage=0;
-        setGridDimension('rows',count>9?4:count<=4?2:3);
-        setGridDimension('columns',count>9?5:count<=4?2:3);
-        setSimpleControl('gap',24);
+        setGridDimension('rows',count>20?5:count>9?4:count<=4?2:3);
+        setGridDimension('columns',count>20?7:count>9?5:count<=4?2:3);
+        setSimpleControl('gap',18);
         setSimpleControl('corner',0);
         applyReviewLook(true);
         setSimpleControl('repeatPlacementMode','sequential','change');
         setSimpleControl('videoRowOffsetEnabled',false,'change');
         setSimpleControl('duration',8);
         setSimpleControl('frameInset',5);
-        state.maxActiveVideos = 20;
+        state.maxActiveVideos = 40;
+        showMap.checked=true;
         state.motionMode = 'loop';
         controls.motionMode.value = 'loop';
         setSimpleControl('aspect','landscape','change');
-        controls.resolution.value = '1920x1080';
+        controls.resolution.value = '3840x2160';
         controls.fps.value = '24';
         fitLayout();
         refreshSampleStatus();
@@ -7563,8 +7546,50 @@
           dialog.addEventListener('close', () => resolve(dialog.returnValue === 'replace'), { once:true });
         });
       }
+
+      let sampleAtlas=null, sampleAtlasHQ=null, atlasLoading=null;
+      async function loadSampleAtlas(hq=false){
+        if(hq && sampleAtlasHQ)return sampleAtlasHQ;
+        if(!hq && sampleAtlas)return sampleAtlas;
+        if(!hq && atlasLoading)return atlasLoading;
+        const job=(async()=>{
+          let atlasUrl = hq?'./examples/selected-atlas-hq.mp4':'./examples/selected-atlas-preview.mp4';
+          if(hq){
+            const response=await fetch(atlasUrl);
+            if(!response.ok)throw new Error('Could not load the full-resolution sample video');
+            atlasUrl=URL.createObjectURL(await response.blob());
+          }
+          const video=await loadVideo(atlasUrl);
+          await new Promise((resolve,reject)=>{
+            if(video.readyState>=2){resolve();return;}
+            const timer=setTimeout(()=>{cleanup();reject(new Error('Sample video could not finish loading. Try Restore example.'));},30000);
+            const cleanup=()=>{clearTimeout(timer);video.removeEventListener('loadeddata',done);video.removeEventListener('error',fail);};
+            const done=()=>{cleanup();resolve();}; const fail=()=>{cleanup();reject(new Error('Sample video failed to decode'));};
+            video.addEventListener('loadeddata',done);video.addEventListener('error',fail);video.preload='auto';video.load();
+          });
+          if(hq)sampleAtlasHQ=video;else sampleAtlas=video;
+          return video;
+        })();
+        if(!hq)atlasLoading=job;
+        return job;
+      }
+      function exportVideoAssets(){
+        const indices=new Set();
+        for(let c=0;c<state.columns;c++)for(let r=0;r<state.rows;r++)indices.add(assignmentFor(c,r,0,0));
+        return state.assets.filter((a,i)=>a.kind==='video' && (indices.has(i)||!state.storyboard));
+      }
+      async function seekExportSources(timeMs){
+        const videos=new Map();
+        exportVideoAssets().forEach(a=>{if(a.source)videos.set(a.source,a);});
+        await Promise.all([...videos].map(async([video,a])=>{
+          video.pause();
+          const duration=a.atlasIndex!==undefined ? video.duration : a.duration;
+          await seekVideoFrame(video,Math.min(Math.max(0,duration-.001),positiveModulo(timeMs/1000,duration)));
+        }));
+      }
+
       async function makeSampleAsset(clip) {
-        const source = await loadVideo(clip.src);
+        const source = await loadSampleAtlas(false);
         let proxy;
         try {
           proxy = await new Promise((resolve,reject) => {
@@ -7579,8 +7604,8 @@
             source.addEventListener('loadeddata',loaded); source.addEventListener('error',failed);
             source.preload = 'auto'; source.load();
           });
-        } catch(error) { source.pause(); source.removeAttribute('src'); source.load(); throw error; }
-        return { name:`${clip.id} / ${clip.title}`, sample:true, sampleId:clip.id, kind:'video', source, proxy,
+        } catch(error) { throw error; }
+        return { name:`${clip.id} / ${clip.title}`, atlasIndex:clip.atlasIndex, sample:true, sampleId:clip.id, kind:'video', source, proxy,
           proxyUrl:clip.poster, url:clip.src, ready:true,error:false,motionProxy:null,proxyRequest:0,
           invert:false,opacity:1,zoom:1,cropX:0,cropY:0,motionX:0,motionY:0,motionScale:1,motionRotate:0,
           width:clip.width,height:clip.height,aspectRatio:16/9,aspectPreset:'16:9',orientation:'landscape',duration:clip.duration };
@@ -7686,13 +7711,16 @@
         updatePlayButton();
       });
       async function initializeStoryboard() {
-        configureReviewBoard(40);
+        configureReviewBoard(35);
         try {
           const response=await fetch('./examples/manifest.json');
           if(!response.ok) throw new Error('Example library unavailable');
           sampleState.clips=(await response.json()).clips;
-          const lead=['002','004','005','053','030','037','038','040','043','044','046','051','052','054','055','056','058','062','063','067'];
-          sampleGroups[0].ids=[...lead,...sampleState.clips.map(c=>c.id).filter(id=>!lead.includes(id))];
+          const lead=["053", "030", "037", "038", "040", "043", "044", "046", "051", "052", "054", "055", "056", "058", "062", "063", "067", "012", "015", "016", "017", "020", "022", "026", "027", "028", "031", "033", "034", "035", "036", "042", "059", "060", "061"];
+          sampleState.clips=lead.map(id=>sampleState.clips.find(c=>c.id===id)).filter(Boolean);
+          sampleGroups[0].ids=lead;
+          sampleGroups.slice(1).forEach(g=>g.ids=g.ids.filter(id=>lead.includes(id)));
+          await loadSampleAtlas(false);
           renderSampleLibrary();
           await loadSampleGroup('all',true);
         } catch(error) { refreshSampleStatus('Examples could not load. You can still import your own media.'); }
@@ -7728,7 +7756,7 @@
         const unit = Math.max(.5, renderCanvas.width/1280);
         const corner = Math.min(width,height)*.085*state.hudScale;
         ctx.save(); ctx.globalAlpha *= state.hudIntensity; ctx.lineWidth=unit*state.hudLineStrength;
-        ctx.strokeStyle='#c5d3d5';ctx.strokeRect(unit,unit,width-unit*2,height-unit*2);
+        ctx.strokeStyle='#ffffff';ctx.strokeRect(unit,unit,width-unit*2,height-unit*2);
         ctx.strokeStyle=state.hudAccent;ctx.lineWidth=1.4*unit;
         for(const [x,y,sx,sy] of [[2,2,1,1],[width-2,2,-1,1],[2,height-2,1,-1],[width-2,height-2,-1,-1]]){
           ctx.beginPath();ctx.moveTo(x+sx*corner,y);ctx.lineTo(x,y);ctx.lineTo(x,y+sy*corner);ctx.stroke();
@@ -7749,8 +7777,8 @@
         ctx.globalAlpha*=Math.max(.5,state.hudIntensity);ctx.textBaseline='top';ctx.textAlign='left';
         ctx.font=`600 ${font}px Arial, sans-serif`;ctx.fillStyle=state.hudAccent;
         ctx.fillText(id,pad,y+5*unit);
-        ctx.fillStyle='#e7efed';reviewText(title,pad+font*3.4,y+5*unit,width-pad*2-font*3.4);
-        ctx.font=`400 ${font*.83}px Arial, sans-serif`;ctx.fillStyle='#b2c0c4';
+        ctx.fillStyle='#ffffff';reviewText(title,pad+font*3.4,y+5*unit,width-pad*2-font*3.4);
+        ctx.font=`400 ${font*.83}px Arial, sans-serif`;ctx.fillStyle='#ffffff';
         ctx.fillText(asset.kind==='video'?`SRC ${reviewTime(local,fps)}  /  ${asset.duration.toFixed(1)}s`:'STILL / HOLD',pad,y+5*unit+font*1.4);
         ctx.textAlign='right';ctx.fillText(`#${String(index+1).padStart(2,'0')}`,width-pad,y+5*unit+font*1.4);
         ctx.fillStyle='#39474a';ctx.fillRect(0,height-1.5*unit,width,1.5*unit);
@@ -7778,11 +7806,12 @@
       function applyReviewLook(enabled){
         if(state.recording || exportPreparing)return;
         setSimpleControl('frameEnabled',enabled,'change');setSimpleControl('hudEnabled',enabled,'change');
-        if(enabled){setSimpleControl('frameStyle','review-board','change');setSimpleControl('hudStyle','review','change');setSimpleControl('hudText',true,'change');setSimpleControl('hudTextScale',100);setSimpleControl('hudIntensity',88);setSimpleControl('hudLineStrength',80);setSimpleControl('frameOpacity',90);setSimpleControl('frameFontScale',100);setSimpleControl('frameInset',5);}
+        if(enabled){setSimpleControl('frameStyle','calibration','change');setSimpleControl('hudStyle','digital','change');setSimpleControl('hudAccent','#ffffff');setSimpleControl('hudText',true,'change');setSimpleControl('hudTextScale',100);setSimpleControl('hudIntensity',88);setSimpleControl('hudLineStrength',80);setSimpleControl('frameOpacity',90);setSimpleControl('frameFontScale',130);setSimpleControl('frameInset',5);}
         refreshReviewUI();
       }
       function refreshReviewUI(){
-        const presentation=state.frameEnabled&&state.hudEnabled&&state.frameStyle==='review-board'&&state.hudStyle==='review';
+        root.querySelectorAll('[data-hud-frame]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.hudFrame===state.frameStyle)));
+        const presentation=state.frameEnabled&&state.hudEnabled&&state.frameStyle!=='review-board'&&state.hudStyle==='digital';
         root.querySelector('#rv-presentation').setAttribute('aria-pressed',String(presentation));
         root.querySelector('#rv-clean').setAttribute('aria-pressed',String(!state.frameEnabled&&!state.hudEnabled));
         const slots=state.rows*state.columns,count=state.assets.length;
@@ -7797,8 +7826,14 @@
         controls.hudGridDensity.closest('label').hidden=state.hudStyle==='review';
         controls.frameDashMix.closest('label').hidden=state.frameStyle==='review-board';
       }
+      const styleStrip=document.createElement('div');styleStrip.className='hud-style-shortcuts';styleStrip.setAttribute('aria-label','Original HUD frame styles');
+      for(const [value,label] of [['open-data','I / Open data'],['calibration','II / Calibration'],['code-array','III / Code array'],['modular-index','IV / System index'],['construction-grid','V / Construction'],['command-protocol','VI / Debug memory']]){
+        const button=document.createElement('button');button.type='button';button.textContent=label;button.dataset.hudFrame=value;
+        button.addEventListener('click',()=>{setSimpleControl('frameEnabled',true,'change');setSimpleControl('frameStyle',value,'change');setSimpleControl('hudEnabled',true,'change');setSimpleControl('hudStyle','digital','change');setSimpleControl('hudAccent','#ffffff');refreshReviewUI();});styleStrip.append(button);
+      }
+      root.querySelector('#rv-customize').parentElement.after(styleStrip);
       const reviewSteps=[
-        ['Inspect the full sequence','Browse each board page. Captions identify the shot, its clip time and duration. All 40 sources are listed below.','Show shot library',()=>{sampleDrawer.open=true;sampleDrawer.scrollIntoView({behavior:'smooth',block:'start'});}],
+        ['Inspect the full sequence','All 35 selected shots move together. Use the permanent source IDs to discuss a shot; select one below to adjust it.','Show shot library',()=>{sampleDrawer.open=true;sampleDrawer.scrollIntoView({behavior:'smooth',block:'start'});}],
         ['Shape the presentation','Adjust borders, dividers and labels in Border. Clean board hides overlays without replacing your media.','Edit overlays',()=>renderTabs('border')],
         ['Make one local correction','Select a shot, edit its caption or framing, or swap its source. Other shots stay in place.','Edit selected shot',()=>renderTabs('asset')],
         ['Review before delivery','Check captions, crop, motion and timing. Export this board page, then play the downloaded file through.','Review export',()=>renderTabs('export')],
@@ -7816,6 +7851,13 @@
       root.querySelector('#rv-caption').addEventListener('input',event=>{const a=state.assets[state.selectedAsset];if(a&&!state.recording&&!exportPreparing)a.reviewTitle=event.target.value.slice(0,100);});
       root.addEventListener('change',refreshReviewUI);setReviewStep(0);refreshReviewUI();
 
+      // Keep the input and output actions beside the canvas, as in the studio family.
+      const sourceRail = root.querySelector('.family-source');
+      sourceRail.prepend(root.querySelector('#lc-upload-portal'));
+      sourceRail.insertBefore(root.querySelector('#sb-sample-panel'), root.querySelector('#sb-library'));
+      sourceRail.append(root.querySelector('.sample-import-note'), root.querySelector('.session-note'));
+      root.querySelector('.settings-column').prepend(root.querySelector('.workflow-output'));
+      root.querySelector('.workflow-entry').remove();
       void initializeStoryboard();
 
     })();

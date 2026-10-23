@@ -24,9 +24,9 @@ My focus is the connection between production craft and product decisions: autom
 | **06 · [VOX / ONE](projects/05-vox-one.md)** | Speech/type synchronization → editable timed typography | Browser tool | [Open web app ↗](https://vox-one.limuwen9.chatgpt.site) |
 | **07 · [TRACE / 01](projects/06-trace-01.md)** | Moving subjects need context → tracking & readable overlays | Browser tool | [Open web app ↗](https://trace-01-motion-tracker.limuwen9.chatgpt.site) |
 
-**Current review:** short hosted exports were checked for Model Breakdown and VOX; Collage has short export checks. FLIPFRAME and TRACE have known export-timing issues in the tested browser. [Read the exact scope](docs/functional-review.md).
+**Current review:** bounded exports were checked for Model Breakdown and VOX. The revised Collage 35-shot 4K board and FLIPFRAME 4K sequences pass their stated timing checks. TRACE retains an export-timing issue. [Read the exact scope](docs/functional-review.md).
 
-**Try first:** Model Breakdown Studio opens with Wood House and offers three supplied GLB examples, plus local import. Collage Motion opens with 20 captioned shots per page, all 40 sources in the order list and a visible import action for your own media. All five browser tools have public entrances; VOX / ONE and TRACE / 01 also need your own input media. Architecture Growth presents completed illoca work and its production method; company source and Skill files are not distributed.
+**Try first:** Model Breakdown Studio opens with Wood House and offers three supplied GLB examples, plus local import. Collage Motion opens with 35 selected moving shots and six original white HUD styles. FLIPFRAME opens with 15 supplied visuals; VOX offers a silent typography demo; TRACE offers a video with a static pin. Each has a visible import action and a public entrance. The demos illustrate their workflows; they do not substitute for real-speech or tracking validation. Architecture Growth presents completed illoca work and its production method; company source and Skill files are not distributed.
 
 ## 01 / Clockwork — detail preview
 
@@ -65,14 +65,16 @@ My design direction and model collection became a reusable Blender library, with
 <td width="60%" valign="top"><b>Company aesthetics → a repeatable production method.</b><br><br>As Creative Content Director at <b>illoca</b>, I direct a shared architectural visual language and an internal Blender workflow, refined across detail, tower and tennis-venue studies.<br><br><a href="projects/blue-white-architecture-growth.md">Read the case and control decisions</a> · <a href="docs/architecture-growth-media.md#watch-the-selected-films">Watch the selected films</a><br><br><sub>Company portfolio presentation. Completed visuals and high-level method only; no company Skill, source scenes or reuse license.</sub></td>
 </tr></table>
 
-## 04–07 / Four different creative problems
+## 04–07 / One studio family, four creative problems
+
+A shared visual language follows Model Breakdown: default Arial/Helvetica typography, a dark canvas, rectangular controls, and visible input → local correction → output. The numbered navigation connects the tools. The creative responsibility stays specific to each one.
 
 | [Collage Motion](projects/03-collage-motion.md) | [FLIPFRAME](projects/04-flipframe.md) | [VOX / ONE](projects/05-vox-one.md) | [TRACE / 01](projects/06-trace-01.md) |
 | --- | --- | --- | --- |
-| [![Twenty-shot storyboard with captions and review overlays](media/collage-review-board.jpg)](projects/03-collage-motion.md) | [![Spatial media editor](media/flipframe-editor.png)](projects/04-flipframe.md) | [![Timed typography editor](media/vox-one-editor.png)](projects/05-vox-one.md) | [![Tracking editor](media/trace-01-editor.png)](projects/06-trace-01.md) |
+| [![Thirty-five moving shots with white original HUD](media/collage-review-board.jpg)](projects/03-collage-motion.md) | [![Spatial media editor](media/flipframe-editor.png)](projects/04-flipframe.md) | [![Timed typography editor](media/vox-one-editor.png)](projects/05-vox-one.md) | [![Tracking editor](media/trace-01-editor.png)](projects/06-trace-01.md) |
 | Shot review & moving storyboard | Sequence & pacing | Speech & type | Tracking & annotation |
 
-These are an exported Collage sample board and current editor views. Each project page provides the problem, design choices, a short walkthrough and verification limits. Selected final films and process recordings will be added as they are prepared; no measured efficiency or user-study results are claimed.
+These are the updated working studios. [Watch actual Collage and FLIPFRAME outputs, plus the supplied design demos](https://muwentrili.github.io/creative-workflows/collage-motion/process/). Each case explains the problem, creator controls, delivery checks and validation still needed. No measured efficiency or user-study results are claimed.
 
 ## How I turn production experience into a tool
 

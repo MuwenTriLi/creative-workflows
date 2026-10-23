@@ -3,147 +3,16 @@
   "description": "Creator-supplied clips, compressed for this silent browser preview.",
   "clips": [
     {
-      "id": "002",
-      "title": "Phone in hands",
-      "src": "./examples/shot-002.mp4",
-      "poster": "./examples/shot-002.jpg",
-      "duration": 4.0,
-      "fps": "24/1",
-      "width": 640,
-      "height": 360,
-      "bytes": 173977
-    },
-    {
-      "id": "004",
-      "title": "Retrieve camera",
-      "src": "./examples/shot-004.mp4",
-      "poster": "./examples/shot-004.jpg",
+      "id": "053",
+      "title": "Energy overhead",
+      "src": "./examples/shot-053.mp4",
+      "poster": "./examples/shot-053.jpg",
       "duration": 4.5,
       "fps": "24/1",
       "width": 640,
       "height": 360,
-      "bytes": 232166
-    },
-    {
-      "id": "005",
-      "title": "Camera power on",
-      "src": "./examples/shot-005.mp4",
-      "poster": "./examples/shot-005.jpg",
-      "duration": 4.5,
-      "fps": "24/1",
-      "width": 640,
-      "height": 360,
-      "bytes": 121529
-    },
-    {
-      "id": "012",
-      "title": "Circuit approach",
-      "src": "./examples/shot-012.mp4",
-      "poster": "./examples/shot-012.jpg",
-      "duration": 3.25,
-      "fps": "24/1",
-      "width": 640,
-      "height": 360,
-      "bytes": 161766
-    },
-    {
-      "id": "013",
-      "title": "Three cubes",
-      "src": "./examples/shot-013.mp4",
-      "poster": "./examples/shot-013.jpg",
-      "duration": 5.0,
-      "fps": "24/1",
-      "width": 640,
-      "height": 360,
-      "bytes": 223678
-    },
-    {
-      "id": "015",
-      "title": "Ruins side",
-      "src": "./examples/shot-015.mp4",
-      "poster": "./examples/shot-015.jpg",
-      "duration": 3.708333,
-      "fps": "24/1",
-      "width": 640,
-      "height": 360,
-      "bytes": 85127
-    },
-    {
-      "id": "016",
-      "title": "Ruins descent",
-      "src": "./examples/shot-016.mp4",
-      "poster": "./examples/shot-016.jpg",
-      "duration": 5.0,
-      "fps": "24/1",
-      "width": 640,
-      "height": 360,
-      "bytes": 135906
-    },
-    {
-      "id": "017",
-      "title": "Ruins landing",
-      "src": "./examples/shot-017.mp4",
-      "poster": "./examples/shot-017.jpg",
-      "duration": 2.5,
-      "fps": "24/1",
-      "width": 640,
-      "height": 360,
-      "bytes": 78289
-    },
-    {
-      "id": "020",
-      "title": "Island establishing",
-      "src": "./examples/shot-020.mp4",
-      "poster": "./examples/shot-020.jpg",
-      "duration": 4.5,
-      "fps": "24/1",
-      "width": 640,
-      "height": 360,
-      "bytes": 35746
-    },
-    {
-      "id": "022",
-      "title": "Cube reflection",
-      "src": "./examples/shot-022.mp4",
-      "poster": "./examples/shot-022.jpg",
-      "duration": 4.5,
-      "fps": "24/1",
-      "width": 640,
-      "height": 360,
-      "bytes": 56090
-    },
-    {
-      "id": "026",
-      "title": "Cube leaps",
-      "src": "./examples/shot-026.mp4",
-      "poster": "./examples/shot-026.jpg",
-      "duration": 4.5,
-      "fps": "24/1",
-      "width": 640,
-      "height": 360,
-      "bytes": 73954
-    },
-    {
-      "id": "027",
-      "title": "Ravine flight",
-      "src": "./examples/shot-027.mp4",
-      "poster": "./examples/shot-027.jpg",
-      "duration": 4.5,
-      "fps": "24/1",
-      "width": 640,
-      "height": 360,
-      "bytes": 113612
-    },
-    {
-      "id": "028",
-      "title": "Ruins focus",
-      "src": "./examples/shot-028.mp4",
-      "poster": "./examples/shot-028.jpg",
-      "duration": 4.5,
-      "fps": "24/1",
-      "width": 640,
-      "height": 360,
-      "bytes": 106268
+      "bytes": 526427,
+      "atlasIndex": 0
     },
     {
       "id": "030",
@@ -154,62 +23,8 @@
       "fps": "24/1",
       "width": 640,
       "height": 360,
-      "bytes": 176200
-    },
-    {
-      "id": "031",
-      "title": "Wreck passage",
-      "src": "./examples/shot-031.mp4",
-      "poster": "./examples/shot-031.jpg",
-      "duration": 5.0,
-      "fps": "24/1",
-      "width": 640,
-      "height": 360,
-      "bytes": 158416
-    },
-    {
-      "id": "033",
-      "title": "Floor circuit",
-      "src": "./examples/shot-033.mp4",
-      "poster": "./examples/shot-033.jpg",
-      "duration": 5.0,
-      "fps": "24/1",
-      "width": 640,
-      "height": 360,
-      "bytes": 180698
-    },
-    {
-      "id": "034",
-      "title": "Buried machine",
-      "src": "./examples/shot-034.mp4",
-      "poster": "./examples/shot-034.jpg",
-      "duration": 5.0,
-      "fps": "24/1",
-      "width": 640,
-      "height": 360,
-      "bytes": 260347
-    },
-    {
-      "id": "035",
-      "title": "Rotating tunnel",
-      "src": "./examples/shot-035.mp4",
-      "poster": "./examples/shot-035.jpg",
-      "duration": 4.0,
-      "fps": "24/1",
-      "width": 640,
-      "height": 360,
-      "bytes": 323430
-    },
-    {
-      "id": "036",
-      "title": "Wireframe chamber",
-      "src": "./examples/shot-036.mp4",
-      "poster": "./examples/shot-036.jpg",
-      "duration": 3.75,
-      "fps": "24/1",
-      "width": 640,
-      "height": 360,
-      "bytes": 403299
+      "bytes": 176200,
+      "atlasIndex": 1
     },
     {
       "id": "037",
@@ -220,7 +35,8 @@
       "fps": "24/1",
       "width": 640,
       "height": 360,
-      "bytes": 575689
+      "bytes": 575689,
+      "atlasIndex": 2
     },
     {
       "id": "038",
@@ -231,7 +47,8 @@
       "fps": "24/1",
       "width": 640,
       "height": 360,
-      "bytes": 514160
+      "bytes": 514160,
+      "atlasIndex": 3
     },
     {
       "id": "040",
@@ -242,18 +59,8 @@
       "fps": "24/1",
       "width": 640,
       "height": 360,
-      "bytes": 569721
-    },
-    {
-      "id": "042",
-      "title": "Wall approach",
-      "src": "./examples/shot-042.mp4",
-      "poster": "./examples/shot-042.jpg",
-      "duration": 4.5,
-      "fps": "24/1",
-      "width": 640,
-      "height": 360,
-      "bytes": 546046
+      "bytes": 569721,
+      "atlasIndex": 4
     },
     {
       "id": "043",
@@ -264,7 +71,8 @@
       "fps": "24/1",
       "width": 640,
       "height": 360,
-      "bytes": 326764
+      "bytes": 326764,
+      "atlasIndex": 5
     },
     {
       "id": "044",
@@ -275,7 +83,8 @@
       "fps": "24/1",
       "width": 640,
       "height": 360,
-      "bytes": 277011
+      "bytes": 277011,
+      "atlasIndex": 6
     },
     {
       "id": "046",
@@ -286,7 +95,8 @@
       "fps": "24/1",
       "width": 640,
       "height": 360,
-      "bytes": 316634
+      "bytes": 316634,
+      "atlasIndex": 7
     },
     {
       "id": "051",
@@ -297,7 +107,8 @@
       "fps": "24/1",
       "width": 640,
       "height": 360,
-      "bytes": 511132
+      "bytes": 511132,
+      "atlasIndex": 8
     },
     {
       "id": "052",
@@ -308,18 +119,8 @@
       "fps": "24/1",
       "width": 640,
       "height": 360,
-      "bytes": 555988
-    },
-    {
-      "id": "053",
-      "title": "Energy overhead",
-      "src": "./examples/shot-053.mp4",
-      "poster": "./examples/shot-053.jpg",
-      "duration": 4.5,
-      "fps": "24/1",
-      "width": 640,
-      "height": 360,
-      "bytes": 526427
+      "bytes": 555988,
+      "atlasIndex": 9
     },
     {
       "id": "054",
@@ -330,7 +131,8 @@
       "fps": "24/1",
       "width": 640,
       "height": 360,
-      "bytes": 444581
+      "bytes": 444581,
+      "atlasIndex": 10
     },
     {
       "id": "055",
@@ -341,7 +143,8 @@
       "fps": "24/1",
       "width": 640,
       "height": 360,
-      "bytes": 531556
+      "bytes": 531556,
+      "atlasIndex": 11
     },
     {
       "id": "056",
@@ -352,7 +155,8 @@
       "fps": "24/1",
       "width": 640,
       "height": 360,
-      "bytes": 693698
+      "bytes": 693698,
+      "atlasIndex": 12
     },
     {
       "id": "058",
@@ -363,40 +167,8 @@
       "fps": "24/1",
       "width": 640,
       "height": 360,
-      "bytes": 1114267
-    },
-    {
-      "id": "059",
-      "title": "Tunnel fragments",
-      "src": "./examples/shot-059.mp4",
-      "poster": "./examples/shot-059.jpg",
-      "duration": 4.5,
-      "fps": "24/1",
-      "width": 640,
-      "height": 360,
-      "bytes": 686283
-    },
-    {
-      "id": "060",
-      "title": "Tunnel pulse",
-      "src": "./examples/shot-060.mp4",
-      "poster": "./examples/shot-060.jpg",
-      "duration": 4.5,
-      "fps": "24/1",
-      "width": 640,
-      "height": 360,
-      "bytes": 686977
-    },
-    {
-      "id": "061",
-      "title": "Tunnel recede",
-      "src": "./examples/shot-061.mp4",
-      "poster": "./examples/shot-061.jpg",
-      "duration": 4.5,
-      "fps": "24/1",
-      "width": 640,
-      "height": 360,
-      "bytes": 387292
+      "bytes": 1114267,
+      "atlasIndex": 13
     },
     {
       "id": "062",
@@ -407,7 +179,8 @@
       "fps": "24/1",
       "width": 640,
       "height": 360,
-      "bytes": 377308
+      "bytes": 377308,
+      "atlasIndex": 14
     },
     {
       "id": "063",
@@ -418,18 +191,8 @@
       "fps": "24/1",
       "width": 640,
       "height": 360,
-      "bytes": 97730
-    },
-    {
-      "id": "064",
-      "title": "Particle hill",
-      "src": "./examples/shot-064.mp4",
-      "poster": "./examples/shot-064.jpg",
-      "duration": 4.5,
-      "fps": "24/1",
-      "width": 640,
-      "height": 360,
-      "bytes": 55166
+      "bytes": 97730,
+      "atlasIndex": 15
     },
     {
       "id": "067",
@@ -440,7 +203,224 @@
       "fps": "24/1",
       "width": 640,
       "height": 360,
-      "bytes": 98347
+      "bytes": 98347,
+      "atlasIndex": 16
+    },
+    {
+      "id": "012",
+      "title": "Circuit approach",
+      "src": "./examples/shot-012.mp4",
+      "poster": "./examples/shot-012.jpg",
+      "duration": 3.25,
+      "fps": "24/1",
+      "width": 640,
+      "height": 360,
+      "bytes": 161766,
+      "atlasIndex": 17
+    },
+    {
+      "id": "015",
+      "title": "Ruins side",
+      "src": "./examples/shot-015.mp4",
+      "poster": "./examples/shot-015.jpg",
+      "duration": 3.708333,
+      "fps": "24/1",
+      "width": 640,
+      "height": 360,
+      "bytes": 85127,
+      "atlasIndex": 18
+    },
+    {
+      "id": "016",
+      "title": "Ruins descent",
+      "src": "./examples/shot-016.mp4",
+      "poster": "./examples/shot-016.jpg",
+      "duration": 5.0,
+      "fps": "24/1",
+      "width": 640,
+      "height": 360,
+      "bytes": 135906,
+      "atlasIndex": 19
+    },
+    {
+      "id": "017",
+      "title": "Ruins landing",
+      "src": "./examples/shot-017.mp4",
+      "poster": "./examples/shot-017.jpg",
+      "duration": 2.5,
+      "fps": "24/1",
+      "width": 640,
+      "height": 360,
+      "bytes": 78289,
+      "atlasIndex": 20
+    },
+    {
+      "id": "020",
+      "title": "Island establishing",
+      "src": "./examples/shot-020.mp4",
+      "poster": "./examples/shot-020.jpg",
+      "duration": 4.5,
+      "fps": "24/1",
+      "width": 640,
+      "height": 360,
+      "bytes": 35746,
+      "atlasIndex": 21
+    },
+    {
+      "id": "022",
+      "title": "Cube reflection",
+      "src": "./examples/shot-022.mp4",
+      "poster": "./examples/shot-022.jpg",
+      "duration": 4.5,
+      "fps": "24/1",
+      "width": 640,
+      "height": 360,
+      "bytes": 56090,
+      "atlasIndex": 22
+    },
+    {
+      "id": "026",
+      "title": "Cube leaps",
+      "src": "./examples/shot-026.mp4",
+      "poster": "./examples/shot-026.jpg",
+      "duration": 4.5,
+      "fps": "24/1",
+      "width": 640,
+      "height": 360,
+      "bytes": 73954,
+      "atlasIndex": 23
+    },
+    {
+      "id": "027",
+      "title": "Ravine flight",
+      "src": "./examples/shot-027.mp4",
+      "poster": "./examples/shot-027.jpg",
+      "duration": 4.5,
+      "fps": "24/1",
+      "width": 640,
+      "height": 360,
+      "bytes": 113612,
+      "atlasIndex": 24
+    },
+    {
+      "id": "028",
+      "title": "Ruins focus",
+      "src": "./examples/shot-028.mp4",
+      "poster": "./examples/shot-028.jpg",
+      "duration": 4.5,
+      "fps": "24/1",
+      "width": 640,
+      "height": 360,
+      "bytes": 106268,
+      "atlasIndex": 25
+    },
+    {
+      "id": "031",
+      "title": "Wreck passage",
+      "src": "./examples/shot-031.mp4",
+      "poster": "./examples/shot-031.jpg",
+      "duration": 5.0,
+      "fps": "24/1",
+      "width": 640,
+      "height": 360,
+      "bytes": 158416,
+      "atlasIndex": 26
+    },
+    {
+      "id": "033",
+      "title": "Floor circuit",
+      "src": "./examples/shot-033.mp4",
+      "poster": "./examples/shot-033.jpg",
+      "duration": 5.0,
+      "fps": "24/1",
+      "width": 640,
+      "height": 360,
+      "bytes": 180698,
+      "atlasIndex": 27
+    },
+    {
+      "id": "034",
+      "title": "Buried machine",
+      "src": "./examples/shot-034.mp4",
+      "poster": "./examples/shot-034.jpg",
+      "duration": 5.0,
+      "fps": "24/1",
+      "width": 640,
+      "height": 360,
+      "bytes": 260347,
+      "atlasIndex": 28
+    },
+    {
+      "id": "035",
+      "title": "Rotating tunnel",
+      "src": "./examples/shot-035.mp4",
+      "poster": "./examples/shot-035.jpg",
+      "duration": 4.0,
+      "fps": "24/1",
+      "width": 640,
+      "height": 360,
+      "bytes": 323430,
+      "atlasIndex": 29
+    },
+    {
+      "id": "036",
+      "title": "Wireframe chamber",
+      "src": "./examples/shot-036.mp4",
+      "poster": "./examples/shot-036.jpg",
+      "duration": 3.75,
+      "fps": "24/1",
+      "width": 640,
+      "height": 360,
+      "bytes": 403299,
+      "atlasIndex": 30
+    },
+    {
+      "id": "042",
+      "title": "Wall approach",
+      "src": "./examples/shot-042.mp4",
+      "poster": "./examples/shot-042.jpg",
+      "duration": 4.5,
+      "fps": "24/1",
+      "width": 640,
+      "height": 360,
+      "bytes": 546046,
+      "atlasIndex": 31
+    },
+    {
+      "id": "059",
+      "title": "Tunnel fragments",
+      "src": "./examples/shot-059.mp4",
+      "poster": "./examples/shot-059.jpg",
+      "duration": 4.5,
+      "fps": "24/1",
+      "width": 640,
+      "height": 360,
+      "bytes": 686283,
+      "atlasIndex": 32
+    },
+    {
+      "id": "060",
+      "title": "Tunnel pulse",
+      "src": "./examples/shot-060.mp4",
+      "poster": "./examples/shot-060.jpg",
+      "duration": 4.5,
+      "fps": "24/1",
+      "width": 640,
+      "height": 360,
+      "bytes": 686977,
+      "atlasIndex": 33
+    },
+    {
+      "id": "061",
+      "title": "Tunnel recede",
+      "src": "./examples/shot-061.mp4",
+      "poster": "./examples/shot-061.jpg",
+      "duration": 4.5,
+      "fps": "24/1",
+      "width": 640,
+      "height": 360,
+      "bytes": 387292,
+      "atlasIndex": 34
     }
   ]
 }
