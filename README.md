@@ -26,7 +26,7 @@ My focus is the connection between production craft and product decisions: autom
 
 **Current review:** short hosted exports were checked for Model Breakdown and VOX; Collage has short export checks. FLIPFRAME and TRACE have known export-timing issues in the tested browser. [Read the exact scope](docs/functional-review.md).
 
-**Try first:** Model Breakdown Studio includes a built-in model. Collage Motion starts with an empty canvas for your own images and clips. All five browser tools have public entrances; VOX / ONE and TRACE / 01 also need your own input media. Architecture Growth presents completed illoca work and its production method; company source and Skill files are not distributed.
+**Try first:** Model Breakdown Studio opens with Wood House and offers three supplied GLB examples, plus local import. Collage Motion starts with an empty canvas for your own images and clips. All five browser tools have public entrances; VOX / ONE and TRACE / 01 also need your own input media. Architecture Growth presents completed illoca work and its production method; company source and Skill files are not distributed.
 
 ## 01 / Clockwork — detail preview
 
@@ -48,8 +48,8 @@ My design direction and model collection became a reusable Blender library, with
 
 <table>
 <tr>
-<td width="48%" valign="top"><a href="https://meshroom-breakdown-studio.limuwen9.chatgpt.site"><img src="media/model-breakdown-live.jpg" alt="Original Model Breakdown Studio showing an exploded keypad and selected control board" width="420"></a></td>
-<td width="52%" valign="top"><b>Turn a 3D model into an explanation.</b><br><br>Inspect components, compose an exploded view, highlight parts and arrange motion.<br><br><b><a href="https://meshroom-breakdown-studio.limuwen9.chatgpt.site">Open the interactive app →</a></b><br>No sign-in required. A built-in model is ready to try.<br><br><a href="https://github.com/MuwenTriLi/model-breakdown-studio">Read the case study</a> · <a href="https://github.com/MuwenTriLi/model-breakdown-studio#try-it-in-one-minute">One-minute walkthrough</a></td>
+<td width="48%" valign="top"><a href="https://meshroom-breakdown-studio.limuwen9.chatgpt.site"><img src="https://raw.githubusercontent.com/MuwenTriLi/model-breakdown-studio/main/docs/media/example-library.png" alt="Model Breakdown Studio with three GLB examples and selected production-line component" width="420"></a></td>
+<td width="52%" valign="top"><b>Turn a 3D model into an explanation.</b><br><br>Inspect components, compose an exploded view, highlight parts and arrange motion.<br><br><b><a href="https://meshroom-breakdown-studio.limuwen9.chatgpt.site">Open the interactive app →</a></b><br>No sign-in required. Choose Wood House or either production line, or import your own GLB.<br><br><a href="https://github.com/MuwenTriLi/model-breakdown-studio">Read the case study</a> · <a href="https://github.com/MuwenTriLi/model-breakdown-studio#try-it-in-one-minute">One-minute walkthrough</a></td>
 </tr>
 </table>
 

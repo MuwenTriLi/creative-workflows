@@ -6,9 +6,9 @@ Import a model, inspect its components, compose an exploded view and highlight s
 
 ## [▶ Open the original interactive web app](https://meshroom-breakdown-studio.limuwen9.chatgpt.site)
 
-**Public access; no sign-in required. A built-in keypad model is ready to explore.** The app opens on its own page; the GitHub case study is the presentation and documentation entry point.
+**Public access; no sign-in required. Wood House opens by default; three supplied GLB models are ready to explore.** The app opens on its own page; the GitHub case study is the presentation and documentation entry point.
 
-Start with **Exploded structure → 250%**, then select a named part in the left panel. Use **IMPORT MODEL** to try your own `.glb`.
+Start with **Exploded structure → 250%**, then select a named part in the left panel. Choose another model from **EXAMPLE MODELS** on the right, or use **IMPORT YOUR OWN GLB**. Switching asks before replacing your edits; imported files are processed locally in the browser. [Model-library checks and limits](https://github.com/MuwenTriLi/model-breakdown-studio/blob/main/docs/example-model-review.md).
 
 **[Read the GitHub project presentation](https://github.com/MuwenTriLi/model-breakdown-studio)**
 
