@@ -65,6 +65,8 @@ The three supplied process videos are published as [earlier design demonstration
 
 ## Source clips: inspect and revise the board
 
+![The published source manager: source preview, ordering and include controls](../media/storyboard-source-manager.png)
+
 The source collection sits directly below the canvas. Preview an individual shot, select it for framing and caption edits, move it earlier or later, or enter an exact position. Uncheck **Included in board** to retain a source while excluding it from both preview and export; **Include all** restores it. Removing a card affects only this board. Bundled sources are optimized viewing copies; imported sources use the visitor's own local files.
 
 The 35-shot example uses one shared video atlas for simultaneous board playback. Individual source playback opens on demand, so the source collection does not create another 35 live video decoders.
