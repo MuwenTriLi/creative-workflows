@@ -54,14 +54,14 @@ My design direction and model collection became a reusable Blender library, with
 </table>
 
 <table><tr>
-<td width="50%" align="center"><a href="https://github.com/MuwenTriLi/model-breakdown-studio/blob/main/showcase/README.md"><img src="https://raw.githubusercontent.com/MuwenTriLi/model-breakdown-studio/main/showcase/media/structure.gif" height="220" alt="Architectural system breakdown output"></a><br><sub>Finished AEC output / structural emphasis</sub></td>
+<td width="50%" align="center"><a href="https://github.com/MuwenTriLi/model-breakdown-studio/blob/main/showcase/README.md"><img src="https://raw.githubusercontent.com/MuwenTriLi/model-breakdown-studio/main/showcase/media/structure-smooth.webp" height="220" alt="Architectural system breakdown output"></a><br><sub>Finished AEC output / structural emphasis</sub></td>
 <td width="50%" align="center"><a href="https://github.com/MuwenTriLi/model-breakdown-studio/blob/main/showcase/README.md"><img src="https://raw.githubusercontent.com/MuwenTriLi/model-breakdown-studio/main/showcase/media/residence.jpg" height="220" alt="Residential exploded view"></a><br><sub>Component relationships / selected output</sub></td>
 </tr></table>
 
 ## 03 / Architecture Growth — company production case
 
 <table><tr>
-<td width="40%" align="center"><a href="projects/blue-white-architecture-growth.md"><img src="media/architecture-growth/tennis-plan.gif" height="220" alt="Tennis venue plan develops into architectural scene"></a></td>
+<td width="40%" align="center"><a href="projects/blue-white-architecture-growth.md"><img src="media/architecture-growth/tennis-plan-smooth.webp" height="220" alt="Tennis venue plan develops into architectural scene"></a></td>
 <td width="60%" valign="top"><b>Company aesthetics → a repeatable production method.</b><br><br>As Creative Content Director at <b>illoca</b>, I direct a shared architectural visual language and an internal Blender workflow, refined across detail, tower and tennis-venue studies.<br><br><a href="projects/blue-white-architecture-growth.md">Read the case and control decisions</a> · <a href="docs/architecture-growth-media.md#watch-the-selected-films">Watch the selected films</a><br><br><sub>Company portfolio presentation. Completed visuals and high-level method only; no company Skill, source scenes or reuse license.</sub></td>
 </tr></table>
 

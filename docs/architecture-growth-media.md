@@ -15,7 +15,7 @@
 | Office typology | Spatial alternatives and plan hierarchy | [20 s MP4](https://muwentrili.github.io/creative-workflows/films/?project=growth&film=office), 864 × 1080 |
 | Tower | Vertical sequence and urban context | [35 s MP4](https://muwentrili.github.io/creative-workflows/films/?project=growth&film=tower), 720 × 1280 |
 
-<a href="../media/architecture-growth/tennis-hero.jpg"><img src="../media/architecture-growth/tennis-hero.jpg" width="720" alt="Tennis venue completed frame"></a>
+<a href="../media/architecture-growth/tennis-stage-complete.jpg"><img src="../media/architecture-growth/tennis-stage-complete.jpg" width="720" alt="Tennis venue completed frame"></a>
 
 ## Derivative record
 
@@ -30,7 +30,11 @@
 | tower.mp4 / still | W3_Tower_35s_R14.mp4 | Complete 35 s; still at 31.5 s |
 | office.mp4 / still | Office_Typology_13_4K_20s.mp4 | Complete 20 s; still at 8 s |
 
-These are resized/encoded viewing copies and frame extracts. They preserve the existing artwork; no new geometry or generated visual replacement was introduced. Compact GIFs use 10 fps. The enlarged case-page GIFs are 500 px wide at 8 fps, preserve the composition and show six seconds at source speed: tennis plan 0.3–6.3 s, tennis growth 2–8 s, Detail A 8–14 s, Detail C 22–28 s, Office 6–12 s and Tower 24–30 s. No brightness, material or geometry changes were made. The original files are unchanged. Full decode checks on these viewing files confirm technical playback, not an exhaustive artistic or construction review of every source frame.
+These are resized/encoded viewing copies and frame extracts. No geometry or generated replacement imagery was added. The case-page animated WebP previews now retain the original 24 fps cadence: tennis plan 0.3–6.3 s, tennis growth 2–8 s, Detail A 8–14 s, Detail B square 15–21 s, Detail C 22–28 s, Office 6–12 s and Tower 24–30 s. Each is six seconds, allowing for millisecond container rounding and merged identical frames.
+
+Detail A and the supplied `Detail_B_Square_S02_25s_4096x4096.mp4` use matching 500 × 500 preview frames. Detail C and Tower use 500 × 625; the portrait tower is contained proportionally with a light surround, preserving its building and annotations. Other portrait cards use the same 4:5 frame. The five tennis stills come from 3.96, 9, 13.2, 21 and 28 s of the completed carousel film and share one aspect ratio.
+
+The presentation previews have a restrained blue balance referenced to Detail C. This changes viewing-copy color only, not the original company scenes, geometry or films. The linked full MP4 films keep their existing grading. Every animated preview frame was decoded and its timing checked; this is not a new Blender render or an exhaustive construction-quality certification.
 
 ## Rights and disclosure
 
