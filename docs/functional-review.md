@@ -8,6 +8,8 @@ These are bounded checks on Windows in the Codex in-app Chromium browser. They a
 
 Projects 04–07 now share Model Breakdown's font, numbered navigation and workspace language. English is the default; a Chinese switch is available. Local builds and TypeScript checks passed for FLIPFRAME, VOX and TRACE. The latest entrances state each tool’s input, main action and output. FLIPFRAME starts Orbital Shift; TRACE starts empty. Model Breakdown uses one public name and a larger, prominent explode control. These presentation changes do not erase the earlier functional limits recorded below.
 
+Anonymous HTTPS requests to all five public tool entrances returned HTTP 200 after publication. Model Breakdown's Worker-only first-response failure was reproduced locally and fixed by loading the browser Draco decoder during model import instead of server rendering. The production-runtime check now returns 200 and loads the default Press model. This verifies public availability, not equivalent performance on other hardware.
+
 | Current check | Result | Remaining boundary |
 | --- | --- | --- |
 | Model Breakdown / Press Manufacturing Line | Default 32-part model opens at 1500% explode. Actual local-browser H.264 export: 3840 × 2160, 30 fps, 60 decoded frames, 2.000 s; complete decode passes | This is a two-second technical check. Long sequences, the other two real inputs, all camera angles and other physical devices are not certified |
