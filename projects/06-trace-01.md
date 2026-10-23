@@ -2,7 +2,7 @@
 
 [← All projects](https://github.com/MuwenTriLi/creative-workflows#selected-work)
 
-**07 / Browser tool · Target tracking & motion annotation**
+**07 / Browser prototype · Target tracking & motion annotation · Export timing under review**
 
 Make a moving target easier to follow by connecting its position to a readable path, locator and information overlay.
 
@@ -53,7 +53,7 @@ The design focus is combining motion analysis with visual hierarchy: locating a 
 
 **Current behavior:** the UI exposes tracking, smoothing, static pinning and HUD timing controls. The creator selects the subject and decides whether tracking or a fixed annotation is appropriate. Tracking behavior on difficult clips has not been benchmarked here.
 
-**Proposed agent behavior:** propose a path for the selected target, identify suspect intervals for review, then apply accepted graphic settings. A target switch or an occluded interval should be surfaced, not silently accepted as a correct result. Per-frame confidence, an editable correction path and retained revisions are design requirements to explore; their implementation is not claimed.
+**Proposed agent behavior:** propose a path for the selected target, identify suspect intervals for review, then apply accepted graphic settings. A target switch or an occluded interval should be surfaced, not silently accepted as a correct result. The current tracker does expose confidence and a REACQUIRE state. A reviewable interval-confidence history, editable correction path and retained revisions remain proposed; a live confidence number alone does not establish recovery.
 
 **Acceptance:** inspect target identity across the complete sequence, especially occlusions and re-entry; the path does not jump to another subject; HUD text stays readable and does not obscure essential action; the encoded output preserves the reviewed timing and frame alignment. A smooth line can still be attached to the wrong object.
 
@@ -61,8 +61,10 @@ The design focus is combining motion analysis with visual hierarchy: locating a 
 
 ## Evidence and current limits
 
-The public editor and its positioning, timing and appearance controls are available. Tracking accuracy, occlusion handling and exported-video quality have not been independently benchmarked for this portfolio. Start with a short, simple clip; a clean interface is not evidence that difficult tracking cases work reliably. No measured accuracy or time-saving claim is included.
+A four-second synthetic occlusion clip was imported, a target selected in Follow Object mode, playback inspected and an FHD H.264 file downloaded. Confidence fell during the run; the exported midpoint shows REACQUIRE. The file decodes, but its **3.8267 s duration, 97 frames and approximately 25.35 average fps fail the stated 60 fps timing contract**. Repair and retest export before presenting it as delivery-ready. This is not an accuracy benchmark or proof of reliable occlusion recovery. [Reproduction and acceptance criteria](../docs/functional-review.md#trace-verify-encoded-timing-and-target-identity-separately).
 
 ## Case evidence to add
+
+[Specific input package and recording outline](../docs/evidence-to-add.md).
 
 Show the original clip beside the annotated result, then a short recording of one tracking adjustment and one readability decision. A difficult frame or a corrected drift will communicate the product reasoning better than an uninterrupted ideal result alone.

@@ -6,6 +6,8 @@ My design question is: **which parts of a creative job can a system complete rel
 
 ## What exists and what is proposed
 
+- **Observed VOX confirmation:** a punctuation-only draft edit waits for Confirm & Apply; the test preserved displayed word timestamps. A broader semantic approval system is not claimed.
+- **Observed TRACE feedback:** live confidence and REACQUIRE exist; regional repair/history is still unverified.
 - **Implemented Collage gates:** media readiness blocks premature export; editing is locked during rendering and restored afterward. These are local application controls, not a semantic approval system.
 - **Existing tools:** parameter-driven Blender assets and interactive browser applications. Their case pages identify observed controls and the scope of actual tests.
 - **AI during development:** Codex assisted implementation and, for Clockwork, inspection and variation under Muwen's design direction. This is distinct from an AI agent operating the finished tool for its user.
@@ -34,7 +36,7 @@ Local correction is a product requirement, not the same as offering a global “
 | Model Breakdown | Focal part, explode amount or framing | Imported geometry and the explanation; revision rollback remains proposed |
 | Architecture Growth | One system or transition, with neighboring-frame review | Reference, scale, camera and construction order; demonstration pending |
 | Collage Motion | One asset's framing or a chosen timing control | Imported media and accepted editorial choices; session persistence is absent |
-| FLIPFRAME | One card's framing or hold | Archive order and the accepted sequence; exported correction pending |
+| FLIPFRAME | One card's framing or hold | Archive order and accepted sequence; current export-timing fixture fails |
 | VOX / ONE | Wrong word or mistimed span | Spoken meaning and neighboring timing; word-level recovery needs verification |
 | TRACE / 01 | Failed target interval | Subject identity and good intervals; regional repair remains unverified |
 

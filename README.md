@@ -8,7 +8,7 @@ My focus is the connection between production craft and product decisions: autom
 
 **Start here:** [Production → product: Clockwork](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/production-case.md) · [Feedback → iteration: Collage Motion](projects/03-collage-motion.md#from-prototype-to-a-usable-first-session) · [Try Model Breakdown](https://meshroom-breakdown-studio.limuwen9.chatgpt.site)
 
-[Evidence & next experiments across all seven projects](docs/review-guide.md) · [Automation, creator control & delivery](docs/creative-control.md)
+[Evidence & next experiments](docs/review-guide.md) · [Functional checks & known limits](docs/functional-review.md) · [Automation & creator control](docs/creative-control.md)
 
 ## Selected work
 
@@ -23,6 +23,8 @@ My focus is the connection between production craft and product decisions: autom
 | **05 · [FLIPFRAME](projects/04-flipframe.md)** | Media sequencing & pacing → editable spatial presentation | Browser tool | [Open web app ↗](https://flipframe-motion-lab.limuwen9.chatgpt.site) |
 | **06 · [VOX / ONE](projects/05-vox-one.md)** | Speech/type synchronization → editable timed typography | Browser tool | [Open web app ↗](https://vox-one.limuwen9.chatgpt.site) |
 | **07 · [TRACE / 01](projects/06-trace-01.md)** | Moving subjects need context → tracking & readable overlays | Browser tool | [Open web app ↗](https://trace-01-motion-tracker.limuwen9.chatgpt.site) |
+
+**Current review:** short hosted exports were checked for Model Breakdown and VOX; Collage has short export checks. FLIPFRAME and TRACE have known export-timing issues in the tested browser. [Read the exact scope](docs/functional-review.md).
 
 **Try first:** Model Breakdown Studio includes a built-in model. Collage Motion starts with an empty canvas for your own images and clips. All five browser tools have public entrances; VOX / ONE and TRACE / 01 also need your own input media. Architecture Growth currently has a written case framework, with video to follow.
 

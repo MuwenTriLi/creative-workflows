@@ -88,3 +88,5 @@ This is a browser application with a repeatable workflow. An installable agent S
 ## Case evidence to add
 
 One finished collage, a short recording of changing the grid or timing, and the matching exported clip. The comparison should show what changed and why the revised rhythm communicates better.
+
+[Per-case material checklist and recording outline](../docs/evidence-to-add.md) · [Functional review](../docs/functional-review.md)

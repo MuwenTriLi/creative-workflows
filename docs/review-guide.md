@@ -19,12 +19,12 @@ The other projects explore different problems. They do not need to appear equall
 | Project | Evidence available now | Important missing proof | Current decision |
 | --- | --- | --- | --- |
 | **01 · [Clockwork](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/production-case.md)** | Commercial library, original renders, motion excerpts, controller documentation and instruction Skill | One freshly recorded adaptation from brief to checked output; an unfamiliar creator repeating it | Lead with the existing product. **Iterate** the agent-assisted adaptation before expanding it. |
-| **02 · [Model Breakdown](https://github.com/MuwenTriLi/model-breakdown-studio/blob/main/docs/product-case.md)** | Hosted sample interaction; separate local source and geometry/export checks | A real multi-part GLB completed through export in the original hosted app | **Iterate** the import-to-delivery path before claiming general model support. |
+| **02 · [Model Breakdown](https://github.com/MuwenTriLi/model-breakdown-studio/blob/main/docs/product-case.md)** | Hosted three-part GLB import, part selection and 2 s / 4K H.264 export; separate local-adaptation tests | A visually meaningful real-model explanation, with framing and complete output review | **Iterate** the import-to-delivery path before claiming general model support. |
 | **03 · [Architecture Growth](../projects/blue-white-architecture-growth.md)** | Written problem, workflow and review criteria | Approved footage, a concrete revision and shot-specific contribution credits | **Hold the visual case** until the evidence is supplied. This is not a public tool or source release. |
 | **04 · [Collage Motion](../projects/03-collage-motion.md)** | Public working editor, implemented feedback corrections, frame navigation and short 720p export checks | Unassisted first-use task; mixed-video and larger-project output checks | **Iterate** usability with creators before adding automatic editorial choices. |
-| **05 · [FLIPFRAME](../projects/04-flipframe.md)** | Public spatial editor, archive and timing controls | A readable finished sequence, a one-card correction and verified export | **Iterate** one sequence, rather than add more motion modes. |
-| **06 · [VOX / ONE](../projects/05-vox-one.md)** | Public speech/type interface and editable presentation controls | Actual recognition/correction run, synchronization and encoded output | **Validate the core task** before expanding languages or automation. |
-| **07 · [TRACE / 01](../projects/06-trace-01.md)** | Public tracking/HUD interface and exposed controls | Tracking through occlusion, recoverable correction and verified export | **Validate recovery** before expanding tracking scope. |
+| **05 · [FLIPFRAME](../projects/04-flipframe.md)** | Import, per-clip trim and showcase selection exercised; downloaded 4K export has a timing defect | Timing-correct output and a readable finished sequence; see the functional review | **Fix and retest export** before treating the sequence as deliverable. |
+| **06 · [VOX / ONE](../projects/05-vox-one.md)** | Clean synthetic English transcription, confirmed punctuation correction and 4K H.264/AAC output | Real speech with names/noise, measured sync, alpha output and editor round trip | **Validate the core task** before expanding languages or automation. |
+| **07 · [TRACE / 01](../projects/06-trace-01.md)** | Occlusion fixture, confidence/reacquire state and downloaded FHD export; timing check fails | Correct encoded timing, target-identity review and recoverable local correction | **Fix export and validate recovery** before expanding tracking scope. |
 
 “Current decision” is a product recommendation based on the available evidence, not a completed customer-study result. There are no measured time-saving, accuracy or adoption claims.
 
@@ -40,6 +40,8 @@ The other projects explore different problems. They do not need to appear equall
 | Hand a validated feature to engineering | Source references, control model and [handoff template](handoff-template.md) | An executed acceptance fixture, failure example and completed handoff; no shipped engineering adoption is claimed |
 
 AI-assisted development and a packaged Skill are useful evidence, but neither establishes a reliable autonomous agent. Model-API orchestration, agent recovery and comparative creator research remain evidence to build, not labels to add to a screenshot.
+
+[Detailed functional checks](functional-review.md) · [Per-case material checklist and recording outline](evidence-to-add.md)
 
 ## What to prove next
 

@@ -57,3 +57,5 @@ After the creator confirms the visual reference and system hierarchy, repeatable
 ## Current status
 
 The written framework is ready. Selected footage, shot-specific details and final contribution credits will complete the case. No new claims about measured efficiency, client outcomes or a public Skill release are made while that evidence is pending.
+
+[Per-case material checklist and recording outline](../docs/evidence-to-add.md) · [Functional review](../docs/functional-review.md)

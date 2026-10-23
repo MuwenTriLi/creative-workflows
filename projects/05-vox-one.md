@@ -13,7 +13,7 @@ Turn spoken English into editable, timed typography, with control over phrasing,
 
 ## The smallest useful task
 
-**Task:** use a short authorized English clip containing a proper noun, a pause and a phrase boundary. Correct its transcript, create one readable treatment and verify the encoded result against the audio. This processing test is pending.
+**Task:** use a short authorized English clip containing a proper noun, a pause and a phrase boundary. Correct its transcript, create one readable treatment and verify the encoded result against the audio. A clean synthetic English fixture has passed the core path; this harder real-speech task remains pending.
 
 **Local correction:** the interface offers editable text and sync offset. Correct a misspelled word without rewriting the speaker's meaning; use a global offset only for uniform drift. Whether one word can be retimed without disturbing neighboring words must be tested. Region-level reprocessing and retained revisions are proposed requirements.
 
@@ -51,7 +51,7 @@ The design focus is the correction loop between speech and presentation: automat
 
 **Hypothesis:** connecting transcript correction, phrase layout and timing reduces the cost of revising speech-led motion graphics. This has not yet been established by comparative testing.
 
-**Current behavior:** the interface describes automatic local transcription and word timing, followed by editable text and visual controls. This review did not run the recognizer. The creator owns wording, punctuation, phrase meaning, emphasis and final sync.
+**Current behavior:** the interface describes automatic local transcription and word timing, followed by editable text and visual controls. The review ran local Whisper on a 16-word synthetic English clip, confirmed a punctuation-only correction and checked the resulting 4K H.264/AAC file. The creator owns wording, punctuation, phrase meaning, emphasis and final sync.
 
 **Proposed agent behavior:** generate a first transcript and layout, make doubtful spans easy to inspect against the audio, and apply approved style settings. An agent should request review before rewriting meaning, removing words or substituting names. A confidence display, semantic approval and revision history are proposed requirements, not verified current UI.
 
@@ -61,8 +61,10 @@ The design focus is the correction loop between speech and presentation: automat
 
 ## Evidence and current limits
 
-The public interface is accessible and its controls are documented here. It identifies the speech engine as **local Whisper Base with word timestamps**; that is the implementation described by the interface, not a new transcription benchmark. This portfolio update did not run speech recognition or verify the advertised 4K MP4/AAC and alpha WebM exports. The current interface is focused on English speech, not visual OCR.
+The hosted app and read-only source inspection confirm local Whisper Base/WASM on the tested path. The clean 7.55 s synthetic clip produced the expected 16 words. Changing one punctuation mark required **Confirm & Apply** and retained the displayed word times. **Build 2 Lines** exported 4K H.264 / 30 fps / 227 frames plus AAC audio; full decoding passed. Names, noise, perceptual sync tolerance, alpha WebM and a production-editor round trip remain untested. This is not a recognition benchmark. [Functional record](../docs/functional-review.md).
 
 ## Case evidence to add
+
+[Specific input package and recording outline](../docs/evidence-to-add.md).
 
 A short authorized voice sample, the corrected transcript, and two typography treatments using the same audio. Include one real correction and its effect on the final sequence, with Muwen's specific role and implementation details.

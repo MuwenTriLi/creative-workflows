@@ -17,7 +17,7 @@ Arrange images and clips along a controlled spatial sequence, from a fast overvi
 
 **Task:** present a short media sequence with one key card that needs a longer readable hold. Keep the editorial order fixed, change that hold, and inspect the complete transition and output.
 
-**Local correction:** use the card's framing and hold controls instead of rebuilding or reshuffling the archive. These controls are visible in the editor; an end-to-end exported correction remains to be demonstrated. Protected-card locks and revision rollback are proposed, not implemented guarantees.
+**Local correction:** use the card's framing and hold controls instead of rebuilding or reshuffling the archive. These controls are visible in the editor; a clip was trimmed and a two-card range exported, but the downloaded file failed timing acceptance. Protected-card locks and revision rollback are proposed, not implemented guarantees.
 
 **Decision now:** iterate one readable sequence and verify export before adding motion modes. Ask viewers what they could identify at the intended playback speed. Expand a preset only if it preserves order, framing and readability; stop a timing rule that sacrifices the content to fit a duration.
 
@@ -56,14 +56,16 @@ The design focus is turning a motion treatment into an editable system: content 
 
 **Proposed agent behavior:** suggest a timing draft from a selected sequence and intended duration. Keep the editorial order and IN/OUT range fixed unless the creator reviews a change. Show any crop and dwell-time change on the affected card. Version comparison, semantic locks and automatic readability checks are proposed, not implemented claims.
 
-**Acceptance:** the intended cards appear in the right order; subjects remain framed; each key card can be read at playback speed; transitions do not jump or obscure the content; the encoded output matches the reviewed timing. Export reliability is still to verify here.
+**Acceptance:** the intended cards appear in the right order; subjects remain framed; each key card can be read at playback speed; transitions do not jump or obscure the content; the encoded output matches the reviewed timing. The current compatibility export failed the short timing fixture below.
 
 **Next test / decision:** record the same sequence with two dwell settings, ask viewers which content they can identify, and document the creator's correction steps. Expand the timing preset if readability and editability both hold; iterate on rushed cards or disorienting transitions; stop an automatic timing rule if it sacrifices the story to fit duration. [Control model and handoff](../docs/creative-control.md).
 
 ## Evidence and current limits
 
-The public editor, existing media archive and parameter interface are available to inspect. The app exposes an export panel, but its full export workflow and 4K output have not been independently rechecked for this case. No production reliability or measured efficiency claim is made.
+The hosted app imported a four-second synthetic clip, allowed a two-second trim and a two-card showcase range. The UI expected **4.65 s**; the downloaded compatibility-path H.264 file was **95.0367 s**, 4K, with 278 decoded frames and approximately 2.96 average fps. It decodes but fails delivery timing. Source inspection found direct-encoder and MediaRecorder compatibility paths; the precise root-cause fix remains to implement. [Reproduction and acceptance criteria](../docs/functional-review.md#flipframe-do-not-equate-encoding-completion-with-delivery). Existing archive media was not added to this repository. No production reliability or efficiency claim is made.
 
 ## Case evidence to add
+
+[Specific input package and recording outline](../docs/evidence-to-add.md).
 
 A short finished sequence and an A/B recording with identical media: change only the showcase order or hold time, then explain how that improves readability. Add the specific design iteration and Muwen's implementation contribution alongside that evidence.
