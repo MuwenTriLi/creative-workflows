@@ -23,3 +23,8 @@ Suggested film outline: 0–10 s production problem; 10–25 s input and automat
 ## Evidence that must come from real observation
 
 Use a few exploratory creator sessions to capture task completion, assistance, revision work and output quality. Record actual observations; leave unknowns blank. Do not infer time saved from a short demo or turn a synthetic pass into a customer result. Keep sources and the intended quality target constant when comparing workflows.
+
+
+### Collage review-board follow-up
+
+The default now includes 20 captioned shots, all 40 assets, review overlays and a four-step walkthrough. Next, record one unfamiliar creator identifying a shot, changing its caption/crop and reviewing the exported page. Note whether the labels clarify discussion and whether page versus complete-sequence export is understood. This is a planned test, not completed research.

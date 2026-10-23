@@ -26,7 +26,7 @@ My focus is the connection between production craft and product decisions: autom
 
 **Current review:** short hosted exports were checked for Model Breakdown and VOX; Collage has short export checks. FLIPFRAME and TRACE have known export-timing issues in the tested browser. [Read the exact scope](docs/functional-review.md).
 
-**Try first:** Model Breakdown Studio opens with Wood House and offers three supplied GLB examples, plus local import. Collage Motion opens with nine moving sample shots, a 40-clip library and a visible import action for your own media. All five browser tools have public entrances; VOX / ONE and TRACE / 01 also need your own input media. Architecture Growth presents completed illoca work and its production method; company source and Skill files are not distributed.
+**Try first:** Model Breakdown Studio opens with Wood House and offers three supplied GLB examples, plus local import. Collage Motion opens with 20 captioned shots per page, all 40 sources in the order list and a visible import action for your own media. All five browser tools have public entrances; VOX / ONE and TRACE / 01 also need your own input media. Architecture Growth presents completed illoca work and its production method; company source and Skill files are not distributed.
 
 ## 01 / Clockwork — detail preview
 
@@ -69,7 +69,7 @@ My design direction and model collection became a reusable Blender library, with
 
 | [Collage Motion](projects/03-collage-motion.md) | [FLIPFRAME](projects/04-flipframe.md) | [VOX / ONE](projects/05-vox-one.md) | [TRACE / 01](projects/06-trace-01.md) |
 | --- | --- | --- | --- |
-| [![Animated storyboard with nine BITFLIP shots](media/collage-storyboard-board.jpg)](projects/03-collage-motion.md) | [![Spatial media editor](media/flipframe-editor.png)](projects/04-flipframe.md) | [![Timed typography editor](media/vox-one-editor.png)](projects/05-vox-one.md) | [![Tracking editor](media/trace-01-editor.png)](projects/06-trace-01.md) |
+| [![Twenty-shot storyboard with captions and review overlays](media/collage-review-board.jpg)](projects/03-collage-motion.md) | [![Spatial media editor](media/flipframe-editor.png)](projects/04-flipframe.md) | [![Timed typography editor](media/vox-one-editor.png)](projects/05-vox-one.md) | [![Tracking editor](media/trace-01-editor.png)](projects/06-trace-01.md) |
 | Shot review & moving storyboard | Sequence & pacing | Speech & type | Tracking & annotation |
 
 These are an exported Collage sample board and current editor views. Each project page provides the problem, design choices, a short walkthrough and verification limits. Selected final films and process recordings will be added as they are prepared; no measured efficiency or user-study results are claimed.

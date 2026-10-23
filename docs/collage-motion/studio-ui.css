@@ -169,3 +169,38 @@ html > body { margin: 0; padding: 0; background: #080a0b !important; color: #e9e
  #landscape-collage-editor .stage-toolbar .form-check{display:none}
  #landscape-collage-editor .stage-toolbar{flex-wrap:nowrap}
 }
+
+#landscape-collage-editor .review-look,#landscape-collage-editor .review-page{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:11px}
+#landscape-collage-editor .review-look{grid-row:1;grid-column:1/-1;padding:9px 10px;background:#121a1c;border:1px solid #344246}
+#landscape-collage-editor .review-look>span{color:#b3c4c4;margin-right:auto;font-size:10px;text-transform:uppercase;letter-spacing:.08em}
+#landscape-collage-editor .review-look button,#landscape-collage-editor .review-page button,#landscape-collage-editor .review-guide button{background:#151e20;color:#d9e3df;border:1px solid #405052;border-radius:0;padding:7px 9px;font:inherit;cursor:pointer}
+#landscape-collage-editor .review-look [aria-pressed=true],#landscape-collage-editor .review-guide [aria-pressed=true]{background:#d8ff6a;color:#10170a;border-color:#d8ff6a}
+#landscape-collage-editor .stage-column .board-mode{grid-row:2}
+#landscape-collage-editor .stage-column .stage-toolbar{grid-row:2}
+#landscape-collage-editor .review-page{grid-row:3;color:#dbe8e6}
+#landscape-collage-editor .review-page>span{margin-left:auto;font-size:10px;color:#92a3a8}
+#landscape-collage-editor .review-page button:disabled{opacity:.3;cursor:default}
+#landscape-collage-editor .review-guide{border:1px solid #3e4c4a;background:linear-gradient(140deg,#1a2523,#101718);padding:14px;margin-bottom:16px}
+#landscape-collage-editor .review-guide-kicker{font-size:10px;letter-spacing:.09em;color:#d8ff6a;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+#landscape-collage-editor .review-guide-kicker span{color:#8fa39e;font-size:9px}
+#landscape-collage-editor .review-guide-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:3px;margin:12px 0}
+#landscape-collage-editor .review-guide-steps button{font-size:10px;padding:7px 2px}
+#landscape-collage-editor .review-guide h2{font-size:16px;margin:10px 0 6px;color:#edf3ef;font-weight:500}
+#landscape-collage-editor .review-guide p{font-size:12px;line-height:1.6;color:#adbfba;margin:0 0 12px;min-height:57px}
+#landscape-collage-editor .review-guide #rv-guide-action{color:#d8ff6a;font-size:11px}
+#landscape-collage-editor .review-note{font-size:11px;line-height:1.5;color:#9cabae}
+#landscape-collage-editor .asset-item{border:1px solid #344045;background:#0f171a;min-width:0;overflow:hidden}
+#landscape-collage-editor .asset-tile{width:100%;height:auto!important;aspect-ratio:16/9;border:0}
+#landscape-collage-editor .asset-tools{display:grid!important;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;padding:6px;gap:3px;min-width:0}
+#landscape-collage-editor .asset-name{white-space:normal!important;line-height:1.4;font-size:10px!important;overflow-wrap:anywhere;min-width:0}
+#landscape-collage-editor .asset-tools button{padding:2px;min-width:20px;max-width:24px}
+#landscape-collage-editor .asset-tools svg{width:14px;height:14px}
+#landscape-collage-editor .library-grid{gap:10px;grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+#landscape-collage-editor.is-exporting :is(.review-look,.review-page,.review-guide){pointer-events:none;opacity:.6}
+#landscape-collage-editor .review-look button,#landscape-collage-editor .review-page button,#landscape-collage-editor .review-guide button{min-height:28px;height:auto;font-size:11px}
+#landscape-collage-editor .review-look{padding:6px 8px}
+#landscape-collage-editor .review-guide p{min-height:0}
+#landscape-collage-editor .review-guide{padding:12px}
+#landscape-collage-editor .review-guide-steps button{font-size:10px}
+@media(max-width:1100px){#landscape-collage-editor .stage-column .stage-toolbar{grid-row:3}#landscape-collage-editor .review-page{grid-row:4}}
+@media(max-width:600px){#landscape-collage-editor .review-look{padding:7px}#landscape-collage-editor .review-look>span{width:100%;font-size:9px}#landscape-collage-editor .review-look button{font-size:10px;padding:6px}#landscape-collage-editor .review-page>span{display:none}}

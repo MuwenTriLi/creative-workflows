@@ -563,6 +563,8 @@
     <div class="editor-grid">
       <section class="stage-column" aria-label="画面预览与素材位置">
         <div class="workspace-heading"><strong>02 / 编排与预览</strong><span>调整右侧参数，再拖动时间轴检查效果。</span></div>
+        <div class="review-look" aria-label="Presentation overlays"><span>02 / Presentation</span><button type="button" id="rv-presentation" aria-pressed="true">Full presentation</button><button type="button" id="rv-clean" aria-pressed="false">Clean board</button><button type="button" id="rv-customize">Customize overlays ↗</button></div>
+        <div class="review-page"><button type="button" id="rv-prev" aria-label="Previous board page">←</button><output id="rv-page-label">Shots 1–20 / 40</output><button type="button" id="rv-next" aria-label="Next board page">→</button><span>Captions &amp; timecode are included in export.</span></div>
         <div class="board-mode" role="group" aria-label="Presentation mode"><button id="sb-storyboard" type="button" aria-pressed="true">Storyboard</button><button id="sb-collage" type="button" aria-pressed="false">Motion collage</button><span id="sb-mode-note">Compare shots side by side.</span></div>
         <div class="stage-toolbar viz-row">
           <div class="viz-row">
@@ -689,6 +691,7 @@
       </section>
 
       <section class="settings-column" aria-label="编辑参数">
+        <div class="review-guide"><div class="review-guide-kicker">QUICK WALKTHROUGH <span>YOU DIRECT · THE TOOL ARRANGES</span></div><div class="review-guide-steps" role="group" aria-label="Walkthrough steps"><button data-rv-step="0" type="button">01 Inspect</button><button data-rv-step="1" type="button">02 Style</button><button data-rv-step="2" type="button">03 Refine</button><button data-rv-step="3" type="button">04 Deliver</button></div><h2 id="rv-guide-title"></h2><p id="rv-guide-copy"></p><button type="button" id="rv-guide-action"></button></div>
         <div class="workspace-heading"><strong>调整工具</strong><span>先布局，再运动；随时预览。</span></div>
         <div class="tab-list" role="tablist" aria-label="编辑面板">
           <button class="btn" id="lc-tab-layout" type="button" role="tab" aria-selected="true">排布</button>
@@ -767,7 +770,7 @@
               <label class="form-label" for="lc-frame-style">
                 外框风格
                 <select class="form-select" id="lc-frame-style">
-                  <option value="open-data" selected>I · 开放数据轨</option>
+                  <option value="review-board">Review / shot sheet</option><option value="open-data" selected>I · 开放数据轨</option>
                   <option value="calibration">II · 精密校准轨</option>
                   <option value="code-array">III · 代码阵列</option>
                   <option value="modular-index">IV · 系统写入</option>
@@ -840,7 +843,7 @@
               <label class="form-label" for="lc-hud-style">
                 单格 HUD 样式
                 <select class="form-select" id="lc-hud-style">
-                  <option value="digital" selected>数字经纬网格</option>
+                  <option value="review">Review / shot captions</option><option value="digital" selected>数字经纬网格</option>
                   <option value="ticks">角标 + 小刻度</option>
                   <option value="minimal">极简角标</option>
                 </select>
@@ -1164,7 +1167,7 @@
 
         <div class="tab-panel" id="lc-panel-flash" role="tabpanel" hidden></div>
 
-        <div class="tab-panel" id="lc-panel-asset" role="tabpanel" hidden>
+        <div class="tab-panel" id="lc-panel-asset" role="tabpanel" hidden><div class="control-section"><label class="form-label" for="rv-caption">Shot caption<input id="rv-caption" class="form-control" maxlength="100" type="text" placeholder="Describe the selected shot"></label><p class="review-note">Source ID and clip time are automatic. The caption is your editorial description.</p></div>
           <div class="control-section">
             <div class="toolbar-split viz-row">
               <div class="section-title">流畅动态缩略代理</div>
@@ -1583,7 +1586,7 @@
       root.querySelector("#lc-panel-flash").append(controls.flashSwapPanel);
 
       const tabs = ["layout", "border", "motion", "flash", "asset", "export"];
-      const PAGE_SIZE = 30;
+      const PAGE_SIZE = 60;
       const state = {
         storyboard: true,
         assets: [],
@@ -2731,7 +2734,7 @@
       ) {
         const info = unitInfo(column, row);
         const count = Math.max(1, state.assets.length);
-        if (state.storyboard) return (row * state.columns + column) % count;
+        if (state.storyboard) return ((state.boardPage||0)*state.rows*state.columns + row * state.columns + column) % count;
         if (state.flashEnabled) {
           const cellBeat = flashBeatState(flashTimeForSlot(animationTimeMs, info.slot)).step;
           return flashSwapAssignment(info.slot, cellBeat, count);
@@ -3053,6 +3056,7 @@
           return;
         }
 
+        if(state.hudStyle==='review'){drawReviewCell(width,height,column,row,assetIndex,timeMs);return;}
         const inheritedAlpha = ctx.globalAlpha;
         const minimum = Math.min(width, height);
         const layoutScale = Math.max(0.1, state.layoutScale);
@@ -3230,7 +3234,7 @@
       }
 
       function drawGridBoundaryHud(geometry) {
-        if (!state.hudEnabled || state.hudStyle !== "digital") {
+        if (!state.hudEnabled || !["digital","review"].includes(state.hudStyle)) {
           return;
         }
         const minimum = Math.min(geometry.tileWidth, geometry.tileHeight);
@@ -3269,6 +3273,7 @@
         if (!state.frameEnabled) {
           return;
         }
+        if(state.frameStyle==='review-board'){drawReviewFrame(frame,timeMs);return;}
         const { width, height, cornerLength, chamfer, resolutionScale } = frame;
         const x = frame.x + renderCanvas.width * state.frameOffsetX;
         const y = frame.y + renderCanvas.height * state.frameOffsetY;
@@ -4094,11 +4099,8 @@
             const rotation = inverse * (motion.entryRotate + (asset?.motionRotate ?? 0)) * Math.PI / 180;
             const centerX = x + geometry.tileWidth / 2 + dx;
             const centerY = y + geometry.tileHeight / 2 + dy;
-            const assetFrame = assetFrameWithinSlot(
-              asset,
-              geometry.tileWidth,
-              geometry.tileHeight,
-            );
+            const captionHeight = state.hudEnabled && state.hudStyle==='review' && state.hudText ? Math.min(geometry.tileHeight*.35,32*renderCanvas.width/1280*state.hudTextScale) : 0;
+            const assetFrame = assetFrameWithinSlot(asset,geometry.tileWidth,geometry.tileHeight-captionHeight);
             const radius = Math.min(assetFrame.width, assetFrame.height) * state.corner / 100;
 
             ctx.save();
@@ -4107,6 +4109,7 @@
             ctx.scale(scale, scale);
             ctx.translate(-geometry.tileWidth / 2, -geometry.tileHeight / 2);
             ctx.globalAlpha = 1 - inverse * (1 - state.entryOpacity);
+            ctx.save();
             roundedClip(
               assetFrame.x,
               assetFrame.y,
@@ -4214,6 +4217,8 @@
                 );
               }
             }
+            ctx.restore();
+            drawReviewCaption(geometry.tileWidth,geometry.tileHeight,captionHeight,asset,assetIndex,timeMs);
             ctx.restore();
           }
         }
@@ -4502,6 +4507,7 @@
         randomizeAssetsButton.disabled = state.assets.length < 2;
         clearAllAssetsButton.disabled = state.assets.length === 0;
         nextNumber.textContent = formatIndex(state.assets.length);
+        refreshReviewUI();
         libraryStatus.textContent = localize(state.assets.length
           ? `${state.assets.length} 个素材 · 当前显示 ${formatIndex(start)}–${formatIndex(Math.min(start + PAGE_SIZE - 1, state.assets.length - 1))}`
           : "尚未添加素材");
@@ -4577,6 +4583,7 @@
       }
 
       function selectAsset(index, openPanel = false) {
+        if(state.storyboard && index>=0 && !state.recording && !exportPreparing)state.boardPage=Math.floor(index/(state.rows*state.columns));
         if (index < 0 || index >= state.assets.length) {
           state.selectedAsset = -1;
         } else {
@@ -4586,6 +4593,7 @@
         renderAssetSelect();
         renderLibrary();
         syncAssetControls();
+        refreshReviewUI();
         if (openPanel) {
           renderTabs("asset");
         }
@@ -7491,6 +7499,7 @@
       const sampleDrawer = root.querySelector('#sb-library');
       const sampleGrid = root.querySelector('#sb-library-grid');
       const sampleGroups = [
+        {id:'all',title:'Showcase / all 40 shots',ids:[]},
         { id: 'featured', title: 'Featured / 9 shots', ids: ['037','038','040','043','051','054','055','058','063'] },
         { id: 'opening', title: '01 / Reality & discovery', ids: ['002','004','005','012','013','015','016','017','020'] },
         { id: 'ruins', title: '02 / Through the ruins', ids: ['022','026','027','028','030','031','033','034','035'] },
@@ -7526,22 +7535,21 @@
       }
       function configureReviewBoard(count = 9) {
         state.storyboard = true;
-        setGridDimension('rows',count <= 4 ? 2 : 3);
-        setGridDimension('columns',count <= 4 ? 2 : 3);
+        state.boardPage=0;
+        setGridDimension('rows',count>9?4:count<=4?2:3);
+        setGridDimension('columns',count>9?5:count<=4?2:3);
         setSimpleControl('gap',24);
         setSimpleControl('corner',0);
-        setSimpleControl('frameEnabled',false,'change');
-        setSimpleControl('hudEnabled',false,'change');
+        applyReviewLook(true);
         setSimpleControl('repeatPlacementMode','sequential','change');
         setSimpleControl('videoRowOffsetEnabled',false,'change');
         setSimpleControl('duration',8);
-        state.frameInset = .012;
-        controls.frameInset.value = '1.2';
-        state.maxActiveVideos = 9;
+        setSimpleControl('frameInset',5);
+        state.maxActiveVideos = 20;
         state.motionMode = 'loop';
         controls.motionMode.value = 'loop';
         setSimpleControl('aspect','landscape','change');
-        controls.resolution.value = '1280x720';
+        controls.resolution.value = '1920x1080';
         controls.fps.value = '24';
         fitLayout();
         refreshSampleStatus();
@@ -7587,7 +7595,7 @@
       async function loadSampleGroup(id, initial = false) {
         if (sampleState.loading || state.recording || exportPreparing) return;
         const group = sampleGroups.find(g => g.id === id) || sampleGroups[0];
-        if (!initial && !await confirmReplaceBoard()) { sampleSelect.value = sampleState.name || 'featured'; return; }
+        if (!initial && !await confirmReplaceBoard()) { sampleSelect.value = sampleState.name || 'all'; return; }
         const generation = ++sampleState.generation;
         setSampleBusy(true);
         refreshSampleStatus(`Loading ${group.ids.length} review clips…`);
@@ -7599,7 +7607,7 @@
             while(cursor < group.ids.length) {
               const i = cursor++;
               const clip = sampleState.clips.find(c => c.id === group.ids[i]);
-              try { batch[i] = await makeSampleAsset(clip); }
+              try { batch[i] = await makeSampleAsset(clip); refreshSampleStatus(`Loading review clips ${batch.filter(Boolean).length} / ${group.ids.length}…`); }
               catch(error) { console.warn('Sample unavailable:',clip?.id,error.message); }
             }
           }));
@@ -7612,12 +7620,12 @@
           sampleState.name = group.id;
           sampleSelect.value = group.id;
           configureReviewBoard(group.ids.length);
-          renderLibrary(); renderAssetSelect(); selectAsset(0); updateProxyStatus();
+          renderLibrary(); renderAssetSelect(); selectAsset(0); updateProxyStatus(); refreshReviewUI();
           setTime(0);
           state.playing = !matchMedia('(prefers-reduced-motion: reduce)').matches;
           state.anchorMs = performance.now(); updatePlayButton();
           renderTabs('layout');
-          refreshSampleStatus(`${loaded.length} / ${group.ids.length} sample shots on the board · 40 in the library · silent preview`);
+          refreshSampleStatus(`${loaded.length} sample shots loaded · ${Math.min(loaded.length,state.rows*state.columns)} visible per page · silent review`);
         } catch(error) { refreshSampleStatus(error.message); }
         finally { setSampleBusy(false); }
       }
@@ -7654,7 +7662,7 @@
         ++sampleState.generation;
         // The prominent import action explicitly replaces the sample board only.
         if (!sampleState.userMedia) { state.playing=false; clearAllAssets(); }
-        sampleState.userMedia=true; sampleState.name='';
+        sampleState.userMedia=true; sampleState.name=''; state.boardPage=0;
         sampleSelect.selectedIndex=-1;
         await addFiles(list);
         refreshSampleStatus('Your media stays in this browser. Import adds more files; the example library is always available.');
@@ -7663,11 +7671,11 @@
       root.querySelector('#sb-storyboard').addEventListener('click',()=>setBoardMode(true));
       root.querySelector('#sb-collage').addEventListener('click',()=>setBoardMode(false));
       sampleSelect.addEventListener('change',()=>void loadSampleGroup(sampleSelect.value));
-      root.querySelector('#sb-restore').addEventListener('click',()=>void loadSampleGroup('featured'));
+      root.querySelector('#sb-restore').addEventListener('click',()=>void loadSampleGroup('all'));
       root.querySelector('#sb-browse').addEventListener('click',()=>{ sampleDrawer.open=!sampleDrawer.open; refreshSampleStatus(); if(sampleDrawer.open) sampleDrawer.scrollIntoView({behavior:'smooth',block:'nearest'}); });
       root.querySelector('#sb-blank').addEventListener('click',async()=>{
         if (sampleState.loading || !await confirmReplaceBoard()) return;
-        ++sampleState.generation; state.playing=false; clearAllAssets(); sampleState.userMedia=true; sampleState.name=''; sampleSelect.selectedIndex=-1; updatePlayButton(); refreshSampleStatus('Blank board. Import images or clips to start.');
+        ++sampleState.generation; state.playing=false; clearAllAssets(); sampleState.userMedia=true; sampleState.name=''; state.boardPage=0; sampleSelect.selectedIndex=-1; updatePlayButton(); refreshSampleStatus('Blank board. Import images or clips to start.');
       });
       // Pause off-screen work and resume from the same board time.
       let resumeAfterHidden=false;
@@ -7678,13 +7686,15 @@
         updatePlayButton();
       });
       async function initializeStoryboard() {
-        configureReviewBoard();
+        configureReviewBoard(40);
         try {
           const response=await fetch('./examples/manifest.json');
           if(!response.ok) throw new Error('Example library unavailable');
           sampleState.clips=(await response.json()).clips;
+          const lead=['002','004','005','053','030','037','038','040','043','044','046','051','052','054','055','056','058','062','063','067'];
+          sampleGroups[0].ids=[...lead,...sampleState.clips.map(c=>c.id).filter(id=>!lead.includes(id))];
           renderSampleLibrary();
-          await loadSampleGroup('featured',true);
+          await loadSampleGroup('all',true);
         } catch(error) { refreshSampleStatus('Examples could not load. You can still import your own media.'); }
       }
 
@@ -7705,6 +7715,107 @@
       setStatus("准备就绪");
       refreshLanguage();
       state.renderAnimation = requestAnimationFrame(drawFrame);
+      function reviewTime(seconds, fps = 24) {
+        const frames = Math.floor(Math.max(0, seconds) * fps);
+        return `${String(Math.floor(frames/fps/60)).padStart(2,'0')}:${String(Math.floor(frames/fps)%60).padStart(2,'0')}:${String(frames%fps).padStart(2,'0')}`;
+      }
+      function reviewText(text, x, y, width) {
+        let value = String(text);
+        while (value.length > 1 && ctx.measureText(value).width > width) value = value.slice(0,-2) + '…';
+        ctx.fillText(value,x,y);
+      }
+      function drawReviewCell(width,height,column,row,assetIndex,timeMs) {
+        const unit = Math.max(.5, renderCanvas.width/1280);
+        const corner = Math.min(width,height)*.085*state.hudScale;
+        ctx.save(); ctx.globalAlpha *= state.hudIntensity; ctx.lineWidth=unit*state.hudLineStrength;
+        ctx.strokeStyle='#c5d3d5';ctx.strokeRect(unit,unit,width-unit*2,height-unit*2);
+        ctx.strokeStyle=state.hudAccent;ctx.lineWidth=1.4*unit;
+        for(const [x,y,sx,sy] of [[2,2,1,1],[width-2,2,-1,1],[2,height-2,1,-1],[width-2,height-2,-1,-1]]){
+          ctx.beginPath();ctx.moveTo(x+sx*corner,y);ctx.lineTo(x,y);ctx.lineTo(x,y+sy*corner);ctx.stroke();
+        }
+        if(state.hudCenter){ctx.strokeStyle='#fff';ctx.globalAlpha*=.3;ctx.setLineDash([2*unit,5*unit]);ctx.beginPath();ctx.moveTo(width/3,0);ctx.lineTo(width/3,height);ctx.moveTo(width*2/3,0);ctx.lineTo(width*2/3,height);ctx.stroke();}
+        ctx.restore();
+      }
+      function drawReviewCaption(width,height,captionHeight,asset,index,timeMs){
+        if(!captionHeight || !asset) return;
+        const unit=renderCanvas.width/1280;
+        const font=Math.max(5*unit,Math.min(10.5*unit*state.hudTextScale,width*.065));
+        const pad=6*unit, y=height-captionHeight;
+        const fps=Number(controls.fps.value)||24;
+        const local=asset.kind==='video' && asset.duration>0 ? (timeMs/1000)%asset.duration : 0;
+        const id=asset.sampleId ? `S${asset.sampleId}` : `S${String(index+1).padStart(3,'0')}`;
+        const title=asset.reviewTitle ?? asset.name.replace(/^\d+\s*\/\s*/, '');
+        ctx.save();ctx.fillStyle='#11191c';ctx.fillRect(0,y,width,captionHeight);
+        ctx.globalAlpha*=Math.max(.5,state.hudIntensity);ctx.textBaseline='top';ctx.textAlign='left';
+        ctx.font=`600 ${font}px Arial, sans-serif`;ctx.fillStyle=state.hudAccent;
+        ctx.fillText(id,pad,y+5*unit);
+        ctx.fillStyle='#e7efed';reviewText(title,pad+font*3.4,y+5*unit,width-pad*2-font*3.4);
+        ctx.font=`400 ${font*.83}px Arial, sans-serif`;ctx.fillStyle='#b2c0c4';
+        ctx.fillText(asset.kind==='video'?`SRC ${reviewTime(local,fps)}  /  ${asset.duration.toFixed(1)}s`:'STILL / HOLD',pad,y+5*unit+font*1.4);
+        ctx.textAlign='right';ctx.fillText(`#${String(index+1).padStart(2,'0')}`,width-pad,y+5*unit+font*1.4);
+        ctx.fillStyle='#39474a';ctx.fillRect(0,height-1.5*unit,width,1.5*unit);
+        ctx.fillStyle=state.hudAccent;ctx.fillRect(0,height-1.5*unit,width*(asset.duration?local/asset.duration:1),1.5*unit);
+        ctx.restore();
+      }
+      function drawReviewFrame(frame,timeMs){
+        const u=renderCanvas.width/1280, {width,height}=frame;
+        const x=frame.x+renderCanvas.width*state.frameOffsetX,y=frame.y+renderCanvas.height*state.frameOffsetY;
+        ctx.save();ctx.globalAlpha=state.frameOpacity;ctx.lineWidth=.8*u;ctx.strokeStyle='#506064';
+        ctx.strokeRect(x,y,width,height);ctx.strokeStyle=state.hudAccent;ctx.lineWidth=1.5*u;
+        const c=15*u*state.frameCornerScale;
+        for(const [a,b,sx,sy] of [[x,y,1,1],[x+width,y,-1,1],[x,y+height,1,-1],[x+width,y+height,-1,-1]]){ctx.beginPath();ctx.moveTo(a+sx*c,b);ctx.lineTo(a,b);ctx.lineTo(a,b+sy*c);ctx.stroke();}
+        const ticks=Math.max(5,Math.round(12/state.frameSpacing));
+        for(let i=1;i<ticks;i++){const yy=y+height*i/ticks;ctx.strokeStyle=i%3===0?state.hudAccent:'#546064';ctx.lineWidth=.6*u;ctx.beginPath();ctx.moveTo(x-6*u,yy);ctx.lineTo(x,yy);ctx.moveTo(x+width,yy);ctx.lineTo(x+width+6*u,yy);ctx.stroke();}
+        const fs=10*u*state.frameFontScale;ctx.font=`600 ${fs}px Arial, sans-serif`;ctx.textBaseline='middle';ctx.textAlign='left';ctx.fillStyle='#e5efeb';
+        ctx.fillText('COLLAGE MOTION  /  SHOT REVIEW',x,y-14*u);
+        ctx.textAlign='right';ctx.fillStyle=state.hudAccent;ctx.fillText(`${state.assets.length} SOURCES   /   ${state.columns} × ${state.rows}`,x+width,y-14*u);
+        ctx.font=`400 ${9*u*state.frameFontScale}px Arial, sans-serif`;ctx.textAlign='left';ctx.fillStyle='#b4c3c6';
+        ctx.fillText(state.assets.every(a=>a.sample)?'BITFLIP  /  SAMPLE SEQUENCE':'YOUR MEDIA  /  REVIEW BOARD',x,y+height+14*u);
+        ctx.textAlign='right';ctx.fillStyle='#e5efeb';const fps=Number(controls.fps.value)||24;
+        ctx.fillText(`${reviewTime(timeMs/1000,fps)}  /  ${reviewTime(state.duration,fps)}    ${fps} FPS · SILENT`,x+width,y+height+14*u);
+        ctx.restore();
+      }
+      function applyReviewLook(enabled){
+        if(state.recording || exportPreparing)return;
+        setSimpleControl('frameEnabled',enabled,'change');setSimpleControl('hudEnabled',enabled,'change');
+        if(enabled){setSimpleControl('frameStyle','review-board','change');setSimpleControl('hudStyle','review','change');setSimpleControl('hudText',true,'change');setSimpleControl('hudTextScale',100);setSimpleControl('hudIntensity',88);setSimpleControl('hudLineStrength',80);setSimpleControl('frameOpacity',90);setSimpleControl('frameFontScale',100);setSimpleControl('frameInset',5);}
+        refreshReviewUI();
+      }
+      function refreshReviewUI(){
+        const presentation=state.frameEnabled&&state.hudEnabled&&state.frameStyle==='review-board'&&state.hudStyle==='review';
+        root.querySelector('#rv-presentation').setAttribute('aria-pressed',String(presentation));
+        root.querySelector('#rv-clean').setAttribute('aria-pressed',String(!state.frameEnabled&&!state.hudEnabled));
+        const slots=state.rows*state.columns,count=state.assets.length;
+        state.boardPage=Math.min(state.boardPage||0,Math.max(0,Math.ceil(count/slots)-1));
+        root.querySelector('#rv-page-label').textContent=count?`Shots ${state.boardPage*slots+1}–${Math.min(count,(state.boardPage+1)*slots)} / ${count}`:'No shots yet';
+        root.querySelector('#rv-prev').disabled=!state.boardPage;
+        root.querySelector('#rv-next').disabled=(state.boardPage+1)*slots>=count;
+        const input=root.querySelector('#rv-caption');
+        input.disabled=!state.assets[state.selectedAsset];
+        if(document.activeElement!==input)input.value=state.assets[state.selectedAsset]?.reviewTitle??state.assets[state.selectedAsset]?.name.replace(/^\d+\s*\/\s*/, '')??'';
+        controls.hudDataRate.closest('label').hidden=state.hudStyle==='review';
+        controls.hudGridDensity.closest('label').hidden=state.hudStyle==='review';
+        controls.frameDashMix.closest('label').hidden=state.frameStyle==='review-board';
+      }
+      const reviewSteps=[
+        ['Inspect the full sequence','Browse each board page. Captions identify the shot, its clip time and duration. All 40 sources are listed below.','Show shot library',()=>{sampleDrawer.open=true;sampleDrawer.scrollIntoView({behavior:'smooth',block:'start'});}],
+        ['Shape the presentation','Adjust borders, dividers and labels in Border. Clean board hides overlays without replacing your media.','Edit overlays',()=>renderTabs('border')],
+        ['Make one local correction','Select a shot, edit its caption or framing, or swap its source. Other shots stay in place.','Edit selected shot',()=>renderTabs('asset')],
+        ['Review before delivery','Check captions, crop, motion and timing. Export this board page, then play the downloaded file through.','Review export',()=>renderTabs('export')],
+      ];
+      function setReviewStep(index){
+        root.querySelectorAll('[data-rv-step]').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.rvStep)===index)));
+        const [title,copy,label,action]=reviewSteps[index];root.querySelector('#rv-guide-title').textContent=title;root.querySelector('#rv-guide-copy').textContent=copy;
+        const button=root.querySelector('#rv-guide-action');button.textContent=label;button.onclick=action;
+      }
+      root.querySelectorAll('[data-rv-step]').forEach(b=>b.addEventListener('click',()=>setReviewStep(Number(b.dataset.rvStep))));
+      root.querySelector('#rv-presentation').addEventListener('click',()=>applyReviewLook(true));
+      root.querySelector('#rv-clean').addEventListener('click',()=>applyReviewLook(false));
+      root.querySelector('#rv-customize').addEventListener('click',()=>{setReviewStep(1);renderTabs('border');});
+      for(const [id,delta] of [['rv-prev',-1],['rv-next',1]])root.querySelector('#'+id).addEventListener('click',()=>{if(state.recording||exportPreparing)return;state.boardPage=(state.boardPage||0)+delta;refreshReviewUI();setTime(0);selectAsset(state.boardPage*state.rows*state.columns);});
+      root.querySelector('#rv-caption').addEventListener('input',event=>{const a=state.assets[state.selectedAsset];if(a&&!state.recording&&!exportPreparing)a.reviewTitle=event.target.value.slice(0,100);});
+      root.addEventListener('change',refreshReviewUI);setReviewStep(0);refreshReviewUI();
+
       void initializeStoryboard();
 
     })();
