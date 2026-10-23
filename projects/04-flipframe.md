@@ -8,10 +8,10 @@ Arrange images and clips along a controlled spatial sequence, from a fast overvi
 
 **[Open web app ↗](https://flipframe-motion-lab.limuwen9.chatgpt.site)** · No sign-in required
 
-The studio uses the same typography, dark workspace and input–preview–inspector logic as Model Breakdown. It opens in English, with a Chinese interface option.
+The studio uses the same typography and dark workspace as Model Breakdown, with the same control placement as Collage Motion: **import on the left, playback and HUD above the preview, review and export on the right**. It opens in English, with a Chinese interface option beside the playback controls.
 
 ![FLIPFRAME media archive, spatial preview and motion controls](../media/flipframe-editor.png)
-*Fifteen supplied images and moving clips replace the earlier architectural sample. Import your own media, keep the sequence order, and revise one local framing or timing choice.*
+*The opening collection contains Muwen's 15 supplied works: 11 stills and 4 motion studies. Six white frame-and-side-HUD presets are visible above the canvas. Pause, shot numbering and language share one toolbar.*
 
 [Watch the actual 25 s sequence](https://muwentrili.github.io/creative-workflows/collage-motion/process/#flipframe).
 
@@ -38,13 +38,17 @@ Use one ordered **Visual Archive** as the sequence source, with a spatial previe
 | When does the motion settle? | Peak speed, deceleration duration and curve strength | Shape the transition from overview to detail |
 | How long can viewers inspect an image? | Per-card transition and hold duration | Give each item readable screen time |
 | How should each source fit? | Clip trim, size and position; 16:9 / 9:16 canvas | Adapt mixed media to the presentation |
+| Which information should surround the work? | Six frame-and-side-HUD presets; Show numbers; detailed overlay controls | Review the same framing and shot identifiers in the preview and output |
 
 ## Try the interaction
 
-1. Open the English-default app and inspect the supplied visual sequence; use the language switch for Chinese.
-2. Select an existing card in **Visual Archive**, then use **Next card** to inspect the sequence.
-3. Compare **Wave rail** and **Step showcase**. Adjust the per-card hold or rail deceleration.
-4. Use **Preview full animation** and scrub the timeline. Notice the relationship between the fast opening and the slower presentation.
+1. Open the English-default app. **Load portfolio example** brings back the 15-work collection; **Import media** on the left accepts your own images or clips.
+2. Select a card in **Visual archive**, adjust its framing, and set the IN/OUT showcase range. Drag the archive to change the editorial order.
+3. Try the six white **Frame & side HUD** buttons above the preview. Use **Show numbers** and the adjacent **中文 / EN** switch without searching through settings.
+4. Use **Play / Pause** above the canvas, then scrub the timeline. Pause stops both the sequence and its source clips. Compare **Wave rail** and **Step showcase**, and adjust the hold or deceleration.
+5. Open **Review & export** on the right. Check the sequence order, reading time, framing and selected overlays before exporting.
+
+**Returning visitors:** an older architectural board is saved locally before the new portfolio example appears. **Resume saved board** restores its media and settings. Loading the example also preserves a current board containing imported media; it does not clear the media cache.
 
 ## Design contribution and reusable workflow
 
@@ -67,6 +71,8 @@ The design focus is turning a motion treatment into an editable system: content 
 The revised encoder selects a supported WebCodecs configuration rather than falling unnecessarily into the real-time compatibility path. Two locally exercised H.264 outputs match their displayed durations: **7.45 s / 447 frames** and the full **25.00 s / 1,500 frames**, both **3840 × 2160 at 60 fps**. Sampled frames across the complete sequence show the new content and white HUD. The 25 s result is linked above as a lighter viewing copy.
 
 The earlier compatibility-path failure remains recorded in the [functional review](../docs/functional-review.md#flipframe-do-not-equate-encoding-completion-with-delivery). This fix does not certify compatibility capture on other devices, 6K/8K output, long projects or perceptual readability. Long 4K encoding can make the browser unresponsive; its completion is separate from a smooth editing experience.
+
+The shared-control revision was checked on October 23, 2026: all 15 example assets loaded on the published site; all six HUD presets, numbering, language and pause controls worked. A local image import survived switching to the example and restoring the saved board. A fresh **7.45 s / 447-frame, 4K60 H.264** export with the Calibration HUD decoded completely without errors. These are functional checks, not a substitute for creator usability testing.
 
 ## Case evidence to add
 
