@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Collage Motion — Layout, rhythm, export</title><meta name="description" content="A browser collage editor by Muwen Li. Arrange images and video, tune per-cell rhythm, preview and export. Import your own images and clips into an empty canvas."><link rel="stylesheet" href="./visualize-base.css"><script src="./lucide.js"></script><style>html,body{margin:0;background:#000!important;color-scheme:dark}body{box-sizing:border-box;padding:12px}*,*:before,*:after{box-sizing:border-box}</style></head><body>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Collage Motion — Animated Storyboard</title><meta name="description" content="A moving storyboard for shot review and visual pitches. Try 40 sample clips, replace them with your own media, adjust the board and export a silent review."><link rel="stylesheet" href="./visualize-base.css"><script src="./lucide.js"></script><style>html,body{margin:0;background:#000!important;color-scheme:dark}body{box-sizing:border-box;padding:12px}*,*:before,*:after{box-sizing:border-box}</style></head><body>
 
 <style>
 .portfolio-bar{max-width:1680px;margin:0 auto 14px;padding:18px 22px;border:1px solid #353a3d;background:#101417;color:#f3f4f3;font-family:Arial,sans-serif;display:flex;gap:20px;justify-content:space-between;align-items:center;flex-wrap:wrap}
@@ -7,7 +7,7 @@
 </style>
 <header class="portfolio-bar">
   <div><h1>Collage Motion <span style="color:#a7b1b7;font-size:13px;font-weight:normal">/ Muwen Li</span></h1>
-  <p>Compose images and clips into a timed collage. Import → arrange &amp; preview → export.</p></div>
+  <p><strong>Animated storyboard / shot review &amp; visual pitches.</strong> Compare moving shots, adjust the board, then export a silent review.</p></div>
   <nav class="portfolio-nav" aria-label="Project navigation"><a href="https://github.com/MuwenTriLi/creative-workflows/blob/main/projects/03-collage-motion.md">Project overview ↗</a><a href="https://github.com/MuwenTriLi/creative-workflows#selected-work">All projects ↗</a></nav>
 </header>
 <div id="landscape-collage-editor" lang="zh-CN">
@@ -549,13 +549,21 @@
       <button class="btn btn-primary" id="lc-open-export" type="button">检查并导出 <span aria-hidden="true">↗</span></button>
     </div>
     </div>
+    <p class="sample-import-note">Try the supplied BITFLIP clips, or <strong>Import media</strong> to replace the example with your own images and videos.</p>
     <p class="session-note">素材仅在此浏览器标签页处理；刷新会清空当前项目。导出为无音轨视频。</p>
     <p class="import-feedback" id="lc-import-feedback" role="status" aria-live="polite" hidden></p>
     <input class="sr-only" id="lc-file-input" type="file" accept="image/*,video/*" multiple>
 
+<section id="sb-sample-panel" class="sample-panel" aria-label="Example storyboard">
+      <div class="sample-heading"><div><span class="sample-kicker">BITFLIP / MOVING STORYBOARD</span><h2>See the shots. Shape the presentation.</h2></div><span class="sample-count">40 clips to explore</span></div>
+      <div class="sample-actions"><label for="sb-scene">Example board</label><select id="sb-scene" aria-label="Example board"></select><button id="sb-browse" type="button">Browse all 40 shots</button><button id="sb-restore" type="button">Restore example</button><button id="sb-blank" type="button">Start blank</button></div>
+      <p id="sb-status" role="status" aria-live="polite">Preparing the example board…</p>
+    </section>
+    <dialog id="sb-confirm"><form method="dialog"><h2>Replace your current board?</h2><p>This loads an example in place of your imported media. Your original files are unchanged, but unsaved board edits will be lost.</p><div><button value="cancel">Keep my board</button><button value="replace">Load example</button></div></form></dialog>
     <div class="editor-grid">
       <section class="stage-column" aria-label="画面预览与素材位置">
         <div class="workspace-heading"><strong>02 / 编排与预览</strong><span>调整右侧参数，再拖动时间轴检查效果。</span></div>
+        <div class="board-mode" role="group" aria-label="Presentation mode"><button id="sb-storyboard" type="button" aria-pressed="true">Storyboard</button><button id="sb-collage" type="button" aria-pressed="false">Motion collage</button><span id="sb-mode-note">Compare shots side by side.</span></div>
         <div class="stage-toolbar viz-row">
           <div class="viz-row">
             <button class="btn btn-primary" id="lc-play" type="button">
@@ -603,6 +611,7 @@
         </div>
 
 
+        <details id="sb-library" class="sample-library"><summary>Example shot library <span>40 clips · click to swap one cell</span></summary><p id="sb-library-target">Select a cell, then choose a replacement shot.</p><div id="sb-library-grid"></div></details>
         <div class="card selection-summary">
           <div>
             <p><strong id="lc-selected-slot">未选择画面槽位</strong></p>
@@ -1576,6 +1585,7 @@
       const tabs = ["layout", "border", "motion", "flash", "asset", "export"];
       const PAGE_SIZE = 30;
       const state = {
+        storyboard: true,
         assets: [],
         selectedAsset: -1,
         selectedSlot: null,
@@ -2290,6 +2300,12 @@
         state.mediaTimeMs = state.timeMs;
         state.revealTimeMs = state.timeMs;
         state.anchorMs = performance.now() - state.timeMs;
+        if (!state.recording) state.assets.forEach(asset => {
+          if (asset.kind === 'video' && asset.source && (asset.sample || state.storyboard) && asset.duration > 0) {
+            const target = positiveModulo(state.timeMs/1000,asset.duration);
+            try { asset.source.currentTime=Math.min(target,Math.max(0,asset.duration-.04)); } catch {}
+          }
+        });
         refreshTimeline();
       }
 
@@ -2506,6 +2522,7 @@
       }
 
       function animationInfo(column, row, beat, beatPhase) {
+        if (state.storyboard) return { ...unitInfo(column,row), isActive:false, isFirstReveal:false, isRevealed:true, activationBeat:0, progress:1, inverse:0, motion:motionForTile(column,row) };
         const info = unitInfo(column, row);
         const activationBeat = info.group;
         const isActive = beat === activationBeat;
@@ -2714,6 +2731,7 @@
       ) {
         const info = unitInfo(column, row);
         const count = Math.max(1, state.assets.length);
+        if (state.storyboard) return (row * state.columns + column) % count;
         if (state.flashEnabled) {
           const cellBeat = flashBeatState(flashTimeForSlot(animationTimeMs, info.slot)).step;
           return flashSwapAssignment(info.slot, cellBeat, count);
@@ -2864,7 +2882,7 @@
         if (state.recording && !useLiveSource) {
           return asset.source.readyState >= 2 ? asset.source : asset.proxy;
         }
-        if (!state.proxyEnabled || state.proxyMode === "original" || useLiveSource) {
+        if (asset.sample || state.storyboard || !state.proxyEnabled || state.proxyMode === "original" || useLiveSource) {
           return asset.source.readyState >= 2 ? asset.source : asset.proxy;
         }
         return asset.proxy;
@@ -2969,6 +2987,8 @@
       ) {
         if (
           asset?.kind === "video"
+          && !asset.sample
+          && !state.storyboard
           && !useLiveSource
           && !state.recording
           && state.proxyEnabled
@@ -3991,7 +4011,12 @@
         return [sum[0] * normalization, sum[1] * normalization];
       }
 
+      let lastPreviewDraw=0;
       function drawFrame(now, scheduleNext = true) {
+        if (scheduleNext && !state.recording && now-lastPreviewDraw < 1000/30) {
+          state.renderAnimation=requestAnimationFrame(drawFrame); return;
+        }
+        lastPreviewDraw=now;
         syncRenderSurface();
         const timeMs = currentTime(now);
         const animationTimeMs = state.motionMode === "loop" ? state.revealTimeMs : timeMs;
@@ -4017,10 +4042,10 @@
             }
           }
         }
-        const allowLiveVideos = state.recording
+        const allowLiveVideos = state.storyboard || state.recording
           || !state.proxyEnabled
           || state.proxyMode === "original";
-        const liveVideoLimit = state.recording ? Number.POSITIVE_INFINITY : state.maxActiveVideos;
+        const liveVideoLimit = state.recording ? Number.POSITIVE_INFINITY : Math.max(9,state.maxActiveVideos);
 
         frameBadge.textContent = localize(`变动帧 ${beat}`);
         ctx.save();
@@ -4099,7 +4124,7 @@
                 : 0;
               if (
                 asset.kind === "video"
-                && allowLiveVideos
+                && (allowLiveVideos || asset.sample)
                 && asset.source?.readyState >= 2
                 && state.playing
                 && state.videoAutoplay
@@ -4202,7 +4227,19 @@
             return;
           }
           if (visibleVideos.has(index) && state.playing && state.videoAutoplay) {
-            void asset.source.play().catch(() => {});
+            if (!state.recording && (asset.sample || state.storyboard) && asset.duration > 0) {
+              const target=positiveModulo(state.mediaTimeMs/1000,asset.duration);
+              if (!asset.source.seeking && Math.abs(asset.source.currentTime-target)>.22) asset.source.currentTime=target;
+            }
+            if (asset.source.paused && !asset.playPending) {
+              asset.playPending=true;
+              void asset.source.play().catch(error => {
+                if (error.name === 'NotAllowedError' && !state.recording) {
+                  state.playing=false; updatePlayButton();
+                  sampleStatus.textContent='Press Play to start the sample clips in this browser.';
+                }
+              }).finally(()=>asset.playPending=false);
+            }
           } else {
             asset.source.pause();
           }
@@ -4237,6 +4274,10 @@
       }
 
       function renderTabs(active) {
+        if ((active === 'motion' || active === 'flash') && state.storyboard) {
+          state.storyboard=false;
+          if (typeof sampleState !== 'undefined') refreshSampleStatus();
+        }
         tabs.forEach((name) => {
           const button = root.querySelector(`#lc-tab-${name}`);
           const panel = root.querySelector(`#lc-panel-${name}`);
@@ -4599,8 +4640,12 @@
           video.loop = true;
           video.playsInline = true;
           video.preload = "metadata";
-          video.addEventListener("loadedmetadata", () => resolve(video), { once: true });
-          video.addEventListener("error", reject, { once: true });
+          const timer=setTimeout(()=>{cleanup(); video.removeAttribute('src'); video.load(); reject(new Error('Video metadata timeout'));},15000);
+          function cleanup(){clearTimeout(timer); video.removeEventListener('error',failed); video.removeEventListener('loadedmetadata',loaded);}
+          function loaded(){cleanup();resolve(video);}
+          function failed(){cleanup();reject(new Error('Video could not load'));}
+          video.addEventListener('loadedmetadata',loaded,{once:true});
+          video.addEventListener('error',failed,{once:true});
           video.load();
         });
       }
@@ -5057,6 +5102,11 @@
       }
 
       function updateProxyStatus() {
+        if (state.storyboard || state.assets.some(a=>a.sample)) {
+          const count=state.assets.filter(a=>a.kind==='video').length;
+          proxyStatus.textContent=`${count} video sources · native playback on the active board`;
+          return;
+        }
         const videos = state.assets.filter((asset) => asset?.kind === "video");
         const ready = videos.filter((asset) => state.proxyMode === "sprite"
           ? Boolean(asset.motionProxy)
@@ -5151,7 +5201,7 @@
       }
 
       function queueVideoProxy(asset) {
-        if (!state.proxyEnabled || asset?.kind !== "video" || !asset.source) {
+        if (asset?.sample || state.storyboard || !state.proxyEnabled || asset?.kind !== "video" || !asset.source) {
           updateProxyStatus();
           return;
         }
@@ -5290,7 +5340,7 @@
                 const posterResult = await createVideoPosterProxy(asset);
                 asset.proxy = posterResult.proxy;
                 asset.proxyUrl = posterResult.proxyUrl;
-                releaseOriginalVideoFrame(asset);
+                if (!state.storyboard) releaseOriginalVideoFrame(asset);
                 if (state.proxyMode === "sprite") {
                   queueVideoProxy(asset);
                 }
@@ -6177,7 +6227,7 @@
       });
       uploadPortal.addEventListener("click", () => fileInput.click());
       fileInput.addEventListener("change", () => {
-        void addFiles(fileInput.files);
+        void importVisitorFiles(fileInput.files);
         fileInput.value = "";
       });
 
@@ -6194,7 +6244,7 @@
         });
       });
       uploadPortal.addEventListener("drop", (event) => {
-        void addFiles(event.dataTransfer.files);
+        void importVisitorFiles(event.dataTransfer.files);
       });
 
       root.querySelector("#lc-empty-import").addEventListener("click", () => fileInput.click());
@@ -6239,14 +6289,14 @@
       root.querySelector("#lc-prev-beat").addEventListener("click", () => {
         state.playing = false;
         const beat = Math.max(0, currentBeat(state.timeMs) - 1);
-        setTime(beatTimeMs(beat) + 1);
+        setTime(state.storyboard ? state.timeMs-1000/Number(controls.fps.value) : beatTimeMs(beat)+1);
         updatePlayButton();
       });
 
       root.querySelector("#lc-next-beat").addEventListener("click", () => {
         state.playing = false;
         const beat = currentBeat(state.timeMs) + 1;
-        setTime(Math.min(state.duration * 1000, beatTimeMs(beat) + 1));
+        setTime(Math.min(state.duration * 1000, state.storyboard ? state.timeMs+1000/Number(controls.fps.value) : beatTimeMs(beat)+1));
         updatePlayButton();
       });
 
@@ -6511,7 +6561,7 @@
           controls.resolution.appendChild(option);
         });
 
-        resizeDisplayCanvas(profile.width, profile.height);
+        resizeDisplayCanvas(Math.round(profile.width*2/3), Math.round(profile.height*2/3));
         canvasShell.classList.toggle("is-landscape", profile.width > profile.height);
         canvasShell.style.setProperty("--preview-aspect", `${profile.width} / ${profile.height}`);
         canvasShell.style.setProperty("--display-ratio", String(profile.width / profile.height));
@@ -7434,6 +7484,210 @@
         });
       }, { once: true });
 
+      // Bundled review media is independent of the visitor's local file library.
+      const sampleState = { clips: [], loading: false, generation: 0, name: '', userMedia: false };
+      const sampleSelect = root.querySelector('#sb-scene');
+      const sampleStatus = root.querySelector('#sb-status');
+      const sampleDrawer = root.querySelector('#sb-library');
+      const sampleGrid = root.querySelector('#sb-library-grid');
+      const sampleGroups = [
+        { id: 'featured', title: 'Featured / 9 shots', ids: ['037','038','040','043','051','054','055','058','063'] },
+        { id: 'opening', title: '01 / Reality & discovery', ids: ['002','004','005','012','013','015','016','017','020'] },
+        { id: 'ruins', title: '02 / Through the ruins', ids: ['022','026','027','028','030','031','033','034','035'] },
+        { id: 'chamber', title: '03 / The chamber', ids: ['036','037','038','040','042','043','044','046','051'] },
+        { id: 'gate', title: '04 / Energy & the gate', ids: ['052','053','054','055','056','058','059','060','061'] },
+        { id: 'exit', title: '05 / Return', ids: ['062','063','064','067'] },
+      ];
+      for (const group of sampleGroups) {
+        const option = new Option(group.title, group.id);
+        sampleSelect.append(option);
+      }
+      function refreshSampleStatus(message) {
+        if (message) sampleStatus.textContent = message;
+        root.querySelector('#sb-library-target').textContent = `Choose a shot to replace board cell ${Math.max(0,state.selectedAsset)+1}. Other cells and layout stay unchanged.`;
+        root.querySelector('#sb-storyboard').setAttribute('aria-pressed', String(state.storyboard));
+        root.querySelector('#sb-collage').setAttribute('aria-pressed', String(!state.storyboard));
+        root.querySelector('#sb-mode-note').textContent = state.storyboard
+          ? 'Compare shots side by side. Clips loop silently; scrub to inspect a moment.'
+          : 'Choreograph the board with Motion and Flash. The source clips keep their own motion.';
+      }
+      function setBoardMode(board) {
+        state.storyboard = board;
+        state.flashEnabled = false;
+        controls.flashEnabled.checked = false;
+        setTime(0);
+        refreshSampleStatus();
+        if (!board) renderTabs('motion');
+      }
+      function setSimpleControl(name, value, event = 'input') {
+        if (typeof value === 'boolean') controls[name].checked = value;
+        else controls[name].value = String(value);
+        controls[name].dispatchEvent(new Event(event, { bubbles: true }));
+      }
+      function configureReviewBoard(count = 9) {
+        state.storyboard = true;
+        setGridDimension('rows',count <= 4 ? 2 : 3);
+        setGridDimension('columns',count <= 4 ? 2 : 3);
+        setSimpleControl('gap',24);
+        setSimpleControl('corner',0);
+        setSimpleControl('frameEnabled',false,'change');
+        setSimpleControl('hudEnabled',false,'change');
+        setSimpleControl('repeatPlacementMode','sequential','change');
+        setSimpleControl('videoRowOffsetEnabled',false,'change');
+        setSimpleControl('duration',8);
+        state.frameInset = .012;
+        controls.frameInset.value = '1.2';
+        state.maxActiveVideos = 9;
+        state.motionMode = 'loop';
+        controls.motionMode.value = 'loop';
+        setSimpleControl('aspect','landscape','change');
+        controls.resolution.value = '1280x720';
+        controls.fps.value = '24';
+        fitLayout();
+        refreshSampleStatus();
+      }
+      function confirmReplaceBoard() {
+        if (!sampleState.userMedia || !state.assets.length) return Promise.resolve(true);
+        const dialog = root.querySelector('#sb-confirm');
+        dialog.returnValue = 'cancel';
+        dialog.showModal();
+        return new Promise(resolve => {
+          dialog.addEventListener('close', () => resolve(dialog.returnValue === 'replace'), { once:true });
+        });
+      }
+      async function makeSampleAsset(clip) {
+        const source = await loadVideo(clip.src);
+        let proxy;
+        try {
+          proxy = await new Promise((resolve,reject) => {
+            const img = new Image(); img.onload = () => resolve(img); img.onerror = reject; img.src = clip.poster;
+          });
+          await new Promise((resolve,reject) => {
+            if (source.readyState >= 2) { resolve(); return; }
+            const timer = setTimeout(() => { cleanup(); reject(new Error('Clip loading timed out')); },15000);
+            function cleanup() { clearTimeout(timer); source.removeEventListener('loadeddata',loaded); source.removeEventListener('error',failed); }
+            function loaded() { cleanup(); resolve(); }
+            function failed() { cleanup(); reject(new Error('Clip could not be decoded')); }
+            source.addEventListener('loadeddata',loaded); source.addEventListener('error',failed);
+            source.preload = 'auto'; source.load();
+          });
+        } catch(error) { source.pause(); source.removeAttribute('src'); source.load(); throw error; }
+        return { name:`${clip.id} / ${clip.title}`, sample:true, sampleId:clip.id, kind:'video', source, proxy,
+          proxyUrl:clip.poster, url:clip.src, ready:true,error:false,motionProxy:null,proxyRequest:0,
+          invert:false,opacity:1,zoom:1,cropX:0,cropY:0,motionX:0,motionY:0,motionScale:1,motionRotate:0,
+          width:clip.width,height:clip.height,aspectRatio:16/9,aspectPreset:'16:9',orientation:'landscape',duration:clip.duration };
+      }
+      function setSampleBusy(busy) {
+        sampleState.loading = busy;
+        addAssetsButton.disabled = busy;
+        root.querySelector('#lc-empty-import').disabled = busy;
+        root.querySelectorAll('.sample-actions button, #sb-scene, #sb-library-grid button').forEach(b => b.disabled = busy);
+        root.querySelector('#sb-sample-panel').setAttribute('aria-busy',String(busy));
+      }
+      async function loadSampleGroup(id, initial = false) {
+        if (sampleState.loading || state.recording || exportPreparing) return;
+        const group = sampleGroups.find(g => g.id === id) || sampleGroups[0];
+        if (!initial && !await confirmReplaceBoard()) { sampleSelect.value = sampleState.name || 'featured'; return; }
+        const generation = ++sampleState.generation;
+        setSampleBusy(true);
+        refreshSampleStatus(`Loading ${group.ids.length} review clips…`);
+        const batch = [];
+        try {
+          // Three loaders at a time; only the active board owns video decoders.
+          let cursor = 0;
+          await Promise.all(Array.from({length:3}, async () => {
+            while(cursor < group.ids.length) {
+              const i = cursor++;
+              const clip = sampleState.clips.find(c => c.id === group.ids[i]);
+              try { batch[i] = await makeSampleAsset(clip); }
+              catch(error) { console.warn('Sample unavailable:',clip?.id,error.message); }
+            }
+          }));
+          if (generation !== sampleState.generation) { batch.filter(Boolean).forEach(releaseAssetResources); return; }
+          const loaded = batch.filter(Boolean);
+          if (!loaded.length) throw new Error('Sample clips could not be loaded. Import your own media or retry.');
+          clearAllAssets();
+          state.assets = loaded;
+          sampleState.userMedia = false;
+          sampleState.name = group.id;
+          sampleSelect.value = group.id;
+          configureReviewBoard(group.ids.length);
+          renderLibrary(); renderAssetSelect(); selectAsset(0); updateProxyStatus();
+          setTime(0);
+          state.playing = !matchMedia('(prefers-reduced-motion: reduce)').matches;
+          state.anchorMs = performance.now(); updatePlayButton();
+          renderTabs('layout');
+          refreshSampleStatus(`${loaded.length} / ${group.ids.length} sample shots on the board · 40 in the library · silent preview`);
+        } catch(error) { refreshSampleStatus(error.message); }
+        finally { setSampleBusy(false); }
+      }
+      async function replaceSampleShot(clip) {
+        if (sampleState.loading || state.recording || exportPreparing) return;
+        const index = Math.max(0,state.selectedAsset);
+        setSampleBusy(true);
+        refreshSampleStatus(`Loading shot ${clip.id}…`);
+        try {
+          const asset = await makeSampleAsset(clip);
+          if (state.assets[index]) releaseAssetResources(state.assets[index]);
+          state.assets[index] = asset;
+          renderLibrary(); renderAssetSelect(); selectAsset(index); syncAssetControls();
+          setTime(state.timeMs);
+          refreshSampleStatus(`Cell ${index+1} now shows ${clip.id} / ${clip.title}. The rest of the board is unchanged.`);
+        } catch(error) { refreshSampleStatus(error.message); }
+        finally { setSampleBusy(false); }
+      }
+      function renderSampleLibrary() {
+        sampleGrid.replaceChildren();
+        for (const clip of sampleState.clips) {
+          const button = document.createElement('button'); button.type = 'button';
+          button.setAttribute('aria-label',`Use shot ${clip.id} ${clip.title}`);
+          const img = new Image(); img.src=clip.poster; img.alt=''; img.loading='lazy'; img.width=320; img.height=180;
+          const title=document.createElement('span'); title.textContent=`${clip.id} / ${clip.title}`;
+          const meta=document.createElement('small'); meta.textContent=`${clip.duration.toFixed(1)}s · 24 fps`;
+          button.append(img,title,meta); button.addEventListener('click',()=>void replaceSampleShot(clip));
+          sampleGrid.append(button);
+        }
+      }
+      async function importVisitorFiles(files) {
+        const list = Array.from(files).filter(f=>/^(image|video)\//.test(f.type));
+        if (!list.length || state.recording || exportPreparing || sampleState.loading) return;
+        ++sampleState.generation;
+        // The prominent import action explicitly replaces the sample board only.
+        if (!sampleState.userMedia) { state.playing=false; clearAllAssets(); }
+        sampleState.userMedia=true; sampleState.name='';
+        sampleSelect.selectedIndex=-1;
+        await addFiles(list);
+        refreshSampleStatus('Your media stays in this browser. Import adds more files; the example library is always available.');
+        updatePlayButton();
+      }
+      root.querySelector('#sb-storyboard').addEventListener('click',()=>setBoardMode(true));
+      root.querySelector('#sb-collage').addEventListener('click',()=>setBoardMode(false));
+      sampleSelect.addEventListener('change',()=>void loadSampleGroup(sampleSelect.value));
+      root.querySelector('#sb-restore').addEventListener('click',()=>void loadSampleGroup('featured'));
+      root.querySelector('#sb-browse').addEventListener('click',()=>{ sampleDrawer.open=!sampleDrawer.open; refreshSampleStatus(); if(sampleDrawer.open) sampleDrawer.scrollIntoView({behavior:'smooth',block:'nearest'}); });
+      root.querySelector('#sb-blank').addEventListener('click',async()=>{
+        if (sampleState.loading || !await confirmReplaceBoard()) return;
+        ++sampleState.generation; state.playing=false; clearAllAssets(); sampleState.userMedia=true; sampleState.name=''; sampleSelect.selectedIndex=-1; updatePlayButton(); refreshSampleStatus('Blank board. Import images or clips to start.');
+      });
+      // Pause off-screen work and resume from the same board time.
+      let resumeAfterHidden=false;
+      document.addEventListener('visibilitychange',()=>{
+        if(state.recording || exportPreparing) return;
+        if(document.hidden) { resumeAfterHidden=state.playing; state.playing=false; state.assets.forEach(a=>a.source?.pause?.()); }
+        else if(resumeAfterHidden) { state.anchorMs=performance.now()-state.timeMs; state.playing=true; }
+        updatePlayButton();
+      });
+      async function initializeStoryboard() {
+        configureReviewBoard();
+        try {
+          const response=await fetch('./examples/manifest.json');
+          if(!response.ok) throw new Error('Example library unavailable');
+          sampleState.clips=(await response.json()).clips;
+          renderSampleLibrary();
+          await loadSampleGroup('featured',true);
+        } catch(error) { refreshSampleStatus('Examples could not load. You can still import your own media.'); }
+      }
+
       ensureAxisMotion();
       renderTabs("layout");
       renderColumnButtons();
@@ -7451,6 +7705,7 @@
       setStatus("准备就绪");
       refreshLanguage();
       state.renderAnimation = requestAnimationFrame(drawFrame);
+      void initializeStoryboard();
 
     })();
   </script>

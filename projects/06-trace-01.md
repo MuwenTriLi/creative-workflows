@@ -68,3 +68,7 @@ A four-second synthetic occlusion clip was imported, a target selected in Follow
 [Specific input package and recording outline](../docs/evidence-to-add.md).
 
 Show the original clip beside the annotated result, then a short recording of one tracking adjustment and one readability decision. A difficult frame or a corrected drift will communicate the product reasoning better than an uninterrupted ideal result alone.
+
+## Next presentation iteration
+
+Use a labeled, creator-selected example to show the intended result on entry, keep the input action visible, and let visitors replace the example or revise one local choice. This presentation pass is planned; the example and acceptance requirements are listed in [Example-first workflows](../docs/example-first-workflows.md). Existing verification limits above still apply.

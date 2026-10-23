@@ -1,4 +1,37 @@
 /* Workspace skin: deliberately scoped to avoid the generic renderer's pill controls. */
+/* Moving storyboard: sample content stays separate from the working media. */
+.sample-import-note{margin:0;font-size:12px;color:#bac3c6;line-height:1.5}
+#landscape-collage-editor .sample-panel{padding:16px 18px;border:1px solid #39433e;background:linear-gradient(110deg,#172019,#111719 70%);display:grid;gap:12px}
+#landscape-collage-editor .sample-heading{display:flex;justify-content:space-between;align-items:center;gap:16px}
+#landscape-collage-editor .sample-kicker{font-size:10px;letter-spacing:1.8px;color:#d8ff6a}
+#landscape-collage-editor .sample-heading h2{margin:5px 0 0;font-size:19px;font-weight:500;letter-spacing:-.35px}
+#landscape-collage-editor .sample-count{font-size:11px;color:#a5b7ab;white-space:nowrap}
+#landscape-collage-editor .sample-actions{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+#landscape-collage-editor .sample-actions label{font-size:11px;color:#adb7b1}
+#landscape-collage-editor :is(.sample-actions button,.sample-actions select,.board-mode button){padding:7px 11px;min-height:32px;border:1px solid #414a47;background:#18211d;color:#eef3ed;cursor:pointer;line-height:1.35}
+#landscape-collage-editor .sample-actions button:disabled{opacity:.5;cursor:wait}
+#landscape-collage-editor .sample-actions #sb-browse{border-color:#93a96b;color:#d8ff6a}
+#landscape-collage-editor #sb-status{font-size:11px;line-height:1.45;color:#a9b7af;margin:0;min-height:16px}
+#landscape-collage-editor .board-mode{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+#landscape-collage-editor .board-mode [aria-pressed=true]{background:#d8ff6a;border-color:#d8ff6a;color:#101709}
+#landscape-collage-editor #sb-mode-note{font-size:11px;color:#9da9ad;flex:1;min-width:180px;line-height:1.5;margin-left:8px}
+#landscape-collage-editor .sample-library{border:1px solid #303b3e;padding:12px;background:#111719}
+#landscape-collage-editor .sample-library summary{cursor:pointer;font-size:13px;color:#eef0ec}
+#landscape-collage-editor .sample-library summary span{font-size:11px;color:#9ca9a6;margin-left:10px}
+#landscape-collage-editor .sample-library p{font-size:12px;color:#b9c5be;line-height:1.5}
+#landscape-collage-editor #sb-library-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;max-height:460px;overflow-y:auto;scrollbar-width:thin}
+#landscape-collage-editor #sb-library-grid button{padding:0;border:1px solid #303a3d;background:#0b1113;color:#eef0e9;overflow:hidden;text-align:left;cursor:pointer;min-width:0}
+#landscape-collage-editor #sb-library-grid button:hover{border-color:#d8ff6a}
+#landscape-collage-editor #sb-library-grid img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain}
+#landscape-collage-editor #sb-library-grid span{display:block;padding:7px 7px 2px;font-size:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#landscape-collage-editor #sb-library-grid small{display:block;padding:0 7px 7px;color:#93a39d;font-size:10px}
+#landscape-collage-editor #sb-confirm{background:#161d1c;color:#e5ece6;border:1px solid #647463;max-width:440px;padding:24px}
+#landscape-collage-editor #sb-confirm::backdrop{background:#000b}
+#landscape-collage-editor #sb-confirm h2{font-size:20px;margin-top:0}
+#landscape-collage-editor #sb-confirm p{font-size:13px;line-height:1.6;color:#b4c0b8}
+#landscape-collage-editor #sb-confirm form>div{display:flex;gap:12px;margin-top:20px}
+#landscape-collage-editor #sb-confirm button{padding:10px 14px;cursor:pointer;border:1px solid #65735e;background:#253020;color:#e8eedf}
+@media(max-width:600px){#landscape-collage-editor .sample-heading{align-items:start}#landscape-collage-editor .sample-heading h2{font-size:16px}#landscape-collage-editor #sb-library-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#landscape-collage-editor .sample-count{display:none}#landscape-collage-editor .sample-actions select{flex:1;min-width:160px}#landscape-collage-editor #sb-mode-note{flex-basis:100%;margin-left:0}}
 html:root { color-scheme: dark; --background: #080a0b; background: #080a0b !important; }
 html > body { margin: 0; padding: 0; background: #080a0b !important; color: #e9ecec; font-family: Arial, "Segoe UI", "Microsoft YaHei", sans-serif !important; }
 .portfolio-bar { max-width: 1680px; margin: 0 auto; padding: 18px 24px; border: 0; border-bottom: 1px solid #303538; background: #080a0b; }
@@ -76,6 +109,18 @@ html > body { margin: 0; padding: 0; background: #080a0b !important; color: #e9e
 @media (max-width: 600px) { .portfolio-bar { padding: 14px; gap: 8px; } .portfolio-nav { font-size: 11px; } #landscape-collage-editor { padding: 14px; } #landscape-collage-editor .workflow-entry { grid-template-columns: 1fr; } #landscape-collage-editor .workflow-output { flex-direction: row; justify-content: space-between; align-items: center; padding: 0; } #landscape-collage-editor .upload-portal { grid-template-columns: 1fr; } #landscape-collage-editor .library-actions { grid-template-columns: 1fr 1fr; } #landscape-collage-editor .library-batch-actions { grid-template-columns: 1fr 1fr; } #landscape-collage-editor .library-batch-actions > label { grid-column: 1/-1; } }
 
 .portfolio-bar { padding: 12px 24px; }
+#landscape-collage-editor .sample-panel{padding:9px 12px;gap:5px}
+#landscape-collage-editor .sample-heading{display:none}
+#landscape-collage-editor .sample-actions label{color:#d8ff6a;font-size:11px}
+#landscape-collage-editor .sample-actions :is(button,select){padding:5px 9px;min-height:29px;font-size:11px}
+#landscape-collage-editor .upload-portal{min-height:54px;padding:8px 12px}
+#landscape-collage-editor .sample-import-note{margin:0;font-size:11px}
+#landscape-collage-editor .session-note{margin:0;font-size:10px}
+#landscape-collage-editor .editor-stack{gap:8px}
+#landscape-collage-editor .board-mode button{padding:5px 10px;min-height:28px;font-size:12px}
+#landscape-collage-editor .workspace-heading{padding-bottom:4px}
+#landscape-collage-editor .stage-column{gap:7px}
+#landscape-collage-editor .preview-card{padding:0;border:1px solid #303638;min-height:0}
 #landscape-collage-editor { padding-top: 12px; }
 #landscape-collage-editor .studio-timeline { padding-top: 7px; padding-bottom: 5px; }
 #landscape-collage-editor .canvas-shell,
@@ -89,3 +134,38 @@ html > body { margin: 0; padding: 0; background: #080a0b !important; color: #e9e
 #landscape-collage-editor .import-feedback { margin: 0; padding: 8px 12px; border-left: 2px solid #d8ff6a; color: #d0d9d9; font-size: 12px; background: #151d1a; }
 #landscape-collage-editor .import-feedback.has-error { border-color: #f2a384; color: #ffd3bd; }
 #landscape-collage-editor .import-feedback[hidden] { display: none; }
+.portfolio-bar{padding:10px 24px}
+.portfolio-bar h1{font-size:18px}
+.portfolio-bar p{font-size:11px}
+#landscape-collage-editor #lc-upload-portal{min-height:50px;padding:7px 12px}
+#landscape-collage-editor #lc-upload-portal .portal-copy p{font-size:11px;line-height:1.4}
+#landscape-collage-editor .workflow-output{padding-block:0}
+#landscape-collage-editor .session-note{font-size:10px;line-height:1.35;margin:0;color:#859194}
+#landscape-collage-editor .sample-import-note{font-size:10px}
+#landscape-collage-editor .canvas-shell.is-landscape{width:100%}
+#landscape-collage-editor .stage-column{display:grid;grid-template-columns:minmax(0,1fr) auto;align-content:start}
+#landscape-collage-editor .stage-column>*{grid-column:1/-1;min-width:0}
+#landscape-collage-editor .stage-column .workspace-heading{display:none}
+#landscape-collage-editor .stage-column .board-mode{grid-column:1;grid-row:1}
+#landscape-collage-editor #sb-mode-note{display:none}
+#landscape-collage-editor .stage-column .stage-toolbar{grid-column:2;grid-row:1;justify-content:end}
+#landscape-collage-editor #lc-frame-badge{display:none}
+#landscape-collage-editor .studio-timeline{padding:6px 10px 4px}
+#landscape-collage-editor .preview-card{margin-top:2px}
+@media(max-width:1100px){#landscape-collage-editor .stage-column .stage-toolbar{grid-column:1/-1;grid-row:2;justify-content:space-between}}
+@media(max-width:600px){
+ .portfolio-bar{padding:10px 14px;gap:5px}.portfolio-bar p{display:none}.portfolio-bar h1{font-size:17px;margin:0}.portfolio-nav{font-size:10px}
+ #landscape-collage-editor .workflow-entry{grid-template-columns:minmax(0,1fr) auto;gap:8px}
+ #landscape-collage-editor #lc-upload-portal{padding:0;border:0;min-height:36px;display:block}
+ #landscape-collage-editor #lc-upload-portal .portal-copy{display:none}
+ #landscape-collage-editor #lc-add-assets{width:100%}
+ #landscape-collage-editor .workflow-output{padding:0}
+ #landscape-collage-editor .workflow-step{display:none}
+ #landscape-collage-editor .sample-actions{gap:5px}
+ #landscape-collage-editor .sample-actions label{display:none}
+ #landscape-collage-editor .sample-actions select{min-width:150px;flex:1}
+ #landscape-collage-editor .sample-actions :is(button,select){font-size:10px;padding:5px 7px;min-height:28px}
+ #landscape-collage-editor .sample-panel{padding:8px}
+ #landscape-collage-editor .stage-toolbar .form-check{display:none}
+ #landscape-collage-editor .stage-toolbar{flex-wrap:nowrap}
+}

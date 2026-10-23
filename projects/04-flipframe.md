@@ -69,3 +69,7 @@ The hosted app imported a four-second synthetic clip, allowed a two-second trim 
 [Specific input package and recording outline](../docs/evidence-to-add.md).
 
 A short finished sequence and an A/B recording with identical media: change only the showcase order or hold time, then explain how that improves readability. Add the specific design iteration and Muwen's implementation contribution alongside that evidence.
+
+## Next presentation iteration
+
+Use a labeled, creator-selected example to show the intended result on entry, keep the input action visible, and let visitors replace the example or revise one local choice. This presentation pass is planned; the example and acceptance requirements are listed in [Example-first workflows](../docs/example-first-workflows.md). Existing verification limits above still apply.

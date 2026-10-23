@@ -68,3 +68,7 @@ The hosted app and read-only source inspection confirm local Whisper Base/WASM o
 [Specific input package and recording outline](../docs/evidence-to-add.md).
 
 A short authorized voice sample, the corrected transcript, and two typography treatments using the same audio. Include one real correction and its effect on the final sequence, with Muwen's specific role and implementation details.
+
+## Next presentation iteration
+
+Use a labeled, creator-selected example to show the intended result on entry, keep the input action visible, and let visitors replace the example or revise one local choice. This presentation pass is planned; the example and acceptance requirements are listed in [Example-first workflows](../docs/example-first-workflows.md). Existing verification limits above still apply.

@@ -1,92 +1,71 @@
-# Collage Motion
+# Collage Motion / Animated Storyboard
 
 [← All projects](https://github.com/MuwenTriLi/creative-workflows#selected-work)
 
-**04 / Browser tool · Media composition & motion**
+**04 / Browser tool · Shot review, visual pitches and moving storyboards**
 
-Turn a collection of images and clips into a timed collage, with direct control over layout, movement and the rhythm of individual cells.
+Put moving shots on one editable board so a director, designer or client can compare framing, atmosphere and motion before discussing the next edit.
 
-**[Open web app ↗](https://muwentrili.github.io/creative-workflows/collage-motion/)** · [Browse the source](../docs/collage-motion/) · [Local backup ZIP](../downloads/collage-motion-local-demo.zip)
+**[Open the interactive board ↗](https://muwentrili.github.io/creative-workflows/collage-motion/)** · [Watch the 8 s sample board](https://muwentrili.github.io/creative-workflows/collage-motion/examples/board-demo.mp4) · [Browse the source](../docs/collage-motion/)
 
-![Collage Motion editor with an empty canvas ready for media](../media/collage-motion-editor.png)
-*The editor opens with an empty canvas. Import your own images or clips to create a composition.*
+[![Nine moving shots arranged as a review board](../media/collage-storyboard-board.jpg)](https://muwentrili.github.io/creative-workflows/collage-motion/)
 
-## The smallest useful task
+*A real export from the editor using Muwen's supplied BITFLIP clips. The interactive app opens with these nine sample shots; all 40 clips are available in the example library. Import media replaces the example with your own images or clips.*
 
-**Task:** import three authorized images with mixed proportions, make a five-second collage, revise one asset's framing or one timing decision, then export a 720p clip. A short image-based export has been functionally checked; an unfamiliar creator completing the task unaided remains the next test.
+## The production problem
 
-**Local correction:** select the relevant asset and adjust its crop/position/scale, or revise timing while retaining the imported sources. Do not use global randomization for a local framing correction. Parameter editing exists; durable project saving, version comparison and automatic rollback do not. Reloading clears the session.
+When presenting a film direction, individual video files make comparison awkward: viewers keep opening clips and lose the relationship between shots. A static storyboard shows composition, but cannot convey a camera move, a reveal or a change in atmosphere. Preparing an animated contact sheet in an editing or motion-design package adds repeated layout, scaling and timing work each time the selection changes.
 
-**Decision now:** test discovery of Import, Timeline and Export before adding new visual modes or an agent. Iterate where people hesitate or corrections affect the wrong scope. Expand automation only after users can retain accepted choices and deliver an output they approve.
+Collage Motion focuses on the **review and presentation stage**: a moving storyboard for a director's treatment, a visual pitch, a shot-selection conversation or a gallery-style presentation. The board shows shots in parallel and loops their motion silently. A sequential animatic with dialogue, sound and an editorial cut is outside the current tool's scope.
 
-## The problem
+## The prototype hypothesis
 
-An animated image wall combines two jobs: composing many differently sized assets and controlling when each one appears or changes. A new image order, grid size or pacing decision can mean revisiting many individual layers and keyframes. The creative decision is the composition and rhythm; the repetitive work is keeping all those cells coordinated.
+**If creators can start from a readable moving board, replace its inputs and revise one cell without rebuilding the rest, they can explain a visual direction with less setup.** This is a hypothesis to test with creators; no measured time saving or user-study result is claimed.
 
-## The approach
-
-Put the media library, canvas and timing controls in one browser workspace. Layout rules handle the grid; reusable motion settings handle entry and sequencing; per-cell flash controls shape the transition from a quick visual burst to a readable hold. The same collection can be rearranged and previewed without rebuilding the composition.
-
-| Creative decision | Control in the tool | Purpose |
-| --- | --- | --- |
-| How much content fits? | Rows, columns, spacing, scale and aspect ratio | Explore density while keeping assets legible |
-| What should appear first? | Numbered asset order, reorder and randomization | Make sequencing an explicit choice |
-| How should the grid move? | Motion direction, stagger, easing and grouping | Coordinate movement across cells |
-| How fast should images change? | Flash timing, holds and speed curve | Balance energy with reading time |
-| What needs individual attention? | Per-asset crop, position, scale and opacity | Refine one asset without changing the entire wall |
+The smallest useful task is to replace the example with a few authorized clips, choose a readable grid and spacing, correct one shot's framing, then export an eight-second review board. This tests the core loop before investing in a full editing system.
 
 ## Try it in one minute
 
-1. Open the app in desktop Chrome. Choose **Import media**, or drag your images/clips into the import area.
-2. In **Layout**, change the row or column count and compare the composition.
-3. Open **Motion** or **Flash**, adjust one timing control, then use play/pause and the timeline to inspect the change.
-4. Refine an individual asset, or use **Clear all** to start a new composition.
-5. In **Export**, start with a short **720p MP4**. Save the result and compare it with the preview.
+1. Open the app. The **Featured / 9 shots** board plays immediately, silently. If reduced motion is enabled, press **Play** to begin.
+2. Switch **Example board** to explore the supplied sequences, or open **Browse all 40 shots**. Select a cell and choose another shot to replace just that cell.
+3. Change **Rows**, **Columns**, **Frame gap** or **Grid scale**. **Storyboard** keeps the board still while clips move; **Motion collage** adds the existing entry and sequencing controls.
+4. Press **Import media**, or drop files into the import area, to replace the sample board with your own media. Later imports add to your working library. **Start blank** and **Restore example** are also available; replacing a board containing your media asks for confirmation.
+5. Pause or scrub the timeline, correct one source's crop/position/scale in **Assets**, then choose **Review & export**. Start with **720p / 24 fps / 8 s** and play the downloaded result through.
 
-## From prototype to a usable first session
+## From production experience to product decisions
 
-The interface makes three steps explicit: **Import media → Compose & preview → Review & export**. A first-time creator begins with an empty canvas and a visible import action. The timeline stays above the preview; it supports scrubbing, frame-rate-based keyboard stepping, restart and replay. Rectangular media thumbnails show the full source proportions without oval cropping.
-
-The system calculates layout, applies the selected motion rules and reports media readiness. The creator decides the sequence, subject framing and timing. The export panel summarizes dimensions, frame rate and duration; it blocks export while media is missing or unready and locks editing while rendering. The creator then reviews the downloaded result. This is implemented interaction behavior, not a claim of autonomous AI editing.
-
-The iteration began with Muwen's direct review of the public editor. This is practitioner feedback, not a recruited user study:
-
-| Observed problem | Implemented response | Verification and remaining question |
+| Production need | Implemented decision | Creator retains control of |
 | --- | --- | --- |
-| Import and output were hard to locate | Numbered import/compose/export stages, an empty-state import action and a persistent export entry | Controls and empty state checked; unassisted discovery remains to test |
-| The timeline sat below a large preview and playback was difficult to control | Timeline above the preview, frame stepping, restart and replay at the end | Scrub, keyboard step and end/replay checked |
-| White margins, pill shapes and oval thumbnails departed from the intended editor | Dark full-page surface, default sans font, restrained rectangular controls and uncropped rectangular source thumbnails | Desktop and narrow-screen layout checked with landscape, portrait and square media |
-| Starting an export did not make readiness or review clear enough | Output summary, missing/unready-media gate and locked editing during render | Short H.264 exports decoded; controls restore after completion. The creator still judges the visual result |
+| Explain the tool before requesting uploads | A complete, editable nine-shot board on first entry; 40 labeled example clips | Which sample or personal media to use |
+| Compare shots without visual distractions | Quiet rectangular grid; optional motion mode; no decorative HUD or flash in the default board | Density, spacing, proportions and visual hierarchy |
+| Revise one shot during a review | Select a cell and replace only its asset; existing crop and ordering controls remain available | The subject, shot choice and local correction |
+| Show a larger library without overloading the browser | 640 × 360 H.264 viewing copies at the source's 24 fps; only the current example board loads its videos | Board selection and playback; originals stay separate |
+| Keep unfamiliar users oriented | Visible Import media and Review & export actions; timeline above the board; distinct Storyboard and Motion collage modes | When to import, pause, inspect and deliver |
 
-**Usability question to validate next:** can a new creator import their own media, change one composition or timing decision, and download a suitable clip without help? Observe the first point of hesitation and whether they find Import, Timeline and Export. No first-user test or completion-rate claim is made yet.
+The supplied 40 source clips total approximately **1.73 GB**. Their silent web viewing copies total approximately **13 MB**, retaining the full supplied clip durations and source frame rate. This is a measured file-size reduction, not a device-performance or productivity claim. The example assets are preview-resolution media; exporting at a larger size does not restore their original 4K detail.
 
-## Design contribution and reusable workflow
+## Automation, confirmation and delivery
 
-The project brings layout, sequencing and motion controls into a focused creative tool. Muwen's direction is expressed through the control model and iterative visual decisions, with Codex-assisted implementation. Reuse happens through the editor's parameters: replace the inputs, keep or change the timing recipe, and produce a new sequence.
+**Automatic:** load the selected example board, calculate the grid, loop visible clips, apply accepted parameters and encode the requested output. The bundled example has nine active sources; the other clips are browsed as lightweight thumbnails. Playback pauses when the page is hidden.
 
-This is a browser application with a repeatable workflow. An installable agent Skill is not included in this project.
+**Creator decisions:** story intent, media selection, order, framing, presentation density, duration and final acceptance. The app does not infer a story or autonomously choose an edit. AI/Codex assisted implementation; Muwen supplied the creative direction, source selection and iterative critique.
 
-## Automation, creator control and delivery
+**Local correction:** swap a selected cell or adjust that asset's framing while retaining the other cells. Restoring an example over imported media requires an in-app confirmation. Media readiness blocks premature export, and editing is locked during rendering. Persistent project saving, revision history and undo remain future work; reloading restores the example and clears unsaved visitor work.
 
-**Hypothesis:** a shared layout and timing system can reduce repetitive per-layer adjustments while preserving editorial choices. This is a design hypothesis; comparative creator testing has not been performed.
+**Delivery checks:** every intended shot is present, key subjects remain readable, motion has no unintended frozen cell, the board's density suits its audience, and the decoded file matches the agreed dimensions, frame rate and duration. Audio is not included in the board export. A successful encode is one technical check; the creator still judges the visual result.
 
-**Current behavior:** after media import, the editor calculates grid layout and motion from the selected parameters. The creator controls source selection, ordering, crops, timing and output format. It starts empty and paused. AI assisted implementation; the app does not autonomously choose the story or its media.
+## Verification and next decision
 
-**Proposed agent behavior:** prepare a layout and timing draft within the selected brief, then show it for adjustment. Replacing chosen media, cropping a key subject or materially changing the sequence needs review. Routine recalculation within accepted parameters should proceed directly. A plan preview and revision rollback are proposed extensions, not existing guarantees.
+The example's exported **1280 × 720 H.264** file contains **192 frames at 24 fps / 8.000 s** and fully decodes. All nine cells change during the sequence. All 40 compressed source clips fully decode. Browser checks covered example switching, the 40-thumbnail library, replacing one cell, importing a mixture of personal test video and images, and canceling replacement to retain that media. These are functional checks, not an unassisted usability study or a guarantee of playback speed on every device.
 
-**Acceptance:** key subjects are not unintentionally cropped, holds allow the intended reading time, no source goes missing, and the decoded export matches the reviewed composition, duration and dimensions. Technical encoding success alone does not establish visual quality.
+**Next creator test:** give an unfamiliar filmmaker or motion designer five clips and a short presentation brief. Observe whether they discover Import, change one crop/spacing decision, and export an acceptable review board without coaching. Record hesitation, corrections and actual completion time.
 
-**Next test / decision:** use the same authorized media and brief to compare the creator's existing workflow with this editor. Record one crop/timing correction and the result. Expand if a new creator completes the task with an acceptable output; iterate if controls or timing cause repeated correction; stop automatic layout for cases where it consistently obscures the intended subject. [Control model and handoff](../docs/creative-control.md).
+- **Expand** if the board helps viewers compare shots and the creator completes the task with a usable export.
+- **Iterate** if examples obscure the upload entry, the board becomes too dense, or local changes affect the wrong scope.
+- **Stop or redirect** this approach when the actual need is a sound-synchronized editorial cut; that calls for a sequential timeline rather than more grid effects.
 
-## Evidence and current limits
+Further evidence to add: one recorded creative review, the specific local correction it prompted, and the corresponding before/after output. [Functional review](../docs/functional-review.md) · [Material checklist](../docs/evidence-to-add.md) · [Example-first workflow across 04–07](../docs/example-first-workflows.md).
 
-- The export path was tested with temporary test images: a **720p, five-second H.264** MP4 with **150 frames at 30 fps** was fully decoded successfully. The editor now starts empty and paused; test graphics are not bundled or loaded. The updated interface was checked with landscape, portrait and square images, timeline scrubbing, frame stepping, end-of-playback replay and a fresh five-second 720p export. English/Chinese switching and the empty state were also checked. This is functional verification, not usability research.
-- Media is read through browser file inputs and object URLs; this static app has no media-upload backend. Keep originals separately: reloading clears the working session.
-- Export support depends on browser codecs and device resources. Start in desktop Chrome or Edge. Long clips, large mixed-media projects and 4K output still need broader testing.
-- A creator-selected finished example and narrated workflow recording will be added next. No measured time-saving or user-research result is claimed here.
+## Media and privacy
 
-## Case evidence to add
-
-One finished collage, a short recording of changing the grid or timing, and the matching exported clip. The comparison should show what changed and why the revised rhythm communicates better.
-
-[Per-case material checklist and recording outline](../docs/evidence-to-add.md) · [Functional review](../docs/functional-review.md)
+BITFLIP clips were supplied and selected by Muwen for this portfolio demonstration. Their inclusion does not grant a separate reuse license. The app reads visitor files locally through browser file inputs; it has no upload backend. Keep your originals and export any work you need before reloading.

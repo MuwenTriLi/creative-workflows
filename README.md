@@ -6,7 +6,7 @@ My focus is the connection between production craft and product decisions: autom
 
 **7 projects · A commercial asset library, interactive tools and a company production case**
 
-**Start here:** [Production → product: Clockwork](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/production-case.md) · [Feedback → iteration: Collage Motion](projects/03-collage-motion.md#from-prototype-to-a-usable-first-session) · [Try Model Breakdown](https://meshroom-breakdown-studio.limuwen9.chatgpt.site)
+**Start here:** [Production → product: Clockwork](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/production-case.md) · [Feedback → iteration: Collage Motion](projects/03-collage-motion.md#from-production-experience-to-product-decisions) · [Try Model Breakdown](https://meshroom-breakdown-studio.limuwen9.chatgpt.site)
 
 [Evidence & next experiments](docs/review-guide.md) · [Functional checks & known limits](docs/functional-review.md) · [Automation & creator control](docs/creative-control.md)
 
@@ -19,14 +19,14 @@ My focus is the connection between production craft and product decisions: autom
 | **01 · [Steampunk Clockwork](https://github.com/MuwenTriLi/steampunk-clockwork-showcase)** | Repeated mechanical setup → reusable assemblies & editable motion | Blender assets + Skill | [Superhive product ↗](https://superhivemarket.com/products/steampunk-clockwork-animated-assets) |
 | **02 · [Model Breakdown Studio](https://github.com/MuwenTriLi/model-breakdown-studio)** | Hard-to-read 3D assemblies → explode, isolate & explain | MIT code + browser tool | [Open web app ↗](https://meshroom-breakdown-studio.limuwen9.chatgpt.site) |
 | **03 · [Blue / White Architecture Growth](projects/blue-white-architecture-growth.md)** | Company aesthetics → reusable styling & staged construction | Company workflow case | [Watch selected films](docs/architecture-growth-media.md#watch-the-selected-films) |
-| **04 · [Collage Motion](projects/03-collage-motion.md)** | Repetitive collage layout & timing → grid and rhythm controls | Browser tool | [Open web app ↗](https://muwentrili.github.io/creative-workflows/collage-motion/) |
+| **04 · [Collage Motion](projects/03-collage-motion.md)** | Scattered shot previews → an editable moving storyboard | Browser tool | [Open web app ↗](https://muwentrili.github.io/creative-workflows/collage-motion/) |
 | **05 · [FLIPFRAME](projects/04-flipframe.md)** | Media sequencing & pacing → editable spatial presentation | Browser tool | [Open web app ↗](https://flipframe-motion-lab.limuwen9.chatgpt.site) |
 | **06 · [VOX / ONE](projects/05-vox-one.md)** | Speech/type synchronization → editable timed typography | Browser tool | [Open web app ↗](https://vox-one.limuwen9.chatgpt.site) |
 | **07 · [TRACE / 01](projects/06-trace-01.md)** | Moving subjects need context → tracking & readable overlays | Browser tool | [Open web app ↗](https://trace-01-motion-tracker.limuwen9.chatgpt.site) |
 
 **Current review:** short hosted exports were checked for Model Breakdown and VOX; Collage has short export checks. FLIPFRAME and TRACE have known export-timing issues in the tested browser. [Read the exact scope](docs/functional-review.md).
 
-**Try first:** Model Breakdown Studio opens with Wood House and offers three supplied GLB examples, plus local import. Collage Motion starts with an empty canvas for your own images and clips. All five browser tools have public entrances; VOX / ONE and TRACE / 01 also need your own input media. Architecture Growth presents completed illoca work and its production method; company source and Skill files are not distributed.
+**Try first:** Model Breakdown Studio opens with Wood House and offers three supplied GLB examples, plus local import. Collage Motion opens with nine moving sample shots, a 40-clip library and a visible import action for your own media. All five browser tools have public entrances; VOX / ONE and TRACE / 01 also need your own input media. Architecture Growth presents completed illoca work and its production method; company source and Skill files are not distributed.
 
 ## 01 / Clockwork — detail preview
 
@@ -69,10 +69,10 @@ My design direction and model collection became a reusable Blender library, with
 
 | [Collage Motion](projects/03-collage-motion.md) | [FLIPFRAME](projects/04-flipframe.md) | [VOX / ONE](projects/05-vox-one.md) | [TRACE / 01](projects/06-trace-01.md) |
 | --- | --- | --- | --- |
-| [![Collage editor](media/collage-motion-editor.png)](projects/03-collage-motion.md) | [![Spatial media editor](media/flipframe-editor.png)](projects/04-flipframe.md) | [![Timed typography editor](media/vox-one-editor.png)](projects/05-vox-one.md) | [![Tracking editor](media/trace-01-editor.png)](projects/06-trace-01.md) |
-| Layout & rhythm | Sequence & pacing | Speech & type | Tracking & annotation |
+| [![Animated storyboard with nine BITFLIP shots](media/collage-storyboard-board.jpg)](projects/03-collage-motion.md) | [![Spatial media editor](media/flipframe-editor.png)](projects/04-flipframe.md) | [![Timed typography editor](media/vox-one-editor.png)](projects/05-vox-one.md) | [![Tracking editor](media/trace-01-editor.png)](projects/06-trace-01.md) |
+| Shot review & moving storyboard | Sequence & pacing | Speech & type | Tracking & annotation |
 
-These are current editor views. Each project page provides the problem, design choices, a short walkthrough and verification limits. Selected final films and process recordings will be added as they are prepared; no measured efficiency or user-study results are claimed.
+These are an exported Collage sample board and current editor views. Each project page provides the problem, design choices, a short walkthrough and verification limits. Selected final films and process recordings will be added as they are prepared; no measured efficiency or user-study results are claimed.
 
 ## How I turn production experience into a tool
 
