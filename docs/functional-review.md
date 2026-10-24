@@ -87,3 +87,9 @@ The two replacement Model Breakdown films preserve the complete supplied duratio
 The three Sites affected by the navigation/name update built successfully before publication. The [sharing guide](share-and-review.md) distinguishes public access checks from physical-device performance and keeps TRACE's existing export-timing limitation explicit.
 
 Post-publication anonymous checks returned HTTP 200 for all five studio entrances and **98 hosted resources**: the 35 storyboard source clips and posters, both playback/export atlases, 15 spatial-presentation visuals, six model-library resources and the five new film-page files. The requests used no account cookies or credentials. Public UI checks confirmed the renamed navigation and the 35-source manager. This verifies availability and the exercised desktop workflows, not identical performance on another physical device.
+
+## 2026-10-23 / Versioned local demo distribution
+
+Animated Storyboard v0.1.0 packages the existing public runtime from commit `7949297b8b3cb8f0c8a8d2b45f3e19d8154aa906`, its dependencies and licenses, and the 35 selected sources with preview/export atlases. No application behavior changed in this documentation/release iteration. The 75.1 MB ZIP passed archive-integrity and required-file checks; SHA-256 values identify the archive and all 83 runtime/media files. GitHub's uploaded-asset digest matches the local ZIP.
+
+The packaged copy was served on local HTTP and opened in the review browser: the 35-shot example loaded, the timeline advanced, and the source manager and six HUD choices were present. The existing source-visibility regression check also passes. These are packaging and startup checks, not a new 4K benchmark or a second-physical-computer certification. Earlier export results and unresolved limits remain scoped above. [Release and local setup](distribution.md).

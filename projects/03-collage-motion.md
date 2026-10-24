@@ -8,7 +8,7 @@ Previously named Collage Motion. The name now describes the main task: compare a
 
 I know the difficulty of discussing a visual direction through a folder of separate clips. This tool puts moving shots on one editable board, with a stable identity for each source and controls for layout, framing and presentation.
 
-**[Open the interactive board ↗](https://muwentrili.github.io/creative-workflows/collage-motion/)** · [Watch the 8 s output](https://muwentrili.github.io/creative-workflows/collage-motion/examples/review-board-demo.mp4) · [Design demos & 4K output](https://muwentrili.github.io/creative-workflows/collage-motion/process/) · [Source](../docs/collage-motion/)
+**[Open the interactive board ↗](https://muwentrili.github.io/creative-workflows/collage-motion/)** · [Watch the 8 s output](https://muwentrili.github.io/creative-workflows/collage-motion/examples/review-board-demo.mp4) · [Design demos & 4K output](https://muwentrili.github.io/creative-workflows/collage-motion/process/) · [Source](../docs/collage-motion/) · [Local demo release](../docs/distribution.md)
 
 [![Thirty-five moving shots, permanent IDs and the original white calibration HUD](../media/collage-review-board.webp)](https://muwentrili.github.io/creative-workflows/collage-motion/)
 
@@ -70,3 +70,7 @@ The three supplied process videos are published as [earlier design demonstration
 The source collection sits directly below the canvas. Preview an individual shot, select it for framing and caption edits, move it earlier or later, or enter an exact position. Uncheck **Included in board** to retain a source while excluding it from both preview and export; **Include all** restores it. Removing a card affects only this board. Bundled sources are optimized viewing copies; imported sources use the visitor's own local files.
 
 The 35-shot example uses one shared video atlas for simultaneous board playback. Individual source playback opens on demand, so the source collection does not create another 35 live video decoders.
+
+## Implementation and handoff
+
+The [implementation and test map](../docs/animated-storyboard-handoff.md) connects the atlas, source-clip controls, visibility filtering and fixed-time export to the production decisions above. It includes a reproducible local correction and the exact boundary of the checks.

@@ -8,9 +8,9 @@ This portfolio connects three kinds of evidence: a commercial asset product, int
 
 ## A short review route
 
-1. **Production judgment → product:** [Clockwork's complete case](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/production-case.md). Start with one mechanism, its meaningful controls and the dependencies those controls preserve.
-2. **Feedback → product iteration:** [Animated Storyboard](../projects/03-collage-motion.md#from-production-experience-to-product-decisions). Start from 35 selected moving shots, replace one cell, then import your own media. The interface connects shot-review needs to clear input, local correction and output checks; the 35 selected clips are available in the example library.
-3. **Direct interaction:** [Model Breakdown Studio](https://meshroom-breakdown-studio.limuwen9.chatgpt.site). Choose Wood House or a production-line example to inspect a part, compare assembled and exploded views, and adjust the presentation.
+1. **Working interaction:** [Model Breakdown Studio](https://meshroom-breakdown-studio.limuwen9.chatgpt.site). Compare assembled and exploded views, select a part and change the explanation. The opening model is Press Manufacturing Line.
+2. **Feedback → product iteration:** [Animated Storyboard](../projects/03-collage-motion.md#from-production-experience-to-product-decisions). Inspect the moving board, revise a source locally and follow the [implementation and test map](animated-storyboard-handoff.md).
+3. **My production knowledge → AI-assisted system:** [Clockwork's build process](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/process.md). I modeled the original collection, organized those inputs and used Codex to help develop gear linkages and reusable controls. Review the mechanism and workflow before the asset gallery.
 
 The other projects explore different problems. They do not need to appear equally finished to be useful evidence of product judgment.
 
@@ -18,7 +18,7 @@ The other projects explore different problems. They do not need to appear equall
 
 | Project | Evidence available now | Important missing proof | Current decision |
 | --- | --- | --- | --- |
-| **01 · [Clockwork](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/production-case.md)** | Commercial library, original renders, motion excerpts, controller documentation and instruction Skill | One freshly recorded adaptation from brief to checked output; an unfamiliar creator repeating it | Lead with the existing product. **Iterate** the agent-assisted adaptation before expanding it. |
+| **01 · [Clockwork](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/production-case.md)** | Commercial library, original renders, motion excerpts, controller documentation and instruction Skill | One freshly recorded adaptation from brief to checked output; an unfamiliar creator repeating it | Lead with how my original models became linked mechanisms and creator controls. **Iterate** the agent-assisted adaptation before expanding it. |
 | **02 · [Architecture Growth](../projects/blue-white-architecture-growth.md)** | Completed illoca tennis/detail/tower/office visuals; director role and internal-method explanation | An approved local correction recording, shot-level credits and repeatability observation | **Develop the production case** around creator control. Company source and internal Skill remain private. |
 | **03 · [Model Breakdown](https://github.com/MuwenTriLi/model-breakdown-studio/blob/main/docs/product-case.md)** | Four architectural output films and stills; three selectable real GLBs with loading, explode and selection checks; short synthetic and real Press-model 4K export checks; MIT repository code | A process recording connecting a real input to the selected output, one framing correction and an unfamiliar creator task | **Iterate** the import-to-delivery path before claiming general model support. |
 | **04 · [Animated Storyboard](../projects/03-collage-motion.md)** | 35-shot presentation, original white HUD styles, local shot replacement and an eight-second 4K / 24 fps export with motion verified in all 35 tiles | Unassisted first-use task; larger projects and mixed-media output quality checks | **Iterate** usability with creators before adding automatic editorial choices. |
@@ -27,6 +27,10 @@ The other projects explore different problems. They do not need to appear equall
 | **07 · [TRACE / 01](../projects/06-trace-01.md)** | Occlusion fixture, confidence/reacquire state and downloaded FHD export; timing check fails | Correct encoded timing, target-identity review and recoverable local correction | **Fix export and validate recovery** before expanding tracking scope. |
 
 “Current decision” is a product recommendation based on the available evidence, not a completed customer-study result. There are no measured time-saving, accuracy or adoption claims.
+
+## Fit with the supplied OpenArt Creative Technologist role
+
+The supplied role asks a practitioner to move from a real creative bottleneck through a working prototype, validation and engineering handoff. The review should therefore start with decisions and inspectable behavior. Finished assets support the production story; they are not the whole proposition. This mapping uses the supplied job description, not an assessment from OpenArt.
 
 ## What this body of work demonstrates—and what remains open
 
@@ -37,7 +41,7 @@ The other projects explore different problems. They do not need to appear equall
 | Define what the agent may do | Per-project automatic work, protected decisions and proposed review boundaries | A fresh agent execution with tool inputs, changed settings, interruption/correction and output checks |
 | Deliver professional work | Shipped asset collection and selected functional export checks | An exact source/output pair that passes both technical and creative checks in the intended workflow |
 | Decide whether a feature is worth building | Bounded hypotheses and explicit next decisions | Observed creator tasks, actual correction effort and a recorded scale/iterate/stop decision |
-| Hand a validated feature to engineering | Source references, control model and [handoff template](handoff-template.md) | An executed acceptance fixture, failure example and completed handoff; no shipped engineering adoption is claimed |
+| Hand a validated feature to engineering | A concrete [Storyboard implementation and test map](animated-storyboard-handoff.md), control model and [handoff template](handoff-template.md) | An executed acceptance fixture, failure example and completed handoff; no shipped engineering adoption is claimed |
 
 AI-assisted development and a packaged Skill are useful evidence, but neither establishes a reliable autonomous agent. Model-API orchestration, agent recovery and comparative creator research remain evidence to build, not labels to add to a screenshot.
 
@@ -51,7 +55,7 @@ The new architectural outputs improve the presentation of Model Breakdown and Ar
 
 ## What to prove next
 
-Prioritize **one complete Clockwork adaptation** and **one unassisted Collage session**. These extend the strongest existing evidence: production craft and an actual interface iteration. Record the brief, one local correction, the checked output and the decision it changes. Keep the same sources and quality target when comparing with an existing workflow.
+Prioritize **one complete Clockwork adaptation** and **one unassisted Animated Storyboard session**. These extend the strongest existing evidence: production craft and an actual interface iteration. Record the brief, one local correction, the checked output and the decision it changes. Keep the same sources and quality target when comparing with an existing workflow.
 
 For the remaining cases, use the bounded task at the top of each case page. Run a small exploratory study only after the core input-to-output path works. A few successful sessions justify the next experiment; they do not establish broad market demand or production reliability.
 

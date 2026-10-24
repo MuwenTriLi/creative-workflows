@@ -8,11 +8,13 @@ The public repository is the front door. A reviewer can read it without a GitHub
 
 ## A short first visit
 
-1. Start with **Clockwork** or **Architecture Growth** for production experience and visual direction.
-2. Open **Model Breakdown Studio** for the quickest interactive example: compare assembled and exploded views, select a component, or switch models.
-3. Open **Animated Storyboard** to compare moving shots. Below the board, **Source clips** provides individual playback, order, framing and include/hide controls. Hidden clips are excluded from both the board and export; removing a card does not delete the source file.
-4. Open **Spatial Media Presenter** for a different task: arrange images and motion studies into a spatial presentation. Orbital Shift plays on entry.
+1. Open **Model Breakdown Studio** for the quickest interactive example: compare assembled and exploded views, select a component, or switch models.
+2. Open **Animated Storyboard**, then inspect its case and implementation map. Below the board, **Source clips** provides individual playback, order, framing and include/hide controls. Hidden clips are excluded from both board and export; removing a card does not delete the source file.
+3. Read **Clockwork's build process** for the connection between Muwen's original modeling, prepared AI inputs, linked mechanisms and reusable controls. **Architecture Growth** adds company production experience and visual direction.
+4. Open **Spatial Media Presenter** to arrange images and motion studies into a spatial presentation. Orbital Shift plays on entry.
 5. VOX explores editable timed typography. TRACE starts with **your** video, then a selected target or a fixed position anchor.
+
+For a local copy of Animated Storyboard, use the versioned package under [Releases](https://github.com/MuwenTriLi/creative-workflows/releases), following the [local setup guide](distribution.md). The README's [repository map](../README.md#repository-map) explains where cases, source and evidence live.
 
 ## On another computer
 
