@@ -13,8 +13,8 @@ This portfolio connects three kinds of evidence: a commercial asset product, int
 3. **Model Breakdown Studio — working interaction:** [Open the app](https://meshroom-breakdown-studio.limuwen9.chatgpt.site). Compare assembled and exploded views, select a part and change the explanation. The opening model is Press Manufacturing Line.
 4. **Animated Storyboard — feedback into product iteration:** [Case decisions](../projects/03-collage-motion.md#from-production-experience-to-product-decisions). Revise a source on the moving board, then follow the [implementation and test map](animated-storyboard-handoff.md).
 5. **Spatial Media Presenter — editable pacing:** [Sequence case](../projects/04-flipframe.md). Inspect order, transitions and readable holds.
-6. **VOX / ONE — speech and type:** [Typography case](../projects/05-vox-one.md). Review transcript correction, timing and the bounded speech checks.
-7. **TRACE / 01 — tracking and recovery:** [Prototype case](../projects/06-trace-01.md). Inspect target selection, anchors and the remaining export issue.
+6. **Kinetic Typography Studio — speech and type:** [Typography case](../projects/05-vox-one.md). Review transcript correction, timing and the bounded speech checks.
+7. **Motion Tracking Studio — tracking and recovery:** [Prototype case](../projects/06-trace-01.md). Inspect target selection, anchors and the remaining export issue.
 
 The order matches the portfolio. Each case supports a different part of the production-to-product story; the evidence table below distinguishes its current maturity.
 
@@ -27,8 +27,8 @@ The order matches the portfolio. Each case supports a different part of the prod
 | **03 · [Model Breakdown](https://github.com/MuwenTriLi/model-breakdown-studio/blob/main/docs/product-case.md)** | Four architectural output films and stills; three selectable real GLBs with loading, explode and selection checks; short synthetic and real Press-model 4K export checks; MIT repository code | A process recording connecting a real input to the selected output, one framing correction and an unfamiliar creator task | **Iterate** the import-to-delivery path before claiming general model support. |
 | **04 · [Animated Storyboard](../projects/03-collage-motion.md)** | 35-shot presentation, original white HUD styles, local shot replacement and an eight-second 4K / 24 fps export with motion verified in all 35 tiles | Unassisted first-use task; larger projects and mixed-media output quality checks | **Iterate** usability with creators before adding automatic editorial choices. |
 | **05 · [Spatial Media Presenter](../projects/04-flipframe.md)** | Updated 15-visual example; revised direct 4K exports match 7.45 s and 25 s timing | Viewer readability study, compatibility capture and long-project responsiveness | **Validate readability and compatibility** before expanding motion modes. |
-| **06 · [VOX / ONE](../projects/05-vox-one.md)** | Clean synthetic English transcription, confirmed punctuation correction and 4K H.264/AAC output | Real speech with names/noise, measured sync, alpha output and editor round trip | **Validate the core task** before expanding languages or automation. |
-| **07 · [TRACE / 01](../projects/06-trace-01.md)** | Occlusion fixture, confidence/reacquire state and downloaded FHD export; timing check fails | Correct encoded timing, target-identity review and recoverable local correction | **Fix export and validate recovery** before expanding tracking scope. |
+| **06 · [Kinetic Typography Studio](../projects/05-vox-one.md)** | Clean synthetic English transcription, confirmed punctuation correction and 4K H.264/AAC output | Real speech with names/noise, measured sync, alpha output and editor round trip | **Validate the core task** before expanding languages or automation. |
+| **07 · [Motion Tracking Studio](../projects/06-trace-01.md)** | Occlusion fixture, confidence/reacquire state and downloaded FHD export; timing check fails | Correct encoded timing, target-identity review and recoverable local correction | **Fix export and validate recovery** before expanding tracking scope. |
 
 “Current decision” is a product recommendation based on the available evidence, not a completed customer-study result. There are no measured time-saving, accuracy or adoption claims.
 

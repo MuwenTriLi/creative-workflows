@@ -21,10 +21,10 @@ I model, direct visual production and use AI-assisted code to turn recurring pro
 | **03 · [Model Breakdown Studio](https://github.com/MuwenTriLi/model-breakdown-studio)** | A dense model is hard to explain → selectable parts, exploded views and editable reveals | [Open&nbsp;web&nbsp;app](https://meshroom-breakdown-studio.limuwen9.chatgpt.site) |
 | **04 · [Animated Storyboard](projects/03-collage-motion.md)** | Separate clips make shot comparison awkward → one moving board with local revisions | [Open&nbsp;web&nbsp;app](https://muwentrili.github.io/creative-workflows/collage-motion/) |
 | **05 · [Spatial Media Presenter](projects/04-flipframe.md)** | A collection needs editorial pacing → editable spatial order, transitions and holds | [Open&nbsp;web&nbsp;app](https://flipframe-motion-lab.limuwen9.chatgpt.site) |
-| **06 · [VOX / ONE](projects/05-vox-one.md)** | Speech and visual rhythm need to agree → editable words, timing and typography | [Open&nbsp;web&nbsp;app](https://vox-one.limuwen9.chatgpt.site) |
-| **07 · [TRACE / 01](projects/06-trace-01.md)** | A moving subject needs visual context → target selection, anchors and overlays | [Try&nbsp;prototype](https://trace-01-motion-tracker.limuwen9.chatgpt.site) |
+| **06 · [Kinetic Typography Studio](projects/05-vox-one.md)** | Speech and visual rhythm need to agree → editable words, timing and typography | [Open&nbsp;web&nbsp;app](https://vox-one.limuwen9.chatgpt.site) |
+| **07 · [Motion Tracking Studio](projects/06-trace-01.md)** | A moving subject needs visual context → target selection, anchors and overlays | [Try&nbsp;prototype](https://trace-01-motion-tracker.limuwen9.chatgpt.site) |
 
-**Review status:** the browser tools are interactive prototypes with documented export checks. TRACE still has a known export-timing issue. [Tested outputs and current limits](docs/functional-review.md).
+**Review status:** the browser tools are interactive prototypes with documented export checks. Motion Tracking Studio still has a known export-timing issue. [Tested outputs and current limits](docs/functional-review.md).
 
 **What to look for:** how I turn a production problem into editable behavior, use AI to assist implementation, and keep creative decisions with the person making the work. [Process, controls and evidence](docs/review-guide.md).
 
@@ -98,24 +98,24 @@ Turn images and motion studies into a presentation that moves from a collection 
 
 [Open the presenter →](https://flipframe-motion-lab.limuwen9.chatgpt.site) · [Full case study](projects/04-flipframe.md) · [Watch the 25 s sequence](https://muwentrili.github.io/creative-workflows/collage-motion/process/#flipframe) · [4K export guide](docs/studio-delivery.md)
 
-## 06 / VOX / ONE — speech into timed typography
+## 06 / Kinetic Typography Studio — speech into timed typography
 
 **Import speech · Correct the words · Shape the visual rhythm**
 
 <table><tr>
-<td align="center" valign="top"><a href="https://vox-one.limuwen9.chatgpt.site"><img src="media/vox-one-editor.png" width="960" alt="VOX ONE: source media, editable transcript, live typography preview and styling controls"></a><br><b>Editable words, timing and visual emphasis</b><br><sub>Speech-led typography · Transcript correction · Preview before delivery</sub></td>
+<td align="center" valign="top"><a href="https://vox-one.limuwen9.chatgpt.site"><img src="media/vox-one-editor.png" width="960" alt="Kinetic Typography Studio: source media, editable transcript, live typography preview and styling controls"></a><br><b>Editable words, timing and visual emphasis</b><br><sub>Speech-led typography · Transcript correction · Preview before delivery</sub></td>
 </tr></table>
 
 Turn spoken English into timed typography, then review the wording, phrasing and visual emphasis. The studio opens with a silent, authored typography example; import a voice clip to use the speech workflow. Real-speech validation remains part of the next review.
 
 [Open the typography studio →](https://vox-one.limuwen9.chatgpt.site) · [Full case study](projects/05-vox-one.md) · [Verified scope & next checks](docs/functional-review.md) · [Export guide](docs/studio-delivery.md)
 
-## 07 / TRACE / 01 — target tracking and motion annotation
+## 07 / Motion Tracking Studio — target tracking and motion annotation
 
 **Import your footage · Choose a target or anchor · Review the overlay**
 
 <table><tr>
-<td align="center" valign="top"><a href="https://trace-01-motion-tracker.limuwen9.chatgpt.site"><img src="media/trace-01-editor.png" width="960" alt="TRACE 01: an empty video import workspace with target selection, position anchor and HUD controls"></a><br><b>Make a subject easier to follow</b><br><sub>Your video · Target 01 or a fixed position anchor · Editable white HUD</sub></td>
+<td align="center" valign="top"><a href="https://trace-01-motion-tracker.limuwen9.chatgpt.site"><img src="media/trace-01-editor.png" width="960" alt="Motion Tracking Studio: an empty video import workspace with target selection, position anchor and HUD controls"></a><br><b>Make a subject easier to follow</b><br><sub>Your video · Target 01 or a fixed position anchor · Editable white HUD</sub></td>
 </tr></table>
 
 Connect a subject to a readable locator, path and information overlay. The studio starts empty: import your footage, select a target or place a fixed anchor, then inspect the result. Export timing remains under review; this project is presented as a prototype with documented limits.

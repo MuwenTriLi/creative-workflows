@@ -13,8 +13,8 @@ The public repository is the front door. A reviewer can read it without a GitHub
 3. **Model Breakdown Studio:** compare assembled and exploded views, select a component, or switch among the three models.
 4. **Animated Storyboard:** compare the moving shots. Below the canvas, **Source clips** provides individual playback, order, framing and include/hide controls. Hidden clips are excluded from both board and export; removing a card does not delete the source file.
 5. **Spatial Media Presenter:** arrange images and motion studies into a spatial presentation. Orbital Shift plays on entry.
-6. **VOX / ONE:** inspect the silent typography example; import a voice clip to explore editable words and timing.
-7. **TRACE / 01:** import your own video, then select a target or place a fixed position anchor. Review its documented export-timing limitation before relying on delivery.
+6. **Kinetic Typography Studio:** inspect the silent typography example; import a voice clip to explore editable words and timing.
+7. **Motion Tracking Studio:** import your own video, then select a target or place a fixed position anchor. Review its documented export-timing limitation before relying on delivery.
 
 For a local copy of Animated Storyboard, use the versioned package under [Releases](https://github.com/MuwenTriLi/creative-workflows/releases), following the [local setup guide](distribution.md). The README's [repository map](../README.md#repository-map) explains where cases, source and evidence live.
 
@@ -22,6 +22,6 @@ For a local copy of Animated Storyboard, use the versioned package under [Releas
 
 All five studio entrances are public web pages. Bundled examples are hosted assets; visitors do not need Muwen's local folders. Imports are selected from the visitor's own device. Use a current desktop browser, preferably Chrome or Edge for the tested browser video encoders. Keep the export tab foregrounded and play the downloaded file through before delivery.
 
-Anonymous HTTP checks establish public access without account cookies. They do **not** establish identical playback speed on every GPU, browser or connection. Actual checks and known limitations are recorded in the [functional review](functional-review.md); [4K export steps](studio-delivery.md) explain each tool's output flow. TRACE's real-time export timing remains a documented limitation.
+Anonymous HTTP checks establish public access without account cookies. They do **not** establish identical playback speed on every GPU, browser or connection. Actual checks and known limitations are recorded in the [functional review](functional-review.md); [4K export steps](studio-delivery.md) explain each tool's output flow. Motion Tracking Studio's real-time export timing remains a documented limitation.
 
 The new Model Breakdown films are [available here](https://muwentrili.github.io/creative-workflows/model-breakdown-films/), with full duration and 30 fps playback. README animations are compact previews; the linked MP4s are the clearer viewing format.

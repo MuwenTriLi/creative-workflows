@@ -1,4 +1,4 @@
-# 06 / VOX / ONE
+# 06 / Kinetic Typography Studio
 
 [← All projects](https://github.com/MuwenTriLi/creative-workflows#selected-work)
 
@@ -8,7 +8,7 @@ Turn spoken English into editable, timed typography, with control over phrasing,
 
 **[Open web app ↗](https://vox-one.limuwen9.chatgpt.site)** · No sign-in required
 
-![VOX ONE source, transcript, live composition and typography controls](../media/vox-one-editor.png)
+![Kinetic Typography Studio source, transcript, live composition and typography controls](../media/vox-one-editor.png)
 *The English-default studio starts with an eight-second silent typography example. Its text and timing are authored demo data, not an automatic transcription. Import a voice clip to exercise the speech workflow; a Chinese interface switch is available.*
 
 ## The smallest useful task
