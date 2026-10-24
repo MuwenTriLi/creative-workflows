@@ -25,11 +25,11 @@ A motion annotation has two separate requirements: stay attached to the correct 
 
 ## The approach
 
-Bring source video, frame navigation, target positioning and HUD design into one workspace. Expose **Follow object** and **Static pin** as distinct choices. Separate the locator's entrance from the expanded data panel so the viewer first sees the target, then reads its context.
+Bring source video, frame navigation, target positioning and HUD design into one workspace. Expose **Track a target** and **Position anchor** as distinct choices. Separate the locator's entrance from the expanded data panel so the viewer first sees the target, then reads its context.
 
 | Creative decision | Visible control | Purpose |
 | --- | --- | --- |
-| Follow a subject or mark a place? | Automatic tracking / static pin | Match the overlay's behavior to the explanation |
+| Follow a subject or mark a place? | Track a target / Position anchor | Match the overlay's behavior to the explanation |
 | How should the path behave? | Search radius and trajectory smoothing | Balance target search and visual stability |
 | When should information appear? | LOCK IN and HUD IN timeline markers | Stage attention before adding detail |
 | How much visual emphasis is needed? | Locator size, panel size and entrance mode | Keep the source footage legible |
@@ -38,7 +38,7 @@ Bring source video, frame navigation, target positioning and HUD design into one
 ## Walkthrough
 
 1. Import a short clip with a clearly visible, high-contrast target. The upload interface lists MP4, MOV and WebM.
-2. Choose **Follow object** (自动追踪) and select a target, or **Static pin** (静态钉住) for a fixed annotation.
+2. Choose **Track a target** and click the subject for Target 01, or **Position anchor** and click a location for a fixed annotation.
 3. Scrub through the clip and inspect the target position. Adjust tracking controls if the path drifts; compare against a fixed pin when appropriate.
 4. Set **LOCK IN** and **HUD IN** separately. Tune size and text so the overlay explains the subject without covering it.
 5. Preview the complete sequence before using the export panel.
@@ -71,4 +71,4 @@ Show the original clip beside the annotated result, then a short recording of on
 
 ## Shared studio, distinct responsibility
 
-The opening example, visible input/output actions, shared navigation, default Arial/Helvetica typography and rectangular dark controls follow Model Breakdown's workspace language. The tool's specific acceptance criteria above remain separate; a common appearance does not imply equal production readiness.
+The import-first workspace, visible input/output actions, shared navigation, default Arial/Helvetica typography and rectangular dark controls follow Model Breakdown's workspace language. The tool's specific acceptance criteria above remain separate; a common appearance does not imply equal production readiness.

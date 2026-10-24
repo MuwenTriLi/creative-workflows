@@ -8,11 +8,15 @@ This portfolio connects three kinds of evidence: a commercial asset product, int
 
 ## A short review route
 
-1. **Working interaction:** [Model Breakdown Studio](https://meshroom-breakdown-studio.limuwen9.chatgpt.site). Compare assembled and exploded views, select a part and change the explanation. The opening model is Press Manufacturing Line.
-2. **Feedback → product iteration:** [Animated Storyboard](../projects/03-collage-motion.md#from-production-experience-to-product-decisions). Inspect the moving board, revise a source locally and follow the [implementation and test map](animated-storyboard-handoff.md).
-3. **My production knowledge → AI-assisted system:** [Clockwork's build process](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/process.md). I modeled the original collection, organized those inputs and used Codex to help develop gear linkages and reusable controls. Review the mechanism and workflow before the asset gallery.
+1. **Clockwork — original models into a system:** [Build process](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/process.md). I modeled the collection, organized the inputs and used Codex to help develop gear linkages and reusable controls.
+2. **Blue / White Architecture Growth — production judgment:** [Company case](../projects/blue-white-architecture-growth.md). Follow the visual direction, construction sequence and repeated production method.
+3. **Model Breakdown Studio — working interaction:** [Open the app](https://meshroom-breakdown-studio.limuwen9.chatgpt.site). Compare assembled and exploded views, select a part and change the explanation. The opening model is Press Manufacturing Line.
+4. **Animated Storyboard — feedback into product iteration:** [Case decisions](../projects/03-collage-motion.md#from-production-experience-to-product-decisions). Revise a source on the moving board, then follow the [implementation and test map](animated-storyboard-handoff.md).
+5. **Spatial Media Presenter — editable pacing:** [Sequence case](../projects/04-flipframe.md). Inspect order, transitions and readable holds.
+6. **VOX / ONE — speech and type:** [Typography case](../projects/05-vox-one.md). Review transcript correction, timing and the bounded speech checks.
+7. **TRACE / 01 — tracking and recovery:** [Prototype case](../projects/06-trace-01.md). Inspect target selection, anchors and the remaining export issue.
 
-The other projects explore different problems. They do not need to appear equally finished to be useful evidence of product judgment.
+The order matches the portfolio. Each case supports a different part of the production-to-product story; the evidence table below distinguishes its current maturity.
 
 ## What each project currently supports
 

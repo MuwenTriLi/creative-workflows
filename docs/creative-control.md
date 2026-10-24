@@ -20,8 +20,8 @@ My design question is: **which parts of a creative job can a system complete rel
 | Case | Repeatable work the system handles or is intended to handle | Creator retains | Acceptance question |
 | --- | --- | --- | --- |
 | [Clockwork](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/production-case.md) | Existing drivers propagate controller inputs through linked parts | Design language, choice of module, rhythm and any dependency-changing recomposition | Does the changed copy preserve dependencies and produce readable, continuous motion? |
-| [Model Breakdown](https://github.com/MuwenTriLi/model-breakdown-studio/blob/main/docs/product-case.md) | Import, part selection and parameter-driven exploded presentation | What the model is explaining, focal part, framing and reveal order | Can the viewer identify the intended component and its relationship to the assembly? |
 | [Architecture Growth](../projects/blue-white-architecture-growth.md) | Internal workflow: adapt confirmed visual rules and staged growth to a scene; implementation not released | Construction dependencies, cut plane, visual hierarchy and storytelling | Are section geometry, outlines and growth transitions correct across consecutive frames? |
+| [Model Breakdown](https://github.com/MuwenTriLi/model-breakdown-studio/blob/main/docs/product-case.md) | Import, part selection and parameter-driven exploded presentation | What the model is explaining, focal part, framing and reveal order | Can the viewer identify the intended component and its relationship to the assembly? |
 | [Animated Storyboard](../projects/03-collage-motion.md) | Load the selected sample board; calculate grid layout, cell timing and movement from parameters | Source media, order, crops, pacing and final composition | Are key subjects visible and does the encoded video match the reviewed sequence? |
 | [Spatial Media Presenter](../projects/04-flipframe.md) | Calculate card movement and timing from the selected sequence | Editorial order, entry/exit range and readable dwell | Can viewers inspect the intended content without clipping or rushed transitions? |
 | [VOX / ONE](../projects/05-vox-one.md) | Interface advertises local speech recognition and word timing; processing is not benchmarked here | Transcript corrections, phrase meaning, emphasis and final synchronization | Does the typography preserve the spoken meaning and remain readable against the audio? |
@@ -34,8 +34,8 @@ Local correction is a product requirement, not the same as offering a global “
 | Case | Smallest useful correction | Boundary to preserve |
 | --- | --- | --- |
 | Clockwork | A documented controller value in a working copy | Unrelated assemblies, visual direction and driver dependencies |
-| Model Breakdown | Focal part, explode amount or framing | Imported geometry and the explanation; revision rollback remains proposed |
 | Architecture Growth | One system or transition, with neighboring-frame review | Reference, scale, camera and construction order; finished outputs supplied, correction recording pending |
+| Model Breakdown | Focal part, explode amount or framing | Imported geometry and the explanation; revision rollback remains proposed |
 | Animated Storyboard | One selected cell's source or framing, or a chosen timing control | Imported media and accepted editorial choices; session persistence is absent |
 | Spatial Media Presenter | One card's framing or hold | Archive order and accepted sequence; revised 7.45 s and 25 s 4K exports pass their stated timing checks; readability remains to be studied |
 | VOX / ONE | Wrong word or mistimed span | Spoken meaning and neighboring timing; word-level recovery needs verification |

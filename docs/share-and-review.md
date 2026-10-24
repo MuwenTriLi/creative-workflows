@@ -4,15 +4,17 @@ Send this single link:
 
 **[Muwen Li — Creative Workflows](https://github.com/MuwenTriLi/creative-workflows#selected-work)**
 
-The public repository is the front door. A reviewer can read it without a GitHub account. The project titles open case studies; **Open** links lead to products, films or interactive studios. Existing web addresses remain unchanged after the studio renaming.
+The public repository is the front door. A reviewer can read it without a GitHub account. Project titles open case studies with process, controls and evidence. The **Try / watch** column opens a film or web app directly. A visitor does not need to read implementation notes before trying a tool.
 
 ## A short first visit
 
-1. Open **Model Breakdown Studio** for the quickest interactive example: compare assembled and exploded views, select a component, or switch models.
-2. Open **Animated Storyboard**, then inspect its case and implementation map. Below the board, **Source clips** provides individual playback, order, framing and include/hide controls. Hidden clips are excluded from both board and export; removing a card does not delete the source file.
-3. Read **Clockwork's build process** for the connection between Muwen's original modeling, prepared AI inputs, linked mechanisms and reusable controls. **Architecture Growth** adds company production experience and visual direction.
-4. Open **Spatial Media Presenter** to arrange images and motion studies into a spatial presentation. Orbital Shift plays on entry.
-5. VOX explores editable timed typography. TRACE starts with **your** video, then a selected target or a fixed position anchor.
+1. **Clockwork:** watch the mechanism demo, then read the build process connecting Muwen's original models, prepared AI inputs, gear linkages and creator controls.
+2. **Blue / White Architecture Growth:** watch the completed films, then inspect the company production method and visual direction.
+3. **Model Breakdown Studio:** compare assembled and exploded views, select a component, or switch among the three models.
+4. **Animated Storyboard:** compare the moving shots. Below the canvas, **Source clips** provides individual playback, order, framing and include/hide controls. Hidden clips are excluded from both board and export; removing a card does not delete the source file.
+5. **Spatial Media Presenter:** arrange images and motion studies into a spatial presentation. Orbital Shift plays on entry.
+6. **VOX / ONE:** inspect the silent typography example; import a voice clip to explore editable words and timing.
+7. **TRACE / 01:** import your own video, then select a target or place a fixed position anchor. Review its documented export-timing limitation before relying on delivery.
 
 For a local copy of Animated Storyboard, use the versioned package under [Releases](https://github.com/MuwenTriLi/creative-workflows/releases), following the [local setup guide](distribution.md). The README's [repository map](../README.md#repository-map) explains where cases, source and evidence live.
 

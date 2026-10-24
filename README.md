@@ -4,55 +4,29 @@
 
 I model, direct visual production and use AI-assisted code to turn recurring production tasks into editable tools. This portfolio shows how I frame a problem, prepare the inputs, design the controls and check the result.
 
-**Start with the workflow:** [Try Model Breakdown](https://meshroom-breakdown-studio.limuwen9.chatgpt.site) · [Inspect a product iteration](projects/03-collage-motion.md#from-production-experience-to-product-decisions) · [How I built Clockwork from my own models](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/process.md)
+**Explore the work:** [Clockwork: my models into linked mechanisms](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/process.md) · [Architecture: a repeatable production method](projects/blue-white-architecture-growth.md) · [Browse all seven projects](#selected-work)
 
 [Repository map](#repository-map) · [Evidence & next decisions](docs/review-guide.md) · [Source & releases](docs/distribution.md) · [Sharing guide](docs/share-and-review.md)
 
 ## Selected work
 
-**New here?** Start with a case below, then use **Open** to try its tool. Public previews need no GitHub account. [Sharing & first-use guide](docs/share-and-review.md).
+**New here?** Click a **project title** for the problem, my contribution and how it was built. Use **Try / watch** to open the working app or a film directly. No GitHub account is required.
 
-**Review route:** interactive tools first, then the production knowledge behind them. Project numbers are stable identifiers shared with the studios. Each case separates my contribution, the implementation, available evidence and the next test.
+**Review order:** original modeling → architectural production → tools for model explanation, shot review, spatial presentation, typography and tracking. The same project numbers follow through the portfolio and studios.
 
-| Project | Production problem → design decision | Inspect / try |
+| Project / case study | Production problem → design decision | Try / watch |
 | --- | --- | --- |
-| **03 · [Model Breakdown Studio](https://github.com/MuwenTriLi/model-breakdown-studio)** | A dense model is hard to explain → selectable parts, exploded views and editable reveals | [Open the studio ↗](https://meshroom-breakdown-studio.limuwen9.chatgpt.site) · [MIT code](https://github.com/MuwenTriLi/model-breakdown-studio) |
-| **04 · [Animated Storyboard](projects/03-collage-motion.md)** | Separate clips make shot comparison awkward → one moving board with local revisions | [Open the board ↗](https://muwentrili.github.io/creative-workflows/collage-motion/) · [Implementation](docs/animated-storyboard-handoff.md) |
-| **01 · [Clockwork / AI-assisted mechanism workflow](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/production-case.md)** | My modeled components need linked motion and reuse → organized source input, AI-assisted mechanism development and creator controls | [Build process](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/process.md) · [Controls](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/controls.md) |
-| **02 · [Blue / White Architecture Growth](projects/blue-white-architecture-growth.md)** | Repeated production needs a consistent visual language → reusable styling and staged construction | [Production method](projects/blue-white-architecture-growth.md#the-production-problem) · [Films](docs/architecture-growth-media.md#watch-the-selected-films) |
-| **05 · [Spatial Media Presenter](projects/04-flipframe.md)** | A collection needs editorial pacing → editable spatial order, transitions and holds | [Open the presenter ↗](https://flipframe-motion-lab.limuwen9.chatgpt.site) |
-| **06 · [VOX / ONE](projects/05-vox-one.md)** | Speech and visual rhythm need to agree → editable words, timing and typography | [Open the typography studio ↗](https://vox-one.limuwen9.chatgpt.site) |
-| **07 · [TRACE / 01](projects/06-trace-01.md)** | A moving subject needs visual context → target selection, anchors and overlays | [Open the tracking prototype ↗](https://trace-01-motion-tracker.limuwen9.chatgpt.site) |
+| **01 · [Clockwork](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/production-case.md)** | My original models need linked motion and reuse → AI-assisted gear linkages and editable controls | [Watch demo ↗](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=opening-in-blender) |
+| **02 · [Blue / White Architecture Growth](projects/blue-white-architecture-growth.md)** | Repeated production needs a consistent visual language → reusable styling and staged construction | [Watch films ↗](https://muwentrili.github.io/creative-workflows/films/?project=growth&film=tennis-sequence) |
+| **03 · [Model Breakdown Studio](https://github.com/MuwenTriLi/model-breakdown-studio)** | A dense model is hard to explain → selectable parts, exploded views and editable reveals | [Open web app ↗](https://meshroom-breakdown-studio.limuwen9.chatgpt.site) |
+| **04 · [Animated Storyboard](projects/03-collage-motion.md)** | Separate clips make shot comparison awkward → one moving board with local revisions | [Open web app ↗](https://muwentrili.github.io/creative-workflows/collage-motion/) |
+| **05 · [Spatial Media Presenter](projects/04-flipframe.md)** | A collection needs editorial pacing → editable spatial order, transitions and holds | [Open web app ↗](https://flipframe-motion-lab.limuwen9.chatgpt.site) |
+| **06 · [VOX / ONE](projects/05-vox-one.md)** | Speech and visual rhythm need to agree → editable words, timing and typography | [Open web app ↗](https://vox-one.limuwen9.chatgpt.site) |
+| **07 · [TRACE / 01](projects/06-trace-01.md)** | A moving subject needs visual context → target selection, anchors and overlays | [Open prototype ↗](https://trace-01-motion-tracker.limuwen9.chatgpt.site) |
 
-**Current review:** bounded exports were checked for Model Breakdown and VOX. The revised Animated Storyboard 35-shot 4K board and Spatial Media Presenter 4K sequences pass their stated timing checks. TRACE retains an export-timing issue. [Read the exact scope](docs/functional-review.md).
+**Review status:** the browser tools are interactive prototypes with documented export checks. TRACE still has a known export-timing issue. [Tested outputs and current limits](docs/functional-review.md).
 
-**What to look for:** the system handles repeatable layout, motion or rendering; the creator keeps control of intent, source selection, framing and acceptance. AI assisted development. A fresh autonomous agent run and independent creator studies remain future evidence. [Control boundaries](docs/creative-control.md).
-
-## 03 / Model Breakdown Studio — model to explanation
-
-**Inspect the input · Separate its systems · Explain a component in context**
-
-<table><tr>
-<td width="46%" align="center" valign="top"><a href="https://meshroom-breakdown-studio.limuwen9.chatgpt.site"><img src="media/model-breakdown-editor.png" height="210" alt="Model Breakdown Studio: Press Manufacturing Line opens in an exploded view"></a><br><b>Interactive studio</b><br><sub>Choose a GLB · explode · highlight · export</sub></td>
-<td width="27%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/model-breakdown-films/#equipment"><img src="docs/model-breakdown-films/equipment.webp" height="210" alt="Production equipment separated into readable systems, with hydraulic equipment highlighted"></a><br><b>Explain the equipment</b><br><sub>Production line · component emphasis</sub></td>
-<td width="27%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/model-breakdown-films/#structure"><img src="docs/model-breakdown-films/structure.webp" height="210" alt="Exploded structural system with a readable assembly hierarchy"></a><br><b>Separate the systems</b><br><sub>Structural hierarchy · complete sequence</sub></td>
-</tr></table>
-
-Turn a multi-part model into a readable explanation for AEC and industrial design. The public app starts with **Press Manufacturing Line**, already exploded; switch to Wood House or Car Production Line, or import your own GLB. Compare assembled and exploded views, select a component, then review the output settings before rendering.
-
-[Open the studio →](https://meshroom-breakdown-studio.limuwen9.chatgpt.site) · [Full case study](https://github.com/MuwenTriLi/model-breakdown-studio) · [One-minute walkthrough](https://github.com/MuwenTriLi/model-breakdown-studio#try-it-in-one-minute) · [4K export guide](docs/studio-delivery.md)
-
-## 04 / Animated Storyboard — moving shots on one board
-
-**Compare motion · Arrange and label shots · Review the complete board**
-
-<table><tr>
-<td align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/collage-motion/"><img src="media/collage-review-board.webp" width="960" alt="Animated Storyboard: 35 moving shots with permanent source IDs and white review overlays"></a><br><b>A moving storyboard for shot review</b><br><sub>35 supplied shots · Six white HUD styles · Editable order and framing</sub></td>
-</tr></table>
-
-Bring separate clips into one readable review board so a director, designer or client can compare framing, atmosphere and motion. Preview each source below the canvas, change its order or caption, and choose whether it appears in the board and export.
-
-[Open the board →](https://muwentrili.github.io/creative-workflows/collage-motion/) · [Full case study](projects/03-collage-motion.md) · [Source-clip controls](projects/03-collage-motion.md#source-clips-inspect-and-revise-the-board) · [Design demos & 4K output](https://muwentrili.github.io/creative-workflows/collage-motion/process/)
+**What to look for:** how I turn a production problem into editable behavior, use AI to assist implementation, and keep creative decisions with the person making the work. [Process, controls and evidence](docs/review-guide.md).
 
 ## 01 / Clockwork — my models into an editable motion system
 
@@ -85,6 +59,32 @@ The technical design separates editable inputs from driven results: speed and ph
 As Creative Content Director at **illoca**, I turn a shared architectural aesthetic into a repeatable Blender production method, refined across detail, tower and tennis-venue studies. This case presents completed visuals and high-level decisions; company source scenes and internal Skills remain private.
 
 [Full case study](projects/blue-white-architecture-growth.md) · [Selected films](docs/architecture-growth-media.md#watch-the-selected-films) · [Creator controls and validation](projects/blue-white-architecture-growth.md#the-production-problem)
+
+## 03 / Model Breakdown Studio — model to explanation
+
+**Inspect the input · Separate its systems · Explain a component in context**
+
+<table><tr>
+<td width="46%" align="center" valign="top"><a href="https://meshroom-breakdown-studio.limuwen9.chatgpt.site"><img src="media/model-breakdown-editor.png" height="210" alt="Model Breakdown Studio: Press Manufacturing Line opens in an exploded view"></a><br><b>Interactive studio</b><br><sub>Choose a GLB · explode · highlight · export</sub></td>
+<td width="27%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/model-breakdown-films/#equipment"><img src="docs/model-breakdown-films/equipment.webp" height="210" alt="Production equipment separated into readable systems, with hydraulic equipment highlighted"></a><br><b>Explain the equipment</b><br><sub>Production line · component emphasis</sub></td>
+<td width="27%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/model-breakdown-films/#structure"><img src="docs/model-breakdown-films/structure.webp" height="210" alt="Exploded structural system with a readable assembly hierarchy"></a><br><b>Separate the systems</b><br><sub>Structural hierarchy · complete sequence</sub></td>
+</tr></table>
+
+Turn a multi-part model into a readable explanation for AEC and industrial design. The public app starts with **Press Manufacturing Line**, already exploded; switch to Wood House or Car Production Line, or import your own GLB. Compare assembled and exploded views, select a component, then review the output settings before rendering.
+
+[Open the studio →](https://meshroom-breakdown-studio.limuwen9.chatgpt.site) · [Full case study](https://github.com/MuwenTriLi/model-breakdown-studio) · [One-minute walkthrough](https://github.com/MuwenTriLi/model-breakdown-studio#try-it-in-one-minute) · [4K export guide](docs/studio-delivery.md)
+
+## 04 / Animated Storyboard — moving shots on one board
+
+**Compare motion · Arrange and label shots · Review the complete board**
+
+<table><tr>
+<td align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/collage-motion/"><img src="media/collage-review-board.webp" width="960" alt="Animated Storyboard: 35 moving shots with permanent source IDs and white review overlays"></a><br><b>A moving storyboard for shot review</b><br><sub>35 supplied shots · Six white HUD styles · Editable order and framing</sub></td>
+</tr></table>
+
+Bring separate clips into one readable review board so a director, designer or client can compare framing, atmosphere and motion. Preview each source below the canvas, change its order or caption, and choose whether it appears in the board and export.
+
+[Open the board →](https://muwentrili.github.io/creative-workflows/collage-motion/) · [Full case study](projects/03-collage-motion.md) · [Source-clip controls](projects/03-collage-motion.md#source-clips-inspect-and-revise-the-board) · [Design demos & 4K output](https://muwentrili.github.io/creative-workflows/collage-motion/process/)
 
 ## 05 / Spatial Media Presenter — media in a spatial sequence
 

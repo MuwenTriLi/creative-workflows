@@ -8,7 +8,7 @@ Previously named Collage Motion. The name now describes the main task: compare a
 
 I know the difficulty of discussing a visual direction through a folder of separate clips. This tool puts moving shots on one editable board, with a stable identity for each source and controls for layout, framing and presentation.
 
-**[Open the interactive board ↗](https://muwentrili.github.io/creative-workflows/collage-motion/)** · [Watch the 8 s output](https://muwentrili.github.io/creative-workflows/collage-motion/examples/review-board-demo.mp4) · [Design demos & 4K output](https://muwentrili.github.io/creative-workflows/collage-motion/process/) · [Source](../docs/collage-motion/) · [Local demo release](../docs/distribution.md)
+**[Open the interactive board ↗](https://muwentrili.github.io/creative-workflows/collage-motion/)** · [Watch the 8 s output](https://muwentrili.github.io/creative-workflows/collage-motion/examples/review-board-demo.mp4) · [Design demos & 4K output](https://muwentrili.github.io/creative-workflows/collage-motion/process/) · [How it works](../docs/animated-storyboard-handoff.md) · [Source](../docs/collage-motion/) · [Local demo release](../docs/distribution.md)
 
 [![Thirty-five moving shots, permanent IDs and the original white calibration HUD](../media/collage-review-board.webp)](https://muwentrili.github.io/creative-workflows/collage-motion/)
 
