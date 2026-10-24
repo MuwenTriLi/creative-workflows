@@ -74,21 +74,53 @@ Turn a multi-part model into a readable explanation for AEC and industrial desig
 
 [Open the studio →](https://meshroom-breakdown-studio.limuwen9.chatgpt.site) · [Full case study](https://github.com/MuwenTriLi/model-breakdown-studio) · [One-minute walkthrough](https://github.com/MuwenTriLi/model-breakdown-studio#try-it-in-one-minute) · [4K export guide](docs/studio-delivery.md)
 
-## 04–07 / One studio family, four creative problems
+## 04 / Animated Storyboard — moving shots on one board
 
-A shared visual language follows Model Breakdown: default Arial/Helvetica typography, a dark canvas, rectangular controls, and visible input → local correction → output. The numbered navigation connects the tools. The creative responsibility stays specific to each one.
+**Compare motion · Arrange and label shots · Review the complete board**
 
-| 04 / Animated Storyboard | 05 / Spatial Media Presenter |
-| --- | --- |
-| [![Thirty-five moving shots with original white HUD](media/collage-review-board.jpg)](projects/03-collage-motion.md) | [![Orbital Shift spatial media sequence](media/flipframe-editor.png)](projects/04-flipframe.md) |
-| **Compare moving shots.** Arrange, caption and revise one storyboard cell at a time. [Open board →](https://muwentrili.github.io/creative-workflows/collage-motion/) | **Sequence a visual presentation.** Start with Orbital Shift, adjust the order and timing, then render. [Open studio →](https://flipframe-motion-lab.limuwen9.chatgpt.site) |
+<table><tr>
+<td align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/collage-motion/"><img src="media/collage-review-board.webp" width="960" alt="Animated Storyboard: 35 moving shots with permanent source IDs and white review overlays"></a><br><b>A moving storyboard for shot review</b><br><sub>35 supplied shots · Six white HUD styles · Editable order and framing</sub></td>
+</tr></table>
 
-| 06 / VOX / ONE | 07 / TRACE / 01 |
-| --- | --- |
-| [![Timed typography editor](media/vox-one-editor.png)](projects/05-vox-one.md) | [![TRACE import-first workspace](media/trace-01-editor.png)](projects/06-trace-01.md) |
-| **Make speech readable.** Review timed typography and correct individual words. [Open studio →](https://vox-one.limuwen9.chatgpt.site) | **Explain a moving subject.** Import your footage, select target 01 or choose a fixed anchor, then review the path. [Open studio →](https://trace-01-motion-tracker.limuwen9.chatgpt.site) |
+Bring separate clips into one readable review board so a director, designer or client can compare framing, atmosphere and motion. Preview each source below the canvas, change its order or caption, and choose whether it appears in the board and export.
 
-These are the updated working studios. [Watch actual Animated Storyboard and Spatial Media Presenter outputs, plus the supplied design demos](https://muwentrili.github.io/creative-workflows/collage-motion/process/). Each case explains the problem, creator controls, delivery checks and validation still needed. No measured efficiency or user-study results are claimed.
+[Open the board →](https://muwentrili.github.io/creative-workflows/collage-motion/) · [Full case study](projects/03-collage-motion.md) · [Source-clip controls](projects/03-collage-motion.md#source-clips-inspect-and-revise-the-board) · [Design demos & 4K output](https://muwentrili.github.io/creative-workflows/collage-motion/process/)
+
+## 05 / Spatial Media Presenter — media in a spatial sequence
+
+**Arrange a collection · Control transitions and holds · Present in 4K**
+
+<table><tr>
+<td align="center" valign="top"><a href="https://flipframe-motion-lab.limuwen9.chatgpt.site"><img src="media/flipframe-editor.png" width="960" alt="Spatial Media Presenter: media archive, Orbital Shift preview and editable motion controls"></a><br><b>A spatial presentation with editable pacing</b><br><sub>15 supplied visuals · Orbital Shift on entry · Control order, framing and timing</sub></td>
+</tr></table>
+
+Turn images and motion studies into a presentation that moves from a collection overview to individual works. Import your own media, arrange the sequence and tune each transition and hold so the content remains readable.
+
+[Open the presenter →](https://flipframe-motion-lab.limuwen9.chatgpt.site) · [Full case study](projects/04-flipframe.md) · [Watch the 25 s sequence](https://muwentrili.github.io/creative-workflows/collage-motion/process/#flipframe) · [4K export guide](docs/studio-delivery.md)
+
+## 06 / VOX / ONE — speech into timed typography
+
+**Import speech · Correct the words · Shape the visual rhythm**
+
+<table><tr>
+<td align="center" valign="top"><a href="https://vox-one.limuwen9.chatgpt.site"><img src="media/vox-one-editor.png" width="960" alt="VOX ONE: source media, editable transcript, live typography preview and styling controls"></a><br><b>Editable words, timing and visual emphasis</b><br><sub>Speech-led typography · Transcript correction · Preview before delivery</sub></td>
+</tr></table>
+
+Turn spoken English into timed typography, then review the wording, phrasing and visual emphasis. The studio opens with a silent, authored typography example; import a voice clip to use the speech workflow. Real-speech validation remains part of the next review.
+
+[Open the typography studio →](https://vox-one.limuwen9.chatgpt.site) · [Full case study](projects/05-vox-one.md) · [Verified scope & next checks](docs/functional-review.md) · [Export guide](docs/studio-delivery.md)
+
+## 07 / TRACE / 01 — target tracking and motion annotation
+
+**Import your footage · Choose a target or anchor · Review the overlay**
+
+<table><tr>
+<td align="center" valign="top"><a href="https://trace-01-motion-tracker.limuwen9.chatgpt.site"><img src="media/trace-01-editor.png" width="960" alt="TRACE 01: an empty video import workspace with target selection, position anchor and HUD controls"></a><br><b>Make a subject easier to follow</b><br><sub>Your video · Target 01 or a fixed position anchor · Editable white HUD</sub></td>
+</tr></table>
+
+Connect a subject to a readable locator, path and information overlay. The studio starts empty: import your footage, select a target or place a fixed anchor, then inspect the result. Export timing remains under review; this project is presented as a prototype with documented limits.
+
+[Open the tracking studio →](https://trace-01-motion-tracker.limuwen9.chatgpt.site) · [Full case study](projects/06-trace-01.md) · [Tracking & export limitations](docs/functional-review.md) · [First-use guide](docs/studio-delivery.md)
 
 ## How I turn production experience into a tool
 
