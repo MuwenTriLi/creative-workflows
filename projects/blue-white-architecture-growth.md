@@ -85,7 +85,7 @@ The same reasoning applies to inconsistent dashed-line density and unclear road/
 <td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=tennis-sequence"><img src="../media/architecture-growth/tennis-stage-complete.jpg" width="100%" alt="Tennis / completed venue"></a><br><b>Tennis / completed venue</b><br><sub>Inspect the resolved scene and its surrounding context.</sub><br><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=tennis-sequence">Watch 33 s MP4</a></td>
 </tr></table>
 
-Six complete films are available through the cards. Preview pairs use matching image heights and aligned captions; the tower is scaled proportionally to retain the full frame. The animated cards run at the films’ 24 fps cadence. Preview blue tones are gently balanced toward Detail C; linked MP4s retain the completed films’ original grading. Detail B’s card uses the supplied square-format version. [Film index, source notes and credits →](../docs/architecture-growth-media.md)
+Six complete films are available through the cards. Preview pairs use matching image heights and aligned captions; the tower is scaled proportionally to retain the full frame. The animated cards run at the films’ 24 fps cadence. The complete MP4s, their posters and the animated previews share a blue-gray presentation balance matched to the tennis plan and growth previews above. Detail B’s card uses the supplied square-format version. [Film index, source notes and credits →](../docs/architecture-growth-media.md)
 
 ## What makes the work deliverable
 

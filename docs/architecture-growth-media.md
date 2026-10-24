@@ -34,7 +34,7 @@ These are resized/encoded viewing copies and frame extracts. No geometry or gene
 
 Detail A and the supplied `Detail_B_Square_S02_25s_4096x4096.mp4` use matching 500 × 500 preview frames. Detail C and Tower use 500 × 625; the portrait tower is contained proportionally with a light surround, preserving its building and annotations. Other portrait cards use the same 4:5 frame. The five tennis stills come from 3.96, 9, 13.2, 21 and 28 s of the completed carousel film and share one aspect ratio.
 
-The presentation previews have a restrained blue balance referenced to Detail C. This changes viewing-copy color only, not the original company scenes, geometry or films. The linked full MP4 films keep their existing grading. Every animated preview frame was decoded and its timing checked; this is not a new Blender render or an exhaustive construction-quality certification.
+The six full MP4s, their posters and the current animated previews share a blue-gray presentation balance matched to the tennis plan and growth previews. Fixed corrections reduce the differences between the tower, detail and office sequences without changing their construction, framing or timing. The published MP4s use consistent SDR BT.709 color tags; the original company files remain unchanged. All six encoded films were decoded in full and retain their source frame counts and 24 fps timing. Animated preview frames were decoded and their six-second timing checked. This is a viewing-copy color revision, not a new Blender render or an exhaustive construction-quality certification.
 
 ## Rights and disclosure
 

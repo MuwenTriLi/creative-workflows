@@ -10,13 +10,13 @@ I model, direct visual production and use AI-assisted code to turn recurring pro
 
 ## Selected work
 
-**New here?** Click a **project title** for the problem, my contribution and how it was built. Use **Try / watch** to open the working app or a film directly. No GitHub account is required.
+**New here?** Click a **project title** for the problem, my contribution and how it was built. Use **Open** to visit the product page, launch a web app or watch the films directly. No GitHub account is required.
 
 **Review order:** original modeling → architectural production → tools for model explanation, shot review, spatial presentation, typography and tracking. The same project numbers follow through the portfolio and studios.
 
-| Project / case study | Production problem → design decision | Try / watch |
+| Project / case study | Production problem → design decision | Open |
 | --- | --- | --- |
-| **01 · [Clockwork](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/production-case.md)** | My original models need linked motion and reuse → AI-assisted gear linkages and editable controls | [Watch&nbsp;demo](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=opening-in-blender) |
+| **01 · [Clockwork](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/production-case.md)** | My original models need linked motion and reuse → AI-assisted gear linkages and editable controls | [Superhive&nbsp;product](https://superhivemarket.com/products/steampunk-clockwork-animated-assets) |
 | **02 · [Blue / White Architecture Growth](projects/blue-white-architecture-growth.md)** | Repeated production needs a consistent visual language → reusable styling and staged construction | [Watch&nbsp;films](https://muwentrili.github.io/creative-workflows/films/?project=growth&film=tennis-sequence) |
 | **03 · [Model Breakdown Studio](https://github.com/MuwenTriLi/model-breakdown-studio)** | A dense model is hard to explain → selectable parts, exploded views and editable reveals | [Open&nbsp;web&nbsp;app](https://meshroom-breakdown-studio.limuwen9.chatgpt.site) |
 | **04 · [Animated Storyboard](projects/03-collage-motion.md)** | Separate clips make shot comparison awkward → one moving board with local revisions | [Open&nbsp;web&nbsp;app](https://muwentrili.github.io/creative-workflows/collage-motion/) |

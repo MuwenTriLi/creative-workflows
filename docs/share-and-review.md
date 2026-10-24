@@ -4,11 +4,11 @@ Send this single link:
 
 **[Muwen Li — Creative Workflows](https://github.com/MuwenTriLi/creative-workflows#selected-work)**
 
-The public repository is the front door. A reviewer can read it without a GitHub account. Project titles open case studies with process, controls and evidence. The **Try / watch** column opens a film or web app directly. A visitor does not need to read implementation notes before trying a tool.
+The public repository is the front door. A reviewer can read it without a GitHub account. Project titles open case studies with process, controls and evidence. The **Open** column links directly to the Superhive product, a web app or the films. A visitor does not need to read implementation notes before trying a tool.
 
 ## A short first visit
 
-1. **Clockwork:** watch the mechanism demo, then read the build process connecting Muwen's original models, prepared AI inputs, gear linkages and creator controls.
+1. **Clockwork:** visit the Superhive product page, then read the build process connecting Muwen's original models, prepared AI inputs, gear linkages and creator controls.
 2. **Blue / White Architecture Growth:** watch the completed films, then inspect the company production method and visual direction.
 3. **Model Breakdown Studio:** compare assembled and exploded views, select a component, or switch among the three models.
 4. **Animated Storyboard:** compare the moving shots. Below the canvas, **Source clips** provides individual playback, order, framing and include/hide controls. Hidden clips are excluded from both board and export; removing a card does not delete the source file.
