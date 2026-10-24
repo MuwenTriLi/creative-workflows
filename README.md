@@ -16,13 +16,13 @@ I model, direct visual production and use AI-assisted code to turn recurring pro
 
 | Project / case study | Production problem → design decision | Try / watch |
 | --- | --- | --- |
-| **01 · [Clockwork](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/production-case.md)** | My original models need linked motion and reuse → AI-assisted gear linkages and editable controls | [Watch demo ↗](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=opening-in-blender) |
-| **02 · [Blue / White Architecture Growth](projects/blue-white-architecture-growth.md)** | Repeated production needs a consistent visual language → reusable styling and staged construction | [Watch films ↗](https://muwentrili.github.io/creative-workflows/films/?project=growth&film=tennis-sequence) |
-| **03 · [Model Breakdown Studio](https://github.com/MuwenTriLi/model-breakdown-studio)** | A dense model is hard to explain → selectable parts, exploded views and editable reveals | [Open web app ↗](https://meshroom-breakdown-studio.limuwen9.chatgpt.site) |
-| **04 · [Animated Storyboard](projects/03-collage-motion.md)** | Separate clips make shot comparison awkward → one moving board with local revisions | [Open web app ↗](https://muwentrili.github.io/creative-workflows/collage-motion/) |
-| **05 · [Spatial Media Presenter](projects/04-flipframe.md)** | A collection needs editorial pacing → editable spatial order, transitions and holds | [Open web app ↗](https://flipframe-motion-lab.limuwen9.chatgpt.site) |
-| **06 · [VOX / ONE](projects/05-vox-one.md)** | Speech and visual rhythm need to agree → editable words, timing and typography | [Open web app ↗](https://vox-one.limuwen9.chatgpt.site) |
-| **07 · [TRACE / 01](projects/06-trace-01.md)** | A moving subject needs visual context → target selection, anchors and overlays | [Open prototype ↗](https://trace-01-motion-tracker.limuwen9.chatgpt.site) |
+| **01 · [Clockwork](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/production-case.md)** | My original models need linked motion and reuse → AI-assisted gear linkages and editable controls | [Watch demo](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=opening-in-blender) |
+| **02 · [Blue / White Architecture Growth](projects/blue-white-architecture-growth.md)** | Repeated production needs a consistent visual language → reusable styling and staged construction | [Watch films](https://muwentrili.github.io/creative-workflows/films/?project=growth&film=tennis-sequence) |
+| **03 · [Model Breakdown Studio](https://github.com/MuwenTriLi/model-breakdown-studio)** | A dense model is hard to explain → selectable parts, exploded views and editable reveals | [Open web app](https://meshroom-breakdown-studio.limuwen9.chatgpt.site) |
+| **04 · [Animated Storyboard](projects/03-collage-motion.md)** | Separate clips make shot comparison awkward → one moving board with local revisions | [Open web app](https://muwentrili.github.io/creative-workflows/collage-motion/) |
+| **05 · [Spatial Media Presenter](projects/04-flipframe.md)** | A collection needs editorial pacing → editable spatial order, transitions and holds | [Open web app](https://flipframe-motion-lab.limuwen9.chatgpt.site) |
+| **06 · [VOX / ONE](projects/05-vox-one.md)** | Speech and visual rhythm need to agree → editable words, timing and typography | [Open web app](https://vox-one.limuwen9.chatgpt.site) |
+| **07 · [TRACE / 01](projects/06-trace-01.md)** | A moving subject needs visual context → target selection, anchors and overlays | [Try prototype](https://trace-01-motion-tracker.limuwen9.chatgpt.site) |
 
 **Review status:** the browser tools are interactive prototypes with documented export checks. TRACE still has a known export-timing issue. [Tested outputs and current limits](docs/functional-review.md).
 
