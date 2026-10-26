@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "title": "Spatial Media Presenter",
+  "hosted_url": "https://flipframe-motion-lab.limuwen9.chatgpt.site",
+  "hosted_version": 50,
+  "hosted_source_commit": "99799d6bd4bdb5843de7eb6da497eb646f228567",
+  "reviewed_on": "2026-10-26",
+  "scope": "Byte-identical browser application, supporting modules and selected public demo media; new local-only Vite runner. This is not the hosted server/deployment configuration.",
+  "files": [
+    {
+      "path": "app/exporter.ts",
+      "sha256": "20d493d9d84558172e0d494eeeeeae05403d48657b9e4133227bc53db25dc4e2"
+    },
+    {
+      "path": "app/globals.css",
+      "sha256": "336a5bb2e67e9795583e30d0add976f993887507762d706901cf54d94efaf7a4"
+    },
+    {
+      "path": "app/page.tsx",
+      "sha256": "b2081fa4e1c2aa2d91b487d98ce7961fac2314ff4c453b0d95dd84b742b85fc1"
+    },
+    {
+      "path": "app/sample-project.test.mjs",
+      "sha256": "454acefad5db0944e3a30c4052b5dc307554553b24303d96fb94820df4144fbd"
+    },
+    {
+      "path": "app/sample-project.ts",
+      "sha256": "affded06b7cdd7212d2f425362293b2346975a165a20f97fc8f1ae9cb8ad31b9"
+    },
+    {
+      "path": "public/portfolio-media/work-1.jpg",
+      "sha256": "d055e2e977da91224a5d5945d4243d9cae1caffdcdafe114f33548a907cde6ca"
+    },
+    {
+      "path": "public/portfolio-media/work-10.jpg",
+      "sha256": "b7038e335c319e3c97192be96cf89512cad6535056e157d5c4633ed430b1d19c"
+    },
+    {
+      "path": "public/portfolio-media/work-11.jpg",
+      "sha256": "7312f6ac1d090bbc562f1086812d502551ffe8cd81e42543d0b4ec435b3600b7"
+    },
+    {
+      "path": "public/portfolio-media/work-12.jpg",
+      "sha256": "2b2f152e323d01215c6de2c01282b4980fb80efa09419174ec16ef4fcda903a2"
+    },
+    {
+      "path": "public/portfolio-media/work-13.jpg",
+      "sha256": "a129907f1411e00020efbd1e51737c8cf24ff1e413afcba2d0bbf96c8920b3df"
+    },
+    {
+      "path": "public/portfolio-media/work-14.jpg",
+      "sha256": "ce4cc3508b11b507e5dc5ede85b9ac560f2f84d2b917a34fb9dd095c3c5789c6"
+    },
+    {
+      "path": "public/portfolio-media/work-16.jpg",
+      "sha256": "6007642e6f563d33fd14fda24b7dc2ca8c8d2982279639b83770dbd06aefb619"
+    },
+    {
+      "path": "public/portfolio-media/work-2.jpg",
+      "sha256": "1d0ae7fcef18766d348430c947ca9c059f33e2ca7663372b6398f4c99f7d6302"
+    },
+    {
+      "path": "public/portfolio-media/work-3.jpg",
+      "sha256": "35e078d6735819d130b8c4812a6729f6643075ebe16f4390cf103d554f4b360a"
+    },
+    {
+      "path": "public/portfolio-media/work-4.jpg",
+      "sha256": "ccbc634603d8fc73ef9e816c86b2d56bb3402c500320ff11af33497f4e97b4e5"
+    },
+    {
+      "path": "public/portfolio-media/work-5.mp4",
+      "sha256": "6500dd0c1754fe87b2a63519c10bb5aa8a39fc97066be7d254b1a3db887cb2cb"
+    },
+    {
+      "path": "public/portfolio-media/work-6.mp4",
+      "sha256": "c52c11ca21ce43999707b16e6e3965ea3f90037e5348661b11387167c8e5fb81"
+    },
+    {
+      "path": "public/portfolio-media/work-7.mp4",
+      "sha256": "dcd56bef80358cc334924b312b1ecb0b04509836e1b9f2fc3745001867eb7d61"
+    },
+    {
+      "path": "public/portfolio-media/work-8.mp4",
+      "sha256": "0381591cc884703639dd299a5fd730c65ec89bcaf8986e1ec1b043c244766ebd"
+    },
+    {
+      "path": "public/portfolio-media/work-9.jpg",
+      "sha256": "1af0dc33eaa257a10f434e4a143fb13ec64cffa5a8fcb4d4972aabe605eed3fd"
+    }
+  ]
+}

@@ -4,7 +4,7 @@ Send this single link:
 
 **[Muwen Li — Creative Workflows](https://github.com/MuwenTriLi/creative-workflows#selected-work)**
 
-The public repository is the front door. A reviewer can read it without a GitHub account. Project titles open case studies with process, controls and evidence. The **Open** column links directly to the Superhive product, a web app or the films. A visitor does not need to read implementation notes before trying a tool.
+The public repository is the front door. A reviewer can read it without a GitHub account. Project titles open project homes with workflow, source/setup and evidence; detailed case studies are one level deeper. The **Open** column links directly to the Superhive product, a web app or the films. A visitor does not need to read implementation notes before trying a tool.
 
 ## A short first visit
 
@@ -25,3 +25,6 @@ All five studio entrances are public web pages. Bundled examples are hosted asse
 Anonymous HTTP checks establish public access without account cookies. They do **not** establish identical playback speed on every GPU, browser or connection. Actual checks and known limitations are recorded in the [functional review](functional-review.md); [4K export steps](studio-delivery.md) explain each tool's output flow. Motion Tracking Studio's real-time export timing remains a documented limitation.
 
 The new Model Breakdown films are [available here](https://muwentrili.github.io/creative-workflows/model-breakdown-films/), with full duration and 30 fps playback. README animations are compact previews; the linked MP4s are the clearer viewing format.
+
+
+The account profile is [github.com/MuwenTriLi](https://github.com/MuwenTriLi). For someone seeing the work for the first time, use the collection link at the top of this page: it opens the intended seven-project review route directly.

@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "title": "Motion Tracking Studio",
+  "hosted_url": "https://trace-01-motion-tracker.limuwen9.chatgpt.site",
+  "hosted_version": 18,
+  "hosted_source_commit": "af403c595566ce4a35543d0d88a44f7957b8aa04",
+  "reviewed_on": "2026-10-26",
+  "scope": "Byte-identical browser application, supporting modules and selected public demo media; new local-only Vite runner. This is not the hosted server/deployment configuration.",
+  "files": [
+    {
+      "path": "app/globals.css",
+      "sha256": "0707d400d2a87b143bb6d175719307f692c5c62fa15db5de88ee24bf7f51f6b9"
+    },
+    {
+      "path": "app/page.tsx",
+      "sha256": "214c8625c4848bb565f6d80abfc243eb75c9ec4929564818d3cc88b7e62fd844"
+    }
+  ]
+}

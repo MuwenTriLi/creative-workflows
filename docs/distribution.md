@@ -6,7 +6,7 @@ Use the public web app to review the portfolio without installing anything. Use 
 
 ## Animated Storyboard local demo
 
-[Open release v0.1.0](https://github.com/MuwenTriLi/creative-workflows/releases/tag/animated-storyboard-v0.1.0) and download **animated-storyboard-v0.1.0.zip** from its Assets section. The package contains the current static application, its vendored browser dependencies and licenses, and the 35-shot example with preview/export atlases. It supersedes the older Collage Motion ZIP that was stored in the repository.
+[Open release v0.1.0](https://github.com/MuwenTriLi/creative-workflows/releases/tag/animated-storyboard-v0.1.0) and download **animated-storyboard-v0.1.0.zip** from its Assets section. The package freezes the application at that release's recorded source commit; it contains the static application, its vendored browser dependencies and licenses, and the 35-shot example with preview/export atlases. It supersedes the older Collage Motion ZIP that was stored in the repository.
 
 1. Extract the ZIP and open a terminal inside its `animated-storyboard` folder.
 2. With Python 3 installed, run `python -m http.server 8766 --bind 127.0.0.1` (on Windows, `py -3` can replace `python`). No Python packages or build step are needed.
@@ -29,8 +29,35 @@ The release includes `release-manifest.json` with its source commit and per-file
 | Storyboard application | [Source](collage-motion/) and the tagged release; this public demo does not add a new open-source license |
 | Bundled dependencies | Their license files are retained in `licenses/` |
 | Example footage and visual work | Portfolio demonstration only; no separate reuse license is granted |
-| Model Breakdown | [Separate repository](https://github.com/MuwenTriLi/model-breakdown-studio), with its existing scoped MIT code license |
+| Model Breakdown | [Separate repository](https://github.com/MuwenTriLi/model-breakdown-studio): `studio/` records current browser source; the root adaptation retains its existing scoped MIT license |
 | Clockwork Blender library | [Commercial product](https://superhivemarket.com/products/steampunk-clockwork-animated-assets); the [public showcase](https://github.com/MuwenTriLi/steampunk-clockwork-showcase) documents its workflow |
 | Company work | Approved presentation material only; source scenes and internal Skills are not distributed |
 
 [Export steps and device limits](studio-delivery.md) · [Completed functional checks](functional-review.md)
+
+
+## Browser source and local runners
+
+| Project | Start here | Recorded hosted version |
+| --- | --- | --- |
+| Model Breakdown | [Current browser source](https://github.com/MuwenTriLi/model-breakdown-studio/tree/main/studio) | 31 |
+| Animated Storyboard | [Static application](collage-motion/) / [Project](../projects/04-animated-storyboard/) | GitHub Pages source in this repository; Release v0.1.0 is a frozen distribution |
+| Spatial Media Presenter | [Source and local setup](../projects/05-spatial-media-presenter/source/) | 50 |
+| Kinetic Typography | [Source and local setup](../projects/06-kinetic-typography/source/) | 22 |
+| Motion Tracking | [Source and local setup](../projects/07-motion-tracking/source/) | 18 |
+
+Each React source package includes `source-manifest.json` with the hosted commit and SHA-256 hashes of copied browser files. The hosted deployments above were confirmed successful on October 26, 2026. The added Vite runners are local adaptations of the hosting entry point, with the browser implementation unchanged. These are recorded snapshots, not automatically synchronized mirrors.
+
+Use Node 22.13+ and pnpm 11.25.0. Enter the selected source directory and run:
+
+```sh
+pnpm install --frozen-lockfile --ignore-scripts
+pnpm verify:source
+pnpm dev
+```
+
+`pnpm build` and `pnpm preview` inspect the production bundle. Model Breakdown and Spatial Media Presenter also expose focused `pnpm test` checks. See each package's README and rights notice before reusing code or example assets. This publication grants no new license to source snapshots or media; the earlier Model Breakdown code license retains its stated scope.
+
+The typography demo runs without a speech model. Starting transcription downloads the public Whisper weights and runs inference in the browser; no paid API or API key is configured. Internet is needed for initial package/model downloads and links to other studios. Model and media examples are bundled where stated; private visitor files should never be committed.
+
+Download archives remain in Releases. Source directories are inspectable projects, not download folders. The new source snapshots have not been packaged into new Releases; the Storyboard release above remains the available versioned demo archive. [This publication's checks](publication-checks.md).

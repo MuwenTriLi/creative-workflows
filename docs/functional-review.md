@@ -58,7 +58,7 @@ Reproduction: import the 960 × 540 / 30 fps / 4 s synthetic occlusion clip, sel
 
 Read-only source checks found browser-local handling on the tested paths: Spatial Media Presenter canvas/video encoding, Motion Tracking Studio image-template tracking and MediaRecorder export, and Kinetic Typography Studio Whisper inference via Transformers.js/WASM plus local video/audio encoding. Kinetic Typography Studio downloads public model weights on first use. No paid inference API invocation was found in these tested paths or made during this audit. This is not a general security or billing audit of every dependency.
 
-That initial read-only audit left the three source checkouts unchanged. The later authorized studio revision modified and published the Sites apps; their full source was not copied into this portfolio repository. Only user-approved display media and documentation were added.
+That initial read-only audit left the three source checkouts unchanged. The later studio revision modified and published the Sites apps; at that time only approved display media and documentation were copied into this portfolio. On October 26, browser-source snapshots and local runners were added to the project directories. Their [publication checks](publication-checks.md) are separate from the historical export tests below.
 
 ## Source and verification scope
 
@@ -68,7 +68,7 @@ Encoded files were inspected with ffprobe and decoded with FFmpeg while retainin
 
 ## 2026-10-23 / Earlier moving storyboard update (superseded)
 
-This earlier revision exported its sample board from the Collage editor. It used native-frame-rate, 640 × 360 viewing copies of 40 supplied clips and showed 20 at a time. That opening state was superseded by the current 35-shot selection and shared atlas described at the top of this record. The earlier export included review overlays and captions. Decode and frame checks do not measure the filmmaker’s communication quality or general device performance. [Case and next test](../projects/03-collage-motion.md).
+This earlier revision exported its sample board from the Collage editor. It used native-frame-rate, 640 × 360 viewing copies of 40 supplied clips and showed 20 at a time. That opening state was superseded by the current 35-shot selection and shared atlas described at the top of this record. The earlier export included review overlays and captions. Decode and frame checks do not measure the filmmaker’s communication quality or general device performance. [Case and next test](../projects/04-animated-storyboard/).
 
 ## First-visit acceptance scope
 

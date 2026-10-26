@@ -1,6 +1,6 @@
 # Architecture Growth: selected outputs and presentation scope
 
-[← Company case](../projects/blue-white-architecture-growth.md) · [All projects](../README.md#selected-work)
+[← Company case](../projects/02-architecture-growth/) · [All projects](../README.md#selected-work)
 
 **Company: illoca · Role: Muwen Li, Creative Content Director.** Selected completed company visuals are shown for portfolio presentation. The package is evidence of production direction and method, not a public template or downloadable style system.
 

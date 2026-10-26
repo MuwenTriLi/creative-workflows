@@ -1,6 +1,6 @@
 # Animated Storyboard: implementation and test map
 
-[← Case study](../projects/03-collage-motion.md) · [Source](collage-motion/) · [Local demo and releases](distribution.md)
+[← Case study](../projects/04-animated-storyboard/) · [Source](collage-motion/) · [Local demo and releases](distribution.md)
 
 **Task:** put moving shots on one readable board, revise an individual source and export the accepted composition. The working prototype supports this bounded task. This document maps it to code and checks; it is not a claim of an engineering team adopting the feature.
 
