@@ -74,3 +74,7 @@ Show the original clip beside the annotated result, then a short recording of on
 ## Shared studio, distinct responsibility
 
 The import-first workspace, visible input/output actions, shared navigation, default Arial/Helvetica typography and rectangular dark controls follow Model Breakdown's workspace language. The tool's specific acceptance criteria above remain separate; a common appearance does not imply equal production readiness.
+
+## Export follow-up — October 26, 2026
+
+The earlier timing failure above is superseded for the two bounded fixtures in the [export repair record](export-check.md). Sequential frame encoding now passes 4K and FHD video timing. Tracking accuracy and occlusion recovery remain separate open tests.

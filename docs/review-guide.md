@@ -14,7 +14,7 @@ This portfolio connects three kinds of evidence: a commercial asset product, int
 4. **Animated Storyboard — feedback into product iteration:** [Case decisions](../projects/04-animated-storyboard/docs/workflow.md#from-production-experience-to-product-decisions). Revise a source on the moving board, then follow the [implementation and test map](animated-storyboard-handoff.md).
 5. **Spatial Media Presenter — editable pacing:** [Sequence case](../projects/05-spatial-media-presenter/). Inspect order, transitions and readable holds.
 6. **Kinetic Typography Studio — speech and type:** [Typography case](../projects/06-kinetic-typography/). Review transcript correction, timing and the bounded speech checks.
-7. **Motion Tracking Studio — tracking and recovery:** [Prototype case](../projects/07-motion-tracking/). Inspect target selection, anchors and the remaining export issue.
+7. **Motion Tracking Studio — tracking and recovery:** [Prototype case](../projects/07-motion-tracking/). Inspect target selection, anchors and the revised encoded timing and remaining target-recovery limits.
 
 The order matches the portfolio. Each case supports a different part of the production-to-product story; the evidence table below distinguishes its current maturity.
 
@@ -22,13 +22,13 @@ The order matches the portfolio. Each case supports a different part of the prod
 
 | Project | Evidence available now | Important missing proof | Current decision |
 | --- | --- | --- | --- |
-| **01 · [Clockwork](https://github.com/MuwenTriLi/steampunk-clockwork-showcase)** | Commercial library, original renders, motion excerpts, controller documentation and instruction Skill | One freshly recorded adaptation from brief to checked output; an unfamiliar creator repeating it | Lead with how my original models became linked mechanisms and creator controls. **Iterate** the agent-assisted adaptation before expanding it. |
+| **01 · [Clockwork](https://github.com/MuwenTriLi/steampunk-clockwork-showcase)** | Commercial library, original renders, controller documentation, instruction Skill and a [checked CLK32 speed change](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/control-study.md) | An unfamiliar creator repeating the task; broader recomposition | Lead with how my original models became linked mechanisms and creator controls. **Iterate** the agent-assisted adaptation before expanding it. |
 | **02 · [Architecture Growth](../projects/02-architecture-growth/)** | Completed illoca tennis/detail/tower/office visuals; director role and internal-method explanation | An approved local correction recording, shot-level credits and repeatability observation | **Develop the production case** around creator control. Company source and internal Skill remain private. |
 | **03 · [Model Breakdown](https://github.com/MuwenTriLi/model-breakdown-studio/blob/main/docs/product-case.md)** | Four architectural output films and stills; three selectable real GLBs with loading, explode and selection checks; short synthetic and real Press-model 4K export checks; published browser source with version mapping; the earlier adaptation retains its scoped MIT license | A process recording connecting a real input to the selected output, one framing correction and an unfamiliar creator task | **Iterate** the import-to-delivery path before claiming general model support. |
 | **04 · [Animated Storyboard](../projects/04-animated-storyboard/)** | 35-shot presentation, original white HUD styles, local shot replacement and an eight-second 4K / 24 fps export with motion verified in all 35 tiles | Unassisted first-use task; larger projects and mixed-media output quality checks | **Iterate** usability with creators before adding automatic editorial choices. |
 | **05 · [Spatial Media Presenter](../projects/05-spatial-media-presenter/)** | Updated 15-visual example; revised direct 4K exports match 7.45 s and 25 s timing | Viewer readability study, compatibility capture and long-project responsiveness | **Validate readability and compatibility** before expanding motion modes. |
 | **06 · [Kinetic Typography Studio](../projects/06-kinetic-typography/)** | Clean synthetic English transcription, confirmed punctuation correction and 4K H.264/AAC output | Real speech with names/noise, measured sync, alpha output and editor round trip | **Validate the core task** before expanding languages or automation. |
-| **07 · [Motion Tracking Studio](../projects/07-motion-tracking/)** | Occlusion fixture, confidence/reacquire state and downloaded FHD export; timing check fails | Correct encoded timing, target-identity review and recoverable local correction | **Fix export and validate recovery** before expanding tracking scope. |
+| **07 · [Motion Tracking Studio](../projects/07-motion-tracking/)** | Occlusion fixture, confidence/reacquire state and [repaired 4K/FHD export timing](../projects/07-motion-tracking/docs/export-check.md) | Real-footage target-identity review and recoverable local correction | **Validate recovery** before expanding tracking scope. |
 
 “Current decision” is a product recommendation based on the available evidence, not a completed customer-study result. There are no measured time-saving, accuracy or adoption claims.
 
@@ -59,7 +59,7 @@ The new architectural outputs improve the presentation of Model Breakdown and Ar
 
 ## What to prove next
 
-Prioritize **one complete Clockwork adaptation** and **one unassisted Animated Storyboard session**. These extend the strongest existing evidence: production craft and an actual interface iteration. Record the brief, one local correction, the checked output and the decision it changes. Keep the same sources and quality target when comparing with an existing workflow.
+A bounded Clockwork timing adaptation is now recorded. Prioritize **an unfamiliar creator repeating that task** and **one unassisted Animated Storyboard session**. These extend the strongest existing evidence: production craft and an actual interface iteration. Record the brief, one local correction, the checked output and the decision it changes. Keep the same sources and quality target when comparing with an existing workflow.
 
 For the remaining cases, use the bounded task at the top of each case page. Run a small exploratory study only after the core input-to-output path works. A few successful sessions justify the next experiment; they do not establish broad market demand or production reliability.
 

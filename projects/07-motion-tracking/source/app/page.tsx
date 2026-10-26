@@ -2,6 +2,8 @@
 
 import { ChangeEvent, MouseEvent, useCallback, useEffect, useRef, useState } from "react";
 
+import { encodeTrackingMp4, seekExportFrame } from "./export-mp4.mjs";
+
 type Point = { x: number; y: number };
 type TrackerSample = {
   dx: number;
@@ -78,23 +80,6 @@ const getExportVideoBitrate = (width: number, height: number, quality: ExportQua
     return longEdge >= 3840 ? 82_000_000 : longEdge >= 2560 ? 50_000_000 : 28_000_000;
   }
   return longEdge >= 3840 ? 140_000_000 : longEdge >= 2560 ? 90_000_000 : 55_000_000;
-};
-
-const getMp4MimeType = (hasAudio: boolean) => {
-  const candidates = hasAudio
-    ? [
-        'video/mp4;codecs="avc1.640034,mp4a.40.2"',
-        "video/mp4",
-        'video/mp4;codecs="avc1.42E01E,mp4a.40.2"',
-        "video/mp4;codecs=h264,aac",
-      ]
-    : [
-        'video/mp4;codecs="avc1.640034"',
-        "video/mp4",
-        'video/mp4;codecs="avc1.42E01E"',
-        "video/mp4;codecs=h264",
-      ];
-  return candidates.find((candidate) => MediaRecorder.isTypeSupported(candidate)) ?? "";
 };
 
 const clamp = (value: number, minimum: number, maximum: number) =>
@@ -1052,7 +1037,7 @@ const UI_ZH: Record<string,string> = {
   "Full source · 00:00 → end": "完整视频 · 00:00 → 结尾",
   "Frame": "画面",
   "Compositing MP4…": "MP4 合成中…",
-  "Export 4K MP4": "导出极清 MP4",
+  "Export MP4": "导出 MP4",
   "Media is processed locally. Export renders the full source from 0 seconds and follows LOCK IN and HUD IN timing. Aspect changes preserve source proportions, with black padding where needed.": "素材仅在本地处理。导出会从 0 秒完整渲染，并严格按 LOCK IN 与 HUD IN 时间播放元素；切换横竖画幅后仍保持原比例，不裁切、不拉伸，空余区域自动留黑。"
 };
 
@@ -1141,6 +1126,9 @@ export default function Home() {
   const [exportSize, setExportSize] = useState("3840x2160");
   const [exportQuality, setExportQuality] = useState<ExportQuality>("maximum");
   const [isExporting, setIsExporting] = useState(false);
+  const exportingRef = useRef(false);
+  const cancelExportRef = useRef(false);
+  const [includeSourceAudio, setIncludeSourceAudio] = useState(false);
   const [exportProgress, setExportProgress] = useState(0);
   const [canvasBackgroundColor, setCanvasBackgroundColor] = useState("#000000");
   const [toast, setToast] = useState("");
@@ -1232,7 +1220,7 @@ export default function Home() {
   }, [toast]);
 
   const renderFrame = useCallback(
-    (runTracking = true) => {
+    (runTracking = true, timelineMs?: number) => {
       const video = videoRef.current;
       const canvas = canvasRef.current;
       if (!video || !canvas || !videoReady) return;
@@ -1250,14 +1238,14 @@ export default function Home() {
         canvasBackgroundRef.current,
       );
 
-      const now = performance.now();
+      const now = timelineMs ?? performance.now();
       if (
         runTracking &&
         trackingRef.current &&
         selectedRef.current &&
         templateRef.current.length &&
         video.currentTime + 0.001 >= selectionTimeRef.current &&
-        now - lastAnalysisRef.current > 38
+        now - lastAnalysisRef.current >= (timelineMs === undefined ? 38 : 1000 / 30 - 0.01)
       ) {
         lastAnalysisRef.current = now;
         trackerFrameRef.current += 1;
@@ -1416,7 +1404,7 @@ export default function Home() {
       }
 
       if (selectedRef.current) {
-        const hudNow = performance.now();
+        const hudNow = timelineMs ?? performance.now();
         const previousHudRender = lastHudRenderRef.current || hudNow - 16.67;
         const hudDelta = clamp((hudNow - previousHudRender) / 1000, 1 / 240, 1 / 24);
         lastHudRenderRef.current = hudNow;
@@ -1534,7 +1522,7 @@ export default function Home() {
     const loop = () => {
       const video = videoRef.current;
       const now = performance.now();
-      if (videoReady && video && video.readyState >= 2 && (!video.paused || selectedRef.current || firstFramePendingRef.current || now - lastPausedPaint > 200)) {
+      if (!exportingRef.current && videoReady && video && video.readyState >= 2 && (!video.paused || selectedRef.current || firstFramePendingRef.current || now - lastPausedPaint > 200)) {
         renderFrame(!video.paused);
         firstFramePendingRef.current = false;
         lastPausedPaint = now;
@@ -1697,6 +1685,7 @@ export default function Home() {
   };
 
   const selectTarget = (event: MouseEvent<HTMLCanvasElement>) => {
+    if (exportingRef.current) return;
     if (!videoReady) return;
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -1918,27 +1907,20 @@ export default function Home() {
 
   const exportVideo = async () => {
     const video = videoRef.current;
-    if (!videoReady || !video || !selected) {
+    if (!videoReady || !video || !selected || exportingRef.current) {
       setToast(tr("Import a video and select a tracking target first"));
       return;
     }
-    if (!("MediaRecorder" in window)) {
-      setToast(tr("This browser does not support video compositing export"));
-      return;
-    }
-
-    video.loop = false;
+    exportingRef.current = true;
+    cancelExportRef.current = false;
+    setIsExporting(true);
+    setExportProgress(0);
     video.pause();
     setIsPlaying(false);
-    if (Math.abs(video.currentTime) > 0.01 || video.ended) {
-      await new Promise<void>((resolve) => {
-        video.addEventListener("seeked", () => resolve(), { once: true });
-        video.currentTime = 0;
-      });
-    } else {
-      video.currentTime = 0;
-    }
-
+    const originalLoop = video.loop;
+    video.loop = false;
+    try {
+      await seekExportFrame(video, 0);
     const exportSeedPoint = {
       ...(placementModeRef.current === "pin" ? staticPointRef.current : seedPointRef.current),
     };
@@ -1951,7 +1933,7 @@ export default function Home() {
     hudPositionRef.current = exportSeedPoint;
     hudVelocityRef.current = { x: 0, y: 0 };
     hudTrailRef.current = [exportSeedPoint];
-    lastHudRenderRef.current = performance.now();
+    lastHudRenderRef.current = 0;
     lastVideoTimeRef.current = 0;
     lastAnalysisRef.current = 0;
     trackerFrameRef.current = 0;
@@ -1967,89 +1949,19 @@ export default function Home() {
     exportCanvas.width = width;
     exportCanvas.height = height;
     const exportCtx = exportCanvas.getContext("2d", { alpha: false });
-    if (!exportCtx) return;
+    if (!exportCtx) throw new Error("Canvas export is unavailable.");
     exportCtx.imageSmoothingEnabled = true;
     exportCtx.imageSmoothingQuality = "high";
 
-    const visualStream = exportCanvas.captureStream(EXPORT_FRAME_RATE);
-    const outputStream = new MediaStream(visualStream.getVideoTracks());
-    const sourceStream = (
-      video as HTMLVideoElement & { captureStream?: () => MediaStream }
-    ).captureStream?.();
-    const audioTracks = sourceStream?.getAudioTracks() ?? [];
-    audioTracks.forEach((track) => outputStream.addTrack(track));
 
-    const mime = getMp4MimeType(audioTracks.length > 0);
-    if (!mime) {
-      outputStream.getTracks().forEach((track) => track.stop());
-      setToast(tr("MP4 / H.264 export is unavailable. Use a current version of Chrome, Edge or Safari"));
-      return;
-    }
-
-    const videoBitrate = getExportVideoBitrate(width, height, exportQuality);
-    let recorder: MediaRecorder;
-    try {
-      recorder = new MediaRecorder(outputStream, {
-        mimeType: mime,
-        videoBitsPerSecond: videoBitrate,
-        audioBitsPerSecond: 320_000,
-      });
-    } catch {
-      outputStream.getTracks().forEach((track) => track.stop());
-      setToast(tr("The MP4 encoder could not start. Try a lower resolution"));
-      return;
-    }
-    const chunks: BlobPart[] = [];
-    const startTime = 0;
-    let stopped = false;
-    let cancelled = false;
-
-    recorder.ondataavailable = (event) => {
-      if (event.data.size) chunks.push(event.data);
-    };
-    recorder.onstop = () => {
-      video.loop = true;
-      outputStream.getTracks().forEach((track) => track.stop());
-      if (cancelled) {
-        setIsExporting(false);
-        return;
-      }
-      const blob = new Blob(chunks, { type: recorder.mimeType || mime });
-      if (!blob.size) {
-        setIsExporting(false);
-        setToast(tr("The MP4 export contains no valid frames. Try a lower resolution"));
-        return;
-      }
-      const url = URL.createObjectURL(blob);
-      const anchor = document.createElement("a");
-      anchor.href = url;
-      anchor.download = `trace-01_${width}x${height}_hq.mp4`;
-      anchor.click();
-      window.setTimeout(() => URL.revokeObjectURL(url), 1000);
-      setIsExporting(false);
-      setExportProgress(100);
-      setToast(`${width}×${height} MP4 exported`);
-    };
-    recorder.onerror = () => {
-      cancelled = true;
-      stopped = true;
-      video.pause();
-      outputStream.getTracks().forEach((track) => track.stop());
-      setIsPlaying(false);
-      setIsExporting(false);
-      setToast(tr("MP4 encoding stopped. Lower the resolution or close other GPU-intensive tabs"));
-    };
-
-    const finish = () => {
-      if (stopped) return;
-      stopped = true;
-      video.pause();
-      setIsPlaying(false);
-      if (recorder.state !== "inactive") recorder.stop();
-    };
-
-    const paintExport = () => {
-      if (stopped) return;
+      const blob = await encodeTrackingMp4({
+        video, canvas: exportCanvas, duration, fps: EXPORT_FRAME_RATE,
+        bitrate: getExportVideoBitrate(width, height, exportQuality),
+        includeAudio: includeSourceAudio,
+        cancelled: () => cancelExportRef.current,
+        progress: (value: number) => setExportProgress(value),
+        render: (index: number) => {
+          renderFrame(true, 1000 + index * 1000 / EXPORT_FRAME_RATE);
       exportCtx.clearRect(0, 0, width, height);
       const exportVideoRect = drawContainedVideo(
         exportCtx,
@@ -2128,29 +2040,26 @@ export default function Home() {
         exportTranslateX,
         exportTranslateY,
       );
-      const remaining = Math.max(0.01, duration - startTime);
-      setExportProgress(Math.min(99, ((video.currentTime - startTime) / remaining) * 100));
-      if (video.ended || video.currentTime >= duration - 0.04) {
-        finish();
-        return;
-      }
-      requestAnimationFrame(paintExport);
-    };
 
-    setIsExporting(true);
-    setExportProgress(0);
-    setToast(`Encoding MP4 · ${Math.round(videoBitrate / 1_000_000)} Mbps`);
-    try {
-      recorder.start(500);
-      await video.play();
-      setIsPlaying(true);
-      paintExport();
-    } catch {
-      cancelled = true;
-      finish();
-      outputStream.getTracks().forEach((track) => track.stop());
+        },
+      });
+      const url = URL.createObjectURL(blob);
+      const anchor = document.createElement("a");
+      anchor.href = url;
+      anchor.download = `motion-tracking_${width}x${height}_60fps.mp4`;
+      anchor.click();
+      window.setTimeout(() => URL.revokeObjectURL(url), 10000);
+      setExportProgress(100);
+      setToast(`${width}×${height} MP4 · ${duration.toFixed(2)} s · 60 fps exported`);
+    } catch (error) {
+      setToast(error instanceof Error ? error.message : "Export failed. Please try another resolution.");
+    } finally {
+      video.pause();
+      video.loop = originalLoop;
+      exportingRef.current = false;
       setIsExporting(false);
-      setToast(tr("Video playback could not start. Press Play, then export again"));
+      setIsPlaying(false);
+      setCurrentTime(video.currentTime);
     }
   };
 
@@ -2185,7 +2094,7 @@ export default function Home() {
       </header>
 <nav className="family-nav" aria-label="Creative workflow studios"><span>MUWEN LI / STUDIOS</span><a href="https://meshroom-breakdown-studio.limuwen9.chatgpt.site"><b>03</b>Model Breakdown</a><a href="https://muwentrili.github.io/creative-workflows/collage-motion/"><b>04</b>Animated Storyboard</a><a href="https://flipframe-motion-lab.limuwen9.chatgpt.site"><b>05</b>Spatial Media Presenter</a><a href="https://vox-one.limuwen9.chatgpt.site"><b>06</b>Kinetic Typography Studio</a><a href="https://trace-01-motion-tracker.limuwen9.chatgpt.site" aria-current="page"><b>07</b>Motion Tracking Studio</a><a className="family-index" href="https://github.com/MuwenTriLi/creative-workflows">All projects ↗</a></nav>
 
-      <section className="workspace">
+      <fieldset className="editing-controls" disabled={isExporting}><section className="workspace">
         <aside className="source-rail">
           <section className="source-import" onDragOver={(event) => event.preventDefault()} onDrop={(event) => { event.preventDefault(); const file=event.dataTransfer.files[0]; if(file) importVideo(file); }}>
             <strong>01 / {tr("Import video")}</strong>
@@ -2918,8 +2827,9 @@ export default function Home() {
                 <option value="balanced">{tr("High quality · Smaller file")}</option>
               </select>
             </label>
+            <label className="export-audio"><span>{uiLanguage === "zh" ? "包含原视频音频" : "Include source audio"}</span><input type="checkbox" checked={includeSourceAudio} onChange={(event) => setIncludeSourceAudio(event.target.checked)} /></label>
             <div className="export-meta">
-              <span>{tr("Format")}<b>MP4 / H.264 · {uiLanguage === "zh" ? "实时录制" : "REAL-TIME CAPTURE"}</b></span>
+              <span>{tr("Format")}<b>MP4 / H.264 · 60 FPS</b></span>
               <span>{tr("Aspect")}<b>{outputAspect} · {outputAspect === "9:16" ? "VERTICAL" : "HORIZONTAL"}</b></span>
               <span>{tr("Bitrate")}<b>{Math.round(getExportVideoBitrate(exportWidth, exportHeight, exportQuality) / 1_000_000)} MBPS</b></span>
               <span>{tr("Range")}<b>{tr("Full source · 00:00 → end")}</b></span>
@@ -2932,15 +2842,17 @@ export default function Home() {
               </div>
             )}
             <button className="export-button" onClick={() => void exportVideo()} disabled={isExporting || !videoReady || !selected}>
-              <span>{isExporting ? tr("Compositing MP4…") : tr("Export 4K MP4")}</span>
+              <span>{isExporting ? tr("Compositing MP4…") : tr("Export MP4")}</span>
               <b>{exportTier} · {outputAspect} ↗</b>
             </button>
             <p>{tr("Media is processed locally. Export renders the full source from 0 seconds and follows LOCK IN and HUD IN timing. Aspect changes preserve source proportions, with black padding where needed.")}</p>
-            <p>{uiLanguage === "zh" ? "原型导出：实时录制可能丢帧或缩短时长。请检查下载文件的时长与追踪路径；当前不保证恒定 60 fps。" : "Prototype export: real-time capture can drop frames or shorten the result. Check the downloaded duration and target path; constant 60 fps is not guaranteed."}</p>
+            <p>{uiLanguage === "zh" ? "逐帧编码为 60 fps，不依赖屏幕播放速度。默认无声；需要音频时请勾选上方选项。复杂追踪仍需检查目标和遮挡恢复。" : "Frames are encoded at 60 fps, independently of playback speed. Export is silent unless source audio is enabled. Review target identity and occlusion recovery in the downloaded file."}</p>
           </section>
         </aside>
       </section>
 
+      </fieldset>
+      {isExporting && <div className="export-lock" role="status"><span>{uiLanguage === "zh" ? "逐帧导出" : "Rendering every frame"} · {Math.round(exportProgress)}%</span><button onClick={() => { cancelExportRef.current = true; }}>{uiLanguage === "zh" ? "取消导出" : "Cancel export"}</button></div>}
       {toast && <div className="toast"><i />{toast}</div>}
     </main>
   );

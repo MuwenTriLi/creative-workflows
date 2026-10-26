@@ -36,10 +36,21 @@ This is a startup/control smoke check of the published source packages, not a fu
 
 ## Review boundary
 
-The older 4K export results remain linked from each project rather than being silently re-dated. Motion Tracking's 4 s fixture still fails its timing contract. No human usability study, measured speed improvement, broad browser certification or engineering-team adoption is claimed.
+The older 4K export results remain linked from each project rather than being silently re-dated. At the initial restructuring check, Motion Tracking's earlier 4 s export still failed. The subsequent [export repair](../projects/07-motion-tracking/docs/export-check.md) records the new bounded result separately. No human usability study, measured speed improvement, broad browser certification or engineering-team adoption is claimed.
 
 The new source packages make inspection and local reproduction possible. The next product evidence remains one complete input → correction → accepted output recording, followed by an unfamiliar creator performing the same bounded task.
 
 ## Navigation review
 
 The local repository review checked 860 internal file and section links across the three repositories with no missing targets. Earlier project filenames and Clockwork gallery anchors remain as compatibility entry points. The Storyboard project-navigation link now goes directly to its new project directory; playback and export code are unchanged.
+
+
+## Interview-delivery follow-up — October 26, 2026
+
+- Architecture overview previews now share a 500×625 media frame and equal columns; images, titles and descriptions occupy separate rows. The square detail is contained with padding, without cropping or stretching the architecture. Its derivative is documented in the media inventory.
+- A [five-minute review](interview-guide.md) links each project's task, working entrance and inspectable evidence in the established 01–07 order.
+- The [Clockwork control study](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/control-study.md) records a real single-asset revision in Blender 5.2, its measured 0.75 speed ratio and a 5.0 compatibility failure. It is not a client study or a full-library revalidation.
+- Motion Tracking Studio **v19**, source `526ef1b74eb1a81031544887bcdfa65e0e46f545`, was published successfully to its existing public URL. The seven files in its updated source manifest match that source commit. Six frame-plan tests and the local production build pass.
+- Actual browser exports passed the bounded 4K silent and FHD/AAC cases in the [input/output record](../projects/07-motion-tracking/docs/export-check.md). Browser runtime tests used the local Vite build of the same client source; successful hosted deployment is recorded separately, not described as a second physical-computer test.
+
+Private source models, company Skills, credentials and commercial Blender files were not added. OpenArt-role alignment uses the supplied JD; no recruiter endorsement, user-study result, time-saving metric or new autonomous-agent capability is claimed.

@@ -4,7 +4,7 @@
 
 A collection of projects for 3D explanation, shot review, media presentation and motion graphics. Each project documents its inputs, workflow, implementation, creator controls and tested outputs.
 
-[Project directory](projects/) · [Repository map](#repository-map) · [Source & local setup](docs/distribution.md) · [Verification records](docs/functional-review.md) · [About the author](#about-the-author)
+[Five-minute review](docs/interview-guide.md) · [Project directory](projects/) · [Repository map](#repository-map) · [Source & local setup](docs/distribution.md) · [Verification records](docs/functional-review.md) · [About the author](#about-the-author)
 
 ## Selected work
 
@@ -20,7 +20,7 @@ Start with a **project** to understand the task and how it works, or use **Open*
 | **06 · [Kinetic Typography Studio](projects/06-kinetic-typography/)** | English speech → corrected words, timing and animated type | [Open web app](https://vox-one.limuwen9.chatgpt.site) |
 | **07 · [Motion Tracking Studio](projects/07-motion-tracking/)** | Video + selected target or anchor → a motion annotation | [Try prototype](https://trace-01-motion-tracker.limuwen9.chatgpt.site) |
 
-Project pages distinguish shipped work, inspectable prototypes and remaining validation. Motion Tracking Studio's export timing remains under review; its project page includes the failed check.
+Project pages distinguish shipped work, inspectable prototypes and remaining validation. Motion Tracking Studio now includes a documented export repair and bounded 4K checks; real-footage recovery remains a prototype limitation.
 
 ## 01 / Clockwork
 
@@ -32,17 +32,21 @@ Project pages distinguish shipped work, inspectable prototypes and remaining val
 </tr>
 </table>
 
-Original modeling → AI-assisted linkage development → creator controls. The 46-asset Blender library is the packaged outcome; the project explains the inputs, dependencies and adaptation procedure.
+Original modeling → AI-assisted linkage development → creator controls. The 46-asset Blender library is the packaged outcome; the project explains the inputs, dependencies and a [checked control change](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/control-study.md).
 
 [Project overview, workflow and evidence →](https://github.com/MuwenTriLi/steampunk-clockwork-showcase)
 
 ## 02 / Blue / White Architecture Growth
 
-<table><tr>
-<td width="46%" align="center" valign="top"><a href="docs/architecture-growth-media.md#watch-the-selected-films"><img src="media/architecture-growth/detail-c-smooth.webp" height="210" alt="Building growth with surrounding urban context"></a><br><b>Building & context</b><br><sub>A consistent blue-white visual language</sub></td>
-<td width="27%" align="center" valign="top"><a href="projects/02-architecture-growth/"><img src="media/architecture-growth/tennis-plan-smooth.webp" height="210" alt="Tennis venue plan and staged structure"></a><br><b>Plan to structure</b><br><sub>Spatial reference before visual density</sub></td>
-<td width="27%" align="center" valign="top"><a href="docs/architecture-growth-media.md#watch-the-selected-films"><img src="media/architecture-growth/detail-a-smooth.webp" height="210" alt="Floor and facade construction detail"></a><br><b>Detail & assembly</b><br><sub>Readable systems and construction order</sub></td>
-</tr></table>
+<table>
+<tr>
+<td width="33%" align="center" valign="top"><a href="docs/architecture-growth-media.md#watch-the-selected-films"><img src="media/architecture-growth/detail-c-smooth.webp" width="260" height="325" alt="Building growth with surrounding urban context"></a></td>
+<td width="33%" align="center" valign="top"><a href="projects/02-architecture-growth/"><img src="media/architecture-growth/tennis-plan-smooth.webp" width="260" height="325" alt="Tennis venue plan and staged structure"></a></td>
+<td width="33%" align="center" valign="top"><a href="docs/architecture-growth-media.md#watch-the-selected-films"><img src="media/architecture-growth/detail-a-card.webp" width="260" height="325" alt="Floor and facade construction detail, contained in a matching portrait frame"></a></td>
+</tr>
+<tr><td align="center"><b>Building & context</b></td><td align="center"><b>Plan to structure</b></td><td align="center"><b>Detail & assembly</b></td></tr>
+<tr><td align="center" valign="top">A consistent blue-white visual language</td><td align="center" valign="top">Spatial reference before visual density</td><td align="center" valign="top">Readable systems and construction order</td></tr>
+</table>
 
 A repeatable visual and construction method applied across architectural scales. This company case presents approved outputs and production decisions; internal source scenes and Skills remain private.
 

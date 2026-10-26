@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-26",
+  "environment": "Windows; Codex in-app Chromium; local Vite production build of the browser source listed in source/source-manifest.json",
+  "scope": "Synthetic fixtures and bounded export acceptance, not real-footage tracking accuracy or multi-device certification",
+  "cases": [
+    {
+      "name": "4k-moving-target",
+      "file": "4k-moving-target.mp4",
+      "sha256": "3ba078a4ec3263ef0d86c2a99e3197c374555a1ab2030e661c2e895cee0796fc",
+      "full_decode": "passed",
+      "metadata": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 3840,
+            "height": 2160,
+            "r_frame_rate": "60/1",
+            "avg_frame_rate": "60/1",
+            "duration": "4.000000",
+            "nb_frames": "240",
+            "nb_read_frames": "240"
+          }
+        ],
+        "format": {
+          "duration": "4.000000",
+          "size": "1959582"
+        }
+      }
+    },
+    {
+      "name": "fhd-static-anchor-audio",
+      "file": "fhd-static-anchor-audio.mp4",
+      "sha256": "ee4697d3349a1c890637353c72910801cefb35b187ce7d5ed2fbfdc849b7d9ba",
+      "full_decode": "passed",
+      "metadata": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "60/1",
+            "avg_frame_rate": "60/1",
+            "duration": "4.000000",
+            "nb_frames": "240",
+            "nb_read_frames": "240"
+          },
+          {
+            "codec_name": "aac",
+            "sample_rate": "48000",
+            "channels": 1,
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "duration": "4.010667",
+            "nb_frames": "188",
+            "nb_read_frames": "188"
+          }
+        ],
+        "format": {
+          "duration": "4.010667",
+          "size": "579947"
+        }
+      }
+    }
+  ]
+}

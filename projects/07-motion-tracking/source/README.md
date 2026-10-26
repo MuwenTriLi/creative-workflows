@@ -2,7 +2,7 @@
 
 [← Project overview](../README.md) · [Hosted app](https://trace-01-motion-tracker.limuwen9.chatgpt.site) · [Source manifest](source-manifest.json) · [Rights](RIGHTS.md)
 
-This package contains byte-identical browser application files from hosted version **18**, source commit `af403c595566ce4a35543d0d88a44f7957b8aa04`, with a small local Vite/React runner. Its deployment was confirmed successful on October 26, 2026. It is a recorded snapshot, not an automatically synchronized mirror.
+This package contains byte-identical browser application files from hosted version **19**, source commit `526ef1b74eb1a81031544887bcdfa65e0e46f545`, with a small local Vite/React runner. Its deployment was confirmed successful on October 26, 2026. It is a recorded snapshot, not an automatically synchronized mirror.
 
 ## Run locally
 
@@ -31,7 +31,7 @@ The files listed in `source-manifest.json` are copied without edits. `pnpm verif
 
 `main.tsx`, `index.html`, `vite.config.ts`, package/configuration files and the verification script provide a **local-only runner**. They replace the hosted Next-compatible server/layout wrapper. Authentication helpers, provider configuration, unused database/worker scaffolding, proprietary fonts and unused demo collections are omitted. Consequently, build artifacts and hosting behavior are not byte-identical to the live service. Existing absolute navigation links still open the public studios.
 
-There is no product-behavior regression suite in this snapshot. Build success and source hashes do not establish speech accuracy, tracking quality or correct delivery timing.
+Run `pnpm test` for six frame-plan tests. The [browser export record](../docs/export-check.md) separately measures real encoded files. Build success, unit tests and source hashes do not establish tracking accuracy or general browser compatibility.
 
 ## Files
 

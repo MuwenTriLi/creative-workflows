@@ -10,9 +10,9 @@ Record the input, settings, browser/hardware, actual output and one meaningful c
 
 ## Existing evidence
 
-The 4 s fixture exports as 3.8267 s / 97 frames, failing its stated 60 fps contract. Keep this a prototype until timing and target recovery pass.
+The revised exporter produces **4.000 s / 240 frames / 60 fps** on a four-second 4K fixture. FHD with source audio also passes video timing, with 10.667 ms AAC padding. [Exact inputs, outputs and results](export-check.md). Target identity through occlusion remains unverified.
 
-These are previously recorded fixture results, not a new compatibility certification. The [publication check](../../../docs/publication-checks.md) separately records the source/build checks performed for this repository restructuring.
+The linked October 26 export repair is a new bounded fixture result, not a compatibility certification. Historical failures remain in the cross-project record. The [publication check](../../../docs/publication-checks.md) separately records the source/build checks performed for this repository restructuring.
 
 ## Check the published package
 

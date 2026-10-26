@@ -2,18 +2,38 @@
   "schema": 1,
   "title": "Motion Tracking Studio",
   "hosted_url": "https://trace-01-motion-tracker.limuwen9.chatgpt.site",
-  "hosted_version": 18,
-  "hosted_source_commit": "af403c595566ce4a35543d0d88a44f7957b8aa04",
+  "hosted_version": 19,
+  "hosted_source_commit": "526ef1b74eb1a81031544887bcdfa65e0e46f545",
   "reviewed_on": "2026-10-26",
   "scope": "Byte-identical browser application, supporting modules and selected public demo media; new local-only Vite runner. This is not the hosted server/deployment configuration.",
   "files": [
     {
-      "path": "app/globals.css",
-      "sha256": "0707d400d2a87b143bb6d175719307f692c5c62fa15db5de88ee24bf7f51f6b9"
+      "path": "app/page.tsx",
+      "sha256": "77d8f4dee402ed48f194fb72f4826d57667fd50fb06de971d1c8bde7831c75e6"
     },
     {
-      "path": "app/page.tsx",
-      "sha256": "214c8625c4848bb565f6d80abfc243eb75c9ec4929564818d3cc88b7e62fd844"
+      "path": "app/globals.css",
+      "sha256": "1f3f6be7e3a328fcb0eae3562409d9a31995f885bbeb33c92785a4a16b49dd14"
+    },
+    {
+      "path": "app/export-mp4.mjs",
+      "sha256": "babb59db1a584bb1125c2715d1c5b6a704ca4131a08bbef009d184b0f688a00c"
+    },
+    {
+      "path": "app/export-timing.mjs",
+      "sha256": "d566a0669a55a56b757acbc2b0afc1c17f21f0ba4ea8bc8b5198a14903d9a768"
+    },
+    {
+      "path": "app/vendor/mp4-muxer.min.mjs",
+      "sha256": "8c6354b4b3956be0003ad030108c89e08dbcb5f1fa9b093cc4d28204ccf091be"
+    },
+    {
+      "path": "app/vendor/LICENSE.txt",
+      "sha256": "e0972bcb319c831a789483e46604ca0a79bda75a4a5adb1b837a348d5b9837fc"
+    },
+    {
+      "path": "tests/export-timing.test.mjs",
+      "sha256": "f0e7728899cce3b2457da4e3ab2ce633df1270f8b86e55e2809b358b5838fb98"
     }
   ]
 }

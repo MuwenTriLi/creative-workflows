@@ -10,7 +10,7 @@
 
 | Input | Output |
 | --- | --- |
-| User-supplied video, a selected target or position anchor, overlay text and reveal timing. | A previewed target path and staged HUD. Encoded export is experimental because a recorded timing check fails. |
+| User-supplied video, a selected target or position anchor, overlay text and reveal timing. | A previewed target path and staged HUD. The revised exporter has bounded 4K/FHD timing checks; target recovery remains experimental. |
 
 **Implementation:** React/TypeScript, Canvas template matching, confidence/reacquire state and browser MediaRecorder. This is not a learned object-recognition or agent system.
 
@@ -28,7 +28,7 @@ The [workflow notes](docs/workflow.md) distinguish current behavior from propose
 
 ## Evidence and next step
 
-The 4 s fixture exports as 3.8267 s / 97 frames, failing its stated 60 fps contract. Keep this a prototype until timing and target recovery pass. [Reproduction steps and acceptance boundary](docs/validation.md).
+The revised exporter produces **4.000 s / 240 frames / 60 fps** on a four-second 4K fixture. FHD with source audio also passes video timing, with 10.667 ms AAC padding. [Exact inputs, outputs and results](docs/export-check.md). Target identity through occlusion remains unverified. [Reproduction steps and acceptance boundary](docs/validation.md).
 
 ## Project map
 

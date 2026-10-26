@@ -36,6 +36,8 @@ Detail A and the supplied `Detail_B_Square_S02_25s_4096x4096.mp4` use matching 5
 
 The six full MP4s, their posters and the current animated previews share a blue-gray presentation balance matched to the tennis plan and growth previews. Fixed corrections reduce the differences between the tower, detail and office sequences without changing their construction, framing or timing. The published MP4s use consistent SDR BT.709 color tags; the original company files remain unchanged. All six encoded films were decoded in full and retain their source frame counts and 24 fps timing. Animated preview frames were decoded and their six-second timing checked. This is a viewing-copy color revision, not a new Blender render or an exhaustive construction-quality certification.
 
+The overview uses equal-width 4:5 cards. `detail-a-card.webp` contains the full square Detail A film inside a light portrait surround; it is the same 8–14 s sequence at 24 fps, with no cropping, stretching or changed geometry. Images, titles and descriptions occupy separate table rows so GitHub keeps their boundaries aligned.
+
 ## Rights and disclosure
 
 The company-specific aesthetic, internal workflow, company media and production materials are associated with **illoca** and retain their existing rights. Muwen's role here is Creative Content Director, including visual direction, workflow development with Codex and iterative review. Architecture/model authorship and any other third-party rights remain with the respective creators; this page does not assert sole ownership of the underlying architecture.

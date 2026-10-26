@@ -12,7 +12,7 @@ My design question is: **which parts of a creative job can a system complete rel
 - **Existing tools:** parameter-driven Blender assets and interactive browser applications. Their case pages identify observed controls and the scope of actual tests.
 - **AI during development:** Muwen modeled and organized Clockwork's original source collection. Codex assisted source inspection, mechanism/linkage development and implementation under his direction. This is distinct from an AI agent operating the finished tool for its user.
 - **Company-internal method:** Architecture Growth now shows completed illoca output and a repeatable styling/growth workflow. Its Skill implementation remains private; a fresh public execution is not claimed.
-- **Packaged instructions:** the Clockwork Skill describes an adaptation procedure. A fresh end-to-end execution remains unverified.
+- **Packaged instructions:** the Clockwork Skill describes an adaptation procedure. A [bounded CLK32 speed change](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/control-study.md) now records actual inspection, execution and checks. Recomposition and reliable autonomous recovery remain unverified.
 - **Proposed agent behavior:** the approval points, change records, state model and engineering contracts below are product specifications. They are not already implemented across these applications.
 
 ## Decisions across the seven projects

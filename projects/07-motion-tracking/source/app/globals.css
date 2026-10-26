@@ -2655,3 +2655,5 @@ html{color-scheme:dark} button,input,select,textarea{border-radius:0!important} 
 
 /* Allow the descriptive product name to wrap without clipping. */
 .topbar .brand{min-width:0;max-width:340px;line-height:1.4;letter-spacing:.025em;white-space:normal}
+
+.editing-controls{display:contents;border:0;padding:0;margin:0;min-width:0}.export-lock{position:fixed;bottom:25px;left:50%;transform:translateX(-50%);z-index:100;background:#f0f0eb;color:#101510;padding:15px 22px;display:flex;gap:20px;align-items:center;border:1px solid #777}.export-lock button{padding:9px;border:1px solid #333;color:#111;background:#fff}.export-audio input{width:20px;height:20px}

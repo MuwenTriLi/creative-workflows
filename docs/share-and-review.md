@@ -22,7 +22,7 @@ For a local copy of Animated Storyboard, use the versioned package under [Releas
 
 All five studio entrances are public web pages. Bundled examples are hosted assets; visitors do not need Muwen's local folders. Imports are selected from the visitor's own device. Use a current desktop browser, preferably Chrome or Edge for the tested browser video encoders. Keep the export tab foregrounded and play the downloaded file through before delivery.
 
-Anonymous HTTP checks establish public access without account cookies. They do **not** establish identical playback speed on every GPU, browser or connection. Actual checks and known limitations are recorded in the [functional review](functional-review.md); [4K export steps](studio-delivery.md) explain each tool's output flow. Motion Tracking Studio's real-time export timing remains a documented limitation.
+Anonymous HTTP checks establish public access without account cookies. They do **not** establish identical playback speed on every GPU, browser or connection. Actual checks and known limitations are recorded in the [functional review](functional-review.md); [4K export steps](studio-delivery.md) explain each tool's output flow. Motion Tracking Studio has a [bounded export repair](../projects/07-motion-tracking/docs/export-check.md); real-footage tracking recovery and other physical computers remain unverified.
 
 The new Model Breakdown films are [available here](https://muwentrili.github.io/creative-workflows/model-breakdown-films/), with full duration and 30 fps playback. README animations are compact previews; the linked MP4s are the clearer viewing format.
 
