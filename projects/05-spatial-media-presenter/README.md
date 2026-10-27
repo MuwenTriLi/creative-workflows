@@ -8,15 +8,17 @@ Tech stack: React, TypeScript, browser media, Canvas, WebCodecs and mp4-muxer. T
 
 ## Visual overview
 
+<p align="center"><a href="https://muwentrili.github.io/creative-workflows/collage-motion/process/flipframe-sequence.mp4"><img src="../../media/spatial-presenter-motion.webp" alt="Complete 25-second exported spatial presentation: a moving collection of images and clips with readable holds" width="100%"></a></p>
+
+[Play the complete 25-second film](https://muwentrili.github.io/creative-workflows/collage-motion/process/flipframe-sequence.mp4) · [View a still frame](../../docs/collage-motion/process/flipframe-sequence.jpg)
+
+The animation presents the complete 25-second sequence at its original speed, then repeats. Select it for the 1080p60 video with playback controls. This viewing copy comes from the recorded 4K60 / 1,500-frame export.
+
+### Inside the editor
+
 [![Spatial Media Presenter: source archive, spatial composition and motion controls](../../media/flipframe-editor.png)](https://flipframe-motion-lab.limuwen9.chatgpt.site)
 
 The opening collection contains 15 supplied works: 11 stills and 4 motion studies. It starts in Orbital Shift; pause, numbering, language and six white HUD treatments sit above the canvas.
-
-### Complete exported sequence
-
-[![Actual 25-second spatial presentation](../../docs/collage-motion/process/flipframe-sequence.jpg)](https://muwentrili.github.io/creative-workflows/collage-motion/process/flipframe-sequence.mp4)
-
-[Play the complete 25-second film](https://muwentrili.github.io/creative-workflows/collage-motion/process/flipframe-sequence.mp4). This is the actual checked sequence, presented as a lighter 1080p viewing copy; the original result is 4K60 with 1,500 frames.
 
 ## Workflow and creator control
 

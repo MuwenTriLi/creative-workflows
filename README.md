@@ -78,10 +78,10 @@ Compare 35 moving shots on one board, preview a source, revise its position or v
 ## 05 / Spatial Media Presenter
 
 <p align="center">
-<a href="https://flipframe-motion-lab.limuwen9.chatgpt.site"><img src="media/flipframe-editor.png" alt="Spatial Media Presenter: media archive, Orbital Shift preview and editable motion controls" width="100.0000%"></a>
+<a href="https://muwentrili.github.io/creative-workflows/collage-motion/process/flipframe-sequence.mp4"><img src="media/spatial-presenter-motion.webp" alt="Spatial Media Presenter: complete 25-second exported sequence in motion; click to play the full video" width="100.0000%"></a>
 </p>
 
-<p><b>A spatial presentation with editable pacing</b> — <sub>15 supplied visuals · Orbital Shift on entry · Control order, framing and timing</sub></p>
+<p><b>A spatial presentation with editable pacing</b> — <sub>25-second exported sequence · Click the preview to watch in 1080p</sub></p>
 
 Arrange images and clips into a spatial presentation with editable order, framing, transitions and holds.
 
