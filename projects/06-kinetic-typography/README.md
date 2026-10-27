@@ -23,14 +23,12 @@ Muwen Li defined the speech-to-type interaction, correction loop, visual directi
 
 ```mermaid
 flowchart LR
-    A[English audio or video] --> B[Browser audio decode]
-    B --> C[Local Whisper words and timestamps]
-    C --> D[Creator reviews and applies corrections]
-    D --> E[Phrase layout, emphasis and sync]
-    E --> F[Canvas typography preview]
-    F --> G[Mediabunny video and audio encoding]
-    G --> H[Review MP4 against speech]
-    H -->|Correct transcript or timing| D
+    A["Audio / video<br/>decode"] --> B["Local Whisper<br/>words + timing"]
+    B --> C["Review + correct<br/>Confirm and Apply"]
+    C --> D["Layout + sync<br/>Canvas preview"]
+    D --> E["Encode video<br/>and audio"]
+    E --> F["Review MP4<br/>against speech"]
+    F -->|Revise| C
 ```
 
 ## Local setup

@@ -23,16 +23,14 @@ Muwen Li defined the target/anchor workflow, staged visual hierarchy and review 
 
 ```mermaid
 flowchart LR
-    A[Video and creator selection] --> B{Target or fixed anchor}
-    B -->|Target| C[Template search and confidence]
-    B -->|Anchor| D[Fixed coordinates]
-    C --> E[Trajectory and staged HUD]
+    A["Video +<br/>selection"] --> B{Mode}
+    B -->|Target| C["Template<br/>tracking"]
+    B -->|Anchor| D["Fixed<br/>position"]
+    C --> E["Trajectory<br/>and HUD"]
     D --> E
-    E --> F[Canvas preview]
-    F --> G[Seek fixed timestamps and encode frames]
-    G --> H[MP4 with optional source audio]
-    H --> I[Review identity, timing and graphics]
-    I -->|Revise selection or overlay| B
+    E --> F["Preview<br/>then encode frames"]
+    F --> G["MP4<br/>review"]
+    G -->|Revise| B
 ```
 
 ## Local setup

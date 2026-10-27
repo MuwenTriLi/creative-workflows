@@ -23,14 +23,13 @@ Muwen Li supplied the visual direction and shot selection, defined the review wo
 
 ```mermaid
 flowchart LR
-    A[Local clips and images] --> C[Source list with stable IDs]
-    B[35-shot manifest and shared atlas] --> C
-    C --> D[Include, order, crop and label]
-    D --> E[Canvas grid preview]
-    E --> F[Sample sources at fixed times]
-    F --> G[WebCodecs and MP4 muxing]
-    G --> H[Review silent board]
-    H -->|Revise a source or layout| D
+    A["Local clips<br/>and images"] --> C["Source list<br/>stable IDs"]
+    B["Example<br/>manifest + atlas"] --> C
+    C --> D["Order / crop<br/>include / caption"]
+    D --> E["Canvas<br/>preview"]
+    E --> F["Fixed-time sampling<br/>WebCodecs MP4"]
+    F --> G["Review<br/>silent board"]
+    G -->|Revise| D
 ```
 
 ## Local setup

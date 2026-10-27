@@ -23,14 +23,12 @@ Muwen Li supplied the visual collection, motion direction, control hierarchy and
 
 ```mermaid
 flowchart LR
-    A[Images and video clips] --> B[Media archive]
-    B --> C[Choose order and showcase range]
-    C --> D[Set framing, transitions and holds]
-    D --> E[Evaluate sequence state]
-    E --> F[Interactive spatial preview]
-    E --> G[Canvas frames and WebCodecs MP4]
-    G --> H[Review pace and readability]
-    H -->|Adjust local settings| D
+    A["Images<br/>and clips"] --> B["Order<br/>and range"]
+    B --> C["Crop / motion<br/>transitions / holds"]
+    C --> D["Sequence state<br/>and preview"]
+    D --> E["Canvas frames<br/>WebCodecs MP4"]
+    E --> F["Review<br/>pace and crop"]
+    F -->|Revise| C
 ```
 
 ## Local setup

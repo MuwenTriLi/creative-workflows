@@ -25,13 +25,12 @@ For your own input, export a self-contained GLB with separate meshes and readabl
 
 ```mermaid
 flowchart LR
-    A[Named GLB or bundled example] --> B[Load geometry and inspect parts]
-    B --> C[Compose exploded layout]
-    C --> D[Choose focus and key timing]
-    D --> E[WebGL preview]
-    E --> F[Encode MP4 or render still]
-    F --> G[Review framing and motion]
-    G -->|Revise local controls| C
+    A["Named GLB<br/>or example"] --> B["Inspect<br/>parts"]
+    B --> C["Explode<br/>and frame"]
+    C --> D["Focus<br/>and timing"]
+    D --> E["WebGL<br/>preview"]
+    E --> F["MP4 / still<br/>review"]
+    F -->|Revise| C
 ```
 
 ## Local setup
