@@ -8,9 +8,11 @@ Tech stack: React, TypeScript, Transformers.js, quantized Whisper Base on browse
 
 ## Visual overview
 
-[![Kinetic Typography Studio: speech source, editable transcript, live typography and style controls](../../media/vox-one-editor.png)](https://vox-one.limuwen9.chatgpt.site)
+<p align="center"><a href="https://vox-one.limuwen9.chatgpt.site"><img src="media/ui-demo.webp" alt="Actual Kinetic Typography Studio interface in motion, retaining the source and transcript panel, live typography, playback controls and style parameters" width="100%"></a></p>
 
-The eight-second silent opening composition lets a visitor inspect the type treatment immediately. Its text and timing are authored demo data. Importing a voice clip exercises the separate speech-recognition path.
+[Watch the eight-second interface recording](media/ui-demo.mp4) · [View the original still](../../media/vox-one-editor.png)
+
+The preview records eight seconds of the live interface at its original playback speed, preserving both side panels and the central composition. The text and timing are authored silent demo data. Importing a voice clip exercises the separate speech-recognition path.
 
 The left panel contains source and transcript; the center shows the typography; the right panel controls grouping, alignment, motion, size and sync. The Demo runs the live composition.
 

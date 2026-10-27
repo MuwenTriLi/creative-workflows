@@ -89,7 +89,7 @@ Arrange images and clips into a spatial presentation with editable order, framin
 ## 06 / Kinetic Typography Studio
 
 <p align="center">
-<a href="https://vox-one.limuwen9.chatgpt.site"><img src="media/vox-one-editor.png" alt="Kinetic Typography Studio: source media, editable transcript, live typography preview and styling controls" width="100.0000%"></a>
+<a href="https://vox-one.limuwen9.chatgpt.site"><img src="projects/06-kinetic-typography/media/ui-demo.webp" alt="Actual Kinetic Typography Studio interface in motion: source panel, transcript, timed typography and style controls; authored silent demo" width="100.0000%"></a>
 </p>
 
 <p><b>Editable words, timing and visual emphasis</b> — <sub>Speech-led typography · Transcript correction · Preview before delivery</sub></p>
