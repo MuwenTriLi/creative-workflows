@@ -23,21 +23,17 @@ Open a **project** for its visual gallery and project details; browser projects 
 ## 01 / Clockwork
 
 <p align="center">
-<a href="media/clockwork-collection.png"><img src="media/clockwork-collection.png" alt="Original rendered Clockwork collection showing clocks and mechanical assemblies" width="100.0000%"></a>
+<a href="projects/01-clockwork/"><img src="projects/01-clockwork/media/clk18.png" alt="CLK18 finished render: a tall clock with vertical linkages" width="22.5000%"></a>
+<a href="projects/01-clockwork/"><img src="projects/01-clockwork/media/orbit.png" alt="CLK31 finished render: a clock above a rail-guided assembly" width="22.5000%"></a>
+<a href="projects/01-clockwork/"><img src="projects/01-clockwork/media/aperture.png" alt="CLK32 finished render: the unfolding canopy mechanism" width="22.5000%"></a>
+<a href="projects/01-clockwork/"><img src="projects/01-clockwork/media/chain-drive.png" alt="SPM03 finished render: the exposed chain-drive mechanism" width="22.5000%"></a>
 </p>
 
-<p><b>Packaged outcome</b> — <sub>46 animated assets · original models and visual direction by Muwen Li</sub></p>
+<p><em>Left to right:</em> Vertical linkages · Guided travel · Unfolding canopy · Chain drive</p>
 
-<p align="center">
-<a href="projects/01-clockwork/"><img src="media/clockwork-gear-motion.gif" alt="Animated CLK08 turntable showing the exposed clock mechanism" width="45.0000%"></a>
-<a href="projects/01-clockwork/"><img src="media/clockwork-opening-motion.gif" alt="Animated CLK32 canopy showing the linked opening mechanism" width="45.0000%"></a>
-</p>
+Original models developed into a 46-asset Blender library with linked mechanisms and editable motion controls.
 
-<p><em>Left to right:</em> <b>Motion study</b> — <sub>Animated turntable · exposed movement</sub>; <b>Controlled opening</b> — <sub>Linked mechanism · adjustable speed and phase</sub></p>
-
-Original modeling → AI-assisted linkage development → creator controls. The 46-asset Blender library is the packaged outcome; the project explains the inputs, dependencies and a [checked control change](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/01-clockwork/docs/control-study.md).
-
-[Project](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/01-clockwork)
+[Project](projects/01-clockwork/)
 
 ## 02 / Blue / White Architecture Growth
 
@@ -48,7 +44,7 @@ Original modeling → AI-assisted linkage development → creator controls. The 
 <a href="projects/02-architecture-growth/"><img src="media/architecture-growth/tower-smooth.webp" alt="Final tower film showing levels and the completed exterior" width="22.5000%"></a>
 </p>
 
-<p><em>Left to right:</em> <b>Building & context</b> — A consistent blue-white visual language; <b>Plan to structure</b> — Spatial reference before visual density; <b>Detail & assembly</b> — Readable systems and construction order; <b>Tower & levels</b> — Vertical sequence and exterior form</p>
+<p><em>Left to right:</em> Building &amp; context · Plan to structure · Detail &amp; assembly · Tower &amp; levels</p>
 
 Selected final illoca films. Company property under NDA; this case provides Demo outputs and credits only.
 
@@ -57,21 +53,16 @@ Selected final illoca films. Company property under NDA; this case provides Demo
 ## 03 / Model Breakdown Studio
 
 <p align="center">
-<a href="https://meshroom-breakdown-studio.limuwen9.chatgpt.site"><img src="media/model-breakdown-editor.png" alt="Model Breakdown Studio: Press Manufacturing Line opens in an exploded view" width="100.0000%"></a>
+<a href="https://meshroom-breakdown-studio.limuwen9.chatgpt.site"><img src="media/model-breakdown-editor.png" alt="Model Breakdown Studio: Press Manufacturing Line opens in an exploded view" width="55.0982%"></a>
+<a href="https://muwentrili.github.io/creative-workflows/model-breakdown-films/#equipment"><img src="projects/03-model-breakdown/showcase/media/systems-smooth.webp" alt="Production equipment separated into readable systems, with hydraulic equipment highlighted" width="17.4509%"></a>
+<a href="https://muwentrili.github.io/creative-workflows/model-breakdown-films/#structure"><img src="projects/03-model-breakdown/showcase/media/structure-smooth.webp" alt="Exploded structural system with a readable assembly hierarchy" width="17.4509%"></a>
 </p>
 
-<p><b>Interactive studio</b> — <sub>Choose a GLB · explode · highlight · export</sub></p>
+<p><em>Left to right:</em> Interactive studio · Equipment explanation · Structural hierarchy</p>
 
-<p align="center">
-<a href="https://muwentrili.github.io/creative-workflows/model-breakdown-films/#equipment"><img src="docs/model-breakdown-films/equipment.webp" alt="Production equipment separated into readable systems, with hydraulic equipment highlighted" width="45.0000%"></a>
-<a href="https://muwentrili.github.io/creative-workflows/model-breakdown-films/#structure"><img src="docs/model-breakdown-films/structure.webp" alt="Exploded structural system with a readable assembly hierarchy" width="45.0000%"></a>
-</p>
+Import a multi-part GLB, separate its components and direct visual emphasis. The films are supplied output examples; the project documents the app, local setup and validation scope.
 
-<p><em>Left to right:</em> <b>Explain the equipment</b> — <sub>Production line · component emphasis</sub>; <b>Separate the systems</b> — <sub>Structural hierarchy · complete sequence</sub></p>
-
-Inspect a GLB, separate its systems and focus attention on a component. The project includes the current browser-source snapshot, a local runner and the distinction from the earlier implementation.
-
-[Project](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/03-model-breakdown/)
+[Project](projects/03-model-breakdown/)
 
 ## 04 / Animated Storyboard
 
@@ -81,7 +72,7 @@ Inspect a GLB, separate its systems and focus attention on a component. The proj
 
 <p><b>A moving storyboard for shot review</b> — <sub>35 supplied shots · Six white HUD styles · Editable order and framing</sub></p>
 
-Compare 35 moving shots on one board, preview a source, change its position or hide it, then export the accepted composition. Source, a versioned demo and an implementation/test map are included.
+Compare 35 moving shots on one board, preview a source, revise its position or visibility, then export the accepted composition.
 
 [Project](projects/04-animated-storyboard/)
 
@@ -93,7 +84,7 @@ Compare 35 moving shots on one board, preview a source, change its position or h
 
 <p><b>A spatial presentation with editable pacing</b> — <sub>15 supplied visuals · Orbital Shift on entry · Control order, framing and timing</sub></p>
 
-Move from a collection overview to individual works with editable order, framing, transitions and holds. The supplied 15-work example starts in Orbital Shift.
+Arrange images and clips into a spatial presentation with editable order, framing, transitions and holds.
 
 [Project](projects/05-spatial-media-presenter/)
 
@@ -105,7 +96,7 @@ Move from a collection overview to individual works with editable order, framing
 
 <p><b>Editable words, timing and visual emphasis</b> — <sub>Speech-led typography · Transcript correction · Preview before delivery</sub></p>
 
-Connect English speech recognition, transcript correction and visual rhythm. The silent opening example demonstrates typography; importing speech exercises local Whisper inference.
+Turn English speech into timed typography with editable words, rhythm and emphasis. The opening example is silent; speech recognition starts after import.
 
 [Project](projects/06-kinetic-typography/)
 
@@ -117,7 +108,7 @@ Connect English speech recognition, transcript correction and visual rhythm. The
 
 <p><b>Make a subject easier to follow</b> — <sub>Your video · Target 01 or a fixed position anchor · Editable white HUD</sub></p>
 
-Import footage and choose the subject or a fixed anchor before adding graphics. Inspect the tracking and export implementation alongside its current delivery limitations.
+Add editable graphic overlays to a selected subject or fixed position in uploaded video. The project records current tracking and export limits.
 
 [Project](projects/07-motion-tracking/)
 
