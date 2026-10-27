@@ -113,7 +113,7 @@ Click any render to inspect it. [Browse all clocks and selected mechanisms →](
 ### Inside Blender: from library to moving assembly
 
 <p align="center">
-<a href="https://muwentrili.github.io/creative-workflows/films/?project=clockwork&amp;film=opening-in-blender"><img src="media/opening-in-blender.gif" alt="Original Blender recording of the opening assembly" width="45.0000%"></a>
+<a href="https://muwentrili.github.io/creative-workflows/films/?project=clockwork&amp;film=opening-in-blender"><img src="media/opening-in-blender.gif?v=20261027-clean" alt="Original Blender recording of the opening assembly" width="45.0000%"></a>
 <a href="https://muwentrili.github.io/creative-workflows/films/?project=clockwork&amp;film=library-placement"><img src="media/library-placement.gif" alt="Original Blender asset library placement recording" width="45.0000%"></a>
 </p>
 

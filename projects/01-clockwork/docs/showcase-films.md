@@ -40,7 +40,7 @@ See the library and asset selection.
 
 Inspect the working assembly in the original recording.
 
-<a href="https://muwentrili.github.io/creative-workflows/films/?project=clockwork&amp;film=opening-in-blender"><img src="../media/opening-in-blender.gif" width="800" alt="Opening mechanism"></a>
+<a href="https://muwentrili.github.io/creative-workflows/films/?project=clockwork&amp;film=opening-in-blender"><img src="../media/opening-in-blender.gif?v=20261027-clean" width="800" alt="Opening mechanism"></a>
 
 [Open MP4](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=opening-in-blender)
 

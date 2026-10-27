@@ -126,7 +126,7 @@ All source files were opened read-only; derivatives are separate presentation fi
 | `structure-pass.jpg` | `2_lineweight_collection.mp4` | Frame at 1.0 s; 2160 × 3840. |
 | `material-pass.jpg` | `2_render.mp4` | Frame at 1.0 s; 2160 × 3840. |
 | `structure-material-comparison.jpg` | The two frames above | Each scaled to 1080 × 1920; 24 px gap. No generative rendering or retouching. Different motion phases. |
-| `opening-in-blender.mp4` / `.gif` | `Recording_3.mp4` | 1–7 s; silent 1280 × 720 MP4, 640 × 360 / 8 fps GIF. |
+| `opening-in-blender.mp4` / `.gif` | `Recording_3.mp4` | 1.0–4.8 s (3.8 s), excluding the original recording’s black tail; silent 1280 × 720 / 30 fps MP4, 640 × 360 / 20 fps GIF. Playback remains at source speed. |
 | `library-placement.mp4` / `.gif` | `Recording_6.mp4` | 6–15 s; silent 1280 × 720 MP4, 640 × 360 / 8 fps GIF. |
 | `collection-in-viewport.gif` | `Individual asset animation_collection.mp4` | 4–9 s; 520 px wide / 8 fps. |
 
