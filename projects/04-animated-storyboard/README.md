@@ -26,13 +26,14 @@ The source collection sits below the canvas. Each card connects the displayed ce
 
 ### Earlier visual design demonstrations
 
-<table><tr>
-<td width="33%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/collage-motion/process/landscape-design.mp4"><img src="../../docs/collage-motion/process/landscape-design.jpg" height="150" alt="Supplied landscape storyboard design demonstration"></a><br><b>Landscape board</b></td>
-<td width="33%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/collage-motion/process/motion-controls.mp4"><img src="../../docs/collage-motion/process/motion-controls.jpg" height="150" alt="Supplied motion control design demonstration"></a><br><b>Motion controls</b></td>
-<td width="33%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/collage-motion/process/portrait-design.mp4"><img src="../../docs/collage-motion/process/portrait-design.jpg" height="150" alt="Supplied portrait composition demonstration"></a><br><b>Portrait composition</b></td>
+Two composition studies from the earlier visual direction. Each preview opens its film; these are separate from the current studio and checked export above.
+
+<table width="100%"><tr>
+<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/collage-motion/process/landscape-design.mp4"><img src="../../docs/collage-motion/process/landscape-design.jpg" height="240" alt="Earlier landscape composition with a wide moving grid"></a><br><b>Landscape / wide review board</b><br><sub>A broad grid for comparing shots together.</sub></td>
+<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/collage-motion/process/portrait-design.mp4"><img src="../../docs/collage-motion/process/portrait-design.jpg" height="240" alt="Earlier portrait composition with vertically arranged shots"></a><br><b>Portrait / vertical composition</b><br><sub>A taller arrangement for a different viewing format.</sub></td>
 </tr></table>
 
-Click a card to play its film. These three supplied videos document the earlier visual direction; they are not recordings of the current studio revision.
+The separate [earlier motion-controls recording](https://muwentrili.github.io/creative-workflows/collage-motion/process/motion-controls.mp4) documents the previous timing interface.
 
 ## Workflow and creator control
 

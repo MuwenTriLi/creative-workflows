@@ -24,9 +24,10 @@ Open a **project** for its visual gallery and project details; browser projects 
 
 <table>
 <tr>
-<td width="46%" align="center" valign="top"><a href="media/clockwork-collection.png"><img src="media/clockwork-collection.png" alt="Original rendered Clockwork collection showing clocks and mechanical assemblies" height="180"></a><br><b>Packaged outcome</b><br><sub>46 animated assets · my source models and design direction</sub></td>
-<td width="27%" align="center" valign="top"><a href="projects/01-clockwork/"><img src="media/clockwork-gear-motion.gif" alt="Animated CLK08 turntable showing the exposed clock mechanism" height="180"></a><br><b>Motion study</b><br><sub>Animated turntable · exposed movement</sub></td>
-<td width="27%" align="center" valign="top"><a href="projects/01-clockwork/"><img src="media/clockwork-opening-motion.gif" alt="Animated CLK32 canopy showing the linked opening mechanism" height="180"></a><br><b>Controlled opening</b><br><sub>Linked mechanism · adjustable speed and phase</sub></td>
+<td colspan="2" align="center" valign="top"><a href="media/clockwork-collection.png"><img src="media/clockwork-collection.png" alt="Original rendered Clockwork collection showing clocks and mechanical assemblies" width="960"></a><br><b>Packaged outcome</b><br><sub>46 animated assets · my source models and design direction</sub></td>
+</tr><tr>
+<td width="50%" align="center" valign="top"><a href="projects/01-clockwork/"><img src="media/clockwork-gear-motion.gif" alt="Animated CLK08 turntable showing the exposed clock mechanism" height="180"></a><br><b>Motion study</b><br><sub>Animated turntable · exposed movement</sub></td>
+<td width="50%" align="center" valign="top"><a href="projects/01-clockwork/"><img src="media/clockwork-opening-motion.gif" alt="Animated CLK32 canopy showing the linked opening mechanism" height="180"></a><br><b>Controlled opening</b><br><sub>Linked mechanism · adjustable speed and phase</sub></td>
 </tr>
 </table>
 
@@ -38,12 +39,13 @@ Original modeling → AI-assisted linkage development → creator controls. The 
 
 <table>
 <tr>
-<td width="33%" align="center" valign="top"><a href="projects/02-architecture-growth/"><img src="media/architecture-growth/detail-c-smooth.webp" width="260" height="325" alt="Building growth with surrounding urban context"></a></td>
-<td width="33%" align="center" valign="top"><a href="projects/02-architecture-growth/"><img src="media/architecture-growth/tennis-plan-smooth.webp" width="260" height="325" alt="Tennis venue plan and staged structure"></a></td>
-<td width="33%" align="center" valign="top"><a href="projects/02-architecture-growth/"><img src="media/architecture-growth/detail-a-card.webp" width="260" height="325" alt="Floor and facade construction detail, contained in a matching portrait frame"></a></td>
+<td width="25%" align="center" valign="top"><a href="projects/02-architecture-growth/"><img src="media/architecture-growth/detail-c-smooth.webp" width="220" height="275" alt="Building growth with surrounding urban context"></a></td>
+<td width="25%" align="center" valign="top"><a href="projects/02-architecture-growth/"><img src="media/architecture-growth/tennis-plan-smooth.webp" width="220" height="275" alt="Tennis venue plan and staged structure"></a></td>
+<td width="25%" align="center" valign="top"><a href="projects/02-architecture-growth/"><img src="media/architecture-growth/detail-a-card.webp" width="220" height="275" alt="Floor and facade construction detail, contained in a matching portrait frame"></a></td>
+<td width="25%" align="center" valign="top"><a href="projects/02-architecture-growth/"><img src="media/architecture-growth/tower-smooth.webp" width="220" height="275" alt="Final tower film showing levels and the completed exterior"></a></td>
 </tr>
-<tr><td align="center"><b>Building & context</b></td><td align="center"><b>Plan to structure</b></td><td align="center"><b>Detail & assembly</b></td></tr>
-<tr><td align="center" valign="top">A consistent blue-white visual language</td><td align="center" valign="top">Spatial reference before visual density</td><td align="center" valign="top">Readable systems and construction order</td></tr>
+<tr><td align="center"><b>Building & context</b></td><td align="center"><b>Plan to structure</b></td><td align="center"><b>Detail & assembly</b></td><td align="center"><b>Tower & levels</b></td></tr>
+<tr><td align="center" valign="top">A consistent blue-white visual language</td><td align="center" valign="top">Spatial reference before visual density</td><td align="center" valign="top">Readable systems and construction order</td><td align="center" valign="top">Vertical sequence and exterior form</td></tr>
 </table>
 
 Selected final illoca films. Company property under NDA; this case provides Demo outputs and credits only.
@@ -53,9 +55,10 @@ Selected final illoca films. Company property under NDA; this case provides Demo
 ## 03 / Model Breakdown Studio
 
 <table><tr>
-<td width="46%" align="center" valign="top"><a href="https://meshroom-breakdown-studio.limuwen9.chatgpt.site"><img src="media/model-breakdown-editor.png" height="210" alt="Model Breakdown Studio: Press Manufacturing Line opens in an exploded view"></a><br><b>Interactive studio</b><br><sub>Choose a GLB · explode · highlight · export</sub></td>
-<td width="27%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/model-breakdown-films/#equipment"><img src="docs/model-breakdown-films/equipment.webp" height="210" alt="Production equipment separated into readable systems, with hydraulic equipment highlighted"></a><br><b>Explain the equipment</b><br><sub>Production line · component emphasis</sub></td>
-<td width="27%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/model-breakdown-films/#structure"><img src="docs/model-breakdown-films/structure.webp" height="210" alt="Exploded structural system with a readable assembly hierarchy"></a><br><b>Separate the systems</b><br><sub>Structural hierarchy · complete sequence</sub></td>
+<td colspan="2" align="center" valign="top"><a href="https://meshroom-breakdown-studio.limuwen9.chatgpt.site"><img src="media/model-breakdown-editor.png" width="960" alt="Model Breakdown Studio: Press Manufacturing Line opens in an exploded view"></a><br><b>Interactive studio</b><br><sub>Choose a GLB · explode · highlight · export</sub></td>
+</tr><tr>
+<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/model-breakdown-films/#equipment"><img src="docs/model-breakdown-films/equipment.webp" height="320" alt="Production equipment separated into readable systems, with hydraulic equipment highlighted"></a><br><b>Explain the equipment</b><br><sub>Production line · component emphasis</sub></td>
+<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/model-breakdown-films/#structure"><img src="docs/model-breakdown-films/structure.webp" height="320" alt="Exploded structural system with a readable assembly hierarchy"></a><br><b>Separate the systems</b><br><sub>Structural hierarchy · complete sequence</sub></td>
 </tr></table>
 
 Inspect a GLB, separate its systems and focus attention on a component. The project includes the current browser-source snapshot, a local runner and the distinction from the earlier implementation.

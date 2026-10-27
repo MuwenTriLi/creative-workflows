@@ -10,44 +10,32 @@ Tech stack: React, TypeScript, Three.js, WebGL, WebCodecs and mp4-muxer. This is
 
 [![Model Breakdown Studio with Press Manufacturing Line](../../media/model-breakdown-editor.png)](https://meshroom-breakdown-studio.limuwen9.chatgpt.site)
 
-The live studio opens with a selectable, exploded Press Manufacturing Line. The finished films below are separately supplied output examples; they are not a new export test of the current source snapshot.
-
-### Three models to inspect
-
-![The three supplied example models](docs/media/example-library.png)
-
-Choose Wood House, Press Manufacturing Line or Car Production Line to inspect different scales and assemblies.
+The live studio opens with a selectable, exploded **Press Manufacturing Line**. Its model selector also includes **Wood House** and **Car Production Line**. The finished films below are separately supplied output examples; they are not a new export test of the current source snapshot.
 
 ### Complete presentation sequences
 
 Click an animated preview to watch the complete sequence. All four previews retain the source timing.
 
-<table><tr>
+<table width="100%"><tr>
 <td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=structure"><img src="showcase/media/structure-smooth.webp" height="480" alt="Structural hierarchy"></a><br><b>Structural hierarchy</b><br><sub>Structure within an exploded assembly.</sub><br><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=structure">Watch 11 s MP4</a></td>
 <td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=residence"><img src="showcase/media/residence-smooth.webp" height="480" alt="Residential assembly"></a><br><b>Residential assembly</b><br><sub>Detail with the full model as context.</sub><br><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=residence">Watch 9.5 s MP4</a></td>
-</tr></table>
-
-<br>
-
-<table><tr>
+</tr>
+<tr>
 <td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=systems"><img src="showcase/media/systems-smooth.webp" height="480" alt="Building systems"></a><br><b>Building systems</b><br><sub>Component emphasis and spatial relationships.</sub><br><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=systems">Watch 11.5 s MP4</a></td>
 <td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=tower"><img src="showcase/media/tower-smooth.webp" height="480" alt="Tower elements"></a><br><b>Tower elements</b><br><sub>Sequential explanation of levels and envelope.</sub><br><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=tower">Watch 8 s MP4</a></td>
 </tr></table>
 
-### Read the detail
+### One assembly / four component highlights
 
-These are separately supplied still exports. Click to inspect them; they demonstrate the linework and hierarchy at a higher resolution than the animated previews. They are selected outputs, not a before/after experiment.
+Each still emphasizes a different component in white, while the surrounding assembly remains in linework. The shared view makes the change of focus easy to compare. These are separately supplied still exports; click a frame to inspect the detail.
 
-<table><tr>
-<td width="50%" align="center" valign="top"><a href="showcase/media/detail-6.jpg"><img src="showcase/media/detail-6.jpg" height="480" alt="Supplied Model Breakdown detail still 1"></a><br><b>Detail study 1</b><br><a href="showcase/media/detail-6.jpg">Inspect the still</a></td>
-<td width="50%" align="center" valign="top"><a href="showcase/media/detail-7.jpg"><img src="showcase/media/detail-7.jpg" height="480" alt="Supplied Model Breakdown detail still 2"></a><br><b>Detail study 2</b><br><a href="showcase/media/detail-7.jpg">Inspect the still</a></td>
-</tr></table>
-
-<br>
-
-<table><tr>
-<td width="50%" align="center" valign="top"><a href="showcase/media/detail-8.jpg"><img src="showcase/media/detail-8.jpg" height="480" alt="Supplied Model Breakdown detail still 3"></a><br><b>Detail study 3</b><br><a href="showcase/media/detail-8.jpg">Inspect the still</a></td>
-<td width="50%" align="center" valign="top"><a href="showcase/media/detail-9.jpg"><img src="showcase/media/detail-9.jpg" height="480" alt="Supplied Model Breakdown detail still 4"></a><br><b>Detail study 4</b><br><a href="showcase/media/detail-9.jpg">Inspect the still</a></td>
+<table width="100%"><tr>
+<td width="50%" align="center" valign="top"><a href="showcase/media/detail-6.jpg"><img src="showcase/media/detail-6.jpg" height="480" alt="Moving assembly highlighted in white within the same production line"></a><br><b>Moving assembly</b><br><sub>Central moving components against the surrounding linework.</sub><br><a href="showcase/media/detail-6.jpg">Inspect the still</a></td>
+<td width="50%" align="center" valign="top"><a href="showcase/media/detail-7.jpg"><img src="showcase/media/detail-7.jpg" height="480" alt="Press frame highlighted in white within the same production line"></a><br><b>Press frame</b><br><sub>The main frame and supports brought forward in white.</sub><br><a href="showcase/media/detail-7.jpg">Inspect the still</a></td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top"><a href="showcase/media/detail-8.jpg"><img src="showcase/media/detail-8.jpg" height="480" alt="Trim / inspection highlighted in white within the same production line"></a><br><b>Trim / inspection</b><br><sub>The end station isolated within the production line.</sub><br><a href="showcase/media/detail-8.jpg">Inspect the still</a></td>
+<td width="50%" align="center" valign="top"><a href="showcase/media/detail-9.jpg"><img src="showcase/media/detail-9.jpg" height="480" alt="Machine housings highlighted in white within the same production line"></a><br><b>Machine housings</b><br><sub>Equipment enclosures highlighted without losing context.</sub><br><a href="showcase/media/detail-9.jpg">Inspect the still</a></td>
 </tr></table>
 
 

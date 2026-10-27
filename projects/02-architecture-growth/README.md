@@ -6,46 +6,38 @@ Selected completed architectural films from **illoca**, shown as portfolio evide
 
 ## Visual overview
 
-<p align="center"><a href="../../media/architecture-growth/tennis-hero.jpg"><img src="../../media/architecture-growth/tennis-hero.jpg" height="480" alt="Completed tennis venue film"></a></p>
+### Six completed films
 
-### Tennis venue
+Each animated preview opens its complete film. The two-column gallery moves from venue and city views to architectural details and spatial studies.
 
-<table><tr>
-<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=tennis-sequence"><img src="../../media/architecture-growth/tennis-plan-smooth.webp" height="320" alt="Final tennis film excerpt: plan view"></a><br><b>Plan view</b></td>
-<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=tennis-sequence"><img src="../../media/architecture-growth/tennis-growth-smooth.webp" height="320" alt="Final tennis film excerpt: completed venue"></a><br><b>Venue view</b></td>
+<table width="100%">
+<tr>
+<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=tennis-sequence"><img src="../../media/architecture-growth/tennis-growth-smooth.webp" height="360" alt="Final film excerpt: Tennis venue / plan to stadium"></a><br><b>Tennis venue / plan to stadium</b><br><sub>Venue, seating and roof shown across the final film.</sub></td>
+<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=detail-c"><img src="../../media/architecture-growth/detail-c-smooth.webp" height="360" alt="Final film excerpt: Detail C / building and context"></a><br><b>Detail C / building and context</b><br><sub>A building read together with its surrounding city blocks.</sub></td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=detail-a"><img src="../../media/architecture-growth/detail-a-smooth.webp" height="360" alt="Final film excerpt: Detail A / floor and facade"></a><br><b>Detail A / floor and facade</b><br><sub>Close views of floors, facade and building services.</sub></td>
+<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=detail-b"><img src="../../media/architecture-growth/detail-b-smooth.webp" height="360" alt="Final film excerpt: Detail B / layered interior"></a><br><b>Detail B / layered interior</b><br><sub>Floors, stairs and interior elements in a cutaway view.</sub></td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=office"><img src="../../media/architecture-growth/office-smooth.webp" height="360" alt="Final film excerpt: Office / spatial alternatives"></a><br><b>Office / spatial alternatives</b><br><sub>Office layouts compared within the same floor plate.</sub></td>
+<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=tower"><img src="../../media/architecture-growth/tower-smooth.webp" height="360" alt="Final film excerpt: Tower / vertical sequence"></a><br><b>Tower / vertical sequence</b><br><sub>The tower from individual levels to the complete exterior.</sub></td>
+</tr>
+</table>
+
+### Tennis venue / five moments in one film
+
+Read left to right: plan, lower structure, seating tiers, roof and completed venue. These are selected frames from the finished film.
+
+<table width="100%"><tr>
+<td width="20%" align="center" valign="top"><a href="../../media/architecture-growth/tennis-stage-plan.jpg"><img src="../../media/architecture-growth/tennis-stage-plan.jpg" width="100%" alt="Final tennis film: Site plan and court layout"></a><br><b>01 / Plan</b></td>
+<td width="20%" align="center" valign="top"><a href="../../media/architecture-growth/tennis-stage-foundation.jpg"><img src="../../media/architecture-growth/tennis-stage-foundation.jpg" width="100%" alt="Final tennis film: Lower venue structure around the court"></a><br><b>02 / Lower structure</b></td>
+<td width="20%" align="center" valign="top"><a href="../../media/architecture-growth/tennis-stage-structure.jpg"><img src="../../media/architecture-growth/tennis-stage-structure.jpg" width="100%" alt="Final tennis film: Seating tiers rising around the arena"></a><br><b>03 / Seating tiers</b></td>
+<td width="20%" align="center" valign="top"><a href="../../media/architecture-growth/tennis-stage-enclosure.jpg"><img src="../../media/architecture-growth/tennis-stage-enclosure.jpg" width="100%" alt="Final tennis film: Roof panels around the central opening"></a><br><b>04 / Roof</b></td>
+<td width="20%" align="center" valign="top"><a href="../../media/architecture-growth/tennis-stage-complete.jpg"><img src="../../media/architecture-growth/tennis-stage-complete.jpg" width="100%" alt="Final tennis film: Completed venue and surrounding buildings"></a><br><b>05 / Completed venue</b></td>
 </tr></table>
 
-[Watch the complete tennis film](https://muwentrili.github.io/creative-workflows/films/?project=growth&film=tennis-sequence).
-
-### Selected frames from the final film
-
-<table><tr>
-<td width="20%" align="center" valign="top"><a href="../../media/architecture-growth/tennis-stage-plan.jpg"><img src="../../media/architecture-growth/tennis-stage-plan.jpg" width="100%" alt="Selected final tennis film frame 1"></a><br><b>Frame 01</b></td>
-<td width="20%" align="center" valign="top"><a href="../../media/architecture-growth/tennis-stage-foundation.jpg"><img src="../../media/architecture-growth/tennis-stage-foundation.jpg" width="100%" alt="Selected final tennis film frame 2"></a><br><b>Frame 02</b></td>
-<td width="20%" align="center" valign="top"><a href="../../media/architecture-growth/tennis-stage-structure.jpg"><img src="../../media/architecture-growth/tennis-stage-structure.jpg" width="100%" alt="Selected final tennis film frame 3"></a><br><b>Frame 03</b></td>
-<td width="20%" align="center" valign="top"><a href="../../media/architecture-growth/tennis-stage-enclosure.jpg"><img src="../../media/architecture-growth/tennis-stage-enclosure.jpg" width="100%" alt="Selected final tennis film frame 4"></a><br><b>Frame 04</b></td>
-<td width="20%" align="center" valign="top"><a href="../../media/architecture-growth/tennis-stage-complete.jpg"><img src="../../media/architecture-growth/tennis-stage-complete.jpg" width="100%" alt="Selected final tennis film frame 5"></a><br><b>Frame 05</b></td>
-</tr></table>
-
-These stills are taken from the completed tennis film. Select a frame to inspect the full image.
-
-### Detail films
-
-<table><tr>
-<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=detail-a"><img src="../../media/architecture-growth/detail-a-smooth.webp" height="300" alt="Final Detail A film excerpt"></a><br><b>Detail A / floor and facade</b></td>
-<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=detail-b"><img src="../../media/architecture-growth/detail-b-smooth.webp" height="300" alt="Final Detail B film excerpt"></a><br><b>Detail B / layered interior</b></td>
-</tr></table>
-
-### Building and city views
-
-<table><tr>
-<td width="33%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=detail-c"><img src="../../media/architecture-growth/detail-c-smooth.webp" height="280" alt="Final Detail C building and context film excerpt"></a><br><b>Detail C / context</b></td>
-<td width="33%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=office"><img src="../../media/architecture-growth/office-smooth.webp" height="280" alt="Final office film excerpt"></a><br><b>Office</b></td>
-<td width="33%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=tower"><img src="../../media/architecture-growth/tower-smooth.webp" height="280" alt="Final tower film excerpt"></a><br><b>Tower</b></td>
-</tr></table>
-
-Click an animated preview to watch its complete film with playback controls. These are excerpts of selected final outputs, not source scenes or instructions for recreating the company's work.
-
+Select a still for a closer view, or play the Tennis venue preview above to see the sequence in motion. All media here presents selected final outputs.
 
 ## Ownership and confidentiality
 

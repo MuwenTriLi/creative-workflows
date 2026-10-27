@@ -75,12 +75,14 @@ Clock numbers indicate the presentation order. GIFs repeat short excerpts at the
 
 ### Selected forms
 
+Finished renders for inspecting materials and small details; the motion studies above show how the assemblies move.
+
 <table>
 <tr>
-<td width="25%" align="center"><a href="media/clk18.png"><img src="media/clk18.png" alt="CLK18 original render" width="100%"></a><br><b>CLK18</b></td>
-<td width="25%" align="center"><a href="media/orbit.png"><img src="media/orbit.png" alt="CLK31 original render" width="100%"></a><br><b>CLK31</b></td>
-<td width="25%" align="center"><a href="media/aperture.png"><img src="media/aperture.png" alt="CLK32 original render" width="100%"></a><br><b>CLK32</b></td>
-<td width="25%" align="center"><a href="media/differential-instrument.png"><img src="media/differential-instrument.png" alt="SPM14 original render" width="100%"></a><br><b>SPM14</b></td>
+<td width="25%" align="center"><a href="media/clk18.png"><img src="media/clk18.png" alt="CLK18 original render" width="100%"></a><br><b>CLK18 / vertical linkages</b></td>
+<td width="25%" align="center"><a href="media/orbit.png"><img src="media/orbit.png" alt="CLK31 original render" width="100%"></a><br><b>CLK31 / rail-guided assembly</b></td>
+<td width="25%" align="center"><a href="media/aperture.png"><img src="media/aperture.png" alt="CLK32 original render" width="100%"></a><br><b>CLK32 / unfolding canopy</b></td>
+<td width="25%" align="center"><a href="media/chain-drive.png"><img src="media/chain-drive.png" alt="SPM03 chain-drive assembly, original render" width="100%"></a><br><b>SPM03 / chain drive</b></td>
 </tr>
 </table>
 
@@ -101,8 +103,6 @@ Clock numbers indicate the presentation order. GIFs repeat short excerpts at the
 </tr>
 </table>
 
-
-
 Click any render to inspect it. [Browse all clocks and selected mechanisms →](docs/render-gallery.md)
 
 ### Inside Blender: from library to moving assembly
@@ -114,36 +114,13 @@ Click any render to inspect it. [Browse all clocks and selected mechanisms →](
 
 [Opening mechanism · MP4](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=opening-in-blender) · [Asset placement · MP4](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=library-placement) · [Seven videos and recordings](docs/showcase-films.md)
 
-These original viewport recordings show the working scene and library. A separate checked CLK32 speed-change comparison follows below; neither establishes every parameter or arbitrary recomposition.
-
-### Components for a new design
-
-The library works at three levels: **complete animated assemblies**, **editable parts and subassemblies**, and **reusable procedural materials**. A clock can anchor a scene; its gears, frames and decorative structures can also inform a new design or visual direction.
-
-<table>
-<tr>
-<td width="25%" align="center"><a href="media/clk04.png"><img src="media/clk04.png" alt="CLK04 original render" width="100%"></a><br><b>Gear layers</b></td>
-<td width="25%" align="center"><a href="media/clk06.png"><img src="media/clk06.png" alt="CLK06 original render" width="100%"></a><br><b>Linkages</b></td>
-<td width="25%" align="center"><a href="media/clk12.png"><img src="media/clk12.png" alt="CLK12 original render" width="100%"></a><br><b>Clock-face detail</b></td>
-<td width="25%" align="center"><a href="media/chain-drive.png"><img src="media/chain-drive.png" alt="SPM03 original render" width="100%"></a><br><b>Chain drive</b></td>
-</tr>
-</table>
-
-For a working animated module, retain its controller, hierarchy and driver dependencies. For a new visual composition, duplicate the asset, make its collection instance real and adapt selected geometry or materials. A separated component may need its motion relationships rebuilt. [Component reuse workflow](docs/component-reuse.md).
-
-### One checked change: slower opening
-
-| Original · Speed 1.0 | Revised · Speed 0.75 |
-| --- | --- |
-| ![Original mechanism at frame 241](media/control-study/before-preview.png) | ![Slower mechanism at the same frame](media/control-study/after-preview.png) |
-
-[Play the 10-second before/after comparison](media/control-study/clk32-speed-comparison.mp4). This is a diagnostic render of one controlled change, separate from the finished product renders above. Both sides use the same camera and frame range.
+These original viewport recordings show the working scene and library. The Evidence section includes a checked CLK32 speed-change video; neither establishes every parameter or arbitrary recomposition.
 
 ### Browse the library in Blender
 
 ![Blender Asset Browser with the supplied collection](media/asset-browser.png)
 
-[![Blender library tour](media/blender-library-tour-poster.jpg)](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=blender-library-tour)
+[Watch the Blender library tour](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=blender-library-tour) to see the assets in the working viewport.
 
 [Full render gallery](docs/render-gallery.md) · [All 24 motion studies](docs/motion-library.md) · [Seven films and viewport recordings](docs/showcase-films.md). These retain the larger galleries and their original asset IDs.
 
@@ -161,6 +138,12 @@ A detailed mechanism is only part of a usable asset. A creator also needs to pla
 | Develop | Direct gear, frame and linkage relationships; review the result | Assist linked motion through native Blender drivers, hierarchies and constraints |
 | Expose controls | Choose useful adjustments, such as speed, phase and clock behavior | Propagate accepted inputs through connected components |
 | Deliver | Select assemblies, previews, instructions and visual evidence | Assist packaging and record a reusable inspection/adaptation procedure |
+
+### Components for a new design
+
+The library works at three levels: **complete animated assemblies**, **editable parts and subassemblies**, and **reusable procedural materials**. A clock can anchor a scene; its gears, frames and decorative structures can also inform a new design or visual direction.
+
+For a working animated module, retain its controller, hierarchy and driver dependencies. For a new visual composition, duplicate the asset, make its collection instance real and adapt selected geometry or materials. A separated component may need its motion relationships rebuilt. [Component reuse workflow](docs/component-reuse.md).
 
 ### A control system behind each assembly
 
@@ -188,7 +171,7 @@ Use a working copy of CLK32 to slow the opening while keeping its mechanism inta
 3. Keep the hierarchy, driver targets, camera and unrelated geometry intact. `Input_Angle` is a calculated result, not the speed input to edit.
 4. Preview the full intended frame range and restore the recorded value if the motion no longer serves the shot.
 
-This is the bounded change shown above. Recomposition or dependency changes require their own checks. [Exact procedure and measured result](docs/control-study.md).
+This is the bounded change recorded in the Evidence section. Recomposition or dependency changes require their own checks. [Exact procedure and measured result](docs/control-study.md).
 
 ## Setup and reuse
 
@@ -209,6 +192,10 @@ The supplied package documents Blender **5.2.0 LTS / Windows / Cycles**. The lat
 For animated reuse, retain the controller, hierarchy and targets together. For geometry-only reuse, work on a duplicate and inspect any links that must be rebuilt. [Component reuse](docs/component-reuse.md) describes these different cases.
 
 ## Evidence and next step
+
+### One checked change: slower opening
+
+[Play the 10-second speed comparison — 1.0 versus 0.75](media/control-study/clk32-speed-comparison.mp4). Watch the opening over time: both versions use the same camera and frame range, with only `Speed_Scale` changed. This diagnostic render documents one control adjustment separately from the finished product imagery.
 
 The CLK32 change retained **81 object drivers**, checked **601 frames per setting**, and measured an input-angle ratio of **0.75**. The ten-second comparison decodes to 240 frames at 24 fps. These checks do not establish collision-free motion across the whole collection or arbitrary controller settings.
 
