@@ -31,8 +31,8 @@ Frames from the two original collection videos. Their motion phases differ; this
 Two larger studies expose the movement behind the overall silhouette. Click a preview to inspect its five-second excerpt.
 
 <table><tr>
-<td width="50%" align="center" valign="top"><a href="media/differential-motion.gif"><img src="media/differential-motion.gif" width="420" alt="SPM14 suspended mechanism in motion"></a><br><b>SPM14 / suspended mechanism</b><br><sub>Read the suspended parts, linkages and counterweight together.</sub></td>
-<td width="50%" align="center" valign="top"><a href="media/orbit-motion.gif"><img src="media/orbit-motion.gif" width="420" alt="CLK31 guided mechanical movement"></a><br><b>CLK31 / guided movement</b><br><sub>Read the relationship between the dial, structure and rail path.</sub></td>
+<td width="50%" align="center" valign="top"><a href="media/differential-motion.gif"><img src="media/differential-motion.gif" height="480" alt="SPM14 suspended mechanism in motion"></a><br><b>SPM14 / suspended mechanism</b><br><sub>Read the suspended parts, linkages and counterweight together.</sub></td>
+<td width="50%" align="center" valign="top"><a href="media/orbit-motion.gif"><img src="media/orbit-motion.gif" height="480" alt="CLK31 guided mechanical movement"></a><br><b>CLK31 / guided movement</b><br><sub>Read the relationship between the dial, structure and rail path.</sub></td>
 </tr></table>
 
 [More videos and Blender recordings →](docs/showcase-films.md) · [All 24 motion studies →](docs/motion-library.md#24-clock-motion-studies)
@@ -114,7 +114,7 @@ Click any render to inspect it. [Browse all clocks and selected mechanisms →](
 
 [Opening mechanism · MP4](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=opening-in-blender) · [Asset placement · MP4](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=library-placement) · [Seven videos and recordings](docs/showcase-films.md)
 
-These original viewport recordings show the working scene and library. These recordings show the working scene and library. A separate checked CLK32 speed-change comparison follows below; neither establishes every parameter or arbitrary recomposition.
+These original viewport recordings show the working scene and library. A separate checked CLK32 speed-change comparison follows below; neither establishes every parameter or arbitrary recomposition.
 
 ### Components for a new design
 

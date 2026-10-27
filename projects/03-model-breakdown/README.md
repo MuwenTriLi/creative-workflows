@@ -23,15 +23,15 @@ Choose Wood House, Press Manufacturing Line or Car Production Line to inspect di
 Click an animated preview to watch the complete sequence. All four previews retain the source timing.
 
 <table><tr>
-<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=structure"><img src="showcase/media/structure-smooth.webp" width="100%" alt="Structural hierarchy"></a><br><b>Structural hierarchy</b><br><sub>Structure within an exploded assembly.</sub><br><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=structure">Watch 11 s MP4</a></td>
-<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=residence"><img src="showcase/media/residence-smooth.webp" width="100%" alt="Residential assembly"></a><br><b>Residential assembly</b><br><sub>Detail with the full model as context.</sub><br><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=residence">Watch 9.5 s MP4</a></td>
+<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=structure"><img src="showcase/media/structure-smooth.webp" height="480" alt="Structural hierarchy"></a><br><b>Structural hierarchy</b><br><sub>Structure within an exploded assembly.</sub><br><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=structure">Watch 11 s MP4</a></td>
+<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=residence"><img src="showcase/media/residence-smooth.webp" height="480" alt="Residential assembly"></a><br><b>Residential assembly</b><br><sub>Detail with the full model as context.</sub><br><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=residence">Watch 9.5 s MP4</a></td>
 </tr></table>
 
 <br>
 
 <table><tr>
-<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=systems"><img src="showcase/media/systems-smooth.webp" width="100%" alt="Building systems"></a><br><b>Building systems</b><br><sub>Component emphasis and spatial relationships.</sub><br><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=systems">Watch 11.5 s MP4</a></td>
-<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=tower"><img src="showcase/media/tower-smooth.webp" width="100%" alt="Tower elements"></a><br><b>Tower elements</b><br><sub>Sequential explanation of levels and envelope.</sub><br><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=tower">Watch 8 s MP4</a></td>
+<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=systems"><img src="showcase/media/systems-smooth.webp" height="480" alt="Building systems"></a><br><b>Building systems</b><br><sub>Component emphasis and spatial relationships.</sub><br><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=systems">Watch 11.5 s MP4</a></td>
+<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=tower"><img src="showcase/media/tower-smooth.webp" height="480" alt="Tower elements"></a><br><b>Tower elements</b><br><sub>Sequential explanation of levels and envelope.</sub><br><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=tower">Watch 8 s MP4</a></td>
 </tr></table>
 
 ### Read the detail
@@ -39,15 +39,15 @@ Click an animated preview to watch the complete sequence. All four previews reta
 These are separately supplied still exports. Click to inspect them; they demonstrate the linework and hierarchy at a higher resolution than the animated previews. They are selected outputs, not a before/after experiment.
 
 <table><tr>
-<td width="50%" align="center" valign="top"><a href="showcase/media/detail-6.jpg"><img src="showcase/media/detail-6.jpg" width="100%" alt="Supplied Model Breakdown detail still 1"></a><br><b>Detail study 1</b><br><a href="showcase/media/detail-6.jpg">Inspect the still</a></td>
-<td width="50%" align="center" valign="top"><a href="showcase/media/detail-7.jpg"><img src="showcase/media/detail-7.jpg" width="100%" alt="Supplied Model Breakdown detail still 2"></a><br><b>Detail study 2</b><br><a href="showcase/media/detail-7.jpg">Inspect the still</a></td>
+<td width="50%" align="center" valign="top"><a href="showcase/media/detail-6.jpg"><img src="showcase/media/detail-6.jpg" height="480" alt="Supplied Model Breakdown detail still 1"></a><br><b>Detail study 1</b><br><a href="showcase/media/detail-6.jpg">Inspect the still</a></td>
+<td width="50%" align="center" valign="top"><a href="showcase/media/detail-7.jpg"><img src="showcase/media/detail-7.jpg" height="480" alt="Supplied Model Breakdown detail still 2"></a><br><b>Detail study 2</b><br><a href="showcase/media/detail-7.jpg">Inspect the still</a></td>
 </tr></table>
 
 <br>
 
 <table><tr>
-<td width="50%" align="center" valign="top"><a href="showcase/media/detail-8.jpg"><img src="showcase/media/detail-8.jpg" width="100%" alt="Supplied Model Breakdown detail still 3"></a><br><b>Detail study 3</b><br><a href="showcase/media/detail-8.jpg">Inspect the still</a></td>
-<td width="50%" align="center" valign="top"><a href="showcase/media/detail-9.jpg"><img src="showcase/media/detail-9.jpg" width="100%" alt="Supplied Model Breakdown detail still 4"></a><br><b>Detail study 4</b><br><a href="showcase/media/detail-9.jpg">Inspect the still</a></td>
+<td width="50%" align="center" valign="top"><a href="showcase/media/detail-8.jpg"><img src="showcase/media/detail-8.jpg" height="480" alt="Supplied Model Breakdown detail still 3"></a><br><b>Detail study 3</b><br><a href="showcase/media/detail-8.jpg">Inspect the still</a></td>
+<td width="50%" align="center" valign="top"><a href="showcase/media/detail-9.jpg"><img src="showcase/media/detail-9.jpg" height="480" alt="Supplied Model Breakdown detail still 4"></a><br><b>Detail study 4</b><br><a href="showcase/media/detail-9.jpg">Inspect the still</a></td>
 </tr></table>
 
 

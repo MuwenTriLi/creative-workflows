@@ -6,7 +6,7 @@ Selected completed architectural films from **illoca**, shown as portfolio evide
 
 ## Visual overview
 
-![Completed tennis venue film](../../media/architecture-growth/tennis-hero.jpg)
+<p align="center"><a href="../../media/architecture-growth/tennis-hero.jpg"><img src="../../media/architecture-growth/tennis-hero.jpg" height="480" alt="Completed tennis venue film"></a></p>
 
 ### Tennis venue
 
@@ -16,6 +16,18 @@ Selected completed architectural films from **illoca**, shown as portfolio evide
 </tr></table>
 
 [Watch the complete tennis film](https://muwentrili.github.io/creative-workflows/films/?project=growth&film=tennis-sequence).
+
+### Selected frames from the final film
+
+<table><tr>
+<td width="20%" align="center" valign="top"><a href="../../media/architecture-growth/tennis-stage-plan.jpg"><img src="../../media/architecture-growth/tennis-stage-plan.jpg" width="100%" alt="Selected final tennis film frame 1"></a><br><b>Frame 01</b></td>
+<td width="20%" align="center" valign="top"><a href="../../media/architecture-growth/tennis-stage-foundation.jpg"><img src="../../media/architecture-growth/tennis-stage-foundation.jpg" width="100%" alt="Selected final tennis film frame 2"></a><br><b>Frame 02</b></td>
+<td width="20%" align="center" valign="top"><a href="../../media/architecture-growth/tennis-stage-structure.jpg"><img src="../../media/architecture-growth/tennis-stage-structure.jpg" width="100%" alt="Selected final tennis film frame 3"></a><br><b>Frame 03</b></td>
+<td width="20%" align="center" valign="top"><a href="../../media/architecture-growth/tennis-stage-enclosure.jpg"><img src="../../media/architecture-growth/tennis-stage-enclosure.jpg" width="100%" alt="Selected final tennis film frame 4"></a><br><b>Frame 04</b></td>
+<td width="20%" align="center" valign="top"><a href="../../media/architecture-growth/tennis-stage-complete.jpg"><img src="../../media/architecture-growth/tennis-stage-complete.jpg" width="100%" alt="Selected final tennis film frame 5"></a><br><b>Frame 05</b></td>
+</tr></table>
+
+These stills are taken from the completed tennis film. Select a frame to inspect the full image.
 
 ### Detail films
 
