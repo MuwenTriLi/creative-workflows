@@ -16,13 +16,13 @@ Start with a duplicate of the asset and make the collection instance real. Revie
 
 An animated subassembly needs its controller, target objects and constraints. Retain those dependencies when transferring motion; if you isolate only the visible mesh, rebuild the relevant motion relationships. Reusing a component visually is a different task from transferring its entire rig.
 
-<table>
-<tr>
-<td width="33%"><a href="../media/clk04.png"><img src="../media/clk04.png" alt="CLK04 original rendered asset" width="100%"></a><br><b>CLK04</b></td>
-<td width="33%"><a href="../media/clk06.png"><img src="../media/clk06.png" alt="CLK06 original rendered asset" width="100%"></a><br><b>CLK06</b></td>
-<td width="33%"><a href="../media/differential-instrument.png"><img src="../media/differential-instrument.png" alt="SPM14 original rendered asset" width="100%"></a><br><b>SPM14</b></td>
-</tr>
-</table>
+<p align="center">
+<a href="../media/clk04.png"><img src="../media/clk04.png" alt="CLK04 original rendered asset" width="30.0000%"></a>
+<a href="../media/clk06.png"><img src="../media/clk06.png" alt="CLK06 original rendered asset" width="30.0000%"></a>
+<a href="../media/differential-instrument.png"><img src="../media/differential-instrument.png" alt="SPM14 original rendered asset" width="30.0000%"></a>
+</p>
+
+<p><em>Left to right:</em> <b>CLK04</b>; <b>CLK06</b>; <b>SPM14</b></p>
 
 ## 3  /  Carry the material language into a new scene
 

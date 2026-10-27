@@ -1,7 +1,7 @@
 # Automation, creator control and delivery
 [Flagship production case](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/01-clockwork/docs/production-case.md)
 
-My design question is: **which parts of a creative job can a system complete reliably, and which decisions need a creator's judgment?** The answer should be visible in the interface and in the delivered work.
+The central design question is: **which parts of a creative job can a system complete reliably, and which decisions need a creator's judgment?** The answer should be visible in the interface and in the delivered work.
 
 ## What exists and what is proposed
 
@@ -50,7 +50,7 @@ Pause for a decision when the next action changes the meaning or scope of the wo
 
 For an agent using paid inference or cloud rendering, show the provider, scope and cost limit before execution; a retry stays inside the approved scope. None of these case studies establishes an operating paid agent service.
 
-## Controls I would give the creator
+## Proposed creator controls
 
 These are proposed extensions, to validate before implementation:
 
@@ -75,7 +75,7 @@ A delivery record should include the source identifiers, relevant tool/version, 
 
 For each workflow, provide the user task and hypothesis; reproducible input and output examples; parameter and state definitions; automation scope and review points; failure examples; and an acceptance checklist. The [handoff template](handoff-template.md) gives the concrete fields. The code, source provenance and hosted/local distinction must travel with the handoff.
 
-## How I would validate the next iteration
+## Validation for the next iteration
 
 The next validation is a small, exploratory session with three relevant creators using the same brief and source material in their existing workflow and the prototype. This is a proposed study, not completed research or a statistical effectiveness claim.
 

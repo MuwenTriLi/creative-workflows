@@ -14,14 +14,14 @@ All 32 original clock renders, plus two selected mechanical assemblies. Clock pa
 
 ## Featured architectural and mechanical forms
 
-<table>
-<tr>
-<td width="25%" align="center"><a href="../media/orbit.png"><img src="../media/orbit.png" alt="CLK31 original render" width="100%"></a><br><b>CLK31</b></td>
-<td width="25%" align="center"><a href="../media/aperture.png"><img src="../media/aperture.png" alt="CLK32 original render" width="100%"></a><br><b>CLK32</b></td>
-<td width="25%" align="center"><a href="../media/differential-instrument.png"><img src="../media/differential-instrument.png" alt="SPM14 original render" width="100%"></a><br><b>SPM14</b></td>
-<td width="25%" align="center"><a href="../media/chain-drive.png"><img src="../media/chain-drive.png" alt="SPM03 original render" width="100%"></a><br><b>SPM03</b></td>
-</tr>
-</table>
+<p align="center">
+<a href="../media/orbit.png"><img src="../media/orbit.png" alt="CLK31 original render" width="22.5000%"></a>
+<a href="../media/aperture.png"><img src="../media/aperture.png" alt="CLK32 original render" width="22.5000%"></a>
+<a href="../media/differential-instrument.png"><img src="../media/differential-instrument.png" alt="SPM14 original render" width="22.5000%"></a>
+<a href="../media/chain-drive.png"><img src="../media/chain-drive.png" alt="SPM03 original render" width="22.5000%"></a>
+</p>
+
+<p><em>Left to right:</em> <b>CLK31</b>; <b>CLK32</b>; <b>SPM14</b>; <b>SPM03</b></p>
 
 ## Original clock series
 

@@ -4,33 +4,41 @@
 
 Four supplied architectural sequences show the intended result: a complete assembly becomes legible through separation, component emphasis and a clear relationship to the whole. Click a card for the complete viewing copy.
 
-<table><tr>
-<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=structure"><img src="media/structure-smooth.webp" width="100%" alt="Structural hierarchy"></a><br><b>Structural hierarchy</b><br><sub>Structure within an exploded assembly.</sub><br><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=structure">Watch 11 s MP4</a></td>
-<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=residence"><img src="media/residence-smooth.webp" width="100%" alt="Residential assembly"></a><br><b>Residential assembly</b><br><sub>Detail with the full model as context.</sub><br><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=residence">Watch 9.5 s MP4</a></td>
-</tr></table>
+<p align="center">
+<a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=structure"><img src="media/structure-smooth.webp" alt="Structural hierarchy" width="45.0000%"></a>
+<a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=residence"><img src="media/residence-smooth.webp" alt="Residential assembly" width="45.0000%"></a>
+</p>
+
+<p><em>Left to right:</em> <b>Structural hierarchy</b> — <sub>Structure within an exploded assembly.</sub> — <a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=structure">Watch 11 s MP4</a>; <b>Residential assembly</b> — <sub>Detail with the full model as context.</sub> — <a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=residence">Watch 9.5 s MP4</a></p>
 
 <br>
 
-<table><tr>
-<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=systems"><img src="media/systems-smooth.webp" width="100%" alt="Building systems"></a><br><b>Building systems</b><br><sub>Component emphasis and spatial relationships.</sub><br><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=systems">Watch 11.5 s MP4</a></td>
-<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=tower"><img src="media/tower-smooth.webp" width="100%" alt="Tower elements"></a><br><b>Tower elements</b><br><sub>Sequential explanation of levels and envelope.</sub><br><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=tower">Watch 8 s MP4</a></td>
-</tr></table>
+<p align="center">
+<a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=systems"><img src="media/systems-smooth.webp" alt="Building systems" width="45.0000%"></a>
+<a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=tower"><img src="media/tower-smooth.webp" alt="Tower elements" width="45.0000%"></a>
+</p>
+
+<p><em>Left to right:</em> <b>Building systems</b> — <sub>Component emphasis and spatial relationships.</sub> — <a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=systems">Watch 11.5 s MP4</a>; <b>Tower elements</b> — <sub>Sequential explanation of levels and envelope.</sub> — <a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=tower">Watch 8 s MP4</a></p>
 
 ## Read the detail
 
 These are separately supplied still exports. Click to inspect them; they demonstrate the linework and hierarchy at a higher resolution than the animated previews. They are selected outputs, not a before/after experiment.
 
-<table><tr>
-<td width="50%" align="center" valign="top"><a href="media/detail-6.jpg"><img src="media/detail-6.jpg" width="100%" alt="Supplied Model Breakdown detail still 1"></a><br><b>Detail study 1</b><br><a href="media/detail-6.jpg">Inspect the still</a></td>
-<td width="50%" align="center" valign="top"><a href="media/detail-7.jpg"><img src="media/detail-7.jpg" width="100%" alt="Supplied Model Breakdown detail still 2"></a><br><b>Detail study 2</b><br><a href="media/detail-7.jpg">Inspect the still</a></td>
-</tr></table>
+<p align="center">
+<a href="media/detail-6.jpg"><img src="media/detail-6.jpg" alt="Supplied Model Breakdown detail still 1" width="45.0000%"></a>
+<a href="media/detail-7.jpg"><img src="media/detail-7.jpg" alt="Supplied Model Breakdown detail still 2" width="45.0000%"></a>
+</p>
+
+<p><em>Left to right:</em> <b>Detail study 1</b> — <a href="media/detail-6.jpg">Inspect the still</a>; <b>Detail study 2</b> — <a href="media/detail-7.jpg">Inspect the still</a></p>
 
 <br>
 
-<table><tr>
-<td width="50%" align="center" valign="top"><a href="media/detail-8.jpg"><img src="media/detail-8.jpg" width="100%" alt="Supplied Model Breakdown detail still 3"></a><br><b>Detail study 3</b><br><a href="media/detail-8.jpg">Inspect the still</a></td>
-<td width="50%" align="center" valign="top"><a href="media/detail-9.jpg"><img src="media/detail-9.jpg" width="100%" alt="Supplied Model Breakdown detail still 4"></a><br><b>Detail study 4</b><br><a href="media/detail-9.jpg">Inspect the still</a></td>
-</tr></table>
+<p align="center">
+<a href="media/detail-8.jpg"><img src="media/detail-8.jpg" alt="Supplied Model Breakdown detail still 3" width="45.0000%"></a>
+<a href="media/detail-9.jpg"><img src="media/detail-9.jpg" alt="Supplied Model Breakdown detail still 4" width="45.0000%"></a>
+</p>
+
+<p><em>Left to right:</em> <b>Detail study 3</b> — <a href="media/detail-8.jpg">Inspect the still</a>; <b>Detail study 4</b> — <a href="media/detail-9.jpg">Inspect the still</a></p>
 
 ## What remains to show
 

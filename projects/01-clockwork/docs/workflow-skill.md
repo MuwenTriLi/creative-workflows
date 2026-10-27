@@ -26,14 +26,14 @@ The method applies at different scales: a clock can anchor a scene, a gear train
 
 ## Existing mechanisms that ground the workflow
 
-<table>
-<tr>
-<td width="25%" align="center"><a href="controls.md#clock-and-gear-timing--clk08"><img src="../media/motion-clk08.gif" alt="CLK08 exposed movement" width="100%"></a><br><b>Gear rhythm</b><br><sub>Separate gear and clock timing</sub></td>
-<td width="25%" align="center"><a href="controls.md#chain-speed--spm03"><img src="../media/chain-drive.png" alt="SPM03 chain assembly" width="100%"></a><br><b>Chain drive</b><br><sub>Connected movement controls</sub></td>
-<td width="25%" align="center"><a href="controls.md#travel-rhythm--clk31-orbit"><img src="../media/motion-clk31.gif" alt="CLK31 rail-guided mechanism" width="100%"></a><br><b>Guided travel</b><br><sub>Retain the existing rail path</sub></td>
-<td width="25%" align="center"><a href="controls.md#opening-and-folding--clk32-aperture"><img src="../media/motion-clk32.gif" alt="CLK32 unfolding canopy" width="100%"></a><br><b>Opening motion</b><br><sub>Control the upstream input</sub></td>
-</tr>
-</table>
+<p align="center">
+<a href="controls.md#clock-and-gear-timing--clk08"><img src="../media/motion-clk08.gif" alt="CLK08 exposed movement" width="21.1765%"></a>
+<a href="controls.md#chain-speed--spm03"><img src="../media/chain-drive.png" alt="SPM03 chain assembly" width="26.4706%"></a>
+<a href="controls.md#travel-rhythm--clk31-orbit"><img src="../media/motion-clk31.gif" alt="CLK31 rail-guided mechanism" width="21.1765%"></a>
+<a href="controls.md#opening-and-folding--clk32-aperture"><img src="../media/motion-clk32.gif" alt="CLK32 unfolding canopy" width="21.1765%"></a>
+</p>
+
+<p><em>Left to right:</em> <b>Gear rhythm</b> — <sub>Separate gear and clock timing</sub>; <b>Chain drive</b> — <sub>Connected movement controls</sub>; <b>Guided travel</b> — <sub>Retain the existing rail path</sub>; <b>Opening motion</b> — <sub>Control the upstream input</sub></p>
 
 ## What is packaged as a Skill
 
@@ -45,9 +45,9 @@ The repository now includes [`clockwork-assembly/SKILL.md`](../skills/clockwork-
 
 An agent following the Skill should first inspect the actual root controller and dependencies, adjust the available timing inputs, check the changed motion, then return the working copy and change log. This is an example invocation, not a claim that this derivative scene has already been produced.
 
-## My contribution and the role of AI
+## Project contribution and the role of AI
 
-I modeled the original source collection myself, organized it as input and references, set the design direction, reviewed mechanical variations and shaped the library as a usable creative product. Codex assisted source inspection and the development of structures and gear linkages under those constraints. The Skill makes the adaptation procedure explicit so those decisions can be carried into another task.
+Muwen Li modeled the original source collection, organized the inputs and references, defined the design direction, reviewed mechanical variations and shaped the library as a usable creative product. Codex assisted source inspection and the development of structures and gear linkages under those constraints. The Skill makes the adaptation procedure explicit so those decisions can be carried into another task.
 
 ## Evidence and current status
 

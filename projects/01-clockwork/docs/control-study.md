@@ -8,9 +8,12 @@
 
 [Play the 10-second before/after MP4](../media/control-study/clk32-speed-comparison.mp4). **Left: original speed 1.0. Right: revised speed 0.75.** Both use the same camera, diagnostic Workbench lighting and frames 1–240 at 24 fps. The clip is an inspection render, not a replacement for the product's finished showcase.
 
-| Original · Speed 1.0 | Revised · Speed 0.75 |
-| --- | --- |
-| ![Original mechanism at frame 241](../media/control-study/before-preview.png) | ![Slower mechanism at the same frame](../media/control-study/after-preview.png) |
+<p align="center">
+<img src="../media/control-study/before-preview.png" width="45.0000%" alt="Original mechanism at frame 241">
+<img src="../media/control-study/after-preview.png" width="45.0000%" alt="Slower mechanism at the same frame">
+</p>
+
+<p><em>Left to right:</em> <b>Original · Speed 1.0</b>; <b>Revised · Speed 0.75</b></p>
 
 ## Inspect → change → check
 

@@ -16,27 +16,37 @@ The live studio opens with a selectable, exploded **Press Manufacturing Line**. 
 
 Click an animated preview to watch the complete sequence. All four previews retain the source timing.
 
-<table width="100%"><tr>
-<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=structure"><img src="showcase/media/structure-smooth.webp" height="480" alt="Structural hierarchy"></a><br><b>Structural hierarchy</b><br><sub>Structure within an exploded assembly.</sub><br><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=structure">Watch 11 s MP4</a></td>
-<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=residence"><img src="showcase/media/residence-smooth.webp" height="480" alt="Residential assembly"></a><br><b>Residential assembly</b><br><sub>Detail with the full model as context.</sub><br><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=residence">Watch 9.5 s MP4</a></td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=systems"><img src="showcase/media/systems-smooth.webp" height="480" alt="Building systems"></a><br><b>Building systems</b><br><sub>Component emphasis and spatial relationships.</sub><br><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=systems">Watch 11.5 s MP4</a></td>
-<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=tower"><img src="showcase/media/tower-smooth.webp" height="480" alt="Tower elements"></a><br><b>Tower elements</b><br><sub>Sequential explanation of levels and envelope.</sub><br><a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=tower">Watch 8 s MP4</a></td>
-</tr></table>
+<p align="center">
+<a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=structure"><img src="showcase/media/structure-smooth.webp" alt="Structural hierarchy" width="45.0000%"></a>
+<a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=residence"><img src="showcase/media/residence-smooth.webp" alt="Residential assembly" width="45.0000%"></a>
+</p>
+
+<p><em>Left to right:</em> <b>Structural hierarchy</b> — <sub>Structure within an exploded assembly.</sub> — <a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=structure">Watch 11 s MP4</a>; <b>Residential assembly</b> — <sub>Detail with the full model as context.</sub> — <a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=residence">Watch 9.5 s MP4</a></p>
+
+<p align="center">
+<a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=systems"><img src="showcase/media/systems-smooth.webp" alt="Building systems" width="45.0000%"></a>
+<a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=tower"><img src="showcase/media/tower-smooth.webp" alt="Tower elements" width="45.0000%"></a>
+</p>
+
+<p><em>Left to right:</em> <b>Building systems</b> — <sub>Component emphasis and spatial relationships.</sub> — <a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=systems">Watch 11.5 s MP4</a>; <b>Tower elements</b> — <sub>Sequential explanation of levels and envelope.</sub> — <a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=tower">Watch 8 s MP4</a></p>
 
 ### One assembly / four component highlights
 
 Each still emphasizes a different component in white, while the surrounding assembly remains in linework. The shared view makes the change of focus easy to compare. These are separately supplied still exports; click a frame to inspect the detail.
 
-<table width="100%"><tr>
-<td width="50%" align="center" valign="top"><a href="showcase/media/detail-6.jpg"><img src="showcase/media/detail-6.jpg" height="480" alt="Moving assembly highlighted in white within the same production line"></a><br><b>Moving assembly</b><br><sub>Central moving components against the surrounding linework.</sub><br><a href="showcase/media/detail-6.jpg">Inspect the still</a></td>
-<td width="50%" align="center" valign="top"><a href="showcase/media/detail-7.jpg"><img src="showcase/media/detail-7.jpg" height="480" alt="Press frame highlighted in white within the same production line"></a><br><b>Press frame</b><br><sub>The main frame and supports brought forward in white.</sub><br><a href="showcase/media/detail-7.jpg">Inspect the still</a></td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top"><a href="showcase/media/detail-8.jpg"><img src="showcase/media/detail-8.jpg" height="480" alt="Trim / inspection highlighted in white within the same production line"></a><br><b>Trim / inspection</b><br><sub>The end station isolated within the production line.</sub><br><a href="showcase/media/detail-8.jpg">Inspect the still</a></td>
-<td width="50%" align="center" valign="top"><a href="showcase/media/detail-9.jpg"><img src="showcase/media/detail-9.jpg" height="480" alt="Machine housings highlighted in white within the same production line"></a><br><b>Machine housings</b><br><sub>Equipment enclosures highlighted without losing context.</sub><br><a href="showcase/media/detail-9.jpg">Inspect the still</a></td>
-</tr></table>
+<p align="center">
+<a href="showcase/media/detail-6.jpg"><img src="showcase/media/detail-6.jpg" alt="Moving assembly highlighted in white within the same production line" width="45.0000%"></a>
+<a href="showcase/media/detail-7.jpg"><img src="showcase/media/detail-7.jpg" alt="Press frame highlighted in white within the same production line" width="45.0000%"></a>
+</p>
+
+<p><em>Left to right:</em> <b>Moving assembly</b> — <sub>Central moving components against the surrounding linework.</sub> — <a href="showcase/media/detail-6.jpg">Inspect the still</a>; <b>Press frame</b> — <sub>The main frame and supports brought forward in white.</sub> — <a href="showcase/media/detail-7.jpg">Inspect the still</a></p>
+
+<p align="center">
+<a href="showcase/media/detail-8.jpg"><img src="showcase/media/detail-8.jpg" alt="Trim / inspection highlighted in white within the same production line" width="45.0000%"></a>
+<a href="showcase/media/detail-9.jpg"><img src="showcase/media/detail-9.jpg" alt="Machine housings highlighted in white within the same production line" width="45.0000%"></a>
+</p>
+
+<p><em>Left to right:</em> <b>Trim / inspection</b> — <sub>The end station isolated within the production line.</sub> — <a href="showcase/media/detail-8.jpg">Inspect the still</a>; <b>Machine housings</b> — <sub>Equipment enclosures highlighted without losing context.</sub> — <a href="showcase/media/detail-9.jpg">Inspect the still</a></p>
 
 
 [Media provenance and full-resolution source information](showcase/README.md). The rendered outputs do not release their source models.

@@ -2,7 +2,7 @@
 
 Tools and production work for turning 3D models, footage and speech into editable visual explanations.
 
-**Muwen Li** — creative technology and 3D production. I modeled the Clockwork collection, direct creative content at illoca, and design browser tools with Codex-assisted implementation.
+**Muwen Li** — creative technology and 3D production. Contributions include original modeling for Clockwork, creative content direction at illoca, and browser-tool design with Codex-assisted implementation.
 
 **Technology:** Blender; JavaScript/TypeScript and React; Three.js, Canvas and WebCodecs; local Whisper speech recognition. The browser projects document what runs, what the creator controls and what has actually been tested.
 
@@ -22,14 +22,18 @@ Open a **project** for its visual gallery and project details; browser projects 
 
 ## 01 / Clockwork
 
-<table>
-<tr>
-<td colspan="2" align="center" valign="top"><a href="media/clockwork-collection.png"><img src="media/clockwork-collection.png" alt="Original rendered Clockwork collection showing clocks and mechanical assemblies" width="960"></a><br><b>Packaged outcome</b><br><sub>46 animated assets · my source models and design direction</sub></td>
-</tr><tr>
-<td width="50%" align="center" valign="top"><a href="projects/01-clockwork/"><img src="media/clockwork-gear-motion.gif" alt="Animated CLK08 turntable showing the exposed clock mechanism" height="180"></a><br><b>Motion study</b><br><sub>Animated turntable · exposed movement</sub></td>
-<td width="50%" align="center" valign="top"><a href="projects/01-clockwork/"><img src="media/clockwork-opening-motion.gif" alt="Animated CLK32 canopy showing the linked opening mechanism" height="180"></a><br><b>Controlled opening</b><br><sub>Linked mechanism · adjustable speed and phase</sub></td>
-</tr>
-</table>
+<p align="center">
+<a href="media/clockwork-collection.png"><img src="media/clockwork-collection.png" alt="Original rendered Clockwork collection showing clocks and mechanical assemblies" width="100.0000%"></a>
+</p>
+
+<p><b>Packaged outcome</b> — <sub>46 animated assets · original models and visual direction by Muwen Li</sub></p>
+
+<p align="center">
+<a href="projects/01-clockwork/"><img src="media/clockwork-gear-motion.gif" alt="Animated CLK08 turntable showing the exposed clock mechanism" width="45.0000%"></a>
+<a href="projects/01-clockwork/"><img src="media/clockwork-opening-motion.gif" alt="Animated CLK32 canopy showing the linked opening mechanism" width="45.0000%"></a>
+</p>
+
+<p><em>Left to right:</em> <b>Motion study</b> — <sub>Animated turntable · exposed movement</sub>; <b>Controlled opening</b> — <sub>Linked mechanism · adjustable speed and phase</sub></p>
 
 Original modeling → AI-assisted linkage development → creator controls. The 46-asset Blender library is the packaged outcome; the project explains the inputs, dependencies and a [checked control change](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/01-clockwork/docs/control-study.md).
 
@@ -37,16 +41,14 @@ Original modeling → AI-assisted linkage development → creator controls. The 
 
 ## 02 / Blue / White Architecture Growth
 
-<table>
-<tr>
-<td width="25%" align="center" valign="top"><a href="projects/02-architecture-growth/"><img src="media/architecture-growth/detail-c-smooth.webp" width="220" height="275" alt="Building growth with surrounding urban context"></a></td>
-<td width="25%" align="center" valign="top"><a href="projects/02-architecture-growth/"><img src="media/architecture-growth/tennis-plan-smooth.webp" width="220" height="275" alt="Tennis venue plan and staged structure"></a></td>
-<td width="25%" align="center" valign="top"><a href="projects/02-architecture-growth/"><img src="media/architecture-growth/detail-a-card.webp" width="220" height="275" alt="Floor and facade construction detail, contained in a matching portrait frame"></a></td>
-<td width="25%" align="center" valign="top"><a href="projects/02-architecture-growth/"><img src="media/architecture-growth/tower-smooth.webp" width="220" height="275" alt="Final tower film showing levels and the completed exterior"></a></td>
-</tr>
-<tr><td align="center"><b>Building & context</b></td><td align="center"><b>Plan to structure</b></td><td align="center"><b>Detail & assembly</b></td><td align="center"><b>Tower & levels</b></td></tr>
-<tr><td align="center" valign="top">A consistent blue-white visual language</td><td align="center" valign="top">Spatial reference before visual density</td><td align="center" valign="top">Readable systems and construction order</td><td align="center" valign="top">Vertical sequence and exterior form</td></tr>
-</table>
+<p align="center">
+<a href="projects/02-architecture-growth/"><img src="media/architecture-growth/detail-c-smooth.webp" alt="Building growth with surrounding urban context" width="22.5000%"></a>
+<a href="projects/02-architecture-growth/"><img src="media/architecture-growth/tennis-plan-smooth.webp" alt="Tennis venue plan and staged structure" width="22.5000%"></a>
+<a href="projects/02-architecture-growth/"><img src="media/architecture-growth/detail-a-card.webp" alt="Floor and facade construction detail, contained in a matching portrait frame" width="22.5000%"></a>
+<a href="projects/02-architecture-growth/"><img src="media/architecture-growth/tower-smooth.webp" alt="Final tower film showing levels and the completed exterior" width="22.5000%"></a>
+</p>
+
+<p><em>Left to right:</em> <b>Building & context</b> — A consistent blue-white visual language; <b>Plan to structure</b> — Spatial reference before visual density; <b>Detail & assembly</b> — Readable systems and construction order; <b>Tower & levels</b> — Vertical sequence and exterior form</p>
 
 Selected final illoca films. Company property under NDA; this case provides Demo outputs and credits only.
 
@@ -54,12 +56,18 @@ Selected final illoca films. Company property under NDA; this case provides Demo
 
 ## 03 / Model Breakdown Studio
 
-<table><tr>
-<td colspan="2" align="center" valign="top"><a href="https://meshroom-breakdown-studio.limuwen9.chatgpt.site"><img src="media/model-breakdown-editor.png" width="960" alt="Model Breakdown Studio: Press Manufacturing Line opens in an exploded view"></a><br><b>Interactive studio</b><br><sub>Choose a GLB · explode · highlight · export</sub></td>
-</tr><tr>
-<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/model-breakdown-films/#equipment"><img src="docs/model-breakdown-films/equipment.webp" height="320" alt="Production equipment separated into readable systems, with hydraulic equipment highlighted"></a><br><b>Explain the equipment</b><br><sub>Production line · component emphasis</sub></td>
-<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/model-breakdown-films/#structure"><img src="docs/model-breakdown-films/structure.webp" height="320" alt="Exploded structural system with a readable assembly hierarchy"></a><br><b>Separate the systems</b><br><sub>Structural hierarchy · complete sequence</sub></td>
-</tr></table>
+<p align="center">
+<a href="https://meshroom-breakdown-studio.limuwen9.chatgpt.site"><img src="media/model-breakdown-editor.png" alt="Model Breakdown Studio: Press Manufacturing Line opens in an exploded view" width="100.0000%"></a>
+</p>
+
+<p><b>Interactive studio</b> — <sub>Choose a GLB · explode · highlight · export</sub></p>
+
+<p align="center">
+<a href="https://muwentrili.github.io/creative-workflows/model-breakdown-films/#equipment"><img src="docs/model-breakdown-films/equipment.webp" alt="Production equipment separated into readable systems, with hydraulic equipment highlighted" width="45.0000%"></a>
+<a href="https://muwentrili.github.io/creative-workflows/model-breakdown-films/#structure"><img src="docs/model-breakdown-films/structure.webp" alt="Exploded structural system with a readable assembly hierarchy" width="45.0000%"></a>
+</p>
+
+<p><em>Left to right:</em> <b>Explain the equipment</b> — <sub>Production line · component emphasis</sub>; <b>Separate the systems</b> — <sub>Structural hierarchy · complete sequence</sub></p>
 
 Inspect a GLB, separate its systems and focus attention on a component. The project includes the current browser-source snapshot, a local runner and the distinction from the earlier implementation.
 
@@ -67,9 +75,11 @@ Inspect a GLB, separate its systems and focus attention on a component. The proj
 
 ## 04 / Animated Storyboard
 
-<table><tr>
-<td align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/collage-motion/"><img src="media/collage-review-board.webp" width="960" alt="Animated Storyboard: 35 moving shots with permanent source IDs and white review overlays"></a><br><b>A moving storyboard for shot review</b><br><sub>35 supplied shots · Six white HUD styles · Editable order and framing</sub></td>
-</tr></table>
+<p align="center">
+<a href="https://muwentrili.github.io/creative-workflows/collage-motion/"><img src="media/collage-review-board.webp" alt="Animated Storyboard: 35 moving shots with permanent source IDs and white review overlays" width="100.0000%"></a>
+</p>
+
+<p><b>A moving storyboard for shot review</b> — <sub>35 supplied shots · Six white HUD styles · Editable order and framing</sub></p>
 
 Compare 35 moving shots on one board, preview a source, change its position or hide it, then export the accepted composition. Source, a versioned demo and an implementation/test map are included.
 
@@ -77,9 +87,11 @@ Compare 35 moving shots on one board, preview a source, change its position or h
 
 ## 05 / Spatial Media Presenter
 
-<table><tr>
-<td align="center" valign="top"><a href="https://flipframe-motion-lab.limuwen9.chatgpt.site"><img src="media/flipframe-editor.png" width="960" alt="Spatial Media Presenter: media archive, Orbital Shift preview and editable motion controls"></a><br><b>A spatial presentation with editable pacing</b><br><sub>15 supplied visuals · Orbital Shift on entry · Control order, framing and timing</sub></td>
-</tr></table>
+<p align="center">
+<a href="https://flipframe-motion-lab.limuwen9.chatgpt.site"><img src="media/flipframe-editor.png" alt="Spatial Media Presenter: media archive, Orbital Shift preview and editable motion controls" width="100.0000%"></a>
+</p>
+
+<p><b>A spatial presentation with editable pacing</b> — <sub>15 supplied visuals · Orbital Shift on entry · Control order, framing and timing</sub></p>
 
 Move from a collection overview to individual works with editable order, framing, transitions and holds. The supplied 15-work example starts in Orbital Shift.
 
@@ -87,9 +99,11 @@ Move from a collection overview to individual works with editable order, framing
 
 ## 06 / Kinetic Typography Studio
 
-<table><tr>
-<td align="center" valign="top"><a href="https://vox-one.limuwen9.chatgpt.site"><img src="media/vox-one-editor.png" width="960" alt="Kinetic Typography Studio: source media, editable transcript, live typography preview and styling controls"></a><br><b>Editable words, timing and visual emphasis</b><br><sub>Speech-led typography · Transcript correction · Preview before delivery</sub></td>
-</tr></table>
+<p align="center">
+<a href="https://vox-one.limuwen9.chatgpt.site"><img src="media/vox-one-editor.png" alt="Kinetic Typography Studio: source media, editable transcript, live typography preview and styling controls" width="100.0000%"></a>
+</p>
+
+<p><b>Editable words, timing and visual emphasis</b> — <sub>Speech-led typography · Transcript correction · Preview before delivery</sub></p>
 
 Connect English speech recognition, transcript correction and visual rhythm. The silent opening example demonstrates typography; importing speech exercises local Whisper inference.
 
@@ -97,9 +111,11 @@ Connect English speech recognition, transcript correction and visual rhythm. The
 
 ## 07 / Motion Tracking Studio
 
-<table><tr>
-<td align="center" valign="top"><a href="https://trace-01-motion-tracker.limuwen9.chatgpt.site"><img src="media/trace-01-editor.png" width="960" alt="Motion Tracking Studio: an empty video import workspace with target selection, position anchor and HUD controls"></a><br><b>Make a subject easier to follow</b><br><sub>Your video · Target 01 or a fixed position anchor · Editable white HUD</sub></td>
-</tr></table>
+<p align="center">
+<a href="https://trace-01-motion-tracker.limuwen9.chatgpt.site"><img src="media/trace-01-editor.png" alt="Motion Tracking Studio: an empty video import workspace with target selection, position anchor and HUD controls" width="100.0000%"></a>
+</p>
+
+<p><b>Make a subject easier to follow</b> — <sub>Your video · Target 01 or a fixed position anchor · Editable white HUD</sub></p>
 
 Import footage and choose the subject or a fixed anchor before adding graphics. Inspect the tracking and export implementation alongside its current delivery limitations.
 

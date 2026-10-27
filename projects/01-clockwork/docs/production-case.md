@@ -2,9 +2,9 @@
 
 [← Collection and motion gallery](../README.md) · [Controls](controls.md) · [Workflow Skill](workflow-skill.md) · [Superhive product](https://superhivemarket.com/products/steampunk-clockwork-animated-assets)
 
-**I modeled the source collection, organized it for AI-assisted development, and turned it into linked mechanisms, editable controls and a reusable Blender library.**
+**This project develops an original model collection into linked mechanisms, editable controls and a reusable Blender library through AI-assisted development.**
 
-I supplied models I had made myself, organized the source work and references, set the visual and motion requirements, and reviewed the resulting mechanisms. Codex assisted source inspection and the development of structures and gear linkages within that direction. The 46-asset product is the delivered outcome; the design of the inputs, dependencies and creator controls is the process to examine. [Read the build process](process.md).
+Muwen Li modeled the source collection, organized the source work and references, defined the visual and motion requirements, and reviewed the resulting mechanisms. Codex assisted source inspection and the development of structures and gear linkages within that direction. The 46-asset product is the delivered outcome; the design of the inputs, dependencies and creator controls is the process to examine. [Read the build process](process.md).
 
 ## The smallest useful task
 
@@ -18,7 +18,7 @@ I supplied models I had made myself, organized the source work and references, s
 
 A detailed mechanism is only part of a usable asset. A creator also needs to place it in a new composition, change the rhythm, preserve the connected motion, and find the relevant controls. Editing individual moving parts makes those relationships harder to maintain. Developing related forms also requires a consistent visual language across silhouettes, gear layers, frames and detail density.
 
-This problem framing comes from my production practice and the documented artifact structure. It is not presented as a completed customer-interview study or a measured time-saving result.
+This problem framing comes from production practice and the documented artifact structure. It is not presented as a completed customer-interview study or a measured time-saving result.
 
 ## 2. The product hypothesis
 
@@ -30,16 +30,18 @@ The shipped library and documented controls support this direction. Independent 
 
 | Production requirement | Product decision | Evidence to inspect |
 | --- | --- | --- |
-| Related forms should feel like one collection | Develop variations from my model collection and design standards | [Design process](process.md) and [render gallery](render-gallery.md) |
+| Related forms should feel like one collection | Develop variations from the original model collection and design standards | [Design process](process.md) and [render gallery](render-gallery.md) |
 | A scene needs a different rhythm | Expose upstream speed and phase controls; preserve linked motion | [CLK08 gear timing](controls.md#clock-and-gear-timing--clk08), [CLK31 travel](controls.md#travel-rhythm--clk31-orbit) |
 | Opening should remain mechanically connected | Drive the opening from the input rather than directly overriding the result | [CLK32 controls](controls.md#opening-and-folding--clk32-aperture) |
 | A creator wants to reuse only part of a design | Distinguish complete assemblies, animated subassemblies and geometry reuse | [Component reuse](component-reuse.md) |
 | Someone else must find and use the assets | Package categories, previews, materials and instructions | [Asset Browser and delivery](visual-tour.md#browse--place--adjust--animate) |
 
-<table><tr>
-<td width="50%"><img src="../media/motion-clk08.gif" alt="Existing CLK08 motion study" width="100%"><br><b>Gear and clock timing are separate decisions</b></td>
-<td width="50%"><img src="../media/motion-clk32.gif" alt="Existing CLK32 opening motion study" width="100%"><br><b>Opening follows a connected mechanism</b></td>
-</tr></table>
+<p align="center">
+<img src="../media/motion-clk08.gif" alt="Existing CLK08 motion study" width="45.0000%">
+<img src="../media/motion-clk32.gif" alt="Existing CLK32 opening motion study" width="45.0000%">
+</p>
+
+<p><em>Left to right:</em> <b>Gear and clock timing are separate decisions</b>; <b>Opening follows a connected mechanism</b></p>
 
 These are existing motion excerpts. They show the assemblies, not a newly recorded agent adjustment or a before/after experiment.
 
@@ -49,11 +51,11 @@ The documented controls expose `Master_RPM`, `Speed_Scale` and `Phase_Deg`. `Inp
 
 This is the product insight: a creator should control the behavior they care about while the system maintains the relationships underneath. The same distinction helps an agent choose a valid edit. It does not mean every combination is collision-free or that the asset is a physically validated machine.
 
-## 5. What runs automatically, and where I retain judgment
+## 5. Automation and creator judgment
 
 | Layer | Current evidence | Creator responsibility |
 | --- | --- | --- |
-| Development | My organized, self-modeled inputs guided Codex-assisted inspection, mechanism development and linkages | Set the visual standard, review structure and movement, select the result |
+| Development | Organized original models guided Codex-assisted inspection, mechanism development and linkages | Set the visual standard, review structure and movement, select the result |
 | Asset operation | Native drivers, constraints and hierarchies propagate selected controller values | Choose the module, tune rhythm, inspect the whole shot |
 | Agent adaptation | A [CLK32 speed study](control-study.md) records an actual inspection, parameter change, compatibility failure and bounded checks | Specify the new composition and review changes that alter silhouette or dependencies |
 | Delivery | A Blender library, previews and instructions exist | Approve the particular output and its intended use |
@@ -62,7 +64,7 @@ For future agent execution, routine inspection and approved parameter edits can 
 
 ## 6. Delivery criteria and what has actually been checked
 
-For a newly adapted assembly, I would require a preserved source, a readable dependency map, valid controller targets, inspection across the full intended frame range and risky transitions, and a decoded preview of the exact working revision. The creator checks silhouette, material consistency, movement readability, intersections and discontinuities. A result with unresolved dependencies remains **needs review**.
+A newly adapted assembly would require a preserved source, a readable dependency map, valid controller targets, inspection across the full intended frame range and risky transitions, and a decoded preview of the exact working revision. The creator checks silhouette, material consistency, movement readability, intersections and discontinuities. A result with unresolved dependencies remains **needs review**.
 
 The package's historical audit records checks of 46 assets and 2,640 drivers over frames 1–1,441. Selected clearance checks are limited to seven pairs and 25 sampled frames. That audit predates some later file modifications, and was not rerun for this portfolio. It cannot validate arbitrary settings or a new adaptation. [Full validation scope](validation.md).
 

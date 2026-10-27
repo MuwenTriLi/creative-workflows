@@ -2,19 +2,19 @@
 
 [Back to the case study](../README.md)
 
-## Start with work I modeled myself
+## Start with original modeled inputs
 
-I modeled the original source collection before this AI-assisted workflow. I then organized those models and references and supplied them to Codex with my design direction: detailed mechanical structures whose silhouette, gear layers, frames and movement could be read together.
+The source collection was modeled by Muwen Li before this AI-assisted workflow. The models and references then provided the inputs for Codex-assisted development, guided by a visual brief: detailed mechanical structures whose silhouette, gear layers, frames and movement could be read together.
 
-That preparation is part of the work. The input gives the AI concrete geometry and a visual standard to inspect; the brief gives it a task. I selected and reviewed the resulting variations, and directed which forms and movements belonged in the library. The models were task inputs and references, not a newly trained AI model.
+That preparation is part of the work. The input gives the AI concrete geometry and a visual standard to inspect; the brief gives it a task. Muwen Li selected and reviewed the resulting variations, including which forms and movements belonged in the library. The models were task inputs and references, not a newly trained AI model.
 
 ## Turn the prepared inputs into linked behavior
 
-I used Codex to assist source inspection and the development of related mechanisms and gear linkages. The implementation expresses motion through native Blender drivers, object hierarchies and constraints. My responsibility was to set the intended visual and mechanical relationships and judge the results.
+Codex assisted source inspection and development of related mechanisms and gear linkages. The implementation expresses motion through native Blender drivers, object hierarchies and constraints. Muwen Li defined the intended visual and mechanical relationships and reviewed the results.
 
 | Input or decision | Resulting system behavior | Evidence |
 | --- | --- | --- |
-| My modeled components and design references | Related forms developed within a consistent visual direction | [Original collection and finished studies](render-gallery.md) |
+| Original modeled components and design references | Related forms developed within a consistent visual direction | [Original collection and finished studies](render-gallery.md) |
 | A need to adjust mechanism rhythm | Upstream speed and phase inputs propagate through linked parts | [Gear, chain and travel controls](controls.md) |
 | A need to open a larger assembly coherently | Inputs drive the opening; the calculated angle remains a result | [CLK32 control example](controls.md#opening-and-folding--clk32-aperture) |
 | A need to reuse a mechanism in another scene | Preserve the controller, hierarchy and dependent targets together | [Reuse procedure](component-reuse.md) |
@@ -25,13 +25,13 @@ The available artifacts show the developed system and its documented controls. A
 
 The resulting assets use exposed gears, layered frames and secondary mechanisms in different configurations. Some remain compact clock movements; others expand into architectural assemblies with guided travel or unfolding parts. The fine rotations are part of the presentation, alongside the larger silhouette and motion.
 
-<table>
-<tr>
-<td width="33%"><a href="../media/clock-08.png"><img src="../media/clock-08.png" alt="CLK08 original rendered asset" width="100%"></a><br><b>CLK08</b></td>
-<td width="33%"><a href="../media/orbit.png"><img src="../media/orbit.png" alt="CLK31 original rendered asset" width="100%"></a><br><b>CLK31</b></td>
-<td width="33%"><a href="../media/aperture.png"><img src="../media/aperture.png" alt="CLK32 original rendered asset" width="100%"></a><br><b>CLK32</b></td>
-</tr>
-</table>
+<p align="center">
+<a href="../media/clock-08.png"><img src="../media/clock-08.png" alt="CLK08 original rendered asset" width="30.0000%"></a>
+<a href="../media/orbit.png"><img src="../media/orbit.png" alt="CLK31 original rendered asset" width="30.0000%"></a>
+<a href="../media/aperture.png"><img src="../media/aperture.png" alt="CLK32 original rendered asset" width="30.0000%"></a>
+</p>
+
+<p><em>Left to right:</em> <b>CLK08</b>; <b>CLK31</b>; <b>CLK32</b></p>
 
 ## Make the result adjustable
 

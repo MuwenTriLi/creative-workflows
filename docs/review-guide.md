@@ -2,13 +2,13 @@
 
 [← Seven-project index](../README.md#selected-work) · [Creator control](creative-control.md) · [Validation record](creator-validation.md)
 
-**My working proposition: production experience helps me identify what creators need to control, and AI-assisted implementation lets me turn that judgment into a usable prototype.**
+**The collection uses production experience to identify useful creator controls, then develops those decisions into working prototypes through AI-assisted implementation.**
 
 This portfolio connects three kinds of evidence: a Blender asset product, interactive tools, and the decisions behind them. They are at different stages. The assessment below separates what can be inspected today from what still needs a task-based demonstration.
 
 ## A short review route
 
-1. **Clockwork — original models into a system:** [Build process](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/01-clockwork/docs/process.md). I modeled the collection, organized the inputs and used Codex to help develop gear linkages and reusable controls.
+1. **Clockwork — original models into a system:** [Build process](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/01-clockwork/docs/process.md). The project develops Muwen Li’s original model collection into gear linkages and reusable controls through organized inputs and Codex-assisted implementation.
 2. **Blue / White Architecture Growth — final output:** [Demo and credits](../projects/02-architecture-growth/). Selected illoca films only; NDA prevents process and source disclosure.
 3. **Model Breakdown Studio — working interaction:** [Open the app](https://meshroom-breakdown-studio.limuwen9.chatgpt.site). Compare assembled and exploded views, select a part and change the explanation. The opening model is Press Manufacturing Line.
 4. **Animated Storyboard — feedback into product iteration:** [Case decisions](../projects/04-animated-storyboard/README.md). Revise a source on the moving board, then follow the [implementation and test map](animated-storyboard-handoff.md).
@@ -22,7 +22,7 @@ The order matches the portfolio. Each case supports a different part of the prod
 
 | Project | Evidence available now | Important missing proof | Current decision |
 | --- | --- | --- | --- |
-| **01 · [Clockwork](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/01-clockwork)** | Blender library, original renders, controller documentation, instruction Skill and a [checked CLK32 speed change](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/01-clockwork/docs/control-study.md) | An unfamiliar creator repeating the task; broader recomposition | Lead with how my original models became linked mechanisms and creator controls. **Iterate** the agent-assisted adaptation before expanding it. |
+| **01 · [Clockwork](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/01-clockwork)** | Blender library, original renders, controller documentation, instruction Skill and a [checked CLK32 speed change](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/01-clockwork/docs/control-study.md) | An unfamiliar creator repeating the task; broader recomposition | Lead with how the original models became linked mechanisms and creator controls. **Iterate** the agent-assisted adaptation before expanding it. |
 | **02 · [Architecture Growth](../projects/02-architecture-growth/)** | Selected final illoca films and role credit | Company workflow and source are confidential | Keep this case Demo-only; do not expand public implementation documentation. |
 | **03 · [Model Breakdown](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/03-model-breakdown/)** | Four architectural output films and stills; three selectable real GLBs with loading, explode and selection checks; short synthetic and real Press-model 4K export checks; published browser source with version mapping; the earlier adaptation retains its scoped MIT license | A process recording connecting a real input to the selected output, one framing correction and an unfamiliar creator task | **Iterate** the import-to-delivery path before claiming general model support. |
 | **04 · [Animated Storyboard](../projects/04-animated-storyboard/)** | 35-shot presentation, original white HUD styles, local shot replacement and an eight-second 4K / 24 fps export with motion verified in all 35 tiles | Unassisted first-use task; larger projects and mixed-media output quality checks | **Iterate** usability with creators before adding automatic editorial choices. |

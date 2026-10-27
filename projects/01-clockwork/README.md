@@ -30,10 +30,12 @@ Frames from the two original collection videos. Their motion phases differ; this
 
 Two larger studies expose the movement behind the overall silhouette. Click a preview to inspect its five-second excerpt.
 
-<table><tr>
-<td width="50%" align="center" valign="top"><a href="media/differential-motion.gif"><img src="media/differential-motion.gif" height="480" alt="SPM14 suspended mechanism in motion"></a><br><b>SPM14 / suspended mechanism</b><br><sub>Read the suspended parts, linkages and counterweight together.</sub></td>
-<td width="50%" align="center" valign="top"><a href="media/orbit-motion.gif"><img src="media/orbit-motion.gif" height="480" alt="CLK31 guided mechanical movement"></a><br><b>CLK31 / guided movement</b><br><sub>Read the relationship between the dial, structure and rail path.</sub></td>
-</tr></table>
+<p align="center">
+<a href="media/differential-motion.gif"><img src="media/differential-motion.gif" alt="SPM14 suspended mechanism in motion" width="45.0000%"></a>
+<a href="media/orbit-motion.gif"><img src="media/orbit-motion.gif" alt="CLK31 guided mechanical movement" width="45.0000%"></a>
+</p>
+
+<p><em>Left to right:</em> <b>SPM14 / suspended mechanism</b> — <sub>Read the suspended parts, linkages and counterweight together.</sub>; <b>CLK31 / guided movement</b> — <sub>Read the relationship between the dial, structure and rail path.</sub></p>
 
 [More videos and Blender recordings →](docs/showcase-films.md) · [All 24 motion studies →](docs/motion-library.md#24-clock-motion-studies)
 
@@ -43,14 +45,14 @@ Two ways to read a mechanism: rotate the whole form to understand its constructi
 
 #### 01 / Rotating views
 
-<table>
-<tr>
-<td width="25%" align="center"><a href="media/motion-clk02.gif"><img src="media/motion-clk02.gif" alt="Clock 01 - CLK02 - Turntable" width="100%"></a><br><b>Clock 01</b><br><sub>Turntable / Layered dial</sub></td>
-<td width="25%" align="center"><a href="media/motion-clk04.gif"><img src="media/motion-clk04.gif" alt="Clock 03 - CLK04 - Turntable" width="100%"></a><br><b>Clock 03</b><br><sub>Turntable / Stacked gears</sub></td>
-<td width="25%" align="center"><a href="media/motion-clk08.gif"><img src="media/motion-clk08.gif" alt="Clock 07 - CLK08 - Turntable" width="100%"></a><br><b>Clock 07</b><br><sub>Turntable / Exposed movement</sub></td>
-<td width="25%" align="center"><a href="media/motion-clk10.gif"><img src="media/motion-clk10.gif" alt="Clock 08 - CLK10 - Turntable" width="100%"></a><br><b>Clock 08</b><br><sub>Turntable / Skeleton frame</sub></td>
-</tr>
-</table>
+<p align="center">
+<a href="media/motion-clk02.gif"><img src="media/motion-clk02.gif" alt="Clock 01 - CLK02 - Turntable" width="22.5000%"></a>
+<a href="media/motion-clk04.gif"><img src="media/motion-clk04.gif" alt="Clock 03 - CLK04 - Turntable" width="22.5000%"></a>
+<a href="media/motion-clk08.gif"><img src="media/motion-clk08.gif" alt="Clock 07 - CLK08 - Turntable" width="22.5000%"></a>
+<a href="media/motion-clk10.gif"><img src="media/motion-clk10.gif" alt="Clock 08 - CLK10 - Turntable" width="22.5000%"></a>
+</p>
+
+<p><em>Left to right:</em> <b>Clock 01</b> — <sub>Turntable / Layered dial</sub>; <b>Clock 03</b> — <sub>Turntable / Stacked gears</sub>; <b>Clock 07</b> — <sub>Turntable / Exposed movement</sub>; <b>Clock 08</b> — <sub>Turntable / Skeleton frame</sub></p>
 
 The silhouette stays readable as gears, shafts and supporting frames come into view.
 
@@ -58,14 +60,14 @@ The silhouette stays readable as gears, shafts and supporting frames come into v
 
 #### 02 / Fixed views · moving mechanisms
 
-<table>
-<tr>
-<td width="25%" align="center"><a href="media/motion-clk11.gif"><img src="media/motion-clk11.gif" alt="Clock 10 - CLK11 - Motion" width="100%"></a><br><b>Clock 10</b><br><sub>Motion / Framed gear train</sub></td>
-<td width="25%" align="center"><a href="media/motion-clk18.gif"><img src="media/motion-clk18.gif" alt="Clock 15 - CLK18 - Motion" width="100%"></a><br><b>Clock 15</b><br><sub>Motion / Vertical linkages</sub></td>
-<td width="25%" align="center"><a href="media/motion-clk31.gif"><img src="media/motion-clk31.gif" alt="Clock 23 - CLK31 - Motion" width="100%"></a><br><b>Clock 23</b><br><sub>Motion / Rail-guided motion</sub></td>
-<td width="25%" align="center"><a href="media/motion-clk32.gif"><img src="media/motion-clk32.gif" alt="Clock 24 - CLK32 - Motion" width="100%"></a><br><b>Clock 24</b><br><sub>Motion / Unfolding canopy</sub></td>
-</tr>
-</table>
+<p align="center">
+<a href="media/motion-clk11.gif"><img src="media/motion-clk11.gif" alt="Clock 10 - CLK11 - Motion" width="22.5000%"></a>
+<a href="media/motion-clk18.gif"><img src="media/motion-clk18.gif" alt="Clock 15 - CLK18 - Motion" width="22.5000%"></a>
+<a href="media/motion-clk31.gif"><img src="media/motion-clk31.gif" alt="Clock 23 - CLK31 - Motion" width="22.5000%"></a>
+<a href="media/motion-clk32.gif"><img src="media/motion-clk32.gif" alt="Clock 24 - CLK32 - Motion" width="22.5000%"></a>
+</p>
+
+<p><em>Left to right:</em> <b>Clock 10</b> — <sub>Motion / Framed gear train</sub>; <b>Clock 15</b> — <sub>Motion / Vertical linkages</sub>; <b>Clock 23</b> — <sub>Motion / Rail-guided motion</sub>; <b>Clock 24</b> — <sub>Motion / Unfolding canopy</sub></p>
 
 A steady view makes the relationships between rotation, travel and opening easier to judge.
 
@@ -77,40 +79,45 @@ Clock numbers indicate the presentation order. GIFs repeat short excerpts at the
 
 Finished renders for inspecting materials and small details; the motion studies above show how the assemblies move.
 
-<table>
-<tr>
-<td width="25%" align="center"><a href="media/clk18.png"><img src="media/clk18.png" alt="CLK18 original render" width="100%"></a><br><b>CLK18 / vertical linkages</b></td>
-<td width="25%" align="center"><a href="media/orbit.png"><img src="media/orbit.png" alt="CLK31 original render" width="100%"></a><br><b>CLK31 / rail-guided assembly</b></td>
-<td width="25%" align="center"><a href="media/aperture.png"><img src="media/aperture.png" alt="CLK32 original render" width="100%"></a><br><b>CLK32 / unfolding canopy</b></td>
-<td width="25%" align="center"><a href="media/chain-drive.png"><img src="media/chain-drive.png" alt="SPM03 chain-drive assembly, original render" width="100%"></a><br><b>SPM03 / chain drive</b></td>
-</tr>
-</table>
+<p align="center">
+<a href="media/clk18.png"><img src="media/clk18.png" alt="CLK18 original render" width="22.5000%"></a>
+<a href="media/orbit.png"><img src="media/orbit.png" alt="CLK31 original render" width="22.5000%"></a>
+<a href="media/aperture.png"><img src="media/aperture.png" alt="CLK32 original render" width="22.5000%"></a>
+<a href="media/chain-drive.png"><img src="media/chain-drive.png" alt="SPM03 chain-drive assembly, original render" width="22.5000%"></a>
+</p>
+
+<p><em>Left to right:</em> <b>CLK18 / vertical linkages</b>; <b>CLK31 / rail-guided assembly</b>; <b>CLK32 / unfolding canopy</b>; <b>SPM03 / chain drive</b></p>
 
 #### Eight more rendered forms
 
-<table>
-<tr>
-<td width="25%" align="center"><a href="media/clk02.png"><img src="media/clk02.png" alt="CLK02 original render" width="100%"></a><br><b>CLK02</b></td>
-<td width="25%" align="center"><a href="media/clk03.png"><img src="media/clk03.png" alt="CLK03 original render" width="100%"></a><br><b>CLK03</b></td>
-<td width="25%" align="center"><a href="media/clk04.png"><img src="media/clk04.png" alt="CLK04 original render" width="100%"></a><br><b>CLK04</b></td>
-<td width="25%" align="center"><a href="media/clk06.png"><img src="media/clk06.png" alt="CLK06 original render" width="100%"></a><br><b>CLK06</b></td>
-</tr>
-<tr>
-<td width="25%" align="center"><a href="media/clock-08.png"><img src="media/clock-08.png" alt="CLK08 original render" width="100%"></a><br><b>CLK08</b></td>
-<td width="25%" align="center"><a href="media/clk10.png"><img src="media/clk10.png" alt="CLK10 original render" width="100%"></a><br><b>CLK10</b></td>
-<td width="25%" align="center"><a href="media/clk11.png"><img src="media/clk11.png" alt="CLK11 original render" width="100%"></a><br><b>CLK11</b></td>
-<td width="25%" align="center"><a href="media/clk12.png"><img src="media/clk12.png" alt="CLK12 original render" width="100%"></a><br><b>CLK12</b></td>
-</tr>
-</table>
+<p align="center">
+<a href="media/clk02.png"><img src="media/clk02.png" alt="CLK02 original render" width="22.5000%"></a>
+<a href="media/clk03.png"><img src="media/clk03.png" alt="CLK03 original render" width="22.5000%"></a>
+<a href="media/clk04.png"><img src="media/clk04.png" alt="CLK04 original render" width="22.5000%"></a>
+<a href="media/clk06.png"><img src="media/clk06.png" alt="CLK06 original render" width="22.5000%"></a>
+</p>
+
+<p><em>Left to right:</em> <b>CLK02</b>; <b>CLK03</b>; <b>CLK04</b>; <b>CLK06</b></p>
+
+<p align="center">
+<a href="media/clock-08.png"><img src="media/clock-08.png" alt="CLK08 original render" width="22.5000%"></a>
+<a href="media/clk10.png"><img src="media/clk10.png" alt="CLK10 original render" width="22.5000%"></a>
+<a href="media/clk11.png"><img src="media/clk11.png" alt="CLK11 original render" width="22.5000%"></a>
+<a href="media/clk12.png"><img src="media/clk12.png" alt="CLK12 original render" width="22.5000%"></a>
+</p>
+
+<p><em>Left to right:</em> <b>CLK08</b>; <b>CLK10</b>; <b>CLK11</b>; <b>CLK12</b></p>
 
 Click any render to inspect it. [Browse all clocks and selected mechanisms →](docs/render-gallery.md)
 
 ### Inside Blender: from library to moving assembly
 
-<table>
-<tr><th width="50%">Inspect the opening mechanism</th><th width="50%">Browse and place an asset</th></tr>
-<tr><td><a href="https://muwentrili.github.io/creative-workflows/films/?project=clockwork&amp;film=opening-in-blender"><img src="media/opening-in-blender.gif" width="100%" alt="Original Blender recording of the opening assembly"></a></td><td><a href="https://muwentrili.github.io/creative-workflows/films/?project=clockwork&amp;film=library-placement"><img src="media/library-placement.gif" width="100%" alt="Original Blender asset library placement recording"></a></td></tr>
-</table>
+<p align="center">
+<a href="https://muwentrili.github.io/creative-workflows/films/?project=clockwork&amp;film=opening-in-blender"><img src="media/opening-in-blender.gif" alt="Original Blender recording of the opening assembly" width="45.0000%"></a>
+<a href="https://muwentrili.github.io/creative-workflows/films/?project=clockwork&amp;film=library-placement"><img src="media/library-placement.gif" alt="Original Blender asset library placement recording" width="45.0000%"></a>
+</p>
+
+<p><em>Left to right:</em> Inspect the opening mechanism; Browse and place an asset</p>
 
 [Opening mechanism · MP4](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=opening-in-blender) · [Asset placement · MP4](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=library-placement) · [Seven videos and recordings](docs/showcase-films.md)
 
@@ -126,13 +133,13 @@ These original viewport recordings show the working scene and library. The Evide
 
 ## Workflow and creator control
 
-I modeled the original collection, organized it with references and motion requirements, and used those inputs to direct AI-assisted development of gear linkages and related mechanisms. I reviewed the visual and mechanical relationships and the creator controls. Providing my modeled data as context is not a claim of training a model.
+The project develops an original model collection into linked mechanisms and creator controls. Muwen Li modeled the collection, organized the references and motion requirements, and directed and reviewed the visual and mechanical relationships. Codex assisted development within that brief. The models served as task context; this is not a model-training result.
 
 The central task is adaptation: preserve the linked movement while changing a mechanism's pace or placing it in another composition. Native drivers propagate the chosen inputs; the creator retains form, motion intent, speed, phase and acceptance.
 
-A detailed mechanism is only part of a usable asset. A creator also needs to place it in a composition, change the rhythm and preserve connected motion. This problem framing comes from my production practice; it is not a completed customer study.
+A detailed mechanism is only part of a usable asset. A creator also needs to place it in a composition, change the rhythm and preserve connected motion. This problem framing comes from production practice; it is not a completed customer study.
 
-| Stage | My contribution | System / AI assistance |
+| Stage | Project contribution | System / AI assistance |
 | --- | --- | --- |
 | Prepare | Model the original geometry; organize source files, references and motion requirements | Inspect the supplied structures within that brief |
 | Develop | Direct gear, frame and linkage relationships; review the result | Assist linked motion through native Blender drivers, hierarchies and constraints |
