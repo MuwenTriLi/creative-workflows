@@ -23,13 +23,12 @@ Open a **project** for its visual gallery and project details; browser projects 
 ## 01 / Clockwork
 
 <p align="center">
-<a href="projects/01-clockwork/"><img src="projects/01-clockwork/media/clk18.png" alt="CLK18 finished render: a tall clock with vertical linkages" width="22.5000%"></a>
-<a href="projects/01-clockwork/"><img src="projects/01-clockwork/media/orbit.png" alt="CLK31 finished render: a clock above a rail-guided assembly" width="22.5000%"></a>
-<a href="projects/01-clockwork/"><img src="projects/01-clockwork/media/aperture.png" alt="CLK32 finished render: the unfolding canopy mechanism" width="22.5000%"></a>
-<a href="projects/01-clockwork/"><img src="projects/01-clockwork/media/chain-drive.png" alt="SPM03 finished render: the exposed chain-drive mechanism" width="22.5000%"></a>
+<a href="projects/01-clockwork/"><img src="projects/01-clockwork/media/collection-motion.gif" alt="Rendered Clockwork collection in motion" width="30.0000%"></a>
+<a href="https://muwentrili.github.io/creative-workflows/films/?project=clockwork&amp;film=opening-in-blender"><img src="projects/01-clockwork/media/opening-in-blender.gif" alt="Original Blender recording of the opening mechanism" width="30.0000%"></a>
+<a href="https://muwentrili.github.io/creative-workflows/films/?project=clockwork&amp;film=library-placement"><img src="projects/01-clockwork/media/library-placement.gif" alt="Original Blender recording of browsing and placing an asset" width="30.0000%"></a>
 </p>
 
-<p><em>Left to right:</em> Vertical linkages · Guided travel · Unfolding canopy · Chain drive</p>
+<p><em>Left to right:</em> Collection in motion · Opening mechanism in Blender · Asset library and placement</p>
 
 Original models developed into a 46-asset Blender library with linked mechanisms and editable motion controls.
 
