@@ -51,4 +51,4 @@ The [workflow Skill](workflow-skill.md) turns the documented adaptation method i
 
 ## Evidence in this showcase
 
-The [render gallery](render-gallery.md) shows the supplied visual work, the [motion library](motion-library.md) shows existing animation and Blender recordings, and the [control guide](controls.md) summarizes documented parameters. The showcase makes no claim about measured time savings or a newly executed technical audit. See [validation scope](validation.md).
+The [render gallery](render-gallery.md) shows the supplied visual work, the [motion library](motion-library.md) shows existing animation and Blender recordings, and the [control guide](controls.md) summarizes documented parameters. The separate [CLK32 control study](control-study.md) records one bounded adjustment. No measured time savings or new full-collection audit is claimed. See [validation scope](validation.md).

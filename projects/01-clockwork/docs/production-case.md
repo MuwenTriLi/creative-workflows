@@ -8,7 +8,7 @@ I supplied models I had made myself, organized the source work and references, s
 
 ## The smallest useful task
 
-**Task:** adapt one CLK32 assembly to a short shot with a slower, clearly readable opening, while preserving its design and linked motion. Keep the source intact and work on a copy. This is the next demonstration to record, not a new result claimed by the existing GIF.
+**Task:** adapt one CLK32 assembly to a short shot with a slower, clearly readable opening, while preserving its design and linked motion. Keep the source intact and work on a copy. The separate [CLK32 control study](control-study.md) records this bounded change and its before/after render. The product GIFs show the original assemblies.
 
 **Local correction:** record the original controller values, change the relevant upstream speed or phase control, and preview the affected opening. Keep camera, materials and unrelated assemblies fixed. Restore those values if the result fails; a dependency-changing recomposition is a separate decision, not an automatic repair.
 

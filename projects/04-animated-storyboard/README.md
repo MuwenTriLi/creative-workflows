@@ -6,11 +6,43 @@
 
 Tech stack: HTML, JavaScript, Canvas, browser video, WebCodecs and mp4-muxer. It arranges existing images and clips; it does not generate motion from still images or run an AI agent.
 
+## Visual overview
+
+[![35 moving shots on the current review board](../../media/collage-review-board.webp)](https://muwentrili.github.io/creative-workflows/collage-motion/examples/review-board-demo.mp4)
+
+**Finished output:** 35 selected moving shots, arranged 7 × 5 with the original white calibration graphics. [Play the eight-second film](https://muwentrili.github.io/creative-workflows/collage-motion/examples/review-board-demo.mp4) for the complete motion; the linked viewing copy is 1080p, while the checked original is 4K.
+
+### The working editor
+
+![Import and source library, moving board, composition controls and export](../../media/collage-review-interface.png)
+
+Input on the left, one board in the middle, composition and export controls on the right.
+
+### Original clips and local corrections
+
+![Source clip manager with previews, order and inclusion controls](../../media/storyboard-source-manager.png)
+
+The source collection sits below the canvas. Each card connects the displayed cell to its original viewing copy, order and inclusion state.
+
+### Earlier visual design demonstrations
+
+<table><tr>
+<td width="33%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/collage-motion/process/landscape-design.mp4"><img src="../../docs/collage-motion/process/landscape-design.jpg" height="150" alt="Supplied landscape storyboard design demonstration"></a><br><b>Landscape board</b></td>
+<td width="33%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/collage-motion/process/motion-controls.mp4"><img src="../../docs/collage-motion/process/motion-controls.jpg" height="150" alt="Supplied motion control design demonstration"></a><br><b>Motion controls</b></td>
+<td width="33%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/collage-motion/process/portrait-design.mp4"><img src="../../docs/collage-motion/process/portrait-design.jpg" height="150" alt="Supplied portrait composition demonstration"></a><br><b>Portrait composition</b></td>
+</tr></table>
+
+Click a card to play its film. These three supplied videos document the earlier visual direction; they are not recordings of the current studio revision.
+
 ## Workflow and creator control
 
 Load local media or the supplied 35-shot example. The app assigns stable source IDs, draws the visible shots in a grid and plays their motion together. The creator controls inclusion, order, crop, captions, layout, timing and the final review. Hiding a source preserves it for later use; removing a source is a separate action.
 
 Muwen Li supplied the visual direction and shot selection, defined the review workflow and critiqued the iterations; Codex assisted implementation.
+
+Separate files interrupt a production conversation: reviewers have to remember one shot while opening another. A parallel board keeps the images moving together and lets feedback refer to a stable shot identity. It is a shot-review composition, not a sequential edit with a sound mix.
+
+The system lays out and plays the chosen media; it does not infer the story or replace shots autonomously. One source or crop can be changed without rebuilding the full board.
 
 ## Try one useful task
 
@@ -56,17 +88,55 @@ This checks inclusion, ordering and export-source filtering. For an actual outpu
 
 ## Features and implementation
 
-- One moving grid with stable IDs, source previews, reorder and include/hide controls.
-- Grid size, framing, captions and six supplied overlay treatments.
-- A shared preview atlas reduces decoder use for the built-in example. Uploaded clips do not automatically receive that optimization.
-- Frame-sampled silent MP4 output. 4K is the whole canvas resolution, not each tile's resolution.
+### Workspace and controls
 
-[Application source](../../docs/collage-motion/index.html) contains media loading, composition and encoding. [The implementation map](../../docs/animated-storyboard-handoff.md) names relevant functions and tests. Edits clear on reload; persistent projects and undo are not implemented. The demo and its media have no additional reuse license.
+The workspace shares Model Breakdown's restrained typography, rectangular controls and input–preview–inspector structure. A visitor sees the intended result before importing anything.
+
+| Step | Try it | Creator decision |
+| --- | --- | --- |
+| **01 / Input** | Inspect the 35-shot example or use **Import media** | Choose the material and purpose of the review |
+| **02 / Presentation** | Switch among six original white HUD styles or **Clean board** | Decide how much graphic context the footage needs |
+| **03 / Local correction** | Select a cell, replace its source, change framing or adjust spacing | Revise the affected shot without rebuilding the board |
+| **04 / Output** | **Review & export** → 4K → inspect the downloaded file | Accept framing, labels, motion and duration |
+
+The original frame styles are Open data, Calibration, Code array, System index, Construction and Debug memory. Stable source IDs remain visible by default. `#001` identifies the current position; `S053` identifies the supplied shot. The examples do not invent shooting dates or spoken subtitles. Editable descriptions are available in the Assets controls; the chosen HUD determines which metadata is rendered.
+
+### Why these controls exist
+
+| Production problem | Implemented mechanism | Check before delivery |
+| --- | --- | --- |
+| Separate files interrupt comparison | One moving board with a curated opening example | The reviewer can identify and compare the intended shots |
+| Dense presentation can hide the footage | Independent HUD presets, white graphic treatment and clean view | Labels and graphics do not cover the subject |
+| Feedback is usually about one part | Selected-cell source replacement and framing controls | Other shots and their order remain intact |
+| Many simultaneous decoders can freeze | The supplied 35-shot board uses one optimized video atlas; higher-resolution media is loaded for export | Every displayed cell actually moves, including in the encoded file |
+| An encoder success message can conceal static output | Fixed-time export and decoded-frame checks | Duration, frame count and the contents of each tile match the preview |
+
+The preview atlas is about 9.6 MB; the export atlas is about 52.7 MB. This optimization applies to the built-in example. Visitor clips use the regular local-media path and still need device-specific performance checks. A 4K board does not turn each small source tile into an individual 4K image.
+
+### Source clips: inspect and revise the board
+
+The source collection sits directly below the canvas. Preview an individual shot, select it for framing and caption edits, move it earlier or later, or enter an exact position. Uncheck **Included in board** to retain a source while excluding it from both preview and export; **Include all** restores it. Removing a card affects only this board. Bundled sources are optimized viewing copies; imported sources use the visitor's own local files.
+
+The 35-shot example uses one shared video atlas for simultaneous board playback. Individual source playback opens on demand, so the source collection does not create another 35 live video decoders.
+
+### Recovery, implementation and handoff
+
+Import replaces the sample. Loading an example over personal work requests confirmation; original files stay unchanged. Rendering locks editing and waits for media readiness. Undo and persistent project saving are not implemented: reload clears edits. Output is silent and contains the board, not the surrounding editor.
+
+| Responsibility | Source |
+| --- | --- |
+| Example atlas and media selection | [index.html](../../docs/collage-motion/index.html): `loadSampleAtlas`, `sourceForAsset` |
+| Source inspection and order | Same file: `previewSource`, `moveSelectedAsset` |
+| Inclusion and visible assignment | Same file: `visibleAssetIndices`, `assignmentFor` |
+| Fixed-time export | Same file: `seekExportSources`, `exportStandardMp4` |
+| Example sources and focused checks | [manifest.json](../../docs/collage-motion/examples/manifest.json), [visibility.cjs](../../docs/collage-motion/tests/visibility.cjs) |
+
+The [implementation map](../../docs/animated-storyboard-handoff.md) connects these functions to the correction and export checks. The prototype still needs isolated project state, persistence, undo and a tested device budget. The demo and BITFLIP presentation footage have no additional reuse license.
 
 ## Evidence and next step
 
-![35-shot Animated Storyboard](../../media/collage-review-board.webp)
-
 The recorded example export is **8 seconds, 3840 × 2160, 24 fps, 192 frames**, with motion in all 35 tiles. A hidden-source export also passed. [Fixture details and limits](docs/validation.md).
 
-Next: test a mixed library of user-supplied clips with an unfamiliar creator, including one source correction and an export. Measure failed imports and help needed before adding automation; persistence and undo remain engineering work. No measured productivity improvement is claimed.
+Next: ask an unfamiliar filmmaker to import five clips, make one meaningful local correction and export a review board without coaching. Record failed imports, hesitation and help needed. Check the intended shots, readable labels, motion in every tile and the encoded duration.
+
+Expand when the board improves the review conversation; revise distracting labels or controls; narrow the task if the real need is a sound-synchronized edit. No measured productivity improvement is claimed.

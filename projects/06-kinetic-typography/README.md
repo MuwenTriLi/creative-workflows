@@ -6,11 +6,23 @@
 
 Tech stack: React, TypeScript, Transformers.js, quantized Whisper Base on browser WASM, Canvas and Mediabunny. Recognition uses an existing model; this project does not train a speech model.
 
+## Visual overview
+
+[![Kinetic Typography Studio: speech source, editable transcript, live typography and style controls](../../media/vox-one-editor.png)](https://vox-one.limuwen9.chatgpt.site)
+
+The eight-second silent opening composition lets a visitor inspect the type treatment immediately. Its text and timing are authored demo data. Importing a voice clip exercises the separate speech-recognition path.
+
+The left panel contains source and transcript; the center shows the typography; the right panel controls grouping, alignment, motion, size and sync. The Demo runs the live composition.
+
 ## Workflow and creator control
 
 Import speech, let local Whisper propose words and timestamps, then review the transcript against the audio. The creator corrects words and punctuation, applies changes, chooses grouping and emphasis, adjusts synchronization and accepts the output. The opening silent sample uses authored text; it is not a transcription demonstration.
 
 Muwen Li defined the speech-to-type interaction, correction loop, visual direction and acceptance criteria; Codex assisted implementation.
+
+Speech-led motion graphics require more than a transcript. Words need readable grouping, accurate timing and a visual rhythm that follows the speaker. A text correction can affect both the layout and timing; treating transcription, typography and animation as disconnected steps makes iteration harder.
+
+Connect the source audio, editable transcript, word timeline and composition in one workspace. Let creators switch between single-word emphasis and a two-line phrase layout, then tune motion intensity, type scale, safe area and synchronization without changing tools.
 
 ## Try one useful task
 
@@ -18,6 +30,8 @@ Muwen Li defined the speech-to-type interaction, correction loop, visual directi
 2. Import a short English audio or video clip you are authorized to use. Start transcription and wait for the first model download and recognition.
 3. Correct a word or punctuation in the transcript, then use **Confirm & Apply**.
 4. Compare the type layouts and sync against the original audio. Export MP4 and play the result through with sound.
+
+Use a clip containing a proper noun, a pause and a phrase boundary. Keep the speaker's meaning intact when correcting the text; use a global sync offset only for uniform drift. An isolated word-timing correction without disturbing its neighbors still needs verification. Retained revisions and region-level reprocessing are not established features.
 
 ## Workflow diagram
 
@@ -61,16 +75,35 @@ The [source manifest](source/source-manifest.json) records the hosted revision a
 
 ## Features and implementation
 
-- English speech recognition with editable word timing and transcript correction.
-- Single-word or grouped type, style controls and synchronization offset.
-- MP4 with audio; a transparent WebM option is present but remains outside the recorded delivery acceptance.
+### Controls and their purpose
 
-[page.tsx](source/app/page.tsx) includes `beginTranscription`, `chunksToWords`, `alignEditedWords`, Canvas rendering and export. The output is animated typography with speech audio; the current workflow does not claim to composite the original video as a background layer. A future handoff should isolate recognition, transcript state and rendering.
+| Creative decision | Visible control | Purpose |
+| --- | --- | --- |
+| What was actually said? | Editable transcript and punctuation | Keep human correction in the workflow |
+| How should viewers read it? | Single word / Build 2 lines | Compare emphasis with phrase readability |
+| How should type feel? | Motion calm, font scale, alignment and color | Tune expression without obscuring speech |
+| Does it follow the voice? | Timeline and sync offset | Inspect and adjust audio/type alignment |
+| How will it be composited? | Black-background MP4 / transparent WebM options | Prepare output for different editing workflows |
+
+The transparent WebM option exists but is outside the recorded delivery acceptance. The checked path is black-background MP4 with speech audio. The current output does not composite the original source video as a background layer.
+
+### Recognition, correction and rendering
+
+| Stage | Source responsibility |
+| --- | --- |
+| Start local inference | `beginTranscription` in [page.tsx](source/app/page.tsx) |
+| Convert recognition chunks to timed words | `chunksToWords` |
+| Apply edited text to the word sequence | `alignEditedWords`, followed by the creator's **Confirm & Apply** action |
+| Compose and deliver | Canvas typography and Mediabunny encoding in the same client |
+
+The creator owns wording, punctuation, phrase meaning, emphasis and final sync. Confidence-span review, semantic approval and revision history are future requirements, not current UI claims. Recognition, transcript state and rendering should be isolated further for engineering handoff.
 
 ## Evidence and next step
 
-![Kinetic Typography Studio](../../media/vox-one-editor.png)
-
 A clean **16-word synthetic English fixture**, punctuation correction and **4K H.264/AAC export** passed the recorded checks. This establishes a bounded speech-to-output path, not recognition accuracy on real production recordings. [Test details](docs/validation.md).
 
-Next: record real names, noise and accents, measure correction effort and perceptual sync, and validate transparent output separately. Do not generalize the synthetic fixture into a recognition or usability benchmark.
+The clean 7.55-second fixture produced the expected 16 words. A punctuation-only correction retained the displayed word times. The 4K H.264 / 30 fps / 227-frame output with AAC audio fully decoded. This is not a recognition benchmark.
+
+For a real delivery, verify names and wording against the source, preserve phrase meaning, keep text in the safe area and play the entire encoded output with audio. Define the acceptable sync tolerance for that use before the test.
+
+Next: record authorized speech with real names, noise and accents; measure correction effort and perceptual sync; validate transparent output and an editing-application round trip separately. Expand only when wording and timing are correctable. No real-speech accuracy or time-saving result is claimed.

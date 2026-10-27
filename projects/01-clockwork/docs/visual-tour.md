@@ -15,7 +15,7 @@ I modeled the original source collection myself, then organized those models and
 | Expose useful controls | Decide which changes a creator should make, such as speed and phase | Connect those inputs to the dependent moving components |
 | Deliver reusable work | Select and organize assemblies, previews, documentation and visual evidence | Assist implementation and packaging; a later instruction Skill records the adaptation method |
 
-The input was my existing modeled work and design specification. This documents AI-assisted development, not a model-training result. The later Skill has not yet been exercised end to end on a new Blender task.
+The input was my existing modeled work and design specification. This documents AI-assisted development, not a model-training result. The later [CLK32 control study](control-study.md) exercises one inspection, speed edit and verification procedure; broader recomposition remains unverified.
 
 ## A control system behind each assembly
 

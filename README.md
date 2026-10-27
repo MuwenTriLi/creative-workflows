@@ -8,7 +8,7 @@ Tools and production work for turning 3D models, footage and speech into editabl
 
 ## Selected work
 
-Project titles open the corresponding folder in this collection. **Demo** opens the product page, final films or working app. Projects remain in the same 01–07 order.
+Open a **project** for its visual gallery and project details; browser projects also include workflow and local setup. **Demo** opens the product page, final films or working app. Projects remain in the same 01–07 order.
 
 | Project | Purpose | Demo |
 | --- | --- | --- |

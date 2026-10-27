@@ -6,26 +6,214 @@ Original modeled components developed into **46 animated Blender assets** with l
 
 Tech stack: Blender geometry, native drivers, hierarchies and constraints; Codex-assisted inspection and implementation.
 
-## From source models to linked motion
+## Visual overview
+
+[![Clockwork collection — original 4K render](media/collection-hero-4k.jpg)](media/collection-hero-4k.jpg)
+
+The finished collection, motion excerpts and Blender recordings below show different aspects of the same work. Click a still for its full image or a recording for playback.
+
+### Structure → material
+
+The same collection presented with two visual priorities: **linework exposes construction; rendered surfaces show the finished design language**.
+
+<p align="center"><a href="media/structure-material-comparison.jpg"><img src="media/structure-material-comparison.jpg" width="100%" alt="Original linework pass on the left and material render pass on the right"></a></p>
+
+[Open the paired comparison](media/structure-material-comparison.jpg) · [Full-resolution linework](media/structure-pass.jpg) · [Full-resolution render](media/material-pass.jpg)
+
+Frames from the two original collection videos. Their motion phases differ; this is a presentation comparison, not a controlled user study.
+
+### The collection in motion
+
+<p align="center"><a href="media/collection-motion.gif"><img src="media/collection-motion.gif" alt="Rendered clock collection in motion" width="800"></a></p>
+
+### Mechanisms in focus
+
+Two larger studies expose the movement behind the overall silhouette. Click a preview to inspect its five-second excerpt.
+
+<table><tr>
+<td width="50%" align="center" valign="top"><a href="media/differential-motion.gif"><img src="media/differential-motion.gif" width="420" alt="SPM14 suspended mechanism in motion"></a><br><b>SPM14 / suspended mechanism</b><br><sub>Read the suspended parts, linkages and counterweight together.</sub></td>
+<td width="50%" align="center" valign="top"><a href="media/orbit-motion.gif"><img src="media/orbit-motion.gif" width="420" alt="CLK31 guided mechanical movement"></a><br><b>CLK31 / guided movement</b><br><sub>Read the relationship between the dial, structure and rail path.</sub></td>
+</tr></table>
+
+[More videos and Blender recordings →](docs/showcase-films.md) · [All 24 motion studies →](docs/motion-library.md#24-clock-motion-studies)
+
+### Motion is part of the design
+
+Two ways to read a mechanism: rotate the whole form to understand its construction, then hold the view still to inspect how its parts move.
+
+#### 01 / Rotating views
+
+<table>
+<tr>
+<td width="25%" align="center"><a href="media/motion-clk02.gif"><img src="media/motion-clk02.gif" alt="Clock 01 - CLK02 - Turntable" width="100%"></a><br><b>Clock 01</b><br><sub>Turntable / Layered dial</sub></td>
+<td width="25%" align="center"><a href="media/motion-clk04.gif"><img src="media/motion-clk04.gif" alt="Clock 03 - CLK04 - Turntable" width="100%"></a><br><b>Clock 03</b><br><sub>Turntable / Stacked gears</sub></td>
+<td width="25%" align="center"><a href="media/motion-clk08.gif"><img src="media/motion-clk08.gif" alt="Clock 07 - CLK08 - Turntable" width="100%"></a><br><b>Clock 07</b><br><sub>Turntable / Exposed movement</sub></td>
+<td width="25%" align="center"><a href="media/motion-clk10.gif"><img src="media/motion-clk10.gif" alt="Clock 08 - CLK10 - Turntable" width="100%"></a><br><b>Clock 08</b><br><sub>Turntable / Skeleton frame</sub></td>
+</tr>
+</table>
+
+The silhouette stays readable as gears, shafts and supporting frames come into view.
+
+<br>
+
+#### 02 / Fixed views · moving mechanisms
+
+<table>
+<tr>
+<td width="25%" align="center"><a href="media/motion-clk11.gif"><img src="media/motion-clk11.gif" alt="Clock 10 - CLK11 - Motion" width="100%"></a><br><b>Clock 10</b><br><sub>Motion / Framed gear train</sub></td>
+<td width="25%" align="center"><a href="media/motion-clk18.gif"><img src="media/motion-clk18.gif" alt="Clock 15 - CLK18 - Motion" width="100%"></a><br><b>Clock 15</b><br><sub>Motion / Vertical linkages</sub></td>
+<td width="25%" align="center"><a href="media/motion-clk31.gif"><img src="media/motion-clk31.gif" alt="Clock 23 - CLK31 - Motion" width="100%"></a><br><b>Clock 23</b><br><sub>Motion / Rail-guided motion</sub></td>
+<td width="25%" align="center"><a href="media/motion-clk32.gif"><img src="media/motion-clk32.gif" alt="Clock 24 - CLK32 - Motion" width="100%"></a><br><b>Clock 24</b><br><sub>Motion / Unfolding canopy</sub></td>
+</tr>
+</table>
+
+A steady view makes the relationships between rotation, travel and opening easier to judge.
+
+[Explore all 24 motion studies →](docs/motion-library.md#24-clock-motion-studies) · [Original asset IDs](docs/clock-index.md)
+
+Clock numbers indicate the presentation order. GIFs repeat short excerpts at the original playback speed; they are not guaranteed seamless cycles.
+
+### Selected forms
+
+<table>
+<tr>
+<td width="25%" align="center"><a href="media/clk18.png"><img src="media/clk18.png" alt="CLK18 original render" width="100%"></a><br><b>CLK18</b></td>
+<td width="25%" align="center"><a href="media/orbit.png"><img src="media/orbit.png" alt="CLK31 original render" width="100%"></a><br><b>CLK31</b></td>
+<td width="25%" align="center"><a href="media/aperture.png"><img src="media/aperture.png" alt="CLK32 original render" width="100%"></a><br><b>CLK32</b></td>
+<td width="25%" align="center"><a href="media/differential-instrument.png"><img src="media/differential-instrument.png" alt="SPM14 original render" width="100%"></a><br><b>SPM14</b></td>
+</tr>
+</table>
+
+#### Eight more rendered forms
+
+<table>
+<tr>
+<td width="25%" align="center"><a href="media/clk02.png"><img src="media/clk02.png" alt="CLK02 original render" width="100%"></a><br><b>CLK02</b></td>
+<td width="25%" align="center"><a href="media/clk03.png"><img src="media/clk03.png" alt="CLK03 original render" width="100%"></a><br><b>CLK03</b></td>
+<td width="25%" align="center"><a href="media/clk04.png"><img src="media/clk04.png" alt="CLK04 original render" width="100%"></a><br><b>CLK04</b></td>
+<td width="25%" align="center"><a href="media/clk06.png"><img src="media/clk06.png" alt="CLK06 original render" width="100%"></a><br><b>CLK06</b></td>
+</tr>
+<tr>
+<td width="25%" align="center"><a href="media/clock-08.png"><img src="media/clock-08.png" alt="CLK08 original render" width="100%"></a><br><b>CLK08</b></td>
+<td width="25%" align="center"><a href="media/clk10.png"><img src="media/clk10.png" alt="CLK10 original render" width="100%"></a><br><b>CLK10</b></td>
+<td width="25%" align="center"><a href="media/clk11.png"><img src="media/clk11.png" alt="CLK11 original render" width="100%"></a><br><b>CLK11</b></td>
+<td width="25%" align="center"><a href="media/clk12.png"><img src="media/clk12.png" alt="CLK12 original render" width="100%"></a><br><b>CLK12</b></td>
+</tr>
+</table>
+
+
+
+Click any render to inspect it. [Browse all clocks and selected mechanisms →](docs/render-gallery.md)
+
+### Inside Blender: from library to moving assembly
+
+<table>
+<tr><th width="50%">Inspect the opening mechanism</th><th width="50%">Browse and place an asset</th></tr>
+<tr><td><a href="https://muwentrili.github.io/creative-workflows/films/?project=clockwork&amp;film=opening-in-blender"><img src="media/opening-in-blender.gif" width="100%" alt="Original Blender recording of the opening assembly"></a></td><td><a href="https://muwentrili.github.io/creative-workflows/films/?project=clockwork&amp;film=library-placement"><img src="media/library-placement.gif" width="100%" alt="Original Blender asset library placement recording"></a></td></tr>
+</table>
+
+[Opening mechanism · MP4](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=opening-in-blender) · [Asset placement · MP4](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=library-placement) · [Seven videos and recordings](docs/showcase-films.md)
+
+These original viewport recordings show the working scene and library. These recordings show the working scene and library. A separate checked CLK32 speed-change comparison follows below; neither establishes every parameter or arbitrary recomposition.
+
+### Components for a new design
+
+The library works at three levels: **complete animated assemblies**, **editable parts and subassemblies**, and **reusable procedural materials**. A clock can anchor a scene; its gears, frames and decorative structures can also inform a new design or visual direction.
+
+<table>
+<tr>
+<td width="25%" align="center"><a href="media/clk04.png"><img src="media/clk04.png" alt="CLK04 original render" width="100%"></a><br><b>Gear layers</b></td>
+<td width="25%" align="center"><a href="media/clk06.png"><img src="media/clk06.png" alt="CLK06 original render" width="100%"></a><br><b>Linkages</b></td>
+<td width="25%" align="center"><a href="media/clk12.png"><img src="media/clk12.png" alt="CLK12 original render" width="100%"></a><br><b>Clock-face detail</b></td>
+<td width="25%" align="center"><a href="media/chain-drive.png"><img src="media/chain-drive.png" alt="SPM03 original render" width="100%"></a><br><b>Chain drive</b></td>
+</tr>
+</table>
+
+For a working animated module, retain its controller, hierarchy and driver dependencies. For a new visual composition, duplicate the asset, make its collection instance real and adapt selected geometry or materials. A separated component may need its motion relationships rebuilt. [Component reuse workflow](docs/component-reuse.md).
+
+### One checked change: slower opening
+
+| Original · Speed 1.0 | Revised · Speed 0.75 |
+| --- | --- |
+| ![Original mechanism at frame 241](media/control-study/before-preview.png) | ![Slower mechanism at the same frame](media/control-study/after-preview.png) |
+
+[Play the 10-second before/after comparison](media/control-study/clk32-speed-comparison.mp4). This is a diagnostic render of one controlled change, separate from the finished product renders above. Both sides use the same camera and frame range.
+
+### Browse the library in Blender
+
+![Blender Asset Browser with the supplied collection](media/asset-browser.png)
+
+[![Blender library tour](media/blender-library-tour-poster.jpg)](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=blender-library-tour)
+
+[Full render gallery](docs/render-gallery.md) · [All 24 motion studies](docs/motion-library.md) · [Seven films and viewport recordings](docs/showcase-films.md). These retain the larger galleries and their original asset IDs.
+
+## Workflow and creator control
 
 I modeled the original collection, organized it with references and motion requirements, and used those inputs to direct AI-assisted development of gear linkages and related mechanisms. I reviewed the visual and mechanical relationships and the creator controls. Providing my modeled data as context is not a claim of training a model.
 
 The central task is adaptation: preserve the linked movement while changing a mechanism's pace or placing it in another composition. Native drivers propagate the chosen inputs; the creator retains form, motion intent, speed, phase and acceptance.
 
-## Use and controls
+A detailed mechanism is only part of a usable asset. A creator also needs to place it in a composition, change the rhythm and preserve connected motion. This problem framing comes from my production practice; it is not a completed customer study.
+
+| Stage | My contribution | System / AI assistance |
+| --- | --- | --- |
+| Prepare | Model the original geometry; organize source files, references and motion requirements | Inspect the supplied structures within that brief |
+| Develop | Direct gear, frame and linkage relationships; review the result | Assist linked motion through native Blender drivers, hierarchies and constraints |
+| Expose controls | Choose useful adjustments, such as speed, phase and clock behavior | Propagate accepted inputs through connected components |
+| Deliver | Select assemblies, previews, instructions and visual evidence | Assist packaging and record a reusable inspection/adaptation procedure |
+
+### A control system behind each assembly
+
+Built-in settings drive motion through native Blender drivers, object hierarchies and constraints. Adjust the root controller; the connected parts follow their existing relationships.
+
+**Controller inputs -> linked motion -> moving components**
+
+| What you want to change | Example controls | What they affect |
+| --- | --- | --- |
+| Chain movement | SPM03 / `Chain_Drive_Speed` | Chain speed, alongside the assembly's overall speed and phase settings. |
+| Gear rotation | CLK08 / `Gear_Display_Speed` | Visible mechanism speed; clock-hand timing has separate controls. |
+| Opening and folding rhythm | CLK32 / `Master_RPM`, `Speed_Scale`, `Phase_Deg` | The input speed and phase driving the unfolding mechanism. |
+| Travel along an existing path | CLK31 / `Master_RPM`, `Speed_Scale` | The pace of the connected rail mechanism. |
+| Clock behavior | CLK08 / `Start_Hour`, `Start_Minute`, `Start_Second`, `Second_Tick_Blend` | Initial time and smooth or stepped seconds. |
+| Gear detail on supported assets | CLK31 / CLK32 / `Teeth_Multiplier` | Linked tooth density at 1 / 2 / 3, with pitch radii and transmission ratios retained. |
+
+Controls vary by asset. Opening angles and positions may be calculated outputs, so adjustments belong upstream in the controller. [Explore the controls](docs/controls.md).
+
+## Try one useful task
+
+Use a working copy of CLK32 to slow the opening while keeping its mechanism intact:
+
+1. Place the complete collection and select `CLK32_ASSET_CTRL`.
+2. Record the original values. Leave `Master_RPM = 3.2` and change `Speed_Scale` from **1.0 to 0.75**.
+3. Keep the hierarchy, driver targets, camera and unrelated geometry intact. `Input_Angle` is a calculated result, not the speed input to edit.
+4. Preview the full intended frame range and restore the recorded value if the motion no longer serves the shot.
+
+This is the bounded change shown above. Recomposition or dependency changes require their own checks. [Exact procedure and measured result](docs/control-study.md).
+
+## Setup and reuse
 
 The Blender library is distributed through the Superhive page above. This project folder contains its public documentation and presentation evidence; it does not include the source `.blend` library or change its license.
 
 Register the supplied Asset Library folder in Blender, place a complete collection and select its root controller. Adjust an input documented for that asset, preserve its dependencies and review a complete motion cycle. [Controller reference](docs/controls.md) explains the differences between assets.
 
-## Evidence
+The supplied package documents Blender **5.2.0 LTS / Windows / Cycles**. The later CLK32 study also used Blender 5.2; a first attempt on 5.0.1 found incompatible modifier paths. This is not a claim of universal version compatibility. No add-on is required to use the native model library.
 
-![Clockwork collection](media/collection-hero-4k.jpg)
+| Included | Delivery |
+| --- | --- |
+| Animated assets | 32 clocks and 14 mechanical assemblies |
+| Asset Browser | 46 categorized custom previews |
+| Materials | 9 marked reusable procedural material assets |
+| Presentation | 5 supplied showcase scenes |
+| Documentation | Setup, controller reference and recorded checks |
 
-[Motion films](https://muwentrili.github.io/creative-workflows/films/?project=clockwork) show rendered and Blender viewport sequences. [Build process](docs/process.md) records input preparation and implementation assistance.
+For animated reuse, retain the controller, hierarchy and targets together. For geometry-only reuse, work on a duplicate and inspect any links that must be rebuilt. [Component reuse](docs/component-reuse.md) describes these different cases.
 
-The [CLK32 control study](docs/control-study.md) changed `Speed_Scale` from **1.0 to 0.75** in a working copy, retained the 81-driver graph and checked frames 1–601 in Blender 5.2. It also records an earlier compatibility failure. This bounded result does not prove arbitrary recomposition or collision-free motion.
+## Evidence and next step
 
-## Next step
+The CLK32 change retained **81 object drivers**, checked **601 frames per setting**, and measured an input-angle ratio of **0.75**. The ten-second comparison decodes to 240 frames at 24 fps. These checks do not establish collision-free motion across the whole collection or arbitrary controller settings.
 
-Observe an unfamiliar creator repeating one documented adjustment. The public [adaptation instructions](skills/clockwork-assembly/SKILL.md) describe inspection and checking; broader autonomous recomposition and creator time savings have not been established.
+The package's earlier audit reports 46 assets and 2,640 drivers, but predates some later file modifications and was not rerun for this publication. [Validation scope](docs/validation.md) keeps that historical record separate from the new single-control study.
+
+The public [adaptation Skill](skills/clockwork-assembly/SKILL.md) records inspection, a working-copy edit and verification. Broader autonomous recomposition remains unverified. Next, observe an unfamiliar creator repeating one adjustment and restoring it before claiming improved task completion or time savings.
+
+[Build process](docs/process.md) explains the prepared inputs and AI-assisted development. [Production decisions](docs/production-case.md) records the reasoning behind the controls. Rendered media and the Blender library retain their existing rights; this public project does not grant a new asset license.

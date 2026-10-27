@@ -6,18 +6,41 @@
 
 Tech stack: React, TypeScript, browser media, Canvas, WebCodecs and mp4-muxer. The motion system evaluates a chosen sequence; it does not select a story for the creator.
 
+## Visual overview
+
+[![Spatial Media Presenter: source archive, spatial composition and motion controls](../../media/flipframe-editor.png)](https://flipframe-motion-lab.limuwen9.chatgpt.site)
+
+The opening collection contains 15 supplied works: 11 stills and 4 motion studies. It starts in Orbital Shift; pause, numbering, language and six white HUD treatments sit above the canvas.
+
+### Complete exported sequence
+
+[![Actual 25-second spatial presentation](../../docs/collage-motion/process/flipframe-sequence.jpg)](https://muwentrili.github.io/creative-workflows/collage-motion/process/flipframe-sequence.mp4)
+
+[Play the complete 25-second film](https://muwentrili.github.io/creative-workflows/collage-motion/process/flipframe-sequence.mp4). This is the actual checked sequence, presented as a lighter 1080p viewing copy; the original result is 4K60 with 1,500 frames.
+
 ## Workflow and creator control
 
 Import media or use the 15-work example. The app evaluates the selected motion pattern and timing. The creator chooses content, editorial order, showcase range, crop, hold duration and graphic treatment, then reviews whether each work has enough reading time.
 
 Muwen Li supplied the visual collection, motion direction, control hierarchy and iterative critique; Codex assisted implementation.
 
+A sequence needs both impact and enough time to read each image. Reordering the source media or changing the pace of a spatial presentation can require adjusting many transitions, holds and camera-like moves. A visually impressive transition is not useful if viewers cannot understand the content it reveals.
+
+Use one ordered **Visual Archive** as the sequence source, with a spatial preview and visible timing controls. Separate the fast introductory scan from the slower showcase range. Keep cards readable while the sequence moves through space, and make the transition between speed and pause adjustable.
+
 ## Try one useful task
 
-1. Pause the opening **Orbital Shift** example.
-2. Select a media card and change its framing or hold time.
-3. Replay the relevant transition and compare how long the work remains readable.
-4. Export a short sequence using the direct MP4 path, then check the downloaded file's order, duration and crop.
+**Task:** keep the editorial order fixed and give one important card a longer readable hold.
+
+1. Open the English-default app. **Load portfolio example** brings back the 15-work collection; **Import media** on the left accepts your own images or clips.
+2. Select a card in **Visual archive**, adjust its framing, and set the IN/OUT showcase range. Drag the archive to change the editorial order.
+3. Try the six white **Frame & side HUD** buttons above the preview. Use **Show numbers** and the adjacent **中文 / EN** switch without searching through settings.
+4. Use **Play / Pause** above the canvas, then scrub the timeline. Pause stops both the sequence and its source clips. Compare **Wave rail** and **Step showcase**, and adjust the hold or deceleration.
+5. Open **Review & export** on the right. Check the sequence order, reading time, framing and selected overlays before exporting.
+
+**Starting state and recovery:** the supplied 15-asset collection starts its Orbital Shift sequence automatically. The toolbar pauses it; the full-animation control replays it. There is no Resume saved board prompt. Imported work is retained locally as a backup when switching to the example, but no recovery interface is currently exposed; export your work before leaving.
+
+Make one framing or hold correction, replay the affected transition, then inspect the complete encoded sequence. Protected-card locks and revision rollback are not implemented guarantees.
 
 ## Workflow diagram
 
@@ -62,16 +85,33 @@ The [source manifest](source/source-manifest.json) records the hosted revision a
 
 ## Features and implementation
 
-- Media ordering, selected showcase ranges, per-card framing and timed holds.
-- Spatial motion patterns, including the initial Orbital Shift example.
-- Canvas rendering and direct MP4 output with an explicit sequence duration.
+### Controls and their purpose
 
-[page.tsx](source/app/page.tsx) owns archive and interface state; [exporter.ts](source/app/exporter.ts) evaluates timing and draws output frames. [sample-project.ts](source/app/sample-project.ts) handles sample upgrades. Stored backups exist, but the UI does not expose saved-board recovery. Long encodes may block interaction.
+| Creative decision | Visible control | Purpose |
+| --- | --- | --- |
+| Which stories appear, and in what order? | Drag-to-reorder archive; IN/OUT showcase range | Connect content order to presentation order |
+| How does the sequence move? | Wave rail, step showcase and rapid lock modes | Compare different presentation rhythms |
+| When does the motion settle? | Peak speed, deceleration duration and curve strength | Shape the transition from overview to detail |
+| How long can viewers inspect an image? | Per-card transition and hold duration | Give each item readable screen time |
+| How should each source fit? | Clip trim, size and position; 16:9 / 9:16 canvas | Adapt mixed media to the presentation |
+| Which information should surround the work? | Six frame-and-side-HUD presets; Show numbers; detailed overlay controls | Review the same framing and shot identifiers in the preview and output |
+
+### Source responsibilities
+
+| Responsibility | Source |
+| --- | --- |
+| Archive, import, framing and playback | [page.tsx](source/app/page.tsx) |
+| Sequence timing and output frames | [exporter.ts](source/app/exporter.ts): `stepSequenceDuration`, `stepSequenceState`, `hookShowcaseState`, `rollMotionOffset` |
+| Example migration without discarding imported media | [sample-project.ts](source/app/sample-project.ts): `needsSampleUpgrade` |
+
+The preview and encoder must evaluate the same order, transitions and holds. Stored backups exist, but the current UI does not expose saved-board recovery. Long encoding can block interaction. A future handoff should isolate timeline evaluation from media loading before expanding motion modes.
+
+The reusable unit is an editable presentation sequence. An automatic timing proposal, semantic content locks, revision comparison and readability judgments would be future features, not behavior demonstrated by this app.
 
 ## Evidence and next step
 
-![Spatial Media Presenter](../../media/flipframe-editor.png)
-
 Recorded direct **4K60** files matched **7.45 seconds / 447 frames** and **25 seconds / 1,500 frames**. The older compatibility-capture path did not meet its requested timing; do not infer that every export mode is validated. [Results and limitations](docs/validation.md).
 
-Next: test longer mixed-media sequences and ask an unfamiliar viewer to assess reading time. Iterate pacing controls and responsiveness before expanding motion patterns. No viewer-readability or time-saving study is claimed.
+For delivery, check that the intended cards appear in order, subjects stay framed, key work has readable screen time and transitions do not jump or hide the content. Encoding success alone does not establish those qualities.
+
+Next: compare the same media at two hold settings and ask unfamiliar viewers which works they can identify. Record the creator's correction steps. Expand a timing preset only if readability and editability both hold; revise rushed cards or disorienting transitions. No viewer-readability or time-saving study is claimed.
