@@ -28,10 +28,13 @@ The source collection sits below the canvas. Each card connects the displayed ce
 
 Two composition studies from the earlier visual direction. Each preview opens its film; these are separate from the current studio and checked export above.
 
-<table width="100%"><tr>
-<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/collage-motion/process/landscape-design.mp4"><img src="../../docs/collage-motion/process/landscape-design.jpg" height="240" alt="Earlier landscape composition with a wide moving grid"></a><br><b>Landscape / wide review board</b><br><sub>A broad grid for comparing shots together.</sub></td>
-<td width="50%" align="center" valign="top"><a href="https://muwentrili.github.io/creative-workflows/collage-motion/process/portrait-design.mp4"><img src="../../docs/collage-motion/process/portrait-design.jpg" height="240" alt="Earlier portrait composition with vertically arranged shots"></a><br><b>Portrait / vertical composition</b><br><sub>A taller arrangement for a different viewing format.</sub></td>
-</tr></table>
+<table width="100%">
+<tr>
+<td width="50%" height="260" align="center" valign="middle"><a href="https://muwentrili.github.io/creative-workflows/collage-motion/process/landscape-design.mp4"><img src="../../docs/collage-motion/process/landscape-design.jpg" height="240" alt="Earlier landscape composition with a wide moving grid"></a></td>
+<td width="50%" height="260" align="center" valign="middle"><a href="https://muwentrili.github.io/creative-workflows/collage-motion/process/portrait-design.mp4"><img src="../../docs/collage-motion/process/portrait-design.jpg" height="240" alt="Earlier portrait composition with vertically arranged shots"></a></td>
+</tr>
+<tr><td width="50%" align="center" valign="top"><b>Landscape / wide review board</b><br><sub>A broad grid for comparing shots together.</sub></td><td width="50%" align="center" valign="top"><b>Portrait / vertical composition</b><br><sub>A taller arrangement for a different viewing format.</sub></td></tr>
+</table>
 
 The separate [earlier motion-controls recording](https://muwentrili.github.io/creative-workflows/collage-motion/process/motion-controls.mp4) documents the previous timing interface.
 
