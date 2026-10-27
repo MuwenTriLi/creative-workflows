@@ -4,19 +4,19 @@ Send this single link:
 
 **[Muwen Li — Creative Workflows](https://github.com/MuwenTriLi/creative-workflows#selected-work)**
 
-The public repository is the front door. A reviewer can read it without a GitHub account. Project titles open project homes with workflow, source/setup and evidence; detailed case studies are one level deeper. The **Open** column links directly to the Superhive product, a web app or the films. A visitor does not need to read implementation notes before trying a tool.
+Project titles open folders within this collection. The **Demo** column leads to Superhive, a web app or final films. Each browser project includes its own local setup and evidence in the README.
 
 ## A short first visit
 
 1. **Clockwork:** visit the Superhive product page, then read the build process connecting Muwen's original models, prepared AI inputs, gear linkages and creator controls.
-2. **Blue / White Architecture Growth:** watch the completed films, then inspect the company production method and visual direction.
+2. **Blue / White Architecture Growth:** view selected final company films and credits. Source and workflow are confidential.
 3. **Model Breakdown Studio:** compare assembled and exploded views, select a component, or switch among the three models.
 4. **Animated Storyboard:** compare the moving shots. Below the canvas, **Source clips** provides individual playback, order, framing and include/hide controls. Hidden clips are excluded from both board and export; removing a card does not delete the source file.
 5. **Spatial Media Presenter:** arrange images and motion studies into a spatial presentation. Orbital Shift plays on entry.
 6. **Kinetic Typography Studio:** inspect the silent typography example; import a voice clip to explore editable words and timing.
-7. **Motion Tracking Studio:** import your own video, then select a target or place a fixed position anchor. Review its documented export-timing limitation before relying on delivery.
+7. **Motion Tracking Studio:** import video and select a target or fixed anchor. The revised exporter has bounded timing checks; real-footage recovery remains unverified.
 
-For a local copy of Animated Storyboard, use the versioned package under [Releases](https://github.com/MuwenTriLi/creative-workflows/releases), following the [local setup guide](distribution.md). The README's [repository map](../README.md#repository-map) explains where cases, source and evidence live.
+For a local copy of Animated Storyboard, use the versioned package under [Releases](https://github.com/MuwenTriLi/creative-workflows/releases), following the [local setup guide](distribution.md). The README's [repository map](../README.md#repository-structure) explains where cases, source and evidence live.
 
 ## On another computer
 

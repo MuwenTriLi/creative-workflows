@@ -1,6 +1,6 @@
 # BITFLIP / selected storyboard media
 
-[← Animated Storyboard case](../../../projects/03-collage-motion.md) · [Open web app](https://muwentrili.github.io/creative-workflows/collage-motion/)
+[← Animated Storyboard case](../../../projects/04-animated-storyboard/README.md) · [Open web app](https://muwentrili.github.io/creative-workflows/collage-motion/)
 
 The current example contains **35 creator-selected clips**, arranged on one 7 × 5 board. `manifest.json` records each source ID, title, duration and location within the shared video atlas. Individual viewing copies are silent 640 × 360 H.264 at their source frame rates and retain the complete supplied clip durations.
 

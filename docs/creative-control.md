@@ -1,6 +1,5 @@
 # Automation, creator control and delivery
-
-[← Project index](../README.md#selected-work) · [Flagship production case](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/production-case.md)
+[Flagship production case](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/01-clockwork/docs/production-case.md)
 
 My design question is: **which parts of a creative job can a system complete reliably, and which decisions need a creator's judgment?** The answer should be visible in the interface and in the delivered work.
 
@@ -11,17 +10,17 @@ My design question is: **which parts of a creative job can a system complete rel
 - **Implemented Collage gates:** media readiness blocks premature export; editing is locked during rendering and restored afterward. These are local application controls, not a semantic approval system.
 - **Existing tools:** parameter-driven Blender assets and interactive browser applications. Their case pages identify observed controls and the scope of actual tests.
 - **AI during development:** Muwen modeled and organized Clockwork's original source collection. Codex assisted source inspection, mechanism/linkage development and implementation under his direction. This is distinct from an AI agent operating the finished tool for its user.
-- **Company-internal method:** Architecture Growth now shows completed illoca output and a repeatable styling/growth workflow. Its Skill implementation remains private; a fresh public execution is not claimed.
-- **Packaged instructions:** the Clockwork Skill describes an adaptation procedure. A [bounded CLK32 speed change](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/control-study.md) now records actual inspection, execution and checks. Recomposition and reliable autonomous recovery remain unverified.
+- **Company Demo:** Architecture Growth presents selected final illoca films only. Its workflow, source and implementation are confidential.
+- **Packaged instructions:** the Clockwork Skill describes an adaptation procedure. A [bounded CLK32 speed change](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/01-clockwork/docs/control-study.md) now records actual inspection, execution and checks. Recomposition and reliable autonomous recovery remain unverified.
 - **Proposed agent behavior:** the approval points, change records, state model and engineering contracts below are product specifications. They are not already implemented across these applications.
 
 ## Decisions across the seven projects
 
 | Case | Repeatable work the system handles or is intended to handle | Creator retains | Acceptance question |
 | --- | --- | --- | --- |
-| [Clockwork](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/production-case.md) | Existing drivers propagate controller inputs through linked parts | Design language, choice of module, rhythm and any dependency-changing recomposition | Does the changed copy preserve dependencies and produce readable, continuous motion? |
-| [Architecture Growth](../projects/02-architecture-growth/) | Internal workflow: adapt confirmed visual rules and staged growth to a scene; implementation not released | Construction dependencies, cut plane, visual hierarchy and storytelling | Are section geometry, outlines and growth transitions correct across consecutive frames? |
-| [Model Breakdown](https://github.com/MuwenTriLi/model-breakdown-studio/blob/main/docs/product-case.md) | Import, part selection and parameter-driven exploded presentation | What the model is explaining, focal part, framing and reveal order | Can the viewer identify the intended component and its relationship to the assembly? |
+| [Clockwork](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/01-clockwork/docs/production-case.md) | Existing drivers propagate controller inputs through linked parts | Design language, choice of module, rhythm and any dependency-changing recomposition | Does the changed copy preserve dependencies and produce readable, continuous motion? |
+| [Architecture Growth](../projects/02-architecture-growth/) | Final company Demo only | Production process is confidential | No reproduction or implementation package |
+| [Model Breakdown](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/03-model-breakdown/) | Import, part selection and parameter-driven exploded presentation | What the model is explaining, focal part, framing and reveal order | Can the viewer identify the intended component and its relationship to the assembly? |
 | [Animated Storyboard](../projects/04-animated-storyboard/) | Load the selected sample board; calculate grid layout, cell timing and movement from parameters | Source media, order, crops, pacing and final composition | Are key subjects visible and does the encoded video match the reviewed sequence? |
 | [Spatial Media Presenter](../projects/05-spatial-media-presenter/) | Calculate card movement and timing from the selected sequence | Editorial order, entry/exit range and readable dwell | Can viewers inspect the intended content without clipping or rushed transitions? |
 | [Kinetic Typography Studio](../projects/06-kinetic-typography/) | Interface advertises local speech recognition and word timing; processing is not benchmarked here | Transcript corrections, phrase meaning, emphasis and final synchronization | Does the typography preserve the spoken meaning and remain readable against the audio? |
@@ -34,7 +33,7 @@ Local correction is a product requirement, not the same as offering a global “
 | Case | Smallest useful correction | Boundary to preserve |
 | --- | --- | --- |
 | Clockwork | A documented controller value in a working copy | Unrelated assemblies, visual direction and driver dependencies |
-| Architecture Growth | One system or transition, with neighboring-frame review | Reference, scale, camera and construction order; finished outputs supplied, correction recording pending |
+| Architecture Growth | Final company Demo only; NDA | No public reproduction or implementation instructions |
 | Model Breakdown | Focal part, explode amount or framing | Imported geometry and the explanation; revision rollback remains proposed |
 | Animated Storyboard | One selected cell's source or framing, or a chosen timing control | Imported media and accepted editorial choices; session persistence is absent |
 | Spatial Media Presenter | One card's framing or hold | Archive order and accepted sequence; revised 7.45 s and 25 s 4K exports pass their stated timing checks; readability remains to be studied |

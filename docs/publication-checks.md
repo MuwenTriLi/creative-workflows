@@ -49,8 +49,19 @@ The local repository review checked 860 internal file and section links across t
 
 - Architecture overview previews now share a 500×625 media frame and equal columns; images, titles and descriptions occupy separate rows. The square detail is contained with padding, without cropping or stretching the architecture. Its derivative is documented in the media inventory.
 - A [five-minute review](interview-guide.md) links each project's task, working entrance and inspectable evidence in the established 01–07 order.
-- The [Clockwork control study](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/control-study.md) records a real single-asset revision in Blender 5.2, its measured 0.75 speed ratio and a 5.0 compatibility failure. It is not a client study or a full-library revalidation.
+- The [Clockwork control study](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/01-clockwork/docs/control-study.md) records a real single-asset revision in Blender 5.2, its measured 0.75 speed ratio and a 5.0 compatibility failure. It is not a client study or a full-library revalidation.
 - Motion Tracking Studio **v19**, source `526ef1b74eb1a81031544887bcdfa65e0e46f545`, was published successfully to its existing public URL. The seven files in its updated source manifest match that source commit. Six frame-plan tests and the local production build pass.
 - Actual browser exports passed the bounded 4K silent and FHD/AAC cases in the [input/output record](../projects/07-motion-tracking/docs/export-check.md). Browser runtime tests used the local Vite build of the same client source; successful hosted deployment is recorded separately, not described as a second physical-computer test.
 
-Private source models, company Skills, credentials and commercial Blender files were not added. OpenArt-role alignment uses the supplied JD; no recruiter endorsement, user-study result, time-saving metric or new autonomous-agent capability is claimed.
+Private source models, company Skills, credentials and Blender library files were not added. OpenArt-role alignment uses the supplied JD; no recruiter endorsement, user-study result, time-saving metric or new autonomous-agent capability is claimed.
+
+
+## Project-directory consolidation — October 26, 2026
+
+This update supersedes the earlier navigation layout: projects 01–07 now have folders under `projects/`. Clockwork's public documentation/media and Model Breakdown's current browser source and examples are included. The older repositories retain their history and point to the new project homes. Redundant case/navigation pages were removed; workflow diagrams, features and setup are consolidated into app READMEs.
+
+Architecture Growth is now a final-Demo-only company case under NDA. Its public method, implementation and derivative-process pages were removed from the current tree, and current cross-project notes were narrowed to final outputs and credits. This does not erase earlier Git commits or copies held elsewhere. The film viewer removes method/download entry points for this case; public playback is not copy protection.
+
+The four React source packages passed their SHA-256 manifests (16 / 20 / 5 / 7 files respectively) and production builds. Model Breakdown's 17 checks, Presenter's 7 sample-migration assertions, Tracking's 6 frame-plan tests and Storyboard's source-visibility checks passed. Model Breakdown's moved package was installed from the local package cache with lifecycle scripts disabled; the other three packages were already installed. Model and typography builds report large bundles. These are local source/build checks, not a second physical-computer or new export-quality certification.
+
+The five app README section orders were checked, and 1,038 internal links resolved during the consolidation pass. The hosted client snapshots and their manifests were not changed. No speech model, paid model API, new cloud resource or private production source was used for this documentation update.

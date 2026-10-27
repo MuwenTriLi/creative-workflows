@@ -1,42 +1,79 @@
 # 05 / Spatial Media Presenter
 
-**Arrange stills and clips into a spatial presentation with editable order and readable holds.**
+[Demo](https://flipframe-motion-lab.limuwen9.chatgpt.site)
 
-**[Open the presenter →](https://flipframe-motion-lab.limuwen9.chatgpt.site)** · [Source + local setup](source/) · [Workflow](docs/workflow.md) · [Implementation](docs/implementation.md) · [Validation](docs/validation.md) · [All projects](../../README.md#selected-work)
+**Turn an image and video collection into a spatial presentation with editable order, transitions and holds.**
 
-[![05 / Spatial Media Presenter: workflow preview](../../media/flipframe-editor.png)](https://flipframe-motion-lab.limuwen9.chatgpt.site)
-
-## Input → output
-
-| Input | Output |
-| --- | --- |
-| Images and video clips, editorial order, showcase range, framing and transition/hold settings. | A timed spatial sequence with white overlays and reviewed MP4 output. |
-
-**Implementation:** React/TypeScript, browser media, Canvas, WebCodecs and mp4-muxer. The motion system is deterministic; it does not choose a story.
-
-## Try one useful task
-
-Pause the opening Orbital Shift example. Select a card, change its hold or framing, then replay the sequence and inspect the reading time.
-
-[Full walkthrough and design decisions](docs/workflow.md). For video tools, inspect the downloaded file as well as the preview: dimensions alone do not establish correct motion, timing or readability.
+Tech stack: React, TypeScript, browser media, Canvas, WebCodecs and mp4-muxer. The motion system evaluates a chosen sequence; it does not select a story for the creator.
 
 ## Workflow and creator control
 
-The system calculates transitions and draws the accepted sequence. The creator chooses content, order, range, crop, dwell time and graphic treatment.
+Import media or use the 15-work example. The app evaluates the selected motion pattern and timing. The creator chooses content, editorial order, showcase range, crop, hold duration and graphic treatment, then reviews whether each work has enough reading time.
 
-The [workflow notes](docs/workflow.md) distinguish current behavior from proposed automation. **Contribution:** Supplied visual collection, motion direction, control hierarchy and critique; Codex-assisted implementation.
+Muwen Li supplied the visual collection, motion direction, control hierarchy and iterative critique; Codex assisted implementation.
+
+## Try one useful task
+
+1. Pause the opening **Orbital Shift** example.
+2. Select a media card and change its framing or hold time.
+3. Replay the relevant transition and compare how long the work remains readable.
+4. Export a short sequence using the direct MP4 path, then check the downloaded file's order, duration and crop.
+
+## Workflow diagram
+
+```mermaid
+flowchart LR
+    A[Images and video clips] --> B[Media archive]
+    B --> C[Choose order and showcase range]
+    C --> D[Set framing, transitions and holds]
+    D --> E[Evaluate sequence state]
+    E --> F[Interactive spatial preview]
+    E --> G[Canvas frames and WebCodecs MP4]
+    G --> H[Review pace and readability]
+    H -->|Adjust local settings| D
+```
+
+## Local setup
+
+Requirements: Git, **Node.js 22.13+**, **pnpm 11.25.0**, and a desktop browser with Canvas/WebCodecs support. Use Chrome or Edge for comparison with the recorded checks. Install Git and Node.js first, then check `git --version` and `node --version`. Package downloads need internet. No API key or hosted account is needed by this local runner.
+
+Run these commands in PowerShell, macOS Terminal or a Linux shell:
+
+```sh
+npm install --global pnpm@11.25.0
+git clone https://github.com/MuwenTriLi/creative-workflows.git
+cd creative-workflows/projects/05-spatial-media-presenter/source
+pnpm install --frozen-lockfile --ignore-scripts
+pnpm verify:source
+pnpm dev --port 5173 --strictPort
+```
+
+Open **http://127.0.0.1:5173/**. Stop the server with Ctrl+C. If 5173 is occupied, stop the other server or choose another port. To check the production bundle:
+
+```sh
+pnpm test
+pnpm build
+pnpm preview --port 4173 --strictPort
+```
+
+Open **http://127.0.0.1:4173/** for the built app. Keep the tab in the foreground during export. Try a short FHD output before 4K; a successful build does not establish codec support or available GPU memory on another computer.
+
+The supplied visual example is included. The snapshot matches hosted client version **50**. `pnpm test` checks sample migration and preservation of imported media; it is not an export-timing or usability test.
+
+The [source manifest](source/source-manifest.json) records the hosted revision and hashes; `verify:source` checks the copied client files. The local Vite runner replaces the hosting wrapper. Public navigation links still open the hosted studios. [Source and media rights](source/RIGHTS.md) apply independently of these setup instructions.
+
+## Features and implementation
+
+- Media ordering, selected showcase ranges, per-card framing and timed holds.
+- Spatial motion patterns, including the initial Orbital Shift example.
+- Canvas rendering and direct MP4 output with an explicit sequence duration.
+
+[page.tsx](source/app/page.tsx) owns archive and interface state; [exporter.ts](source/app/exporter.ts) evaluates timing and draws output frames. [sample-project.ts](source/app/sample-project.ts) handles sample upgrades. Stored backups exist, but the UI does not expose saved-board recovery. Long encodes may block interaction.
 
 ## Evidence and next step
 
-Recorded direct 4K60 outputs match 7.45 s / 447 frames and 25 s / 1,500 frames. Compatibility capture, long-project responsiveness and viewer readability need further validation. [Reproduction steps and acceptance boundary](docs/validation.md).
+![Spatial Media Presenter](../../media/flipframe-editor.png)
 
-## Project map
+Recorded direct **4K60** files matched **7.45 seconds / 447 frames** and **25 seconds / 1,500 frames**. The older compatibility-capture path did not meet its requested timing; do not infer that every export mode is validated. [Results and limitations](docs/validation.md).
 
-| Entry | Purpose |
-| --- | --- |
-| [docs/workflow.md](docs/workflow.md) | Production problem, interaction decisions, walkthrough and creator authority |
-| [docs/implementation.md](docs/implementation.md) | Components, source locations and engineering boundaries |
-| [docs/validation.md](docs/validation.md) | Reproducible task, recorded evidence, failure cases and next decision |
-| [Source + local setup](source/) | Available implementation or presentation materials |
-
-The `source/` directory includes the hosted browser application and a local-only Vite runner. Its manifest records source hashes, hosted version and the differences from the deployment wrapper.
+Next: test longer mixed-media sequences and ask an unfamiliar viewer to assess reading time. Iterate pacing controls and responsiveness before expanding motion patterns. No viewer-readability or time-saving study is claimed.

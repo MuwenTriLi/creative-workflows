@@ -1,6 +1,5 @@
 # Functional review · updated 23 October 2026
-
-[← Project index](../README.md) · [Product decisions](review-guide.md) · [Evidence to add](evidence-to-add.md)
+[Product decisions](review-guide.md) · [Evidence to add](evidence-to-add.md)
 
 These are bounded checks on Windows in the Codex in-app Chromium browser. They are not a cross-browser certification or a creator study. Synthetic geometry, speech and tracking clips are QA fixtures, not portfolio artwork. A file that decodes can still fail the creative or timing requirements.
 
@@ -29,7 +28,7 @@ The table and reproduction notes below describe the earlier source revisions, be
 | Case | What was actually exercised | Observed result | Boundary |
 | --- | --- | --- | --- |
 | 01 Clockwork | Original supplied linework, render and viewport recordings; separate presentation derivatives | Paired stills and two workflow clips prepared; 6 s / 9 s H.264 viewing copies decode fully | No fresh Blender driver or end-to-end Skill execution in this review |
-| 02 Architecture Growth | Newly supplied completed illoca films, selected frame extraction and presentation-copy decoding | Tennis, detail, tower and office visuals now accompany the method; MP4/GIF viewing copies decode | No new Blender render, internal Skill execution or comprehensive original-scene verification; local correction recording still pending |
+| 02 Architecture Growth | Selected final illoca films | Viewing copies decoded | Demo-only under NDA; production process and source are not disclosed |
 | 03 Model Breakdown | Original hosted app: three-part synthetic GLB → orientation/explode/selection → 2 s export. Later, supplied Wood House / Press Manufacturing Line / Car Production Line: loading, switching/cancel, explode, selection; local Wood House file import | Synthetic export: H.264, 3840 × 2160, 30 fps, 60 frames, 2.000 s, full decode. Three real inputs retain 18 / 32 / 30 named parts; 19 tests and production build pass. [Library check](https://github.com/MuwenTriLi/model-breakdown-studio/blob/main/docs/example-model-review.md) | Full export and continuous-frame quality from the three real inputs remain unverified. Four supplied architectural films are separate final-output evidence, not newly reproduced exports |
 | 04 Animated Storyboard | Supplied 40-clip library, 20-shot default presentation with source captions and board paging, sample switching, single-cell replacement, local test-image import and replacement/cancel gate; earlier mixed-proportion image and timeline checks | New 20-shot board export: H.264, 1920 × 1080, 24 fps, 192 frames, 8.000 s; full decode; source captions and review framing included. All 40 viewing copies decode | One browser/configuration; large visitor videos, long projects, 4K and an unassisted creator session remain to check |
 | 05 Spatial Media Presenter | Import a synthetic 4 s clip; trim that clip to 2 s; set a two-card showcase; export 4K | The UI expected 4.65 s. The downloaded H.264 compatibility-path file is **95.0367 s**, with 278 decoded frames and average frame rate about 2.96 fps. **Timing acceptance fails.** | This is one environment/configuration. A completion message is not evidence of a timing-correct export. Existing archive media was not republished |

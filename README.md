@@ -1,56 +1,54 @@
 # Creative Workflows
 
-**Tools and workflows for turning creative-production inputs into editable, reviewable outputs.**
+Tools and production work for turning 3D models, footage and speech into editable visual explanations.
 
-A collection of projects for 3D explanation, shot review, media presentation and motion graphics. Each project documents its inputs, workflow, implementation, creator controls and tested outputs.
+**Muwen Li** — creative technology and 3D production. I modeled the Clockwork collection, direct creative content at illoca, and design browser tools with Codex-assisted implementation.
 
-[Five-minute review](docs/interview-guide.md) · [Project directory](projects/) · [Repository map](#repository-map) · [Source & local setup](docs/distribution.md) · [Verification records](docs/functional-review.md) · [About the author](#about-the-author)
+**Technology:** Blender; JavaScript/TypeScript and React; Three.js, Canvas and WebCodecs; local Whisper speech recognition. The browser projects document what runs, what the creator controls and what has actually been tested.
 
 ## Selected work
 
-Start with a **project** to understand the task and how it works, or use **Open** to try the app, watch a film or visit the product. No GitHub account is needed to browse. The projects follow the same 01–07 order throughout the collection.
+Project titles open the corresponding folder in this collection. **Demo** opens the product page, final films or working app. Projects remain in the same 01–07 order.
 
-| Project | Input → useful output | Open |
+| Project | Purpose | Demo |
 | --- | --- | --- |
-| **01 · [Clockwork](https://github.com/MuwenTriLi/steampunk-clockwork-showcase)** | Original modeled components → linked Blender mechanisms and reusable controls | [Superhive product](https://superhivemarket.com/products/steampunk-clockwork-animated-assets) |
-| **02 · [Blue / White Architecture Growth](projects/02-architecture-growth/)** | Architectural scenes + visual brief → staged construction films | [Watch films](https://muwentrili.github.io/creative-workflows/films/?project=growth&film=tennis-sequence) |
-| **03 · [Model Breakdown Studio](https://github.com/MuwenTriLi/model-breakdown-studio)** | Multi-part GLB → exploded explanation and timed emphasis | [Open web app](https://meshroom-breakdown-studio.limuwen9.chatgpt.site) |
-| **04 · [Animated Storyboard](projects/04-animated-storyboard/)** | Separate clips → one editable moving review board | [Open web app](https://muwentrili.github.io/creative-workflows/collage-motion/) |
-| **05 · [Spatial Media Presenter](projects/05-spatial-media-presenter/)** | Images and clips → a spatial sequence with readable holds | [Open web app](https://flipframe-motion-lab.limuwen9.chatgpt.site) |
-| **06 · [Kinetic Typography Studio](projects/06-kinetic-typography/)** | English speech → corrected words, timing and animated type | [Open web app](https://vox-one.limuwen9.chatgpt.site) |
-| **07 · [Motion Tracking Studio](projects/07-motion-tracking/)** | Video + selected target or anchor → a motion annotation | [Try prototype](https://trace-01-motion-tracker.limuwen9.chatgpt.site) |
-
-Project pages distinguish shipped work, inspectable prototypes and remaining validation. Motion Tracking Studio now includes a documented export repair and bounded 4K checks; real-footage recovery remains a prototype limitation.
+| **01 · [Clockwork](projects/01-clockwork/)** | Original models → linked Blender mechanisms and editable controls | [Demo](https://superhivemarket.com/products/steampunk-clockwork-animated-assets) |
+| **02 · [Blue / White Architecture Growth](projects/02-architecture-growth/)** | Selected final architectural films · illoca property / NDA | [Demo](https://muwentrili.github.io/creative-workflows/films/?project=growth&film=tennis-sequence) |
+| **03 · [Model Breakdown Studio](projects/03-model-breakdown/)** | Multi-part GLB → exploded explanation and timed emphasis | [Demo](https://meshroom-breakdown-studio.limuwen9.chatgpt.site) |
+| **04 · [Animated Storyboard](projects/04-animated-storyboard/)** | Separate clips → one editable moving review board | [Demo](https://muwentrili.github.io/creative-workflows/collage-motion/) |
+| **05 · [Spatial Media Presenter](projects/05-spatial-media-presenter/)** | Images and clips → spatial sequence with readable holds | [Demo](https://flipframe-motion-lab.limuwen9.chatgpt.site) |
+| **06 · [Kinetic Typography Studio](projects/06-kinetic-typography/)** | English speech → corrected words, timing and animated type | [Demo](https://vox-one.limuwen9.chatgpt.site) |
+| **07 · [Motion Tracking Studio](projects/07-motion-tracking/)** | Video and selected target → motion annotation | [Demo](https://trace-01-motion-tracker.limuwen9.chatgpt.site) |
 
 ## 01 / Clockwork
 
 <table>
 <tr>
 <td width="46%" align="center" valign="top"><a href="media/clockwork-collection.png"><img src="media/clockwork-collection.png" alt="Original rendered Clockwork collection showing clocks and mechanical assemblies" height="180"></a><br><b>Packaged outcome</b><br><sub>46 animated assets · my source models and design direction</sub></td>
-<td width="27%" align="center" valign="top"><a href="https://github.com/MuwenTriLi/steampunk-clockwork-showcase#motion-is-part-of-the-design"><img src="media/clockwork-gear-motion.gif" alt="Animated CLK08 turntable showing the exposed clock mechanism" height="180"></a><br><b>Motion study</b><br><sub>Animated turntable · exposed movement</sub></td>
-<td width="27%" align="center" valign="top"><a href="https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/controls.md#opening-and-folding--clk32-aperture"><img src="media/clockwork-opening-motion.gif" alt="Animated CLK32 canopy showing the linked opening mechanism" height="180"></a><br><b>Controlled opening</b><br><sub>Linked mechanism · adjustable speed and phase</sub></td>
+<td width="27%" align="center" valign="top"><a href="projects/01-clockwork/"><img src="media/clockwork-gear-motion.gif" alt="Animated CLK08 turntable showing the exposed clock mechanism" height="180"></a><br><b>Motion study</b><br><sub>Animated turntable · exposed movement</sub></td>
+<td width="27%" align="center" valign="top"><a href="projects/01-clockwork/"><img src="media/clockwork-opening-motion.gif" alt="Animated CLK32 canopy showing the linked opening mechanism" height="180"></a><br><b>Controlled opening</b><br><sub>Linked mechanism · adjustable speed and phase</sub></td>
 </tr>
 </table>
 
-Original modeling → AI-assisted linkage development → creator controls. The 46-asset Blender library is the packaged outcome; the project explains the inputs, dependencies and a [checked control change](https://github.com/MuwenTriLi/steampunk-clockwork-showcase/blob/main/docs/control-study.md).
+Original modeling → AI-assisted linkage development → creator controls. The 46-asset Blender library is the packaged outcome; the project explains the inputs, dependencies and a [checked control change](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/01-clockwork/docs/control-study.md).
 
-[Project overview, workflow and evidence →](https://github.com/MuwenTriLi/steampunk-clockwork-showcase)
+[Project](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/01-clockwork)
 
 ## 02 / Blue / White Architecture Growth
 
 <table>
 <tr>
-<td width="33%" align="center" valign="top"><a href="docs/architecture-growth-media.md#watch-the-selected-films"><img src="media/architecture-growth/detail-c-smooth.webp" width="260" height="325" alt="Building growth with surrounding urban context"></a></td>
+<td width="33%" align="center" valign="top"><a href="projects/02-architecture-growth/"><img src="media/architecture-growth/detail-c-smooth.webp" width="260" height="325" alt="Building growth with surrounding urban context"></a></td>
 <td width="33%" align="center" valign="top"><a href="projects/02-architecture-growth/"><img src="media/architecture-growth/tennis-plan-smooth.webp" width="260" height="325" alt="Tennis venue plan and staged structure"></a></td>
-<td width="33%" align="center" valign="top"><a href="docs/architecture-growth-media.md#watch-the-selected-films"><img src="media/architecture-growth/detail-a-card.webp" width="260" height="325" alt="Floor and facade construction detail, contained in a matching portrait frame"></a></td>
+<td width="33%" align="center" valign="top"><a href="projects/02-architecture-growth/"><img src="media/architecture-growth/detail-a-card.webp" width="260" height="325" alt="Floor and facade construction detail, contained in a matching portrait frame"></a></td>
 </tr>
 <tr><td align="center"><b>Building & context</b></td><td align="center"><b>Plan to structure</b></td><td align="center"><b>Detail & assembly</b></td></tr>
 <tr><td align="center" valign="top">A consistent blue-white visual language</td><td align="center" valign="top">Spatial reference before visual density</td><td align="center" valign="top">Readable systems and construction order</td></tr>
 </table>
 
-A repeatable visual and construction method applied across architectural scales. This company case presents approved outputs and production decisions; internal source scenes and Skills remain private.
+Selected final illoca films. Company property under NDA; this case provides Demo outputs and credits only.
 
-[Project overview, workflow and evidence →](projects/02-architecture-growth/)
+[Demo and credits](projects/02-architecture-growth/)
 
 ## 03 / Model Breakdown Studio
 
@@ -62,7 +60,7 @@ A repeatable visual and construction method applied across architectural scales.
 
 Inspect a GLB, separate its systems and focus attention on a component. The project includes the current browser-source snapshot, a local runner and the distinction from the earlier implementation.
 
-[Project overview, workflow and evidence →](https://github.com/MuwenTriLi/model-breakdown-studio)
+[Project](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/03-model-breakdown/)
 
 ## 04 / Animated Storyboard
 
@@ -72,7 +70,7 @@ Inspect a GLB, separate its systems and focus attention on a component. The proj
 
 Compare 35 moving shots on one board, preview a source, change its position or hide it, then export the accepted composition. Source, a versioned demo and an implementation/test map are included.
 
-[Project overview, workflow and evidence →](projects/04-animated-storyboard/)
+[Project](projects/04-animated-storyboard/)
 
 ## 05 / Spatial Media Presenter
 
@@ -82,7 +80,7 @@ Compare 35 moving shots on one board, preview a source, change its position or h
 
 Move from a collection overview to individual works with editable order, framing, transitions and holds. The supplied 15-work example starts in Orbital Shift.
 
-[Project overview, workflow and evidence →](projects/05-spatial-media-presenter/)
+[Project](projects/05-spatial-media-presenter/)
 
 ## 06 / Kinetic Typography Studio
 
@@ -92,7 +90,7 @@ Move from a collection overview to individual works with editable order, framing
 
 Connect English speech recognition, transcript correction and visual rhythm. The silent opening example demonstrates typography; importing speech exercises local Whisper inference.
 
-[Project overview, workflow and evidence →](projects/06-kinetic-typography/)
+[Project](projects/06-kinetic-typography/)
 
 ## 07 / Motion Tracking Studio
 
@@ -102,34 +100,27 @@ Connect English speech recognition, transcript correction and visual rhythm. The
 
 Import footage and choose the subject or a fixed anchor before adding graphics. Inspect the tracking and export implementation alongside its current delivery limitations.
 
-[Project overview, workflow and evidence →](projects/07-motion-tracking/)
+[Project](projects/07-motion-tracking/)
 
-## Repository map
+
+## Repository structure
 
 ```text
 creative-workflows/
-├── README.md                         Collection overview and seven previews
+├── README.md
 ├── projects/
-│   ├── README.md                     Project directory, including separate repos
-│   ├── 02-architecture-growth/       Company case: overview + method + credits
-│   ├── 04-animated-storyboard/       Overview + workflow + source/test pointers
-│   ├── 05-spatial-media-presenter/   Overview + docs + runnable source/
-│   ├── 06-kinetic-typography/        Overview + docs + runnable source/
-│   └── 07-motion-tracking/           Overview + docs + runnable source/
+│   ├── 01-clockwork/                Blender library: public documentation and evidence
+│   ├── 02-architecture-growth/      Final company Demo and credits only (NDA)
+│   ├── 03-model-breakdown/          README, source/, example models and evidence
+│   ├── 04-animated-storyboard/      README and evidence; static app in docs/
+│   ├── 05-spatial-media-presenter/  README, source/ and evidence
+│   ├── 06-kinetic-typography/       README, source/ and evidence
+│   └── 07-motion-tracking/          README, source/ and export evidence
 ├── docs/
-│   ├── collage-motion/              Canonical Storyboard source and Pages app
-│   ├── films/                       Public film viewer and viewing copies
-│   ├── model-breakdown-films/       Selected complete output films
-│   ├── distribution.md              Local setup, releases and source versions
-│   ├── functional-review.md         Bounded checks and known failures
-│   └── studio-delivery.md           Per-tool export steps
-└── media/                           Overview and case-study previews
+│   ├── collage-motion/             Storyboard source and GitHub Pages app
+│   ├── films/                      Final film viewer
+│   └── model-breakdown-films/       Selected complete output films
+└── media/                          Portfolio previews and final presentation media
 ```
 
-**Separate project repositories:** [01 / Clockwork](https://github.com/MuwenTriLi/steampunk-clockwork-showcase) · [03 / Model Breakdown Studio](https://github.com/MuwenTriLi/model-breakdown-studio). Storyboard's source remains under `docs/collage-motion/` to preserve its published app URL. Earlier case filenames remain as navigation pages for shared links. Downloadable demo archives belong in [Releases](https://github.com/MuwenTriLi/creative-workflows/releases).
-
-## About the author
-
-**Muwen Li** — creative technology, 3D production and AI-assisted tools. I modeled the original Clockwork source collection, direct creative content at illoca, and develop browser workflows with Codex-assisted implementation. Each project separates my contribution, system behavior and the evidence available to review.
-
-[Production decisions and next experiments](docs/review-guide.md) · [Automation and creator control](docs/creative-control.md) · [Sharing guide](docs/share-and-review.md)
+Setup commands live in each app's README. Source snapshots identify their hosted revision and preserve their existing rights; public media is not a stock asset library. The company case is Demo-only. Versioned demo archives are published in [Releases](https://github.com/MuwenTriLi/creative-workflows/releases).

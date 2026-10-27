@@ -1,6 +1,5 @@
 # First task → review → export
-
-[All projects](../README.md) · [Test results and known limits](functional-review.md)
+[Test results and known limits](functional-review.md)
 
 Each studio has one primary task. Use the opening example to understand the output, then replace the input with your own work. Motion Tracking Studio starts empty because a tracking target must come from the creator's footage.
 

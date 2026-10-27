@@ -1,6 +1,6 @@
 # Export repair: input → encoded file
 
-[← Project](../README.md) · [Implementation](implementation.md) · [Measured results](../evidence/export-results.json)
+[← Project](../README.md) · [Implementation](../README.md) · [Measured results](../evidence/export-results.json)
 
 The earlier real-time capture produced **3.8267 seconds / 97 frames** from a four-second fixture. That failed the advertised 60 fps contract. The revised exporter seeks, renders and encodes every planned frame using WebCodecs, then muxes H.264 into MP4. Wall-clock render speed no longer determines the file's timestamps. No successful real-time fallback is implied.
 

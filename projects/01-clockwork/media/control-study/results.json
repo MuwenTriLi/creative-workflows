@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-26",
+  "task": "Demonstration task: slow the CLK32 opening mechanism by 25% using its existing root input; preserve the driver graph. Not a client commission or user study.",
+  "source_sha256": "7c7d0651c516d587897310b8ee5f2754cdf90bcacba7fd39a45ab1e897186a97",
+  "asset": "CLK32_ASSET",
+  "controller": "CLK32_ASSET_CTRL",
+  "blender": "5.2.0 LTS",
+  "frames": [
+    1,
+    601
+  ],
+  "fps": 24,
+  "objects": 155,
+  "object_driver_count": 81,
+  "changes": {
+    "Speed_Scale": {
+      "before": 1.0,
+      "after": 0.75
+    }
+  },
+  "checks": {
+    "before": {
+      "invalid_object_drivers": [],
+      "missing_object_driver_targets": [],
+      "nonfinite_transforms": []
+    },
+    "after": {
+      "invalid_object_drivers": [],
+      "missing_object_driver_targets": [],
+      "nonfinite_transforms": []
+    }
+  },
+  "samples": {
+    "before": [
+      {
+        "frame": 1,
+        "input_angle": 0.0
+      },
+      {
+        "frame": 121,
+        "input_angle": 1.675516128540039
+      },
+      {
+        "frame": 241,
+        "input_angle": 3.351032257080078
+      },
+      {
+        "frame": 361,
+        "input_angle": 5.026548385620117
+      },
+      {
+        "frame": 481,
+        "input_angle": 6.702064514160156
+      },
+      {
+        "frame": 601,
+        "input_angle": 8.377580642700195
+      }
+    ],
+    "after": [
+      {
+        "frame": 1,
+        "input_angle": 0.0
+      },
+      {
+        "frame": 121,
+        "input_angle": 1.2566370964050293
+      },
+      {
+        "frame": 241,
+        "input_angle": 2.5132741928100586
+      },
+      {
+        "frame": 361,
+        "input_angle": 3.769911289215088
+      },
+      {
+        "frame": 481,
+        "input_angle": 5.026548385620117
+      },
+      {
+        "frame": 601,
+        "input_angle": 6.2831854820251465
+      }
+    ]
+  },
+  "measured_input_angle_ratio": 0.75,
+  "driver_graph_unchanged": true,
+  "source_unchanged": true,
+  "visual_check": "Two frame-241 diagnostic renders inspected. A ten-second side-by-side Workbench preview was rendered and fully decoded. These checks do not certify collision-free motion or all final-render frames.",
+  "preview": {
+    "left": "Speed_Scale 1.0",
+    "right": "Speed_Scale 0.75",
+    "frames": [
+      1,
+      240
+    ],
+    "fps": 24,
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 960,
+          "height": 600,
+          "r_frame_rate": "24/1",
+          "avg_frame_rate": "24/1",
+          "duration": "10.000000",
+          "nb_frames": "240",
+          "nb_read_frames": "240"
+        }
+      ],
+      "format": {
+        "duration": "10.000000",
+        "size": "796503"
+      }
+    }
+  }
+}

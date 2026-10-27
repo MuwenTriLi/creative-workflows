@@ -1,6 +1,6 @@
 # Source, releases and local use
 
-[← Repository map](../README.md#repository-map) · [Interactive board](https://muwentrili.github.io/creative-workflows/collage-motion/)
+[← Repository map](../README.md#repository-structure) · [Interactive board](https://muwentrili.github.io/creative-workflows/collage-motion/)
 
 Use the public web app to review the portfolio without installing anything. Use a **GitHub Release** for a versioned local demo; browse the repository for source and documentation.
 
@@ -29,8 +29,8 @@ The release includes `release-manifest.json` with its source commit and per-file
 | Storyboard application | [Source](collage-motion/) and the tagged release; this public demo does not add a new open-source license |
 | Bundled dependencies | Their license files are retained in `licenses/` |
 | Example footage and visual work | Portfolio demonstration only; no separate reuse license is granted |
-| Model Breakdown | [Separate repository](https://github.com/MuwenTriLi/model-breakdown-studio): `studio/` records current browser source; the root adaptation retains its existing scoped MIT license |
-| Clockwork Blender library | [Commercial product](https://superhivemarket.com/products/steampunk-clockwork-animated-assets); the [public showcase](https://github.com/MuwenTriLi/steampunk-clockwork-showcase) documents its workflow |
+| Model Breakdown | [Project folder](../projects/03-model-breakdown/): `source/` records current browser source; the historical repository retains the earlier adaptation and its scoped MIT license |
+| Clockwork Blender library | [Product](https://superhivemarket.com/products/steampunk-clockwork-animated-assets); the [public showcase](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/01-clockwork) documents its workflow |
 | Company work | Approved presentation material only; source scenes and internal Skills are not distributed |
 
 [Export steps and device limits](studio-delivery.md) · [Completed functional checks](functional-review.md)
@@ -40,7 +40,7 @@ The release includes `release-manifest.json` with its source commit and per-file
 
 | Project | Start here | Recorded hosted version |
 | --- | --- | --- |
-| Model Breakdown | [Current browser source](https://github.com/MuwenTriLi/model-breakdown-studio/tree/main/studio) | 31 |
+| Model Breakdown | [Current browser source](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/03-model-breakdown/source) | 31 |
 | Animated Storyboard | [Static application](collage-motion/) / [Project](../projects/04-animated-storyboard/) | GitHub Pages source in this repository; Release v0.1.0 is a frozen distribution |
 | Spatial Media Presenter | [Source and local setup](../projects/05-spatial-media-presenter/source/) | 50 |
 | Kinetic Typography | [Source and local setup](../projects/06-kinetic-typography/source/) | 22 |
@@ -56,7 +56,7 @@ pnpm verify:source
 pnpm dev
 ```
 
-`pnpm build` and `pnpm preview` inspect the production bundle. Model Breakdown and Spatial Media Presenter also expose focused `pnpm test` checks. See each package's README and rights notice before reusing code or example assets. This publication grants no new license to source snapshots or media; the earlier Model Breakdown code license retains its stated scope.
+`pnpm build` and `pnpm preview` inspect the production bundle. Model Breakdown, Spatial Media Presenter and Motion Tracking also expose focused `pnpm test` checks. See each package's README and rights notice before reusing code or example assets. This publication grants no new license to source snapshots or media; the earlier Model Breakdown code license retains its stated scope.
 
 The typography demo runs without a speech model. Starting transcription downloads the public Whisper weights and runs inference in the browser; no paid API or API key is configured. Internet is needed for initial package/model downloads and links to other studios. Model and media examples are bundled where stated; private visitor files should never be committed.
 

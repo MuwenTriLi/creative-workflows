@@ -1,6 +1,6 @@
 # Validation and next decision
 
-[← Project](../README.md) · [Workflow and detailed limits](workflow.md) · [Cross-project functional record](../../../docs/functional-review.md)
+[← Project](../README.md) · [Cross-project functional record](../../../docs/functional-review.md)
 
 ## Reproduce the task
 
@@ -20,4 +20,4 @@ From the repository root, run `node docs/collage-motion/tests/visibility.cjs` fo
 
 ## Next decision
 
-Follow the project-specific task and decision in [workflow.md](workflow.md). Capture actual errors, help needed and correction effort with the [creator validation record](../../../docs/creator-validation.md). Continue when the accepted task succeeds; revise the failing control or delivery stage before adding scope. No time-saving, adoption or broad reliability metric is inferred from the current examples.
+Follow the task and next-step decision in the project README. Capture actual errors, help needed and correction effort with the [creator validation record](../../../docs/creator-validation.md). Continue when the accepted task succeeds; revise the failing control or delivery stage before adding scope. No time-saving, adoption or broad reliability metric is inferred from the current examples.
