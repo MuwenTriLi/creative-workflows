@@ -8,11 +8,11 @@ Tools and production work for turning 3D models, footage and speech into editabl
 
 ## Selected work
 
-Open a **project** for its visual gallery and project details; browser projects also include workflow and local setup. **Demo** opens the product page, final films or working app. Projects remain in the same 01–07 order.
+Open a **project** for its visual gallery and project details; browser projects also include workflow and local setup. **Demo** opens final films or a working app; **Product page** opens the Clockwork listing on Superhive. Projects remain in the same 01–07 order.
 
-| Project | Purpose | Demo |
+| Project | Purpose | Preview / Product |
 | --- | --- | --- |
-| **01 · [Clockwork](projects/01-clockwork/)** | Original models → linked Blender mechanisms and editable controls | [Demo](https://superhivemarket.com/products/steampunk-clockwork-animated-assets) |
+| **01 · [Clockwork](projects/01-clockwork/)** | Original models → linked Blender mechanisms and editable controls | [Product page](https://superhivemarket.com/products/steampunk-clockwork-animated-assets) |
 | **02 · [Blue / White Architecture Growth](projects/02-architecture-growth/)** | Selected final architectural films · illoca property / NDA | [Demo](https://muwentrili.github.io/creative-workflows/films/?project=growth&film=tennis-sequence) |
 | **03 · [Model Breakdown Studio](projects/03-model-breakdown/)** | Multi-part GLB → exploded explanation and timed emphasis | [Demo](https://meshroom-breakdown-studio.limuwen9.chatgpt.site) |
 | **04 · [Animated Storyboard](projects/04-animated-storyboard/)** | Separate clips → one editable moving review board | [Demo](https://muwentrili.github.io/creative-workflows/collage-motion/) |

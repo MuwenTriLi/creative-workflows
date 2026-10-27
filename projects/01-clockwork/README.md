@@ -1,6 +1,6 @@
 # 01 / Clockwork
 
-[Demo / Superhive](https://superhivemarket.com/products/steampunk-clockwork-animated-assets)
+[Product page · Superhive](https://superhivemarket.com/products/steampunk-clockwork-animated-assets)
 
 Original modeled components developed into **46 animated Blender assets** with linked mechanisms and editable controls.
 

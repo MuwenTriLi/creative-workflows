@@ -4,7 +4,7 @@ Send this single link:
 
 **[Muwen Li — Creative Workflows](https://github.com/MuwenTriLi/creative-workflows#selected-work)**
 
-Project titles open folders within this collection. The **Demo** column leads to Superhive, a web app or final films. Each browser project includes its own local setup and evidence in the README.
+Project titles open folders within this collection. In **Preview / Product**, **Demo** opens a web app or final films; **Product page** opens the Clockwork listing on Superhive. Each browser project includes its own local setup and evidence in the README.
 
 ## A short first visit
 
