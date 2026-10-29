@@ -4,13 +4,13 @@
 
 ## Start with original modeled inputs
 
-The source collection was modeled by Muwen Li before this AI-assisted workflow. The models and references then provided the inputs for Codex-assisted development, guided by a visual brief: detailed mechanical structures whose silhouette, gear layers, frames and movement could be read together.
+The original modeled collection predates the AI-assisted linkage development. The models and references then provided the inputs for Codex-assisted development, guided by a visual brief: detailed mechanical structures whose silhouette, gear layers, frames and movement could be read together.
 
-That preparation is part of the work. The input gives the AI concrete geometry and a visual standard to inspect; the brief gives it a task. Muwen Li selected and reviewed the resulting variations, including which forms and movements belonged in the library. The models were task inputs and references, not a newly trained AI model.
+The modeled geometry, references and motion brief constrain the variations. Review determines which forms and movements enter the library; the geometry serves as task context, not training data.
 
 ## Turn the prepared inputs into linked behavior
 
-Codex assisted source inspection and development of related mechanisms and gear linkages. The implementation expresses motion through native Blender drivers, object hierarchies and constraints. Muwen Li defined the intended visual and mechanical relationships and reviewed the results.
+Codex assisted source inspection and development of related mechanisms and gear linkages. The implementation expresses motion through native Blender drivers, object hierarchies and constraints.
 
 | Input or decision | Resulting system behavior | Evidence |
 | --- | --- | --- |

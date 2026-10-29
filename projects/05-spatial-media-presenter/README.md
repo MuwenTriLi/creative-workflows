@@ -24,8 +24,6 @@ The opening collection contains 15 supplied works: 11 stills and 4 motion studie
 
 Import media or use the 15-work example. The app evaluates the selected motion pattern and timing. The creator chooses content, editorial order, showcase range, crop, hold duration and graphic treatment, then reviews whether each work has enough reading time.
 
-Muwen Li supplied the visual collection, motion direction, control hierarchy and iterative critique; Codex assisted implementation.
-
 A sequence needs both impact and enough time to read each image. Reordering the source media or changing the pace of a spatial presentation can require adjusting many transitions, holds and camera-like moves. A visually impressive transition is not useful if viewers cannot understand the content it reveals.
 
 Use one ordered **Visual Archive** as the sequence source, with a spatial preview and visible timing controls. Separate the fast introductory scan from the slower showcase range. Keep cards readable while the sequence moves through space, and make the transition between speed and pause adjustable.
@@ -48,19 +46,24 @@ Make one framing or hold correction, replay the affected transition, then inspec
 
 ```mermaid
 flowchart LR
-    A["Images<br/>and clips"] --> B["Order<br/>and range"]
-    B --> C["Crop / motion<br/>transitions / holds"]
-    C --> D["Sequence state<br/>and preview"]
-    D --> E["Canvas frames<br/>WebCodecs MP4"]
-    E --> F["Review<br/>pace and crop"]
+    DEV["AI-assisted development<br/>Codex · React · TypeScript"] -.-> C
+    A["Import images and clips<br/>Browser File API"] --> B["Order and range<br/>React · Visual Archive"]
+    B --> C["Crop, transitions and holds<br/>TypeScript motion functions"]
+    C --> D["Preview spatial sequence<br/>React · CSS transforms"]
+    D --> E["Render and encode frames<br/>Canvas · WebCodecs<br/>mp4-muxer"]
+    E --> F["Review pace and framing<br/>MP4 · browser video"]
     F -->|Revise| C
 ```
 
+Codex assisted development. The runtime stages above use browser code; they do not call a generative AI model.
+
 ## Local setup
+
+[Windows verification — October 28, 2026](../../docs/local-setup-check.md).
 
 Requirements: Git, **Node.js 22.13+**, **pnpm 11.25.0**, and a desktop browser with Canvas/WebCodecs support. Use Chrome or Edge for comparison with the recorded checks. Install Git and Node.js first, then check `git --version` and `node --version`. Package downloads need internet. No API key or hosted account is needed by this local runner.
 
-Run these commands in PowerShell, macOS Terminal or a Linux shell:
+Windows can run this directly in PowerShell; Windows Subsystem for Linux (WSL) and Cursor are optional. The same commands also work in macOS Terminal or a Linux shell:
 
 ```sh
 npm install --global pnpm@11.25.0

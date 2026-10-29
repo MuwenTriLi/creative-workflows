@@ -33,7 +33,7 @@ The method applies at different scales: a clock can anchor a scene, a gear train
 <a href="controls.md#opening-and-folding--clk32-aperture"><img src="../media/motion-clk32.gif" alt="CLK32 unfolding canopy" width="21.1765%"></a>
 </p>
 
-<p><em>Left to right:</em> <b>Gear rhythm</b> — <sub>Separate gear and clock timing</sub>; <b>Chain drive</b> — <sub>Connected movement controls</sub>; <b>Guided travel</b> — <sub>Retain the existing rail path</sub>; <b>Opening motion</b> — <sub>Control the upstream input</sub></p>
+<p><em>Left to right:</em> <b>Gear rhythm</b> — Separate gear and clock timing; <b>Chain drive</b> — Connected movement controls; <b>Guided travel</b> — Retain the existing rail path; <b>Opening motion</b> — Control the upstream input</p>
 
 ## What is packaged as a Skill
 
@@ -47,7 +47,7 @@ An agent following the Skill should first inspect the actual root controller and
 
 ## Project contribution and the role of AI
 
-Muwen Li modeled the original source collection, organized the inputs and references, defined the design direction, reviewed mechanical variations and shaped the library as a usable creative product. Codex assisted source inspection and the development of structures and gear linkages under those constraints. The Skill makes the adaptation procedure explicit so those decisions can be carried into another task.
+Original geometry, design references and reviewed motion requirements constrain Codex-assisted source inspection and linkage development. The Skill records the adaptation procedure for reuse in another task.
 
 ## Evidence and current status
 

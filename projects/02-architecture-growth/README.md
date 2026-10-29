@@ -15,21 +15,21 @@ Each animated preview opens its complete film. The two-column gallery moves from
 <a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=detail-c"><img src="../../media/architecture-growth/detail-c-smooth.webp" alt="Final film excerpt: Detail C / building and context" width="45.0000%"></a>
 </p>
 
-<p><em>Left to right:</em> <b>Tennis venue / plan to stadium</b> — <sub>Venue, seating and roof shown across the final film.</sub>; <b>Detail C / building and context</b> — <sub>A building read together with its surrounding city blocks.</sub></p>
+<p><em>Left to right:</em> <b>Tennis venue / plan to stadium</b> — Venue, seating and roof shown across the final film.; <b>Detail C / building and context</b> — A building read together with its surrounding city blocks.</p>
 
 <p align="center">
 <a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=detail-a"><img src="../../media/architecture-growth/detail-a-smooth.webp" alt="Final film excerpt: Detail A / floor and facade" width="45.0000%"></a>
 <a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=detail-b"><img src="../../media/architecture-growth/detail-b-smooth.webp" alt="Final film excerpt: Detail B / layered interior" width="45.0000%"></a>
 </p>
 
-<p><em>Left to right:</em> <b>Detail A / floor and facade</b> — <sub>Close views of floors, facade and building services.</sub>; <b>Detail B / layered interior</b> — <sub>Floors, stairs and interior elements in a cutaway view.</sub></p>
+<p><em>Left to right:</em> <b>Detail A / floor and facade</b> — Close views of floors, facade and building services.; <b>Detail B / layered interior</b> — Floors, stairs and interior elements in a cutaway view.</p>
 
 <p align="center">
 <a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=office"><img src="../../media/architecture-growth/office-smooth.webp" alt="Final film excerpt: Office / spatial alternatives" width="45.0000%"></a>
 <a href="https://muwentrili.github.io/creative-workflows/films/?project=growth&amp;film=tower"><img src="../../media/architecture-growth/tower-smooth.webp" alt="Final film excerpt: Tower / vertical sequence" width="45.0000%"></a>
 </p>
 
-<p><em>Left to right:</em> <b>Office / spatial alternatives</b> — <sub>Office layouts compared within the same floor plate.</sub>; <b>Tower / vertical sequence</b> — <sub>The tower from individual levels to the complete exterior.</sub></p>
+<p><em>Left to right:</em> <b>Office / spatial alternatives</b> — Office layouts compared within the same floor plate.; <b>Tower / vertical sequence</b> — The tower from individual levels to the complete exterior.</p>
 
 ### Tennis venue / five moments in one film
 

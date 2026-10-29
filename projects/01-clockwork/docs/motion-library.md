@@ -21,7 +21,7 @@ Eight rotating views and 16 fixed-view mechanisms, grouped into smaller sections
 <a href="../media/motion-clk05.gif"><img src="../media/motion-clk05.gif" alt="Clock 04 - CLK05 - Turntable" width="22.5000%"></a>
 </p>
 
-<p><em>Left to right:</em> <b>Clock 01</b> — <sub>Turntable / Layered dial</sub>; <b>Clock 02</b> — <sub>Turntable / Open frame</sub>; <b>Clock 03</b> — <sub>Turntable / Stacked gears</sub>; <b>Clock 04</b> — <sub>Turntable / Suspended pendulum</sub></p>
+<p><em>Left to right:</em> <b>Clock 01</b> — Turntable / Layered dial; <b>Clock 02</b> — Turntable / Open frame; <b>Clock 03</b> — Turntable / Stacked gears; <b>Clock 04</b> — Turntable / Suspended pendulum</p>
 
 <p align="center">
 <a href="../media/motion-clk06.gif"><img src="../media/motion-clk06.gif" alt="Clock 05 - CLK06 - Turntable" width="22.5000%"></a>
@@ -30,7 +30,7 @@ Eight rotating views and 16 fixed-view mechanisms, grouped into smaller sections
 <a href="../media/motion-clk10.gif"><img src="../media/motion-clk10.gif" alt="Clock 08 - CLK10 - Turntable" width="22.5000%"></a>
 </p>
 
-<p><em>Left to right:</em> <b>Clock 05</b> — <sub>Turntable / Linked frame</sub>; <b>Clock 06</b> — <sub>Turntable / Vertical gears</sub>; <b>Clock 07</b> — <sub>Turntable / Exposed movement</sub>; <b>Clock 08</b> — <sub>Turntable / Skeleton frame</sub></p>
+<p><em>Left to right:</em> <b>Clock 05</b> — Turntable / Linked frame; <b>Clock 06</b> — Turntable / Vertical gears; <b>Clock 07</b> — Turntable / Exposed movement; <b>Clock 08</b> — Turntable / Skeleton frame</p>
 
 <br>
 
@@ -43,7 +43,7 @@ Eight rotating views and 16 fixed-view mechanisms, grouped into smaller sections
 <a href="../media/motion-clk14.gif"><img src="../media/motion-clk14.gif" alt="Clock 12 - CLK14 - Motion" width="22.5000%"></a>
 </p>
 
-<p><em>Left to right:</em> <b>Clock 09</b> — <sub>Motion / Open dial</sub>; <b>Clock 10</b> — <sub>Motion / Framed gear train</sub>; <b>Clock 11</b> — <sub>Motion / Dense clock face</sub>; <b>Clock 12</b> — <sub>Motion / Mechanical dial</sub></p>
+<p><em>Left to right:</em> <b>Clock 09</b> — Motion / Open dial; <b>Clock 10</b> — Motion / Framed gear train; <b>Clock 11</b> — Motion / Dense clock face; <b>Clock 12</b> — Motion / Mechanical dial</p>
 
 <p align="center">
 <a href="../media/motion-clk15.gif"><img src="../media/motion-clk15.gif" alt="Clock 13 - CLK15 - Motion" width="22.5000%"></a>
@@ -52,7 +52,7 @@ Eight rotating views and 16 fixed-view mechanisms, grouped into smaller sections
 <a href="../media/motion-clk20.gif"><img src="../media/motion-clk20.gif" alt="Clock 16 - CLK20 - Motion" width="22.5000%"></a>
 </p>
 
-<p><em>Left to right:</em> <b>Clock 13</b> — <sub>Motion / Arched frame</sub>; <b>Clock 14</b> — <sub>Motion / Lift and tower</sub>; <b>Clock 15</b> — <sub>Motion / Vertical linkages</sub>; <b>Clock 16</b> — <sub>Motion / Clock column</sub></p>
+<p><em>Left to right:</em> <b>Clock 13</b> — Motion / Arched frame; <b>Clock 14</b> — Motion / Lift and tower; <b>Clock 15</b> — Motion / Vertical linkages; <b>Clock 16</b> — Motion / Clock column</p>
 
 <br>
 
@@ -65,7 +65,7 @@ Eight rotating views and 16 fixed-view mechanisms, grouped into smaller sections
 <a href="../media/motion-clk27.gif"><img src="../media/motion-clk27.gif" alt="Clock 20 - CLK27 - Motion" width="22.5000%"></a>
 </p>
 
-<p><em>Left to right:</em> <b>Clock 17</b> — <sub>Motion / Side linkage</sub>; <b>Clock 18</b> — <sub>Motion / Dial and lift</sub>; <b>Clock 19</b> — <sub>Motion / Architectural dial</sub>; <b>Clock 20</b> — <sub>Motion / Folding structure</sub></p>
+<p><em>Left to right:</em> <b>Clock 17</b> — Motion / Side linkage; <b>Clock 18</b> — Motion / Dial and lift; <b>Clock 19</b> — Motion / Architectural dial; <b>Clock 20</b> — Motion / Folding structure</p>
 
 <p align="center">
 <a href="../media/motion-clk28.gif"><img src="../media/motion-clk28.gif" alt="Clock 21 - CLK28 - Motion" width="22.5000%"></a>
@@ -74,7 +74,7 @@ Eight rotating views and 16 fixed-view mechanisms, grouped into smaller sections
 <a href="../media/motion-clk32.gif"><img src="../media/motion-clk32.gif" alt="Clock 24 - CLK32 - Motion" width="22.5000%"></a>
 </p>
 
-<p><em>Left to right:</em> <b>Clock 21</b> — <sub>Motion / Tower mechanism</sub>; <b>Clock 22</b> — <sub>Motion / Elevating walkway</sub>; <b>Clock 23</b> — <sub>Motion / Rail-guided motion</sub>; <b>Clock 24</b> — <sub>Motion / Unfolding canopy</sub></p>
+<p><em>Left to right:</em> <b>Clock 21</b> — Motion / Tower mechanism; <b>Clock 22</b> — Motion / Elevating walkway; <b>Clock 23</b> — Motion / Rail-guided motion; <b>Clock 24</b> — Motion / Unfolding canopy</p>
 
 Clock 01-24 are presentation numbers for this browsing order. Original asset IDs remain in the [clock index](clock-index.md). All 24 cards are animated GIFs. GIFs are five-second excerpts at the original playback speed, repeated for browsing.
 

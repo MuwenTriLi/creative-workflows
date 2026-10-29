@@ -2,9 +2,11 @@
 
 Tools and production work for turning 3D models, footage and speech into editable visual explanations.
 
-**Muwen Li** — creative technology and 3D production. Contributions include original modeling for Clockwork, creative content direction at illoca, and browser-tool design with Codex-assisted implementation.
-
 **Technology:** Blender; JavaScript/TypeScript and React; Three.js, Canvas and WebCodecs; local Whisper speech recognition. The browser projects document what runs, what the creator controls and what has actually been tested.
+
+## About the Author
+
+Muwen Li builds creator tools and 3D workflows, connecting production experience with AI-assisted prototyping. [Portfolio](https://muwenliportfolio.cargo.site/)
 
 ## Selected work
 
@@ -68,7 +70,7 @@ Import a multi-part GLB, separate its components and direct visual emphasis. The
 <a href="https://muwentrili.github.io/creative-workflows/collage-motion/"><img src="media/collage-review-board.webp" alt="Animated Storyboard: 35 moving shots with permanent source IDs and white review overlays" width="100.0000%"></a>
 </p>
 
-<p><b>A moving storyboard for shot review</b> — <sub>35 supplied shots · Six white HUD styles · Editable order and framing</sub></p>
+<p><b>A moving storyboard for shot review</b> — 35 supplied shots · Six white HUD styles · Editable order and framing</p>
 
 Compare 35 moving shots on one board, preview a source, revise its position or visibility, then export the accepted composition.
 
@@ -80,7 +82,7 @@ Compare 35 moving shots on one board, preview a source, revise its position or v
 <a href="https://muwentrili.github.io/creative-workflows/collage-motion/process/flipframe-sequence.mp4"><img src="media/spatial-presenter-motion.webp" alt="Spatial Media Presenter: complete 25-second exported sequence in motion; click to play the full video" width="100.0000%"></a>
 </p>
 
-<p><b>A spatial presentation with editable pacing</b> — <sub>25-second exported sequence · Click the preview to watch in 1080p</sub></p>
+<p><b>A spatial presentation with editable pacing</b> — 25-second exported sequence · Click the preview to watch in 1080p</p>
 
 Arrange images and clips into a spatial presentation with editable order, framing, transitions and holds.
 
@@ -92,7 +94,7 @@ Arrange images and clips into a spatial presentation with editable order, framin
 <a href="https://vox-one.limuwen9.chatgpt.site"><img src="projects/06-kinetic-typography/media/ui-demo.webp" alt="Actual Kinetic Typography Studio interface in motion: source panel, transcript, timed typography and style controls; authored silent demo" width="100.0000%"></a>
 </p>
 
-<p><b>Editable words, timing and visual emphasis</b> — <sub>Speech-led typography · Transcript correction · Preview before delivery</sub></p>
+<p><b>Editable words, timing and visual emphasis</b> — Speech-led typography · Transcript correction · Preview before delivery</p>
 
 Turn English speech into timed typography with editable words, rhythm and emphasis. The opening example is silent; speech recognition starts after import.
 
@@ -104,7 +106,7 @@ Turn English speech into timed typography with editable words, rhythm and emphas
 <a href="https://trace-01-motion-tracker.limuwen9.chatgpt.site"><img src="media/trace-01-editor.png" alt="Motion Tracking Studio: an empty video import workspace with target selection, position anchor and HUD controls" width="100.0000%"></a>
 </p>
 
-<p><b>Make a subject easier to follow</b> — <sub>Your video · Target 01 or a fixed position anchor · Editable white HUD</sub></p>
+<p><b>Make a subject easier to follow</b> — Your video · Target 01 or a fixed position anchor · Editable white HUD</p>
 
 Add editable graphic overlays to a selected subject or fixed position in uploaded video. The project records current tracking and export limits.
 

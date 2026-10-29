@@ -1,0 +1,23 @@
+{
+  "captured_on": "2026-10-28",
+  "source": "Unchanged local source snapshot v19, Vite production preview in Chromium",
+  "input": "input-moving-target.mp4",
+  "scope": "Actual interface playback after target selection; synthetic fixture, not real-footage accuracy validation",
+  "capture_size": [
+    1265,
+    711
+  ],
+  "captured_frames": 92,
+  "capture_timing": "Frame durations follow screenshot midpoint timestamps; no generated motion or speed-up",
+  "video": {
+    "file": "ui-demo.mp4",
+    "width": 1266,
+    "height": 712,
+    "fps": 24,
+    "frames": 106,
+    "duration_seconds": 4.416666666666667,
+    "sha256": "75558a91bcb8fa41a263a2c0d02fd7f3aa06661efbc5992cd199c485144d7369",
+    "full_decode": "passed"
+  },
+  "attachment": "https://github.com/user-attachments/assets/6c289917-2589-4f7a-9eb3-a3117b0b8865"
+}

@@ -9,7 +9,7 @@ Four supplied architectural sequences show the intended result: a complete assem
 <a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=residence"><img src="media/residence-smooth.webp" alt="Residential assembly" width="45.0000%"></a>
 </p>
 
-<p><em>Left to right:</em> <b>Structural hierarchy</b> — <sub>Structure within an exploded assembly.</sub> — <a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=structure">Watch 11 s MP4</a>; <b>Residential assembly</b> — <sub>Detail with the full model as context.</sub> — <a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=residence">Watch 9.5 s MP4</a></p>
+<p><em>Left to right:</em> <b>Structural hierarchy</b> — Structure within an exploded assembly. — <a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=structure">Watch 11 s MP4</a>; <b>Residential assembly</b> — Detail with the full model as context. — <a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=residence">Watch 9.5 s MP4</a></p>
 
 <br>
 
@@ -18,27 +18,20 @@ Four supplied architectural sequences show the intended result: a complete assem
 <a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=tower"><img src="media/tower-smooth.webp" alt="Tower elements" width="45.0000%"></a>
 </p>
 
-<p><em>Left to right:</em> <b>Building systems</b> — <sub>Component emphasis and spatial relationships.</sub> — <a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=systems">Watch 11.5 s MP4</a>; <b>Tower elements</b> — <sub>Sequential explanation of levels and envelope.</sub> — <a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=tower">Watch 8 s MP4</a></p>
+<p><em>Left to right:</em> <b>Building systems</b> — Component emphasis and spatial relationships. — <a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=systems">Watch 11.5 s MP4</a>; <b>Tower elements</b> — Sequential explanation of levels and envelope. — <a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=tower">Watch 8 s MP4</a></p>
 
 ## Read the detail
 
 These are separately supplied still exports. Click to inspect them; they demonstrate the linework and hierarchy at a higher resolution than the animated previews. They are selected outputs, not a before/after experiment.
 
 <p align="center">
-<a href="media/detail-6.jpg"><img src="media/detail-6.jpg" alt="Supplied Model Breakdown detail still 1" width="45.0000%"></a>
-<a href="media/detail-7.jpg"><img src="media/detail-7.jpg" alt="Supplied Model Breakdown detail still 2" width="45.0000%"></a>
+<a href="media/detail-6.jpg"><img src="media/detail-6.jpg" alt="Moving assembly highlighted in white within the production line" width="22.5000%"></a>
+<a href="media/detail-7.jpg"><img src="media/detail-7.jpg" alt="Press frame highlighted in white within the production line" width="22.5000%"></a>
+<a href="media/detail-8.jpg"><img src="media/detail-8.jpg" alt="Trim / inspection highlighted in white within the production line" width="22.5000%"></a>
+<a href="media/detail-9.jpg"><img src="media/detail-9.jpg" alt="Machine housings highlighted in white within the production line" width="22.5000%"></a>
 </p>
 
-<p><em>Left to right:</em> <b>Detail study 1</b> — <a href="media/detail-6.jpg">Inspect the still</a>; <b>Detail study 2</b> — <a href="media/detail-7.jpg">Inspect the still</a></p>
-
-<br>
-
-<p align="center">
-<a href="media/detail-8.jpg"><img src="media/detail-8.jpg" alt="Supplied Model Breakdown detail still 3" width="45.0000%"></a>
-<a href="media/detail-9.jpg"><img src="media/detail-9.jpg" alt="Supplied Model Breakdown detail still 4" width="45.0000%"></a>
-</p>
-
-<p><em>Left to right:</em> <b>Detail study 3</b> — <a href="media/detail-8.jpg">Inspect the still</a>; <b>Detail study 4</b> — <a href="media/detail-9.jpg">Inspect the still</a></p>
+<p><em>Left to right:</em> <b>Moving assembly</b> · <b>Press frame</b> · <b>Trim / inspection</b> · <b>Machine housings</b></p>
 
 ## What remains to show
 

@@ -33,15 +33,13 @@ Two composition studies from the earlier visual direction. Each preview opens it
 <a href="https://muwentrili.github.io/creative-workflows/collage-motion/process/portrait-design.mp4"><img src="../../docs/collage-motion/process/portrait-design.jpg" alt="Earlier portrait composition with vertically arranged shots" width="21.6512%"></a>
 </p>
 
-<p><em>Left to right:</em> <b>Landscape / wide review board</b> — <sub>A broad grid for comparing shots together.</sub>; <b>Portrait / vertical composition</b> — <sub>A taller arrangement for a different viewing format.</sub></p>
+<p><em>Left to right:</em> <b>Landscape / wide review board</b> — A broad grid for comparing shots together.; <b>Portrait / vertical composition</b> — A taller arrangement for a different viewing format.</p>
 
 The separate [earlier motion-controls recording](https://muwentrili.github.io/creative-workflows/collage-motion/process/motion-controls.mp4) documents the previous timing interface.
 
 ## Workflow and creator control
 
 Load local media or the supplied 35-shot example. The app assigns stable source IDs, draws the visible shots in a grid and plays their motion together. The creator controls inclusion, order, crop, captions, layout, timing and the final review. Hiding a source preserves it for later use; removing a source is a separate action.
-
-Muwen Li supplied the visual direction and shot selection, defined the review workflow and critiqued the iterations; Codex assisted implementation.
 
 Separate files interrupt a production conversation: reviewers have to remember one shot while opening another. A parallel board keeps the images moving together and lets feedback refer to a stable shot identity. It is a shot-review composition, not a sequential edit with a sound mix.
 
@@ -58,16 +56,20 @@ The system lays out and plays the chosen media; it does not infer the story or r
 
 ```mermaid
 flowchart LR
-    A["Local clips<br/>and images"] --> C["Source list<br/>stable IDs"]
-    B["Example<br/>manifest + atlas"] --> C
-    C --> D["Order / crop<br/>include / caption"]
-    D --> E["Canvas<br/>preview"]
-    E --> F["Fixed-time sampling<br/>WebCodecs MP4"]
-    F --> G["Review<br/>silent board"]
-    G -->|Revise| D
+    DEV["AI-assisted development<br/>Codex · HTML · JavaScript"] -.-> D
+    A["Import clips and images<br/>Browser File API"] --> C["Identify sources<br/>JavaScript · stable IDs"]
+    B["Load 35-shot example<br/>JSON manifest · video atlas"] --> C
+    C --> D["Order, crop and caption<br/>HTML controls · JavaScript"]
+    D --> E["Preview moving board<br/>Canvas 2D · HTML video"]
+    E --> F["Encode and review<br/>WebCodecs · mp4-muxer<br/>Silent MP4"]
+    F -->|Revise| D
 ```
 
+Codex assisted development. The runtime stages above use browser code; they do not call a generative AI model.
+
 ## Local setup
+
+[Windows verification — October 28, 2026](../../docs/local-setup-check.md).
 
 Requirements: **Git**, **Python 3.10+**, and desktop Chrome or Edge with Canvas and WebCodecs support. Node.js **22.13+** is optional for the focused regression check. No npm installation, build step, model or API key is required.
 

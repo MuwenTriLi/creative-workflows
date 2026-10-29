@@ -6,7 +6,7 @@
 
 | Recording beat | Show | Explain |
 | --- | --- | --- |
-| 0–10 s · brief | Assembled GLB and named parts | Which component should an AEC/design audience understand? |
+| 0–10 s · brief | Assembled GLB and named parts | Which component should an architecture or design audience understand? |
 | 10–25 s · first pass | Import, orientation, exploded view | What the browser handles and what the creator checks |
 | 25–45 s · local correction | Select one component; adjust framing, separation or timing | What was unclear and why this change is sufficient |
 | 45–60 s · delivery | Preview and actual exported file | Check focal-part readability, edges, continuity and duration |

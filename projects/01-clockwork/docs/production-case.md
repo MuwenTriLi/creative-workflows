@@ -4,7 +4,7 @@
 
 **This project develops an original model collection into linked mechanisms, editable controls and a reusable Blender library through AI-assisted development.**
 
-Muwen Li modeled the source collection, organized the source work and references, defined the visual and motion requirements, and reviewed the resulting mechanisms. Codex assisted source inspection and the development of structures and gear linkages within that direction. The 46-asset product is the delivered outcome; the design of the inputs, dependencies and creator controls is the process to examine. [Read the build process](process.md).
+Original modeled geometry and a defined motion brief guided Codex-assisted source inspection and gear-linkage development. The delivered 46-asset library preserves those dependencies behind editable controls. [Read the build process](process.md).
 
 ## The smallest useful task
 

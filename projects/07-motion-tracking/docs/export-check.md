@@ -1,6 +1,6 @@
 # Export repair: input → encoded file
 
-[← Project](../README.md) · [Implementation](../README.md) · [Measured results](../evidence/export-results.json)
+[← Project](../README.md) · [Measured results](../evidence/export-results.json)
 
 The earlier real-time capture produced **3.8267 seconds / 97 frames** from a four-second fixture. That failed the advertised 60 fps contract. The revised exporter seeks, renders and encodes every planned frame using WebCodecs, then muxes H.264 into MP4. Wall-clock render speed no longer determines the file's timestamps. No successful real-time fallback is implied.
 
@@ -19,6 +19,12 @@ The earlier real-time capture produced **3.8267 seconds / 97 frames** from a fou
 | Static anchor, FHD, source tone enabled | H.264 · 1920×1080 · 240 decoded frames · 60 fps · 4.000000 s | AAC · 48 kHz mono · container 4.010667 s | Video timing passes; AAC packet padding adds 10.667 ms |
 
 Both files fully decoded without errors. The source is 30 fps: rendering a 60 fps container does not invent additional source-motion frames. The test tone exercises audio preservation, not speech recognition or perceived lip sync.
+
+## Inline playback and interface demonstration
+
+The project page embeds the original inputs and outputs as GitHub video attachments with playback controls. The four files above are unchanged; the attachment filenames match the repository fixtures.
+
+The additional [interface recording](../evidence/ui-demo.mp4) shows actual playback of `input-moving-target.mp4` after target selection in the local production build of source version 19. It records the source panel, preview, tracking readout and inspector. Timestamped screenshots were encoded as a 24 fps H.264 viewing copy; the final frame is padded by one pixel for an even height. This is a UI demonstration, not another export-accuracy test.
 
 The six Node tests cover frame-plan duration, frame counts, gapless timestamps, a short last frame and invalid inputs. Run `pnpm test` in `source/`. Browser encoding and visual quality require the actual export tests above.
 

@@ -35,7 +35,7 @@ Two larger studies expose the movement behind the overall silhouette. Click a pr
 <a href="media/orbit-motion.gif"><img src="media/orbit-motion.gif" alt="CLK31 guided mechanical movement" width="45.0000%"></a>
 </p>
 
-<p><em>Left to right:</em> <b>SPM14 / suspended mechanism</b> — <sub>Read the suspended parts, linkages and counterweight together.</sub>; <b>CLK31 / guided movement</b> — <sub>Read the relationship between the dial, structure and rail path.</sub></p>
+<p><em>Left to right:</em> <b>SPM14 / suspended mechanism</b> — Read the suspended parts, linkages and counterweight together.; <b>CLK31 / guided movement</b> — Read the relationship between the dial, structure and rail path.</p>
 
 [More videos and Blender recordings →](docs/showcase-films.md) · [All 24 motion studies →](docs/motion-library.md#24-clock-motion-studies)
 
@@ -52,7 +52,7 @@ Two ways to read a mechanism: rotate the whole form to understand its constructi
 <a href="media/motion-clk10.gif"><img src="media/motion-clk10.gif" alt="Clock 08 - CLK10 - Turntable" width="22.5000%"></a>
 </p>
 
-<p><em>Left to right:</em> <b>Clock 01</b> — <sub>Turntable / Layered dial</sub>; <b>Clock 03</b> — <sub>Turntable / Stacked gears</sub>; <b>Clock 07</b> — <sub>Turntable / Exposed movement</sub>; <b>Clock 08</b> — <sub>Turntable / Skeleton frame</sub></p>
+<p><em>Left to right:</em> <b>Clock 01</b> — Turntable / Layered dial; <b>Clock 03</b> — Turntable / Stacked gears; <b>Clock 07</b> — Turntable / Exposed movement; <b>Clock 08</b> — Turntable / Skeleton frame</p>
 
 The silhouette stays readable as gears, shafts and supporting frames come into view.
 
@@ -67,7 +67,7 @@ The silhouette stays readable as gears, shafts and supporting frames come into v
 <a href="media/motion-clk32.gif"><img src="media/motion-clk32.gif" alt="Clock 24 - CLK32 - Motion" width="22.5000%"></a>
 </p>
 
-<p><em>Left to right:</em> <b>Clock 10</b> — <sub>Motion / Framed gear train</sub>; <b>Clock 15</b> — <sub>Motion / Vertical linkages</sub>; <b>Clock 23</b> — <sub>Motion / Rail-guided motion</sub>; <b>Clock 24</b> — <sub>Motion / Unfolding canopy</sub></p>
+<p><em>Left to right:</em> <b>Clock 10</b> — Motion / Framed gear train; <b>Clock 15</b> — Motion / Vertical linkages; <b>Clock 23</b> — Motion / Rail-guided motion; <b>Clock 24</b> — Motion / Unfolding canopy</p>
 
 A steady view makes the relationships between rotation, travel and opening easier to judge.
 
@@ -133,7 +133,7 @@ These original viewport recordings show the working scene and library. The Evide
 
 ## Workflow and creator control
 
-The project develops an original model collection into linked mechanisms and creator controls. Muwen Li modeled the collection, organized the references and motion requirements, and directed and reviewed the visual and mechanical relationships. Codex assisted development within that brief. The models served as task context; this is not a model-training result.
+Original modeled geometry and motion references became a 46-asset Blender library with linked mechanisms and editable controls. Codex assisted source inspection and linkage development; native Blender drivers and constraints run the animation.
 
 The central task is adaptation: preserve the linked movement while changing a mechanism's pace or placing it in another composition. Native drivers propagate the chosen inputs; the creator retains form, motion intent, speed, phase and acceptance.
 

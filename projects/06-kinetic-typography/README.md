@@ -10,8 +10,6 @@ Tech stack: React, TypeScript, Transformers.js, quantized Whisper Base on browse
 
 <p align="center"><a href="https://vox-one.limuwen9.chatgpt.site"><img src="media/ui-demo.webp" alt="Actual Kinetic Typography Studio interface in motion, retaining the source and transcript panel, live typography, playback controls and style parameters" width="100%"></a></p>
 
-[Watch the eight-second interface recording](media/ui-demo.mp4) · [View the original still](../../media/vox-one-editor.png)
-
 The preview records eight seconds of the live interface at its original playback speed, preserving both side panels and the central composition. The text and timing are authored silent demo data. Importing a voice clip exercises the separate speech-recognition path.
 
 The left panel contains source and transcript; the center shows the typography; the right panel controls grouping, alignment, motion, size and sync. The Demo runs the live composition.
@@ -19,8 +17,6 @@ The left panel contains source and transcript; the center shows the typography; 
 ## Workflow and creator control
 
 Import speech, let local Whisper propose words and timestamps, then review the transcript against the audio. The creator corrects words and punctuation, applies changes, chooses grouping and emphasis, adjusts synchronization and accepts the output. The opening silent sample uses authored text; it is not a transcription demonstration.
-
-Muwen Li defined the speech-to-type interaction, correction loop, visual direction and acceptance criteria; Codex assisted implementation.
 
 Speech-led motion graphics require more than a transcript. Words need readable grouping, accurate timing and a visual rhythm that follows the speaker. A text correction can affect both the layout and timing; treating transcription, typography and animation as disconnected steps makes iteration harder.
 
@@ -39,19 +35,24 @@ Use a clip containing a proper noun, a pause and a phrase boundary. Keep the spe
 
 ```mermaid
 flowchart LR
-    A["Audio / video<br/>decode"] --> B["Local Whisper<br/>words + timing"]
-    B --> C["Review + correct<br/>Confirm and Apply"]
-    C --> D["Layout + sync<br/>Canvas preview"]
-    D --> E["Encode video<br/>and audio"]
-    E --> F["Review MP4<br/>against speech"]
+    DEV["AI-assisted development<br/>Codex · React · TypeScript"] -.-> C
+    A["Decode speech<br/>Web Audio · AudioContext"] --> B["Transcribe words and timing<br/>Whisper Base · q8<br/>Transformers.js · WASM"]
+    B --> C["Correct and apply<br/>React transcript editor"]
+    C --> D["Layout, sync and preview<br/>React · CSS transforms"]
+    D --> E["Render and encode<br/>Canvas · Mediabunny<br/>WebCodecs video + audio"]
+    E --> F["Review against speech<br/>MP4 · browser video"]
     F -->|Revise| C
 ```
 
+Speech model: `onnx-community/whisper-base_timestamped`, q8, running locally through Transformers.js on WebAssembly (WASM). Codex assisted development; it is separate from runtime speech recognition.
+
 ## Local setup
+
+[Windows verification — October 28, 2026](../../docs/local-setup-check.md).
 
 Requirements: Git, **Node.js 22.13+**, **pnpm 11.25.0**, and a desktop browser with Canvas/WebCodecs support. Use Chrome or Edge for comparison with the recorded checks. Install Git and Node.js first, then check `git --version` and `node --version`. Package downloads need internet. No API key or hosted account is needed by this local runner.
 
-Run these commands in PowerShell, macOS Terminal or a Linux shell:
+Windows can run this directly in PowerShell; Windows Subsystem for Linux (WSL) and Cursor are optional. The same commands also work in macOS Terminal or a Linux shell:
 
 ```sh
 npm install --global pnpm@11.25.0
