@@ -8,24 +8,29 @@ Tech stack: React, TypeScript, Canvas template matching, WebCodecs and mp4-muxer
 
 ## Visual overview
 
-[![Motion Tracking Studio: video import, target selection and HUD controls](../../media/trace-01-editor.png)](https://trace-01-motion-tracker.limuwen9.chatgpt.site)
+<video controls src="https://github.com/user-attachments/assets/6c289917-2589-4f7a-9eb3-a3117b0b8865" width="100%"></video>
 
-The workspace starts empty: import a video, choose a target or place a fixed anchor. The source is never silently chosen for the visitor. Playback and three white HUD presets sit above the preview; targeting and export controls are alongside it.
+An actual interface recording shows the selected target moving, the locator following it and the information panel entering. It uses the four-second synthetic input below in the local app, with the source and inspector panels visible. The live studio starts empty so visitors can import their own footage.
 
 ### Inspect the actual input and output
 
-| Original test input | Encoded result |
-| --- | --- |
-| [4-second moving-target clip](evidence/input-moving-target.mp4) | [4K moving-target output](evidence/4k-moving-target.mp4) |
-| [Same input with a test tone](evidence/input-target-tone.mp4) | [FHD fixed-anchor output with audio](evidence/fhd-static-anchor-audio.mp4) |
+<table>
+<tr><th>Original test input</th><th>Encoded result</th></tr>
+<tr>
+<td width="50%"><video controls src="https://github.com/user-attachments/assets/ea384e84-e109-4551-a5bf-fb549294f373" width="100%"></video><p>Moving target · 4 s · 30 fps</p></td>
+<td width="50%"><video controls src="https://github.com/user-attachments/assets/166a1450-eb39-4d1a-89a7-9eaba4a848d6" width="100%"></video><p>Tracked overlay · 4K · 60 fps</p></td>
+</tr>
+<tr>
+<td width="50%"><video controls src="https://github.com/user-attachments/assets/c1638925-34ab-40fd-a43c-30428688491c" width="100%"></video><p>Same input + 440 Hz test tone</p></td>
+<td width="50%"><video controls src="https://github.com/user-attachments/assets/bfeac5fe-f5f5-40d9-a35e-331f8ed7f2d1" width="100%"></video><p>Fixed anchor · FHD · source audio</p></td>
+</tr>
+</table>
 
-These downloadable MP4s are the exact bounded export fixtures. They contain generated test geometry, not client footage, and demonstrate timing checks rather than production tracking accuracy.
+Play the inputs and encoded results directly above. These are the exact synthetic export-test files: they demonstrate timing and audio preservation, not production tracking accuracy. [Files and measured results](docs/export-check.md).
 
 ## Workflow and creator control
 
 Import footage and explicitly choose a target or place a fixed anchor. The tracker searches for the selected template and reports confidence/reacquisition state. The creator decides which subject matters, whether to track or pin it, how to label it and when the locator and information panel appear. Smoothing cannot repair a target switch.
-
-Muwen Li defined the target/anchor workflow, staged visual hierarchy and review criteria; Codex assisted implementation.
 
 A motion annotation has two separate requirements: stay attached to the correct subject and remain readable. Tracking may drift, while labels can arrive too early, cover the subject or distract from it. Treating the tracker and graphic styling as separate tasks makes those problems harder to inspect together.
 
@@ -44,21 +49,23 @@ Try one difficult interval as well as an easy shot. If the path moves onto the w
 
 ```mermaid
 flowchart LR
-    A["Video +<br/>selection"] --> B{Mode}
-    B -->|Target| C["Template<br/>tracking"]
-    B -->|Anchor| D["Fixed<br/>position"]
-    C --> E["Trajectory<br/>and HUD"]
+    DEV["AI-assisted development<br/>Codex · React · TypeScript"] -.-> B
+    A["Import and choose target<br/>File API · HTML video"] --> B{"Select mode<br/>React controls"}
+    B -->|Target| C["Template search<br/>Canvas pixels · TypeScript"]
+    B -->|Anchor| D["Fixed position<br/>Canvas coordinates"]
+    C --> E["Path and information overlay<br/>Canvas 2D · TypeScript"]
     D --> E
-    E --> F["Preview<br/>then encode frames"]
-    F --> G["MP4<br/>review"]
-    G -->|Revise| B
+    E --> F["Encode and review<br/>WebCodecs · mp4-muxer<br/>H.264 MP4 · optional AAC"]
+    F -->|Revise| B
 ```
+
+Codex assisted development. The runtime stages above use browser code; they do not call a generative AI model.
 
 ## Local setup
 
 Requirements: Git, **Node.js 22.13+**, **pnpm 11.25.0**, and a desktop browser with Canvas/WebCodecs support. Use Chrome or Edge for comparison with the recorded checks. Install Git and Node.js first, then check `git --version` and `node --version`. Package downloads need internet. No API key or hosted account is needed by this local runner.
 
-Run these commands in PowerShell, macOS Terminal or a Linux shell:
+Windows can run this directly in PowerShell; Windows Subsystem for Linux (WSL) and Cursor are optional. The same commands also work in macOS Terminal or a Linux shell:
 
 ```sh
 npm install --global pnpm@11.25.0
