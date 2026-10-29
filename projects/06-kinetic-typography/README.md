@@ -34,14 +34,21 @@ Use a clip containing a proper noun, a pause and a phrase boundary. Keep the spe
 ## Workflow diagram
 
 ```mermaid
-flowchart LR
-    DEV["AI-assisted development<br/>Codex · React · TypeScript"] -.-> C
-    A["Decode speech<br/>Web Audio · AudioContext"] --> B["Transcribe words and timing<br/>Whisper Base · q8<br/>Transformers.js · WASM"]
-    B --> C["Correct and apply<br/>React transcript editor"]
-    C --> D["Layout, sync and preview<br/>React · CSS transforms"]
-    D --> E["Render and encode<br/>Canvas · Mediabunny<br/>WebCodecs video + audio"]
-    E --> F["Review against speech<br/>MP4 · browser video"]
-    F -->|Revise| C
+flowchart TB
+    DEV["AI-assisted development · Codex<br/>React · TypeScript"]
+    subgraph INPUT["01 / Input and creator decisions"]
+        direction LR
+        A["Decode speech<br/>Web Audio · AudioContext"] --> B["Transcribe and time<br/>Whisper Base q8<br/>Transformers.js · WASM"]
+        B --> C["Correct and apply<br/>React transcript editor"]
+    end
+    subgraph OUTPUT["02 / Preview and delivery"]
+        direction LR
+        D["Layout and preview<br/>React · CSS transforms"] --> E["Render and encode<br/>Canvas · Mediabunny<br/>WebCodecs video + audio"]
+        E --> F["Review with speech<br/>MP4 · browser video"]
+    end
+    DEV -.-> INPUT
+    INPUT --> OUTPUT
+    OUTPUT -->|Review and revise| INPUT
 ```
 
 Speech model: `onnx-community/whisper-base_timestamped`, q8, running locally through Transformers.js on WebAssembly (WASM). Codex assisted development; it is separate from runtime speech recognition.

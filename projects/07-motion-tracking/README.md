@@ -8,7 +8,7 @@ Tech stack: React, TypeScript, Canvas template matching, WebCodecs and mp4-muxer
 
 ## Visual overview
 
-<video controls src="https://github.com/user-attachments/assets/6c289917-2589-4f7a-9eb3-a3117b0b8865" width="100%"></video>
+https://github.com/user-attachments/assets/6c289917-2589-4f7a-9eb3-a3117b0b8865
 
 An actual interface recording shows the selected target moving, the locator following it and the information panel entering. It uses the four-second synthetic input below in the local app, with the source and inspector panels visible. The live studio starts empty so visitors can import their own footage.
 
@@ -48,15 +48,21 @@ Try one difficult interval as well as an easy shot. If the path moves onto the w
 ## Workflow diagram
 
 ```mermaid
-flowchart LR
-    DEV["AI-assisted development<br/>Codex · React · TypeScript"] -.-> B
-    A["Import and choose target<br/>File API · HTML video"] --> B{"Select mode<br/>React controls"}
-    B -->|Target| C["Template search<br/>Canvas pixels · TypeScript"]
-    B -->|Anchor| D["Fixed position<br/>Canvas coordinates"]
-    C --> E["Path and information overlay<br/>Canvas 2D · TypeScript"]
-    D --> E
-    E --> F["Encode and review<br/>WebCodecs · mp4-muxer<br/>H.264 MP4 · optional AAC"]
-    F -->|Revise| B
+flowchart TB
+    DEV["AI-assisted development · Codex<br/>React · TypeScript"]
+    subgraph INPUT["01 / Input and creator decisions"]
+        direction LR
+        A["Import and select mode<br/>File API · React controls"] -->|Target| B["Template search<br/>Canvas · TypeScript"]
+        A -->|Anchor| C["Fixed position<br/>Canvas coordinates"]
+    end
+    subgraph OUTPUT["02 / Preview and delivery"]
+        direction LR
+        D["Path and overlay<br/>Canvas 2D · TypeScript"] --> E["Encode video / audio<br/>WebCodecs · mp4-muxer"]
+        E --> F["Review target and labels<br/>H.264 MP4 · optional AAC"]
+    end
+    DEV -.-> INPUT
+    INPUT --> OUTPUT
+    OUTPUT -->|Review and revise| INPUT
 ```
 
 Codex assisted development. The runtime stages above use browser code; they do not call a generative AI model.

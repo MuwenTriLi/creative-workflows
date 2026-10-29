@@ -68,14 +68,21 @@ For your own input, export a self-contained GLB with separate meshes and readabl
 ## Workflow diagram
 
 ```mermaid
-flowchart LR
-    DEV["AI-assisted development<br/>Codex · React · TypeScript"] -.-> C
-    A["Import named parts<br/>GLB · browser File API"] --> B["Inspect hierarchy<br/>Three.js GLTFLoader"]
-    B --> C["Explode and frame<br/>Three.js · TypeScript"]
-    C --> D["Focus and timing<br/>React timeline controls"]
-    D --> E["Render preview<br/>Three.js · WebGL"]
-    E --> F["Encode and review<br/>WebCodecs · mp4-muxer<br/>MP4 / still"]
-    F -->|Revise| C
+flowchart TB
+    DEV["AI-assisted development · Codex<br/>React · TypeScript"]
+    subgraph INPUT["01 / Input and creator decisions"]
+        direction LR
+        A["Import named parts<br/>GLB · File API"] --> B["Inspect hierarchy<br/>Three.js GLTFLoader"]
+        B --> C["Explode and frame<br/>Three.js · TypeScript"]
+    end
+    subgraph OUTPUT["02 / Preview and delivery"]
+        direction LR
+        D["Focus and timing<br/>React timeline"] --> E["Render preview<br/>Three.js · WebGL"]
+        E --> F["Encode and review<br/>WebCodecs · mp4-muxer<br/>MP4 / still"]
+    end
+    DEV -.-> INPUT
+    INPUT --> OUTPUT
+    OUTPUT -->|Review and revise| INPUT
 ```
 
 Codex assisted development. The runtime stages above use browser code; they do not call a generative AI model.
