@@ -121,8 +121,8 @@ creative-workflows/
 │   ├── 03-model-breakdown/          README, source/, example models and evidence
 │   ├── 04-animated-storyboard/      README and evidence; static app in docs/
 │   ├── 05-spatial-media-presenter/  README, source/ and evidence
-│   ├── 07-kinetic-typography/       README, source/ and evidence
-│   └── 06-motion-tracking/          README, source/ and export evidence
+│   ├── 06-motion-tracking/          README, source/ and export evidence
+│   └── 07-kinetic-typography/       README, source/ and evidence
 ├── docs/
 │   ├── collage-motion/             Storyboard source and GitHub Pages app
 │   ├── films/                      Final film viewer
