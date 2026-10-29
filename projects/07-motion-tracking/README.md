@@ -1,36 +1,28 @@
 # 07 / Motion Tracking Studio
 
-[Demo](https://trace-01-motion-tracker.limuwen9.chatgpt.site)
+[Demo](https://muwentrili.github.io/creative-workflows/motion-tracking/)
 
 **Attach a locator and information overlay to a chosen video target or a fixed position.**
 
-Tech stack: React, TypeScript, Canvas template matching, WebCodecs and mp4-muxer. Tracking estimates visual similarity; it does not recognize semantic object identity.
+Tech stack: React, TypeScript, Canvas template/bright-marker tracking, WebCodecs and mp4-muxer. Tracking estimates visual similarity; it does not recognize semantic object identity.
 
 ## Visual overview
 
-https://github.com/user-attachments/assets/6c289917-2589-4f7a-9eb3-a3117b0b8865
-
-An actual interface recording shows the selected target moving, the locator following it and the information panel entering. It uses the four-second synthetic input below in the local app, with the source and inspector panels visible. The live studio starts empty so visitors can import their own footage.
-
-### Inspect the actual input and output
+Two matched videos show the same three shots: **Cube leaps → Ravine flight → Buried machine**. On the right, the selected white marker drives the target locator and a staged heads-up display (HUD).
 
 <table>
-<tr><th>Original test input</th><th>Encoded result</th></tr>
+<tr><th>Source footage</th><th>Tracked target + HUD</th></tr>
 <tr>
-<td width="50%"><video controls src="https://github.com/user-attachments/assets/ea384e84-e109-4551-a5bf-fb549294f373" width="100%"></video><p>Moving target · 4 s · 30 fps</p></td>
-<td width="50%"><video controls src="https://github.com/user-attachments/assets/166a1450-eb39-4d1a-89a7-9eaba4a848d6" width="100%"></video><p>Tracked overlay · 4K · 60 fps</p></td>
-</tr>
-<tr>
-<td width="50%"><video controls src="https://github.com/user-attachments/assets/c1638925-34ab-40fd-a43c-30428688491c" width="100%"></video><p>Same input + 440 Hz test tone</p></td>
-<td width="50%"><video controls src="https://github.com/user-attachments/assets/bfeac5fe-f5f5-40d9-a35e-331f8ed7f2d1" width="100%"></video><p>Fixed anchor · FHD · source audio</p></td>
+<td width="50%"><video controls src="https://github.com/user-attachments/assets/e048ccfb-3f88-46ab-8a59-a9ebea358775" width="100%"></video><p>Three supplied clips · 14 s</p></td>
+<td width="50%"><video controls src="https://github.com/user-attachments/assets/d91151ff-a6e8-4880-9586-0a1da6155197" width="100%"></video><p>Actual app export · 14 s</p></td>
 </tr>
 </table>
 
-Play the inputs and encoded results directly above. These are the exact synthetic export-test files: they demonstrate timing and audio preservation, not production tracking accuracy. [Files and measured results](docs/export-check.md).
+Silent 1080p previews retain the source's 24 fps cadence. The live Demo includes all three clips: load one, click its white marker and press Play. [4K delivery and check record](docs/white-marker-demo.md).
 
 ## Workflow and creator control
 
-Import footage and explicitly choose a target or place a fixed anchor. The tracker searches for the selected template and reports confidence/reacquisition state. The creator decides which subject matters, whether to track or pin it, how to label it and when the locator and information panel appear. Smoothing cannot repair a target switch.
+Import footage and explicitly choose a target or place a fixed anchor. A selected bright neutral marker uses a bounded component search; other subjects use template matching. The interface reports confidence and reacquisition state. The creator decides which subject matters, whether to track or pin it, how to label it and when the locator and information panel appear. Smoothing cannot repair a target switch.
 
 A motion annotation has two separate requirements: stay attached to the correct subject and remain readable. Tracking may drift, while labels can arrive too early, cover the subject or distract from it. Treating the tracker and graphic styling as separate tasks makes those problems harder to inspect together.
 
@@ -38,10 +30,10 @@ Bring source video, frame navigation, target positioning and HUD design into one
 
 ## Try one useful task
 
-1. Import a short, high-contrast video and pause on a clear frame.
+1. Load **Cube leaps**, **Ravine flight** or **Buried machine** from Example footage, or import your own clip. Pause on a clear frame.
 2. Choose **Track a target** and select the subject, or choose **Position anchor** for a fixed locator.
 3. Play the clip and inspect the path. Adjust **LOCK IN** and **HUD IN** timing separately.
-4. Export a short MP4. Source audio is optional and off by default. Check the entire file for subject identity, overlay readability and duration.
+4. Export a short MP4, review it in the export panel, then choose **Download MP4**. Source audio is optional and off by default. Check subject identity, overlay readability and duration.
 
 Try one difficult interval as well as an easy shot. If the path moves onto the wrong subject, inspect target selection and search behavior instead of using smoothing to hide it. A fixed annotation is a different, explicit creative choice. Frame-level path edits, locked good segments and regional retracking are not established recovery features.
 
@@ -80,9 +72,9 @@ pnpm preview --port 4173 --strictPort
 
 Open **http://127.0.0.1:4173/** for the built app. Keep the tab in the foreground during export. Try a short FHD output before 4K; a successful build does not establish codec support or available GPU memory on another computer.
 
-The snapshot matches hosted client version **19**. The workspace starts empty: import your own clip or use the small synthetic inputs in [evidence/](evidence/). `pnpm test` checks deterministic frame planning and timestamp limits; it does not measure target accuracy. AAC audio encoding also requires browser support.
+This revision extends the version **19** client with bright-marker tracking, three explicit example choices and an export-review player. No clip or target is selected automatically. `pnpm test` checks marker selection, movement, loss and skipped callbacks, plus deterministic export timing; it is not a general accuracy benchmark. AAC audio encoding requires browser support.
 
-The [source manifest](source/source-manifest.json) records the hosted revision and hashes; `verify:source` checks the copied client files. The local Vite runner replaces the hosting wrapper. Public navigation links still open the hosted studios. [Source and media rights](source/RIGHTS.md) apply independently of these setup instructions.
+The [source manifest](source/source-manifest.json) records the original hosted revision, current changes and hashes; `verify:source` checks this documented revision. The local Vite runner replaces the hosting wrapper. Public navigation links still open the hosted studios. [Source and media rights](source/RIGHTS.md) apply independently of these setup instructions.
 
 ## Features and implementation
 
@@ -91,7 +83,7 @@ The [source manifest](source/source-manifest.json) records the hosted revision a
 | Creative decision | Visible control | Purpose |
 | --- | --- | --- |
 | Follow a subject or mark a place? | Track a target / Position anchor | Match the overlay's behavior to the explanation |
-| How should the path behave? | Search radius and trajectory smoothing | Balance target search and visual stability |
+| How should the path behave? | Template search radius / smoothing; adaptive bright-marker mode | Match search behavior to the selected subject |
 | When should information appear? | LOCK IN and HUD IN timeline markers | Stage attention before adding detail |
 | How much visual emphasis is needed? | Locator size, panel size and entrance mode | Keep the source footage legible |
 | What information belongs in the graphic? | Title, text fields, color and HUD presets | Adapt the annotation to the scene |
@@ -103,6 +95,7 @@ The tracker exposes confidence and a REACQUIRE state. A live confidence value is
 | Responsibility | Source |
 | --- | --- |
 | Target/anchor selection, tracking and Canvas overlays | [page.tsx](source/app/page.tsx) |
+| Bounded bright-marker detection and loss handling | [bright-marker.mjs](source/app/bright-marker.mjs) |
 | Deterministic frame counts and timestamps | [export-timing.mjs](source/app/export-timing.mjs) |
 | Seek the source, encode H.264, mux MP4 and optional AAC | [export-mp4.mjs](source/app/export-mp4.mjs) |
 
@@ -110,10 +103,8 @@ Sequential frame encoding replaces the earlier real-time recording path. It incl
 
 ## Evidence and next step
 
-A four-second synthetic fixture produced **3840 × 2160, 60 fps, 240 frames, 4.000 seconds**. An FHD run with source audio matched video timing; its AAC container has **10.667 ms** of padding. [Exact inputs, outputs and measured results](docs/export-check.md).
+The three supplied shots produced actual browser exports at **3840 × 2160, 60 fps**: 270, 270 and 300 frames, with durations of **4.5, 4.5 and 5 seconds**. The two web previews each contain **336 frames / 14 seconds / 24 fps**. Source footage is 24 fps; a 60 fps export container does not create extra source-motion detail. [Inputs, settings, checks and 4K result](docs/white-marker-demo.md).
 
-The earlier real-time capture failed the requested timing; the two sequential-encoding fixtures supersede that timing result only. The 30 fps source does not gain new source-motion detail from a 60 fps output container.
+The original four-second synthetic fixtures remain in the [export timing record](docs/export-check.md), including the optional-audio test. They are separate technical fixtures rather than the main visual demo.
 
-Delivery also requires the right subject throughout the sequence, no wrong-target jumps, readable HUD text and no obstruction of essential action. A smooth path can still be attached to the wrong object.
-
-Next: compare an easy authorized clip with one containing an occlusion, annotate ground-truth positions and record wrong-target intervals and correction effort. Target identity through occlusion, real-footage recovery and regional correction remain unverified. Expand only after failure detection and recovery work; otherwise narrow the supported shot or use an explicitly selected fixed annotation. Export timing success is separate from tracking accuracy.
+This establishes a bounded bright-marker example across the three supplied shots. General object identity through occlusion, regional correction and unfamiliar creator usability remain unverified. Next: annotate a harder sequence and record wrong-target intervals and correction effort before expanding the supported tracking scope.
