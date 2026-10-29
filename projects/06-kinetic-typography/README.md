@@ -34,7 +34,7 @@ Use a clip containing a proper noun, a pause and a phrase boundary. Keep the spe
 ## Workflow diagram
 
 <p align="center">
-<img src="../../media/workflows/06-kinetic-typography.svg?v=20261028-pipeline" alt="Kinetic Typography Studio workflow: horizontal pipeline with tools and a review loop" width="900">
+<img src="../../media/workflows/06-kinetic-typography-pipeline.svg" alt="Kinetic Typography Studio workflow: horizontal pipeline with tools and a review loop" width="900">
 </p>
 
 Speech model: `onnx-community/whisper-base_timestamped`, q8, running locally through Transformers.js on WebAssembly (WASM). Codex assisted development; it is separate from runtime speech recognition.

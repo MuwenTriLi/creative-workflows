@@ -55,7 +55,7 @@ The system lays out and plays the chosen media; it does not infer the story or r
 ## Workflow diagram
 
 <p align="center">
-<img src="../../media/workflows/04-animated-storyboard.svg?v=20261028-pipeline" alt="Animated Storyboard workflow: horizontal pipeline with tools and a review loop" width="900">
+<img src="../../media/workflows/04-animated-storyboard-pipeline.svg" alt="Animated Storyboard workflow: horizontal pipeline with tools and a review loop" width="900">
 </p>
 
 Codex assisted development. The runtime stages above use browser code; they do not call a generative AI model.

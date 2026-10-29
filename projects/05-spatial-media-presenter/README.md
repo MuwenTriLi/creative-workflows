@@ -45,7 +45,7 @@ Make one framing or hold correction, replay the affected transition, then inspec
 ## Workflow diagram
 
 <p align="center">
-<img src="../../media/workflows/05-spatial-media-presenter.svg?v=20261028-pipeline" alt="Spatial Media Presenter workflow: horizontal pipeline with tools and a review loop" width="900">
+<img src="../../media/workflows/05-spatial-media-presenter-pipeline.svg" alt="Spatial Media Presenter workflow: horizontal pipeline with tools and a review loop" width="900">
 </p>
 
 Codex assisted development. The runtime stages above use browser code; they do not call a generative AI model.
