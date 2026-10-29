@@ -1,44 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="944" height="360" viewBox="0 0 944 360" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="956" height="236" viewBox="0 0 956 236" role="img" aria-labelledby="title desc">
 <title id="title">Spatial Media Presenter workflow</title>
-<desc id="desc">AI-assisted development: Codex; React · TypeScript. 1. Import images / clips — Browser File API; 2. Order and range — React · Visual Archive; 3. Transitions and holds — TypeScript motion; 4. Preview sequence — React · CSS transforms; 5. Render and encode — Canvas · WebCodecs — mp4-muxer; 6. Review pace and crop — MP4 · browser video. Review and revise before delivery.</desc>
-<defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7 Z" fill="#222"/></marker></defs>
-<rect width="944" height="360" fill="#fff"/>
+<desc id="desc">AI-assisted development: Codex; React · TypeScript. 01 / Import — Images / clips — Browser File API; 02 / Arrange — Order + range — React — Visual Archive; 03 / Pace — Transitions — Readable holds — TypeScript; 04 / Preview — React — CSS transforms; 05 / Encode — Canvas — WebCodecs — mp4-muxer; 06 / Review — Pace + crop — MP4 — Browser video. Review and revise before delivery.</desc>
+<defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7 Z" fill="#333"/></marker>
+<filter id="shadow" x="-10%" y="-10%" width="125%" height="130%"><feDropShadow dx="1" dy="2" stdDeviation="1.2" flood-color="#000" flood-opacity="0.16"/></filter></defs>
+<rect width="956" height="236" fill="#fff"/>
 <g font-family="Arial, Helvetica, sans-serif" fill="#111">
-<text x="20" y="29" font-size="17" font-weight="600" text-anchor="start">AI-assisted development: Codex</text>
-<text x="872" y="29" font-size="17" font-weight="400" text-anchor="end">React · TypeScript</text>
-<path d="M20 45 H872" stroke="#ccc"/>
-<g fill="none" stroke="#222" stroke-width="1.5" marker-end="url(#arrow)">
-<path d="M280 120 H310"/><path d="M576 120 H606"/>
-<path d="M742 168 V195 H150 V218"/>
-<path d="M280 272 H310"/><path d="M576 272 H606"/>
-<path d="M872 272 H920 V120 H878" stroke-dasharray="4 4"/>
+<text x="20" y="27" font-size="15" font-weight="400" text-anchor="start">AI-assisted development · Codex</text>
+<text x="936" y="27" font-size="15" font-weight="400" text-anchor="end">React · TypeScript</text>
+<path d="M20 42 H936" stroke="#e1e1e1"/>
+<g fill="none" stroke="#333" stroke-width="1.2" marker-end="url(#arrow)">
+<path d="M156 126 H170"/>
+<path d="M312 126 H326"/>
+<path d="M468 126 H482"/>
+<path d="M624 126 H638"/>
+<path d="M780 126 H794"/>
+<path d="M868 176 V214 H400 V182"/>
 </g>
-<rect x="884" y="183" width="60" height="23" fill="#fff"/>
-<text x="912" y="200" font-size="14" font-weight="400" text-anchor="middle">Revise</text>
-<rect x="20" y="72" width="260" height="96" rx="3" fill="#fff" stroke="#222" stroke-width="1.5"/>
-<text x="34" y="97" font-size="15" font-weight="600" text-anchor="start">01</text>
-<text x="63" y="97" font-size="18" font-weight="600" text-anchor="start">Import images / clips</text>
-<text x="34" y="124" font-size="17" font-weight="400" text-anchor="start">Browser File API</text>
-<rect x="316" y="72" width="260" height="96" rx="3" fill="#fff" stroke="#222" stroke-width="1.5"/>
-<text x="330" y="97" font-size="15" font-weight="600" text-anchor="start">02</text>
-<text x="359" y="97" font-size="18" font-weight="600" text-anchor="start">Order and range</text>
-<text x="330" y="124" font-size="17" font-weight="400" text-anchor="start">React · Visual Archive</text>
-<rect x="612" y="72" width="260" height="96" rx="3" fill="#fff" stroke="#222" stroke-width="1.5"/>
-<text x="626" y="97" font-size="15" font-weight="600" text-anchor="start">03</text>
-<text x="655" y="97" font-size="18" font-weight="600" text-anchor="start">Transitions and holds</text>
-<text x="626" y="124" font-size="17" font-weight="400" text-anchor="start">TypeScript motion</text>
-<rect x="20" y="224" width="260" height="96" rx="3" fill="#fff" stroke="#222" stroke-width="1.5"/>
-<text x="34" y="249" font-size="15" font-weight="600" text-anchor="start">04</text>
-<text x="63" y="249" font-size="18" font-weight="600" text-anchor="start">Preview sequence</text>
-<text x="34" y="276" font-size="17" font-weight="400" text-anchor="start">React · CSS transforms</text>
-<rect x="316" y="224" width="260" height="96" rx="3" fill="#fff" stroke="#222" stroke-width="1.5"/>
-<text x="330" y="249" font-size="15" font-weight="600" text-anchor="start">05</text>
-<text x="359" y="249" font-size="18" font-weight="600" text-anchor="start">Render and encode</text>
-<text x="330" y="276" font-size="17" font-weight="400" text-anchor="start">Canvas · WebCodecs</text>
-<text x="330" y="298" font-size="17" font-weight="400" text-anchor="start">mp4-muxer</text>
-<rect x="612" y="224" width="260" height="96" rx="3" fill="#fff" stroke="#222" stroke-width="1.5"/>
-<text x="626" y="249" font-size="15" font-weight="600" text-anchor="start">06</text>
-<text x="655" y="249" font-size="18" font-weight="600" text-anchor="start">Review pace and crop</text>
-<text x="626" y="276" font-size="17" font-weight="400" text-anchor="start">MP4 · browser video</text>
-<text x="20" y="346" font-size="15" font-weight="400" text-anchor="start">Read 01 → 06. Review the result, then revise framing, content or timing as needed.</text>
+<rect x="559" y="204" width="140" height="20" fill="#fff"/>
+<text x="629" y="219" font-size="14" font-weight="400" text-anchor="middle">Review and revise</text>
+<rect x="20" y="76" width="136" height="100" fill="#ececff" stroke="#9370db" stroke-width="1" filter="url(#shadow)"/>
+<text x="88" y="100" font-size="16" font-weight="500" text-anchor="middle">01 / Import</text>
+<text x="88" y="123" font-size="15" font-weight="400" text-anchor="middle">Images / clips</text>
+<text x="88" y="143" font-size="15" font-weight="400" text-anchor="middle">Browser File API</text>
+<rect x="176" y="76" width="136" height="100" fill="#ececff" stroke="#9370db" stroke-width="1" filter="url(#shadow)"/>
+<text x="244" y="100" font-size="16" font-weight="500" text-anchor="middle">02 / Arrange</text>
+<text x="244" y="123" font-size="15" font-weight="400" text-anchor="middle">Order + range</text>
+<text x="244" y="143" font-size="15" font-weight="400" text-anchor="middle">React</text>
+<text x="244" y="163" font-size="15" font-weight="400" text-anchor="middle">Visual Archive</text>
+<rect x="332" y="76" width="136" height="100" fill="#ececff" stroke="#9370db" stroke-width="1" filter="url(#shadow)"/>
+<text x="400" y="100" font-size="16" font-weight="500" text-anchor="middle">03 / Pace</text>
+<text x="400" y="123" font-size="15" font-weight="400" text-anchor="middle">Transitions</text>
+<text x="400" y="143" font-size="15" font-weight="400" text-anchor="middle">Readable holds</text>
+<text x="400" y="163" font-size="15" font-weight="400" text-anchor="middle">TypeScript</text>
+<rect x="488" y="76" width="136" height="100" fill="#ececff" stroke="#9370db" stroke-width="1" filter="url(#shadow)"/>
+<text x="556" y="100" font-size="16" font-weight="500" text-anchor="middle">04 / Preview</text>
+<text x="556" y="123" font-size="15" font-weight="400" text-anchor="middle">React</text>
+<text x="556" y="143" font-size="15" font-weight="400" text-anchor="middle">CSS transforms</text>
+<rect x="644" y="76" width="136" height="100" fill="#ececff" stroke="#9370db" stroke-width="1" filter="url(#shadow)"/>
+<text x="712" y="100" font-size="16" font-weight="500" text-anchor="middle">05 / Encode</text>
+<text x="712" y="123" font-size="15" font-weight="400" text-anchor="middle">Canvas</text>
+<text x="712" y="143" font-size="15" font-weight="400" text-anchor="middle">WebCodecs</text>
+<text x="712" y="163" font-size="15" font-weight="400" text-anchor="middle">mp4-muxer</text>
+<rect x="800" y="76" width="136" height="100" fill="#ececff" stroke="#9370db" stroke-width="1" filter="url(#shadow)"/>
+<text x="868" y="100" font-size="16" font-weight="500" text-anchor="middle">06 / Review</text>
+<text x="868" y="123" font-size="15" font-weight="400" text-anchor="middle">Pace + crop</text>
+<text x="868" y="143" font-size="15" font-weight="400" text-anchor="middle">MP4</text>
+<text x="868" y="163" font-size="15" font-weight="400" text-anchor="middle">Browser video</text>
 </g></svg>

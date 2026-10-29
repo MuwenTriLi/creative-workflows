@@ -48,7 +48,7 @@ Try one difficult interval as well as an easy shot. If the path moves onto the w
 ## Workflow diagram
 
 <p align="center">
-<img src="../../media/workflows/07-motion-tracking.svg" alt="Motion Tracking Studio workflow: six numbered steps with tools and a review loop" width="900">
+<img src="../../media/workflows/07-motion-tracking.svg?v=20261028-pipeline" alt="Motion Tracking Studio workflow: horizontal pipeline with tools and a review loop" width="900">
 </p>
 
 Codex assisted development. The runtime stages above use browser code; they do not call a generative AI model.

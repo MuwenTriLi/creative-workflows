@@ -63,7 +63,7 @@ For your own input, export a self-contained GLB with separate meshes and readabl
 ## Workflow diagram
 
 <p align="center">
-<img src="../../media/workflows/03-model-breakdown.svg" alt="Model Breakdown Studio workflow: six numbered steps with tools and a review loop" width="900">
+<img src="../../media/workflows/03-model-breakdown.svg?v=20261028-pipeline" alt="Model Breakdown Studio workflow: horizontal pipeline with tools and a review loop" width="900">
 </p>
 
 Codex assisted development. The runtime stages above use browser code; they do not call a generative AI model.
