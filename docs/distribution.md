@@ -43,8 +43,8 @@ The release includes `release-manifest.json` with its source commit and per-file
 | Model Breakdown | [Current browser source](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/03-model-breakdown/source) | 31 |
 | Animated Storyboard | [Static application](collage-motion/) / [Project](../projects/04-animated-storyboard/) | GitHub Pages source in this repository; Release v0.1.0 is a frozen distribution |
 | Spatial Media Presenter | [Source and local setup](../projects/05-spatial-media-presenter/source/) | 50 |
-| Kinetic Typography | [Source and local setup](../projects/06-kinetic-typography/source/) | 22 |
-| Motion Tracking | [Source and local setup](../projects/07-motion-tracking/source/) | 19 |
+| Motion Tracking | [Source and local setup](../projects/06-motion-tracking/source/) | 19 |
+| Kinetic Typography | [Source and local setup](../projects/07-kinetic-typography/source/) | 22 |
 
 Each React source package includes `source-manifest.json` with the hosted commit and SHA-256 hashes of copied browser files. The hosted deployments above were confirmed successful on October 26, 2026. The added Vite runners are local adaptations of the hosting entry point, with the browser implementation unchanged. These are recorded snapshots, not automatically synchronized mirrors.
 

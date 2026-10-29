@@ -23,8 +23,8 @@ The central design question is: **which parts of a creative job can a system com
 | [Model Breakdown](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/03-model-breakdown/) | Import, part selection and parameter-driven exploded presentation | What the model is explaining, focal part, framing and reveal order | Can the viewer identify the intended component and its relationship to the assembly? |
 | [Animated Storyboard](../projects/04-animated-storyboard/) | Load the selected sample board; calculate grid layout, cell timing and movement from parameters | Source media, order, crops, pacing and final composition | Are key subjects visible and does the encoded video match the reviewed sequence? |
 | [Spatial Media Presenter](../projects/05-spatial-media-presenter/) | Calculate card movement and timing from the selected sequence | Editorial order, entry/exit range and readable dwell | Can viewers inspect the intended content without clipping or rushed transitions? |
-| [Kinetic Typography Studio](../projects/06-kinetic-typography/) | Interface advertises local speech recognition and word timing; processing is not benchmarked here | Transcript corrections, phrase meaning, emphasis and final synchronization | Does the typography preserve the spoken meaning and remain readable against the audio? |
-| [Motion Tracking Studio](../projects/07-motion-tracking/) | Interface exposes target following and trajectory smoothing; accuracy remains unbenchmarked | Target identity, follow/static mode, correction and graphic hierarchy | Does the annotation stay on the intended target and communicate without obscuring it? |
+| [Motion Tracking Studio](../projects/06-motion-tracking/) | Interface exposes target following and trajectory smoothing; accuracy remains unbenchmarked | Target identity, follow/static mode, correction and graphic hierarchy | Does the annotation stay on the intended target and communicate without obscuring it? |
+| [Kinetic Typography Studio](../projects/07-kinetic-typography/) | Interface advertises local speech recognition and word timing; processing is not benchmarked here | Transcript corrections, phrase meaning, emphasis and final synchronization | Does the typography preserve the spoken meaning and remain readable against the audio? |
 
 ## Change one thing without restarting the job
 
@@ -37,8 +37,8 @@ Local correction is a product requirement, not the same as offering a global “
 | Model Breakdown | Focal part, explode amount or framing | Imported geometry and the explanation; revision rollback remains proposed |
 | Animated Storyboard | One selected cell's source or framing, or a chosen timing control | Imported media and accepted editorial choices; session persistence is absent |
 | Spatial Media Presenter | One card's framing or hold | Archive order and accepted sequence; revised 7.45 s and 25 s 4K exports pass their stated timing checks; readability remains to be studied |
-| Kinetic Typography Studio | Wrong word or mistimed span | Spoken meaning and neighboring timing; word-level recovery needs verification |
 | Motion Tracking Studio | Failed target interval | Subject identity and good intervals; regional repair remains unverified |
+| Kinetic Typography Studio | Wrong word or mistimed span | Spoken meaning and neighboring timing; word-level recovery needs verification |
 
 For a future agent, show the proposed change and its affected scope before applying changes to meaning, identity or structure. Recompute dependent output after a local edit, but avoid changing unrelated creative decisions. Keeping a parameter editable does not establish rollback or non-destructive revision history.
 

@@ -4,8 +4,8 @@
   "hosted_url": "https://flipframe-motion-lab.limuwen9.chatgpt.site",
   "hosted_version": 50,
   "hosted_source_commit": "99799d6bd4bdb5843de7eb6da497eb646f228567",
-  "reviewed_on": "2026-10-26",
-  "scope": "Byte-identical browser application, supporting modules and selected public demo media; new local-only Vite runner. This is not the hosted server/deployment configuration.",
+  "reviewed_on": "2026-10-29",
+  "scope": "Byte-identical browser application, supporting modules and selected public demo media; new local-only Vite runner. This is not the hosted server/deployment configuration. October 29 revision: project 06/07 numbering and current studio navigation updated.",
   "files": [
     {
       "path": "app/exporter.ts",
@@ -17,7 +17,7 @@
     },
     {
       "path": "app/page.tsx",
-      "sha256": "b2081fa4e1c2aa2d91b487d98ce7961fac2314ff4c453b0d95dd84b742b85fc1"
+      "sha256": "e728825e16f77968542c31f99e36826ec14c3471a0dd5d121cb5ced206279211"
     },
     {
       "path": "app/sample-project.test.mjs",

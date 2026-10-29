@@ -19,8 +19,8 @@ Open a **project** for its visual gallery and project details; browser projects 
 | **03 · [Model Breakdown Studio](projects/03-model-breakdown/)** | Multi-part GLB → exploded explanation and timed emphasis | [Demo](https://meshroom-breakdown-studio.limuwen9.chatgpt.site) |
 | **04 · [Animated Storyboard](projects/04-animated-storyboard/)** | Separate clips → one editable moving review board | [Demo](https://muwentrili.github.io/creative-workflows/collage-motion/) |
 | **05 · [Spatial Media Presenter](projects/05-spatial-media-presenter/)** | Images and clips → spatial sequence with readable holds | [Demo](https://flipframe-motion-lab.limuwen9.chatgpt.site) |
-| **06 · [Kinetic Typography Studio](projects/06-kinetic-typography/)** | English speech → corrected words, timing and animated type | [Demo](https://vox-one.limuwen9.chatgpt.site) |
-| **07 · [Motion Tracking Studio](projects/07-motion-tracking/)** | Video and selected target → motion annotation | [Demo](https://muwentrili.github.io/creative-workflows/motion-tracking/) |
+| **06 · [Motion Tracking Studio](projects/06-motion-tracking/)** | Selected target → customizable HUD and matched MP4 | [Demo](https://muwentrili.github.io/creative-workflows/motion-tracking/) |
+| **07 · [Kinetic Typography Studio](projects/07-kinetic-typography/)** | English speech → corrected words, timing and animated type | [Demo](https://muwentrili.github.io/creative-workflows/kinetic-typography/) |
 
 ## 01 / Clockwork
 
@@ -88,30 +88,27 @@ Arrange images and clips into a spatial presentation with editable order, framin
 
 [Project](projects/05-spatial-media-presenter/)
 
-## 06 / Kinetic Typography Studio
+## 06 / Motion Tracking Studio
 
 <p align="center">
-<a href="https://vox-one.limuwen9.chatgpt.site"><img src="projects/06-kinetic-typography/media/ui-demo.webp" alt="Actual Kinetic Typography Studio interface in motion: source panel, transcript, timed typography and style controls; authored silent demo" width="100.0000%"></a>
+<a href="projects/06-motion-tracking/"><img src="projects/06-motion-tracking/evidence/hud-studio/hud-comparison.webp" alt="Seven synchronized source and tracked-HUD examples" width="90%"></a>
+</p>
+
+Select a video target, customize three HUD visual languages, and review the same composition in the browser and MP4 export.
+
+[Project](projects/06-motion-tracking/) · [Demo](https://muwentrili.github.io/creative-workflows/motion-tracking/)
+
+## 07 / Kinetic Typography Studio
+
+<p align="center">
+<a href="https://muwentrili.github.io/creative-workflows/kinetic-typography/"><img src="projects/07-kinetic-typography/media/ui-demo.webp" alt="Actual Kinetic Typography Studio interface in motion: source panel, transcript, timed typography and style controls; authored silent demo" width="100.0000%"></a>
 </p>
 
 <p><b>Editable words, timing and visual emphasis</b> — Speech-led typography · Transcript correction · Preview before delivery</p>
 
 Turn English speech into timed typography with editable words, rhythm and emphasis. The opening example is silent; speech recognition starts after import.
 
-[Project](projects/06-kinetic-typography/)
-
-## 07 / Motion Tracking Studio
-
-<p align="center">
-<a href="https://muwentrili.github.io/creative-workflows/motion-tracking/"><img src="media/trace-01-editor.png" alt="Motion Tracking Studio: an empty video import workspace with target selection, position anchor and HUD controls" width="100.0000%"></a>
-</p>
-
-<p><b>Make a subject easier to follow</b> — Your video · Target 01 or a fixed position anchor · Editable white HUD</p>
-
-Add editable graphic overlays to a selected subject or fixed position in uploaded video. The project records current tracking and export limits.
-
-[Project](projects/07-motion-tracking/)
-
+[Project](projects/07-kinetic-typography/)
 
 ## Repository structure
 
@@ -124,8 +121,8 @@ creative-workflows/
 │   ├── 03-model-breakdown/          README, source/, example models and evidence
 │   ├── 04-animated-storyboard/      README and evidence; static app in docs/
 │   ├── 05-spatial-media-presenter/  README, source/ and evidence
-│   ├── 06-kinetic-typography/       README, source/ and evidence
-│   └── 07-motion-tracking/          README, source/ and export evidence
+│   ├── 07-kinetic-typography/       README, source/ and evidence
+│   └── 06-motion-tracking/          README, source/ and export evidence
 ├── docs/
 │   ├── collage-motion/             Storyboard source and GitHub Pages app
 │   ├── films/                      Final film viewer

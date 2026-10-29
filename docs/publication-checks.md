@@ -11,8 +11,8 @@ This revision changes the repository's project structure and publishes browser-s
 | Model Breakdown `studio/` | Independent pinned dependency installation, production build, copied-file hashes, model-integrity and explode-layout tests | Build passed; 16 hashes matched; 17 tests passed |
 | Animated Storyboard | Existing `tests/visibility.cjs` checks | Passed inclusion/exclusion, ordering, empty boards, motion placement and export-source filtering |
 | Spatial Media Presenter `source/` | Independent pinned dependency installation, production build, copied-file hashes and existing sample-migration check | Build passed; 20 hashes matched; 7 migration assertions passed |
-| Kinetic Typography `source/` | Independent pinned dependency installation, production build and copied-file hashes | Build passed; 5 hashes matched |
 | Motion Tracking `source/` | Independent pinned dependency installation, production build and copied-file hashes | Build passed; 2 hashes matched |
+| Kinetic Typography `source/` | Independent pinned dependency installation, production build and copied-file hashes | Build passed; 5 hashes matched |
 
 Installations used the public npm registry with dependency install scripts disabled. Model/typography bundles produced size warnings; splitting and download/performance budgets remain engineering work. No speech-model download, paid model inference, cloud provisioning or new site deployment was performed for these checks.
 
@@ -36,7 +36,7 @@ This is a startup/control smoke check of the published source packages, not a fu
 
 ## Review boundary
 
-The older 4K export results remain linked from each project rather than being silently re-dated. At the initial restructuring check, Motion Tracking's earlier 4 s export still failed. The subsequent [export repair](../projects/07-motion-tracking/docs/export-check.md) records the new bounded result separately. No human usability study, measured speed improvement, broad browser certification or engineering-team adoption is claimed.
+The older 4K export results remain linked from each project rather than being silently re-dated. At the initial restructuring check, Motion Tracking's earlier 4 s export still failed. The subsequent [export repair](../projects/06-motion-tracking/docs/export-check.md) records the new bounded result separately. No human usability study, measured speed improvement, broad browser certification or engineering-team adoption is claimed.
 
 The new source packages make inspection and local reproduction possible. The next product evidence remains one complete input → correction → accepted output recording, followed by an unfamiliar creator performing the same bounded task.
 
@@ -51,7 +51,7 @@ The local repository review checked 860 internal file and section links across t
 - A [five-minute review](interview-guide.md) links each project's task, working entrance and inspectable evidence in the established 01–07 order.
 - The [Clockwork control study](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/01-clockwork/docs/control-study.md) records a real single-asset revision in Blender 5.2, its measured 0.75 speed ratio and a 5.0 compatibility failure. It is not a client study or a full-library revalidation.
 - Motion Tracking Studio **v19**, source `526ef1b74eb1a81031544887bcdfa65e0e46f545`, was published successfully to its existing public URL. The seven files in its updated source manifest match that source commit. Six frame-plan tests and the local production build pass.
-- Actual browser exports passed the bounded 4K silent and FHD/AAC cases in the [input/output record](../projects/07-motion-tracking/docs/export-check.md). Browser runtime tests used the local Vite build of the same client source; successful hosted deployment is recorded separately, not described as a second physical-computer test.
+- Actual browser exports passed the bounded 4K silent and FHD/AAC cases in the [input/output record](../projects/06-motion-tracking/docs/export-check.md). Browser runtime tests used the local Vite build of the same client source; successful hosted deployment is recorded separately, not described as a second physical-computer test.
 
 Private source models, company Skills, credentials and Blender library files were not added. OpenArt-role alignment uses the supplied JD; no recruiter endorsement, user-study result, time-saving metric or new autonomous-agent capability is claimed.
 

@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "title": "Motion Tracking Studio",
+  "hosted_url": "https://trace-01-motion-tracker.limuwen9.chatgpt.site",
+  "hosted_version": 19,
+  "hosted_source_commit": "526ef1b74eb1a81031544887bcdfa65e0e46f545",
+  "reviewed_on": "2026-10-29",
+  "scope": "Repository revision derived from hosted client v19: seven-shot synchronized demo, editable HUD presets, shared 24 Hz marker path and Canvas renderer for preview/export, 24/30/60 fps delivery, loopback-only development export mirror, and project numbering/navigation refresh. Original hosted metadata retained as provenance.",
+  "files": [
+    {
+      "path": "app/page.tsx",
+      "sha256": "3881d854e64d964a8d7c6cd0f5bef7aabd81d2f998ce8aaba78c649129c1f153"
+    },
+    {
+      "path": "app/globals.css",
+      "sha256": "e43cd9a7743d69118f67c473cdf22afd42a0a5a3a75b8c8a68e4c1d5d364a877"
+    },
+    {
+      "path": "app/export-mp4.mjs",
+      "sha256": "babb59db1a584bb1125c2715d1c5b6a704ca4131a08bbef009d184b0f688a00c"
+    },
+    {
+      "path": "app/export-timing.mjs",
+      "sha256": "d566a0669a55a56b757acbc2b0afc1c17f21f0ba4ea8bc8b5198a14903d9a768"
+    },
+    {
+      "path": "app/vendor/mp4-muxer.min.mjs",
+      "sha256": "8c6354b4b3956be0003ad030108c89e08dbcb5f1fa9b093cc4d28204ccf091be"
+    },
+    {
+      "path": "app/vendor/LICENSE.txt",
+      "sha256": "e0972bcb319c831a789483e46604ca0a79bda75a4a5adb1b837a348d5b9837fc"
+    },
+    {
+      "path": "tests/export-timing.test.mjs",
+      "sha256": "f0e7728899cce3b2457da4e3ab2ce633df1270f8b86e55e2809b358b5838fb98"
+    },
+    {
+      "path": "app/bright-marker.mjs",
+      "sha256": "93ac41be837e40f0a94a4b3749b3cf9ea4a87f0b9090bb4098252c7f79972468"
+    },
+    {
+      "path": "app/bright-marker.d.mts",
+      "sha256": "d5738624e11ac10439e930384d3363ef4710b561c3378834675da8e1aa3f6b69"
+    },
+    {
+      "path": "app/export-mp4.d.mts",
+      "sha256": "e19f6fa1b23bfc6a4075efe81afbceaaa31a3e733bf7f9058520caf2f40dc264"
+    },
+    {
+      "path": "tests/bright-marker.test.mjs",
+      "sha256": "99bb9b7b56fdf110d3796945b2dd9e92ca19507bb26df7cebbc269f1fd7c9b2a"
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "b0fc66d3cb26d96ffe1512cd7da50b575f78fdf2669495a7ded3ff74041e3f74"
+    },
+    {
+      "path": "public/demo/cube-leaps.mp4",
+      "sha256": "b48d156421719ccc72530af8a5d4aafa09a360f82a2cc89bdc8a47b6877e22bb"
+    },
+    {
+      "path": "public/demo/ravine-flight.mp4",
+      "sha256": "f518fc3f08115490fca81359c4116be5130d89e0fd2e89e64f72579af6a68cb9"
+    },
+    {
+      "path": "public/demo/buried-machine.mp4",
+      "sha256": "600ffdaa6e8d5da3c857e230873e692d8bce6a356b9d5797a3ed2cb18d272aae"
+    },
+    {
+      "path": "app/marker-path.mjs",
+      "sha256": "2fc8302dd5e57b036943eeed3eda42a99724b58a45b1ee73f634b5b88ac0e46a"
+    },
+    {
+      "path": "app/marker-path.d.mts",
+      "sha256": "9afa76362e8ebc5f7101231bcd86494788e4204080b30faa87b3884660841b60"
+    },
+    {
+      "path": "app/peripheral-hud.ts",
+      "sha256": "03ec247afba797a24c9d9241e354651f19c23bd0012f2ee33c5146e369360c8f"
+    },
+    {
+      "path": "tests/marker-path.test.mjs",
+      "sha256": "e76db33d80865e52d5d63ea81878fe7d73b914683b96d06075f143748ef8e1bf"
+    },
+    {
+      "path": "public/compare/index.html",
+      "sha256": "8c92132878ca4ffaada328b15f9d40061402bad1fa7016b629ca49b825606bd1"
+    },
+    {
+      "path": "public/demo/aerial-landscape.mp4",
+      "sha256": "094c9145510cecefe55fcab4f624efe2e0e6adf117336f26195de6bc4ebbc87f"
+    },
+    {
+      "path": "public/demo/hud-comparison-poster.jpg",
+      "sha256": "00311cc0a1e8b387c0197cb71e712e4a67bfde2947967a97abb61b2b34aed69e"
+    },
+    {
+      "path": "public/demo/hud-comparison.mp4",
+      "sha256": "6489583aa34aaea5fdb5cd753055a6cda15206160f7294ac77b59cb5a156df83"
+    },
+    {
+      "path": "public/demo/hud-studio-4k.mp4",
+      "sha256": "ff5c1eafc134785eafcffbf6257f3e4c7a489d4406a21c69ea1c7a7ad351f41c"
+    },
+    {
+      "path": "public/demo/rotating-tunnel.mp4",
+      "sha256": "e95ba6fde337d5f2cb76510e2513f9ec115b4a55d24cbcb4e0f21f07a257778f"
+    },
+    {
+      "path": "public/demo/ruins-focus.mp4",
+      "sha256": "d0c3505a79788bdd0e03f5065487012b53f77d62c807a745ea3fcf249e447886"
+    },
+    {
+      "path": "public/demo/wireframe-chamber.mp4",
+      "sha256": "54a520462bff2a6501871cf96a24c511bf191c7fde5b6f59ac1bd79c19275d68"
+    }
+  ],
+  "published_url": "https://muwentrili.github.io/creative-workflows/motion-tracking/"
+}

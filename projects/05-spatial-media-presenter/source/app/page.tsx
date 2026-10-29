@@ -2589,7 +2589,7 @@ export default function Home() {
         </div>
       </header>
 
-<nav className="family-nav" aria-label="Creative workflow studios"><span>MUWEN LI / STUDIOS</span><a href="https://meshroom-breakdown-studio.limuwen9.chatgpt.site"><b>03</b>Model Breakdown</a><a href="https://muwentrili.github.io/creative-workflows/collage-motion/"><b>04</b>Animated Storyboard</a><a href="https://flipframe-motion-lab.limuwen9.chatgpt.site" aria-current="page"><b>05</b>Spatial Media Presenter</a><a href="https://vox-one.limuwen9.chatgpt.site"><b>06</b>Kinetic Typography Studio</a><a href="https://trace-01-motion-tracker.limuwen9.chatgpt.site"><b>07</b>Motion Tracking Studio</a><a className="family-index" href="https://github.com/MuwenTriLi/creative-workflows">All projects ↗</a></nav>
+<nav className="family-nav" aria-label="Creative workflow studios"><span>MUWEN LI / STUDIOS</span><a href="https://meshroom-breakdown-studio.limuwen9.chatgpt.site"><b>03</b>Model Breakdown</a><a href="https://muwentrili.github.io/creative-workflows/collage-motion/"><b>04</b>Animated Storyboard</a><a href="https://flipframe-motion-lab.limuwen9.chatgpt.site" aria-current="page"><b>05</b>Spatial Media Presenter</a><a href="https://muwentrili.github.io/creative-workflows/motion-tracking/"><b>06</b>Motion Tracking Studio</a><a href="https://muwentrili.github.io/creative-workflows/kinetic-typography/"><b>07</b>Kinetic Typography Studio</a><a className="family-index" href="https://github.com/MuwenTriLi/creative-workflows">All projects ↗</a></nav>
       <div className="studio-layout" id="studio">
         <aside className="asset-panel panel">
           <div className="studio-import" onDragOver={(event) => event.preventDefault()} onDrop={onFileDrop}>

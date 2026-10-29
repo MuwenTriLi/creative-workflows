@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="240" viewBox="0 0 1000 240" role="img" aria-labelledby="title desc">
+<title id="title">Motion Tracking Studio workflow</title><desc id="desc">Import video, explicitly choose a target or fixed anchor, prepare its path, style a HUD, review and export using the same renderer. Codex assisted development; no generative model runs in this pipeline.</desc>
+<defs><marker id="a" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#333"/></marker></defs><rect width="1000" height="240" fill="white"/><g font-family="Arial,Helvetica,sans-serif" fill="#111"><text x="20" y="27" font-size="14">AI-assisted development · Codex</text><text x="980" y="27" text-anchor="end" font-size="14">React · TypeScript · Canvas 2D</text><path d="M20 42H980" stroke="#ddd"/>
+<rect x="20" y="77" width="150" height="94" fill="#ececff" stroke="#9370db"/>
+<text x="95" y="102" font-size="15" text-anchor="middle">01 / Import</text>
+<text x="95" y="125" font-size="14" text-anchor="middle">Video · File API</text>
+<text x="95" y="148" font-size="14" text-anchor="middle">React controls</text>
+<path d="M170 124h11" fill="none" stroke="#333" marker-end="url(#a)"/>
+<rect x="182" y="77" width="150" height="94" fill="#ececff" stroke="#9370db"/>
+<text x="257" y="102" font-size="15" text-anchor="middle">02 / Select</text>
+<text x="257" y="125" font-size="14" text-anchor="middle">Target or fixed pin</text>
+<text x="257" y="148" font-size="14" text-anchor="middle">Canvas · TypeScript</text>
+<path d="M332 124h11" fill="none" stroke="#333" marker-end="url(#a)"/>
+<rect x="344" y="77" width="150" height="94" fill="#ececff" stroke="#9370db"/>
+<text x="419" y="102" font-size="15" text-anchor="middle">03 / Track</text>
+<text x="419" y="125" font-size="14" text-anchor="middle">24 Hz marker path</text>
+<text x="419" y="148" font-size="14" text-anchor="middle">Template fallback</text>
+<path d="M494 124h11" fill="none" stroke="#333" marker-end="url(#a)"/>
+<rect x="506" y="77" width="150" height="94" fill="#ececff" stroke="#9370db"/>
+<text x="581" y="102" font-size="15" text-anchor="middle">04 / Art-direct</text>
+<text x="581" y="125" font-size="14" text-anchor="middle">3 HUD presets</text>
+<text x="581" y="148" font-size="14" text-anchor="middle">Canvas · React</text>
+<path d="M656 124h11" fill="none" stroke="#333" marker-end="url(#a)"/>
+<rect x="668" y="77" width="150" height="94" fill="#ececff" stroke="#9370db"/>
+<text x="743" y="102" font-size="15" text-anchor="middle">05 / Review</text>
+<text x="743" y="125" font-size="14" text-anchor="middle">Shared path + HUD</text>
+<text x="743" y="148" font-size="14" text-anchor="middle">Playback · seeking</text>
+<path d="M818 124h11" fill="none" stroke="#333" marker-end="url(#a)"/>
+<rect x="830" y="77" width="150" height="94" fill="#ececff" stroke="#9370db"/>
+<text x="905" y="102" font-size="15" text-anchor="middle">06 / Export</text>
+<text x="905" y="125" font-size="14" text-anchor="middle">WebCodecs</text>
+<text x="905" y="148" font-size="14" text-anchor="middle">H.264 · mp4-muxer</text>
+<path d="M905 171v41H580v-35" fill="none" stroke="#333" marker-end="url(#a)"/><rect x="660" y="202" width="170" height="20" fill="white"/><text x="745" y="216" text-anchor="middle" font-size="14">Review and refine</text></g></svg>

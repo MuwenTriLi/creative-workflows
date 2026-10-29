@@ -10,8 +10,8 @@ The collection moves from production work to tools built around specific creativ
 | **03 Model Breakdown** | A dense assembly becoming an explanation through separation and local emphasis | [Open studio](https://meshroom-breakdown-studio.limuwen9.chatgpt.site): compare Assembled / Exploded view and select a part · [Source](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/03-model-breakdown/source) |
 | **04 Animated Storyboard** | Shot comparison, stable source identity and reversible local edits | [Open board](https://muwentrili.github.io/creative-workflows/collage-motion/): preview, reorder or hide one source · [Implementation/test map](animated-storyboard-handoff.md) |
 | **05 Spatial Media Presenter** | Editable sequence order and readable holds | [Open presenter](https://flipframe-motion-lab.limuwen9.chatgpt.site): pause Orbital Shift and change pacing · [Source](../projects/05-spatial-media-presenter/source/) |
-| **06 Kinetic Typography** | Creator authority over recognized words and timing | [Open studio](https://vox-one.limuwen9.chatgpt.site): inspect the silent sample; use your own English speech for transcription · [Evidence](../projects/06-kinetic-typography/docs/validation.md) |
-| **07 Motion Tracking** | Explicit target choice, fixed anchors and delivery acceptance | [Open prototype](https://trace-01-motion-tracker.limuwen9.chatgpt.site): import footage and choose an anchor · [Export input/output check](../projects/07-motion-tracking/docs/export-check.md) |
+| **06 Motion Tracking** | Explicit target choice, fixed anchors and delivery acceptance | [Open prototype](https://muwentrili.github.io/creative-workflows/motion-tracking/): import footage and choose an anchor · [Export input/output check](../projects/06-motion-tracking/docs/export-check.md) |
+| **07 Kinetic Typography** | Creator authority over recognized words and timing | [Open studio](https://muwentrili.github.io/creative-workflows/kinetic-typography/): inspect the silent sample; use your own English speech for transcription · [Evidence](../projects/07-kinetic-typography/docs/validation.md) |
 
 ## A deeper conversation
 

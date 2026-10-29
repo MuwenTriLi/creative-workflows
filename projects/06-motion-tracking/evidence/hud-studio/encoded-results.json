@@ -1,0 +1,92 @@
+[
+  {
+    "file": "cube-leaps-app.mp4",
+    "sha256": "89fad89b32da282fb608eca1f970a5526eee9056ccc22d660b44c7c55ba9e56c",
+    "bytes": 11288951,
+    "width": 3840,
+    "height": 2160,
+    "fps": "24/1",
+    "frames": 108,
+    "duration": 4.5
+  },
+  {
+    "file": "ravine-flight-app.mp4",
+    "sha256": "6efdb0da2bf86affe4bff20aa490e104f0f6901b649a2c18c3499ade78eb9bdd",
+    "bytes": 14625975,
+    "width": 3840,
+    "height": 2160,
+    "fps": "24/1",
+    "frames": 108,
+    "duration": 4.5
+  },
+  {
+    "file": "ruins-focus-app.mp4",
+    "sha256": "9824f538777bcaea9b1c3f69230f1557b5e5e653a68b3851cf88a26f65229654",
+    "bytes": 15308242,
+    "width": 3840,
+    "height": 2160,
+    "fps": "24/1",
+    "frames": 108,
+    "duration": 4.5
+  },
+  {
+    "file": "aerial-landscape-app.mp4",
+    "sha256": "08097af14749120d739b453029e47f07b50581a2fef48f87b37e2ac2637313f0",
+    "bytes": 20172525,
+    "width": 3840,
+    "height": 2160,
+    "fps": "24/1",
+    "frames": 108,
+    "duration": 4.5
+  },
+  {
+    "file": "buried-machine-app.mp4",
+    "sha256": "e127ee17bdc750db17543a949a9938147e93971a9b228e9ed74409f6221a1944",
+    "bytes": 27917557,
+    "width": 3840,
+    "height": 2160,
+    "fps": "24/1",
+    "frames": 120,
+    "duration": 5.0
+  },
+  {
+    "file": "rotating-tunnel-app.mp4",
+    "sha256": "2249e627f3a8e48bb8a1ee3f2e650f9810b0c24c0dce6e48dc863a9b668ab54b",
+    "bytes": 23618620,
+    "width": 3840,
+    "height": 2160,
+    "fps": "24/1",
+    "frames": 96,
+    "duration": 4.0
+  },
+  {
+    "file": "wireframe-chamber-app.mp4",
+    "sha256": "1932d40cc1306ccd2769b483e2492ecaf38bf37c37f3378212f0ebf0b0d068b2",
+    "bytes": 26189760,
+    "width": 3840,
+    "height": 2160,
+    "fps": "24/1",
+    "frames": 90,
+    "duration": 3.75
+  },
+  {
+    "file": "hud-studio-4k.mp4",
+    "sha256": "ff5c1eafc134785eafcffbf6257f3e4c7a489d4406a21c69ea1c7a7ad351f41c",
+    "bytes": 69605762,
+    "width": 3840,
+    "height": 2160,
+    "fps": "24/1",
+    "frames": 738,
+    "duration": 30.75
+  },
+  {
+    "file": "hud-comparison.mp4",
+    "sha256": "6489583aa34aaea5fdb5cd753055a6cda15206160f7294ac77b59cb5a156df83",
+    "bytes": 45035357,
+    "width": 3840,
+    "height": 1080,
+    "fps": "24/1",
+    "frames": 738,
+    "duration": 30.75
+  }
+]
