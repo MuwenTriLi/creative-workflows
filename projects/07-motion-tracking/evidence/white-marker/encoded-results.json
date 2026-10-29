@@ -1,0 +1,62 @@
+[
+  {
+    "file": "white-marker-input.mp4",
+    "bytes": 5466879,
+    "sha256": "dcf1ee97f942195a60df1a9f81a709b16eaa0be71af2d1218b88438137aa1467",
+    "width": 1920,
+    "height": 1080,
+    "fps": "24/1",
+    "decoded_frames": "336",
+    "duration": "14.000000"
+  },
+  {
+    "file": "white-marker-tracked.mp4",
+    "bytes": 5934738,
+    "sha256": "b29b7c8d33dc853fa09de0164846f7705f4a249ec02a1dd1e60f6debda09d365",
+    "width": 1920,
+    "height": 1080,
+    "fps": "24/1",
+    "decoded_frames": "336",
+    "duration": "14.000000"
+  },
+  {
+    "file": "white-marker-tracked-4k.mp4",
+    "bytes": 20899696,
+    "sha256": "d69634d90999a5ad433c5f606d6e6bea69908d19a5d999a7cb48f2f2d7f351ee",
+    "width": 3840,
+    "height": 2160,
+    "fps": "24/1",
+    "decoded_frames": "336",
+    "duration": "14.000000"
+  },
+  {
+    "file": "cube-tracked-4k.mp4",
+    "bytes": 8062295,
+    "sha256": "ceb92afbd990d008eaf14e82c963d7c051ad9d7bfd9071efee3a2094baf675dc",
+    "width": 3840,
+    "height": 2160,
+    "fps": "60/1",
+    "decoded_frames": "270",
+    "duration": "4.500000"
+  },
+  {
+    "file": "ravine-tracked-4k.mp4",
+    "bytes": 14880827,
+    "sha256": "81d413f724ed6ef1605dd7c6201d1aabe67a128ac4619860e2c0ec3d9df57ea4",
+    "width": 3840,
+    "height": 2160,
+    "fps": "60/1",
+    "decoded_frames": "270",
+    "duration": "4.500000"
+  },
+  {
+    "file": "machine-tracked-4k.mp4",
+    "bytes": 34462492,
+    "sha256": "c7c6c0a8ba8a9da4d754e296514932097247d02967eb611c6f58ff9da6d22a45",
+    "width": 3840,
+    "height": 2160,
+    "fps": "60/1",
+    "decoded_frames": "300",
+    "duration": "5.000000"
+  }
+]

@@ -3,6 +3,7 @@
 import { ChangeEvent, MouseEvent, useCallback, useEffect, useRef, useState } from "react";
 
 import { encodeTrackingMp4, seekExportFrame } from "./export-mp4.mjs";
+import { seedBrightMarker, stepBrightMarker } from "./bright-marker.mjs";
 
 type Point = { x: number; y: number };
 type TrackerSample = {
@@ -1049,6 +1050,8 @@ export default function Home() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const templateRef = useRef<TrackerSample[]>([]);
+  const brightMarkerRef = useRef<ReturnType<typeof seedBrightMarker>>(null);
+  const brightMarkerSeedRef = useRef<ReturnType<typeof seedBrightMarker>>(null);
   const templateStatsRef = useRef<TrackerStats>({ meanR: 0, meanG: 0, meanB: 0, meanY: 0 });
   const seedTemplateRef = useRef<TrackerSample[]>([]);
   const seedTemplateStatsRef = useRef<TrackerStats>({ meanR: 0, meanG: 0, meanB: 0, meanY: 0 });
@@ -1126,6 +1129,8 @@ export default function Home() {
   const [exportSize, setExportSize] = useState("3840x2160");
   const [exportQuality, setExportQuality] = useState<ExportQuality>("maximum");
   const [isExporting, setIsExporting] = useState(false);
+  const [exportedVideo, setExportedVideo] = useState<{ url: string; name: string } | null>(null);
+  useEffect(() => () => { if (exportedVideo) URL.revokeObjectURL(exportedVideo.url); }, [exportedVideo]);
   const exportingRef = useRef(false);
   const cancelExportRef = useRef(false);
   const [includeSourceAudio, setIncludeSourceAudio] = useState(false);
@@ -1253,6 +1258,18 @@ export default function Home() {
         const videoDelta = Math.abs(video.currentTime - lastVideoTimeRef.current);
         const dtFrames = clamp(videoDelta * 30, 0.5, 3);
         lastVideoTimeRef.current = video.currentTime;
+        if (brightMarkerRef.current) {
+          const marker = stepBrightMarker(frame, brightMarkerRef.current, videoDelta * 30);
+          brightMarkerRef.current = marker;
+          rawPositionRef.current = { ...marker.point };
+          positionRef.current = { ...marker.point };
+          lastTrackedPointRef.current = { ...marker.point };
+          lostFramesRef.current = marker.misses;
+          confidenceRef.current = marker.confidence;
+          trailRef.current = [...trailRef.current, marker.point].slice(-88);
+          setPosition(marker.point);
+          setConfidence(marker.confidence);
+        } else {
         const previousRaw = rawPositionRef.current;
         const predicted = {
           x: clamp(previousRaw.x + velocityRef.current.x * dtFrames, TRACKER_MARGIN, analysisWidth - TRACKER_MARGIN),
@@ -1401,6 +1418,7 @@ export default function Home() {
         trailRef.current = [...trailRef.current, smoothedPoint].slice(-88);
         setPosition(smoothedPoint);
         setConfidence(nextConfidence);
+        }
       }
 
       if (selectedRef.current) {
@@ -1414,7 +1432,7 @@ export default function Home() {
         let hudVelocity = hudVelocityRef.current;
         const hudDistance = Math.hypot(target.x - hudPoint.x, target.y - hudPoint.y);
 
-        if (hudDistance > 150 || !Number.isFinite(hudPoint.x + hudPoint.y)) {
+        if (brightMarkerRef.current || hudDistance > 150 || !Number.isFinite(hudPoint.x + hudPoint.y)) {
           hudPoint = { ...target };
           hudVelocity = { x: 0, y: 0 };
         } else {
@@ -1544,6 +1562,7 @@ export default function Home() {
   const importVideo = (file: File) => {
     if (isExporting) return;
     if (!file.type.startsWith("video/")) { setToast("Choose a video file (MP4, MOV or WebM)."); return; }
+    setExportedVideo(null);
     videoRef.current?.pause();
     setIsPlaying(false);
     if (objectUrlRef.current) URL.revokeObjectURL(objectUrlRef.current);
@@ -1576,6 +1595,8 @@ export default function Home() {
     hudVelocityRef.current = { x: 0, y: 0 };
     lastHudRenderRef.current = 0;
     templateRef.current = [];
+    brightMarkerRef.current = null;
+    brightMarkerSeedRef.current = null;
     seedTemplateRef.current = [];
     velocityRef.current = { x: 0, y: 0 };
     lostFramesRef.current = 0;
@@ -1586,6 +1607,18 @@ export default function Home() {
       video.src = url;
       video.load();
     }
+  };
+
+  const loadExample = async (name: string) => {
+    if (isExporting) return;
+    try {
+      const response = await fetch(new URL(`./demo/${name}.mp4`, document.baseURI));
+      if (!response.ok) throw new Error("Example video is unavailable.");
+      importVideo(new File([await response.blob()], `${name}.mp4`, { type: "video/mp4" }));
+      setLocatorScale(0.7);
+      setPanelScale(1);
+      setHudTitle("SIGNAL / TARGET 01");
+    } catch (error) { setToast(error instanceof Error ? error.message : "Could not load example."); }
   };
 
   const handleFile = (event: ChangeEvent<HTMLInputElement>) => {
@@ -1618,7 +1651,7 @@ export default function Home() {
     setSourceAspect(detectedAspect);
     setOutputAspect(detectedAspect);
     setAnalysisSize(nextAnalysisSize);
-    setExportSize(EXPORT_SIZES[detectedAspect][0].value);
+    setExportSize(EXPORT_SIZES[detectedAspect][Math.max(video.videoWidth, video.videoHeight) <= 1920 ? 2 : 0].value);
     seedPointRef.current = { ...centerPoint };
     lastTrackedPointRef.current = { ...centerPoint };
     staticPointRef.current = { ...defaultStaticPoint };
@@ -1712,6 +1745,10 @@ export default function Home() {
     );
     const frame = ctx.getImageData(0, 0, canvas.width, canvas.height);
     const template = buildTemplate(frame, point);
+    const marker = seedBrightMarker(frame, point);
+    brightMarkerRef.current = marker;
+    brightMarkerSeedRef.current = marker ? structuredClone(marker) : null;
+    if (marker) { point.x = marker.point.x; point.y = marker.point.y; }
     templateRef.current = cloneTrackerSamples(template.samples);
     templateStatsRef.current = { ...template.stats };
     seedTemplateRef.current = cloneTrackerSamples(template.samples);
@@ -1757,6 +1794,16 @@ export default function Home() {
     const video = videoRef.current;
     if (!videoReady || !video) return;
     if (video.paused) {
+      if (video.ended && brightMarkerSeedRef.current) {
+        brightMarkerRef.current = structuredClone(brightMarkerSeedRef.current);
+        positionRef.current = { ...brightMarkerRef.current.point };
+        rawPositionRef.current = { ...positionRef.current };
+        hudPositionRef.current = { ...positionRef.current };
+        trailRef.current = [];
+        hudTrailRef.current = [];
+        lastVideoTimeRef.current = 0;
+        lastAnalysisRef.current = 0;
+      }
       await video.play();
       setIsPlaying(true);
     } else {
@@ -1789,6 +1836,13 @@ export default function Home() {
   const seek = (value: number) => {
     const video = videoRef.current;
     if (!videoReady || !video) return;
+    if (value <= selectionTimeRef.current + 0.001 && brightMarkerSeedRef.current) {
+      brightMarkerRef.current = structuredClone(brightMarkerSeedRef.current);
+      const seed = brightMarkerRef.current.point;
+      positionRef.current = { ...seed };
+      hudPositionRef.current = { ...seed };
+      setPosition(seed);
+    }
     video.currentTime = value;
     setCurrentTime(value);
     trailRef.current = [];
@@ -1857,6 +1911,8 @@ export default function Home() {
       selectedRef.current = false;
       trackingRef.current = false;
       templateRef.current = [];
+    brightMarkerRef.current = null;
+    brightMarkerSeedRef.current = null;
       seedTemplateRef.current = [];
       trailRef.current = [];
       hudTrailRef.current = [];
@@ -1894,6 +1950,8 @@ export default function Home() {
     trackingRef.current = false;
     selectionTimeRef.current = 0;
     templateRef.current = [];
+    brightMarkerRef.current = null;
+    brightMarkerSeedRef.current = null;
     seedTemplateRef.current = [];
     trailRef.current = [];
     velocityRef.current = { x: 0, y: 0 };
@@ -1924,6 +1982,7 @@ export default function Home() {
     const exportSeedPoint = {
       ...(placementModeRef.current === "pin" ? staticPointRef.current : seedPointRef.current),
     };
+    brightMarkerRef.current = brightMarkerSeedRef.current ? structuredClone(brightMarkerSeedRef.current) : null;
     templateRef.current = cloneTrackerSamples(seedTemplateRef.current);
     templateStatsRef.current = { ...seedTemplateStatsRef.current };
     positionRef.current = exportSeedPoint;
@@ -2044,11 +2103,7 @@ export default function Home() {
         },
       });
       const url = URL.createObjectURL(blob);
-      const anchor = document.createElement("a");
-      anchor.href = url;
-      anchor.download = `motion-tracking_${width}x${height}_60fps.mp4`;
-      anchor.click();
-      window.setTimeout(() => URL.revokeObjectURL(url), 10000);
+      setExportedVideo({ url, name: `${fileName.replace(/\.[^.]+$/, '')}_tracked_${width}x${height}_60fps.mp4` });
       setExportProgress(100);
       setToast(`${width}×${height} MP4 · ${duration.toFixed(2)} s · 60 fps exported`);
     } catch (error) {
@@ -2092,7 +2147,7 @@ export default function Home() {
           <a className="avatar-button" href="https://github.com/MuwenTriLi/creative-workflows" aria-label="Portfolio">MW</a>
         </div>
       </header>
-<nav className="family-nav" aria-label="Creative workflow studios"><span>MUWEN LI / STUDIOS</span><a href="https://meshroom-breakdown-studio.limuwen9.chatgpt.site"><b>03</b>Model Breakdown</a><a href="https://muwentrili.github.io/creative-workflows/collage-motion/"><b>04</b>Animated Storyboard</a><a href="https://flipframe-motion-lab.limuwen9.chatgpt.site"><b>05</b>Spatial Media Presenter</a><a href="https://vox-one.limuwen9.chatgpt.site"><b>06</b>Kinetic Typography Studio</a><a href="https://trace-01-motion-tracker.limuwen9.chatgpt.site" aria-current="page"><b>07</b>Motion Tracking Studio</a><a className="family-index" href="https://github.com/MuwenTriLi/creative-workflows">All projects ↗</a></nav>
+<nav className="family-nav" aria-label="Creative workflow studios"><span>MUWEN LI / STUDIOS</span><a href="https://meshroom-breakdown-studio.limuwen9.chatgpt.site"><b>03</b>Model Breakdown</a><a href="https://muwentrili.github.io/creative-workflows/collage-motion/"><b>04</b>Animated Storyboard</a><a href="https://flipframe-motion-lab.limuwen9.chatgpt.site"><b>05</b>Spatial Media Presenter</a><a href="https://vox-one.limuwen9.chatgpt.site"><b>06</b>Kinetic Typography Studio</a><a href="https://muwentrili.github.io/creative-workflows/motion-tracking/" aria-current="page"><b>07</b>Motion Tracking Studio</a><a className="family-index" href="https://github.com/MuwenTriLi/creative-workflows">All projects ↗</a></nav>
 
       <fieldset className="editing-controls" disabled={isExporting}><section className="workspace">
         <aside className="source-rail">
@@ -2100,6 +2155,13 @@ export default function Home() {
             <strong>01 / {tr("Import video")}</strong>
             <p>{uiLanguage === "zh" ? "拖入视频。文件在浏览器内处理。" : "Drop a video here. Your file stays in this browser."}</p>
             <button disabled={isExporting} onClick={() => fileInputRef.current?.click()}>＋ {tr("Import video")}</button>
+          </section>
+          <section className="source-examples" aria-label="Example footage">
+            <strong>{uiLanguage === "zh" ? "示例素材" : "Example footage"}</strong>
+            <p>{uiLanguage === "zh" ? "载入片段，再点击白色方块开始追踪。" : "Load a clip, then click its white marker to track."}</p>
+            <button onClick={() => loadExample("cube-leaps")}>Cube leaps</button>
+            <button onClick={() => loadExample("ravine-flight")}>Ravine flight</button>
+            <button onClick={() => loadExample("buried-machine")}>Buried machine</button>
           </section>
           <div className="source-summary"><span>01 / SOURCE MEDIA</span><h2>{videoReady ? fileName : (uiLanguage === "zh" ? "从你的视频开始" : "Start with your footage")}</h2><p>{videoReady ? `${formatTime(duration)} · ${sourceAspect}` : "MP4 / MOV / WEBM"}</p></div>
           <ol className="source-steps">
@@ -2169,7 +2231,7 @@ export default function Home() {
               onLoadedData={handleLoadedData}
               onPlay={() => setIsPlaying(true)}
               onPause={() => setIsPlaying(false)}
-              onEnded={() => setIsPlaying(false)}
+              onEnded={() => { setIsPlaying(false); lastAnalysisRef.current = 0; renderFrame(true); }}
             />
             <canvas
               ref={canvasRef}
@@ -2498,6 +2560,7 @@ export default function Home() {
               </div>
             )}
             <div className="hud-subheading"><span>{tr("Tracking parameters")}</span><small>{placementMode === "track" ? "ACTIVE" : "PIN MODE"}</small></div>
+            {brightMarkerRef.current && placementMode === "track" ? <p className="marker-mode-note">Bright marker · adaptive local search. The locator follows the measured center; loss holds the last accepted position.</p> : <>
             <label className={placementMode === "pin" ? "control-muted" : ""}>
               <span>{tr("Search radius")}<b>{searchRadius}px</b></span>
               <input
@@ -2522,6 +2585,7 @@ export default function Home() {
                 disabled={placementMode === "pin"}
               />
             </label>
+            </>}
             {placementMode === "track" && (
             <div className="toggle-row compact-toggle">
               <span>{tr("Continuous tracking")}<small>{tracking ? "RUNNING" : "PAUSED"}</small></span>
@@ -2841,6 +2905,11 @@ export default function Home() {
                 <b>{Math.round(exportProgress)}%</b>
               </div>
             )}
+            {exportedVideo && <section className="exported-review" aria-label="Exported video review">
+              <strong>Review your export</strong>
+              <video aria-label="Exported tracking video" controls playsInline src={exportedVideo.url} />
+              <a href={exportedVideo.url} download={exportedVideo.name}>Download MP4</a>
+            </section>}
             <button className="export-button" onClick={() => void exportVideo()} disabled={isExporting || !videoReady || !selected}>
               <span>{isExporting ? tr("Compositing MP4…") : tr("Export MP4")}</span>
               <b>{exportTier} · {outputAspect} ↗</b>

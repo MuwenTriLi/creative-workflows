@@ -1,9 +1,9 @@
-# Browser source snapshot
+# Browser source
 
-The **[project README](../README.md)** contains the workflow, local setup commands, feature description and evidence.
+The [project README](../README.md) contains the workflow, local setup, features and evidence.
 
-This package records hosted client version **19**. [source-manifest.json](source-manifest.json) stores copied-file SHA-256 hashes and the hosted revision; `pnpm verify:source` checks them. It is a recorded snapshot, not an automatically synchronized mirror.
+The October 29, 2026 revision extends hosted client version **19** with bounded bright-marker tracking, three selectable example clips, replay/end-frame fixes and an export-review player. It is published through the repository's GitHub Pages build. The original hosted URL and source commit remain in [source-manifest.json](source-manifest.json) as provenance, not a claim that the revised files are byte-identical to that version.
 
-The Vite entry point replaces the hosting-specific wrapper. The browser application and files listed in the manifest remain unchanged. Public navigation still opens the hosted studios. No authentication helpers, credentials, private source material or proprietary font files are included.
+`pnpm verify:source` checks the documented hashes; `pnpm test` runs marker and export-timing checks. The Vite entry point replaces the original hosting wrapper. No API key or cloud model is used by the tracker.
 
-[RIGHTS.md](RIGHTS.md) covers the source and media boundary. Dependencies retain their respective license notices.
+[RIGHTS.md](RIGHTS.md) covers source and media. The three supplied example clips remain presentation assets, not a stock library. Dependencies retain their respective license notices.

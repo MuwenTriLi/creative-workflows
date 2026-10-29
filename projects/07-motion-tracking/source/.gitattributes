@@ -1,2 +1,2 @@
-# Preserve the byte-for-byte source manifest on every checkout platform.
+# Source verification compares committed bytes across Windows/macOS/Linux.
 * -text

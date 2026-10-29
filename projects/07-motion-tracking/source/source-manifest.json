@@ -4,16 +4,16 @@
   "hosted_url": "https://trace-01-motion-tracker.limuwen9.chatgpt.site",
   "hosted_version": 19,
   "hosted_source_commit": "526ef1b74eb1a81031544887bcdfa65e0e46f545",
-  "reviewed_on": "2026-10-26",
-  "scope": "Byte-identical browser application, supporting modules and selected public demo media; new local-only Vite runner. This is not the hosted server/deployment configuration.",
+  "reviewed_on": "2026-10-29",
+  "scope": "Repository revision derived from hosted client v19; bright-marker tracking, explicit example clips, replay/end-frame fixes and export review. Original hosted metadata retained for provenance.",
   "files": [
     {
       "path": "app/page.tsx",
-      "sha256": "77d8f4dee402ed48f194fb72f4826d57667fd50fb06de971d1c8bde7831c75e6"
+      "sha256": "b53ea3105cdb91d733d737659d178f6f6077631059e4a7cf27e116185b0bb5e6"
     },
     {
       "path": "app/globals.css",
-      "sha256": "1f3f6be7e3a328fcb0eae3562409d9a31995f885bbeb33c92785a4a16b49dd14"
+      "sha256": "1506c9f3778b13d3092dd5493439637d2f314a82a7b213b90f346d1d4661e57a"
     },
     {
       "path": "app/export-mp4.mjs",
@@ -34,6 +34,39 @@
     {
       "path": "tests/export-timing.test.mjs",
       "sha256": "f0e7728899cce3b2457da4e3ab2ce633df1270f8b86e55e2809b358b5838fb98"
+    },
+    {
+      "path": "app/bright-marker.mjs",
+      "sha256": "373b78cd2e8dc07287d75b318bcbc3d793b41e587b317dc94a4beeb6c1aa47aa"
+    },
+    {
+      "path": "app/bright-marker.d.mts",
+      "sha256": "d5738624e11ac10439e930384d3363ef4710b561c3378834675da8e1aa3f6b69"
+    },
+    {
+      "path": "app/export-mp4.d.mts",
+      "sha256": "e19f6fa1b23bfc6a4075efe81afbceaaa31a3e733bf7f9058520caf2f40dc264"
+    },
+    {
+      "path": "tests/bright-marker.test.mjs",
+      "sha256": "182b111076677fb10b0b89c0bb75bad419773ac60a285e1e2ca08f20d9fcf5e9"
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "f87b3714ebf0b8444777b439beb18f0d2948466c686ee1ba0543d72ff21e00f0"
+    },
+    {
+      "path": "public/demo/cube-leaps.mp4",
+      "sha256": "b48d156421719ccc72530af8a5d4aafa09a360f82a2cc89bdc8a47b6877e22bb"
+    },
+    {
+      "path": "public/demo/ravine-flight.mp4",
+      "sha256": "f518fc3f08115490fca81359c4116be5130d89e0fd2e89e64f72579af6a68cb9"
+    },
+    {
+      "path": "public/demo/buried-machine.mp4",
+      "sha256": "600ffdaa6e8d5da3c857e230873e692d8bce6a356b9d5797a3ed2cb18d272aae"
     }
-  ]
+  ],
+  "published_url": "https://muwentrili.github.io/creative-workflows/motion-tracking/"
 }

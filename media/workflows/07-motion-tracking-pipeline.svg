@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="956" height="288" viewBox="0 0 956 288" role="img" aria-labelledby="title desc">
 <title id="title">Motion Tracking Studio workflow</title>
-<desc id="desc">AI-assisted development: Codex; React · TypeScript. 01 / Import — Video — File API — React controls; 03 / Overlay — Path + locator — Canvas 2D — TypeScript; 04 / Direct — Timing + labels — React controls — Canvas 2D; 05 / Encode — Video / audio — WebCodecs — mp4-muxer; 06 / Review — Target + labels — H.264 MP4 — Optional AAC; 02: choose template tracking with Canvas and TypeScript, or a fixed Canvas anchor.. Review and revise before delivery.</desc>
+<desc id="desc">AI-assisted development: Codex; React · TypeScript. 01 / Import — Video — File API — React controls; 03 / Overlay — Path + locator — Canvas 2D — TypeScript; 04 / Direct — Timing + labels — React controls — Canvas 2D; 05 / Encode — Video / audio — WebCodecs — mp4-muxer; 06 / Review — Target + labels — H.264 MP4 — Optional AAC; 02: choose template or bright-marker tracking with Canvas and TypeScript, or a fixed Canvas anchor.. Review and revise before delivery.</desc>
 <defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7 Z" fill="#333"/></marker>
 <filter id="shadow" x="-10%" y="-10%" width="125%" height="130%"><feDropShadow dx="1" dy="2" stdDeviation="1.2" flood-color="#000" flood-opacity="0.16"/></filter></defs>
 <rect width="956" height="288" fill="#fff"/>
@@ -45,7 +45,7 @@
 <text x="868" y="182" font-size="15" font-weight="400" text-anchor="middle">Optional AAC</text>
 <rect x="176" y="60" width="136" height="70" fill="#ececff" stroke="#9370db" stroke-width="1" filter="url(#shadow)"/>
 <text x="244" y="80" font-size="16" font-weight="500" text-anchor="middle">02 / Track</text>
-<text x="244" y="101" font-size="14" font-weight="400" text-anchor="middle">Template search</text>
+<text x="244" y="101" font-size="14" font-weight="400" text-anchor="middle">Template / marker</text>
 <text x="244" y="119" font-size="14" font-weight="400" text-anchor="middle">Canvas · TypeScript</text>
 <rect x="176" y="160" width="136" height="70" fill="#ececff" stroke="#9370db" stroke-width="1" filter="url(#shadow)"/>
 <text x="244" y="180" font-size="16" font-weight="500" text-anchor="middle">02 / Pin</text>

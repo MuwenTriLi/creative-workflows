@@ -20,7 +20,7 @@ Open a **project** for its visual gallery and project details; browser projects 
 | **04 · [Animated Storyboard](projects/04-animated-storyboard/)** | Separate clips → one editable moving review board | [Demo](https://muwentrili.github.io/creative-workflows/collage-motion/) |
 | **05 · [Spatial Media Presenter](projects/05-spatial-media-presenter/)** | Images and clips → spatial sequence with readable holds | [Demo](https://flipframe-motion-lab.limuwen9.chatgpt.site) |
 | **06 · [Kinetic Typography Studio](projects/06-kinetic-typography/)** | English speech → corrected words, timing and animated type | [Demo](https://vox-one.limuwen9.chatgpt.site) |
-| **07 · [Motion Tracking Studio](projects/07-motion-tracking/)** | Video and selected target → motion annotation | [Demo](https://trace-01-motion-tracker.limuwen9.chatgpt.site) |
+| **07 · [Motion Tracking Studio](projects/07-motion-tracking/)** | Video and selected target → motion annotation | [Demo](https://muwentrili.github.io/creative-workflows/motion-tracking/) |
 
 ## 01 / Clockwork
 
@@ -103,7 +103,7 @@ Turn English speech into timed typography with editable words, rhythm and emphas
 ## 07 / Motion Tracking Studio
 
 <p align="center">
-<a href="https://trace-01-motion-tracker.limuwen9.chatgpt.site"><img src="media/trace-01-editor.png" alt="Motion Tracking Studio: an empty video import workspace with target selection, position anchor and HUD controls" width="100.0000%"></a>
+<a href="https://muwentrili.github.io/creative-workflows/motion-tracking/"><img src="media/trace-01-editor.png" alt="Motion Tracking Studio: an empty video import workspace with target selection, position anchor and HUD controls" width="100.0000%"></a>
 </p>
 
 <p><b>Make a subject easier to follow</b> — Your video · Target 01 or a fixed position anchor · Editable white HUD</p>

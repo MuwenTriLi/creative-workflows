@@ -8,4 +8,4 @@ for (const entry of manifest.files) {
   assert.equal(createHash('sha256').update(bytes).digest('hex'), entry.sha256,
     `Snapshot changed: ${entry.path}. Document the revision before updating the manifest.`);
 }
-console.log(`${manifest.files.length} source/media hashes match the recorded hosted source snapshot.`);
+console.log(`${manifest.files.length} source/media hashes match the documented source revision.`);
