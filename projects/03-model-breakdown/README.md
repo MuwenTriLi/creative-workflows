@@ -17,18 +17,13 @@ The live studio opens with a selectable, exploded **Press Manufacturing Line**. 
 Click an animated preview to watch the complete sequence. All four previews retain the source timing.
 
 <p align="center">
-<a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=structure"><img src="showcase/media/structure-smooth.webp" alt="Structural hierarchy" width="45.0000%"></a>
-<a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=residence"><img src="showcase/media/residence-smooth.webp" alt="Residential assembly" width="45.0000%"></a>
+<a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=structure"><img src="showcase/media/structure-smooth.webp" alt="Structural hierarchy" width="22.5000%"></a>
+<a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=residence"><img src="showcase/media/residence-smooth.webp" alt="Residential assembly" width="22.5000%"></a>
+<a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=systems"><img src="showcase/media/systems-smooth.webp" alt="Building systems" width="22.5000%"></a>
+<a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=tower"><img src="showcase/media/tower-smooth.webp" alt="Tower elements" width="22.5000%"></a>
 </p>
 
-<p><em>Left to right:</em> <b>Structural hierarchy</b> — Structure within an exploded assembly. — <a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=structure">Watch 11 s MP4</a>; <b>Residential assembly</b> — Detail with the full model as context. — <a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=residence">Watch 9.5 s MP4</a></p>
-
-<p align="center">
-<a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=systems"><img src="showcase/media/systems-smooth.webp" alt="Building systems" width="45.0000%"></a>
-<a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=tower"><img src="showcase/media/tower-smooth.webp" alt="Tower elements" width="45.0000%"></a>
-</p>
-
-<p><em>Left to right:</em> <b>Building systems</b> — Component emphasis and spatial relationships. — <a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=systems">Watch 11.5 s MP4</a>; <b>Tower elements</b> — Sequential explanation of levels and envelope. — <a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=tower">Watch 8 s MP4</a></p>
+<p><em>Left to right:</em> <b>Structural hierarchy</b> · <b>Residential assembly</b> · <b>Building systems</b> · <b>Tower elements</b></p>
 
 ### One assembly / four component highlights
 
@@ -67,23 +62,9 @@ For your own input, export a self-contained GLB with separate meshes and readabl
 
 ## Workflow diagram
 
-```mermaid
-flowchart TB
-    DEV["AI-assisted development · Codex<br/>React · TypeScript"]
-    subgraph INPUT["01 / Input and creator decisions"]
-        direction LR
-        A["Import named parts<br/>GLB · File API"] --> B["Inspect hierarchy<br/>Three.js GLTFLoader"]
-        B --> C["Explode and frame<br/>Three.js · TypeScript"]
-    end
-    subgraph OUTPUT["02 / Preview and delivery"]
-        direction LR
-        D["Focus and timing<br/>React timeline"] --> E["Render preview<br/>Three.js · WebGL"]
-        E --> F["Encode and review<br/>WebCodecs · mp4-muxer<br/>MP4 / still"]
-    end
-    DEV -.-> INPUT
-    INPUT --> OUTPUT
-    OUTPUT -->|Review and revise| INPUT
-```
+<p align="center">
+<img src="../../media/workflows/03-model-breakdown.svg" alt="Model Breakdown Studio workflow: six numbered steps with tools and a review loop" width="900">
+</p>
 
 Codex assisted development. The runtime stages above use browser code; they do not call a generative AI model.
 

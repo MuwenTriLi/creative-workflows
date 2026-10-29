@@ -33,23 +33,9 @@ Use a clip containing a proper noun, a pause and a phrase boundary. Keep the spe
 
 ## Workflow diagram
 
-```mermaid
-flowchart TB
-    DEV["AI-assisted development · Codex<br/>React · TypeScript"]
-    subgraph INPUT["01 / Input and creator decisions"]
-        direction LR
-        A["Decode speech<br/>Web Audio · AudioContext"] --> B["Transcribe and time<br/>Whisper Base q8<br/>Transformers.js · WASM"]
-        B --> C["Correct and apply<br/>React transcript editor"]
-    end
-    subgraph OUTPUT["02 / Preview and delivery"]
-        direction LR
-        D["Layout and preview<br/>React · CSS transforms"] --> E["Render and encode<br/>Canvas · Mediabunny<br/>WebCodecs video + audio"]
-        E --> F["Review with speech<br/>MP4 · browser video"]
-    end
-    DEV -.-> INPUT
-    INPUT --> OUTPUT
-    OUTPUT -->|Review and revise| INPUT
-```
+<p align="center">
+<img src="../../media/workflows/06-kinetic-typography.svg" alt="Kinetic Typography Studio workflow: six numbered steps with tools and a review loop" width="900">
+</p>
 
 Speech model: `onnx-community/whisper-base_timestamped`, q8, running locally through Transformers.js on WebAssembly (WASM). Codex assisted development; it is separate from runtime speech recognition.
 

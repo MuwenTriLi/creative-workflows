@@ -54,23 +54,9 @@ The system lays out and plays the chosen media; it does not infer the story or r
 
 ## Workflow diagram
 
-```mermaid
-flowchart TB
-    DEV["AI-assisted development · Codex<br/>HTML · JavaScript"]
-    subgraph INPUT["01 / Input and creator decisions"]
-        direction LR
-        A["Import clips / example<br/>File API · JSON atlas"] --> B["Identify sources<br/>JavaScript · stable IDs"]
-        B --> C["Order, crop and caption<br/>HTML · JavaScript"]
-    end
-    subgraph OUTPUT["02 / Preview and delivery"]
-        direction LR
-        D["Preview moving board<br/>Canvas 2D · HTML video"] --> E["Encode frames<br/>WebCodecs · mp4-muxer"]
-        E --> F["Review silent board<br/>MP4 · browser video"]
-    end
-    DEV -.-> INPUT
-    INPUT --> OUTPUT
-    OUTPUT -->|Review and revise| INPUT
-```
+<p align="center">
+<img src="../../media/workflows/04-animated-storyboard.svg" alt="Animated Storyboard workflow: six numbered steps with tools and a review loop" width="900">
+</p>
 
 Codex assisted development. The runtime stages above use browser code; they do not call a generative AI model.
 

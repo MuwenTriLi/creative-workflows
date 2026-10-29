@@ -5,20 +5,13 @@
 Four supplied architectural sequences show the intended result: a complete assembly becomes legible through separation, component emphasis and a clear relationship to the whole. Click a card for the complete viewing copy.
 
 <p align="center">
-<a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=structure"><img src="media/structure-smooth.webp" alt="Structural hierarchy" width="45.0000%"></a>
-<a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=residence"><img src="media/residence-smooth.webp" alt="Residential assembly" width="45.0000%"></a>
+<a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=structure"><img src="media/structure-smooth.webp" alt="Structural hierarchy" width="22.5000%"></a>
+<a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=residence"><img src="media/residence-smooth.webp" alt="Residential assembly" width="22.5000%"></a>
+<a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=systems"><img src="media/systems-smooth.webp" alt="Building systems" width="22.5000%"></a>
+<a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=tower"><img src="media/tower-smooth.webp" alt="Tower elements" width="22.5000%"></a>
 </p>
 
-<p><em>Left to right:</em> <b>Structural hierarchy</b> — Structure within an exploded assembly. — <a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=structure">Watch 11 s MP4</a>; <b>Residential assembly</b> — Detail with the full model as context. — <a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=residence">Watch 9.5 s MP4</a></p>
-
-<br>
-
-<p align="center">
-<a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=systems"><img src="media/systems-smooth.webp" alt="Building systems" width="45.0000%"></a>
-<a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=tower"><img src="media/tower-smooth.webp" alt="Tower elements" width="45.0000%"></a>
-</p>
-
-<p><em>Left to right:</em> <b>Building systems</b> — Component emphasis and spatial relationships. — <a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=systems">Watch 11.5 s MP4</a>; <b>Tower elements</b> — Sequential explanation of levels and envelope. — <a href="https://muwentrili.github.io/creative-workflows/films/?project=model&amp;film=tower">Watch 8 s MP4</a></p>
+<p><em>Left to right:</em> <b>Structural hierarchy</b> · <b>Residential assembly</b> · <b>Building systems</b> · <b>Tower elements</b></p>
 
 ## Read the detail
 

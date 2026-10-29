@@ -44,23 +44,9 @@ Make one framing or hold correction, replay the affected transition, then inspec
 
 ## Workflow diagram
 
-```mermaid
-flowchart TB
-    DEV["AI-assisted development · Codex<br/>React · TypeScript"]
-    subgraph INPUT["01 / Input and creator decisions"]
-        direction LR
-        A["Import images / clips<br/>Browser File API"] --> B["Order and range<br/>React · Visual Archive"]
-        B --> C["Transitions and holds<br/>TypeScript motion"]
-    end
-    subgraph OUTPUT["02 / Preview and delivery"]
-        direction LR
-        D["Preview sequence<br/>React · CSS transforms"] --> E["Render and encode<br/>Canvas · WebCodecs<br/>mp4-muxer"]
-        E --> F["Review pace and crop<br/>MP4 · browser video"]
-    end
-    DEV -.-> INPUT
-    INPUT --> OUTPUT
-    OUTPUT -->|Review and revise| INPUT
-```
+<p align="center">
+<img src="../../media/workflows/05-spatial-media-presenter.svg" alt="Spatial Media Presenter workflow: six numbered steps with tools and a review loop" width="900">
+</p>
 
 Codex assisted development. The runtime stages above use browser code; they do not call a generative AI model.
 

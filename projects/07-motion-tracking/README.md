@@ -47,23 +47,9 @@ Try one difficult interval as well as an easy shot. If the path moves onto the w
 
 ## Workflow diagram
 
-```mermaid
-flowchart TB
-    DEV["AI-assisted development · Codex<br/>React · TypeScript"]
-    subgraph INPUT["01 / Input and creator decisions"]
-        direction LR
-        A["Import and select mode<br/>File API · React controls"] -->|Target| B["Template search<br/>Canvas · TypeScript"]
-        A -->|Anchor| C["Fixed position<br/>Canvas coordinates"]
-    end
-    subgraph OUTPUT["02 / Preview and delivery"]
-        direction LR
-        D["Path and overlay<br/>Canvas 2D · TypeScript"] --> E["Encode video / audio<br/>WebCodecs · mp4-muxer"]
-        E --> F["Review target and labels<br/>H.264 MP4 · optional AAC"]
-    end
-    DEV -.-> INPUT
-    INPUT --> OUTPUT
-    OUTPUT -->|Review and revise| INPUT
-```
+<p align="center">
+<img src="../../media/workflows/07-motion-tracking.svg" alt="Motion Tracking Studio workflow: six numbered steps with tools and a review loop" width="900">
+</p>
 
 Codex assisted development. The runtime stages above use browser code; they do not call a generative AI model.
 

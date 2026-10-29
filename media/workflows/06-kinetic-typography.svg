@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="944" height="360" viewBox="0 0 944 360" role="img" aria-labelledby="title desc">
+<title id="title">Kinetic Typography Studio workflow</title>
+<desc id="desc">AI-assisted development: Codex; React · TypeScript. 1. Decode speech — Web Audio · AudioContext; 2. Transcribe and time — Whisper Base q8 — Transformers.js · WASM; 3. Correct and apply — React transcript editor; 4. Layout and preview — React · CSS transforms; 5. Render and encode — Canvas · Mediabunny — WebCodecs video + audio; 6. Review with speech — MP4 · browser video. Review and revise before delivery.</desc>
+<defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7 Z" fill="#222"/></marker></defs>
+<rect width="944" height="360" fill="#fff"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#111">
+<text x="20" y="29" font-size="17" font-weight="600" text-anchor="start">AI-assisted development: Codex</text>
+<text x="872" y="29" font-size="17" font-weight="400" text-anchor="end">React · TypeScript</text>
+<path d="M20 45 H872" stroke="#ccc"/>
+<g fill="none" stroke="#222" stroke-width="1.5" marker-end="url(#arrow)">
+<path d="M280 120 H310"/><path d="M576 120 H606"/>
+<path d="M742 168 V195 H150 V218"/>
+<path d="M280 272 H310"/><path d="M576 272 H606"/>
+<path d="M872 272 H920 V120 H878" stroke-dasharray="4 4"/>
+</g>
+<rect x="884" y="183" width="60" height="23" fill="#fff"/>
+<text x="912" y="200" font-size="14" font-weight="400" text-anchor="middle">Revise</text>
+<rect x="20" y="72" width="260" height="96" rx="3" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="34" y="97" font-size="15" font-weight="600" text-anchor="start">01</text>
+<text x="63" y="97" font-size="18" font-weight="600" text-anchor="start">Decode speech</text>
+<text x="34" y="124" font-size="17" font-weight="400" text-anchor="start">Web Audio · AudioContext</text>
+<rect x="316" y="72" width="260" height="96" rx="3" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="330" y="97" font-size="15" font-weight="600" text-anchor="start">02</text>
+<text x="359" y="97" font-size="18" font-weight="600" text-anchor="start">Transcribe and time</text>
+<text x="330" y="124" font-size="17" font-weight="400" text-anchor="start">Whisper Base q8</text>
+<text x="330" y="146" font-size="17" font-weight="400" text-anchor="start">Transformers.js · WASM</text>
+<rect x="612" y="72" width="260" height="96" rx="3" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="626" y="97" font-size="15" font-weight="600" text-anchor="start">03</text>
+<text x="655" y="97" font-size="18" font-weight="600" text-anchor="start">Correct and apply</text>
+<text x="626" y="124" font-size="17" font-weight="400" text-anchor="start">React transcript editor</text>
+<rect x="20" y="224" width="260" height="96" rx="3" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="34" y="249" font-size="15" font-weight="600" text-anchor="start">04</text>
+<text x="63" y="249" font-size="18" font-weight="600" text-anchor="start">Layout and preview</text>
+<text x="34" y="276" font-size="17" font-weight="400" text-anchor="start">React · CSS transforms</text>
+<rect x="316" y="224" width="260" height="96" rx="3" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="330" y="249" font-size="15" font-weight="600" text-anchor="start">05</text>
+<text x="359" y="249" font-size="18" font-weight="600" text-anchor="start">Render and encode</text>
+<text x="330" y="276" font-size="17" font-weight="400" text-anchor="start">Canvas · Mediabunny</text>
+<text x="330" y="298" font-size="17" font-weight="400" text-anchor="start">WebCodecs video + audio</text>
+<rect x="612" y="224" width="260" height="96" rx="3" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="626" y="249" font-size="15" font-weight="600" text-anchor="start">06</text>
+<text x="655" y="249" font-size="18" font-weight="600" text-anchor="start">Review with speech</text>
+<text x="626" y="276" font-size="17" font-weight="400" text-anchor="start">MP4 · browser video</text>
+<text x="20" y="346" font-size="15" font-weight="400" text-anchor="start">Read 01 → 06. Review the result, then revise framing, content or timing as needed.</text>
+</g></svg>
