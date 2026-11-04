@@ -33,6 +33,8 @@ Open a **project** for its visual gallery and project details; browser projects 
 
 Original models developed into a 46-asset Blender library with linked mechanisms and editable motion controls.
 
+**Why it matters:** Complex systems are more useful when others can adjust and reuse them.
+
 [Project](projects/01-clockwork/)
 
 ## 02 / Blue / White Architecture Growth
@@ -48,6 +50,8 @@ Original models developed into a 46-asset Blender library with linked mechanisms
 
 Selected final illoca films. Company property under NDA; this case provides Demo outputs and credits only.
 
+**Why it matters:** Clear visual storytelling helps audiences understand complex technical content.
+
 [Demo and credits](projects/02-architecture-growth/)
 
 ## 03 / Model Breakdown Studio
@@ -62,6 +66,8 @@ Selected final illoca films. Company property under NDA; this case provides Demo
 
 Import a multi-part GLB, separate its components and direct visual emphasis. The films are supplied output examples; the project documents the app, local setup and validation scope.
 
+**Why it matters:** Recurring production needs call for tools that stay editable across projects.
+
 [Project](projects/03-model-breakdown/)
 
 ## 04 / Animated Storyboard
@@ -73,6 +79,8 @@ Import a multi-part GLB, separate its components and direct visual emphasis. The
 <p><b>A moving storyboard for shot review</b> — 35 supplied shots · Six white HUD styles · Editable order and framing</p>
 
 Compare 35 moving shots on one board, preview a source, revise its position or visibility, then export the accepted composition.
+
+**Why it matters:** Comparing motion side by side helps teams make decisions and communicate clearly.
 
 [Project](projects/04-animated-storyboard/)
 
@@ -86,6 +94,8 @@ Compare 35 moving shots on one board, preview a source, revise its position or v
 
 Arrange images and clips into a spatial presentation with editable order, framing, transitions and holds.
 
+**Why it matters:** Strong visuals should draw attention while keeping information easy to read.
+
 [Project](projects/05-spatial-media-presenter/)
 
 ## 06 / Motion Tracking Studio
@@ -95,6 +105,8 @@ Arrange images and clips into a spatial presentation with editable order, framin
 </p>
 
 Select a video target, customize three HUD visual languages, and review the same composition in the browser and MP4 export.
+
+**Why it matters:** Uncertain automation needs visible feedback and clear user control.
 
 [Project](projects/06-motion-tracking/) · [Demo](https://muwentrili.github.io/creative-workflows/motion-tracking/)
 
@@ -107,6 +119,8 @@ Select a video target, customize three HUD visual languages, and review the same
 <p><b>Editable words, timing and visual emphasis</b> — Speech-led typography · Transcript correction · Preview before delivery</p>
 
 Turn English speech into timed typography with editable words, rhythm and emphasis. The opening example is silent; speech recognition starts after import.
+
+**Why it matters:** AI-generated results need a clear path to correction, refinement and delivery.
 
 [Project](projects/07-kinetic-typography/)
 
