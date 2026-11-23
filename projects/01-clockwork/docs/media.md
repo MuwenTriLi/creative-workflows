@@ -135,3 +135,15 @@ The README now shows two separate rows of four motion previews. The full 24-stud
 ## Enlarged examples
 
 The paired structure/material image is now shown at the available content width. The README also exposes the existing 480 px SPM14 and CLK31 motion previews at 420 px. Three selected MP4s are collected in [the film index](showcase-films.md): rendered collection, linework collection and Blender testing. The separate 30-second montage remains available in the motion library. The Blender source package is not included.
+
+## Three 15-second Demo edits
+
+The Demo player uses these silent 16:9 edits. Source playback speed is preserved; the supplied originals remain unchanged.
+
+| Film | Sources and selection | Delivery |
+| --- | --- | --- |
+| [Rendered collection](https://raw.githubusercontent.com/MuwenTriLi/creative-workflows/main/projects/01-clockwork/media/rendered-collection-15s.mp4) | `Overall.mp4`, then `Overall_move along.mp4`: 0.5–8.0 s from each. | 15 s · 3840 × 2160 · 24 fps |
+| [Linework collection](https://raw.githubusercontent.com/MuwenTriLi/creative-workflows/main/projects/01-clockwork/media/linework-collection-15s.mp4) | Three 5 s triptychs (source 0.5–5.5 s): CLK03 / lineweight collection / CLK08; CLK18 / CLK31 / CLK32; SPM11 / SPM13 / SPM14. Individual clips retain 1280 × 2160; the collection is fitted into the center panel without cropping. | 15 s · 3840 × 2160 · 24 fps |
+| [Blender testing](https://raw.githubusercontent.com/MuwenTriLi/creative-workflows/main/projects/01-clockwork/media/blender-testing-15s.mp4) | `Recording Placeholders_3.mp4` 4.5–11.0 s; `Recording_3.mp4` 0.5–4.5 s; `Recording_4.mp4` 0.5–5.0 s. Original black tails are excluded. The complete interface is fitted to the frame. | 15 s · 1920 × 1080 · 30 fps |
+
+Rendered and linework posters use the frame at 1 s; the Blender poster uses 8.5 s. These are edited recordings of existing work, not a new Blender validation run.
