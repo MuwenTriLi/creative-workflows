@@ -1,6 +1,6 @@
 # Clockwork: from production practice to a reusable product
 
-[← Collection and motion gallery](../README.md) · [Controls](controls.md) · [Workflow Skill](workflow-skill.md) · [Demo](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=demo)
+[← Collection and motion gallery](../README.md) · [Controls](controls.md) · [Workflow Skill](workflow-skill.md) · [Demo](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=collection-tour)
 
 **This project develops an original model collection into linked mechanisms, editable controls and a reusable Blender library through AI-assisted development.**
 

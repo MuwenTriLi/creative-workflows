@@ -14,7 +14,7 @@ Open a **project** for its visual gallery and project details; browser projects 
 
 | Project | Purpose | Demo |
 | --- | --- | --- |
-| **01 · [Clockwork](projects/01-clockwork/)** | Original models → linked Blender mechanisms and editable controls | [Demo](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=demo) |
+| **01 · [Clockwork](projects/01-clockwork/)** | Original models → linked Blender mechanisms and editable controls | [Demo](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=collection-tour) |
 | **02 · [Blue / White Architecture Growth](projects/02-architecture-growth/)** | Selected final architectural films · illoca property / NDA | [Demo](https://muwentrili.github.io/creative-workflows/films/?project=growth&film=tennis-sequence) |
 | **03 · [Model Breakdown Studio](projects/03-model-breakdown/)** | Multi-part GLB → exploded explanation and timed emphasis | [Demo](https://meshroom-breakdown-studio.limuwen9.chatgpt.site) |
 | **04 · [Animated Storyboard](projects/04-animated-storyboard/)** | Separate clips → one editable moving review board | [Demo](https://muwentrili.github.io/creative-workflows/collage-motion/) |
@@ -26,7 +26,7 @@ Open a **project** for its visual gallery and project details; browser projects 
 
 <p align="center">
 <a href="projects/01-clockwork/"><img src="projects/01-clockwork/media/collection-motion.gif" alt="Rendered Clockwork collection in motion" width="45.0000%"></a>
-<a href="https://muwentrili.github.io/creative-workflows/films/?project=clockwork&amp;film=opening-in-blender"><img src="projects/01-clockwork/media/opening-in-blender.gif?v=20261027-clean" alt="Original Blender recording of the opening mechanism" width="45.0000%"></a>
+<a href="https://raw.githubusercontent.com/MuwenTriLi/creative-workflows/main/projects/01-clockwork/media/opening-in-blender.mp4?v=20261027-clean"><img src="projects/01-clockwork/media/opening-in-blender.gif?v=20261027-clean" alt="Original Blender recording of the opening mechanism" width="45.0000%"></a>
 </p>
 
 <p><em>Left to right:</em> Collection in motion · Opening mechanism in Blender</p>

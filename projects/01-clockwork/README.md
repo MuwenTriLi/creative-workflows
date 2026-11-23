@@ -1,6 +1,6 @@
 # 01 / Clockwork
 
-[Demo · 30-second film](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=demo)
+[Demo · Three views](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=collection-tour)
 
 Original modeled components developed into **46 animated Blender assets** with linked mechanisms and editable controls.
 
@@ -113,13 +113,13 @@ Click any render to inspect it. [Browse all clocks and selected mechanisms →](
 ### Inside Blender: from library to moving assembly
 
 <p align="center">
-<a href="https://muwentrili.github.io/creative-workflows/films/?project=clockwork&amp;film=opening-in-blender"><img src="media/opening-in-blender.gif?v=20261027-clean" alt="Original Blender recording of the opening assembly" width="45.0000%"></a>
-<a href="https://muwentrili.github.io/creative-workflows/films/?project=clockwork&amp;film=library-placement"><img src="media/library-placement.gif" alt="Original Blender asset library placement recording" width="45.0000%"></a>
+<a href="https://raw.githubusercontent.com/MuwenTriLi/creative-workflows/main/projects/01-clockwork/media/opening-in-blender.mp4?v=20261027-clean"><img src="media/opening-in-blender.gif?v=20261027-clean" alt="Original Blender recording of the opening assembly" width="45.0000%"></a>
+<a href="https://raw.githubusercontent.com/MuwenTriLi/creative-workflows/main/projects/01-clockwork/media/library-placement.mp4"><img src="media/library-placement.gif" alt="Original Blender asset library placement recording" width="45.0000%"></a>
 </p>
 
 <p><em>Left to right:</em> Inspect the opening mechanism; Browse and place an asset</p>
 
-[Opening mechanism · MP4](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=opening-in-blender) · [Asset placement · MP4](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=library-placement) · [Seven videos and recordings](docs/showcase-films.md)
+[Opening mechanism · MP4](https://raw.githubusercontent.com/MuwenTriLi/creative-workflows/main/projects/01-clockwork/media/opening-in-blender.mp4?v=20261027-clean) · [Asset placement · MP4](https://raw.githubusercontent.com/MuwenTriLi/creative-workflows/main/projects/01-clockwork/media/library-placement.mp4) · [Three videos and recordings](docs/showcase-films.md)
 
 These original viewport recordings show the working scene and library. The Evidence section includes a checked CLK32 speed-change video; neither establishes every parameter or arbitrary recomposition.
 
@@ -127,9 +127,9 @@ These original viewport recordings show the working scene and library. The Evide
 
 ![Blender Asset Browser with the supplied collection](media/asset-browser.png)
 
-[Watch the Blender library tour](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=blender-library-tour) to see the assets in the working viewport.
+[Watch the Blender library tour](https://raw.githubusercontent.com/MuwenTriLi/creative-workflows/main/projects/01-clockwork/media/blender-library-tour.mp4) to see the assets in the working viewport.
 
-[Full render gallery](docs/render-gallery.md) · [All 24 motion studies](docs/motion-library.md) · [Seven films and viewport recordings](docs/showcase-films.md). These retain the larger galleries and their original asset IDs.
+[Full render gallery](docs/render-gallery.md) · [All 24 motion studies](docs/motion-library.md) · [Three films and viewport recordings](docs/showcase-films.md). These retain the larger galleries and their original asset IDs.
 
 ## Workflow and creator control
 

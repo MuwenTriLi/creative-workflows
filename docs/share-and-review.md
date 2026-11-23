@@ -8,7 +8,7 @@ Project titles open folders within this collection. **Demo** opens a web app or 
 
 ## A short first visit
 
-1. **Clockwork:** watch the 30-second Demo, then read the build process connecting Muwen's original models, prepared AI inputs, gear linkages and creator controls.
+1. **Clockwork:** watch the three Demo views, then read the build process connecting Muwen's original models, prepared AI inputs, gear linkages and creator controls.
 2. **Blue / White Architecture Growth:** view selected final company films and credits. Source and workflow are confidential.
 3. **Model Breakdown Studio:** compare assembled and exploded views, select a component, or switch among the three models.
 4. **Animated Storyboard:** compare the moving shots. Below the canvas, **Source clips** provides individual playback, order, framing and include/hide controls. Hidden clips are excluded from both board and export; removing a card does not delete the source file.

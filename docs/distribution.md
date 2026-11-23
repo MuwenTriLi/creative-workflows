@@ -30,7 +30,7 @@ The release includes `release-manifest.json` with its source commit and per-file
 | Bundled dependencies | Their license files are retained in `licenses/` |
 | Example footage and visual work | Portfolio demonstration only; no separate reuse license is granted |
 | Model Breakdown | [Project folder](../projects/03-model-breakdown/): `source/` records current browser source; the historical repository retains the earlier adaptation and its scoped MIT license |
-| Clockwork Blender library | [Demo](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=demo); the [public showcase](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/01-clockwork) documents its workflow |
+| Clockwork Blender library | [Demo](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=collection-tour); the [public showcase](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/01-clockwork) documents its workflow |
 | Company work | Approved presentation material only; source scenes and internal Skills are not distributed |
 
 [Export steps and device limits](studio-delivery.md) · [Completed functional checks](functional-review.md)

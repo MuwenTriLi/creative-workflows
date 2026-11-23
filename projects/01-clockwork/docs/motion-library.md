@@ -1,6 +1,6 @@
 # Motion library
 
-[Case study](../README.md) / [Rendered assets](render-gallery.md) / [Controls](controls.md) / [Seven videos and recordings](showcase-films.md)
+[Case study](../README.md) / [Rendered assets](render-gallery.md) / [Controls](controls.md) / [Three videos and recordings](showcase-films.md)
 
 ## Finished collection
 
@@ -108,11 +108,11 @@ The 15-second excerpt shows the assets and library inside Blender. It comes from
 
 </details>
 
-## Clockwork Demo
+## 30-second montage
 
-<p align="center"><a href="https://muwentrili.github.io/creative-workflows/films/?project=clockwork&amp;film=demo"><img src="../media/clockwork-demo-poster.jpg" alt="Clockwork Demo — 30-second horizontal film" width="800"></a></p>
+<p align="center"><a href="https://raw.githubusercontent.com/MuwenTriLi/creative-workflows/main/projects/01-clockwork/media/clockwork-demo-4k.mp4"><img src="../media/clockwork-demo-poster.jpg" alt="Clockwork Demo — 30-second horizontal film" width="800"></a></p>
 
-[Watch the Demo](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=demo) · [Download the 4K MP4](https://raw.githubusercontent.com/MuwenTriLi/creative-workflows/main/projects/01-clockwork/media/clockwork-demo-4k.mp4)
+[Watch the 30-second montage · 4K MP4](https://raw.githubusercontent.com/MuwenTriLi/creative-workflows/main/projects/01-clockwork/media/clockwork-demo-4k.mp4)
 
 A 30-second silent film combines a rendered collection tour with nine mechanisms in three successive three-column compositions.
 

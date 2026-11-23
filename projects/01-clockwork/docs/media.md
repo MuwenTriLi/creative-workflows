@@ -134,4 +134,4 @@ The README now shows two separate rows of four motion previews. The full 24-stud
 
 ## Enlarged examples
 
-The paired structure/material image is now shown at the available content width. The README also exposes the existing 480 px SPM14 and CLK31 motion previews at 420 px. Seven MP4s are collected in [the film index](showcase-films.md), including the 30-second Demo. The Blender source package is not included.
+The paired structure/material image is now shown at the available content width. The README also exposes the existing 480 px SPM14 and CLK31 motion previews at 420 px. Three selected MP4s are collected in [the film index](showcase-films.md): rendered collection, linework collection and Blender testing. The separate 30-second montage remains available in the motion library. The Blender source package is not included.

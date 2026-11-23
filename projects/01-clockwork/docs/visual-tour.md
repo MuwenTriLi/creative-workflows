@@ -40,7 +40,7 @@ Controls vary by asset. Opening angles and positions may be calculated outputs, 
 
 [Open the full-resolution 3840 x 2160 render](../media/collection-hero-4k.jpg)
 
-[Workflow + Skill](workflow-skill.md) / [Read SKILL.md](../skills/clockwork-assembly/SKILL.md) / [Download camera tour (MP4)](https://raw.githubusercontent.com/MuwenTriLi/creative-workflows/main/projects/01-clockwork/media/collection-tour.mp4) / [Render gallery](render-gallery.md) / [Motion library](motion-library.md) / [Demo](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=demo)
+[Workflow + Skill](workflow-skill.md) / [Read SKILL.md](../skills/clockwork-assembly/SKILL.md) / [Download camera tour (MP4)](https://raw.githubusercontent.com/MuwenTriLi/creative-workflows/main/projects/01-clockwork/media/collection-tour.mp4) / [Render gallery](render-gallery.md) / [Motion library](motion-library.md) / [Demo](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=collection-tour)
 
 Steampunk Clockwork turns a design language of exposed gears, layered mechanisms and architectural frames into an adaptable Blender asset library. Use a complete assembly as a focal point, tune its motion to a shot, or develop a new composition from its editable components.
 
@@ -162,13 +162,13 @@ Click any render to inspect it. [Browse all clocks and selected mechanisms →](
 ## Inside Blender: from library to moving assembly
 
 <p align="center">
-<a href="https://muwentrili.github.io/creative-workflows/films/?project=clockwork&amp;film=opening-in-blender"><img src="../media/opening-in-blender.gif?v=20261027-clean" alt="Original Blender recording of the opening assembly" width="45.0000%"></a>
-<a href="https://muwentrili.github.io/creative-workflows/films/?project=clockwork&amp;film=library-placement"><img src="../media/library-placement.gif" alt="Original Blender asset library placement recording" width="45.0000%"></a>
+<a href="https://raw.githubusercontent.com/MuwenTriLi/creative-workflows/main/projects/01-clockwork/media/opening-in-blender.mp4?v=20261027-clean"><img src="../media/opening-in-blender.gif?v=20261027-clean" alt="Original Blender recording of the opening assembly" width="45.0000%"></a>
+<a href="https://raw.githubusercontent.com/MuwenTriLi/creative-workflows/main/projects/01-clockwork/media/library-placement.mp4"><img src="../media/library-placement.gif" alt="Original Blender asset library placement recording" width="45.0000%"></a>
 </p>
 
 <p><em>Left to right:</em> Inspect the opening mechanism; Browse and place an asset</p>
 
-[Opening mechanism · MP4](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=opening-in-blender) · [Asset placement · MP4](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=library-placement) · [Seven videos and recordings](showcase-films.md)
+[Opening mechanism · MP4](https://raw.githubusercontent.com/MuwenTriLi/creative-workflows/main/projects/01-clockwork/media/opening-in-blender.mp4?v=20261027-clean) · [Asset placement · MP4](https://raw.githubusercontent.com/MuwenTriLi/creative-workflows/main/projects/01-clockwork/media/library-placement.mp4) · [Three videos and recordings](showcase-films.md)
 
 These original viewport recordings show the working scene and library. A narrated control-change walkthrough is the next evidence to add; these excerpts do not by themselves demonstrate every parameter.
 
@@ -222,7 +222,7 @@ Register the product's `Asset Library` folder in Blender, choose a complete asse
 | Documentation | Setup, controller reference and recorded release checks |
 | Format | Editable native Blender files; no add-on required to use the model library |
 
-[Watch the 30-second Demo](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=demo). This repository presents the project and selected media.
+[Watch the Demo](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=collection-tour). This repository presents the project and selected media.
 
 <details>
 <summary><b>Compatibility and presentation notes</b></summary>
