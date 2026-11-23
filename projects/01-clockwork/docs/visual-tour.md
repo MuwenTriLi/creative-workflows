@@ -40,7 +40,7 @@ Controls vary by asset. Opening angles and positions may be calculated outputs, 
 
 [Open the full-resolution 3840 x 2160 render](../media/collection-hero-4k.jpg)
 
-[Workflow + Skill](workflow-skill.md) / [Read SKILL.md](../skills/clockwork-assembly/SKILL.md) / [Download camera tour (MP4)](https://raw.githubusercontent.com/MuwenTriLi/creative-workflows/main/projects/01-clockwork/media/collection-tour.mp4) / [Render gallery](render-gallery.md) / [Motion library](motion-library.md) / [Product on Superhive](https://superhivemarket.com/products/steampunk-clockwork-animated-assets)
+[Workflow + Skill](workflow-skill.md) / [Read SKILL.md](../skills/clockwork-assembly/SKILL.md) / [Download camera tour (MP4)](https://raw.githubusercontent.com/MuwenTriLi/creative-workflows/main/projects/01-clockwork/media/collection-tour.mp4) / [Render gallery](render-gallery.md) / [Motion library](motion-library.md) / [Demo](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=demo)
 
 Steampunk Clockwork turns a design language of exposed gears, layered mechanisms and architectural frames into an adaptable Blender asset library. Use a complete assembly as a focal point, tune its motion to a shot, or develop a new composition from its editable components.
 
@@ -222,7 +222,7 @@ Register the product's `Asset Library` folder in Blender, choose a complete asse
 | Documentation | Setup, controller reference and recorded release checks |
 | Format | Editable native Blender files; no add-on required to use the model library |
 
-Get the asset package on [Superhive](https://superhivemarket.com/products/steampunk-clockwork-animated-assets). This repository presents the project and selected media.
+[Watch the 30-second Demo](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=demo). This repository presents the project and selected media.
 
 <details>
 <summary><b>Compatibility and presentation notes</b></summary>
@@ -231,7 +231,7 @@ The package records testing in Blender 5.2.0 LTS on Windows with Cycles. These a
 
 All visuals come from the supplied renders and recordings. GIFs are excerpts rather than guaranteed seamless cycles. See [verification scope](validation.md) and [media provenance](media.md).
 
-The Blender library files are distributed through the product page. This showcase does not grant an open-source license to those assets.
+The Blender source library is not included in this showcase. This showcase does not grant an open-source license to those assets.
 
 </details>
 
@@ -251,4 +251,4 @@ steampunk-clockwork-showcase/
 └── media/                        Renders, motion excerpts and Blender recordings
 ```
 
-The public repository documents the workflow and selected evidence. The Blender source library is supplied through [Superhive](https://superhivemarket.com/products/steampunk-clockwork-animated-assets).
+The public repository documents the workflow and selected evidence; the Blender source library is not included.

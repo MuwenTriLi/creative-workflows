@@ -4,11 +4,11 @@ Send this single link:
 
 **[Muwen Li — Creative Workflows](https://github.com/MuwenTriLi/creative-workflows#selected-work)**
 
-Project titles open folders within this collection. In **Preview / Product**, **Demo** opens a web app or final films; **Product page** opens the Clockwork listing on Superhive. Each browser project includes its own local setup and evidence in the README.
+Project titles open folders within this collection. **Demo** opens a web app or final films. Each browser project includes its own local setup and evidence in the README.
 
 ## A short first visit
 
-1. **Clockwork:** visit the Superhive product page, then read the build process connecting Muwen's original models, prepared AI inputs, gear linkages and creator controls.
+1. **Clockwork:** watch the 30-second Demo, then read the build process connecting Muwen's original models, prepared AI inputs, gear linkages and creator controls.
 2. **Blue / White Architecture Growth:** view selected final company films and credits. Source and workflow are confidential.
 3. **Model Breakdown Studio:** compare assembled and exploded views, select a component, or switch among the three models.
 4. **Animated Storyboard:** compare the moving shots. Below the canvas, **Source clips** provides individual playback, order, framing and include/hide controls. Hidden clips are excluded from both board and export; removing a card does not delete the source file.

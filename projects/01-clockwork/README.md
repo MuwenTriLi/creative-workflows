@@ -1,6 +1,6 @@
 # 01 / Clockwork
 
-[Product page · Superhive](https://superhivemarket.com/products/steampunk-clockwork-animated-assets)
+[Demo · 30-second film](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=demo)
 
 Original modeled components developed into **46 animated Blender assets** with linked mechanisms and editable controls.
 
@@ -182,7 +182,7 @@ This is the bounded change recorded in the Evidence section. Recomposition or de
 
 ## Setup and reuse
 
-The Blender library is distributed through the Superhive page above. This project folder contains its public documentation and presentation evidence; it does not include the source `.blend` library or change its license.
+This project folder contains the public documentation, Demo and presentation evidence. It does not include the source `.blend` library or change its license.
 
 Register the supplied Asset Library folder in Blender, place a complete collection and select its root controller. Adjust an input documented for that asset, preserve its dependencies and review a complete motion cycle. [Controller reference](docs/controls.md) explains the differences between assets.
 

@@ -8,4 +8,4 @@
 6. [Motion Tracking Studio](06-motion-tracking/)
 7. [Kinetic Typography Studio](07-kinetic-typography/)
 
-Projects 03–07 include their workflow diagram, features, local setup and evidence in the project README. Clockwork documents a Blender library distributed through Superhive. Source and media rights are stated per project.
+Projects 03–07 include their workflow diagram, features, local setup and evidence in the project README. Clockwork documents a Blender library with a film Demo. Source and media rights are stated per project.

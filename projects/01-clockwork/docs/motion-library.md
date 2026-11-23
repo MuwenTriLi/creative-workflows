@@ -108,10 +108,12 @@ The 15-second excerpt shows the assets and library inside Blender. It comes from
 
 </details>
 
-## Product presentation
+## Clockwork Demo
 
-<p align="center"><a href="https://github.com/MuwenTriLi/steampunk-clockwork-showcase/raw/refs/heads/main/media/product-presentation.mp4"><img src="../media/product-presentation-poster.jpg" alt="Download the original vertical product presentation" width="360"></a></p>
+<p align="center"><a href="https://muwentrili.github.io/creative-workflows/films/?project=clockwork&amp;film=demo"><img src="../media/clockwork-demo-poster.jpg" alt="Clockwork Demo — 30-second horizontal film" width="800"></a></p>
 
-[Download the vertical presentation](https://raw.githubusercontent.com/MuwenTriLi/creative-workflows/main/projects/01-clockwork/media/product-presentation.mp4), combining the original product-page view and rendered footage.
+[Watch the Demo](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=demo) · [Download the 4K MP4](https://raw.githubusercontent.com/MuwenTriLi/creative-workflows/main/projects/01-clockwork/media/clockwork-demo-4k.mp4)
+
+A 30-second silent film combines a rendered collection tour with nine mechanisms in three successive three-column compositions.
 
 MP4 links open a download for viewing in a video player. The GIFs above play directly in the page. All viewing copies are silent; no source audio was added. See [sources and preparation](media.md).

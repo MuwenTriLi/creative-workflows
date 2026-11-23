@@ -57,13 +57,13 @@ The visual selection uses existing renders and recordings supplied by Muwen Li. 
 | `media/blender-library-tour-poster.jpg` | `Video/Recording Placeholders.mp4` | Poster from viewing copy at 1 s (source 131 s) |
 | `media/viewport-collection.mp4` | `Video/OUT for ins/Individual asset animation_collection.mp4` | Silent H.264 viewing copy; 1080 px wide; start 0 s; complete duration |
 | `media/viewport-collection-poster.jpg` | `Video/OUT for ins/Individual asset animation_collection.mp4` | Poster from viewing copy at 1 s (source 1 s) |
-| `media/product-presentation.mp4` | `Video/OUT for ins/Online.mp4` | Silent H.264 viewing copy; 720 px wide; start 0 s; complete duration |
-| `media/product-presentation-poster.jpg` | `Video/OUT for ins/Online.mp4` | Poster from viewing copy at 1 s (source 1 s) |
+| `media/clockwork-demo-4k.mp4` | `Video/Overall_move along.mp4`; `Video/Individual render/CLK03, CLK07, CLK08, CLK18, CLK31, CLK32, SPM11, SPM13, SPM14.mp4` | 30 s, 3840 × 2160, 24 fps, silent H.264. Collection: source 0.5–6.5 s. Three groups of three portrait clips: source 0.5–8.5 s each, side by side without cropping or upscaling. Original speed; no storefront footage. Hosted in Creative Workflows. |
+| `media/clockwork-demo-poster.jpg` | `clockwork-demo-4k.mp4` | First frame of the Demo; 1920 × 1080 JPEG. |
 
 
 Only presentation copies were created. Original models, images, videos and folder organization were left unchanged. Individual rendered thumbnails are byte-for-byte copies. The individual GIFs preserve the full source composition, with reduced resolution, frame rate and color precision for browsing. MP4 viewing copies retain their source composition and playback speed and omit audio.
 
-The separate render gallery includes CLK01-32; the motion grid contains 24 selected clocks. SPM11 remains outside the current visual selection. No retouching, relighting or new AI-generated render was used. These media document existing work and do not constitute a new technical audit of the Blender package.
+The separate render gallery includes CLK01-32; the motion grid contains 24 selected clocks. SPM11 appears in the Demo, outside the 24-clock motion grid. No retouching, relighting or new AI-generated render was used. These media document existing work and do not constitute a new technical audit of the Blender package.
 
 ## Compact motion atlas and 4K cover
 
@@ -134,4 +134,4 @@ The README now shows two separate rows of four motion previews. The full 24-stud
 
 ## Enlarged examples
 
-The paired structure/material image is now shown at the available content width. The README also exposes the existing 480 px SPM14 and CLK31 motion previews at 420 px. Seven already published MP4s are collected in [the film index](showcase-films.md); no additional source material or package was uploaded for this layout revision.
+The paired structure/material image is now shown at the available content width. The README also exposes the existing 480 px SPM14 and CLK31 motion previews at 420 px. Seven MP4s are collected in [the film index](showcase-films.md), including the 30-second Demo. The Blender source package is not included.

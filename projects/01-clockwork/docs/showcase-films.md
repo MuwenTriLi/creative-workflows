@@ -52,12 +52,12 @@ See the library-to-scene step.
 
 [Open MP4](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=library-placement)
 
-## 07 / Product presentation
+## 07 / Clockwork Demo
 
-Original vertical product-page and rendered-footage presentation.
+A 30-second, silent 4K film: a rendered collection tour followed by three groups of three moving mechanisms.
 
-<a href="https://muwentrili.github.io/creative-workflows/films/?project=clockwork&amp;film=product-presentation"><img src="../media/product-presentation-poster.jpg" width="800" alt="Product presentation"></a>
+<a href="https://muwentrili.github.io/creative-workflows/films/?project=clockwork&amp;film=demo"><img src="../media/clockwork-demo-poster.jpg" width="800" alt="Clockwork Demo — 30-second horizontal film"></a>
 
-[Open MP4](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=product-presentation)
+[Open MP4](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=demo)
 
-These existing viewing copies are silent. Recordings are selected excerpts where noted in the source record; they do not demonstrate every controller or a newly verified Skill run. Blender source assets remain distributed through the product page.
+These existing viewing copies are silent. Recordings are selected excerpts where noted in the source record; they do not demonstrate every controller or a newly verified Skill run.

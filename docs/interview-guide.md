@@ -5,7 +5,7 @@ The collection moves from production work to tools built around specific creativ
 
 | Project | Look for | Try or inspect |
 | --- | --- | --- |
-| **01 Clockwork** | Original modeled components becoming linked mechanisms and meaningful creator controls | [Product](https://superhivemarket.com/products/steampunk-clockwork-animated-assets) · [Actual speed change and checks](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/01-clockwork/docs/control-study.md) |
+| **01 Clockwork** | Original modeled components becoming linked mechanisms and meaningful creator controls | [Demo](https://muwentrili.github.io/creative-workflows/films/?project=clockwork&film=demo) · [Actual speed change and checks](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/01-clockwork/docs/control-study.md) |
 | **02 Architecture Growth** | Selected final illoca films; company property under NDA | [Demo](https://muwentrili.github.io/creative-workflows/films/?project=growth&film=tennis-sequence) |
 | **03 Model Breakdown** | A dense assembly becoming an explanation through separation and local emphasis | [Open studio](https://meshroom-breakdown-studio.limuwen9.chatgpt.site): compare Assembled / Exploded view and select a part · [Source](https://github.com/MuwenTriLi/creative-workflows/tree/main/projects/03-model-breakdown/source) |
 | **04 Animated Storyboard** | Shot comparison, stable source identity and reversible local edits | [Open board](https://muwentrili.github.io/creative-workflows/collage-motion/): preview, reorder or hide one source · [Implementation/test map](animated-storyboard-handoff.md) |
